@@ -2,9 +2,13 @@
 
 ## CDM0 — SCAFFOLD AND CALIBRATION
 
-Build governance, exact trajectory engine, ledgers, candidate model, cache, metric registry, transparent promotion logic, and a small deterministic end-to-end calibration. No serious search.
+**Status: COMPLETE for the initial scaffold.**
+
+Governance, exact trajectory engine, ledgers, candidate model, cache, metric registry, transparent promotion logic, and a small deterministic end-to-end calibration are in place. No serious search was performed.
 
 ## CDM1 — STATE-OF-THE-ART BASELINE
+
+**Status: NEXT.**
 
 Audit current Collatz computational verification, stopping-time records, divergence-search methodology, verified ranges, accelerated implementations, and mathematical constraints specifically relevant to unbounded orbits. Avoid duplicating existing brute force.
 
@@ -42,4 +46,4 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-After CDM0 calibration is frozen, run **CDM1 — State-of-the-Art Divergence-Search and Computational-Reach Audit** using the kickoff prompt in `START_HERE.md`.
+Run **CDM1 — State-of-the-Art Divergence-Search and Computational-Reach Audit** using the kickoff prompt in `START_HERE.md`.

@@ -3,17 +3,17 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM0 scaffold; calibration to be frozen before CDM1**
-- Authoritative handover: this file plus `AGENTS.md`, `ROADMAP.md`, and the policies under `docs/`
+- Project stage: **CDM0 scaffold and calibration complete; CDM1 not started**
+- Current authoritative handover: this file plus `AGENTS.md`, `ROADMAP.md`, and the policies under `docs/`
 - Latest compute envelope: `docs/COMPUTE_BUDGET.md`
 - Latest experiment ledger entry: final line of `state/experiments.jsonl`
 - Latest compute ledger entry: final line of `state/compute_ledger.jsonl`
-- Candidate frontier: CDM0 calibration only
-- Symbolic frontier: exact parity-word affine machinery scaffolded; no promoted symbolic divergence family
-- Open blocker: CDM0 calibration must be frozen before CDM1
-- Immediate bounded task: run the deterministic CDM0 calibration, then begin CDM1
+- Current candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both `RESOLVED_TO_BASIN`; no scientific divergence candidate
+- Current symbolic frontier: exact parity-word affine composition and odd-to-odd acceleration are scaffolded; no promoted symbolic divergence family
+- Open blockers: no divergence-specific state-of-the-art baseline has yet been completed
+- Immediate next bounded task: **CDM1 audit below**
 
-The live repository HEAD is the current default-branch HEAD on GitHub. A session that mutates the repository must record the exact commit SHA in its experiment and compute-ledger entries.
+The live repository HEAD is the current default-branch HEAD on GitHub. Campaigns record the exact baseline commit used for computation; the CDM0 calibration baseline is `8be91c97ac340b6000335cd0288f84cebe5b6a49`.
 
 ## Read before working
 
@@ -25,6 +25,16 @@ The live repository HEAD is the current default-branch HEAD on GitHub. A session
 6. `docs/CERTIFICATION_POLICY.md`
 7. `docs/FAILURE_AND_LESSON_LEDGER.md`
 8. `docs/PREVIOUS_WORK_AUDIT.md`
+
+## Current frontiers
+
+### Explicit frontier
+
+CDM0 calibration only: small deterministic integers, exact shortened-map trajectories, local trusted-basin cache, transparent metrics, and workflow promotions. No calibration record is evidence of divergence.
+
+### Symbolic frontier
+
+The scaffold includes exact parity-word affine composition and an odd-to-odd accelerated map as mathematical infrastructure. Neither has produced a divergence-relevant theorem or symbolic candidate.
 
 ## CDM1 authoritative kickoff prompt
 
