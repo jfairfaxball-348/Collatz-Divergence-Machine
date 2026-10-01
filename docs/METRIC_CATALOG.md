@@ -110,3 +110,65 @@ The mod-9 smaller-preimage and path-merging rules removed substantial determinis
 ### Outcome/operational metrics
 
 `peak_start_ratio` remains outcome-only and already FAILED as a standalone promoter. `trajectory_merge_depth` remains operational/cache information. Neither is promoted by CDM2-E1.
+
+## CDM2-R1 theory dispositions — 2026-10-01
+
+Authoritative report: `experiments/CDM2_R1_REPORT.md`.
+
+### `affine_correction_cK`
+
+For a length-`K` source-parity word with odd positions
+`i_1<...<i_f`,
+
+`c_K = sum_{r=1}^f 2^{i_r}3^{f-r}`
+
+and
+
+`3^f-2^f <= c_K <= 2^{K-f}(3^f-2^f)`.
+
+**CDM2-R1 disposition: FAILED as a post-conditioning ranker.**
+
+At fixed `K,f`, exact `c_K` is an encoding of the already observed
+parity word/residue class. If `r` is the unique prefix residue and
+`n=r+2^K q`, then
+
+`T^K(n)=3^f q+b`
+
+for a fixed integer `b`. Because multiplication by odd `3^f` is
+invertible modulo every `2^s`, the lifts realize every possible next
+length-`s` parity block. Thus prefix-only affine correction does not
+constrain future parity across lifts.
+
+At the existing `K<=24` scale above the current discovery frontier,
+`c_K/n<2^-32` and the actual additive contribution to
+`T^K(n)/n`, namely `c_K/(2^K n)`, is (<2^-56).
+
+Keep `c_K` for exact symbolic identities. Do not use it, or an
+injective normalization of it, as a persistence score without a new
+theorem involving the lift quotient.
+
+### quantitative smaller-preimage / merge clearance
+
+**CDM2-R1 disposition: FAILED as a ranker; KEEP exact binary kills.**
+
+For any legal inverse word taking `p` to an observed state `m`,
+
+`m=(3^a p+c_u)/2^d`.
+
+The exact event `0<p<n` is a valid least-divergent pruning witness.
+Once that event is absent, `p>=n` is exactly an endpoint/start
+magnitude inequality
+
+`m >= (3^a n+c_u)/2^d`.
+
+Therefore a signed or normalized "distance from the merge boundary" is
+not a new structural persistence statistic; it is an observed-prefix
+magnitude margin conditioned on an inverse residue word. No theorem was
+found connecting that margin to the future parity block.
+
+### CDM2-R1 end decision
+
+No new metric is promoted. **CDM2-E2 is not authorized. CDM3 remains
+blocked.** The next theory target is a possible nontrivial constraint on
+the lift quotient `q=(n-r)/2^K`; absent such a theorem, prefix-only
+statistics cannot bridge to post-conditioning persistence.
