@@ -156,3 +156,16 @@ Determine whether theorem-linked parity-prefix conditioning supplies any reprodu
 ### Post-exhaustion action
 
 If matching is inadequate or a resource ceiling prevents the declared comparison, mark CDM2-E1 inconclusive and redesign in a later bounded session. If enrichment is absent, retain mathematically proved sieves as pruning only and record the generator/ranker failure. Do not expand compute and do not begin CDM3 automatically.
+
+
+### CDM2-E1 implementation-guard correction before authoritative replay
+
+**Status:** SUPERSEDED for the first post-freeze full execution; FINITE-VERIFIED for the correction record.
+
+The first full post-freeze execution finished in approximately 16 seconds, below the frozen 60-second wall/CPU ceiling, and produced no filter enrichment. During report audit, the committed driver was found still to encode the earlier provisional 180-second internal guard even though `docs/COMPUTE_BUDGET.md` had frozen 60 seconds. Because executable configuration must match the declared envelope, that execution is not used as the authoritative CDM2-E1 result.
+
+The driver was corrected at commit `2a90b45cd9876c1e039ddf1da91c42b849a1e81d`; the exact K<=24 debt/multiplier threshold invariant was additionally tested at commit `0fb67ff1db89064d33f66f4126d876937a02c34f`. The 60-second envelope, generator, quotas, horizons, lift rule, stopping conditions, and all statistical decision rules are unchanged.
+
+**Authoritative replay baseline:** `0fb67ff1db89064d33f66f4126d876937a02c34f`.
+
+No budget increase is authorized. The rejected execution is preserved here as a process correction rather than silently discarded.
