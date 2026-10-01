@@ -3,14 +3,10 @@
 #undef main
 
 static inline int b1_mul3add1_preserve_test(bigfix *a){
-    if(a->n==MAX_LIMBS){
-        for(int i=MAX_LIMBS-1;i>=0;i--){
-            uint64_t lim=(i==0)?0x5555555555555554ULL:0x5555555555555555ULL;
-            if(a->w[i]<lim)break;
-            if(a->w[i]>lim)return 0;
-        }
-    }
-    return mul3add1(a);
+    if(a->n<MAX_LIMBS) return mul3add1(a);
+    bigfix pre=*a;
+    if(!mul3add1(a)){ *a=pre; return 0; }
+    return 1;
 }
 
 int main(void){
