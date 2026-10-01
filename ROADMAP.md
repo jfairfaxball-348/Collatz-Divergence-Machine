@@ -84,7 +84,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 **Architecture decision:** CPU-first deterministic fixed-limb odd-only sparse execution, dual uniform/least-divergent-targeted arms, trusted-basin stop, exceptional freeze, GMP escape/replay, then structural/certification analysis. GPU acceleration is optional and requires a dedicated sparse-GPU benchmark rather than importing contiguous integers/second figures.
 
-**Authorization:** CDM3-P1 is unblocked as a bounded pilot path. Its design/resource envelope is frozen in docs/COMPUTE_BUDGET.md, but execution remains gated on a committed production driver passing all preflight validation. Larger production scaling remains unauthorized.
+**Historical R3 authorization:** R3 unblocked only the bounded CDM3-P1 pilot. P1 subsequently passed preflight and completed as P1-B. Larger scientific scaling remains unauthorized pending CDM3-B1.
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
@@ -133,6 +133,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Implement the CDM3-P1 deterministic multi-core CPU search engine from docs/CDM2_R3_ARCHITECTURE.md, pass every frozen preflight gate, and only then execute the bounded CDM3-P1 pilot if all gates pass.
+Execute only the separately frozen CDM3-B1 engineering benchmark in `docs/COMPUTE_BUDGET.md`: compare the R3 reference kernel, current P1 hot path, native compilation, and an exact overflow-safe no-full-copy path under identical starts and digests, then measure 1/2/4/8-worker scaling.
 
-Do not enlarge the pilot after observing results. Do not convert finite survival into a divergence claim. Do not begin GPU/cloud/volunteer production scaling before the CDM3-P1 audit.
+Do not enlarge the scientific search population. Do not begin GPU/cloud/volunteer production scaling until the production-throughput regression is understood and a later campaign is separately frozen.
