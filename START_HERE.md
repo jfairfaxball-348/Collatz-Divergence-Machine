@@ -3,13 +3,13 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM2-R3 complete — R3-A production-credible sparse architecture found; CDM3-P1 implementation/preflight is next**
+- Project stage: **CDM3-P1 complete — P1-B machine validated; production hot-path bottleneck found; larger scientific scaling blocked pending CDM3-B1**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
 - Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
-- Current authoritative computational-reach report: `experiments/CDM2_R3_REPORT.md`
+- Current authoritative computational-reach report: `experiments/CDM3_P1_REPORT.md`
 - Current R3 architecture specification: `docs/CDM2_R3_ARCHITECTURE.md`
-- Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`
+- Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`\n- Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`\n- Current CDM3-P1 pilot result: `experiments/CDM3_P1_RESULT.json`\n- Current CDM3-P1 work-unit provenance: `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
@@ -17,10 +17,10 @@
 - Current computational-reach frontier: **exact sparse 128–1024-bit starts directly benchmarked; fixed-limb odd-only median one-core rates ~187k/s at 256 bits, ~75k/s at 512 bits, ~27k/s at 1024 bits on the R3 host**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **UNBLOCKED FOR THE BOUNDED CDM3-P1 PILOT PATH; execution remains gated on committed driver + preflight validation; production scaling is not authorized**
-- Immediate next task: **CDM3-P1 — implement the deterministic multi-core sparse CPU engine, pass preflight validation, then execute the already-frozen bounded pilot only if every gate passes**
-- Forbidden next action: scaling beyond CDM3-P1, changing its envelope after seeing outcomes, an undeclared/unbounded campaign, or treating finite survival as a counterexample
-- Explicitly permitted next action: implement and validate the R3-A CPU architecture; after every preflight gate passes, execute only the frozen CDM3-P1 pilot envelope
+- CDM3: **CDM3-P1 COMPLETE AS P1-B; larger scientific scaling is NOT AUTHORIZED until the bounded CDM3-B1 hot-path benchmark closes the production-throughput regression**
+- Immediate next task: **CDM3-B1 — bounded production-hot-path benchmark comparing the R3 reference kernel, current P1 production path, `-march=native`, and an exact overflow-safe no-full-copy U-step path; no scientific population increase**
+- Forbidden next action: any larger scientific search, GPU production campaign, or population increase before CDM3-B1 resolves the P1 throughput regression; finite survival remains non-proof
+- Explicitly permitted next action: execute only the separately frozen CDM3-B1 engineering benchmark; do not enlarge the scientific search population
 
 The repository, not conversational memory, is the authoritative research state.
 
