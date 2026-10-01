@@ -29,11 +29,13 @@ jobs:
           gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_native
           gcc -O1 -g -std=c11 -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -fno-omit-frame-pointer benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_san
           gcc -O2 -std=c11 -Wall -Wextra -Werror -pthread tests/cdm3_p1_forced_escape.c -lgmp -o cdm3_p1_escape_test
-          sha256sum benchmarks/cdm3_b1_hotpath_bench.c production/cdm3_p1_engine.c production/cdm3_p1_part0.inc production/cdm3_p1_part1.inc production/cdm3_p1_part2.inc production/cdm3_p1_part3.inc tools/cdm3_b1_run.py cdm3_b1_base cdm3_b1_native cdm3_b1_san cdm3_p1_escape_test
+          gcc -O2 -std=c11 -Wall -Wextra -Werror -pthread tests/cdm3_b1_opt_escape.c -lgmp -o cdm3_b1_opt_escape_test
+          sha256sum benchmarks/cdm3_b1_hotpath_bench.c production/cdm3_p1_engine.c production/cdm3_p1_part0.inc production/cdm3_p1_part1.inc production/cdm3_p1_part2.inc production/cdm3_p1_part3.inc tools/cdm3_b1_run.py tests/cdm3_b1_opt_escape.c cdm3_b1_base cdm3_b1_native cdm3_b1_san cdm3_p1_escape_test cdm3_b1_opt_escape_test
       - name: Correctness gates
         run: |
           set -euxo pipefail
           ./cdm3_p1_escape_test
+          ./cdm3_b1_opt_escape_test
           ./cdm3_b1_base --selftest
           ./cdm3_b1_native --selftest
           ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 ./cdm3_b1_san --selftest
@@ -42,4 +44,11 @@ jobs:
         run: |
           set -euxo pipefail
           python3 tools/cdm3_b1_run.py --base ./cdm3_b1_base --native ./cdm3_b1_native --output experiments/CDM3_B1_RESULT.json
+          sha256sum experiments/CDM3_B1_RESULT.json
           cat experiments/CDM3_B1_RESULT.json
+      - name: Upload B1 result
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-b1-result
+          path: experiments/CDM3_B1_RESULT.json
+          if-no-files-found: error
