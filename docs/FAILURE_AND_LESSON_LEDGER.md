@@ -133,3 +133,54 @@ After CDM2-E1's repository envelope had been reduced to 60 wall/CPU seconds, the
 Although actual consumption was below 60 seconds and the later result was identical, that execution was rejected as authoritative. The driver was corrected and the experiment replayed under a code guard matching the frozen declaration.
 
 **Lesson:** an observed run being inside the intended budget is not enough; executable ceilings and declared ceilings must agree before an authoritative campaign result is accepted.
+
+## F0016 — The affine correction is prefix information, not a future-persistence bridge
+
+**Status:** FAILED as a post-conditioning ranker; exact identities **PROVED**.
+
+For a length-`K` word with `f` odd steps,
+
+`c_K=sum 2^{i_r}3^{f-r}`
+
+with tight bounds
+
+`3^f-2^f <= c_K <= 2^{K-f}(3^f-2^f)`.
+
+At fixed `K,f`, `c_K` determines the same low-`K)-bit residue that
+determines the observed parity word. For lifts `n=r+2^Kq`,
+
+`T^K(n)=3^f q+b`.
+
+Modulo `2^s`, the map `q -> 3^f q+b` is bijective, so a fixed
+prefix and fixed affine correction admit every possible next
+length-`s` parity block across lifts.
+
+At the CDM2-E1 scale `K<=24` above the present discovery frontier,
+`c_K/n<2^-32` and `c_K/(2^K n)<2^-56`.
+
+**Action:** retain affine correction for exact symbolic algebra only.
+Do not rank surviving prefixes by `c_K` or an injective normalization
+of it without a new theorem constraining the lift quotient.
+
+## F0017 — Smaller-preimage clearance collapses to observed magnitude after the exact kill
+
+**Status:** FAILED as a post-conditioning ranker; exact smaller-preimage
+and path-merging kills remain **PROVED** at their justified scope.
+
+For a legal inverse word with
+
+`m=(3^a p+c_u)/2^d`,
+
+a positive `p<n` is an exact least-divergent contradiction because
+`p` reaches the candidate suffix at `m`. If the kill is absent,
+`p>=n` is algebraically equivalent to
+
+`m >= (3^a n+c_u)/2^d`.
+
+Thus quantitative merge "clearance", slack, or near-miss scores reduce
+to already observed endpoint/start magnitude margins conditioned on a
+residue word. No independent theorem links those margins to the future
+parity block.
+
+**Action:** keep binary exact pruning. Do not replace it with clearance
+scores, inverse-word counts, or residue near-miss feature engineering.
