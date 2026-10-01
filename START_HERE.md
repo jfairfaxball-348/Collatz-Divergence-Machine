@@ -3,19 +3,19 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM2-E1 complete; CDM2 filter redesign is next**
+- Project stage: **CDM2-R1 complete; no CDM2-E2 authorized; lift-quotient theorem audit is next**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative CDM2 report: `experiments/CDM2_E1_REPORT.md`
+- Current authoritative redesign report: `experiments/CDM2_R1_REPORT.md`
 - Current machine-readable CDM2 result: `experiments/CDM2_E1_RESULT.json`
 - Latest compute policy: `docs/COMPUTE_BUDGET.md`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: exact parity/residue construction, debt arithmetic, affine parity-word representation, mod-9 smaller-preimage pruning, path-merging pruning, and bounded CDM2-E1 calibration results
+- Current symbolic frontier: exact parity/residue construction, debt arithmetic, affine parity-word representation and tight correction bounds, lift-quotient future-block bijection obstruction, mod-9 smaller-preimage pruning, path-merging pruning, and bounded CDM2-E1 calibration results
 - Current certification frontier: none
 - CDM3 generator: **NONE AUTHORIZED**
-- Immediate next bounded task: **CDM2-R1 — Non-Tautological Filter Redesign Audit**
-- Forbidden next action: high-range explicit search, larger brute-force calibration, GPU/distributed scaling, or CDM3
+- Immediate next bounded task: **CDM2-R2 — Lift-Quotient Constraint Theorem Audit**
+- Forbidden next action: CDM2-E2 without a new theorem-linked statistic, high-range explicit search, larger brute-force calibration, broad modular feature engineering, GPU/distributed scaling, or CDM3
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -113,19 +113,48 @@ every-prefix `D(j)>0` is equivalent to exact no-descent through the prefix.
 
 Therefore a correctly constructed exact-K-survivor control necessarily shares the binary debt property. The binary debt screen cannot provide incremental ranking information after K-survival has already been conditioned on.
 
+## CDM2-R1 frozen result
+
+**Claim status: PROVED for the exact identities/obstructions; FAILED for the proposed ranking routes.**
+
+Authoritative report: `experiments/CDM2_R1_REPORT.md`.
+
+For odd positions `i_1<...<i_f` in a length-`K` source-parity word,
+
+`c_K = sum_{r=1}^f 2^{i_r}3^{f-r}`
+
+with tight bounds
+
+`3^f-2^f <= c_K <= 2^{K-f}(3^f-2^f)`.
+
+At fixed `K,f`, `c_K` determines the same low-`K)-bit residue that determines the already observed prefix. Writing every lift as `n=r+2^Kq` gives
+
+`T^K(n)=3^f q+b`.
+
+Because `3^f` is invertible modulo every `2^s`, one fixed prefix realizes every possible next length-`s` parity block as `q` varies. Prefix-only affine correction therefore does not constrain the future parity block across lifts.
+
+Above the current discovery frontier and at `K<=24`,
+
+- `c_K/n<2^-32`;
+- the actual affine contribution to `T^K(n)/n`, `c_K/(2^K n)`, is (<2^-56).
+
+The secondary smaller-preimage/path-merging audit also failed to produce a ranker: after the exact smaller-preimage kill is absent, any quantitative clearance is algebraically an observed endpoint/start magnitude margin conditioned on an inverse residue word.
+
+**End decision:** no new cheap exact non-tautological persistence filter exists in the audited routes. **CDM2-E2 is not authorized. CDM3 remains blocked.**
+
 ## CDM2 end decision
 
-**No cheap filter or metric tested in CDM2-E1 demonstrated reproducible information value beyond its conditioning event.**
+**No cheap filter or metric tested in CDM2-E1 demonstrated reproducible information value beyond its conditioning event, and CDM2-R1 found no replacement statistic in the affine-correction or quantitative smaller-preimage routes.**
 
 Accordingly:
 
-> **CDM3 HAS NO AUTHORIZED GENERATOR.**
+> **CDM2-E2 IS NOT AUTHORIZED, AND CDM3 HAS NO AUTHORIZED GENERATOR.**
 
 Do not advance the failed parity-prefix generator merely to keep the project moving.
 
 ## Authoritative kickoff prompt
 
-### CDM2-R1 — NON-TAUTOLOGICAL FILTER REDESIGN AUDIT
+### CDM2-R2 — LIFT-QUOTIENT CONSTRAINT THEOREM AUDIT
 
 Continue the standalone research programme:
 
@@ -137,109 +166,65 @@ Repository:
 
 Treat the repository—not conversational memory—as the authoritative research state.
 
-Before doing any research or computation, read and obey all files listed in the **Read before working** section above, especially `experiments/CDM2_E1_REPORT.md`, `docs/METRIC_CATALOG.md`, and `docs/FAILURE_AND_LESSON_LEDGER.md`.
+Before doing any research or computation, read and obey the full **Read before working** list above, plus `experiments/CDM2_R1_REPORT.md`.
 
-### ROOT OBJECTIVE
+#### ROOT OBJECTIVE
 
 The only root objective remains:
 
 **FIND AN EXPLICIT POSITIVE INTEGER WHOSE SHORTENED-COLLATZ ORBIT CAN BE RIGOROUSLY PROVED UNBOUNDED AND WHICH NEVER REACHES 1.**
 
-Use
+Use `T(n)=n/2` for even `n`, and `T(n)=(3n+1)/2` for odd `n`.
 
-`T(n)=n/2` for even `n`,
+Finite survival is not divergence. Nontrivial finite cycles remain out of scope.
 
-`T(n)=(3n+1)/2` for odd `n`.
+#### FROZEN INPUT FROM CDM2-R1
 
-A successful counterexample requires rigorous proof both that the orbit never reaches 1 and that its forward values are unbounded.
+For a fixed observed length-`K` prefix residue `r mod 2^K`, with `f` odd steps and affine correction `c_K`, every lift is
 
-Finite survival is not divergence.
+`n=r+2^Kq`
 
-### SCOPE
+and
 
-**NONTRIVIAL FINITE CYCLES ARE OUT OF SCOPE.**
+`T^K(n)=3^f q+b`.
 
-Repeated-state detection is allowed only as a computational safety mechanism.
+Modulo every `2^s`, `q -> 3^f q+b` is bijective. Therefore prefix-only affine data admit every possible next length-`s` parity block across lifts.
 
-Do not begin CDM3.
+Quantitative smaller-preimage/path-merging clearance was also killed as a ranker because, once the exact kill is absent, its margin is only an observed endpoint/start magnitude inequality.
 
-### CDM2-R1 OBJECTIVE
+Do not undo these route kills without a new proof.
 
-CDM2-E1 falsified the theorem-conditioned parity-prefix construction as a post-prefix ranker/generator and found no incremental value from debt margin or completed odd-to-odd valuation load.
+#### CDM2-R2 OBJECTIVE
 
-This session is a **THEORY-FIRST FILTER REDESIGN AUDIT**.
+Audit one question only:
 
-Its purpose is to identify **at most one** cheap, exact, theorem-linked statistic or structural predicate that:
+> Does least-divergent minimality, exact inverse-tree exclusion, or another already proved necessary condition impose a nontrivial restriction on the lift quotient `q=(n-r)/2^K` — equivalently on the next parity block — **without computing that future block**?
 
-1. is not algebraically determined by exact K-survival, `K`, and `f_K`;
-2. can be computed without using future trajectory information that would leak the endpoint being predicted;
-3. has an explicit mathematical mechanism plausibly connecting it to further no-descent/growth;
-4. has a finite exact implementation cost suitable for L0/L1;
-5. has a predeclared falsification rule capable of killing it.
+A qualifying result must be an exact theorem or exact structural predicate, not a correlation.
 
-If no such statistic is found, say so. Do not manufacture a feature merely to keep the programme moving.
+If such a restriction exists, prove its hypotheses precisely and show why it can carry incremental information beyond exact K-survival, `K`, and `f_K`.
 
-### FIRST REQUIRED THEORY AUDIT: THE AFFINE CORRECTION
+If no such restriction exists in the audited mathematics, preserve the obstruction. Do not manufacture modular features, residue histograms, learned scores, peak metrics, parity-run metrics, or throughput campaigns.
 
-For a length-K parity word,
+#### COMPUTE RULE
 
-`T^K(n)=(3^{f_K} n+c_K)/2^K`.
+This is theory first. Before any executable check, freeze a finite envelope with domain, node/candidate/step ceilings if applicable, wall/CPU/memory/storage ceilings, stopping rule, expected information gain, and post-exhaustion action.
 
-Since CDM2-E1 showed that the multiplicative term is already substantially controlled by `f_K`, audit the remaining exact affine correction `c_K` first.
+Prefer symbolic proof. Do not run CDM2-E2 in this session unless the repository is explicitly updated to authorize it **after** a qualifying theorem is established.
 
-Determine rigorously, before any campaign:
+#### REQUIRED OUTPUTS
 
-- exact formulae/bounds for `c_K` under the shortened map;
-- how `c_K` depends on parity arrangement at fixed `K,f_K`;
-- whether `c_K/n` is provably negligible in the scale regime relevant to a least divergent start above current verified coverage;
-- whether any scale-free exact transformation of the correction has a theorem-linked relationship to future no-descent rather than merely encoding the already observed prefix.
+Produce a durable CDM2-R2 theorem/obstruction report. Preserve proofs and negative findings. Update the metric catalog, failure ledger, roadmap, and this file. Update compute/experiment ledgers only if computation occurs.
 
-If the affine correction cannot plausibly carry incremental information at relevant scales, mark that route **FAILED** and preserve the proof/obstruction.
+#### END DECISION
 
-### SECONDARY THEORY SOURCE, ONLY IF NEEDED
+Finish by answering whether the lift quotient is now subject to a cheap exact theorem-linked restriction that plausibly predicts post-conditioning persistence.
 
-If the affine-correction route is killed, audit at most one alternative structure arising directly from already validated exact pruning mathematics, such as a non-leaking smaller-preimage/path-merging structural quantity.
+If yes, specify exactly one bounded CDM2-E2 calibration design, but do not execute it unless separately authorized.
 
-Do not revive arbitrary modular histograms, peak metrics, parity-run metrics, broad feature engineering, or machine-learned scores.
+If no, keep CDM2-E2 and CDM3 blocked and state the next mathematical obstruction.
 
-### COMPUTE RULE
-
-This is not a production trajectory session.
-
-Before any executable experiment:
-
-1. freeze a new finite CDM2-R1 envelope;
-2. state exact generator/domain, symbolic-node ceiling, candidate count if any, step ceiling if any, wall/CPU/memory/storage ceilings, stopping conditions, expected information gain, and post-exhaustion action;
-3. prefer exact symbolic proof or tiny bounded enumeration over trajectory extension;
-4. no budget extension because an object looks interesting.
-
-A reasonable default ceiling is no larger than CDM2-E1 and should normally be much smaller. Any substantive trajectory calibration requires its own separately justified precommitment.
-
-### REQUIRED OUTPUTS
-
-Produce:
-
-- a durable CDM2-R1 theory/design report;
-- proofs or exact finite checks for every claimed independence/obstruction;
-- minimal implementation/tests only if needed;
-- a frozen compute declaration for any executed experiment;
-- updated metric catalog and failure ledger;
-- updated experiment/compute ledgers if computation occurs;
-- updated roadmap and `START_HERE.md`.
-
-### END-OF-SESSION DECISION
-
-Finish by answering:
-
-**IS THERE NOW A CHEAP, EXACT, NON-TAUTOLOGICAL FILTER WITH A MATHEMATICALLY MOTIVATED REASON TO PREDICT POST-CONDITIONING PERSISTENCE?**
-
-If yes, specify one exact bounded CDM2-E2 calibration design.
-
-If no, keep CDM3 blocked and state the next mathematical obstruction/design task.
-
-Do not start CDM2-E2 unless the repository explicitly authorizes it after the redesign. Do not start CDM3.
-
-### PERMANENT PHILOSOPHY
+#### PERMANENT PHILOSOPHY
 
 > SEARCH FOR SUSTAINED GROWTH.  
 > COMPUTE IN STAGES.  
