@@ -16,7 +16,7 @@ CDM1 established the external verification/provenance frontier, divergence-relev
 
 ## CDM2 — FILTER AND METRIC DESIGN
 
-**Status: IN PROGRESS — CDM2-E1 COMPLETE; FILTER REDESIGN REQUIRED.**
+**Status: IN PROGRESS — CDM2-R1 COMPLETE; NO E2 AUTHORIZED; LIFT-QUOTIENT THEORY AUDIT NEXT.**
 
 Authoritative E1 report: `experiments/CDM2_E1_REPORT.md`.  
 Aggregate result: `experiments/CDM2_E1_RESULT.json`.
@@ -31,17 +31,29 @@ A bounded exact lemma established that for the declared 60-bit / `K<=24` calibra
 
 ### CDM2-R1 — NON-TAUTOLOGICAL FILTER REDESIGN AUDIT
 
+**Status: COMPLETE — 2026-10-01.**
+
+Authoritative report: `experiments/CDM2_R1_REPORT.md`.
+
+The affine correction was derived exactly and bounded tightly. At fixed `K,f_K`, `c_K` is an exact encoding of the already observed parity-prefix residue. For lifts `n=r+2^Kq`, the endpoint is `3^{f_K}q+b`; modulo any `2^s`, this is a bijection in `q`, so one fixed prefix admits every possible next length-`s` parity block across lifts.
+
+At the existing `K<=24` scale above the current discovery frontier, the correction satisfies `c_K/n<2^-32`, while its actual contribution to the endpoint/start ratio satisfies `c_K/(2^K n)<2^-56`.
+
+A secondary audit showed that quantitative smaller-preimage/path-merging "clearance" becomes an already-observed endpoint/start magnitude margin once the exact kill event is absent.
+
+**Decision:** no cheap exact non-tautological persistence filter survived the audit. **CDM2-E2 is not authorized. CDM3 remains blocked.**
+
+### CDM2-R2 — LIFT-QUOTIENT CONSTRAINT THEOREM AUDIT
+
 **Status: NEXT.**
 
-Run a theory-first bounded redesign audit. The goal is to identify at most one theorem-linked cheap statistic that is not algebraically determined by exact K-survival and `f_K`, has a mechanism plausibly connected to future no-descent, can be computed without lookahead leakage, and has a predeclared falsification rule.
+Audit whether least-divergent minimality, exact inverse-tree exclusions, or another already proved necessary condition imposes any nontrivial congruence or structural restriction on the lift quotient
 
-First audit the exact affine correction/carry term in
+`q=(n-r)/2^K`
 
-`T^K(n)=(3^{f_K}n+c_K)/2^K`
+for a surviving prefix residue `r mod 2^K`, equivalently restricting the next parity block **without computing that future block**.
 
-because `3^{f_K}` is already controlled by `f_K`. Determine analytically whether the carry term is too small at relevant scales to carry useful information; kill it if so. Do not turn this into a feature factory.
-
-No production trajectory campaign and no CDM3 search may begin until CDM2-R1 yields a justified bounded calibration design.
+This is a theorem/obstruction task, not a trajectory campaign. Do not turn it into broad modular feature engineering. If no such restriction can be proved, preserve the obstruction and keep CDM3 blocked.
 
 ## CDM3 — CONTROLLED EXPLICIT SEARCH
 
@@ -75,6 +87,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Run **CDM2-R1 — Non-Tautological Filter Redesign Audit** from `START_HERE.md`.
+Run **CDM2-R2 — Lift-Quotient Constraint Theorem Audit** from `START_HERE.md`.
 
-Do not begin CDM3. Do not respond to the failed E1 generator by increasing K, trajectory length, candidate count, or hardware scale without a new mathematical information hypothesis.
+Do not begin CDM2-E2 or CDM3. Do not respond to the R1 obstruction by increasing K, trajectory length, candidate count, modular feature count, or hardware scale without a new mathematical implication theorem.
