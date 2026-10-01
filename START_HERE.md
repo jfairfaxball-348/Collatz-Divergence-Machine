@@ -139,11 +139,11 @@ Durable findings:
 
 The complete machine is specified in docs/CDM2_R3_ARCHITECTURE.md.
 
-The CDM3-P1 resource design is frozen in docs/COMPUTE_BUDGET.md but is marked **EXECUTION NOT YET AUTHORIZED** until the committed production driver passes every required preflight check.
+The CDM3-P1 resource design was frozen in docs/COMPUTE_BUDGET.md before execution. CDM3-P1 subsequently passed every required preflight gate and completed as **P1-B — MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND**.
 
 ## Authoritative next-session prompt
 
-### CDM3-P1 — IMPLEMENT, VALIDATE, AND RUN THE BOUNDED SPARSE HIGH-MAGNITUDE PILOT
+### CDM3-B1 — ISOLATE AND RECOVER THE PRODUCTION HOT-PATH THROUGHPUT REGRESSION
 
 Continue the standalone research programme:
 
@@ -151,102 +151,52 @@ Continue the standalone research programme:
 
 Repository:
 
-jfairfaxball-348/Collatz-Divergence-Machine
+`jfairfaxball-348/Collatz-Divergence-Machine`
 
 Treat the repository — not conversational memory — as the authoritative research state.
 
-Before implementation or computation, read the complete Read before working list above, especially:
+Before implementation or benchmarking, read the complete Read before working list above and, in particular:
 
-- experiments/CDM2_R3_REPORT.md
-- docs/CDM2_R3_ARCHITECTURE.md
-- experiments/CDM2_R3_BENCHMARK_RESULT.json
-- docs/COMPUTE_BUDGET.md
-- docs/BASIN_AND_CACHE_POLICY.md
-- docs/CERTIFICATION_POLICY.md
+- `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
+- `experiments/CDM3_P1_RESULT.json`
+- `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
+- `experiments/CDM3_P1_REPORT.md`
+- `experiments/CDM3_P1_COMMAND_RECORD.md`
+- `docs/COMPUTE_BUDGET.md`
+- `docs/FAILURE_AND_LESSON_LEDGER.md`
+- `benchmarks/cdm2_r3_sparse_bench.c`
+- `production/cdm3_p1_engine.c`
 
 ### Root objective
 
-The only root objective remains:
+The root objective is unchanged: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and never reaches 1.
 
-**FIND AN EXPLICIT POSITIVE INTEGER WHOSE SHORTENED-COLLATZ ORBIT CAN BE RIGOROUSLY PROVED UNBOUNDED AND WHICH NEVER REACHES 1.**
-
-Finite survival is not divergence. A large peak is not divergence. A pilot survivor is not a counterexample.
+CDM3-B1 is engineering-only. It does not enlarge the scientific population and cannot certify divergence.
 
 ### Task
 
-Implement the CDM3-P1 deterministic multi-core CPU engine around the validated fixed-limb odd-only kernel.
+Execute exactly the frozen CDM3-B1 benchmark in `docs/COMPUTE_BUDGET.md`.
 
-The production driver must include:
+Under identical deterministic starts and exact result digests, compare:
 
-- deterministic counter-based generation for exactly 256, 512 and 1024-bit bands;
-- Arm U uniform odd starts;
-- Arm L least-divergent-targeted exact pruning;
-- exact fixed-limb odd-only execution;
-- exact shortened-step-equivalent accounting;
-- Tier-2 discovery-basin stop at n<2^71;
-- no first-descent-as-convergence shortcut in Arm U;
-- deterministic work-unit IDs and non-overlapping counter ranges;
-- work-unit checksums and replay digests;
-- checkpoint/restart support;
-- exact exceptional-candidate freeze records;
-- forced overflow/escape handling;
-- independent GMP/Python replay hooks.
+1. the CDM2-R3 fixed-limb odd-only reference kernel;
+2. the current CDM3-P1 production U-step path;
+3. the current P1 path compiled with `-march=native`;
+4. an exact overflow-safe production path that avoids copying the full 64-limb state on every ordinary U-step, also compiled with `-march=native`.
 
-### Mandatory preflight
+Preserve exact 4096-bit escape/freeze semantics. Do not remove a safety check merely for speed.
 
-The frozen CDM3-P1 campaign may not execute until all of these pass:
+Measure the best exact candidate path at 1, 2, 4 and 8 workers inside the frozen B1 envelope.
 
-1. deterministic fixed-limb vs GMP/Python transition tests on every bit band;
-2. exact odd-only/shortened-map equivalence tests;
-3. forced 4096-bit fast-path escape proving the candidate is frozen/routed, never dropped;
-4. deterministic work-unit checksum replay;
-5. checkpoint/restart equality;
-6. compiler/runtime/source/executable provenance capture;
-7. executable limits equal to or stricter than docs/COMPUTE_BUDGET.md.
+### Required decision
 
-If any gate fails, stop and fix the implementation. Do not spend the pilot budget.
+Determine whether the R3-to-P1 throughput gap is explained sufficiently to make the next campaign economics auditable.
 
-### Frozen pilot population
+- If the optimized exact production path remains materially slower than the side-by-side R3 reference, keep larger search blocked and localize the remaining bottleneck.
+- If substantial parity with the R3 reference is recovered without weakening correctness, freeze — but do not execute — the smallest justified next CPU scale-up or sparse-GPU benchmark.
 
-Do not enlarge or redesign after seeing outcomes.
+Do not run a larger scientific campaign in CDM3-B1.
 
-- 256, 512, 1024 bits;
-- <=10,000,000 generated starts per band;
-- <=5,000,000 Arm U and <=5,000,000 Arm L per band;
-- <=30,000,000 generated starts total;
-- <=8 worker threads;
-- <=15 minutes wall;
-- <=120 CPU-minutes;
-- <=1 GiB memory;
-- <=200 MiB committed result storage.
+### Permanent proof boundary
 
-Exceptional broad-search freeze triggers are those already frozen in docs/COMPUTE_BUDGET.md, including 32,768 U-steps, start_bit_length+512 peak bits, leaving the 4096-bit fast path, repetition, invariant mismatch, or resource-ceiling pressure.
-
-### If an exceptional object appears
-
-Stop broad processing of that candidate immediately. Preserve exact provenance and checkpoints, replay independently, verify every transition, check basin/merge status, extract parity/residue/affine structure, and move it to structural/certification analysis.
-
-Do not automatically extend its trajectory within the broad-search budget.
-
-### Session decision
-
-At closeout report:
-
-- implementation/preflight status;
-- whether the frozen pilot ran;
-- exact generated/executed counts by band and arm;
-- measured throughput and work-unit scaling;
-- basin-hit and freeze disposition counts;
-- all exceptional objects, if any;
-- whether independent replay passed;
-- whether any candidate entered structural analysis;
-- whether any counterexample was found or claimed;
-- whether larger CDM3 scaling is justified, requires another benchmark, or remains blocked.
-
-A null result does not justify increasing the budget by itself.
-
-### Permanent operating rule
-
-Search may discover an object. Only mathematics can certify the object.
-
-No finite computation satisfies the root objective.
+Finite computation, throughput, magnitude, a large peak, or long survival is not a Collatz counterexample. Only rigorous certification of an explicit unbounded orbit satisfies the root objective.
