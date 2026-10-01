@@ -234,3 +234,83 @@ Resolve the immediate R3 engineering uncertainty: whether 128–1024-bit sparse 
 ### Post-exhaustion action
 
 Do not expand into production search. Use the measurements only to classify CDM2-R3 and, if warranted, define the smallest next CPU/GPU implementation benchmark or bounded CDM3 pilot. Any further campaign requires a separate frozen envelope.
+
+
+## CDM3-P1 provisional frozen pilot envelope — 2026-10-01
+
+**Status:** AUTHORIZED DESIGN / EXECUTION NOT YET AUTHORIZED. CDM2-R3 classified the architecture R3-A and freezes this as the cheapest valid next pilot. The pilot may execute only after the production driver is committed, its executable ceilings match this declaration, and the preflight validation below passes.
+
+### Purpose
+
+Validate the complete sparse high-magnitude search machine — deterministic generation, work-unit partitioning, exact fixed-limb odd-only execution, Tier-2 basin handling, checksums, forced overflow routing, exceptional-candidate freeze and independent replay — at a scientifically nontrivial but bounded sample size.
+
+This is not a production-scale test of the counterexample-at-scale hypothesis and cannot certify divergence.
+
+### Population
+
+| Item | CDM3-P1 ceiling |
+|---|---:|
+| bit lengths | exactly 256, 512, 1024 |
+| generated starts per bit length | <= 10,000,000 |
+| total generated starts | <= 30,000,000 |
+| uniform Arm U per bit length | <= 5,000,000 |
+| least-divergent-targeted Arm L per bit length | <= 5,000,000 |
+| generator | deterministic counter-based, versioned and domain-separated by band/arm |
+| ordinary stop | exact Tier-2 discovery basin hit n<2^71 or exact trusted cache hit |
+| first descent above trusted basin | record only; do not treat as convergence in Arm U |
+
+### Exact execution
+
+- primary arithmetic: reusable fixed-capacity 64-bit limbs;
+- map: odd-only U(n)=(3n+1)/2^v2(3n+1), with exact shortened-step-equivalent accounting;
+- Arm L may apply exact least-divergent binary pruning such as the mod-9 smaller-preimage exclusion;
+- Arm U applies no least-divergent-only prefilter;
+- floating point may not affect generation, transition, rejection, promotion or freeze decisions.
+
+### Exceptional freeze triggers
+
+Freeze and stop broad processing of a candidate immediately if, before trusted-basin resolution:
+
+- U-step count reaches 32,768;
+- shortened-map peak reaches start_bit_length + 512 bits;
+- state exceeds the ordinary 4096-bit fixed-limb fast path;
+- a repeated state is detected;
+- an invariant/checksum mismatch occurs;
+- another campaign resource ceiling would be exceeded.
+
+A freeze is a discovery event only. It is not evidence of divergence by itself.
+
+### Resource ceilings
+
+| Resource | CDM3-P1 ceiling |
+|---|---:|
+| worker threads | <= 8 |
+| wall-clock | <= 15 minutes |
+| CPU budget | <= 120 CPU-minutes |
+| memory | <= 1 GiB |
+| committed result storage | <= 200 MiB |
+| per-candidate U-step broad-search ceiling | 32,768 before freeze |
+| ordinary fixed-limb capacity | 4096 bits |
+| automatic post-freeze extension | zero |
+| scientific L2 promotions | only frozen exceptional objects |
+| production scaling beyond pilot | forbidden without pilot audit |
+
+### Required preflight before execution
+
+1. deterministic unit tests against GMP/Python on all supported bit bands;
+2. exact odd-only/shortened-map equivalence tests;
+3. forced fixed-limb overflow test proving the candidate is frozen/routed rather than discarded;
+4. deterministic work-unit checksum replay;
+5. checkpoint/restart replay with identical result digest;
+6. compiler/runtime provenance recorded;
+7. executable internal limits verified to equal or tighten this file.
+
+If any preflight fails, the pilot is not authorized to run.
+
+### Expected ordinary runtime
+
+CDM2-R3 measured one-core median rates of approximately 187k, 75k and 27k starts/s at 256, 512 and 1024 bits on an AMD EPYC 9V74 VM. Those are engineering observations only. The 15-minute wall ceiling deliberately allows substantial orchestration/checksum/validation overhead and does not authorize extension if the pilot runs slower.
+
+### Post-exhaustion action
+
+Stop. Preserve partial work-unit results if valid. Audit throughput, disposition counts, checksum/replay behavior, exceptional objects and the empirical survivor-cost tail. Do not enlarge the sample merely because no counterexample was found.
