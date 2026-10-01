@@ -3,16 +3,19 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM1 complete; CDM2 is next**
-- Current authoritative handover: this file plus `AGENTS.md`, `ROADMAP.md`, `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`, and the policies under `docs/`
+- Project stage: **CDM2-E1 complete; CDM2 filter redesign is next**
+- Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
+- Nontrivial finite cycles: **out of scope**
+- Current authoritative CDM2 report: `experiments/CDM2_E1_REPORT.md`
+- Current machine-readable CDM2 result: `experiments/CDM2_E1_RESULT.json`
 - Latest compute policy: `docs/COMPUTE_BUDGET.md`
-- Latest audit: `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`
-- Current candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both `RESOLVED_TO_BASIN`; no scientific divergence candidate
-- Current symbolic frontier: exact parity-word affine composition and odd-to-odd acceleration are scaffolded; CDM1 identified theorem-conditioned parity-prefix residue classes as the first generator to calibrate
-- Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as of 2026-10-01
-- Current certification frontier: none; no exact indefinitely extensible divergence mechanism is known in this repository
-- Immediate next bounded task: **CDM2-E1 theorem-conditioned parity-prefix survivor-enrichment calibration**
-- Forbidden next action: broad/high-range counterexample search
+- Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
+- Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
+- Current symbolic frontier: exact parity/residue construction, debt arithmetic, affine parity-word representation, mod-9 smaller-preimage pruning, path-merging pruning, and bounded CDM2-E1 calibration results
+- Current certification frontier: none
+- CDM3 generator: **NONE AUTHORIZED**
+- Immediate next bounded task: **CDM2-R1 — Non-Tautological Filter Redesign Audit**
+- Forbidden next action: high-range explicit search, larger brute-force calibration, GPU/distributed scaling, or CDM3
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -30,50 +33,99 @@ The repository, not conversational memory, is the authoritative research state.
 10. `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`
 11. `docs/METRIC_CATALOG.md`
 12. `docs/BASIN_AND_CACHE_POLICY.md`
+13. `experiments/CDM2_E1_REPORT.md`
+14. `experiments/CDM2_E1_RESULT.json`
 
-## CDM1 frozen conclusions that CDM2 must not silently undo
+## Frozen findings that must not be silently undone
 
-### Scope
+### Scope and proof boundary
 
-The only root objective is an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1.
+Finite survival is not divergence. No finite trajectory prefix, finite peak, statistical anomaly, or compute exhaustion can satisfy the root objective.
 
-Nontrivial finite cycles remain out of scope.
+Nontrivial finite-cycle research remains out of scope.
 
-### External coverage
+### External coverage and provenance
 
-Peer-reviewed exact external computation covers all starts below `2^71` for discovery purposes. A current official live report extends the reported range to `2075*2^60`.
+Peer-reviewed external exact computation covers all starts below `2^71` for discovery purposes. The current audited official live report extends reported coverage through `2075*2^60`.
 
-These are external provenance layers, not local basin certificates.
+External coverage is provenance-tagged search masking, not local certification.
 
-### Necessary least-counterexample structure
+### Least-divergent necessary structure
 
-If any divergent start exists, a least divergent start exists and never falls below itself.
+If any divergent positive start exists, a least divergent start exists and can never fall below itself.
 
-For a least divergent start above the current frontier, if `f_k` is the number of odd shortened-map source steps in its first `k` steps, the audited Angeltveit descent theorem implies the exact every-prefix condition
+Above the audited frontier, the Angeltveit descent criterion yields the every-prefix necessary condition
 
-`D(k) = 485*f_k - 306*k >= 1`
+`D(k)=485 f_k-306k>0`.
 
-for every `k>=1`.
-
-This is a necessary condition, not a sufficient condition for divergence.
+This is a necessary condition in its theorem scope, not sufficient evidence of divergence.
 
 ### Preserved route kills
 
 Do not restore as standalone promotion logic:
 
-- largest numerical starting value;
+- magnitude-only search;
 - finite survival alone;
-- peak magnitude;
-- peak/start ratio;
-- long all-odd or same-parity runs;
-- total stopping time/delay;
-- GPU/distributed throughput without demonstrated filter value.
+- peak magnitude or peak/start ratio;
+- long parity runs;
+- total stopping/delay records;
+- arbitrary residue histograms without theorem linkage;
+- GPU/distributed throughput before filter information value.
 
-The explicit family `2^p-1` manufactures arbitrarily long all-odd initial runs and arbitrarily large finite peak/start ratios.
+The family `2^p-1` manufactures arbitrarily long all-odd initial prefixes and arbitrarily large finite peak/start ratios.
+
+## CDM2-E1 frozen result
+
+**Claim status: COMPUTATIONAL-EVIDENCE.**
+
+CDM2-E1 used `K=24`, exactly 60-bit deterministic representatives, 4,096 conditioned classes, 4,096 disjoint controls, exact `f_K` matching, a 512-step first-descent horizon, zero L2 promotions, and a 60-second wall/CPU envelope.
+
+Authoritative replay consumed approximately 12.44 wall seconds and 12.44 CPU seconds.
+
+Exact aggregate outcomes:
+
+- symbolic nodes visited: 735,398;
+- legal length-24 leaves: 286,581;
+- mod-9 smaller-preimage kills: 127,293;
+- path-merging kills: 23,425;
+- eligible deterministic representatives: 135,863;
+- 2K survival: 866/4096 conditioned vs 914/4096 control;
+- 4K survival: 75/4096 vs 71/4096;
+- 512-step survival: 0 vs 0;
+- deterministic replication folds disagreed in direction;
+- precommitted reproducible-enrichment rule: **FAILED**.
+
+### Metric dispositions
+
+- `parity_debt_end`: **DEMOTED** to binary necessary-screen/interpretation use; at fixed K it is determined by `f_K`.
+- `parity_debt_min`: **FAILED** as a ranker.
+- completed odd-to-odd valuation load: **FAILED** as an independent ranker.
+- odd-step density: matching/interpretation only.
+- exact parity/residue mapping, mod-9 smaller-preimage pruning, path-merging pruning: **KEEP** as exact pruning.
+- peak/start ratio: outcome only; standalone promotion remains **FAILED**.
+- merge depth: operational only.
+
+### Bounded equivalence discovered in CDM2-E1
+
+**PROVED for the declared 60-bit / `K<=24` regime:**
+
+every-prefix `D(j)>0` is equivalent to exact no-descent through the prefix.
+
+Therefore a correctly constructed exact-K-survivor control necessarily shares the binary debt property. The binary debt screen cannot provide incremental ranking information after K-survival has already been conditioned on.
+
+## CDM2 end decision
+
+**No cheap filter or metric tested in CDM2-E1 demonstrated reproducible information value beyond its conditioning event.**
+
+Accordingly:
+
+> **CDM3 HAS NO AUTHORIZED GENERATOR.**
+
+Do not advance the failed parity-prefix generator merely to keep the project moving.
 
 ## Authoritative kickoff prompt
 
-### CDM2 — FILTER AND METRIC DESIGN
+### CDM2-R1 — NON-TAUTOLOGICAL FILTER REDESIGN AUDIT
 
 Continue the standalone research programme:
 
@@ -85,11 +137,11 @@ Repository:
 
 Treat the repository—not conversational memory—as the authoritative research state.
 
-Before doing any research or computation, read and obey the files listed above, especially `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`.
+Before doing any research or computation, read and obey all files listed in the **Read before working** section above, especially `experiments/CDM2_E1_REPORT.md`, `docs/METRIC_CATALOG.md`, and `docs/FAILURE_AND_LESSON_LEDGER.md`.
 
 ### ROOT OBJECTIVE
 
-The only root objective is:
+The only root objective remains:
 
 **FIND AN EXPLICIT POSITIVE INTEGER WHOSE SHORTENED-COLLATZ ORBIT CAN BE RIGOROUSLY PROVED UNBOUNDED AND WHICH NEVER REACHES 1.**
 
@@ -99,10 +151,7 @@ Use
 
 `T(n)=(3n+1)/2` for odd `n`.
 
-A successful counterexample requires rigorous proof that:
-
-1. `T^k(n)` never reaches `1`; and
-2. `{T^k(n): k>=0}` is unbounded.
+A successful counterexample requires rigorous proof both that the orbit never reaches 1 and that its forward values are unbounded.
 
 Finite survival is not divergence.
 
@@ -110,194 +159,85 @@ Finite survival is not divergence.
 
 **NONTRIVIAL FINITE CYCLES ARE OUT OF SCOPE.**
 
-Repeated-state detection may remain only as a computational safety mechanism.
-
-Do not restart or extend the earlier cycle-exclusion programme.
-
-### CDM2 OBJECTIVE
-
-This session is **FILTER AND METRIC DESIGN**.
-
-Its primary task is to determine whether theorem-linked cheap filters identify finite trajectories with reproducibly greater post-prefix persistence than matched controls.
-
-CDM2 must calibrate information value before any high-range search.
+Repeated-state detection is allowed only as a computational safety mechanism.
 
 Do not begin CDM3.
 
+### CDM2-R1 OBJECTIVE
+
+CDM2-E1 falsified the theorem-conditioned parity-prefix construction as a post-prefix ranker/generator and found no incremental value from debt margin or completed odd-to-odd valuation load.
+
+This session is a **THEORY-FIRST FILTER REDESIGN AUDIT**.
+
+Its purpose is to identify **at most one** cheap, exact, theorem-linked statistic or structural predicate that:
+
+1. is not algebraically determined by exact K-survival, `K`, and `f_K`;
+2. can be computed without using future trajectory information that would leak the endpoint being predicted;
+3. has an explicit mathematical mechanism plausibly connecting it to further no-descent/growth;
+4. has a finite exact implementation cost suitable for L0/L1;
+5. has a predeclared falsification rule capable of killing it.
+
+If no such statistic is found, say so. Do not manufacture a feature merely to keep the programme moving.
+
+### FIRST REQUIRED THEORY AUDIT: THE AFFINE CORRECTION
+
+For a length-K parity word,
+
+`T^K(n)=(3^{f_K} n+c_K)/2^K`.
+
+Since CDM2-E1 showed that the multiplicative term is already substantially controlled by `f_K`, audit the remaining exact affine correction `c_K` first.
+
+Determine rigorously, before any campaign:
+
+- exact formulae/bounds for `c_K` under the shortened map;
+- how `c_K` depends on parity arrangement at fixed `K,f_K`;
+- whether `c_K/n` is provably negligible in the scale regime relevant to a least divergent start above current verified coverage;
+- whether any scale-free exact transformation of the correction has a theorem-linked relationship to future no-descent rather than merely encoding the already observed prefix.
+
+If the affine correction cannot plausibly carry incremental information at relevant scales, mark that route **FAILED** and preserve the proof/obstruction.
+
+### SECONDARY THEORY SOURCE, ONLY IF NEEDED
+
+If the affine-correction route is killed, audit at most one alternative structure arising directly from already validated exact pruning mathematics, such as a non-leaking smaller-preimage/path-merging structural quantity.
+
+Do not revive arbitrary modular histograms, peak metrics, parity-run metrics, broad feature engineering, or machine-learned scores.
+
 ### COMPUTE RULE
 
-Before any experiment:
+This is not a production trajectory session.
 
-1. inspect the provisional CDM2-E1 planning ceiling in `docs/COMPUTE_BUDGET.md`;
-2. run at most a tiny implementation benchmark if needed to set a realistic wall/CPU ceiling;
-3. freeze a finite CDM2 compute envelope in the repository;
-4. state generator, domain, seed/lift rule, step and peak ceilings, symbolic-node ceiling, candidate/control quotas, wall/CPU/memory/storage ceilings, stopping conditions, expected information gain, and post-exhaustion action.
+Before any executable experiment:
 
-No unbounded waiting.
+1. freeze a new finite CDM2-R1 envelope;
+2. state exact generator/domain, symbolic-node ceiling, candidate count if any, step ceiling if any, wall/CPU/memory/storage ceilings, stopping conditions, expected information gain, and post-exhaustion action;
+3. prefer exact symbolic proof or tiny bounded enumeration over trajectory extension;
+4. no budget extension because an object looks interesting.
 
-No budget increase because a candidate merely survives.
+A reasonable default ceiling is no larger than CDM2-E1 and should normally be much smaller. Any substantive trajectory calibration requires its own separately justified precommitment.
 
-### REQUIRED IMPLEMENTATION WORK
+### REQUIRED OUTPUTS
 
-Implement only the minimal exact machinery needed for CDM2-E1.
+Produce:
 
-At minimum support:
+- a durable CDM2-R1 theory/design report;
+- proofs or exact finite checks for every claimed independence/obstruction;
+- minimal implementation/tests only if needed;
+- a frozen compute declaration for any executed experiment;
+- updated metric catalog and failure ledger;
+- updated experiment/compute ledgers if computation occurs;
+- updated roadmap and `START_HERE.md`.
 
-1. **exact parity-prefix debt**
-   - `D(k)=485*f_k-306*k`;
-   - every-prefix positivity predicate;
-   - endpoint and minimum debt diagnostics.
-
-2. **exact parity-word/residue mapping**
-   - reuse or extend the existing affine parity-word machinery;
-   - construct or verify the unique residue modulo `2^K` for a parity word;
-   - test exact realization.
-
-3. **exact redundancy sieves available at bounded K**
-   - low-bit descent logic where implemented and validated;
-   - mod-9 smaller-preimage exclusions where applicable;
-   - exact path-merging logic only when provenance permits it;
-   - do not import an external claim as a local basin certificate.
-
-4. **matched-control selection**
-   - controls must be comparable in start-bit range and prefix length;
-   - where feasible match or stratify by total odd count `f_K`;
-   - distinguish "survived K by construction" from "predicts survival beyond K."
-
-Do not build a broad feature factory.
-
-### PRIMARY EXPERIMENT: CDM2-E1
-
-Run a bounded **theorem-conditioned parity-prefix survivor-enrichment calibration** entirely inside a heavily externally verified convergent domain.
-
-The provisional design from CDM1 is:
-
-- target parity-prefix length `K=24`;
-- recursively visited symbolic nodes: at most `2,000,000`;
-- selected conditioned residue classes: at most `4,096`;
-- matched control classes: at most `4,096`;
-- representatives below `2^60`;
-- one deterministic representative per class under a frozen lift/seed rule;
-- exact shortened-map L1 horizon: at most `512` steps per representative;
-- stop a representative immediately on first descent;
-- peak ceiling: `4096` bits;
-- no L2 promotion;
-- memory planning ceiling: `512 MiB`;
-- storage planning ceiling: `50 MiB`;
-- absolute planned wall and CPU ceilings: `180` seconds each, reducible after benchmarking.
-
-These are provisional. CDM2 must freeze the actual envelope before the run and may only reduce it unless a mathematically justified repository update explains a change before execution.
-
-### CONDITIONED ARM
-
-A length-`K` parity word/residue class is eligible only if:
-
-1. every positive prefix has `D(j)>0`;
-2. no implemented exact low-bit descent rule already eliminates the class;
-3. no implemented exact smaller-preimage/path-merging rule already makes it redundant.
-
-The class is not thereby a divergence candidate. It is only a legal test object for the calibration.
-
-### CONTROL ARM
-
-Construct matched controls that, as far as practical:
-
-- occupy the same starting-value/bit-length regime;
-- share the same prefix length;
-- have exact no-descent through `K` where possible;
-- are matched or stratified on `f_K`, so the experiment tests more than simply selecting higher odd density.
-
-Record any imperfect matching explicitly.
-
-### PRIMARY ENDPOINT
-
-Measure exact additional first-descent survival **after** the conditioning prefix.
-
-Predeclare comparisons at:
-
-- `2K`;
-- `4K`;
-- the frozen L1 horizon.
-
-The core question is:
-
-> AFTER MATCHING ON WHAT THE FILTER GUARANTEES, DOES THE CONDITIONED GENERATOR PREDICT ANY ADDITIONAL PERSISTENCE?
-
-### SECONDARY METRICS
-
-Keep the secondary set small:
-
-- `parity_debt_min`;
-- `parity_debt_end`;
-- exact odd-step density;
-- odd-to-odd valuation load if implemented cleanly;
-- peak/start ratio as an outcome only;
-- trajectory merge depth as an operational quantity.
-
-Known finite record trajectories may be included as reference controls, not as divergence evidence.
-
-### FALSIFICATION AND KILL RULES
-
-Precommit to the following:
-
-1. If conditioned classes show no reproducible enrichment in post-prefix survival versus matched `K`-survivors, mark the parity-prefix construction **FAILED as a ranker/generator** and retain it only as exact hard pruning.
-2. If debt magnitude among legal survivors adds no predictive information, demote it to a binary necessary-condition screen.
-3. If odd-to-odd valuation load adds no information beyond parity debt, demote it.
-4. If the filter merely rediscoveres large peaks, long parity runs, or high odd count without longer post-prefix survival, do not promote it.
-5. If matching is too poor to identify filter value, mark the experiment inconclusive and redesign within a new bounded session rather than expanding compute.
-6. Negative results must be appended to `docs/FAILURE_AND_LESSON_LEDGER.md`.
-
-### ANALYSIS REQUIREMENTS
-
-Report, with exact counts and reproducible data:
-
-- number of symbolic nodes visited;
-- number killed by each exact rule;
-- conditioned/control sample sizes;
-- matching diagnostics;
-- first-descent survival curves or fixed-horizon survival proportions;
-- effect sizes with uncertainty appropriate to the deterministic sampling design;
-- whether apparent enrichment survives stratification by `f_K`;
-- incremental information of each proposed metric;
-- exact compute cost per candidate/class and per useful finding;
-- whether the proposed filter should be kept, demoted, killed, or redesigned.
-
-Do not use model-selected thresholds after viewing outcomes without labeling them exploratory.
-
-### CLAIM STATUS
-
-Every material conclusion must use one of:
-
-`PROVED`, `FINITE-VERIFIED`, `COMPUTATIONAL-EVIDENCE`, `HEURISTIC`, `CONJECTURAL`, `FAILED`, `SUPERSEDED`, `UNKNOWN`.
-
-Do not strengthen a finite calibration result into divergence evidence.
-
-### REQUIRED REPOSITORY OUTPUTS
-
-At minimum:
-
-- a durable CDM2 experiment/design report;
-- exact implementation/tests for any new filters/metrics;
-- frozen CDM2 compute envelope;
-- experiment and compute-ledger entries;
-- updated `docs/METRIC_CATALOG.md`;
-- updated `docs/FAILURE_AND_LESSON_LEDGER.md` for material negative results;
-- updated `ROADMAP.md`;
-- updated `START_HERE.md` with the next authoritative bounded task.
-
-Do not create paper packaging, substantial Lean work, or large committed datasets.
-
-### CDM2 END-OF-SESSION DECISION
+### END-OF-SESSION DECISION
 
 Finish by answering:
 
-**WHICH, IF ANY, CHEAP FILTERS OR METRICS HAVE DEMONSTRATED REPRODUCIBLE INFORMATION VALUE BEYOND THEIR CONDITIONING EVENT, AND WHAT EXACT BOUNDED GENERATOR SHOULD CDM3 USE?**
+**IS THERE NOW A CHEAP, EXACT, NON-TAUTOLOGICAL FILTER WITH A MATHEMATICALLY MOTIVATED REASON TO PREDICT POST-CONDITIONING PERSISTENCE?**
 
-If no filter demonstrates such value, say so and do not advance a weak generator merely to keep the project moving.
+If yes, specify one exact bounded CDM2-E2 calibration design.
 
-Then write the authoritative kickoff prompt for the next session.
+If no, keep CDM3 blocked and state the next mathematical obstruction/design task.
 
-Do not start CDM3 during CDM2.
+Do not start CDM2-E2 unless the repository explicitly authorizes it after the redesign. Do not start CDM3.
 
 ### PERMANENT PHILOSOPHY
 
