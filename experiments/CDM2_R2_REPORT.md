@@ -23,7 +23,7 @@ but the conditions found fall entirely into categories already excluded from pro
 3. non-effective density statements whose exceptional-set membership is defined by future orbit behavior; or
 4. prefix-only necessary conditions.
 
-No cheap exact predicate on surviving `q) was found that predicts or forces post-`K` persistence without inspecting future parity.
+No cheap exact predicate on surviving `q` was found that predicts or forces post-`K` persistence without inspecting future parity.
 
 A stronger obstruction is proved below: every **finite** inverse-tree sieve reduces eventually to odd-modulus (power-of-3) residue pruning on `q`. If even one unbounded survivor residue remains, the Chinese remainder theorem combines it with every prescribed residue modulo `2^s`. Since the next length-`s` parity block is equivalent to one residue of `q mod 2^s`, every finite future parity block still occurs among the surviving lifts.
 
@@ -385,3 +385,24 @@ No compute-budget or experiment-result update is required.
 **Next mathematical bottleneck:** an effective nonlocal/recursive invariant on the post-pruning q survivor set that couples 2-adic future freedom to 3-adic inverse constraints without inspecting future parity.
 
 No progress toward a Collatz counterexample is claimed.
+
+
+## 13. Post-report strategic direction — human course correction
+
+**Status:** PROJECT-STRATEGY UPDATE; the theorems and route obstructions above are unchanged.
+
+After the mathematical audit was completed, the project owner restored the original counterexample-at-scale emphasis.
+
+The R2 conclusion is therefore interpreted narrowly:
+
+- finite-depth prefix/inverse mathematics did not yield a qualifying q ranker;
+- this remains a valid theorem-level route obstruction;
+- it does **not** imply that explicit high-magnitude search should remain blocked indefinitely while ever more algebraic rankers are sought.
+
+The next session is redirected to **CDM2-R3 — High-Magnitude Computational-Reach and Search-Machinery Audit**.
+
+For discovery design, R3 is to proceed under the explicit HEURISTIC / CONJECTURAL working hypothesis that a magnitude regime far beyond present verification may contain many unbounded orbits, sufficiently numerous to be discoverable by a capable sparse search machine.
+
+The next task is therefore to assess or build methods that change the reachable magnitude regime by orders of magnitude: exact sparse sampling, efficient rejection, vectorized/GPU/distributed execution, compressed transitions, hybrid fixed-width/bigint pipelines, and related machinery.
+
+The proof standard is unchanged. No finite computation or search hypothesis is certification.
