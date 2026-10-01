@@ -172,3 +172,51 @@ No new metric is promoted. **CDM2-E2 is not authorized. CDM3 remains
 blocked.** The next theory target is a possible nontrivial constraint on
 the lift quotient `q=(n-r)/2^K`; absent such a theorem, prefix-only
 statistics cannot bridge to post-conditioning persistence.
+
+
+## CDM2-R2 theory dispositions — 2026-10-01
+
+Authoritative report: `experiments/CDM2_R2_REPORT.md`.
+
+### `least_divergent_prefix_q_cap`
+
+For a fixed length-`K` parity prefix and lift `n_q=r+2^Kq`,
+
+`T^j(n_q)>n_q`
+
+is automatic for all positive lifts when `3^{f_j}>2^j`. When
+`3^{f_j}<2^j`, writing `h_j=2^j-3^{f_j}`, it is exactly
+
+`q <= floor((c_j-1-h_j r)/(h_j2^K))`.
+
+**CDM2-R2 disposition: KEEP as an exact algebraic form of K-survival; FAILED as a post-conditioning ranker.**
+
+The simultaneous system supplies only an initial interval of admissible q values, and only when the observed prefix contains a multiplier-deficient step. It is exactly the already-observed no-descent predicate. After exact K-survival is conditioned on, its magnitude/clearance has no independent theorem-linked role.
+
+In the current CDM2-E1 `K<=24` theorem-conditioned family, the repository's bounded debt/K-survival equivalence places every admissible prefix step in the `3^{f_j}>2^j` case, so forward minimality supplies no q degrees of freedom there.
+
+### `inverse_word_q_kill`
+
+For a fixed realizable inverse word of depth `d` with `a` odd forward steps, attached to an observed state `T^j(n_q)`, exact integrality of the alternate predecessor is either all/none in q or one residue class modulo `3^{a-f_j}` when `a>f_j`. The smaller-than-start test is then a linear inequality in q.
+
+**CDM2-R2 disposition: KEEP as exact binary pruning only; DO NOT score survivors by residue, inverse depth, count, or clearance.**
+
+The mod-9 preimage rule is a concrete instance: for every fixed prefix it excludes exactly four q classes modulo 9 and leaves five.
+
+### finite inverse-sieve / future-parity orthogonality
+
+**Status: PROVED.**
+
+For any finite family of fixed inverse-word kills, there is a threshold beyond which the surviving q-set is periodic modulo some `3^A`. If at least one unbounded survivor residue remains, then for every `s` and every desired next length-`s` parity block, CRT combines the surviving `q mod 3^A` residue with the unique required `q mod 2^s` residue.
+
+Therefore finite inverse-tree pruning cannot favor or forbid a finite future parity block unless it kills all sufficiently large lifts.
+
+### Terras/Everett infinite-stopping density
+
+For each fixed prefix progression `r mod 2^K`, the q values with infinite stopping time have relative natural density zero, by the global density-one finite-stopping theorem.
+
+**Disposition: THEORETICALLY RELEVANT BUT NOT A METRIC.** Membership is defined by future orbit behavior and cannot be evaluated as a pre-future q predicate.
+
+### CDM2-R2 end decision
+
+**OUTCOME C.** No new metric is promoted. `q` is literally restricted by exact K-survival and exact smaller-preimage kills, but no additional cheap post-conditioning q ranker survives. **CDM2-E2 is not authorized. CDM3 remains blocked.**
