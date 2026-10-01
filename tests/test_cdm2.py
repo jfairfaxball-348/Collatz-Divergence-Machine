@@ -55,3 +55,9 @@ def test_deterministic_lift():
 
 def test_completed_valuation_load():
     assert completed_odd_to_odd_valuation_load("1011001") == (6, 3)
+
+
+def test_debt_multiplier_threshold_equivalence_through_k24():
+    for j in range(1, 25):
+        for f in range(j + 1):
+            assert (485 * f - 306 * j > 0) == (3 ** f > 2 ** j)
