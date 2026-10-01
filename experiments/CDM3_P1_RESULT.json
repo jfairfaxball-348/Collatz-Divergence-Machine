@@ -1,0 +1,137 @@
+{
+  "campaign_id": "CDM3-P1-20261001",
+  "claim_status": "COMPUTATIONAL-EVIDENCE",
+  "counterexample_claimed": false,
+  "classification": "P1-B — MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND",
+  "pilot_baseline_repo_commit": "0d5aeeca93e19de967949ee3ab7ebc2f77c60d3d",
+  "checkpoint_recovery_runner_commit": "2642e36c4b809a4a06fde2d092978be8ffea77e7",
+  "engine_version": "CDM3-P1-v1",
+  "generator_version": "CDM3-P1-gen-v1",
+  "source_bundle_sha256": "e0e3d93821659aadbef80d5828afd2ea04285b608cafc70189f88f92cc56491f",
+  "engine_executable_sha256": "dd44ddc4d3006a48717117768ebbc60ae7ae0b50e64d119b87cbc0dff0ac9031",
+  "group_runner_source_sha256": "3eb561493dc4edab8bef2e3a5db69a02feef687ed93c3a5717f7b3dd402df790",
+  "group_runner_executable_sha256": "1143cb45c715ee92b4140d35adc149213ef8a6ab9aafc8d5f84f599317d671ca",
+  "python_replay_sha256": "f17830c57a5b7143c84742c26f65b1564253b5dd75881c44545c3814ea833136",
+  "build": {
+    "compiler": "gcc (Debian 14.2.0-19) 14.2.0",
+    "flags": "-O3 -std=c11 -Wall -Wextra -Werror -pthread",
+    "gmp": "6.3.0",
+    "architecture": "x86_64",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor"
+  },
+  "frozen_envelope": {
+    "bits": [256, 512, 1024],
+    "generated_per_arm_per_band": 5000000,
+    "generated_total": 30000000,
+    "threads": 8,
+    "u_step_freeze": 32768,
+    "peak_excess_freeze_bits": 512,
+    "fast_path_bits": 4096,
+    "wall_seconds_ceiling": 900,
+    "cpu_seconds_ceiling": 7200,
+    "memory_mib_ceiling": 1024,
+    "result_storage_mib_ceiling": 200
+  },
+  "execution_accounting": {
+    "note": "Authoritative population completed through deterministic checkpoint/resume because the execution harness imposed shorter per-call limits than the repository wall ceiling. Candidate-affecting engine source and generator were unchanged.",
+    "active_execution_wall_seconds_upper_bound": 407.6,
+    "active_execution_wall_minutes_upper_bound": 6.793,
+    "completed_work_unit_cpu_seconds_exact": 1035.486974677,
+    "completed_work_unit_cpu_minutes_exact": 17.258116,
+    "campaign_cpu_seconds_conservative_upper_bound": 3260.8,
+    "campaign_cpu_minutes_conservative_upper_bound": 54.347
+  },
+  "groups": [
+    {
+      "bits": 256, "arm": "L", "generated": 5000000, "pretrajectory_kills": 2220858,
+      "trajectories_executed": 2779142, "basin_hits": 2779142, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 1245470968, "shortened_step_equiv_total": 2490915181,
+      "mean_u_steps": 448.14945332,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 28455, "sample_pruned": 23092, "p50": 443, "p90": 542, "p99": 633, "p99_9": 706},
+      "max_u_steps": 914, "max_shortened_steps": 1635, "max_peak_bits": 277, "max_peak_excess": 21,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "52ab06c4e0c4391c",
+      "completed_worker_cpu_seconds": 43.882094728, "u_steps_per_completed_worker_cpu_second": 28382213.195
+    },
+    {
+      "bits": 256, "arm": "U", "generated": 5000000, "pretrajectory_kills": 0,
+      "trajectories_executed": 5000000, "basin_hits": 5000000, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 2240429745, "shortened_step_equiv_total": 4480935523,
+      "mean_u_steps": 448.085949,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 51547, "sample_pruned": 0, "p50": 444, "p90": 542, "p99": 635, "p99_9": 714},
+      "max_u_steps": 938, "max_shortened_steps": 1672, "max_peak_bits": 282, "max_peak_excess": 26,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "f779e027c3505f87",
+      "completed_worker_cpu_seconds": 117.176156827, "u_steps_per_completed_worker_cpu_second": 19120184.564
+    },
+    {
+      "bits": 512, "arm": "L", "generated": 5000000, "pretrajectory_kills": 2223547,
+      "trajectories_executed": 2776453, "basin_hits": 2776453, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 2956842322, "shortened_step_equiv_total": 5913643774,
+      "mean_u_steps": 1064.971141957,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 28517, "sample_pruned": 23029, "p50": 1060, "p90": 1209, "p99": 1341, "p99_9": 1445},
+      "max_u_steps": 1733, "max_shortened_steps": 3189, "max_peak_bits": 532, "max_peak_excess": 20,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "fbd8edf760827d62",
+      "completed_worker_cpu_seconds": 93.077804069, "u_steps_per_completed_worker_cpu_second": 31767426.741
+    },
+    {
+      "bits": 512, "arm": "U", "generated": 5000000, "pretrajectory_kills": 0,
+      "trajectories_executed": 5000000, "basin_hits": 5000000, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 5324619167, "shortened_step_equiv_total": 10649256937,
+      "mean_u_steps": 1064.9238334,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 51546, "sample_pruned": 0, "p50": 1060, "p90": 1207, "p99": 1344, "p99_9": 1444},
+      "max_u_steps": 1749, "max_shortened_steps": 3214, "max_peak_bits": 537, "max_peak_excess": 25,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "c255feb75ad4e0c2",
+      "completed_worker_cpu_seconds": 159.03485202, "u_steps_per_completed_worker_cpu_second": 33480832.028
+    },
+    {
+      "bits": 1024, "arm": "L", "generated": 5000000, "pretrajectory_kills": 2220815,
+      "trajectories_executed": 2779185, "basin_hits": 2779185, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 6388009255, "shortened_step_equiv_total": 12776060250,
+      "mean_u_steps": 2298.518902124,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 28532, "sample_pruned": 23014, "p50": 2294, "p90": 2512, "p99": 2702, "p99_9": 2846},
+      "max_u_steps": 3234, "max_shortened_steps": 6082, "max_peak_bits": 1049, "max_peak_excess": 25,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "e27e24f3d92f4228",
+      "completed_worker_cpu_seconds": 235.61358935, "u_steps_per_completed_worker_cpu_second": 27112227.578
+    },
+    {
+      "bits": 1024, "arm": "U", "generated": 5000000, "pretrajectory_kills": 0,
+      "trajectories_executed": 5000000, "basin_hits": 5000000, "cache_hits": 0,
+      "frozen_candidates": 0, "repeats": 0, "bigint_escapes": 0, "invariant_failures": 0,
+      "u_steps_total": 11492842467, "shortened_step_equiv_total": 22985659253,
+      "mean_u_steps": 2298.5684934,
+      "sample_quantiles_u_steps": {"sample_mod": 97, "sample_n": 51547, "sample_pruned": 0, "p50": 2293, "p90": 2511, "p99": 2695, "p99_9": 2848},
+      "max_u_steps": 3237, "max_shortened_steps": 6086, "max_peak_bits": 1048, "max_peak_excess": 24,
+      "complete_work_units": 50, "total_work_units": 50, "digest": "646d8b3b75918bd5",
+      "completed_worker_cpu_seconds": 386.702477683, "u_steps_per_completed_worker_cpu_second": 29720115.93
+    }
+  ],
+  "summary": {
+    "generated": 30000000,
+    "pretrajectory_kills": 6665220,
+    "trajectories_executed": 23334780,
+    "basin_hits": 23334780,
+    "frozen_candidates": 0,
+    "u_steps_total": 29648213924,
+    "shortened_step_equiv_total": 59296470918,
+    "cache_hits": 0,
+    "repeats": 0,
+    "bigint_escapes": 0,
+    "invariant_failures": 0
+  },
+  "checkpoint_files": {
+    "cdm3p1_1024_L.chk": {"sha256": "b3965ae167379440017f85a7571fabe605ff98ee72e7bf95c4bfaebfdefa2c1f", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 235.61358935},
+    "cdm3p1_1024_U.chk": {"sha256": "c65419e16bd5f7a113180436b5623f95fd15b8789d67f80f305dec27ddbc737a", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 386.702477683},
+    "cdm3p1_256_L.chk": {"sha256": "db57edec0ccb9042a08df1fa8cae2ce07916193fd0c39123d4ee59887c6f603b", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 43.882094728},
+    "cdm3p1_256_U.chk": {"sha256": "c1b5211b7540280dc6416514d89f7e890e7c1b6d2f6cac845a91e367493e0080", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 117.176156827},
+    "cdm3p1_512_L.chk": {"sha256": "467e59c9fee62debff591a52756cad2ec3af55cdfdcfc1ae1eabd5de54f25683", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 93.077804069},
+    "cdm3p1_512_U.chk": {"sha256": "5628e249fdb2abfe53cda27f4209082eb5e68b5badd917fece832a256d54c5a4", "bytes": 8872, "work_units": 50, "complete_work_units": 50, "completed_worker_cpu_seconds": 159.03485202}
+  },
+  "exceptional_candidate": null,
+  "candidate_entered_structural_analysis": false,
+  "larger_scale_search_authorized": false,
+  "next_step": "Freeze and run a bounded production-hot-path benchmark isolating the R3-to-P1 throughput regression before any larger campaign. Compare current production build, -march=native, and an overflow-safe mul3add1 path that removes the full 4096-bit state copy on every U-step, with identical starts/digests and 1/2/4/8-thread scaling. GPU work remains deferred."
+}
