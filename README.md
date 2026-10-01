@@ -35,8 +35,10 @@ The intended feedback loop is:
 
 `explicit anomaly -> structural feature -> symbolic family -> exact constraints -> proof or obstruction -> improved search`
 
-## CDM0 status
+## Current status
 
-The repository begins at **CDM0 — Scaffold and Calibration**. Its calibration is deliberately tiny and deterministic. It exercises the software path without attempting a meaningful counterexample search.
+**CDM1 — State-of-the-Art Divergence-Search and Computational-Reach Audit is complete. CDM2 — Filter and Metric Design is next.**
 
-Read [`AGENTS.md`](AGENTS.md) and [`START_HERE.md`](START_HERE.md) before doing research.
+CDM1 performed no high-range counterexample search. It audited existing verification, exact acceleration/sieving methods, divergence-relevant necessary conditions, redundant search space, compute economics, metric failures, and a bounded first CDM2 calibration.
+
+Read `AGENTS.md`, `START_HERE.md`, and `docs/CDM1_STATE_OF_THE_ART_AUDIT.md` before doing research.
