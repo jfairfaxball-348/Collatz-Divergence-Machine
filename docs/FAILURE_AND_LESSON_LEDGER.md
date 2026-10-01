@@ -228,3 +228,19 @@ Terras/Everett imply that infinite-stopping starts have natural density zero. Co
 This is mathematically strong but does not identify the q values: membership is defined by infinite future stopping behavior. It cannot be computed before the future parity sequence is examined.
 
 **Action:** preserve the density theorem as background necessity. Do not convert an unspecified density-zero exceptional set into a candidate score or claim of effective pruning.
+
+
+## F0021 — The categorical throughput-first prohibition was too strong
+
+**Status:** SUPERSEDED as a project-priority rule; the underlying warning against blind scaling remains valid.
+
+CDM1 correctly observed that simply multiplying throughput does not turn finite survival into proof and can waste resources if it only reproduces already-covered contiguous ranges. However, subsequent CDM2 theory work also showed that the current bounded algebraic filters do not provide a qualifying post-conditioning ranker.
+
+The project has therefore restored its original counterexample-at-scale working hypothesis: a far-higher magnitude regime may contain enough unbounded orbits that materially extending computational reach is itself a legitimate discovery objective.
+
+**Action:** distinguish two cases.
+
+- **Blind scaling remains FAILED:** more GPUs, more candidates, or longer trajectories with no target magnitude regime, no new algorithmic reach, no finite resource design, and no exceptional-candidate protocol.
+- **Reach-first engineering is IN SCOPE:** algorithms, representations, sieves, batching, CPU/GPU/distributed machinery, or sparse sampling methods whose purpose is to move the searchable magnitude regime by orders of magnitude and test the explicit high-scale counterexample hypothesis.
+
+This strategic correction does not alter the proof boundary: finite survival remains non-proof, and a discovered candidate still requires independent replay and rigorous certification.
