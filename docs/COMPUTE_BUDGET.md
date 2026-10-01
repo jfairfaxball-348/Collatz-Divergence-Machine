@@ -72,3 +72,32 @@ CDM1 may use web/literature research without consuming this local-compute envelo
 **Expected information gain:** verify that imported algorithm descriptions and map conventions are understood correctly, while preserving essentially all compute for later experiments whose filters have first been justified.
 
 **Post-exhaustion action:** no extension in CDM1. Any unresolved computational question becomes a CDM2 design item.
+
+## CDM1 outcome and frontier revision
+
+**Status:** FINITE-VERIFIED as a project-session record.
+
+No local trajectory experiment was executed in CDM1 after the envelope was frozen. Local trajectory-compute consumption was therefore zero candidates and zero exact Collatz steps.
+
+CDM1 does **not** justify increasing a production search budget. Instead it changes where compute should be spent:
+
+- **REPRESENTATION CEILING:** not the current bottleneck. Python arbitrary-precision arithmetic is adequate for reference work, but representability is not searchability.
+- **TRAJECTORY CEILING:** UNKNOWN for production-scale CDM work. CDM0 throughput is not a valid extrapolation to large starts or long unresolved prefixes. A tiny benchmark must precede the CDM2 calibration envelope.
+- **STRUCTURAL-ANALYSIS CEILING:** intentionally low. CDM2 should keep survivor counts small enough for exact parity/residue/affine analysis; millions of unexamined survivors would violate the information-per-compute philosophy.
+- **CERTIFICATION CEILING:** unchanged. No amount of finite iteration earns L4 without an exact indefinitely extensible mechanism.
+
+### Provisional, not-yet-frozen CDM2-E1 planning ceiling
+
+CDM1 recommends that CDM2 consider, then explicitly freeze before execution:
+
+- parity-prefix length `K=24`;
+- at most 2,000,000 recursively visited symbolic nodes;
+- at most 4,096 conditioned residue classes and 4,096 matched controls;
+- representatives below `2^60`;
+- at most 512 exact shortened-map steps per representative, with early stop on first descent;
+- peak ceiling 4096 bits;
+- zero L2 promotions;
+- memory <=512 MiB and storage <=50 MiB;
+- an absolute planned wall/CPU ceiling of 180 seconds each, reducible after a tiny benchmark.
+
+These are planning bounds only. CDM2 must freeze its own envelope before running the experiment.
