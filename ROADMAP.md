@@ -14,9 +14,9 @@ The durable audit is `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`.
 
 CDM1 established the external verification/provenance frontier, divergence-relevant necessary conditions, compute economics, preserved route kills, and the bounded CDM2-E1 calibration design. No high-range counterexample search was performed.
 
-## CDM2 — FILTER AND METRIC DESIGN
+## CDM2 — FILTER, METRIC, AND COMPUTATIONAL-REACH DESIGN
 
-**Status: IN PROGRESS — CDM2-R2 COMPLETE; OUTCOME C; NO E2 AUTHORIZED; NONLOCAL q-INVARIANT THEORY IS NEXT.**
+**Status: IN PROGRESS — CDM2-R2 COMPLETE; STRATEGIC COURSE CORRECTION INSTALLED; HIGH-MAGNITUDE COMPUTATIONAL-REACH AUDIT NEXT.**
 
 Authoritative E1 report: `experiments/CDM2_E1_REPORT.md`.  
 Aggregate result: `experiments/CDM2_E1_RESULT.json`.
@@ -59,23 +59,41 @@ Terras/Everett imply that infinite-stopping quotients have relative density zero
 
 **Decision:** no qualifying q ranker exists. **CDM2-E2 is not authorized. CDM3 remains blocked.**
 
-### CDM2-R3 — POST-PRUNING SURVIVOR-COMPLEMENT INVARIANT AUDIT
+### CDM2-R3 — HIGH-MAGNITUDE COMPUTATIONAL-REACH AND SEARCH-MACHINERY AUDIT
 
-**Status: NEXT — THEORY ONLY.**
+**Status: NEXT — PRIMARY COURSE-CORRECTION TASK.**
 
-Seek an effective nonlocal or recursively closed invariant on the q-set surviving exact K-survival and finite inverse-tree kills, stable under the affine lift transport
+CDM2-R2 remains a valid obstruction to finite-depth q ranking, but it no longer determines the next project direction.
 
-`q -> 3^{f_K}q+b_K`,
+The project now returns to its central working search hypothesis: far beyond the presently checked range, there may be a magnitude regime containing many unbounded orbits, sparse on ordinary scales but common enough for a sufficiently capable machine to encounter.
 
-that couples 2-adic future-block freedom to 3-adic/inverse constraints without reading the future parity block.
+CDM2-R3 must therefore assess how to reach such a regime rather than remaining confined to bounded algebraic refinements.
 
-Do not respond with larger finite modular feature sets: CDM2-R2 proves that any finite power-of-3 inverse sieve either kills all sufficiently large lifts or still leaves every finite future parity block possible.
+Required work:
 
-## CDM3 — CONTROLLED EXPLICIT SEARCH
+- audit the fastest current exact Collatz verification/search algorithms and their real asymptotic bottlenecks;
+- distinguish contiguous verification from sparse/high-magnitude counterexample hunting;
+- evaluate residue sieves, first-descent certificates, path merging, batched parity execution, accelerated odd maps, vectorisation, CPU/GPU kernels, distributed work units, checkpointing, arbitrary-precision fallback, and compressed/symbolic representations;
+- identify methods that scale with **bit length / selected candidates** rather than requiring verification of every smaller integer;
+- estimate reachable start magnitudes under realistic single-machine, workstation/GPU, and distributed envelopes;
+- design at least one genuinely new reach-first search architecture aimed many orders of magnitude above the current verified frontier;
+- specify how extreme survivors are frozen, replayed independently, and handed immediately to structural/certification analysis;
+- preserve exactness for all candidate-affecting decisions;
+- reject methods that merely reproduce known contiguous coverage without changing the magnitude regime.
 
-**Status: BLOCKED pending CDM2.**
+Small benchmarks are permitted after a finite envelope is frozen. A large production campaign is not automatically authorized in R3; the output should be a technically credible architecture and bounded pilot design.
 
-Run a bounded multi-stage explicit search only if a CDM2 filter/generator demonstrates reproducible information gain beyond its conditioning event.
+The earlier nonlocal q-invariant question remains open and may be revisited, but it is no longer the sole gate to computational progress.
+
+## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
+
+**Status: BLOCKED pending CDM2-R3 computational-reach design.**
+
+CDM3 no longer requires a theorem-linked prefix ranker as its only possible authorization path.
+
+A bounded CDM3 campaign may instead be authorized if CDM2-R3 demonstrates a search architecture that materially changes reachable magnitude, has credible compute economics under the counterexample-at-scale working hypothesis, preserves exact candidate decisions, and has an exceptional-candidate replay/certification path.
+
+Finite survival remains non-proof. The purpose of CDM3 is discovery in a qualitatively new magnitude regime, not certification by brute force.
 
 ## CDM4 — STRUCTURAL EXTRACTION
 
@@ -103,6 +121,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Run **CDM2-R3 — Post-Pruning Survivor-Complement Invariant Audit** from `START_HERE.md`.
+Run **CDM2-R3 — High-Magnitude Computational-Reach and Search-Machinery Audit** from `START_HERE.md`.
 
-Do not begin CDM2-E2 or CDM3. Do not respond to the R2 obstruction by increasing K, inverse depth, trajectory length, candidate count, modular feature count, or hardware scale without a new nonlocal mathematical implication theorem.
+Do not launch an unbounded production search. Do actively investigate algorithmic and hardware routes that could move sparse counterexample hunting many orders of magnitude above the verified frontier. The R2 obstruction forbids pretending finite modular q features predict future parity; it does not forbid reach-first search engineering.
