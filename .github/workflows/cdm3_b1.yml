@@ -1,14 +1,6 @@
 name: CDM3-B1 hot-path benchmark
 
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - "benchmarks/cdm3_b1_hotpath_bench.c"
-      - "tools/cdm3_b1_run.py"
-      - "tests/cdm3_b1_opt_escape.c"
-      - "production/**"
-      - ".github/workflows/cdm3_b1.yml"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +8,6 @@ permissions:
 
 jobs:
   b1:
-    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'cdm3-b1')
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
