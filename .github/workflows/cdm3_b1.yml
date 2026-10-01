@@ -1,0 +1,45 @@
+name: CDM3-B1 hot-path benchmark
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  b1:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.head_ref, 'cdm3-b1')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Host provenance
+        run: |
+          set -euxo pipefail
+          uname -a
+          lscpu
+          gcc --version
+          pkg-config --modversion gmp || true
+      - name: Build B1 binaries
+        run: |
+          set -euxo pipefail
+          gcc -O3 -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_base
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_native
+          gcc -O1 -g -std=c11 -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -fno-omit-frame-pointer benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_san
+          gcc -O2 -std=c11 -Wall -Wextra -Werror -pthread tests/cdm3_p1_forced_escape.c -lgmp -o cdm3_p1_escape_test
+          sha256sum benchmarks/cdm3_b1_hotpath_bench.c production/cdm3_p1_engine.c production/cdm3_p1_part0.inc production/cdm3_p1_part1.inc production/cdm3_p1_part2.inc production/cdm3_p1_part3.inc tools/cdm3_b1_run.py cdm3_b1_base cdm3_b1_native cdm3_b1_san cdm3_p1_escape_test
+      - name: Correctness gates
+        run: |
+          set -euxo pipefail
+          ./cdm3_p1_escape_test
+          ./cdm3_b1_base --selftest
+          ./cdm3_b1_native --selftest
+          ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 ./cdm3_b1_san --selftest
+          python3 tools/cdm3_p1_replay.py --selftest --engine ./cdm3_b1_native --steps 256
+      - name: Frozen B1 benchmark
+        run: |
+          set -euxo pipefail
+          python3 tools/cdm3_b1_run.py --base ./cdm3_b1_base --native ./cdm3_b1_native --output experiments/CDM3_B1_RESULT.json
+          cat experiments/CDM3_B1_RESULT.json
