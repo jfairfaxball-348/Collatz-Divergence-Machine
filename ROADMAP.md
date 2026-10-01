@@ -88,7 +88,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: UNBLOCKED FOR CDM3-P1 IMPLEMENTATION/PREFLIGHT; PILOT EXECUTION CONDITIONAL; PRODUCTION SCALING BLOCKED.**
+**Status: CDM3-P1 COMPLETE — P1-B MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND; LARGER SCIENTIFIC SCALING BLOCKED.**
 
 CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
@@ -105,9 +105,9 @@ Before any pilot trajectory campaign, the production driver must pass the prefli
 
 A pilot survivor remains finite evidence only. Any exceptional object is frozen, independently replayed, then transferred to structural/certification mathematics.
 
-Production scaling beyond CDM3-P1 requires a post-pilot audit and is not authorized merely because the pilot returns no counterexample.
+CDM3-P1 completed the full frozen 30,000,000-start population after all preflight gates passed. All 23,334,780 executed trajectories reached the Tier-2 basin; no exceptional candidate froze and no counterexample was found or claimed. The survivor-cost tail remained manageable, but production hot-path throughput was materially below the R3 benchmark economics. CDM3-P1 therefore closed P1-B. Production scaling beyond CDM3-P1 remains unauthorized pending CDM3-B1.
 
-## CDM4 — STRUCTURAL EXTRACTION
+### CDM3-P1 closeout\n\nAuthoritative report: `experiments/CDM3_P1_REPORT.md`.  \nMachine-readable result: `experiments/CDM3_P1_RESULT.json`.\n\n**COMPUTATIONAL-EVIDENCE:** 30,000,000 starts were generated; 6,665,220 Arm-L starts were exactly pruned; 23,334,780 trajectories were executed and all reached `n<2^71`. Maximum U-step counts were 938, 1749 and 3237 at 256, 512 and 1024 bits. No exceptional freeze, repeat, bigint escape or invariant failure occurred.\n\n**Engineering decision:** survivor tails remained manageable, but production per-worker U-step throughput was only about 23%, 42% and 47% of the corresponding R3 one-core rates on Arm U. This is a material scale-up bottleneck and requires CDM3-B1 before any larger scientific campaign.\n\n## CDM4 — STRUCTURAL EXTRACTION
 
 Take informative growth anomalies and search for exact parity/residue/affine structures explaining them.
 
