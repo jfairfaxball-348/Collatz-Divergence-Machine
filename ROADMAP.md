@@ -16,7 +16,7 @@ CDM1 established the external verification/provenance frontier, divergence-relev
 
 ## CDM2 — FILTER AND METRIC DESIGN
 
-**Status: IN PROGRESS — CDM2-R1 COMPLETE; NO E2 AUTHORIZED; LIFT-QUOTIENT THEORY AUDIT NEXT.**
+**Status: IN PROGRESS — CDM2-R2 COMPLETE; OUTCOME C; NO E2 AUTHORIZED; NONLOCAL q-INVARIANT THEORY IS NEXT.**
 
 Authoritative E1 report: `experiments/CDM2_E1_REPORT.md`.  
 Aggregate result: `experiments/CDM2_E1_RESULT.json`.
@@ -45,15 +45,31 @@ A secondary audit showed that quantitative smaller-preimage/path-merging "cleara
 
 ### CDM2-R2 — LIFT-QUOTIENT CONSTRAINT THEOREM AUDIT
 
-**Status: NEXT.**
+**Status: COMPLETE — 2026-10-01. OUTCOME C — q REMAINS EFFECTIVELY FREE AFTER EXISTING EXACT KILLS.**
 
-Audit whether least-divergent minimality, exact inverse-tree exclusions, or another already proved necessary condition imposes any nontrivial congruence or structural restriction on the lift quotient
+Authoritative report: `experiments/CDM2_R2_REPORT.md`.
 
-`q=(n-r)/2^K`
+Conditional least-divergent minimality was derived exactly. For every observed prefix step `j<=K`, the condition `T^j(N)>N` gives either no q restriction when `3^{f_j}>2^j`, or a finite upper interval `q<=Q_j` when `3^{f_j}<2^j`. This is exactly the already-observed no-descent/K-survival condition, not a new post-conditioning signal.
 
-for a surviving prefix residue `r mod 2^K`, equivalently restricting the next parity block **without computing that future block**.
+A fixed realizable inverse word gives an exact power-of-3 congruence on q, possibly intersected with a linear interval/half-line. The mod-9 smaller-preimage sieve therefore excludes exactly four classes of `q mod 9` for every fixed prefix, but this is an existing binary kill.
 
-This is a theorem/obstruction task, not a trajectory campaign. Do not turn it into broad modular feature engineering. If no such restriction can be proved, preserve the obstruction and keep CDM3 blocked.
+The decisive obstruction is finite inverse-sieve/future-parity orthogonality: beyond a finite threshold, any finite family of such inverse kills is periodic modulo a power of 3. If even one unbounded survivor residue remains, CRT combines it with every residue modulo `2^s`; because each next length-`s` parity word corresponds to one `q mod 2^s`, every finite future parity block remains realizable.
+
+Terras/Everett imply that infinite-stopping quotients have relative density zero inside every fixed prefix progression, but membership in that exceptional set is defined by future orbit behavior and is not a pre-future computable q predicate.
+
+**Decision:** no qualifying q ranker exists. **CDM2-E2 is not authorized. CDM3 remains blocked.**
+
+### CDM2-R3 — POST-PRUNING SURVIVOR-COMPLEMENT INVARIANT AUDIT
+
+**Status: NEXT — THEORY ONLY.**
+
+Seek an effective nonlocal or recursively closed invariant on the q-set surviving exact K-survival and finite inverse-tree kills, stable under the affine lift transport
+
+`q -> 3^{f_K}q+b_K`,
+
+that couples 2-adic future-block freedom to 3-adic/inverse constraints without reading the future parity block.
+
+Do not respond with larger finite modular feature sets: CDM2-R2 proves that any finite power-of-3 inverse sieve either kills all sufficiently large lifts or still leaves every finite future parity block possible.
 
 ## CDM3 — CONTROLLED EXPLICIT SEARCH
 
@@ -87,6 +103,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Run **CDM2-R2 — Lift-Quotient Constraint Theorem Audit** from `START_HERE.md`.
+Run **CDM2-R3 — Post-Pruning Survivor-Complement Invariant Audit** from `START_HERE.md`.
 
-Do not begin CDM2-E2 or CDM3. Do not respond to the R1 obstruction by increasing K, trajectory length, candidate count, modular feature count, or hardware scale without a new mathematical implication theorem.
+Do not begin CDM2-E2 or CDM3. Do not respond to the R2 obstruction by increasing K, inverse depth, trajectory length, candidate count, modular feature count, or hardware scale without a new nonlocal mathematical implication theorem.
