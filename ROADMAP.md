@@ -8,17 +8,35 @@ Governance, exact trajectory engine, ledgers, candidate model, cache, metric reg
 
 ## CDM1 — STATE-OF-THE-ART BASELINE
 
-**Status: NEXT.**
+**Status: COMPLETE — 2026-10-01.**
 
-Audit current Collatz computational verification, stopping-time records, divergence-search methodology, verified ranges, accelerated implementations, and mathematical constraints specifically relevant to unbounded orbits. Avoid duplicating existing brute force.
+The durable audit is `docs/CDM1_STATE_OF_THE_ART_AUDIT.md`.
+
+CDM1 established the current externally reported computational frontier and its provenance, audited finite record trajectories, exact acceleration/sieving methods, divergence-relevant necessary conditions, realistic compute ceilings, redundant search space, metric route kills, and the first bounded CDM2 calibration experiment.
+
+No high-range counterexample search was performed. The CDM1 local trajectory-compute envelope was frozen before research and no local trajectory experiment was needed.
+
+Key handover:
+
+- peer-reviewed Tier-2 external discovery coverage through `n<2^71`;
+- strong Tier-3 live external report through `n<2075*2^60` as of 2026-10-01;
+- exact every-prefix parity-debt condition identified for a least divergent candidate above the current frontier;
+- magnitude-only brute force, standalone peak chasing, standalone long parity-run chasing, and total-stopping-time-first search are demoted or killed;
+- external coverage remains provenance-tagged and is not silently promoted to local certification.
 
 ## CDM2 — FILTER AND METRIC DESIGN
 
-Determine which cheap quantities actually identify unusually persistent growth and benchmark their information value.
+**Status: NEXT.**
+
+Run the bounded `CDM2-E1` theorem-conditioned parity-prefix survivor-enrichment calibration described in `docs/CDM1_STATE_OF_THE_ART_AUDIT.md` and the authoritative prompt in `START_HERE.md`.
+
+CDM2 must test whether exact theorem-linked L0 conditions predict additional post-prefix persistence beyond matched controls. It must be capable of falsifying and demoting the proposed generator.
+
+CDM2 is not a high-range counterexample search.
 
 ## CDM3 — CONTROLLED EXPLICIT SEARCH
 
-Run bounded multi-stage searches under frozen compute envelopes.
+Run bounded multi-stage searches only after CDM2 has established which filters, if any, provide reproducible information gain beyond their conditioning event.
 
 ## CDM4 — STRUCTURAL EXTRACTION
 
@@ -46,4 +64,4 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Run **CDM1 — State-of-the-Art Divergence-Search and Computational-Reach Audit** using the kickoff prompt in `START_HERE.md`.
+Run **CDM2 — Filter and Metric Design**, specifically the bounded `CDM2-E1` calibration in `START_HERE.md`. Do not begin CDM3 until CDM2 is frozen and reviewed.
