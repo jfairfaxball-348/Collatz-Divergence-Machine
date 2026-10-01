@@ -184,3 +184,47 @@ parity block.
 
 **Action:** keep binary exact pruning. Do not replace it with clearance
 scores, inverse-word counts, or residue near-miss feature engineering.
+
+
+## F0018 — Least-divergent forward inequalities do not create a post-conditioning q ranker
+
+**Status:** exact q-interval structure **PROVED**; FAILED as an incremental ranker.
+
+For a fixed observed prefix and lift `n_q=r+2^Kq`,
+
+`T^j(n_q)>n_q`
+
+reduces to
+
+`(3^{f_j}-2^j)(r+2^Kq)+c_j>0`.
+
+If `3^{f_j}>2^j`, this holds for every positive lift. If
+`3^{f_j}<2^j`, it is equivalent to a finite upper bound
+
+`q <= floor((c_j-1-(2^j-3^{f_j})r)/((2^j-3^{f_j})2^K))`.
+
+The simultaneous least-divergent prefix condition is therefore either all q or a finite initial q interval. This is exactly the already-observed no-descent/K-survival condition, not new information after K-survival.
+
+**Action:** keep the algebra as an exact descent/pruning theorem. Do not rank surviving q values by the cap, slack, or distance to the cap.
+
+## F0019 — Finite inverse-tree q pruning is 3-adically orthogonal to finite future parity
+
+**Status:** exact inverse-word and CRT obstruction **PROVED**; FAILED as a route to a finite-depth persistence ranker.
+
+A fixed realizable inverse word gives an all/none q condition or one residue class modulo a power of 3, intersected with a linear interval/half-line. Hence any finite family of exact smaller-preimage/path-merging tests becomes, beyond a finite threshold, periodic modulo some `3^A`.
+
+If at least one unbounded survivor residue remains, every desired next length-`s` parity block still occurs: the future block fixes one residue `q mod 2^s`, and CRT combines it with the surviving residue `q mod 3^A`.
+
+Thus a finite inverse sieve either eventually kills every lift or leaves all finite future parity blocks represented.
+
+**Action:** retain finite inverse-tree rules as exact binary pruning. Do not extend them into residue scores, inverse-depth scores, or larger finite modular feature sets in the hope of predicting the future block.
+
+## F0020 — Density-zero exceptional q sets are not pre-future q predicates
+
+**Status:** theorem consequence **PROVED**; FAILED as an operational ranker.
+
+Terras/Everett imply that infinite-stopping starts have natural density zero. Consequently, inside any fixed prefix progression `r mod 2^K`, the corresponding exceptional q values also have relative density zero.
+
+This is mathematically strong but does not identify the q values: membership is defined by infinite future stopping behavior. It cannot be computed before the future parity sequence is examined.
+
+**Action:** preserve the density theorem as background necessity. Do not convert an unspecified density-zero exceptional set into a candidate score or claim of effective pruning.
