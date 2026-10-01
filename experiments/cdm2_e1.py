@@ -36,9 +36,23 @@ QUOTA = 4096
 HORIZON = 512
 PEAK_BITS = 4096
 START_BITS = 60
-WALL_CEILING = 180.0
-CPU_CEILING = 180.0
+WALL_CEILING = 60.0
+CPU_CEILING = 60.0
 TAG = "CDM2-E1-v1"
+
+
+def assert_bounded_debt_multiplier_equivalence(k: int) -> None:
+    """Verify the finite K<=24 debt/multiplier threshold equivalence exactly."""
+    if k > 24:
+        raise ValueError("CDM2-E1 bounded equivalence is only predeclared through K=24")
+    for j in range(1, k + 1):
+        for f in range(j + 1):
+            debt_positive = 485 * f - 306 * j > 0
+            multiplier_above_one = 3 ** f > 2 ** j
+            if debt_positive != multiplier_above_one:
+                raise AssertionError(
+                    f"debt/multiplier threshold mismatch at j={j}, f={f}"
+                )
 
 
 def hval(label: str, word: str) -> bytes:
@@ -396,6 +410,8 @@ def run(
         or node_ceiling > NODE_CEILING
     ):
         raise ValueError("requested run exceeds frozen planning maxima")
+
+    assert_bounded_debt_multiplier_equivalence(k)
 
     wall_start = time.perf_counter()
     cpu_start = time.process_time()
