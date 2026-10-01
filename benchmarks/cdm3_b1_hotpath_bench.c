@@ -20,21 +20,16 @@ typedef struct {
 
 static inline int b1_mul3add1_preserve(bigfix *a){
     /*
-     * Exact pre-mutation overflow test for the fixed 4096-bit container.
-     * 3n+1 fits in 4096 bits iff
-     *   n <= floor((2^4096-2)/3).
-     * For 64 little-endian limbs that threshold is
-     *   [0]=0x555...554, [1..63]=0x555...555.
-     * States with fewer than 64 limbs cannot overflow.
+     * Ordinary states below 64 limbs cannot overflow 4096 bits, so take
+     * the R3 destructive fast path with no recovery copy. Only a state
+     * already occupying all 64 limbs needs preservation before 3n+1.
+     * That rare-path copy guarantees the exact P1 escape semantics:
+     * a failed multiply returns with the original state intact.
      */
-    if(a->n==MAX_LIMBS){
-        for(int i=MAX_LIMBS-1;i>=0;i--){
-            uint64_t lim = (i==0) ? 0x5555555555555554ULL : 0x5555555555555555ULL;
-            if(a->w[i] < lim) break;
-            if(a->w[i] > lim) return 0;
-        }
-    }
-    return mul3add1(a);
+    if(a->n<MAX_LIMBS) return mul3add1(a);
+    bigfix pre=*a;
+    if(!mul3add1(a)){ *a=pre; return 0; }
+    return 1;
 }
 
 static traj_result b1_run_u_r3(const bigfix *start,int start_bits){
