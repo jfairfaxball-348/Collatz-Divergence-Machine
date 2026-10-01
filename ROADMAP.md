@@ -16,7 +16,7 @@ CDM1 established the external verification/provenance frontier, divergence-relev
 
 ## CDM2 — FILTER, METRIC, AND COMPUTATIONAL-REACH DESIGN
 
-**Status: IN PROGRESS — CDM2-R2 COMPLETE; STRATEGIC COURSE CORRECTION INSTALLED; HIGH-MAGNITUDE COMPUTATIONAL-REACH AUDIT NEXT.**
+**Status: COMPLETE — CDM2-R3 R3-A ARCHITECTURE FOUND; BOUNDED CDM3-P1 PILOT PATH UNBLOCKED.**
 
 Authoritative E1 report: `experiments/CDM2_E1_REPORT.md`.  
 Aggregate result: `experiments/CDM2_E1_RESULT.json`.
@@ -27,7 +27,7 @@ CDM2-E1 tested theorem-conditioned length-24 parity-prefix classes against deter
 
 A bounded exact lemma established that for the declared 60-bit / `K<=24` calibration regime, every-prefix debt positivity is equivalent to exact no-descent through K. This explains why the binary debt predicate cannot rank correctly matched K-survivors.
 
-**CDM3 is blocked. No generator is authorized from CDM2-E1.**
+**CDM2-E1 did not authorize CDM3 by itself. CDM2-R3 subsequently established a separate reach-first R3-A authorization path.**
 
 ### CDM2-R1 — NON-TAUTOLOGICAL FILTER REDESIGN AUDIT
 
@@ -61,39 +61,51 @@ Terras/Everett imply that infinite-stopping quotients have relative density zero
 
 ### CDM2-R3 — HIGH-MAGNITUDE COMPUTATIONAL-REACH AND SEARCH-MACHINERY AUDIT
 
-**Status: NEXT — PRIMARY COURSE-CORRECTION TASK.**
+**Status: COMPLETE — 2026-10-01. OUTCOME R3-A — PRODUCTION-CREDIBLE ARCHITECTURE FOUND.**
 
-CDM2-R2 remains a valid obstruction to finite-depth q ranking, but it no longer determines the next project direction.
+Authoritative report: experiments/CDM2_R3_REPORT.md.  
+Architecture: docs/CDM2_R3_ARCHITECTURE.md.  
+Benchmark result: experiments/CDM2_R3_BENCHMARK_RESULT.json.
 
-The project now returns to its central working search hypothesis: far beyond the presently checked range, there may be a magnitude regime containing many unbounded orbits, sparse on ordinary scales but common enough for a sufficiently capable machine to encounter.
+R3 distinguished contiguous convergence verification from sparse high-magnitude hunting. Contiguous engines exploit induction after descent into already-covered lower values; a sparse huge start cannot use first descent as convergence unless the descended state is independently trusted.
 
-CDM2-R3 must therefore assess how to reach such a regime rather than remaining confined to bounded algebraic refinements.
+A bounded exact benchmark executed 12,288 deterministic starts across 128, 192, 256, 384, 512 and 1024 bits, with ten timing replays and exact GMP cross-checks. Every benchmark start reached the Tier-2 discovery basin n<2^71. No overflow, repeat, horizon survivor, exceptional survivor or counterexample occurred.
 
-Required work:
+Median one-core fixed-limb odd-only rates on the R3 AMD EPYC 9V74 VM were approximately:
 
-- audit the fastest current exact Collatz verification/search algorithms and their real asymptotic bottlenecks;
-- distinguish contiguous verification from sparse/high-magnitude counterexample hunting;
-- evaluate residue sieves, first-descent certificates, path merging, batched parity execution, accelerated odd maps, vectorisation, CPU/GPU kernels, distributed work units, checkpointing, arbitrary-precision fallback, and compressed/symbolic representations;
-- identify methods that scale with **bit length / selected candidates** rather than requiring verification of every smaller integer;
-- estimate reachable start magnitudes under realistic single-machine, workstation/GPU, and distributed envelopes;
-- design at least one genuinely new reach-first search architecture aimed many orders of magnitude above the current verified frontier;
-- specify how extreme survivors are frozen, replayed independently, and handed immediately to structural/certification analysis;
-- preserve exactness for all candidate-affecting decisions;
-- reject methods that merely reproduce known contiguous coverage without changing the magnitude regime.
+- 187k starts/s at 256 bits;
+- 75k starts/s at 512 bits;
+- 27k starts/s at 1024 bits;
+- approximately 63–84 million U-steps/s across the measured bands.
 
-Small benchmarks are permitted after a finite envelope is frozen. A large production campaign is not automatically authorized in R3; the output should be a technically credible architecture and bounded pilot design.
+Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened stepping and roughly 2x faster than GMP odd-only reference execution on this host.
 
-The earlier nonlocal q-invariant question remains open and may be revisited, but it is no longer the sole gate to computational progress.
+**COMPUTATIONAL-EVIDENCE conclusion:** starting magnitude through 1024 bits is not the dominant ordinary-candidate cost. The dominant unresolved cost is the survivor-tail distribution and any trajectory growth that leaves the fixed-limb fast path.
+
+**Architecture decision:** CPU-first deterministic fixed-limb odd-only sparse execution, dual uniform/least-divergent-targeted arms, trusted-basin stop, exceptional freeze, GMP escape/replay, then structural/certification analysis. GPU acceleration is optional and requires a dedicated sparse-GPU benchmark rather than importing contiguous integers/second figures.
+
+**Authorization:** CDM3-P1 is unblocked as a bounded pilot path. Its design/resource envelope is frozen in docs/COMPUTE_BUDGET.md, but execution remains gated on a committed production driver passing all preflight validation. Larger production scaling remains unauthorized.
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: BLOCKED pending CDM2-R3 computational-reach design.**
+**Status: UNBLOCKED FOR CDM3-P1 IMPLEMENTATION/PREFLIGHT; PILOT EXECUTION CONDITIONAL; PRODUCTION SCALING BLOCKED.**
 
-CDM3 no longer requires a theorem-linked prefix ranker as its only possible authorization path.
+CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
-A bounded CDM3 campaign may instead be authorized if CDM2-R3 demonstrates a search architecture that materially changes reachable magnitude, has credible compute economics under the counterexample-at-scale working hypothesis, preserves exact candidate decisions, and has an exceptional-candidate replay/certification path.
+- bit lengths 256, 512 and 1024;
+- up to 10,000,000 generated starts per band;
+- equal-sized Arm U uniform and Arm L least-divergent-targeted generator allocations;
+- exact fixed-limb odd-only execution;
+- Tier-2 discovery basin stop at n<2^71;
+- no first-descent-as-convergence shortcut in Arm U;
+- exact exceptional-candidate freeze protocol;
+- no automatic post-freeze extension.
 
-Finite survival remains non-proof. The purpose of CDM3 is discovery in a qualitatively new magnitude regime, not certification by brute force.
+Before any pilot trajectory campaign, the production driver must pass the preflight gates frozen in docs/COMPUTE_BUDGET.md: fixed-limb/GMP/Python agreement, odd-only/shortened equivalence, forced overflow routing, work-unit replay checksum, checkpoint/restart equality, provenance capture, and executable-budget agreement.
+
+A pilot survivor remains finite evidence only. Any exceptional object is frozen, independently replayed, then transferred to structural/certification mathematics.
+
+Production scaling beyond CDM3-P1 requires a post-pilot audit and is not authorized merely because the pilot returns no counterexample.
 
 ## CDM4 — STRUCTURAL EXTRACTION
 
@@ -121,6 +133,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Run **CDM2-R3 — High-Magnitude Computational-Reach and Search-Machinery Audit** from `START_HERE.md`.
+Implement the CDM3-P1 deterministic multi-core CPU search engine from docs/CDM2_R3_ARCHITECTURE.md, pass every frozen preflight gate, and only then execute the bounded CDM3-P1 pilot if all gates pass.
 
-Do not launch an unbounded production search. Do actively investigate algorithmic and hardware routes that could move sparse counterexample hunting many orders of magnitude above the verified frontier. The R2 obstruction forbids pretending finite modular q features predict future parity; it does not forbid reach-first search engineering.
+Do not enlarge the pilot after observing results. Do not convert finite survival into a divergence claim. Do not begin GPU/cloud/volunteer production scaling before the CDM3-P1 audit.
