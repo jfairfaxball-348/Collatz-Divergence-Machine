@@ -14,9 +14,40 @@ Each promoted candidate records: candidate ID; starting integer and bit length; 
 
 Every promotion beyond L1 must explicitly answer:
 
-> WHY IS ADDITIONAL COMPUTE EXPECTED TO PRODUCE MATHEMATICAL INFORMATION?
+> WHY IS ADDITIONAL COMPUTE EXPECTED TO PRODUCE USEFUL DISCOVERY OR MATHEMATICAL INFORMATION?
 
-Acceptable reasons identify a testable structural hypothesis. Unacceptable reasons include only long survival, large start, large peak, or budget expiry.
+There are two valid authorization routes.
+
+### Structure-first promotion
+
+A testable structural hypothesis explains why this candidate or family may reveal reusable mathematics. Examples include exact parity/residue mechanisms, inverse-tree constraints, affine recurrences, or another theorem-linked feature.
+
+### Reach-first promotion
+
+A bounded campaign may promote candidates because it deliberately samples a **qualitatively new magnitude regime** under the repository's counterexample-at-scale working hypothesis, even when no theorem-linked ranker exists.
+
+Reach-first promotion is valid only when the campaign:
+
+- reaches a magnitude regime not already covered by ordinary contiguous verification;
+- has an explicit rationale for sparse/high-magnitude sampling rather than simply choosing a large integer;
+- declares exact candidate-generation and rejection rules in advance;
+- has finite wall/CPU/memory/storage and representation ceilings;
+- has an exceptional-candidate freeze and independent-replay protocol;
+- and is designed to hand unusual survivors into structural/certification analysis rather than equating survival with divergence.
+
+A single candidate does **not** earn additional compute merely because it is large, has survived so far, or has a large peak. Those observations may become relevant only inside a declared reach-first campaign or after a separate structural reason appears.
+
+## What remains unacceptable
+
+Unacceptable promotion reasons include only:
+
+- "it has not reached 1 yet";
+- "it is very large";
+- "its peak is very large";
+- "the current budget expired";
+- or "more hardware is available"
+
+without either a structure-first hypothesis or a declared reach-first search design.
 
 ## CDM0 calibration promotion
 
