@@ -8,17 +8,19 @@ Systematic nontrivial-cycle work is out of scope.
 
 ## 2. Two activities
 
-**Discovery:** bounded computation finds finite behaviour unusually compatible with sustained growth.
+**Discovery:** bounded computation searches for candidate orbits. Discovery may be structure-first or reach-first. Reach-first work may deliberately target sparse starts many orders of magnitude above contiguous verification under the repository's explicit counterexample-at-scale working hypothesis.
 
 **Certification:** mathematics proves an indefinitely repeatable mechanism implying unboundedness and avoidance of the `1`-basin.
 
 No finite observation crosses this boundary.
 
-## 3. Two frontiers
+## 3. Three frontiers
 
 The **explicit frontier** contains exactly represented starts and exact finite trajectories inside a declared resource envelope.
 
 The **symbolic frontier** contains rigorously defined compressed families: parity words, affine iterates, residues, inverse families, modular constraints, Diophantine systems, or finite-state objects.
+
+The **computational-reach frontier** records the largest magnitude regimes that the current machinery can sample or analyze credibly without requiring contiguous verification of every smaller start. It must distinguish sparse high-magnitude search from contiguous convergence verification.
 
 Preferred loop:
 
@@ -42,7 +44,7 @@ Before execution record generator/domain, exact software commit, seed if random,
 
 ## 6. Promotion discipline
 
-Promotion is a resource-allocation decision, not a truth claim. Every promotion past L1 must answer why more compute is expected to produce mathematical information.
+Promotion is a resource-allocation decision, not a truth claim. Every promotion past L1 must satisfy either the structure-first or reach-first route defined in `docs/PROMOTION_POLICY.md` and explain why more compute is expected to produce useful discovery or mathematical information.
 
 ## 7. Exceptional candidate stop rule
 
