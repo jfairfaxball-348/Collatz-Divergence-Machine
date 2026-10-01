@@ -26,7 +26,7 @@ static inline void norm(bigfix *a){ while(a->n>1 && a->w[a->n-1]==0) a->n--; }
 static inline int bitlen(const bigfix *a){ uint64_t x=a->w[a->n-1]; return 64*(a->n-1)+(64-__builtin_clzll(x)); }
 static inline int eq(const bigfix *a,const bigfix *b){ if(a->n!=b->n)return 0; return memcmp(a->w,b->w,sizeof(uint64_t)*a->n)==0; }
 static inline int below_2p71(const bigfix *a){
-    if(a->n==1) return 1;
+    if(a->n==1) return 1; // <2^64 <2^71
     if(a->n>2) return 0;
     return a->w[1] < (1ULL << 7);
 }
@@ -77,7 +77,7 @@ static inline void brent_update(const bigfix *cur,bigfix *tort,uint64_t *power,u
 }
 static result_t run_short(const bigfix *start){
     result_t r={0}; bigfix n=*start,tort=*start; uint64_t power=1,lam=0; r.peak_bits=bitlen(&n);
-    uint64_t max_short=(uint64_t)MAX_U_STEPS*8ULL;
+    uint64_t max_short=(uint64_t)MAX_U_STEPS*8ULL; // operational cap; U-step cap is primary comparison horizon
     while(!below_2p71(&n) && r.shortened_steps<max_short){
         if(n.w[0]&1ULL){ if(!mul3add1(&n)){r.overflow=1;break;} shr1(&n); }
         else shr1(&n);
@@ -118,9 +118,11 @@ static int validate(){
     for(int bi=0;bi<6;bi++)for(uint64_t i=0;i<128;i++){
         make_start(&a,bitsv[bi],i); b=a; fix_to_mpz(&a,z);
         for(int k=0;k<64;k++){
+            // one shortened step fixed vs GMP
             if(a.w[0]&1ULL){ if(!mul3add1(&a)){mpz_clear(z);return 0;} shr1(&a); mpz_mul_ui(z,z,3);mpz_add_ui(z,z,1);mpz_tdiv_q_2exp(z,z,1);}
             else {shr1(&a);mpz_tdiv_q_2exp(z,z,1);} bigfix g; if(!mpz_to_fix(z,&g)||!eq(&a,&g)){mpz_clear(z);return 0;} cases++;
         }
+        // odd-only single transition from original b
         fix_to_mpz(&b,z); if(!mul3add1(&b)){mpz_clear(z);return 0;} unsigned v=ctz_big(&b);shr_bits(&b,v);
         mpz_mul_ui(z,z,3);mpz_add_ui(z,z,1);mp_bitcnt_t vg=mpz_scan1(z,0);mpz_tdiv_q_2exp(z,z,vg); bigfix g; if(v!=vg||!mpz_to_fix(z,&g)||!eq(&b,&g)){mpz_clear(z);return 0;} cases++;
     }
