@@ -120,6 +120,12 @@ Executable SHA-256:
 
 The complete raw workflow result had SHA-256 `25d939e3502e58082984e9b154a04ab8c3606122aa0a758cb5f99a6d42948bab` and was preserved as workflow artifact `11188962303`. The committed machine-readable result preserves the authoritative aggregate measurements and provenance.
 
+## Workflow replay hygiene
+
+During pull-request documentation updates, the initially installed B1 workflow also replayed automatically on synchronization events. Those later CI invocations were validation duplicates, not additional scientific search and not aggregated into the authoritative timing set. The authoritative benchmark remains workflow run `36915169530`, whose four frozen variant labels each have exactly five timing passes in the recorded result.
+
+The B1 workflow has now been frozen to manual dispatch only so documentation updates cannot silently create further timing datasets.
+
 ## Resource use
 
 Final authoritative benchmark runner consumption:
