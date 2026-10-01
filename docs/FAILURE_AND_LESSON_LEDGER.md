@@ -276,3 +276,30 @@ For unrelated high-magnitude sparse starts, the state space is enormous and exac
 
 **Action:** begin CDM3-P1 with no giant high-state DAG. Retain provenance-tagged trusted-tail caching near smaller states and promoted survivors. Expand caching only after measuring merge-hit rate versus lookup cost.
 \n\n## F0025 — Production pilot throughput regressed from the R3 microbenchmark\n\n**Status:** COMPUTATIONAL-EVIDENCE from CDM3-P1; causal attribution remains UNKNOWN pending CDM3-B1.\n\nCDM3-P1 completed the full frozen 30,000,000-start population correctly, and its trajectory-length distributions closely matched the R3 benchmark at the same bit lengths. However, Arm-U production throughput measured in U-steps per completed worker CPU-second was only about 19.12M, 33.48M and 29.72M at 256, 512 and 1024 bits, compared with the R3 one-core fixed-limb medians of about 84.04M, 80.15M and 62.86M.\n\nThe discrepancy therefore cannot be attributed to a newly observed heavy survivor tail in P1. Two concrete implementation differences are visible: the P1 production safety path copies the full 64-limb state on every ordinary U-step before `3n+1`, and the P1 frozen build omitted the R3 benchmark's `-march=native`. Neither is yet proved to be the dominant cause.\n\n**Lesson:** do not import a microbenchmark's throughput into production campaign economics without benchmarking the exact production hot path, compiler flags, checkpoint/digest overhead and safety routing.\n\n**Action:** larger scientific scaling and GPU production work remain blocked. Run only the frozen CDM3-B1 side-by-side hot-path benchmark in docs/COMPUTE_BUDGET.md. Preserve exact digests and overflow routing while optimizing.\n
+
+## F0026 — CDM3-P1 throughput regression was compiler-target plus unconditional recovery-copy overhead
+
+**Status:** FINITE-VERIFIED by CDM3-B1; supersedes the causal uncertainty in F0025.
+
+The final CDM3-B1 side-by-side benchmark used identical deterministic 256/512/1024-bit starts and exact trajectory digests.
+
+The unchanged P1 arithmetic compiled with `-march=native` improved over the non-native P1 build by 63.94%, 63.91% and 58.42% in U-steps/s at 256, 512 and 1024 bits. Native compilation alone recovered 73.67%, 71.24% and 76.33% of the local R3 reference.
+
+Moving the full 64-limb recovery copy off the ordinary U-step and taking it only when the state already occupies all 64 limbs then improved over P1-native by 38.93%, 42.31% and 30.62%. The final exact path reached 102.35%, 101.39% and 99.70% of the side-by-side R3 rate.
+
+Every fixed-limb/GMP, odd-only/shortened, forced-overflow, sanitizer, Python replay and digest-equality gate passed.
+
+**Lesson:** the P1 regression was not a survivor-tail phenomenon. It was dominated by production hot-path engineering: compiler target and recovery-copy placement.
+
+**Action:** retain `-O3 -march=native` or documented equivalent for production and use rare-path recovery copying. Do not mutate the historical P1 source bundle; integrate the B1 kernel into a separately versioned production engine.
+
+## F0027 — Full-width overflow prediction can be slower than rare-path preservation
+
+**Status:** FINITE-VERIFIED engineering failure in B1.
+
+An exact pre-mutation comparison against the 4096-bit `3n+1` overflow threshold passed correctness but materially slowed the ordinary 256/512/1024-bit hot path. The replacement design simply checks whether the normalized state already occupies all 64 limbs; only then is the recovery copy taken before destructive arithmetic.
+
+**Lesson:** an overflow check that is mathematically cheap can still damage instruction-cache/code-generation economics if its full-width logic is injected into the common path.
+
+**Action:** keep ordinary overflow handling structurally minimal. Validate rare exceptional paths separately rather than burdening every U-step with full-capacity prediction.
+
