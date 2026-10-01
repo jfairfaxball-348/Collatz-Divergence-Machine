@@ -37,8 +37,8 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM1 — State-of-the-Art Divergence-Search and Computational-Reach Audit is complete. CDM2 — Filter and Metric Design is next.**
+**CDM2-E1 is complete. CDM2 remains open for a theory-first filter redesign; CDM3 is blocked.**
 
-CDM1 performed no high-range counterexample search. It audited existing verification, exact acceleration/sieving methods, divergence-relevant necessary conditions, redundant search space, compute economics, metric failures, and a bounded first CDM2 calibration.
+CDM2-E1 calibrated theorem-conditioned length-24 parity-prefix classes against exact matched K-survivor controls in a verified convergent domain. The proposed generator, debt-margin ranking, and completed odd-to-odd valuation-load ranking did not demonstrate reproducible post-prefix information value. No scientific divergence candidate was produced and no CDM3 generator is currently authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, and `docs/CDM1_STATE_OF_THE_ART_AUDIT.md` before doing research.
+Read `AGENTS.md`, `START_HERE.md`, `experiments/CDM2_E1_REPORT.md`, and the current policies under `docs/` before doing research.
