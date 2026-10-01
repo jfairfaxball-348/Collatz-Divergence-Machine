@@ -238,7 +238,7 @@ Do not expand into production search. Use the measurements only to classify CDM2
 
 ## CDM3-P1 provisional frozen pilot envelope — 2026-10-01
 
-**Status:** AUTHORIZED DESIGN / EXECUTION NOT YET AUTHORIZED. CDM2-R3 classified the architecture R3-A and freezes this as the cheapest valid next pilot. The pilot may execute only after the production driver is committed, its executable ceilings match this declaration, and the preflight validation below passes.
+**Status:** HISTORICAL FROZEN ENVELOPE — EXECUTED 2026-10-01. CDM2-R3 classified the architecture R3-A and froze this as the cheapest valid next pilot. The production driver was committed, the preflight validation below passed, and the envelope was exhausted exactly; see the P1 closeout below.
 
 ### Purpose
 
