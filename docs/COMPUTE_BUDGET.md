@@ -169,3 +169,68 @@ The driver was corrected at commit `2a90b45cd9876c1e039ddf1da91c42b849a1e81d`; t
 **Authoritative replay baseline:** `0fb67ff1db89064d33f66f4126d876937a02c34f`.
 
 No budget increase is authorized. The rejected execution is preserved here as a process correction rather than silently discarded.
+
+
+## CDM2-R3 frozen arithmetic benchmark envelope — 2026-10-01
+
+**Status:** FINITE-VERIFIED as a pre-execution resource declaration. This is a small engineering benchmark authorized by CDM2-R3. It is **not** a production counterexample campaign.
+
+### Engineering question
+
+Measure the actual cost of sparse high-magnitude exact trajectory execution, separating starting-value bit length from trajectory length, and determine whether odd-only acceleration materially improves a reusable fixed-limb CPU fast path relative to ordinary shortened-map stepping and a GMP reference.
+
+### Deterministic workload
+
+- exact starting bit lengths: `128, 192, 256, 384, 512, 1024`;
+- deterministic fixed-seed odd starts, with the high bit and low bit set so every start has exactly the declared bit length;
+- at most **4,096 distinct starts per bit length**;
+- the same starts may be replayed by multiple arithmetic kernels for validation and timing; replay does not increase the distinct-start ceiling;
+- Tier-2 external discovery basin: stop a benchmark trajectory once its exact state is below `2^71`;
+- per-start ceiling: **16,384 odd-only U-steps** or the shortened-map equivalent;
+- peak representation ceiling: **4,096 bits**;
+- any representation overflow, step-ceiling survivor, repeated state, or invariant failure is recorded and stops that benchmark trajectory; it is never silently discarded.
+
+### Kernels permitted
+
+1. scalar exact shortened-map stepping using reusable fixed-capacity 64-bit limbs;
+2. scalar exact odd-only stepping
+   `U(n)=(3n+1)/2^v2(3n+1)`
+   on odd states, with exact accumulation of the corresponding shortened-step count;
+3. reusable preallocated GMP `mpz_t` odd-only reference execution;
+4. exact cross-check/self-test code required to validate transitions and result summaries.
+
+No GPU, distributed, SIMD, or production-search kernel is authorized by this envelope.
+
+### Resource ceilings
+
+| Resource | CDM2-R3 benchmark ceiling |
+|---|---:|
+| distinct starting values | <= 24,576 total (4,096 per bit length) |
+| start bit lengths | exactly 128, 192, 256, 384, 512, 1024 |
+| odd-only steps/start | <= 16,384 |
+| peak bit length | <= 4,096 |
+| execution threads | 1 benchmark worker thread |
+| wall-clock budget | <= 60 seconds total executed benchmark time |
+| CPU budget | <= 60 CPU-seconds |
+| memory budget | <= 512 MiB |
+| storage budget | <= 20 MiB |
+| arithmetic | exact integer arithmetic only |
+| randomness | none; fixed deterministic generator/version and seed |
+| L1->L2 scientific promotions | zero |
+| production candidates | zero |
+
+### Validation and stopping rules
+
+- Before timing, the fixed-limb implementation must pass exact transition checks against GMP on deterministic cases.
+- Timed kernels must process identical deterministic start sets for comparable modes.
+- Timing output must include hardware/compiler/library provenance and report starts, exact map operations, shortened-step equivalents, basin hits, step-ceiling survivors, representation overflows, and a deterministic result digest.
+- Stop the complete benchmark immediately if wall/CPU/memory/storage limits are reached or if any validation mismatch occurs.
+- A trajectory that survives the benchmark horizon is **not** evidence of divergence. If its behavior is sufficiently exceptional under the project rules, freeze it under the exceptional-candidate protocol rather than extending the benchmark budget.
+
+### Expected information gain
+
+Resolve the immediate R3 engineering uncertainty: whether 128–1024-bit sparse starts are expensive because of number size itself or primarily because of the number of exact trajectory steps, and establish a measured one-core baseline for projecting a fixed-width / bigint sparse-search architecture.
+
+### Post-exhaustion action
+
+Do not expand into production search. Use the measurements only to classify CDM2-R3 and, if warranted, define the smallest next CPU/GPU implementation benchmark or bounded CDM3 pilot. Any further campaign requires a separate frozen envelope.
