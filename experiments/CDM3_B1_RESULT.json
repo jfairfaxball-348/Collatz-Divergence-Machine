@@ -222,5 +222,6 @@
     "larger_scientific_search_authorized": true,
     "gpu_benchmark_authorized": false,
     "next_action": "Freeze CDM3-P2 as a bounded larger CPU campaign using the exact rare-path-copy kernel and native compilation; do not execute CDM3-P2 in B1."
-  }
+  },
+  "workflow_replay_note": "Later pull-request synchronization caused non-authoritative CI replays of the same B1 benchmark. They executed zero scientific population and are excluded from the authoritative timing dataset. The B1 workflow is now manual-dispatch only."
 }
