@@ -133,3 +133,7 @@ All mandatory B1 correctness gates passed. The optimized forced-escape path pres
 Final classification: **B1-A — THROUGHPUT REGRESSION RESOLVED.**
 
 No scientific population was executed by B1.
+
+## Workflow replay note
+
+Pull-request synchronization later caused non-authoritative CI replays of the same B1 benchmark while documentation was being committed. They are not part of the authoritative timing dataset and executed no scientific population. The workflow was subsequently changed to manual-dispatch only. The authoritative result remains run `36915169530` / job `110547251044`.
