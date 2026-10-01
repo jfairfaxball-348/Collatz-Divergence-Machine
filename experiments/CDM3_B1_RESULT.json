@@ -1,0 +1,226 @@
+{
+  "version": "CDM3-B1-result-v1",
+  "date": "2026-10-01",
+  "claim_status": "FINITE-VERIFIED engineering benchmark; no scientific promotion",
+  "classification": "B1-A",
+  "counterexample_claimed": false,
+  "new_scientific_population": 0,
+  "gpu_execution": false,
+  "authoritative_workflow": {
+    "run_id": 36915169530,
+    "job_id": 110547251044,
+    "head_sha": "1b46a8007ce949204afe259783c18ab213903c31",
+    "merge_test_sha": "4d94632e0acfac4fdf52f5edaaf5d5c26386072f",
+    "full_result_sha256": "25d939e3502e58082984e9b154a04ab8c3606122aa0a758cb5f99a6d42948bab",
+    "artifact_id": 11188962303,
+    "artifact_archive_digest": "sha256:91d23601970230198bd2b4a329f1599bb841142e641866a5abb3cc454e250926"
+  },
+  "frozen_envelope": {
+    "bit_lengths": [
+      256,
+      512,
+      1024
+    ],
+    "one_thread_starts_per_bit_length_per_pass": 4096,
+    "one_thread_passes": 5,
+    "implementation_variants": 4,
+    "scaling_workers": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "scaling_starts_per_bit_length": 16384,
+    "wall_limit_seconds": 300,
+    "cpu_limit_seconds": 1200
+  },
+  "correctness": {
+    "all_gates_passed": true,
+    "fixed_vs_gmp_cases": 49152,
+    "odd_only_shortened_equivalence_cases": 384,
+    "opt_vs_gmp_cases": 24576,
+    "cross_variant_trajectory_equality_cases": 3072,
+    "p1_forced_escape_replay_bits": 4097,
+    "opt_forced_escape_replay_bits": 4097,
+    "python_replay_cases": 30,
+    "asan_ubsan_passed": true,
+    "cross_variant_exact_equality": true,
+    "scaling_exact_equality": true
+  },
+  "provenance": {
+    "host_os": "Ubuntu 24.04.5 LTS",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_model": "AMD EPYC 7763 64-Core Processor",
+    "logical_cpu_count": 4,
+    "physical_cores_observed": 2,
+    "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "gmp": "6.3.0",
+    "benchmark_source_sha256": "f9b6151f4218ac914d8e9c4563b72861a296dbf0dc399df92bf48ae6d97781e3",
+    "p1_engine_sha256": "07fc20ebeaa1519e9d8cc4a400ee79332ac4844f4122c331b03a245ae1f4ce04",
+    "p1_part0_sha256": "e892e94a859420f22117f99002c034a47b26dc27777fd47596914b418008bf05",
+    "p1_part1_sha256": "f8e7343b3bd78ca277b503263516166689d00885e402f22d03fa13f7005b563f",
+    "p1_part2_sha256": "d5ea642e3785664496fa231ac86a489787f53630cf8e14b865b6652c7d76675c",
+    "p1_part3_sha256": "bf1b2e5163113b68100abd6e77f3d85fa8a955b594bd93150b775c4939a8f24c",
+    "runner_sha256": "fbaa6dd120089f552389e3190b45de0efcbf209e917d4cd8cd89a5a7f5911f6d",
+    "opt_escape_test_sha256": "d8a34f9a4580791a95a7985b6a2db7a62f10601c4cc78b999fc72e2c680930d2",
+    "base_executable_sha256": "2b351ee58bc3514b04e0e8f78edb9b5e17506465bb31a81490b3eddfccd380a6",
+    "native_executable_sha256": "7d10e2b97a7c189111f1293a722b59891236cc4f52af950022a1bfc89c543974",
+    "sanitizer_executable_sha256": "0ecf83d94167a263c564e6d00a8efaa5b92df7f687cccb00116b6e9c16b25616",
+    "p1_escape_test_executable_sha256": "1c80eeda020b4fd8c6571ef734ac5ed7b450fc37ab161a6e1b97ec2760d169e3",
+    "opt_escape_test_executable_sha256": "fe0a93100f0095bcbecc713aeba54570b8c79e092800f449cad33dcc81acd583"
+  },
+  "exact_workload_by_bits": {
+    "256": {
+      "starts": 4096,
+      "u_steps": 1828773,
+      "shortened_steps": 3660285,
+      "mean_u_steps": 446.477783203,
+      "max_u_steps": 780,
+      "max_peak_bits": 268,
+      "basin_hits": 4096,
+      "overflow_escapes": 0,
+      "repeats": 0,
+      "invariant_failures": 0,
+      "pass0_digest": "6d6c640cd3b4c9b9"
+    },
+    "512": {
+      "starts": 4096,
+      "u_steps": 4362963,
+      "shortened_steps": 8725521,
+      "mean_u_steps": 1065.176513672,
+      "max_u_steps": 1542,
+      "max_peak_bits": 526,
+      "basin_hits": 4096,
+      "overflow_escapes": 0,
+      "repeats": 0,
+      "invariant_failures": 0,
+      "pass0_digest": "5462932480ad6b55"
+    },
+    "1024": {
+      "starts": 4096,
+      "u_steps": 9438406,
+      "shortened_steps": 18867117,
+      "mean_u_steps": 2304.298339844,
+      "max_u_steps": 2906,
+      "max_peak_bits": 1037,
+      "basin_hits": 4096,
+      "overflow_escapes": 0,
+      "repeats": 0,
+      "invariant_failures": 0,
+      "pass0_digest": "dcc4506bea0fb0df"
+    }
+  },
+  "one_thread_median_u_steps_per_s": {
+    "r3": {
+      "256": 65929327.389794,
+      "512": 65334544.45607,
+      "1024": 51491943.526886
+    },
+    "p1": {
+      "256": 29625281.313107,
+      "512": 28397451.075766,
+      "1024": 24809278.334052
+    },
+    "p1-native": {
+      "256": 48568998.036909,
+      "512": 46547000.493528,
+      "1024": 39302582.807332
+    },
+    "opt": {
+      "256": 67478008.718427,
+      "512": 66240505.175066,
+      "1024": 51338986.14825
+    }
+  },
+  "r3_recovery_ratio": {
+    "r3": {
+      "256": 1,
+      "512": 1,
+      "1024": 1
+    },
+    "p1": {
+      "256": 0.4493490603651002,
+      "512": 0.43464680609903134,
+      "1024": 0.4818089323254634
+    },
+    "p1-native": {
+      "256": 0.7366827474176171,
+      "512": 0.7124408822476068,
+      "1024": 0.7632763518978567
+    },
+    "opt": {
+      "256": 1.0234900216632992,
+      "512": 1.0138664886475968,
+      "1024": 0.9970294891169501
+    }
+  },
+  "native_gain_ratio_p1_native_over_p1": {
+    "256": 1.63944428151036,
+    "512": 1.6391260035746862,
+    "1024": 1.5841888779726092
+  },
+  "no_full_copy_gain_ratio_opt_over_p1_native": {
+    "256": 1.389322642957314,
+    "512": 1.4230885872931003,
+    "1024": 1.3062496782952537
+  },
+  "hypothesis_assessment": {
+    "full_state_copy": "CONFIRMED_MATERIAL",
+    "march_native": "MATERIAL",
+    "initial_threshold_predictor": "REJECTED_AS_TOO_SLOW; replaced by rare-path recovery copy"
+  },
+  "best_exact_production_candidate": "opt",
+  "scaling_combined": [
+    {
+      "workers": 1,
+      "starts": 49152,
+      "u_steps": 62488271,
+      "wall_seconds": 1.113005743,
+      "cpu_seconds": 1.112924747,
+      "u_steps_per_s": 56143709.404022366,
+      "speedup_vs_1": 1,
+      "parallel_efficiency": 1
+    },
+    {
+      "workers": 2,
+      "starts": 49152,
+      "u_steps": 62488271,
+      "wall_seconds": 0.554991195,
+      "cpu_seconds": 1.109736411,
+      "u_steps_per_s": 112593265.55622204,
+      "speedup_vs_1": 2.005447569307834,
+      "parallel_efficiency": 1.002723784653917
+    },
+    {
+      "workers": 4,
+      "starts": 49152,
+      "u_steps": 62488271,
+      "wall_seconds": 0.509982364,
+      "cpu_seconds": 2.036716936,
+      "u_steps_per_s": 122530258.71302484,
+      "speedup_vs_1": 2.1824396715804864,
+      "parallel_efficiency": 0.5456099178951216
+    },
+    {
+      "workers": 8,
+      "starts": 49152,
+      "u_steps": 62488271,
+      "wall_seconds": 0.510917022,
+      "cpu_seconds": 2.039001925,
+      "u_steps_per_s": 122306105.11935537,
+      "speedup_vs_1": 2.1784471745394303,
+      "parallel_efficiency": 0.2723058968174288
+    }
+  ],
+  "scaling_note": "Runner exposed 4 logical CPUs / 2 physical cores. Two-worker scaling is the clean in-capacity result; 4 and 8 workers are hardware-saturation/oversubscription observations, not evidence of an engine scaling defect.",
+  "resource_use": {
+    "benchmark_wall_elapsed_seconds": 10.375258514000024,
+    "summed_reported_cpu_seconds": 13.954924152999999
+  },
+  "decision": {
+    "larger_scientific_search_authorized": true,
+    "gpu_benchmark_authorized": false,
+    "next_action": "Freeze CDM3-P2 as a bounded larger CPU campaign using the exact rare-path-copy kernel and native compilation; do not execute CDM3-P2 in B1."
+  }
+}
