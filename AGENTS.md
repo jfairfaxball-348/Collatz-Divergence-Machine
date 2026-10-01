@@ -14,7 +14,15 @@ Repeated-state detection is permitted only as a computational safety mechanism. 
 
 Long trajectories, large excursions, record stopping times, high odd density, compute exhaustion, failure to find descent, statistical anomaly, or model prediction are not Collatz counterexamples.
 
+## WORKING SEARCH HYPOTHESIS
+
+For discovery strategy, the project may **conditionally assume** that there is a magnitude regime far beyond current verification in which unbounded orbits occur often enough to be discoverable by a sufficiently capable search machine.
+
+This is a HEURISTIC / CONJECTURAL working hypothesis only. It is not admissible as a proof premise.
+
 ## SEARCH ARCHITECTURE
+
+The project supports both structure-first and reach-first discovery.
 
 `L0 -> L1 -> L2 -> L3 -> L4`
 
@@ -30,11 +38,16 @@ Every expensive campaign has a finite declared compute envelope. **NO UNBOUNDED 
 
 ## PROMOTION RULE
 
-More compute requires a mathematical reason. Promotion beyond L1 must answer:
+More compute requires a declared research reason. Promotion beyond L1 must answer:
 
-> WHY IS ADDITIONAL COMPUTE EXPECTED TO PRODUCE MATHEMATICAL INFORMATION?
+> WHY IS ADDITIONAL COMPUTE EXPECTED TO PRODUCE USEFUL DISCOVERY OR MATHEMATICAL INFORMATION?
 
-"It has not reached 1 yet" is never sufficient.
+Two routes are valid:
+
+- **structure-first:** a testable structural/mathematical hypothesis;
+- **reach-first:** a bounded search design that materially changes the reachable magnitude regime under the explicit counterexample-at-scale working hypothesis.
+
+"It has not reached 1 yet" is never sufficient by itself. Neither is "the number is large."
 
 ## PROOF RULE
 
