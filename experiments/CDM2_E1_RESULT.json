@@ -1,0 +1,310 @@
+{
+  "campaign_id": "CDM2-E1-20261001",
+  "project_stage": "CDM2",
+  "experiment": "theorem-conditioned parity-prefix survivor-enrichment calibration",
+  "claim_status": "COMPUTATIONAL-EVIDENCE",
+  "search_claim": "NONE",
+  "counterexample_claimed": false,
+  "authoritative_replay": {
+    "repository_head_before_replay": "f073dc77d5a1f49cd1ffafb60592137be56eadec",
+    "driver_commit": "2a90b45cd9876c1e039ddf1da91c42b849a1e81d",
+    "test_commit": "0fb67ff1db89064d33f66f4126d876937a02c34f",
+    "frozen_budget_initial_commit": "348f19643077a73fe22a8a6a7162fde887ae6fbd",
+    "frozen_budget_correction_commit": "f073dc77d5a1f49cd1ffafb60592137be56eadec",
+    "rejected_first_postfreeze_run_reason": "driver still encoded provisional 180-second internal guard; actual run was ~16s but was not accepted as authoritative",
+    "tests": "7 passed"
+  },
+  "configuration": {
+    "K": 24,
+    "symbolic_node_ceiling": 2000000,
+    "quota_each_arm": 4096,
+    "start_bits": 60,
+    "start_range": [
+      "2^59",
+      "2^60"
+    ],
+    "deterministic_lift_tag": "CDM2-E1-v1",
+    "exact_horizon_steps": 512,
+    "peak_bit_ceiling": 4096,
+    "wall_seconds_ceiling": 60,
+    "cpu_seconds_ceiling": 60,
+    "memory_mib_ceiling": 512,
+    "storage_mib_ceiling": 50,
+    "L2_promotions": 0
+  },
+  "symbolic_counts": {
+    "symbolic_nodes_visited": 735398,
+    "killed_debt_nonpositive": 81119,
+    "killed_low_bit_descent": 0,
+    "legal_leaves": 286581
+  },
+  "representative_pruning_counts": {
+    "killed_representative_descent": 0,
+    "killed_mod9_smaller_preimage": 127293,
+    "killed_path_merge": 23425,
+    "eligible_representatives": 135863
+  },
+  "samples": {
+    "conditioned": 4096,
+    "control": 4096,
+    "fK_match": {
+      "16": 1433,
+      "17": 1409,
+      "18": 797,
+      "19": 338,
+      "20": 94,
+      "21": 22,
+      "22": 1,
+      "23": 2
+    },
+    "conditioned_sha256": "90da5ddc9b0bf99605a96d244ff57f4852bf9becc7a6b2886dcc6c8807ed8108",
+    "control_sha256": "128a0158765027751a5b7ee811493efe3c34a31590ed3a6fd3c2afd5533b14ce"
+  },
+  "endpoints": {
+    "512": {
+      "conditioned": [
+        0,
+        4096
+      ],
+      "control": [
+        0,
+        4096
+      ],
+      "risk_difference": 0
+    },
+    "2K": {
+      "conditioned": [
+        866,
+        4096
+      ],
+      "control": [
+        914,
+        4096
+      ],
+      "risk_difference": -0.01171875,
+      "approx_normal95": [
+        -0.02957803508551517,
+        0.00614053508551517
+      ]
+    },
+    "4K": {
+      "conditioned": [
+        75,
+        4096
+      ],
+      "control": [
+        71,
+        4096
+      ],
+      "risk_difference": 0.0009765625,
+      "approx_normal95": [
+        -0.00475356962412062,
+        0.00670669462412062
+      ]
+    }
+  },
+  "deterministic_replication_folds": {
+    "0": {
+      "512": {
+        "conditioned": 0,
+        "control": 0
+      },
+      "n_each": 2049,
+      "2K": {
+        "conditioned": 439,
+        "control": 439,
+        "risk_difference": 0
+      },
+      "4K": {
+        "conditioned": 31,
+        "control": 44,
+        "risk_difference": -0.00634455832113226
+      }
+    },
+    "1": {
+      "512": {
+        "conditioned": 0,
+        "control": 0
+      },
+      "n_each": 2047,
+      "2K": {
+        "conditioned": 427,
+        "control": 475,
+        "risk_difference": -0.02344894968246214
+      },
+      "4K": {
+        "conditioned": 44,
+        "control": 27,
+        "risk_difference": 0.008304836345872008
+      }
+    }
+  },
+  "stratified_by_fK": {
+    "16": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 1433,
+      "2K": [
+        97,
+        100
+      ],
+      "4K": [
+        5,
+        6
+      ]
+    },
+    "17": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 1409,
+      "2K": [
+        238,
+        270
+      ],
+      "4K": [
+        19,
+        16
+      ]
+    },
+    "18": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 797,
+      "2K": [
+        255,
+        277
+      ],
+      "4K": [
+        17,
+        27
+      ]
+    },
+    "19": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 338,
+      "2K": [
+        194,
+        177
+      ],
+      "4K": [
+        20,
+        12
+      ]
+    },
+    "20": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 94,
+      "2K": [
+        60,
+        69
+      ],
+      "4K": [
+        10,
+        9
+      ]
+    },
+    "21": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 22,
+      "2K": [
+        19,
+        18
+      ],
+      "4K": [
+        4,
+        0
+      ]
+    },
+    "22": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 1,
+      "2K": [
+        1,
+        1
+      ],
+      "4K": [
+        0,
+        1
+      ]
+    },
+    "23": {
+      "512": [
+        0,
+        0
+      ],
+      "n_each": 2,
+      "2K": [
+        2,
+        2
+      ],
+      "4K": [
+        0,
+        0
+      ]
+    }
+  },
+  "metric_information": {
+    "parity_debt_end": {
+      "auc_4K_raw": 0.760006631849457,
+      "auc_4K_within_fK": 0.5,
+      "disposition": "DEMOTED_TO_BINARY_NECESSARY_SCREEN"
+    },
+    "parity_debt_min": {
+      "auc_4K_raw": 0.5129238166293625,
+      "auc_4K_within_fK": 0.4992511371620872,
+      "disposition": "FAILED_AS_RANKER"
+    },
+    "odd_to_odd_valuation_load": {
+      "auc_4K_raw": 0.549745502777087,
+      "auc_4K_within_fK": 0.4869272586073,
+      "auc_4K_within_fK_and_debt_min": 0.4951753663757616,
+      "disposition": "FAILED_AS_INDEPENDENT_RANKER"
+    },
+    "odd_step_density": {
+      "disposition": "MATCHING_VARIABLE_ONLY",
+      "note": "exactly f_K/K at fixed K"
+    }
+  },
+  "outcome_only": {
+    "peak_start_ratio": {
+      "conditioned_median_approx": 36.49115753173828,
+      "control_median_approx": 36.49115753173828,
+      "conditioned_max_approx": 427414.1339091382,
+      "control_max_approx": 112335.16188887766
+    },
+    "postprefix_path_merge_witnesses": {
+      "conditioned": 3309,
+      "control": 3236
+    }
+  },
+  "compute": {
+    "wall_seconds": 12.442569562000017,
+    "cpu_seconds": 12.435409594,
+    "wall_seconds_per_selected_representative": 0.0015188683547363302,
+    "wall_seconds_per_legal_symbolic_leaf": 0.000043417287126501816,
+    "illustrative_wall_seconds_per_four_predeclared_disposition_decisions": 3.1106423905000042,
+    "peak_memory": "not instrumented; no memory-ceiling event observed",
+    "committed_result_scale": "aggregate only; no large candidate dataset"
+  },
+  "precommitted_generator_rule_met": false,
+  "final_decision": "FAILED_AS_RANKER_GENERATOR_RETAIN_PROVED_SIEVES_AS_EXACT_PRUNING_ONLY",
+  "cdm3_generator_authorized": null
+}
