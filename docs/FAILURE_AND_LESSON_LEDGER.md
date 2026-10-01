@@ -92,3 +92,44 @@ A total stopping/delay record can accrue most of its length after the trajectory
 GPU/distributed engineering can multiply exact finite throughput, but it does not by itself increase mathematical information per tested candidate. CDM1 found no reason to build frontier-scale infrastructure before establishing that a filter or generator predicts anything beyond its conditioning event.
 
 **Action:** calibrate filter information value in CDM2 before investing in production-scale GPU/distributed search.
+
+
+## F0012 — Theorem-conditioned parity-prefix construction does not enrich post-prefix survival
+
+**Status:** FAILED as a ranker/generator; **COMPUTATIONAL-EVIDENCE** for the finite CDM2-E1 calibration.
+
+CDM2-E1 compared 4,096 deterministic conditioned representatives with 4,096 disjoint controls, exactly matched on `f_K`, in the 60-bit regime with `K=24`.
+
+Survival at 2K was 866/4096 conditioned versus 914/4096 control; at 4K it was 75/4096 versus 71/4096; no representative in either arm survived to the 512-step horizon. Two deterministic matched replication folds disagreed in direction at 4K.
+
+The precommitted reproducibility criterion failed.
+
+**Action:** retain valid parity/debt/preimage/path-merging statements as exact pruning only. Do not advance this construction to CDM3 as a generator.
+
+## F0013 — Debt magnitude adds no information after the conditioning variables are matched
+
+**Status:** FAILED as an independent ranking route; bounded equivalence component **PROVED** for CDM2-E1.
+
+For exactly 60-bit starts and `K<=24`, every-prefix debt positivity is equivalent to exact no-descent through K. Thus a correctly matched K-survivor control necessarily shares the binary debt property.
+
+At 4K, `parity_debt_end` had raw AUC 0.7600 but exactly 0.5000 within `f_K`, because endpoint debt at fixed K is algebraically determined by `f_K`. `parity_debt_min` had within-`f_K` AUC 0.4993.
+
+**Action:** use debt positivity only as the theorem-linked hard screen at its valid scope. Do not rank legal survivors by debt magnitude without new evidence.
+
+## F0014 — Completed odd-to-odd valuation load does not add calibrated persistence information
+
+**Status:** FAILED as an independent ranker in CDM2-E1.
+
+The 4K valuation-load AUC was 0.4869 within `f_K` strata and 0.4952 after further conditioning on debt-min.
+
+**Action:** do not carry valuation load forward as an independent candidate score. Reintroduce it only if a new exact mechanism gives it a different role.
+
+## F0015 — Executable budget guard drift must invalidate an otherwise in-budget run
+
+**Status:** SUPERSEDED first execution; FINITE-VERIFIED process correction.
+
+After CDM2-E1's repository envelope had been reduced to 60 wall/CPU seconds, the first full post-freeze execution finished in about 16 seconds but the committed driver still encoded the provisional 180-second internal guard.
+
+Although actual consumption was below 60 seconds and the later result was identical, that execution was rejected as authoritative. The driver was corrected and the experiment replayed under a code guard matching the frozen declaration.
+
+**Lesson:** an observed run being inside the intended budget is not enough; executable ceilings and declared ceilings must agree before an authoritative campaign result is accepted.
