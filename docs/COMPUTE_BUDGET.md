@@ -315,3 +315,116 @@ CDM2-R3 measured one-core median rates of approximately 187k, 75k and 27k starts
 
 Stop. Preserve partial work-unit results if valid. Audit throughput, disposition counts, checksum/replay behavior, exceptional objects and the empirical survivor-cost tail. Do not enlarge the sample merely because no counterexample was found.
 \n\n## CDM3-P1 closeout — 2026-10-01\n\n**Status:** COMPLETE — P1-B MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND.\n\nThe frozen P1 scientific population was exhausted without any exceptional survivor: 30,000,000 generated starts, 6,665,220 exact Arm-L pre-trajectory kills, 23,334,780 executed trajectories, and 23,334,780 Tier-2 basin hits. No repeat, 4096-bit escape, invariant failure, exceptional freeze or counterexample occurred.\n\nThe active execution wall time is conservatively bounded above by 407.6 seconds and completed-work-unit CPU time is 1035.487 seconds. Even the conservative eight-thread CPU upper bound is 3260.8 CPU-seconds, below the frozen 7200 CPU-second ceiling.\n\n**Larger scientific search remains forbidden.** The next authorized compute is engineering-only CDM3-B1 below.\n\n## CDM3-B1 frozen engineering benchmark\n\n**Purpose:** isolate the production hot-path throughput regression observed in P1 without enlarging the scientific search population. This is an engineering benchmark, not a counterexample search.\n\n### Frozen comparison\n\nUse identical deterministic odd starts at exactly 256, 512 and 1024 bits and require identical endpoint/disposition/step digests across every exact implementation variant. Compare side-by-side in the same host session:\n\n1. the CDM2-R3 fixed-limb odd-only reference kernel;\n2. the current CDM3-P1 production U-step path;\n3. the current P1 path compiled with `-march=native`;\n4. an exact overflow-safe production path that avoids copying the full 64-limb state on every ordinary U-step, compiled with `-march=native`.\n\nThe optimized path must preserve the exact 4096-bit escape/freeze semantics. No safety check may be removed merely for speed.\n\n### Benchmark population and passes\n\n| Item | CDM3-B1 ceiling |\n|---|---:|\n| bit lengths | exactly 256, 512, 1024 |\n| deterministic starts per bit length per timing pass | <= 8,192 |\n| timing passes per one-thread variant | <= 5 |\n| implementation variants | <= 4 |\n| scaling worker counts | exactly 1, 2, 4, 8 on the best exact candidate path only |\n| scaling starts per bit length per worker-count measurement | <= 32,768 |\n| scientific candidate promotions | zero |\n| new scientific population | zero |\n\n### Resource ceilings\n\n| Resource | CDM3-B1 ceiling |\n|---|---:|\n| wall-clock | <= 5 minutes |\n| CPU budget | <= 20 CPU-minutes |\n| memory | <= 1 GiB |\n| committed result storage | <= 50 MiB |\n| GPU execution | not authorized |\n\n### Mandatory correctness gates\n\n- identical deterministic starts across compared kernels;\n- exact state/disposition/U-step/shortened-step digest equality;\n- forced 4096-bit escape routing still passes;\n- GMP/Python spot replay still passes;\n- sanitizer build passes for any modified production kernel;\n- source/compiler/executable hashes recorded.\n\n### Decision rule\n\nCDM3-B1 must explain the P1/R3 throughput gap well enough to make the next campaign economics auditable. If the optimized exact production path remains materially slower than the side-by-side R3 reference, larger search remains blocked and the bottleneck must be localized further. If parity is substantially recovered without weakening correctness, a later session may freeze the smallest justified CPU scale-up or sparse-GPU benchmark. CDM3-B1 itself may not execute that later campaign.\n
+
+## CDM3-B1 closeout — 2026-10-01
+
+**Status:** COMPLETE — **B1-A THROUGHPUT REGRESSION RESOLVED.**
+
+The final authoritative four-way replay used 4,096 starts per bit length per pass and five passes. The optimized exact path recovered 102.35%, 101.39% and 99.70% of the side-by-side R3 U-step rate at 256, 512 and 1024 bits.
+
+All correctness gates passed. Benchmark execution used 10.375 wall seconds and 13.955 reported CPU-seconds. No scientific search population was executed.
+
+The selected kernel uses the destructive fixed-limb `mul3add1` directly when the normalized state occupies fewer than 64 limbs. Only an already-full 64-limb state receives a recovery copy before mutation. A failed multiply restores the exact pre-step state and preserves the P1 escape/freeze route.
+
+**GPU execution remains unauthorized.**
+
+## CDM3-P2 frozen bounded CPU campaign
+
+**Status:** AUTHORIZED DESIGN / EXECUTION CONDITIONAL. CDM3-B1 recovered production-credible CPU throughput. P2 may execute only after a dedicated P2 production engine is committed and passes the preflight below. CDM3-B1 itself did not execute P2.
+
+### Purpose
+
+Take the smallest scientific scale-up justified by B1: double the completed P1 population while keeping the same scientific distribution and all P1 proof/safety boundaries.
+
+Because B1 more than doubled the non-native P1 hot-path U-step rate in every band, a 2x population is expected to have trajectory-CPU economics comparable to P1 rather than requiring a qualitatively larger compute commitment. This is an engineering estimate, not a guarantee and not evidence for divergence.
+
+### Frozen scientific population
+
+| Item | CDM3-P2 limit |
+|---|---:|
+| bit lengths | exactly 256, 512, 1024 |
+| Arm U generated starts per bit length | exactly 10,000,000 |
+| Arm L generated starts per bit length | exactly 10,000,000 |
+| generated starts per bit length | exactly 20,000,000 |
+| total Arm U generated starts | exactly 30,000,000 |
+| total Arm L generated starts | exactly 30,000,000 |
+| total generated starts | exactly 60,000,000 |
+| worker threads | <= 8 |
+| scientific promotions during broad search | exceptional freeze protocol only |
+
+Use the exact P1 counter-based generator algorithm with disjoint counter intervals that cannot overlap P1. Freeze these counter bases unless the P2 implementation proves a collision with prior committed work:
+
+| band / arm | counter base | count |
+|---|---:|---:|
+| 256 U | 100,000,000 | 10,000,000 |
+| 256 L | 112,000,003 | 10,000,000 |
+| 512 U | 124,000,006 | 10,000,000 |
+| 512 L | 136,000,009 | 10,000,000 |
+| 1024 U | 148,000,012 | 10,000,000 |
+| 1024 L | 160,000,015 | 10,000,000 |
+
+Before execution the P2 preflight must explicitly verify those intervals are disjoint from every P1 work-unit interval recorded in `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`.
+
+### Required production path
+
+- dedicated P2 source/version; do not mutate the historical P1 source bundle;
+- B1 rare-path recovery-copy kernel;
+- `-O3 -march=native` or a documented execution-host equivalent;
+- 64-limb / 4096-bit fixed fast path;
+- exact odd-only U-step and shortened-step-equivalent accounting;
+- Tier-2 discovery-basin stop at `n < 2^71`;
+- Arm U has no first-descent-as-convergence shortcut;
+- Arm L uses only approved exact binary pruning;
+- exact escape/freeze routing and independent GMP/Python replay;
+- deterministic work units, checksums and checkpoint/restart.
+
+### Exceptional-candidate rules
+
+Retain the P1 triggers unchanged unless a later separately frozen amendment is justified before execution:
+
+- >= 32,768 exact U-steps;
+- peak >= start bit length + 512 bits;
+- leaving the 4096-bit fixed path;
+- repeated state;
+- invariant mismatch;
+- resource-ceiling pressure.
+
+An exceptional freeze is not a counterexample. Stop broad processing of that object and transfer it to independent replay and structural/certification analysis.
+
+### Mandatory P2 preflight
+
+Before any of the 60,000,000 scientific starts may execute:
+
+1. fixed-limb vs GMP transition agreement at all three bands;
+2. optimized-kernel forced 4096-bit escape with exact original-state preservation;
+3. odd-only/shortened-map equivalence;
+4. independent Python replay;
+5. ASan/UBSan;
+6. deterministic work-unit checksum replay;
+7. checkpoint/restart equality;
+8. one-thread and multi-thread digest equality;
+9. P2 counter-interval non-overlap with all P1 work units;
+10. source/compiler/executable hashes;
+11. internal executable ceilings equal to or stricter than this section;
+12. a small integration timing check showing the committed P2 engine has not reintroduced the B1 hot-path regression.
+
+If any gate fails, scientific execution is not authorized.
+
+### P2 resource ceilings
+
+| Resource | CDM3-P2 ceiling |
+|---|---:|
+| wall-clock | <= 15 minutes |
+| CPU budget | <= 60 CPU-minutes |
+| memory | <= 1 GiB |
+| committed result storage | <= 300 MiB |
+| GPU execution | not authorized |
+
+These ceilings are deliberately conservative. Do not enlarge P2 because the optimized engine runs quickly.
+
+### P2 post-exhaustion rule
+
+Stop after the exact frozen 60,000,000-start population or earlier on a mandatory campaign-level resource stop. Preserve all valid work-unit results and exceptional freezes. Audit survivor-tail economics and scientific dispositions before authorizing any further CPU population or any GPU benchmark.
+
+A null P2 result does not automatically authorize P3.
+

@@ -88,7 +88,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: CDM3-P1 COMPLETE — P1-B MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND; LARGER SCIENTIFIC SCALING BLOCKED.**
+**Status: CDM3-B1 COMPLETE — B1-A THROUGHPUT REGRESSION RESOLVED; CDM3-P2 BOUNDED CPU CAMPAIGN FROZEN / EXECUTION CONDITIONAL ON PREFLIGHT.**
 
 CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
@@ -105,9 +105,28 @@ Before any pilot trajectory campaign, the production driver must pass the prefli
 
 A pilot survivor remains finite evidence only. Any exceptional object is frozen, independently replayed, then transferred to structural/certification mathematics.
 
-CDM3-P1 completed the full frozen 30,000,000-start population after all preflight gates passed. All 23,334,780 executed trajectories reached the Tier-2 basin; no exceptional candidate froze and no counterexample was found or claimed. The survivor-cost tail remained manageable, but production hot-path throughput was materially below the R3 benchmark economics. CDM3-P1 therefore closed P1-B. Production scaling beyond CDM3-P1 remains unauthorized pending CDM3-B1.
+CDM3-P1 completed the full frozen 30,000,000-start population after all preflight gates passed. All 23,334,780 executed trajectories reached the Tier-2 basin; no exceptional candidate froze and no counterexample was found or claimed. The survivor-cost tail remained manageable, but production hot-path throughput was materially below the R3 benchmark economics. CDM3-P1 therefore closed P1-B.
 
-### CDM3-P1 closeout\n\nAuthoritative report: `experiments/CDM3_P1_REPORT.md`.  \nMachine-readable result: `experiments/CDM3_P1_RESULT.json`.\n\n**COMPUTATIONAL-EVIDENCE:** 30,000,000 starts were generated; 6,665,220 Arm-L starts were exactly pruned; 23,334,780 trajectories were executed and all reached `n<2^71`. Maximum U-step counts were 938, 1749 and 3237 at 256, 512 and 1024 bits. No exceptional freeze, repeat, bigint escape or invariant failure occurred.\n\n**Engineering decision:** survivor tails remained manageable, but production per-worker U-step throughput was only about 23%, 42% and 47% of the corresponding R3 one-core rates on Arm U. This is a material scale-up bottleneck and requires CDM3-B1 before any larger scientific campaign.\n\n## CDM4 — STRUCTURAL EXTRACTION
+CDM3-B1 then isolated and removed that engineering regression. Native compilation materially improved the unchanged P1 path, and moving the recovery copy off the ordinary U-step restored R3-class throughput while preserving exact escape/replay semantics. The optimized path reached 102.35%, 101.39% and 99.70% of the local R3 U-step rate at 256, 512 and 1024 bits. B1 closed B1-A.
+
+### CDM3-P1 closeout
+
+Authoritative report: `experiments/CDM3_P1_REPORT.md`.  
+Machine-readable result: `experiments/CDM3_P1_RESULT.json`.
+
+**COMPUTATIONAL-EVIDENCE:** 30,000,000 starts were generated; 6,665,220 Arm-L starts were exactly pruned; 23,334,780 trajectories were executed and all reached `n<2^71`. Maximum U-step counts were 938, 1749 and 3237 at 256, 512 and 1024 bits. No exceptional freeze, repeat, bigint escape or invariant failure occurred.
+
+### CDM3-B1 closeout
+
+Authoritative report: `experiments/CDM3_B1_REPORT.md`.  
+Machine-readable result: `experiments/CDM3_B1_RESULT.json`.  
+Engineering note: `docs/CDM3_B1_ENGINEERING.md`.
+
+**FINITE-VERIFIED engineering result:** every correctness gate passed. The final optimized exact production candidate reached 67.478M, 66.241M and 51.339M U-steps/s at 256, 512 and 1024 bits, recovering 102.35%, 101.39% and 99.70% of the side-by-side R3 reference. The P1 full-state-copy hypothesis and missing-`-march=native` hypothesis were both confirmed material.
+
+**Decision:** freeze CDM3-P2 as the smallest justified scientific scale-up: exactly 60,000,000 generated CPU starts, double P1, with the same three bands and dual arms. P2 execution is conditional on dedicated production integration and complete preflight. GPU work remains unauthorized.
+
+## CDM4 — STRUCTURAL EXTRACTION
 
 Take informative growth anomalies and search for exact parity/residue/affine structures explaining them.
 
@@ -133,6 +152,6 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Execute only the separately frozen CDM3-B1 engineering benchmark in `docs/COMPUTE_BUDGET.md`: compare the R3 reference kernel, current P1 hot path, native compilation, and an exact overflow-safe no-full-copy path under identical starts and digests, then measure 1/2/4/8-worker scaling.
+Implement the separately versioned CDM3-P2 production engine using the B1 rare-path-copy kernel and native compilation. Prove counter non-overlap, pass every frozen preflight gate, then execute only the 60,000,000-start P2 CPU campaign if all gates pass.
 
-Do not enlarge the scientific search population. Do not begin GPU/cloud/volunteer production scaling until the production-throughput regression is understood and a later campaign is separately frozen.
+Do not enlarge P2 after observing results. Do not begin GPU/cloud/volunteer scaling. A null P2 result does not authorize P3 by itself.

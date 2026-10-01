@@ -3,24 +3,30 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM3-P1 complete — P1-B machine validated; production hot-path bottleneck found; larger scientific scaling blocked pending CDM3-B1**
+- Project stage: **CDM3-B1 complete — B1-A throughput regression resolved; bounded CDM3-P2 CPU campaign frozen, execution conditional on P2 production integration/preflight**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
 - Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
-- Current authoritative computational-reach report: `experiments/CDM3_P1_REPORT.md`
+- Current authoritative scientific-search report: `experiments/CDM3_P1_REPORT.md`
+- Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
+- Current CDM3-B1 machine-readable result: `experiments/CDM3_B1_RESULT.json`
+- Current CDM3-B1 implementation note: `docs/CDM3_B1_ENGINEERING.md`
 - Current R3 architecture specification: `docs/CDM2_R3_ARCHITECTURE.md`
-- Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`\n- Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`\n- Current CDM3-P1 pilot result: `experiments/CDM3_P1_RESULT.json`\n- Current CDM3-P1 work-unit provenance: `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
+- Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`
+- Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
+- Current CDM3-P1 pilot result: `experiments/CDM3_P1_RESULT.json`
+- Current CDM3-P1 work-unit provenance: `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
 - Current symbolic frontier: parity/residue affine identities, exact K-survival logic, finite inverse-tree binary pruning, lift-quotient future-block freedom, and the finite inverse-sieve/CRT obstruction
-- Current computational-reach frontier: **exact sparse 128–1024-bit starts directly benchmarked; fixed-limb odd-only median one-core rates ~187k/s at 256 bits, ~75k/s at 512 bits, ~27k/s at 1024 bits on the R3 host**
+- Current computational-reach frontier: **P1 exhausted 30,000,000 frozen 256/512/1024-bit sparse starts; B1 recovered production hot-path parity with local R3 at 67.48M / 66.24M / 51.34M U-steps/s on its benchmark host**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **CDM3-P1 COMPLETE AS P1-B; larger scientific scaling is NOT AUTHORIZED until the bounded CDM3-B1 hot-path benchmark closes the production-throughput regression**
-- Immediate next task: **CDM3-B1 — bounded production-hot-path benchmark comparing the R3 reference kernel, current P1 production path, `-march=native`, and an exact overflow-safe no-full-copy U-step path; no scientific population increase**
-- Forbidden next action: any larger scientific search, GPU production campaign, or population increase before CDM3-B1 resolves the P1 throughput regression; finite survival remains non-proof
-- Explicitly permitted next action: execute only the separately frozen CDM3-B1 engineering benchmark; do not enlarge the scientific search population
+- CDM3: **CDM3-B1 COMPLETE AS B1-A; the bounded CDM3-P2 CPU campaign is the only authorized larger scientific path and remains gated on committed P2 integration/preflight**
+- Immediate next task: **CDM3-P2 — build a separately versioned production engine using the B1 rare-path-copy kernel and native compilation, prove counter non-overlap, pass every frozen preflight gate, then execute only the frozen 60,000,000-start CPU campaign if all gates pass**
+- Forbidden next action: enlarging CDM3-P2 beyond its frozen 60,000,000 starts, GPU production/benchmark work, skipping P2 preflight, reusing P1 counters, or treating finite survival as proof
+- Explicitly permitted next action: implement and validate the dedicated P2 engine; after every preflight gate passes, execute only the frozen CDM3-P2 CPU envelope in `docs/COMPUTE_BUDGET.md`
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -45,6 +51,10 @@ The repository, not conversational memory, is the authoritative research state.
 17. `experiments/CDM2_R3_REPORT.md`
 18. `docs/CDM2_R3_ARCHITECTURE.md`
 19. `experiments/CDM2_R3_BENCHMARK_RESULT.json`
+20. `experiments/CDM3_P1_REPORT.md`
+21. `experiments/CDM3_B1_REPORT.md`
+22. `experiments/CDM3_B1_RESULT.json`
+23. `docs/CDM3_B1_ENGINEERING.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -141,9 +151,17 @@ The complete machine is specified in docs/CDM2_R3_ARCHITECTURE.md.
 
 The CDM3-P1 resource design was frozen in docs/COMPUTE_BUDGET.md before execution. CDM3-P1 subsequently passed every required preflight gate and completed as **P1-B — MACHINE VALIDATED; ENGINEERING BOTTLENECK FOUND**.
 
+## CDM3-B1 closeout — 2026-10-01
+
+CDM3-B1 is complete as **B1-A — THROUGHPUT REGRESSION RESOLVED**.
+
+The final exact optimized path recovered 102.35%, 101.39% and 99.70% of the side-by-side R3 U-step rate at 256, 512 and 1024 bits. Every correctness gate passed. Native compilation and unconditional recovery-copy placement were both confirmed material causes.
+
+The next scientific action is frozen in `docs/COMPUTE_BUDGET.md` as CDM3-P2: exactly 60,000,000 generated starts, double P1, with no GPU execution.
+
 ## Authoritative next-session prompt
 
-### CDM3-B1 — ISOLATE AND RECOVER THE PRODUCTION HOT-PATH THROUGHPUT REGRESSION
+### CDM3-P2 — INTEGRATE THE B1 KERNEL, PASS PREFLIGHT, AND RUN THE FROZEN 60-MILLION-START CPU CAMPAIGN
 
 Continue the standalone research programme:
 
@@ -155,48 +173,62 @@ Repository:
 
 Treat the repository — not conversational memory — as the authoritative research state.
 
-Before implementation or benchmarking, read the complete Read before working list above and, in particular:
+Before implementation or computation, read the complete Read before working list above and especially:
 
-- `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
+- `experiments/CDM3_P1_REPORT.md`
 - `experiments/CDM3_P1_RESULT.json`
 - `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
-- `experiments/CDM3_P1_REPORT.md`
-- `experiments/CDM3_P1_COMMAND_RECORD.md`
+- `experiments/CDM3_B1_REPORT.md`
+- `experiments/CDM3_B1_RESULT.json`
+- `experiments/CDM3_B1_COMMAND_RECORD.md`
+- `docs/CDM3_B1_ENGINEERING.md`
 - `docs/COMPUTE_BUDGET.md`
-- `docs/FAILURE_AND_LESSON_LEDGER.md`
-- `benchmarks/cdm2_r3_sparse_bench.c`
-- `production/cdm3_p1_engine.c`
 
 ### Root objective
 
-The root objective is unchanged: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and never reaches 1.
+The only root objective remains an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and never reaches 1.
 
-CDM3-B1 is engineering-only. It does not enlarge the scientific population and cannot certify divergence.
+Finite survival, throughput, magnitude and large peaks remain non-proof.
 
 ### Task
 
-Execute exactly the frozen CDM3-B1 benchmark in `docs/COMPUTE_BUDGET.md`.
+Create a separately versioned CDM3-P2 production engine. Do not alter the historical P1 source bundle.
 
-Under identical deterministic starts and exact result digests, compare:
+Integrate exactly the B1-selected hot path:
 
-1. the CDM2-R3 fixed-limb odd-only reference kernel;
-2. the current CDM3-P1 production U-step path;
-3. the current P1 path compiled with `-march=native`;
-4. an exact overflow-safe production path that avoids copying the full 64-limb state on every ordinary U-step, also compiled with `-march=native`.
+- native production compilation;
+- direct destructive `mul3add1` while the normalized state occupies fewer than 64 limbs;
+- recovery copy only when the state already occupies all 64 limbs;
+- exact restore/freeze/escape semantics if fixed capacity is exceeded.
 
-Preserve exact 4096-bit escape/freeze semantics. Do not remove a safety check merely for speed.
+Preserve the P1 deterministic generator algorithm, dual arms, Tier-2 basin stop, exceptional-candidate triggers, work-unit/checkpoint/replay machinery and proof boundaries.
 
-Measure the best exact candidate path at 1, 2, 4 and 8 workers inside the frozen B1 envelope.
+Before scientific execution, pass every P2 preflight gate frozen in `docs/COMPUTE_BUDGET.md`, including explicit proof that the P2 counter intervals do not overlap any P1 work-unit interval.
 
-### Required decision
+### Frozen P2 population
 
-Determine whether the R3-to-P1 throughput gap is explained sufficiently to make the next campaign economics auditable.
+Execute only after all gates pass:
 
-- If the optimized exact production path remains materially slower than the side-by-side R3 reference, keep larger search blocked and localize the remaining bottleneck.
-- If substantial parity with the R3 reference is recovered without weakening correctness, freeze — but do not execute — the smallest justified next CPU scale-up or sparse-GPU benchmark.
+- exactly 256, 512 and 1024 bits;
+- exactly 10,000,000 Arm-U starts per bit length;
+- exactly 10,000,000 Arm-L starts per bit length;
+- exactly 60,000,000 generated starts total;
+- <=8 workers;
+- <=15 minutes wall;
+- <=60 CPU-minutes;
+- <=1 GiB RAM;
+- <=300 MiB committed result storage;
+- no GPU execution.
 
-Do not run a larger scientific campaign in CDM3-B1.
+Do not enlarge the population after observing results.
 
-### Permanent proof boundary
+### Exceptional object rule
 
-Finite computation, throughput, magnitude, a large peak, or long survival is not a Collatz counterexample. Only rigorous certification of an explicit unbounded orbit satisfies the root objective.
+If an exceptional candidate freezes, stop broad processing of that object, preserve exact provenance, replay independently, and transfer it to structural/certification analysis. Do not equate the finite event with divergence.
+
+### Closeout
+
+Report exact generated/executed/pruned/basin/freeze counts, U-step and shortened-step totals, survivor-tail statistics, work-unit/checkpoint integrity, production throughput, source/compiler/executable hashes, every exceptional object, whether any candidate entered structural analysis, and whether any counterexample was found or claimed.
+
+A null result does not automatically authorize P3 or GPU work.
+
