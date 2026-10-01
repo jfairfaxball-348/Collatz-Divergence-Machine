@@ -244,3 +244,34 @@ The project has therefore restored its original counterexample-at-scale working 
 - **Reach-first engineering is IN SCOPE:** algorithms, representations, sieves, batching, CPU/GPU/distributed machinery, or sparse sampling methods whose purpose is to move the searchable magnitude regime by orders of magnitude and test the explicit high-scale counterexample hypothesis.
 
 This strategic correction does not alter the proof boundary: finite survival remains non-proof, and a discovered candidate still requires independent replay and rigorous certification.
+
+
+## F0022 — Starting magnitude through 1024 bits is not the dominant sparse-search cost
+
+**Status:** COMPUTATIONAL-EVIDENCE from CDM2-R3; not a theorem about all trajectories.
+
+The bounded R3 benchmark executed 12,288 deterministic odd starts across 128, 192, 256, 384, 512 and 1024 bits with exact fixed-limb arithmetic and a GMP reference. Every benchmark start reached the Tier-2 discovery basin n<2^71. Median fixed-limb odd-only throughput remained about 84 million U-steps/s at 256 bits, 80 million at 512 bits and 63 million at 1024 bits on the measured one-core EPYC VM.
+
+The largest observed shortened-map peaks were only modestly above the starting bit length: 267, 527 and 1039 bits for the 256, 512 and 1024 bands.
+
+**Lesson:** for ordinary sparse trajectories in this measured range, cost is controlled much more by trajectory length and peak growth than by starting magnitude itself. Do not treat "1024-bit start" as synonymous with "bigint-expensive trajectory."
+
+**Action:** CDM3 may target 256–1024-bit sparse starts with a fixed-limb fast path and bigint escape queue, subject to its frozen pilot envelope.
+
+## F0023 — Contiguous verification throughput cannot be imported as sparse-search throughput
+
+**Status:** PROVED as an objective distinction; implementation economics FINITE/COMPUTATIONAL-EVIDENCE.
+
+Modern contiguous verification gains enormous speed by sieving starts and stopping once a trajectory falls into an already verified lower region. Published integers/second figures therefore include many starts whose individual trajectories are never executed.
+
+A sparse high-magnitude start has no such general first-descent certificate. Descent below the start to another untrusted huge value is not convergence and may still lie on an unbounded orbit.
+
+**Lesson:** sparse search must measure exact trajectory work until a trusted basin/cache hit or another justified stop. Do not estimate sparse 512/1024-bit candidate throughput from Barina/Honda/Angeltveit contiguous integers/second values.
+
+## F0024 — Global high-state trajectory caching is not automatically an optimization
+
+**Status:** HEURISTIC engineering conclusion; to be re-measured in CDM3.
+
+For unrelated high-magnitude sparse starts, the state space is enormous and exact high-state merges are expected to be rare before trajectories shrink. A global hash lookup on every U-step can therefore add memory traffic without enough shared-tail hits to repay it.
+
+**Action:** begin CDM3-P1 with no giant high-state DAG. Retain provenance-tagged trusted-tail caching near smaller states and promoted survivors. Expand caching only after measuring merge-hit rate versus lookup cost.
