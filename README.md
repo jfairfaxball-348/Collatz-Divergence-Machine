@@ -3,12 +3,7 @@
 
 **Root objective:** find an explicit positive integer whose orbit under the shortened Collatz map
 
-[
-T(n)=egin{cases}
-n/2,&n\text{ even},\\
-(3n+1)/2,&n\text{ odd}
-end{cases}
-]
+`T(n) = n/2` if `n` is even, and `T(n) = (3n+1)/2` if `n` is odd,
 
 can be **rigorously proved unbounded** and can be rigorously proved never to reach `1`.
 
@@ -42,6 +37,6 @@ The intended feedback loop is:
 
 ## CDM0 status
 
-The repository is currently at **CDM0 — Scaffold and Calibration**. The included calibration is deliberately tiny and deterministic. It exercises the complete software path without attempting a meaningful counterexample search.
+The repository begins at **CDM0 — Scaffold and Calibration**. Its calibration is deliberately tiny and deterministic. It exercises the software path without attempting a meaningful counterexample search.
 
 Read [`AGENTS.md`](AGENTS.md) and [`START_HERE.md`](START_HERE.md) before doing research.
