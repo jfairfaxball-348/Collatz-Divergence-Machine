@@ -863,6 +863,42 @@ Nesterenko's survey records earlier Molchanov/Yanchenko p-adic algebraic-indepen
 
 **T8 disposition:** historical lead only; not load-bearing.
 
+### 15.12 Explicit theorem-hypothesis matrix
+
+For this table, **NR** means that the full theorem statement was not recovered in inspectable authoritative/peer-reviewed text, so T8 deliberately does not infer the field from a title or abstract. “Same point” means several different function values at one common algebraic argument, which is the T8 need.
+
+#### Functional and ambient hypotheses
+
+| Source/theorem | Mahler base | Number of functions | Same/shared base? | Equation type | Coefficient field | Characteristic | Completion | Analytic/convergence domain |
+|---|---|---:|---|---|---|---:|---|---|
+| Bugeaud–Yao 2017 Thm. 3.1 + remark | one integer \(d\ge2\) | 1 | scalar | first-order inhomogeneous allowed | integer-polynomial data | 0 | p-adic | evaluation inside open p-adic unit disc |
+| Xu–Wang 2004 | NR | NR | NR | NR | NR | NR | p-adic subject verified; exact field NR | NR |
+| Wang 2006 | NR | NR | NR | “some Mahler type functions” only at abstract level; exact class NR | NR | NR | p-adic subject verified; exact field NR | NR |
+| Wang–Xu 2006 algebraic-functional-equation paper | NR | NR | NR | algebraic functional equations of Mahler type at title/abstract level; exact class NR | NR | NR | p-adic subject verified; exact field NR | NR |
+| Flicker 1979 Thm. 2 framework | sequence of nonnegative integral matrix transformations | several | common transformation sequence | functional systems with algebraic multipliers/coefficients | number field \(K\), completed at \(\mathfrak p\) | 0 | arbitrary completion, including p-adic | invariant neighbourhood/domain plus uniform boundedness and limiting-function hypotheses |
+| Bundschuh–Nishioka 2004 Thm. 1 | exponents from an increasing linear recurrence, not a general stationary Mahler base | one sparse function evaluated at several points | not the T8 multi-function shared-base setup | sparse series \(\sum\zeta(n)x^{e(n)}\) | p-adic number field setting / roots of unity | 0 | \(\mathbb Q_p\)-type | \(|\alpha_\tau|_p<1\) |
+| Kubota / Loxton–van der Poorten / Nishioka classical value theorems audited here | classical Mahler transformations | several possible | theorem-dependent | classical Mahler functional systems | algebraic/number fields | 0 | verified readily matching value statements are archimedean | complex neighbourhood / \(|\alpha|<1\)-type hypotheses |
+| Amou–Väänänen infinite-product theorem | common integer power \(r\) | several products | YES | first-order product/Mahler equations | number field | 0 | explicitly an infinite place in the evaluated theorem | \(0<|\alpha|_v<1\) plus regularity/height bound |
+| Adamczewski–Faverjon value lifting audited in T7/T8 | integer/matrix Mahler transformations | several | common system | linear Mahler systems | \(\overline{\mathbb Q}\)/number fields | 0 | relevant audited value theorem is complex | regular/admissible algebraic point in complex domain |
+| Goto–Tanaka 2018 | power transformation relatively prime to field characteristic | several | common transformation | Mahler-type functional equations | function field | positive characteristic | function-field setting | theorem-specific positive-characteristic analytic domain |
+
+#### Evaluation-point and conclusion hypotheses
+
+| Source/theorem | Evaluation-point restrictions | Rational non-torsion p-adic unit permitted? | Singularity restrictions | Functional algebraic-independence assumption | Value algebraic-independence conclusion | Linear-independence conclusion | Several values at same point? | Multiplicatively related points? | Height/dominance assumptions | Exact Collatz character family? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Bugeaud–Yao 2017 | \(p^w\), with published extension to \(rp^w/s,\ p\nmid rs\) | **YES** in this theorem | equation factors nonzero along full Mahler orbit | none for multiple functions | individual transcendence | no multi-value result | NO | not a simultaneous-points theorem | Hankel conditions; stronger gap control for irrationality exponent | **YES individually**, NO for no-cancellation |
+| Xu–Wang 2004 | NR | NR | NR | NR | title says algebraic-independence measures, exact conclusion NR | NR | NR | NR | NR | **UNVERIFIED** |
+| Wang 2006 | NR | NR | NR | NR | abstract says transcendence/measures for some functions, exact conclusion NR | NR | NR | NR | NR | **UNVERIFIED** |
+| Wang–Xu 2006 | NR | NR | NR | NR | abstract/title-level transcendence measures, exact conclusion NR | NR | NR | NR | NR | **UNVERIFIED** |
+| Flicker 1979 | algebraic point satisfying domain/transformation/dominance conditions | no T6-style blanket allowance verified | embedded in functional-system/domain hypotheses | substantial limiting-function algebraic independence | algebraic independence of several values under full hypotheses | implied if theorem applies | YES within framework | not the central audited formulation | substantial transformation growth, direction, valuation/dominance conditions | **NO application verified** |
+| Bundschuh–Nishioka 2004 | distinct nonzero p-adic \(\alpha_\tau\) with \(|\alpha_\tau|_p<1\) plus recurrence-dependence criterion | theorem is not phrased around the Collatz S-unit issue | sparse-series hypotheses replace Mahler-orbit singularity test | encoded through recurrence/point dependence and root-of-unity field hypotheses | YES for qualifying value sets | implied when algebraic independence holds | not several different T8 functions at one common point | allowed/forbidden according to the paper's \(e(n)\)-dependence criterion | theorem-specific recurrence and field-growth hypotheses | NO |
+| Classical Kubota/LvP/Nishioka value theorems used as comparison | algebraic points in complex Mahler domain | not a verified p-adic allowance in the theorem application audited | regularity/non-pole conditions | theorem-dependent, often functional independence | YES in classical complex scope | sometimes as consequence | YES in classical scope where hypotheses match | theorem-dependent | classical Mahler height/zero-estimate hypotheses | NO p-adic T8 application verified |
+| Amou–Väänänen | algebraic \(\alpha\) at an infinite place, \(0<|\alpha|_v<1\), plus height condition | NOT APPLICABLE: evaluated theorem is archimedean | all product equation factors nonzero along orbit | multiplicative independence modulo the defined rational-function group | YES | implied | YES for several products | theorem formulated at same \(\alpha\); other point relations not the T8 issue | explicit height ratio bound \(\lambda(\alpha)\) and quantitative estimates | NO, wrong completion |
+| Adamczewski–Faverjon | regular/admissible algebraic complex point | NOT A p-adic statement in the audited value theorem | regular point required | functional relation/lifting hypotheses | YES in complex setting | corresponding complex linear-relation lifting results | YES in complex setting | theorem-dependent | admissibility/regularity and Mahler-system conditions | NO, wrong completion |
+| Goto–Tanaka 2018 | nonzero algebraic points in positive-characteristic function-field setting | NOT APPLICABLE | theorem-specific | functional algebraic-independence criterion | YES in positive characteristic | consequence where applicable | YES within its own setting | theorem-dependent | positive-characteristic Mahler hypotheses | NO, wrong characteristic |
+
+The matrix is intentionally asymmetric: a field marked NR is a **failed source-recovery item**, not a negative theorem hypothesis. T8 therefore neither claims that Xu–Wang/Wang exclude the Collatz family nor claims that they apply to it.
+
 ## 16. The exact missing theorem
 
 After T8's reductions, the missing theorem can be stated sharply.
