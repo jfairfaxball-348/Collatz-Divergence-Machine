@@ -372,3 +372,66 @@ CDM2-R1/R2 supply exact finite-prefix and inverse-tree mathematics, but after an
 The missing object is therefore not another finite anomaly score. It is an effective nonlocal or recursively closed structure that converts finite description into forced indefinite future behavior and can ultimately support both unboundedness and exclusion from the `1`-basin.
 
 **Action:** prioritize CDM4-T1 theory work on recursively closed divergence mechanisms. Reject proposed routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other already-preserved finite-depth failures.
+
+
+## F0034 — Repeated expanding Collatz blocks cannot support positive-integer divergence
+
+**Status:** PROVED in CDM4-T1.
+
+If a positive integer has an eventually periodic shortened-map parity sequence, then after the preperiod two states separated by one parity period have the same infinite parity sequence. Equality of every finite parity prefix forces those states to be congruent modulo every power of two, hence equal. The orbit is therefore eventually periodic and bounded.
+
+For a purely repeated length-K block with f odd steps and affine constant c,
+
+T^K(x)=(3^f x+c)/2^K.
+
+Periodicity forces T^K(x)=x, so (2^K-3^f)x=c. If 3^f>2^K and f>0, then c>0 and the fixed point is negative. Therefore no positive integer can repeat an expanding block forever.
+
+**Lesson:** one favorable block plus exact self-repetition is not a divergence route. Autonomous deterministic finite-state block machines also fail because finite deterministic control eventually produces a periodic block sequence.
+
+**Action:** require any surviving finite-description mechanism to be genuinely aperiodic or to carry an unbounded scale/refinement parameter. Do not revive fixed-block repetition as a certification route.
+
+## F0035 — Whole arithmetic-progression family return graphs cannot contain a recursive Collatz cycle
+
+**Status:** PROVED in CDM4-T1.
+
+Let a vertex family be a full arithmetic-progression tail S_i={r_i+M_i q:q>=q_i}. Suppose an edge i->j applies one fixed realizable Collatz parity block of positive length K to every sufficiently large member of S_i and maps every endpoint into S_j.
+
+Fixed-block validity for consecutive source members requires 2^K | M_i. The affine image of consecutive source members differs by
+
+D=3^f M_i/2^K.
+
+Because all endpoints lie in S_j, M_j | D. Hence
+
+v_2(M_j) <= v_2(M_i)-K.
+
+Every positive-length edge strictly consumes 2-adic period depth. Around a directed cycle this would force v_2(M_i)<v_2(M_i), impossible.
+
+**Lesson:** a finite graph of whole congruence/progression families with fixed-block edges cannot supply indefinite recursive closure. The obstruction is structural, not a failure of block selection.
+
+**Action:** do not build another finite return automaton whose vertices are ordinary full arithmetic progressions and whose edges map whole source families by fixed parity blocks. Surviving routes must refine indefinitely, be nonlinear/non-periodic, or carry unbounded state.
+
+## F0036 — Profinite/inverse-limit compatibility is not an ordinary-positive-integer anchor
+
+**Status:** PROVED in CDM4-T1.
+
+For nested moduli M_1|M_2|... tending to infinity and compatible canonical residues 0<=r_j<M_j, there is one nonnegative integer N satisfying N==r_j (mod M_j) for every j if and only if the canonical residues r_j eventually stabilize to N.
+
+Therefore a recursively compatible 2-adic, 3-adic, or mixed-adic residue tower can be nonempty at every level and define a valid profinite point while corresponding to no ordinary positive integer.
+
+For an infinite shortened parity word, the exact starting residue r_K modulo 2^K must therefore eventually equal the same positive integer N if the word is to be realized by N.
+
+**Lesson:** compactness, CRT compatibility at every finite level, or existence of a 2-adic symbolic object does not bridge to the root objective. Positive-integer realization is an additional theorem obligation.
+
+**Action:** every infinite symbolic/substitution/inverse-limit proposal must include an explicit integer-anchoring proof. For nested canonical start residues, demand eventual stabilization; do not accept a merely compatible profinite limit as a candidate.
+
+## F0037 — Finite exponent-code compatibility diagnostics are structural clues, not a new ranker authorization
+
+**Status:** RESEARCH-DESIGN LESSON from CDM4-T1 and focused literature audit.
+
+Accelerated exponent/valuation codes naturally expose real drift together with 2-adic start compatibility and 3-adic endpoint compatibility. Contemporary work including Oliver Kramer's 2026 preprint develops exactly this type of coupled finite diagnostic.
+
+The representation is mathematically relevant, but optimizing finite code length, finite residue rates, or finite real drift would return the project to a finite-score campaign. CDM4-T1 did not find a theorem converting such finite optimization into an ordinary positive integer with indefinitely realized growth.
+
+**Lesson:** the coupled 2/3/real representation is retained as a structural language, not promoted as a finite ranker.
+
+**Action:** authorize only theorem-level work on infinite realization / residue stabilization plus forced growth. No finite exponent-code search campaign, new generator, or GPU workload follows from CDM4-T1.
