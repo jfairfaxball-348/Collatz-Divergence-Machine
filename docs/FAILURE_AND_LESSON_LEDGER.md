@@ -652,3 +652,79 @@ No verified Cobham, morphic-transduction, Mahler, or automatic-sequence theorem 
 **Lesson:** the remaining obstruction is arithmetic rationality of the whole inverse-Collatz tower, not symbolic finiteness of its control language.
 
 **Action:** the next theory audit is CDM4-T5: test automatic/Mahler and p-adic rationality/transcendence machinery directly on the exact inverse-Collatz series, with every bridge verified and López-Stoll 2021 remaining non-load-bearing.
+
+
+## F0049 — Automatic prefix sums do not make the inverse-series coefficients regular
+
+**Status: PROVED structural closure limit in CDM4-T5.**
+
+For a `k`-automatic valuation word `a_n in {1,2}`, the prefix sum `A_n=sum_(i<=n)a_i` is `k`-regular. But the sequence `2^(A_n)` is not `k`-regular over characteristic zero.
+
+An integer-valued `k`-regular sequence has a finite linear representation along the `O(log n)` base-`k` digits of `n`, hence has at most polynomial growth. Since `A_n>=n`, `2^(A_n)>=2^n`.
+
+**Lesson:** the ordinary automatic/regular generating-function bridge cannot be applied directly to the Collatz inverse coefficients. Exponentiating the regular prefix sum is a genuine non-closure step.
+
+**Action:** do not claim that `H=-sum 2^(A_j)/3^(j+1)` is a one-variable Mahler value merely because `a_n` is automatic. Use the exact Parikh/Mahler construction of T5 or prove another functional equation.
+
+
+## F0050 — The exact inverse value has a finite multivariate Mahler-type representation, but current general value theorems are in the wrong completion
+
+**Status: PROVED functional representation / FAILED as a rationality obstruction in CDM4-T5.**
+
+For a `k`-uniform substitution fixed point, let `c(n)` be its prefix Parikh vector, `M` its incidence matrix and `p_r(s)` the prefix Parikh vectors of substituted letters. Then
+
+`c(kn+r)=M c(n)+p_r(u_n)`.
+
+The finite vector series
+
+`F_t(x)=sum_(n:u_n=t) x^(c(n))`
+
+satisfies an exact polynomial monomial recurrence `F(x)=A(x)F(x^M)`. At the 2-adic algebraic letter weights `q_s=2^(v(s))/3`,
+
+`H=-(1/3) sum_t F_t(q)`.
+
+If all substituted blocks have the same total valuation `B`, this collapses to a classical one-variable automatic-coefficient Mahler value `H=-(1/3)G(W)` with `W=2^B/3^k`.
+
+Modern general Mahler value theorems audited in T5 control complex values under their analytic/admissibility hypotheses. They do not identify or constrain the 2-adic value above. Published p-adic results found impose different digit, argument, equation or Hankel hypotheses.
+
+**Lesson:** obtaining a Mahler functional equation is not the missing theorem. The missing bridge is completion-correct arithmetic rationality of its 2-adic specialization.
+
+**Action:** the next theorem work must attack the p-adic value itself, beginning with the balanced one-variable subclass. Do not promote complex transcendence of the same formal series as evidence that the 2-adic value is irrational.
+
+
+## F0051 — Automatic p-adic digit transcendence concerns the wrong sequence
+
+**Status: FAILED theorem application in CDM4-T5.**
+
+Published automatic p-adic number results define automaticity through the canonical base-`p^w` digits of the p-adic number being tested.
+
+T5 knows that the accelerated valuation gaps `a_n` are automatic. It does **not** know that the canonical Hensel digits of the inverse value `H` are automatic. The shortened source-parity point is obtained by the variable-length coding `1->1, 2->10`, which need not preserve same-base automaticity; moreover that parity point is not the binary expansion of `H`.
+
+**Lesson:** automaticity of Collatz control data cannot be silently replaced by automaticity of the anchor's p-adic digits.
+
+**Action:** any future use of automatic-number transcendence must first prove the required automatic structure for the actual canonical digit sequence appearing in the theorem.
+
+
+## F0052 — The residual automatic anchor problem is a restricted 3x+1 Periodicity-Conjecture problem
+
+**Status: IDENTIFIED open bridge in CDM4-T5; NO QUALIFYING THEOREM FOUND.**
+
+Let
+
+`V=sum_(j>=0)2^(A_j)`
+
+be the shortened source-parity point. Bernstein-Lagarias inverse conjugacy gives exactly
+
+`H=Phi(V)=-sum_(j>=0)2^(A_j)/3^(j+1)`.
+
+The implication needed by T5,
+
+`H in Q intersect Z_2  =>  V in Q intersect Z_2`,
+
+is the rationality direction of Lagarias' Periodicity Conjecture, restricted to parity points whose successive 1-gaps form an automatic `{1,2}` sequence.
+
+No peer-reviewed theorem was found that resolves this restricted automatic-gap class. Cobham does not apply because no second automatic base is proved for the same relevant sequence. López-Stoll remains non-load-bearing.
+
+**Lesson:** the residual obstruction is not finite-state symbolic recurrence; it is rationality of the exact inverse conjugacy in the 2-adic completion.
+
+**Action:** CDM4-T6 should first isolate the balanced one-variable Mahler subclass and seek a direct p-adic nonrationality theorem at `W=2^B/3^k`. No scientific compute is authorized.
