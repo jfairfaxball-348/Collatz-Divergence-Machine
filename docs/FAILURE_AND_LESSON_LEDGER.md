@@ -371,7 +371,7 @@ CDM2-R1/R2 supply exact finite-prefix and inverse-tree mathematics, but after an
 
 The missing object is therefore not another finite anomaly score. It is an effective nonlocal or recursively closed structure that converts finite description into forced indefinite future behavior and can ultimately support both unboundedness and exclusion from the `1`-basin.
 
-**Action:** prioritize CDM4-T1 theory work on recursively closed divergence mechanisms. Reject proposed routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other already-preserved finite-depth failures.
+**Action:** CDM4-T1 has now sharpened this bottleneck into the periodic-block, progression-family closure, and ordinary-integer anchoring obstructions. Prioritize CDM4-T2 theory work on aperiodic recursive languages whose exact residue tower anchors to one positive integer while the same language forces unbounded growth. Reject routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other preserved finite-depth failures.
 
 
 ## F0034 — Repeated expanding Collatz blocks cannot support positive-integer divergence
