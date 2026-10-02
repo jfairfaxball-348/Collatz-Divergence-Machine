@@ -68,6 +68,7 @@ The repository, not conversational memory, is the authoritative research state.
 28. `experiments/CDM3_P2_RESULT.json`
 29. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
 30. `experiments/CDM3_P2A_REPORT.md`
+31. `experiments/CDM4_T1_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
