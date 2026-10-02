@@ -134,7 +134,7 @@ def main():
     if args.selftest:
         if not args.engine: ap.error('--selftest requires --engine')
         cases=[]
-        counters=[100000000,100000001,112000003,124000006,148000012]
+        counters=[50_000_000,50_000_001,60_000_000,70_000_000,90_000_000]
         for bits in (256,512,1024):
             for arm in ('U','L'):
                 for counter in counters:
