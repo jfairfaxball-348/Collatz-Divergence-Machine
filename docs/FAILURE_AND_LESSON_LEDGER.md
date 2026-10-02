@@ -599,3 +599,56 @@ Primitive substitution block-coded means are algebraic. Gelfond-Schneider, toget
 **Lesson:** an inequality plus rational/algebraic frequencies does not yield the equality needed by the proposed blanket exclusion. Variable-length odd-gap encoding also cannot be assumed to preserve automaticity in the same base.
 
 **Action:** CDM4-T4 may attack residual primitive constant-length substitutions coded into `{1,2}`, using the exact unbounded arithmetic recurrence. No new scientific starts, generator, scoring campaign, or GPU work is justified.
+
+
+## F0047 — The 3-adic endpoint-cylinder dual does not improve the T3 substitution return threshold
+
+**Status: PROVED identity / FAILED as a stronger residual obstruction in CDM4-T4.**
+
+For a valuation block `w` of length `r`, total valuation `B`, and affine constant `C_w`,
+
+`2^B y = 3^r x + C_w`.
+
+Hence every exact occurrence of the same block ends at the same residue modulo `3^r`:
+
+`y == 2^{-B}C_w (mod 3^r)`.
+
+If a length-`r` prefix repeats after shift `ell`, then
+
+`3^r | (x_(ell+r)-x_r)`.
+
+Combining this exact divisor with the T3 distinct-orbit height bound gives the same exponent condition as the T3 start-cylinder proof:
+
+`A_ell+A_r-(log_2 3)ell-O(log(ell+r)) -> +infinity`.
+
+For primitive substitution returns with `ell/r -> K`, the strict asymptotic criterion is again
+
+`alpha(1+1/K)>log_2 3`.
+
+Combining matching past and future blocks yields a product divisor `3^s 2^(B_+ +1)`, but on substitution-scaled returns the gain from moving the comparison point is exactly offset by the corresponding archimedean height cost. The same exponent budget remains.
+
+**Lesson:** adding the formally dual 3-adic endpoint congruence does not, by itself, penetrate the residual low-mean / late-return primitive constant-length class.
+
+**Action:** retain the endpoint cylinder as exact structural algebra, but do not relaunch return-word or two-sided-context searches expecting a stronger class kill without a genuinely new height or arithmetic ingredient. See `experiments/CDM4_T4_REPORT.md`.
+
+## F0048 — Automatic symbolic finiteness plus fixed-modulus endpoint synchronization is not an anchor theorem
+
+**Status: FAILED inference / residual realization problem UNKNOWN in CDM4-T4.**
+
+For an eventual-zero-carry tail with valuations in `{1,2}`,
+
+`2^{a_(m+1)}Y_(m+1)=3Y_m+1`.
+
+Any fixed suffix of valuation symbols determines the endpoint modulo a corresponding fixed power of `3`, and a primitive constant-length coding has a finite automatic kernel and finite return-word systems. Nevertheless, the exact canonical start modulus grows like `2^{A_m+1}`, and the endpoint/carry state contains unbounded integer registers.
+
+For a hypothetical aperiodic primitive constant-length `{1,2}` anchor, the mean valuation is rational and must satisfy
+
+`1 < alpha < log_2 3`.
+
+This forces exponential odd-orbit growth but gives no contradiction.
+
+No verified Cobham, morphic-transduction, Mahler, or automatic-sequence theorem audited in T4 converts these fixed finite projections into bounded canonical representatives or eventual zero carry. The variable-length map `1->1, 2->10` is not assumed to preserve automaticity in the same base, and the appearances of powers of 2 and 3 in Collatz arithmetic are not Cobham's two-base hypothesis.
+
+**Lesson:** the remaining obstruction is arithmetic rationality of the whole inverse-Collatz tower, not symbolic finiteness of its control language.
+
+**Action:** the next theory audit is CDM4-T5: test automatic/Mahler and p-adic rationality/transcendence machinery directly on the exact inverse-Collatz series, with every bridge verified and López-Stoll 2021 remaining non-load-bearing.
