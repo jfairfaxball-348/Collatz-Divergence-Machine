@@ -1,0 +1,7 @@
+CDM3-P2 authoritative run request
+Date: 2026-10-02
+Branch: cdm3-p2
+
+Authorization: execute the complete mandatory P2 preflight. Only if every gate passes, execute exactly the frozen 60,000,000-start CPU population already declared in docs/COMPUTE_BUDGET.md.
+
+No GPU execution. No population enlargement. Stop on any preflight failure, exceptional freeze, or frozen campaign resource ceiling.
