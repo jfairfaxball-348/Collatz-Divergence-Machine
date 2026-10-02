@@ -728,3 +728,140 @@ No peer-reviewed theorem was found that resolves this restricted automatic-gap c
 **Lesson:** the residual obstruction is not finite-state symbolic recurrence; it is rationality of the exact inverse conjugacy in the 2-adic completion.
 
 **Action:** CDM4-T6 should first isolate the balanced one-variable Mahler subclass and seek a direct p-adic nonrationality theorem at `W=2^B/3^k`. No scientific compute is authorized.
+
+
+## F0053 — The pure-p-power mismatch was too broad for the Bugeaud-Yao first-order theorem
+
+**Status: CORRECTED / PROVED HYPOTHESIS MATCH in CDM4-T6.**
+
+T5 correctly refused to treat a theorem stated at \(p^w\) as automatically applying to the Collatz point \(2^B/3^k\). T6 inspected the full peer-reviewed Bugeaud-Yao 2017 argument and found the explicit remark after Theorem 3.1: its p-adic transcendence conclusion also applies at
+
+\[
+r p^w/s,
+\qquad
+p\nmid rs.
+\]
+
+Thus
+
+\[
+W=2^B/3^k
+\]
+
+is admissible for that theorem's **first-order Mahler class** with \(p=2,\ r=1,\ s=3^k\).
+
+**Lesson:** the odd unit \(3^{-k}\) is not itself an obstruction to Bugeaud-Yao's first-order p-adic theorem. The generic balanced Collatz obstruction is instead that its finite automatic-kernel system need not reduce to the theorem's special first-order scalar functional equation with a nonsingular Mahler orbit.
+
+**Action:** preserve the unit distinction exactly. Do not repeat the blanket “not a pure p-power, therefore Bugeaud-Yao cannot apply” claim. Equally, do not generalize the first-order rational-unit remark to arbitrary higher-rank Mahler systems without a theorem.
+
+
+## F0054 — Finite scaled-unit Mahler closure occurs exactly for torsion units
+
+**Status: PROVED in CDM4-T6.**
+
+For a Mahler system \(F(z)=A(z)F(z^k)\), scaling the variable by an algebraic unit \(c\) produces successive unit states
+
+\[
+c,\ c^k,\ c^{k^2},\ldots.
+\]
+
+This orbit is finite if and only if \(c\) is a root of unity. If \(c^{k^a}=c^{k^b}\) with \(b>a\), then
+
+\[
+c^{k^a(k^{b-a}-1)}=1.
+\]
+
+Conversely a root of unity has finite exponentiation orbit.
+
+The actual Collatz unit \(c=3^{-k}\) is non-torsion, so the naive finite enlargement by the scaled functions \(F(c^{k^j}z)\) creates infinitely many unit states and does not close.
+
+**Lesson:** p-adic closeness to 1, or periodicity modulo a fixed \(2^N\), is not exact finite Mahler closure. Torsion is the exact finite-orbit condition.
+
+**Action:** do not use finite scaled-copy absorption for \(3^{-k}\). This does not block a value theorem, because F0053 records that Bugeaud-Yao permits the rational unit directly in its first-order class.
+
+
+## F0055 — One rational p-adic value does not force a finite-valued automatic series to be rational
+
+**Status: PROVED GENERIC COUNTEREXAMPLE in CDM4-T6; not a Collatz counterexample.**
+
+Let
+
+\[
+T(z)=\sum_{n\ge0}t_nz^n
+\]
+
+be any non-eventually-periodic finite-valued \(k\)-automatic series, and let \(W\in\mathbb Q^\times\) satisfy \(|W|_2<1\) and \(|W|_\infty<1\). For a sufficiently large integer \(M\), define
+
+\[
+C(z)=\left(1-\frac zW\right)T(z)+\frac M{1-z}.
+\]
+
+Then
+
+\[
+C(W)=\frac M{1-W}\in\mathbb Q.
+\]
+
+Its coefficients remain finite-valued, positive after choosing \(M\) large enough, and \(k\)-automatic. If \(C(z)\) were rational, then \((1-z/W)T(z)\) and hence \(T(z)\) would be rational, contradicting non-eventual periodicity.
+
+**Lesson:** there is no generic theorem
+
+\[
+\text{nonperiodic automatic coefficients}+
+\text{one algebraic p-adic point with rational value}
+\Longrightarrow
+\text{rational generating function}.
+\]
+
+Automaticity and finite kernel dimension alone cannot solve the balanced Collatz value problem.
+
+**Action:** any future rationality obstruction must use stronger functional, singularity, arithmetic, or Collatz-specific structure. Do not search for a blanket one-point converse in generic Mahler theory.
+
+
+## F0056 — Balanced complementary binary substitutions admit a genuine p-adic Mahler anchor obstruction
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T6.**
+
+Let \(k\) be even and let a primitive \(k\)-uniform binary substitution have complementary images, each containing \(k/2\) zeroes and \(k/2\) ones, prolongable on \(0\). Code \(0\mapsto1\) and \(1\mapsto2\) as accelerated Collatz valuations, and assume the fixed point is not eventually periodic.
+
+The substituted blocks have common valuation sum
+
+\[
+B=3k/2,
+\qquad
+W=2^{3k/2}/3^k=(8/9)^{k/2}.
+\]
+
+The exact Collatz coefficient series has a two-state automatic-kernel system. After the exact integer scaling \(F_0=3^{k-1}G\),
+
+\[
+F_0(z)=S(z)F_0(z^k)+\frac{(C_0+C_1)P_1(z)}{1-z^k},
+\]
+
+where the two block constants \(C_0,C_1\) are distinct. The kernel-system determinant is
+
+\[
+(1+z+\cdots+z^{k-1})S(z).
+\]
+
+Along the Collatz Mahler orbit \(W^{k^m}\), neither \(1-z^k\) nor \(S(z)\) vanishes: \(0<W^{k^m}<1\), \(S(0)=1\), and \(S\) has leading coefficient \(\pm1\), so its only possible rational roots are \(\pm1\).
+
+The coefficient sequence is finite-valued and nonperiodic, hence its generating series is nonrational and has infinitely many nonzero leading Hankel determinants. Bugeaud-Yao Theorem 3.1 together with its rational-unit remark therefore gives
+
+\[
+F_0(W)\notin\overline{\mathbb Q}
+\]
+
+in the 2-adic completion. Consequently the exact inverse-Collatz value
+
+\[
+H=-F_0(W)/3^k
+\]
+
+is transcendental and cannot be a rational or positive-integer anchor.
+
+Combining with T2, bounded canonical representatives \(R_m\) force eventual periodicity for this class.
+
+**Lesson:** the residual Periodicity-Conjecture bridge can be bypassed when the exact automatic kernel collapses to a sufficiently rigid first-order p-adic Mahler equation with a regular \(S\)-unit evaluation orbit.
+
+**Action:** CDM4-T7 should target the remaining higher-rank balanced kernel systems. Do not infer that T6 excludes all primitive constant-length or all balanced automatic valuation words.
