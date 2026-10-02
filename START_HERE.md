@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T5 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T6 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T5_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T6_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact 2-adic inverse-conjugacy series plus a finite multivariate substitution/Mahler-type representation, and a one-variable Mahler reduction for equal block valuation sums. No verified p-adic value theorem rules out rationality of the residual automatic inverse value.
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a new balanced complementary binary constant-length class. Bugeaud-Yao's first-order theorem explicitly permits the rational 2-adic unit in `W=2^B/3^k`; the unresolved remainder is the higher-rank balanced automatic kernel class.
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T6 — completion-correct p-adic Mahler value theorem audit, theory only: begin with the balanced-block one-variable subclass H=-(1/3)G(2^B/3^k), and prove p-adic nonrationality under checked hypotheses or identify the exact missing arithmetic condition**
+- Immediate next task: **CDM4-T7 — higher-rank p-adic S-unit Mahler-system audit, theory only: begin with balanced automatic Collatz coefficient systems whose exact finite k-kernel system does not reduce to the T6 first-order class, and either apply a verified p-adic higher-rank value theorem at `W=2^B/3^k`, derive a controlled scalar reduction, or isolate the exact missing theorem**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T6 theory/literature analysis only**, as specified in the T5 report; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T7 theory/literature analysis only**, as specified in the T6 report; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -79,6 +79,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 37. `experiments/CDM4_T3_INPUT_MANIFEST.json`
 38. `experiments/CDM4_T4_REPORT.md`
 39. `experiments/CDM4_T5_REPORT.md`
+40. `experiments/CDM4_T6_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -455,3 +456,26 @@ If that subclass is resolved, extend to the generic multivariate T5 value \`S(q)
 - **New generator/distribution authorized: NO.**
 - **Finite-code ranker campaign authorized: NO.**
 - **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
+
+
+## CDM4-T6 closeout — 2026-10-02
+
+CDM4-T6 is complete. Authoritative report: \`experiments/CDM4_T6_REPORT.md\`.
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+
+T6 corrected an important over-broad T5 route obstruction. Bugeaud-Yao's peer-reviewed p-adic first-order Mahler theorem includes a published rational-unit extension from \(p^w\) to \(r p^w/s\) with \(p\nmid rs\). Thus the Collatz argument \(W=2^B/3^k\) is admissible for that theorem when the exact Collatz Mahler series belongs to its first-order class and the Mahler orbit avoids the equation singularities.
+
+T6 then proved that an infinite balanced class does satisfy those hypotheses. For even \(k\), take a primitive complementary binary \(k\)-uniform substitution whose two images are bitwise complements and each contains \(k/2\) zeroes and \(k/2\) ones, with valuation coding \(0\mapsto1,\ 1\mapsto2\). For a non-eventually-periodic fixed point, the exact Collatz coefficient sequence has a two-state \(k\)-kernel and the integer-scaled series \(F_0\) satisfies
+
+\[
+F_0(z)=S(z)F_0(z^k)+\frac{(C_0+C_1)P_1(z)}{1-z^k}.
+\]
+
+Its exact Collatz point is \(W=2^{3k/2}/3^k=(8/9)^{k/2}\). The determinant and singularities are explicit; \(S(W^{k^m})\neq0\) follows from the rational-root theorem and \(0<W^{k^m}<1\). Nonperiodicity makes the finite-valued coefficient series nonrational, supplying infinitely many nonzero leading Hankel determinants. Bugeaud-Yao therefore gives p-adic transcendence of \(F_0(W)\), hence of the exact inverse-Collatz value \(H=-F_0(W)/3^k\).
+
+Therefore no nonperiodic word in this class has a rational 2-adic anchor. Combining this with T2 gives a new exact implication: bounded canonical representatives \(R_m\) force eventual periodicity for this class.
+
+T6 also proved that naive finite unit-state absorption closes exactly for torsion units, so the actual non-torsion unit \(3^{-k}\) still does not close by scaled copies. Separately, an exact automatic-series construction shows that one rational p-adic value does not generically force a finite-valued automatic generating function to be rational. Extra first-order or Collatz-specific structure is essential.
+
+The generic higher-rank balanced automatic kernel class remains unresolved and still contains a restricted Periodicity-Conjecture problem. Cobham remains unavailable; López-Stoll remains non-load-bearing. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
