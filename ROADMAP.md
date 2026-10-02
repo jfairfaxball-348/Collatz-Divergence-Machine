@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T4 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
+**Status: CDM4-T5 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T4_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T5_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -203,7 +203,15 @@ The López-Stoll 2021 density equality did not survive independent proof validat
 
 For a hypothetical aperiodic primitive constant-length `{1,2}` anchor, the mean valuation is rational and necessarily lies strictly between `1` and `log_2 3`; exponential odd-orbit growth follows but is not a contradiction. Finite return-word systems and finite automatic kernels still leave an unbounded arithmetic register and growing moduli.
 
-**Next theory substage: CDM4-T5.** Audit automatic/Mahler and p-adic rationality/transcendence theorems against the exact inverse-Collatz series for a non-eventually-periodic automatic `{1,2}` valuation word. The target is to rule out an ordinary positive integer inverse-Collatz value under verified hypotheses, or to prove that the available theorem machinery does not supply that implication.
+**CDM4-T5 closeout.** The exact inverse series is now derived from the finite cylinders, and the completion boundary is explicit: a realized positive anchor is the 2-adic limit, while in the subcritical real regime the same rational partial sums converge to a negative real number.
+
+For a `k`-automatic valuation word, `A_n` is `k`-regular but `2^(A_n)` is not `k`-regular, so the naive regular-coefficient Mahler route fails. T5 nevertheless derived an exact finite multivariate monomial/Mahler-type recurrence from uniform-substitution prefix Parikh vectors. In the equal-block-valuation case this collapses to a classical one-variable `k`-Mahler value `H=-(1/3)G(2^B/3^k)`.
+
+No audited peer-reviewed theorem converts these representations into the required 2-adic nonrationality statement. The exact conjugacy identity `H=Phi(V)`, where the 1-positions of `V` are `0,A_1,A_2,...`, shows that the general rationality bridge is a restricted case of Lagarias' open Periodicity Conjecture. Cobham is not applicable without a second automatic presentation of the same relevant sequence, and p-adic automatic-digit transcendence theorems concern the wrong digits.
+
+No new recursive-language obstruction, anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+**Next theory substage: CDM4-T6.** Attack the completion-correct p-adic value problem beginning with the balanced one-variable subclass: for the automatic-coefficient Mahler series `G` and `W=2^B/3^k`, prove `G(W)` nonrational in `Q_2` under checked hypotheses, or identify the exact missing p-adic Mahler/S-unit theorem. Only after that should the generic multivariate T5 system be revisited.
 
 No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
 
@@ -229,18 +237,18 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T5 — automatic inverse-Collatz rationality audit, theory only.**
+**CDM4-T6 — completion-correct p-adic Mahler value audit, theory only.**
 
-Let `a_n in {1,2}` be a non-eventually-periodic `k`-automatic valuation sequence with mean `alpha<log_2 3`, put `A_j=sum_{i<=j}a_i`, and consider the exact 2-adic inverse-Collatz series
+Start from the balanced T5 reduction
 
-`H=-sum_{j>=0}2^{A_j}/3^{j+1}`.
+`H=-(1/3)G(W)`,  `W=2^B/3^k`,
+
+where `G(z)=sum_(n>=0)g_n z^n` has the finite-valued automatic coefficient sequence induced by a balanced constant-length valuation substitution.
 
 Single theorem target:
 
-> Prove, under explicitly verified automatic/Mahler/p-adic hypotheses, that `H` cannot be an ordinary positive integer unless the valuation word is eventually periodic; or prove that the available theorems do not imply this.
+> Prove in the **2-adic completion**, under completely verified functional-equation, algebraicity, convergence, singularity and regularity hypotheses, that `G(W)` cannot be rational for the non-eventually-periodic Collatz-derived coefficient class; or prove that no current theorem covers this value and isolate the exact missing p-adic Mahler/S-unit statement.
 
-Begin from T4's negative result: return-prefix, endpoint-cylinder, two-sided-cylinder, finite-kernel, and finite-return-alphabet arguments do not by themselves control the growing representative tower.
-
-Audit Mahler functional equations, automatic/regular weighted sums, p-adic automatic-number transcendence, rationality criteria, Cobham hypotheses, and the exact relation between the valuation word, its variable-length shortened-parity coding, and the Collatz conjugacy. Do not identify the anchor's binary digits with its parity vector. Do not use the López-Stoll 2021 density equality unless its missing bridge is independently repaired.
+Do not substitute a complex transcendence theorem for a 2-adic value theorem. Do not infer automaticity of the anchor's Hensel digits from automatic valuation gaps. If the balanced subclass is resolved, then extend the argument to the generic multivariate Parikh/Mahler representation from T5.
 
 No substitution enumeration, finite residue/carry optimization, candidate trajectories, or new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, and new generators/distributions remain unauthorized.
