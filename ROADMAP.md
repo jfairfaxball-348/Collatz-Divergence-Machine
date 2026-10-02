@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T5 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
+**Status: CDM4-T6 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T5_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T6_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -211,9 +211,23 @@ No audited peer-reviewed theorem converts these representations into the require
 
 No new recursive-language obstruction, anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-**Next theory substage: CDM4-T6.** Attack the completion-correct p-adic value problem beginning with the balanced one-variable subclass: for the automatic-coefficient Mahler series `G` and `W=2^B/3^k`, prove `G(W)` nonrational in `Q_2` under checked hypotheses, or identify the exact missing p-adic Mahler/S-unit theorem. Only after that should the generic multivariate T5 system be revisited.
+**CDM4-T6 closeout.** The universal balanced automatic p-adic rationality statement remains open, but T6 found and proved a qualifying new obstruction for an infinite exact subclass. The peer-reviewed Bugeaud-Yao first-order p-adic Mahler theorem has an explicit rational-unit extension, so the Collatz evaluation point \(W=2^B/3^k\) is not excluded merely by its factor \(3^{-k}\).
 
-No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
+For every non-eventually-periodic balanced complementary binary \(k\)-uniform fixed point in the T6 class (even \(k\), complementary images with \(k/2\) zeroes and \(k/2\) ones, valuation coding \(0\mapsto1,\ 1\mapsto2\)), the exact Collatz coefficient series has a two-state kernel system and an integer-scaled first-order equation
+
+\[
+F_0(z)=S(z)F_0(z^k)+\frac{(C_0+C_1)P_1(z)}{1-z^k}.
+\]
+
+The exact point is \(W=2^{3k/2}/3^k=(8/9)^{k/2}\). T6 verifies all singularity conditions exactly and applies Bugeaud-Yao to prove \(F_0(W)\), hence the inverse-Collatz value \(H\), transcendental in \(\mathbb Q_2\). Therefore this entire nonperiodic recursive class has no rational or positive-integer anchor. Combining with T2, bounded \(R_m\) forces eventual periodicity for this class.
+
+T6 also proves that finite scaled-unit closure occurs exactly for torsion units; \(3^{-k}\) is non-torsion and has an infinite exponentiation orbit. Separately, a generic automatic/Mahler one-point converse is false: a finite-valued positive nonperiodic automatic power series can be constructed with a rational value at a prescribed algebraic p-adic point. Hence higher-rank progress requires additional functional or Collatz-specific arithmetic structure, not automaticity alone.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+**Next theory substage: CDM4-T7.** Audit the higher-rank p-adic S-unit Mahler-system problem for balanced Collatz coefficient sequences whose finite \(k\)-kernel systems do not reduce to the T6 first-order class. Seek a verified p-adic lifting/value theorem at \(W=2^B/3^k\), a controlled Collatz-specific scalar reduction, or an exact obstruction explaining why the higher-rank system remains outside current arithmetic Mahler theory.
+
+No substitution enumeration, finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, or GPU/cloud/distributed work are authorized.
 
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
@@ -237,18 +251,20 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T6 — completion-correct p-adic Mahler value audit, theory only.**
+**CDM4-T7 — higher-rank p-adic S-unit Mahler-system audit, theory only.**
 
-Start from the balanced T5 reduction
+Start from the exact finite \(k\)-kernel system
 
-`H=-(1/3)G(W)`,  `W=2^B/3^k`,
+\[
+\mathbf G(z)=M(z)\mathbf G(z^k)
+\]
 
-where `G(z)=sum_(n>=0)g_n z^n` has the finite-valued automatic coefficient sequence induced by a balanced constant-length valuation substitution.
+for balanced Collatz automatic coefficient sequences that do not reduce to the T6 first-order complementary class.
 
 Single theorem target:
 
-> Prove in the **2-adic completion**, under completely verified functional-equation, algebraicity, convergence, singularity and regularity hypotheses, that `G(W)` cannot be rational for the non-eventually-periodic Collatz-derived coefficient class; or prove that no current theorem covers this value and isolate the exact missing p-adic Mahler/S-unit statement.
+> Prove, under completely verified p-adic convergence, singularity and regularity hypotheses, that an applicable higher-rank Mahler value/lifting theorem rules out rationality at \(W=2^B/3^k\); or derive a controlled scalar reduction to an existing theorem; or isolate the exact arithmetic obstruction that prevents either route.
 
-Do not substitute a complex transcendence theorem for a 2-adic value theorem. Do not infer automaticity of the anchor's Hensel digits from automatic valuation gaps. If the balanced subclass is resolved, then extend the argument to the generic multivariate Parikh/Mahler representation from T5.
+Do not substitute complex value theorems for p-adic ones. Do not infer rationality/nonrationality from automaticity alone: T6 gives an exact generic one-point counterexample. Preserve the T6 distinction between non-torsion unit-state nonclosure and the rational-unit allowance in Bugeaud-Yao's first-order theorem.
 
-No substitution enumeration, finite residue/carry optimization, candidate trajectories, or new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, and new generators/distributions remain unauthorized.
+No substitution enumeration, finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, P3 scaling, GPU, cloud, distributed, or volunteer work are authorized.
