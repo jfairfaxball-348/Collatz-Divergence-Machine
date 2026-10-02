@@ -303,3 +303,16 @@ An exact pre-mutation comparison against the 4096-bit `3n+1` overflow threshold 
 
 **Action:** keep ordinary overflow handling structurally minimal. Validate rare exceptional paths separately rather than burdening every U-step with full-capacity prediction.
 
+
+
+## F0028 — P1/P2 same-distribution scaling reproduced ordinary tail geometry without exceptional discovery
+
+**Status:** COMPUTATIONAL-EVIDENCE from the completed CDM3-P2 campaign; not a theorem about Collatz or about untested distributions.
+
+CDM3-P2 doubled the P1 scientific population while deliberately preserving the same `CDM3-P1-gen-v1` sampling semantics, bit bands, arms, Tier-2 basin stop, exact Arm-L pruning rule and exceptional triggers. Across exactly 60,000,000 generated starts, 13,330,798 Arm-L starts were pruned before trajectory execution and all 46,669,202 executed trajectories reached `n<2^71`.
+
+No candidate froze exceptionally, escaped the 4096-bit fast path, repeated a state, failed an invariant, or entered structural/certification analysis. Mean U-step costs and deterministic p50/p90/p99/p99.9 tail quantiles closely matched P1 in every band/arm cell. The larger finite sample raised some maxima only modestly; the global maximum was 3,357 U-steps and +29 peak bits, still far below the 32,768-U-step and +512-bit triggers.
+
+**Lesson:** within the tested distribution, simply doubling the sample size produced more of the same ordinary finite trajectory geometry rather than a qualitatively new survivor class. This is not evidence that Collatz is true and does not show that all larger samples or different distributions would behave similarly.
+
+**Action:** do not automatically scale the same campaign to P3 and do not infer a GPU mandate from available throughput. Enter **STOP AND AUDIT**. Any further compute must first identify a materially different scientific reason—distribution, structural mechanism, or reach question—and freeze a new envelope before execution.
