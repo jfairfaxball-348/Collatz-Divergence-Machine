@@ -58,17 +58,19 @@ The repository, not conversational memory, is the authoritative research state.
 18. `docs/CDM2_R3_ARCHITECTURE.md`
 19. `experiments/CDM2_R3_BENCHMARK_RESULT.json`
 20. `experiments/CDM3_P1_REPORT.md`
-21. `experiments/CDM3_B1_REPORT.md`
-22. `experiments/CDM3_B1_RESULT.json`
-23. `docs/CDM3_B1_ENGINEERING.md`
-24. `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
-25. `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
-26. `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
-27. `experiments/CDM3_P2_REPORT.md`
-28. `experiments/CDM3_P2_RESULT.json`
-29. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
-30. `experiments/CDM3_P2A_REPORT.md`
-31. `experiments/CDM4_T1_REPORT.md`
+21. `experiments/CDM3_P1_RESULT.json`
+22. `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
+23. `experiments/CDM3_B1_REPORT.md`
+24. `experiments/CDM3_B1_RESULT.json`
+25. `docs/CDM3_B1_ENGINEERING.md`
+26. `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
+27. `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
+28. `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
+29. `experiments/CDM3_P2_REPORT.md`
+30. `experiments/CDM3_P2_RESULT.json`
+31. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
+32. `experiments/CDM3_P2A_REPORT.md`
+33. `experiments/CDM4_T1_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
