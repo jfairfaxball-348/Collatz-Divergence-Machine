@@ -371,7 +371,7 @@ CDM2-R1/R2 supply exact finite-prefix and inverse-tree mathematics, but after an
 
 The missing object is therefore not another finite anomaly score. It is an effective nonlocal or recursively closed structure that converts finite description into forced indefinite future behavior and can ultimately support both unboundedness and exclusion from the `1`-basin.
 
-**Action:** CDM4-T1 has now sharpened this bottleneck into the periodic-block, progression-family closure, and ordinary-integer anchoring obstructions. Prioritize CDM4-T2 theory work on aperiodic recursive languages whose exact residue tower anchors to one positive integer while the same language forces unbounded growth. Reject routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other preserved finite-depth failures.
+**Action:** CDM4-T1 sharpened this bottleneck into the periodic-block, progression-family closure, and ordinary-integer anchoring obstructions. CDM4-T2 has now converted the anchor side into an exact carry-extinction problem and shown that aperiodicity plus a positive anchor already forces unboundedness. Prioritize CDM4-T3 theory work on eventual-zero anchor carry for finite-alphabet recursive languages. Reject routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other preserved finite-depth failures.
 
 
 ## F0034 — Repeated expanding Collatz blocks cannot support positive-integer divergence
@@ -435,3 +435,103 @@ The representation is mathematically relevant, but optimizing finite code length
 **Lesson:** the coupled 2/3/real representation is retained as a structural language, not promoted as a finite ranker.
 
 **Action:** authorize only theorem-level work on infinite realization / residue stabilization plus forced growth. No finite exponent-code search campaign, new generator, or GPU workload follows from CDM4-T1.
+
+
+## F0038 — Exact accelerated valuation cylinders require the endpoint-odd bit and expose an anchor carry
+
+**Status:** PROVED in CDM4-T2.
+
+For an accelerated valuation prefix a_1,...,a_m, define
+
+A_0=0, A_m=sum_{i=1}^m a_i,
+
+C_0=0, C_{m+1}=3C_m+2^{A_m}.
+
+Exact realization by an odd start is equivalent to
+
+3^m N+C_m == 2^{A_m}  (mod 2^{A_m+1}).
+
+Thus the exact start cylinder has the unique canonical representative
+
+R_m == 3^{-m}(2^{A_m}-C_m)  (mod 2^{A_m+1}).
+
+The modulus 2^{A_m+1}, rather than only 2^{A_m}, records the endpoint-odd condition required for the final valuation to be exact. The final congruence also forces every earlier endpoint to be odd.
+
+Successive exact cylinders nest. Writing M_m=2^{A_m+1},
+
+R_{m+1}=R_m+d_mM_m
+
+for a unique
+
+0<=d_m<2^{a_{m+1}}.
+
+**Lesson:** integer anchoring can be studied through the exact mixed-radix digit sequence d_m. A merely compatible infinite 2-adic code is an ordinary nonnegative integer exactly when these anchor digits are eventually zero.
+
+**Action:** use R_m and d_m as theorem objects in CDM4-T3. Do not register them as finite candidate-ranking metrics and do not optimize finite carry patterns.
+
+
+## F0039 — Aperiodic positive anchoring already implies an unbounded Collatz orbit
+
+**Status:** PROVED in CDM4-T2, using CDM4-T1 T1.1 for one direction.
+
+A bounded positive Collatz orbit visits only finitely many states. Determinism therefore forces a repeated state and an eventually periodic state/parity tail.
+
+T1.1 proved the converse: eventually periodic shortened-map parity forces an eventually periodic bounded orbit.
+
+Hence, for positive integers,
+
+bounded orbit
+iff eventual-periodic source parity.
+
+Therefore, if one explicit positive integer is proved to realize a non-eventually-periodic parity language, its orbit is automatically unbounded. It also cannot reach 1, because the tail from 1 is periodic. The same conclusion applies to an aperiodic accelerated valuation word because its valuation gaps encode the shortened parity word.
+
+**Lesson:** once exact positive-integer anchoring and aperiodicity are both proved, a separate quantitative growth estimate such as unbounded 3^m/2^{A_m} is sufficient but not necessary for certification.
+
+**Action:** make integer anchoring the primary T3 bottleneck. Retain quantitative valuation drift only as an optional independent strengthening, not as a prerequisite that obscures the anchor problem.
+
+
+## F0040 — Irrational mechanical E-sequences can have favorable formal growth but no positive-integer anchor
+
+**Status:** LITERATURE-PROVED route obstruction, translated into repository conventions in CDM4-T2.
+
+Sanmin Wang's peer-reviewed 2019 E-sequence paper uses the accelerated odd map
+
+x_n=(3x_{n-1}+1)/2^{a_n}
+
+and proves that for every irrational theta>=1,
+
+a_n=floor(n theta)-floor((n-1)theta)
+
+is not the E-sequence of any odd positive integer.
+
+Wang calls such a generalized E-sequence Omega-divergent. In this repository that term must be read only as “not realized by an odd positive integer”; it is not a divergent Collatz orbit.
+
+For 1<theta<log_2 3,
+
+A_m=floor(m theta),
+
+so the formal factor 3^m/2^{A_m} grows exponentially even though no positive-integer anchor exists.
+
+**Lesson:** favorable exact growth and aperiodic symbolic structure do not repair anchoring. Natural mechanical/Sturmian valuation languages provide a concrete example of the 2-adic/profinite phantom risk.
+
+**Action:** do not spend compute searching finite prefixes of irrational mechanical valuation words for divergence-like scores. This class is already killed as an ordinary-positive-integer anchor route by a theorem.
+
+
+## F0041 — Mixed-adic compatibility still has no theorem forcing anchor-carry extinction
+
+**Status:** NO QUALIFYING ANCHOR THEOREM FOUND in CDM4-T2.
+
+The exact T2 endpoint recurrence is
+
+2^{a_{m+1}}Y_{m+1}
+=3Y_m+1+2d_m3^{m+1}.
+
+This couples the same anchor digit d_m to both the power-of-two valuation structure and the power-of-three affine transport.
+
+No product-formula, S-unit, linear-forms, 3-adic endpoint, or least-divergent-minimality argument audited in T2 supplied a depth-independent bound on R_m or forced d_m=0 eventually.
+
+Finite mixed 2/3-adic CRT compatibility therefore remains insufficient, and the least-divergent observation that the true N would eventually equal every canonical residue is circular if used to construct N.
+
+**Lesson:** the exact mixed-adic coupling is a useful representation, not yet an anchoring theorem.
+
+**Action:** future mixed-adic work must prove a genuine archimedean bound or carry-extinction statement. Do not promote finite 2/3-adic compatibility, finite residue decay, or finite zero-carry runs as evidence of an ordinary anchor.
