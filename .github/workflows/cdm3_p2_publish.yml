@@ -1,0 +1,48 @@
+name: Publish CDM3-P2 execution artifacts
+
+on:
+  push:
+    branches:
+      - cdm3-p2
+    paths:
+      - experiments/CDM3_P2_PUBLISH_REQUEST.txt
+
+permissions:
+  actions: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cdm3-p2
+      - uses: actions/download-artifact@v4
+        with:
+          name: cdm3-p2-execution
+          path: execution
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: 36972002017
+      - name: Copy exact execution records
+        run: |
+          set -euxo pipefail
+          cp execution/experiments/CDM3_P2_PREFLIGHT_RESULT.json experiments/CDM3_P2_PREFLIGHT_RESULT.json
+          cp execution/experiments/CDM3_P2_RESULT.json experiments/CDM3_P2_RESULT.json
+          cp execution/experiments/CDM3_P2_WORK_UNIT_DIGESTS.json experiments/CDM3_P2_WORK_UNIT_DIGESTS.json
+          cp execution/experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json
+          cp execution/p2_artifacts/counter_audit.json experiments/CDM3_P2_COUNTER_AUDIT.json
+          cp execution/p2_artifacts/integration_check.json experiments/CDM3_P2_INTEGRATION_CHECK.json
+          cp execution/p2_artifacts/source_hashes.txt experiments/CDM3_P2_SOURCE_HASHES.txt
+          cp execution/p2_artifacts/executable_hashes.txt experiments/CDM3_P2_EXECUTABLE_HASHES.txt
+          cp execution/p2_artifacts/checkpoint_hashes.txt experiments/CDM3_P2_CHECKPOINT_HASHES.txt
+          cp execution/p2_artifacts/host_provenance.txt experiments/CDM3_P2_HOST_PROVENANCE.txt
+          sha256sum experiments/CDM3_P2_RESULT.json experiments/CDM3_P2_WORK_UNIT_DIGESTS.json experiments/CDM3_P2_PREFLIGHT_RESULT.json experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json
+      - name: Commit exact execution records
+        run: |
+          set -euxo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/CDM3_P2_PREFLIGHT_RESULT.json experiments/CDM3_P2_RESULT.json experiments/CDM3_P2_WORK_UNIT_DIGESTS.json experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json experiments/CDM3_P2_COUNTER_AUDIT.json experiments/CDM3_P2_INTEGRATION_CHECK.json experiments/CDM3_P2_SOURCE_HASHES.txt experiments/CDM3_P2_EXECUTABLE_HASHES.txt experiments/CDM3_P2_CHECKPOINT_HASHES.txt experiments/CDM3_P2_HOST_PROVENANCE.txt
+          git commit -m "Preserve authoritative CDM3-P2 execution records"
+          git push origin HEAD:cdm3-p2
