@@ -17,6 +17,14 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install repository test environment
+        run: |
+          set -euxo pipefail
+          python -m pip install -e . pytest
 
       - name: Host and source provenance
         run: |
@@ -70,7 +78,7 @@ jobs:
           ./cdm3_p2_escape_test 2>&1 | tee p2_artifacts/forced_escape.log
           python3 tools/cdm3_p2_replay.py --selftest --engine ./cdm3_p2_engine --steps 256 | tee p2_artifacts/python_replay.json
           python3 tools/cdm3_p2_counter_audit.py --manifest experiments/CDM3_P1_WORK_UNIT_DIGESTS.json --output p2_artifacts/counter_audit.json
-          python3 -m pytest -q | tee p2_artifacts/pytest.log
+          python -m pytest -q | tee p2_artifacts/pytest.log
 
       - name: ASan and UBSan gate
         run: |
