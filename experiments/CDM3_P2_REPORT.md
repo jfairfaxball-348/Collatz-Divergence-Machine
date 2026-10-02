@@ -96,6 +96,23 @@ The global maxima were **3,357 U-steps**, **6,273 shortened steps**, **1,053 pea
 
 The quantiles above are deterministic modulo-97 survivor-tail samples recorded by the frozen engine. Their sample sizes are preserved in `experiments/CDM3_P2_RESULT.json`.
 
+## Production throughput
+
+Observed production throughput, expressed as exact U-steps per group wall-second, was:
+
+| Band | Arm | Million U-steps/s |
+|---:|:---:|---:|
+| 256 | U | 23.166 |
+| 256 | L | 73.139 |
+| 512 | U | 78.089 |
+| 512 | L | 77.688 |
+| 1024 | U | 52.735 |
+| 1024 | L | 62.085 |
+
+Across the concurrent six-group campaign, total exact work divided by active scientific wall time was **135.567 million U-steps/s**, corresponding to **137,183.531 generated starts/s**. Total exact work divided by summed process CPU time was **54.826 million U-steps per CPU-second**.
+
+These group rates are **resource/economics observations, not a controlled kernel benchmark**. The groups ran on heterogeneous GitHub-hosted CPU models and the required `-march=native` build produced host-dependent executables. Cross-band or cross-arm rate differences are therefore confounded by runner hardware; the controlled same-host B1/P2 preflight remains authoritative for kernel-regression claims.
+
 ## Survivor-cost tail relative to P1
 
 P2 reproduces the P1 cost profile closely.
@@ -121,7 +138,7 @@ Frozen ceilings were respected.
 - active scientific wall: **437.370285 s** = 7.2895 min <= 15 min;
 - summed process CPU: **1,081.483885 s** = 18.0247 CPU-min <= 60 CPU-min;
 - summed per-group maximum RSS observations: **15,468 KiB**; every group was individually far below 1 GiB;
-- committed closeout artifacts (`CDM3_P2_REPORT.md`, `CDM3_P2_RESULT.json`, `CDM3_P2_WORK_UNIT_DIGESTS.json`) total **32,419 bytes**, far below the 300 MiB result-storage ceiling;
+- committed closeout artifacts (`CDM3_P2_REPORT.md`, `CDM3_P2_RESULT.json`, `CDM3_P2_WORK_UNIT_DIGESTS.json`) total **36,631 bytes**, far below the 300 MiB result-storage ceiling;
 - GPU execution: **none**.
 
 The campaign ran on GitHub-hosted x86_64 runners with GCC 13.3.0 and GMP 6.3.0. Because the required production build uses `-march=native`, executable hashes vary with runner CPU while the source bundle is invariant.
