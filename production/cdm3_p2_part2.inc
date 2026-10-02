@@ -31,7 +31,7 @@ static void print_group_json(FILE *f,const group_cfg *g,const group_result *r,in
     double u_cpu_rate=r->work_cpu_sum>0?(double)r->u_steps/r->work_cpu_sum:0.0;
     double mean=r->executed?(double)r->u_steps/(double)r->executed:0.0;
     fprintf(f,"    {\"bits\":%d,\"arm\":\"%c\",\"counter_base\":%"PRIu64",\"counter_count\":%"PRIu64",\"generated\":%"PRIu64",\"pretrajectory_kills\":%"PRIu64",\"trajectories_executed\":%"PRIu64",\"basin_hits\":%"PRIu64",\"cache_hits\":%"PRIu64",\"frozen_candidates\":%"PRIu64",\"repeats\":%"PRIu64",\"bigint_escapes\":%"PRIu64",\"invariant_failures\":%"PRIu64",\"resource_stops\":%"PRIu64",\"u_steps_total\":%"PRIu64",\"shortened_step_equiv_total\":%"PRIu64",\"mean_u_steps\":%.9f,\"sample_quantiles_u_steps\":{\"sample_mod\":%u,\"sample_n\":%zu,\"p50\":%u,\"p90\":%u,\"p99\":%u,\"p99_9\":%u},\"max_u_steps\":%"PRIu64",\"max_shortened_steps\":%"PRIu64",\"max_peak_bits\":%d,\"max_peak_excess\":%d,\"throughput_executed_per_wall_second\":%.6f,\"u_steps_per_wall_second\":%.6f,\"u_steps_per_completed_worker_cpu_second\":%.6f,\"wall_seconds\":%.6f,\"process_cpu_seconds\":%.6f,\"completed_worker_cpu_seconds\":%.6f,\"complete_work_units\":%"PRIu64",\"total_work_units\":%"PRIu64",\"digest\":\"%016"PRIx64"\"}",g->bits,g->arm,g->counter_base,g->count,r->generated,r->pruned,r->executed,r->basin_hits,r->cache_hits,r->freezes,r->repeats,r->escapes,r->invariant_failures,r->resource_stops,r->u_steps,r->shortened_steps,mean,(unsigned)SAMPLE_MOD,r->sample_n,r->q50,r->q90,r->q99,r->q999,r->max_u_steps,r->max_shortened_steps,r->max_peak_bits,r->max_peak_excess,starts_rate,u_wall_rate,u_cpu_rate,r->campaign_wall,r->campaign_cpu,r->work_cpu_sum,r->complete_units,r->total_units,r->digest);
-}static int fixed_vs_gmp_transition_test
+}
 
 static int fixed_vs_gmp_transition_test(void){
     int bitsv[]={256,512,1024}; mpz_t z;mpz_init(z); uint64_t cases=0;
@@ -87,7 +87,7 @@ static int forced_escape_test(void){
     int ok=b>FAST_PATH_BITS;
     fprintf(stderr,"preflight_forced_escape_bits=%zu preservation=PASS disposition=%d %s\n",b,(int)tr.disposition,ok?"PASS":"FAIL");
     return ok;
-}static int deterministic_workunit_test
+}
 
 static int deterministic_workunit_test(void){
     group_cfg g={256,'U',20000,20000,0}; group_result a,b;exception_stub e;int he;
