@@ -54,7 +54,7 @@
     "active_scientific_wall_seconds_derived": 437.3702850341797,
     "summed_process_cpu_seconds": 1081.483885,
     "summed_group_max_rss_kib": 15468,
-    "committed_closeout_storage_bytes": null,
+    "committed_closeout_storage_bytes": 32419,
     "wall_ceiling_seconds": 900,
     "cpu_ceiling_seconds": 3600,
     "ram_ceiling_kib": 1048576,
