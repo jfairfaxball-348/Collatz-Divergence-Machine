@@ -430,3 +430,56 @@ Stop after the exact frozen 60,000,000-start population or earlier on a mandator
 
 A null P2 result does not automatically authorize P3.
 
+
+
+## CDM3-P2 closeout — 2026-10-02
+
+**Status:** COMPLETE — **P2-ORDINARY-NULL**.
+
+The exact frozen population was exhausted:
+
+| Item | Observed CDM3-P2 |
+|---|---:|
+| generated starts | 60,000,000 |
+| Arm-L pretrajectory pruned | 13,330,798 |
+| exact trajectories executed | 46,669,202 |
+| Tier-2 basin hits | 46,669,202 |
+| cache hits | 0 |
+| exceptional freezes | 0 |
+| repeated states | 0 |
+| 4096-bit / bigint escapes | 0 |
+| invariant failures | 0 |
+| campaign resource stops | 0 |
+| exact U-steps | 59,293,075,669 |
+| shortened-step equivalents | 118,586,359,433 |
+| max U-steps | 3,357 |
+| max shortened steps | 6,273 |
+| max peak bits | 1,053 |
+| max peak excess | +29 bits |
+
+Resource accounting:
+
+| Resource | Frozen ceiling | Observed |
+|---|---:|---:|
+| concurrent worker threads | <=8 | 6 |
+| active scientific wall | <=900 s | 437.370285 s |
+| CPU | <=3,600 s | 1,081.483885 s |
+| memory | <=1 GiB | every group far below ceiling; summed group maxima 15,468 KiB |
+| committed result storage | <=300 MiB | closeout artifacts far below ceiling |
+| GPU | none | none |
+
+All 600 frozen work units completed. No incomplete work unit contributes to the authoritative counts.
+
+The survivor-cost distribution closely reproduced P1 by corresponding band/arm cell. Doubling the population produced only modest finite increases in maxima and no approach to the exceptional thresholds.
+
+**Post-exhaustion action:** STOP AND AUDIT.
+
+No P3 population, additional CPU scaling, GPU benchmark, new sampling distribution, or new ranking-metric experiment is authorized by this result. A later compute proposal requires a fresh information-gain argument and a separately frozen envelope before execution.
+
+Authoritative artifacts:
+
+- `experiments/CDM3_P2_REPORT.md`;
+- `experiments/CDM3_P2_RESULT.json`;
+- `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`.
+
+Authoritative workflow run: `36984984470`. Campaign artifact: `11217427170`, digest `sha256:c70a5c009e019124ac86caf3edd14fcf97f3999287128490094e81f8441b34be`.
