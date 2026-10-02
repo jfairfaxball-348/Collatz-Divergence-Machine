@@ -3,17 +3,19 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM3-P2 integration/preflight complete — all frozen preflight gates pass; the exact 60,000,000-start CPU campaign is authorized but not yet executed**
+- Project stage: **CDM3-P2 COMPLETE — exact frozen 60,000,000-start population exhausted with classification P2-ORDINARY-NULL; STOP AND AUDIT**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
 - Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
-- Current authoritative scientific-search report: `experiments/CDM3_P1_REPORT.md`
+- Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
 - Current CDM3-B1 machine-readable result: `experiments/CDM3_B1_RESULT.json`
 - Current CDM3-B1 implementation note: `docs/CDM3_B1_ENGINEERING.md`
 - Current CDM3-P2 preflight report: `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
 - Current CDM3-P2 preflight result: `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
 - Current CDM3-P2 integration closeout: `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
+- Current CDM3-P2 scientific result: `experiments/CDM3_P2_RESULT.json`
+- Current CDM3-P2 work-unit provenance: `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
 - Current R3 architecture specification: `docs/CDM2_R3_ARCHITECTURE.md`
 - Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`
 - Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
@@ -23,13 +25,13 @@
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
 - Current symbolic frontier: parity/residue affine identities, exact K-survival logic, finite inverse-tree binary pruning, lift-quotient future-block freedom, and the finite inverse-sieve/CRT obstruction
-- Current computational-reach frontier: **P1 exhausted 30,000,000 frozen 256/512/1024-bit sparse starts; B1 recovered production hot-path parity with local R3 at 67.48M / 66.24M / 51.34M U-steps/s on its benchmark host**
+- Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **CDM3-P2 PREFLIGHT PASSED; the bounded 60,000,000-start CPU campaign is the only authorized larger scientific path and is ready for execution**
-- Immediate next task: **CDM3-P2 — execute and close out only the frozen 60,000,000-start CPU campaign using the preflight-passed `CDM3-P2-v1` engine and the six frozen counter intervals**
-- Forbidden next action: enlarging CDM3-P2 beyond its frozen 60,000,000 starts, GPU production/benchmark work, changing the frozen P2 counters/generator, or treating finite survival as proof
-- Explicitly permitted next action: execute only the frozen CDM3-P2 CPU envelope in `docs/COMPUTE_BUDGET.md`, preserving checkpoints, work-unit digests, resource accounting, and exceptional-candidate freeze/replay semantics
+- CDM3: **CDM3-P2 COMPLETE; no further scientific population, GPU benchmark, or new distribution is authorized. The project is in STOP-AND-AUDIT state.**
+- Immediate next task: **CDM3-P2A — post-campaign scientific audit of P1/P2 tail stability, pruning economics, search-distribution value, and whether any materially different next research direction can be justified before new compute**
+- Forbidden next action: automatic P3/further CPU scaling, GPU production or benchmark work, a new sampling distribution, a new ranking metric, or any scientific campaign not separately justified and frozen after the P2 audit
+- Explicitly permitted next action: analysis/audit only using the completed P1/P2 evidence and existing theory/engineering records; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -61,6 +63,9 @@ The repository, not conversational memory, is the authoritative research state.
 24. `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
 25. `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
 26. `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
+27. `experiments/CDM3_P2_REPORT.md`
+28. `experiments/CDM3_P2_RESULT.json`
+29. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
 
 ## Strategic course correction — 2026-10-01
 
@@ -167,9 +172,33 @@ The next scientific action is frozen in `docs/COMPUTE_BUDGET.md` as CDM3-P2: exa
 
 On 2026-10-02 the dedicated `CDM3-P2-v1` integration passed every frozen preflight gate in workflow run `36982432002` / job `110759729097`. The exact P1 generator semantics remain `CDM3-P1-gen-v1`; the P2 counter audit proves all six frozen intervals are disjoint from P1 and each other. No P2 scientific start was executed by preflight. The immediate next action is now the exact frozen 60,000,000-start CPU campaign.
 
+## CDM3-P2 closeout — 2026-10-02
+
+CDM3-P2 is complete with classification **P2-ORDINARY-NULL**.
+
+The exact frozen 60,000,000-start population was exhausted:
+
+- generated: **60,000,000**;
+- Arm-L pretrajectory pruned: **13,330,798**;
+- exact trajectories executed: **46,669,202**;
+- Tier-2 basin hits: **46,669,202**;
+- exact U-steps: **59,293,075,669**;
+- shortened-step equivalents: **118,586,359,433**;
+- exceptional freezes: **0**;
+- repeated states: **0**;
+- 4096-bit / bigint escapes: **0**;
+- invariant failures: **0**;
+- campaign resource stops: **0**.
+
+All 600 frozen work units completed. Active scientific wall was 437.370285 seconds and summed process CPU was 1,081.483885 seconds, inside the frozen 15-minute / 60-CPU-minute envelope. No candidate entered structural or certification analysis. No explicit unbounded orbit was found and no counterexample was claimed.
+
+P2's survivor-cost means and deterministic tail quantiles closely matched P1 at the same bit-length/arm cells. The doubled sample produced only modest finite increases in maxima; the global P2 maximum was 3,357 U-steps and +29 peak bits, far below the exceptional thresholds.
+
+This null result does not support automatic scaling. The repository state is therefore **STOP AND AUDIT**.
+
 ## Authoritative next-session prompt
 
-### CDM3-P2 — INTEGRATE THE B1 KERNEL, PASS PREFLIGHT, AND RUN THE FROZEN 60-MILLION-START CPU CAMPAIGN
+### CDM3-P2A — POST-CAMPAIGN AUDIT AND NEXT-STEP DECISION
 
 Continue the standalone research programme:
 
@@ -181,62 +210,39 @@ Repository:
 
 Treat the repository — not conversational memory — as the authoritative research state.
 
-Before implementation or computation, read the complete Read before working list above and especially:
+Before analysis, read the complete Read before working list above, especially:
 
 - `experiments/CDM3_P1_REPORT.md`
 - `experiments/CDM3_P1_RESULT.json`
-- `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
+- `experiments/CDM3_P2_REPORT.md`
+- `experiments/CDM3_P2_RESULT.json`
+- `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
 - `experiments/CDM3_B1_REPORT.md`
-- `experiments/CDM3_B1_RESULT.json`
-- `experiments/CDM3_B1_COMMAND_RECORD.md`
-- `docs/CDM3_B1_ENGINEERING.md`
 - `docs/COMPUTE_BUDGET.md`
+- `docs/FAILURE_AND_LESSON_LEDGER.md`
 
 ### Root objective
 
-The only root objective remains an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and never reaches 1.
-
-Finite survival, throughput, magnitude and large peaks remain non-proof.
+The root objective remains an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and never reaches 1.
 
 ### Task
 
-Create a separately versioned CDM3-P2 production engine. Do not alter the historical P1 source bundle.
+Perform a no-new-scientific-start audit of P1 and P2.
 
-Integrate exactly the B1-selected hot path:
+Determine what the completed 30M + 60M campaigns actually taught about:
 
-- native production compilation;
-- direct destructive `mul3add1` while the normalized state occupies fewer than 64 limbs;
-- recovery copy only when the state already occupies all 64 limbs;
-- exact restore/freeze/escape semantics if fixed capacity is exceeded.
+- survivor-cost tail stability by band/arm;
+- Arm-L exact-pruning yield and whether it changed downstream cost distributions;
+- finite maxima versus sample-size effects;
+- production economics after B1;
+- whether the current uniform/least-divergent-targeted sampling design has produced any scientifically useful signal beyond efficient ordinary resolution;
+- whether the counterexample-at-scale search hypothesis has been meaningfully tested by this magnitude regime and sample size;
+- what materially different research direction, if any, has a defensible information-gain argument.
 
-Preserve the P1 deterministic generator algorithm, dual arms, Tier-2 basin stop, exceptional-candidate triggers, work-unit/checkpoint/replay machinery and proof boundaries.
+Do **not** execute P3, new CPU starts, GPU work, a new distribution, or a new metric calibration in this audit.
 
-Before scientific execution, pass every P2 preflight gate frozen in `docs/COMPUTE_BUDGET.md`, including explicit proof that the P2 counter intervals do not overlap any P1 work-unit interval.
+Classify candidate next directions, kill weak routes, and if a new compute campaign is scientifically justified, specify the smallest proposed frozen envelope but leave it **UNAUTHORIZED / NOT EXECUTED** pending a later explicit decision.
 
-### Frozen P2 population
+If no new direction clears that bar, say so and preserve STOP-AND-AUDIT / theory-design status.
 
-Execute only after all gates pass:
-
-- exactly 256, 512 and 1024 bits;
-- exactly 10,000,000 Arm-U starts per bit length;
-- exactly 10,000,000 Arm-L starts per bit length;
-- exactly 60,000,000 generated starts total;
-- <=8 workers;
-- <=15 minutes wall;
-- <=60 CPU-minutes;
-- <=1 GiB RAM;
-- <=300 MiB committed result storage;
-- no GPU execution.
-
-Do not enlarge the population after observing results.
-
-### Exceptional object rule
-
-If an exceptional candidate freezes, stop broad processing of that object, preserve exact provenance, replay independently, and transfer it to structural/certification analysis. Do not equate the finite event with divergence.
-
-### Closeout
-
-Report exact generated/executed/pruned/basin/freeze counts, U-step and shortened-step totals, survivor-tail statistics, work-unit/checkpoint integrity, production throughput, source/compiler/executable hashes, every exceptional object, whether any candidate entered structural analysis, and whether any counterexample was found or claimed.
-
-A null result does not automatically authorize P3 or GPU work.
-
+No finite null result is evidence that Collatz is true, and no finite survivor statistic is proof of divergence.
