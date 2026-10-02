@@ -164,7 +164,22 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Immediate theory substage: CDM4-T1.** Search for an exact finitely describable structure that is recursively closed under Collatz dynamics, supports a rigorously increasing quantity on returns, excludes the `1`-basin, and can be anchored to an explicit positive integer. P1/P2 produced no informative growth anomaly, so CDM4-T1 begins from the proved lift/inverse-sieve obstructions rather than from a promoted trajectory. No scientific starts are authorized.
+**Status: CDM4-T1 COMPLETE — CLASSIFICATION C: NEW THEORETICAL OBSTRUCTION FOUND.**
+
+Authoritative T1 report: `experiments/CDM4_T1_REPORT.md`.
+
+CDM4-T1 proved that eventually periodic parity cannot support a positive divergent orbit. A fixed expanding block therefore cannot be self-repeated indefinitely by a positive integer, and an autonomous deterministic finite-state block machine eventually collapses to bounded periodic behavior.
+
+T1 also proved the arithmetic-progression closure obstruction. If a fixed positive-length Collatz block maps every member of one full arithmetic-progression tail into another, the target family period has at least K fewer powers of two than the source period, where K is the block length. Hence no directed cycle of such whole-family progression edges can exist.
+
+Finally, T1 isolated the ordinary-integer anchoring obstruction for infinite nested residue systems: compatible canonical residues modulo nested moduli tending to infinity represent one nonnegative integer exactly when those residues eventually stabilize. Thus a nonempty 2-adic/profinite inverse limit is not enough.
+
+**Next theory substage: CDM4-T2.** Audit aperiodic finite-description mechanisms that escape those obstructions, especially substitution/morphic valuation languages and nested mixed-adic cylinders with an unbounded scale parameter. A qualifying route must simultaneously prove:
+
+- eventual stabilization of the exact starting residue tower to one explicit positive integer; and
+- an exact growth theorem, for example unbounded `3^m/2^A_m` along the same realized valuation language.
+
+No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
 
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
@@ -188,8 +203,10 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T1 — recursively closed divergence-mechanism audit.**
+**CDM4-T2 — aperiodic integer-anchor / nested-cylinder theorem audit.**
 
-Use the existing CDM2-R1/R2 obstructions and completed P1/P2 evidence to search theory-first for a nonlocal or recursively closed structure that can force indefinite growth and exclude the `1`-basin. Kill candidate representations that reduce to finite-prefix information, finite power-of-3 residue pruning, clearance/magnitude scoring, or another case covered by the existing CRT future-block freedom.
+Start from the T1 theorem package rather than from finite trajectory anomalies. Investigate whether a finitely generated aperiodic parity/valuation language can be proved to have an exact ordinary-positive-integer anchor while also forcing unbounded accumulated growth.
 
-Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, new ranking-metric campaigns, and longer candidate trajectories remain unauthorized.
+The central obligation is simultaneous: the exact starting residue tower must eventually stabilize to one explicit positive integer, and the same infinite language must force an unbounded growth factor. A profinite symbolic point without an ordinary integer anchor is insufficient; an anchored language without growth is also insufficient.
+
+Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, finite exponent-code/ranking campaigns, and longer candidate trajectories remain unauthorized.
