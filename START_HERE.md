@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T1 COMPLETE — C: NEW THEORETICAL OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T2 COMPLETE — C: NEW ANCHORING / APERIODICITY OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T1_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T2_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: parity/residue affine identities; the R1/R2 finite inverse-sieve/CRT obstruction; CDM4-T1 eventual-periodic parity obstruction; the arithmetic-progression family closure obstruction; and the nested-residue ordinary-integer anchoring criterion
+- Current symbolic frontier: parity/residue affine identities; the R1/R2 finite inverse-sieve/CRT obstruction; T1 periodic/progression/profinite obstructions; and T2 exact accelerated start cylinders with anchor-carry digits, equivalent boundedness/stabilization criteria, and the theorem that a positive anchored aperiodic parity language is automatically unbounded
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T2 — aperiodic integer-anchor / nested-cylinder theorem audit: theory-only work on recursively generated valuation/parity languages that must simultaneously anchor to one explicit positive integer and force unbounded growth**
+- Immediate next task: **CDM4-T3 — anchor-carry extinction / recursive-language realizability audit: theory-only work on proving or ruling out eventual-zero anchor carry for finite-alphabet recursive valuation/parity languages**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T2 theory/structural analysis only** on aperiodic recursive languages, nested cylinders, and positive-integer anchoring; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T3 theory/structural analysis only** on anchor-carry extinction, primitive substitutions/morphic words, and independently verified parity-density obstructions; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -71,6 +71,7 @@ The repository, not conversational memory, is the authoritative research state.
 31. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
 32. `experiments/CDM3_P2A_REPORT.md`
 33. `experiments/CDM4_T1_REPORT.md`
+34. `experiments/CDM4_T2_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -296,19 +297,68 @@ No such explicit language/anchor was found. No unbounded orbit was found. No cou
 
 No new compute, generator/distribution, finite-code ranker, or GPU workload is authorized.
 
-## Authoritative next task — CDM4-T2
+## CDM4-T2 closeout — 2026-10-02
 
-**CDM4-T2 — APERIODIC INTEGER-ANCHOR / NESTED-CYLINDER THEOREM AUDIT.**
+CDM4-T2 is complete. Authoritative report: experiments/CDM4_T2_REPORT.md.
 
-Work theory-first on the single sharpened obligation left by T1:
+**Classification: C — NEW ANCHORING / APERIODICITY OBSTRUCTION FOUND.**
 
-> construct, or rule out for a broad recursive class, an aperiodic finitely generated parity/valuation language whose exact starting residue tower eventually stabilizes to one explicit positive integer while its accumulated valuations force an unbounded growth factor.
+No scientific Collatz starts were generated.
 
-Priority objects may include substitutions/morphic words, recursively nested mixed-adic cylinders, transducers with an unbounded scale parameter, or equivalent exact structures. They must be proved equivalent to actual Collatz dynamics and must retain the ordinary-positive-integer anchor.
+T2 derived the exact accelerated valuation-prefix start cylinder. For a_1,...,a_m, with A_m=sum a_i and C_{m+1}=3C_m+2^{A_m}, exact realization is the unique canonical residue
 
-Do not optimize finite exponent codes, finite drift, finite residue rates, or another finite score.
+R_m == 3^{-m}(2^{A_m}-C_m)  (mod 2^{A_m+1}).
+
+The exact cylinders nest. Writing M_m=2^{A_m+1}, there is a unique anchor digit
+
+d_m in {0,...,2^{a_{m+1}}-1}
+
+with
+
+R_{m+1}=R_m+d_mM_m.
+
+This turns ordinary-integer realization into an exact extinction theorem:
+
+- one ordinary nonnegative anchor;
+- bounded canonical representatives R_m;
+- eventual stabilization of R_m;
+- eventual d_m=0;
+- and R_{m+1}/M_m -> 0
+
+are equivalent.
+
+For bounded valuation alphabets, ordinary anchoring is also equivalent to
+
+R_m/2^{A_m+1}->0.
+
+T2 also completed the boundedness/periodicity equivalence for positive Collatz orbits: a positive orbit is bounded if and only if its shortened source-parity word is eventually periodic. Therefore an exact positive integer realizing a provably aperiodic parity/valuation language is automatically an unbounded orbit and cannot reach 1. A separate quantitative growth-rate theorem is sufficient but not necessary once anchoring and aperiodicity are proved.
+
+The focused literature audit found a strong existing route kill: Sanmin Wang's peer-reviewed E-sequence theorem rules out every irrational mechanical valuation word a_n=floor(n theta)-floor((n-1)theta) as the E-sequence of an odd positive integer. In particular, choices 1<theta<log_2 3 have formally favorable exponential multiplicative growth but no positive-integer anchor.
+
+No general theorem was found ruling out all aperiodic primitive substitutions or morphic valuation words. Those classes survive only under the exact T2 anchor-carry obligation.
+
+No explicit candidate, unbounded orbit, or counterexample was found or claimed.
+
+No compute-budget, metric-catalog, generator/distribution, or GPU authorization changed.
+
+## Authoritative next task — CDM4-T3
+
+**CDM4-T3 — ANCHOR-CARRY EXTINCTION / RECURSIVE-LANGUAGE REALIZABILITY AUDIT.**
+
+Work theory-first on the exact T2 recurrence.
+
+Primary theorem target:
+
+> For a non-eventually-periodic finite-alphabet recursive valuation/parity language, classify when the exact anchor digits d_m are eventually zero; equivalently classify when the exact canonical start representatives R_m remain bounded and stabilize to one explicit positive integer.
+
+Begin with primitive substitutions and morphic words, using the bounded-alphabet equivalence R_m/2^{A_m+1}->0. Audit whether substitution matrices, return words, carries, automatic-sequence density results, or independently verified parity-density rigidity can force or prohibit carry extinction.
+
+Any use of the López-Stoll 2021 parity-density claim must first be independently verified because that source is a preprint; do not promote a broad automatic/substitution obstruction solely by citation.
+
+Do not enumerate finite words looking for attractive residue rates. Do not optimize finite anchor digits, finite drift, or finite exponent-code scores.
 
 **Scientific starts authorized: NO.**  
 **GPU work authorized: NO.**  
 **New generator/distribution authorized: NO.**  
+**Finite-code ranker campaign authorized: NO.**  
 **Theory/structural work authorized: YES.**
