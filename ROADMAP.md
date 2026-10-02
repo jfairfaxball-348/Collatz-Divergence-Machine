@@ -88,7 +88,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: CDM3-P2 COMPLETE — P2-ORDINARY-NULL; EXACT 60,000,000-START POPULATION EXHAUSTED; STOP AND AUDIT.**
+**Status: CDM3-P2A COMPLETE — SAME-DISTRIBUTION SCALING NOT JUSTIFIED; STRUCTURE/THEORY PIVOT AUTHORIZED; NO NEW SCIENTIFIC COMPUTE.**
 
 CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
@@ -142,11 +142,29 @@ The deterministic survivor-cost tail remained close to P1 at every band/arm cell
 
 All frozen resource ceilings were respected: 437.37 seconds active scientific wall, 1,081.48 process CPU-seconds, at most six concurrent worker threads, and no GPU execution.
 
-**Decision:** P2 does not authorize P3, more CPU sampling, GPU benchmarking, a new distribution, or a new ranker. The next stage is a no-new-start post-campaign audit of scientific information gain and next-direction justification.
+**Historical P2 decision:** P2 did not authorize P3, more CPU sampling, GPU benchmarking, a new distribution, or a new ranker. It triggered the no-new-start CDM3-P2A audit, now complete.
 
-## CDM4 — STRUCTURAL EXTRACTION
+### CDM3-P2A post-campaign audit
 
-Take informative growth anomalies and search for exact parity/residue/affine structures explaining them.
+Authoritative report: `experiments/CDM3_P2A_REPORT.md`.
+
+**Classification: C — STRUCTURE/THEORY PIVOT JUSTIFIED; NO NEW COMPUTE CAMPAIGN AUTHORIZED.**
+
+P2A compared the disjoint P1/P2 populations quantitatively. Per-band/per-arm mean U-step costs and deterministic p50/p90/p99/p99.9 tails were effectively stable under the doubled P2 population. Finite maxima moved only modestly and inconsistently, with no approach to the exceptional triggers and no evidence of a qualitatively different survivor class.
+
+Across P1+P2, Arm L exactly pruned **19,996,018 / 45,000,000 = 44.4356%** of generated least-divergent-targeted starts before trajectory execution. Surviving Arm-L trajectory-cost summaries remained essentially the same as Arm U. The rule is retained as exact binary pruning, not as a divergence predictor or enrichment ranker.
+
+The current 256/512/1024-bit generator has no demonstrated mechanism making a further same-distribution scale-up scientifically informative. CPU throughput has ceased to be the binding research problem, so GPU/cloud/distributed acceleration is also not authorized.
+
+No alternative reach-first distribution presently clears the project's information-gain standard. No compute envelope is frozen and `docs/COMPUTE_BUDGET.md` is unchanged.
+
+The next priority is a theory/structural search for a recursively closed, nonlocal mechanism that can bridge finite description to forced infinite future behavior and escape the finite-depth lift/CRT obstruction proved in CDM2-R1/R2.
+
+No explicit unbounded orbit was found and no counterexample was claimed.
+
+## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
+
+**Immediate theory substage: CDM4-T1.** Search for an exact finitely describable structure that is recursively closed under Collatz dynamics, supports a rigorously increasing quantity on returns, excludes the `1`-basin, and can be anchored to an explicit positive integer. P1/P2 produced no informative growth anomaly, so CDM4-T1 begins from the proved lift/inverse-sieve obstructions rather than from a promoted trajectory. No scientific starts are authorized.
 
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
@@ -170,8 +188,8 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM3-P2A — post-campaign audit and next-step decision.**
+**CDM4-T1 — recursively closed divergence-mechanism audit.**
 
-Use the completed P1/P2 results to audit survivor-tail stability, Arm-L pruning economics, finite-maxima/sample-size effects, and whether the current sampling architecture has produced any scientifically useful signal beyond efficient ordinary resolution.
+Use the existing CDM2-R1/R2 obstructions and completed P1/P2 evidence to search theory-first for a nonlocal or recursively closed structure that can force indefinite growth and exclude the `1`-basin. Kill candidate representations that reduce to finite-prefix information, finite power-of-3 residue pruning, clearance/magnitude scoring, or another case covered by the existing CRT future-block freedom.
 
-Execute no new scientific starts. Do not begin P3, GPU/cloud/volunteer scaling, a new distribution, or a new ranking-metric campaign. Any later compute proposal must be separately justified, frozen, and left unexecuted until explicitly authorized.
+Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, new ranking-metric campaigns, and longer candidate trajectories remain unauthorized.
