@@ -450,7 +450,7 @@ This is a direct worked example of the central T1/T2 warning:
 
 Mechanical/Sturmian valuation languages of this form are therefore **FAILED** as an anchor route.
 
-Some quadratic-slope Sturmian words are substitutive, so this also removes a nontrivial natural subclass from the substitution programme. It does not rule out all primitive substitutions or all morphic words.
+Published Sturmian-substitution characterizations show that nontrivial substitution-invariant Sturmian words occur for special quadratic irrational slopes/intercepts. Therefore Wang's mechanical theorem also removes a nontrivial natural substitutive Sturmian subclass from the valuation programme. It does not rule out all primitive substitutions or all morphic words.
 
 ## 9. Primitive substitutions and morphic languages
 
@@ -787,6 +787,10 @@ Use: aperiodic Sturmian/mechanical parity vectors inside the 2-adic conjugacy fr
 **Wang (2019).**  
 Sanmin Wang, An E-Sequence Approach to the 3x+1 Problem, Symmetry 11, 1415. DOI 10.3390/sym11111415.  
 Use: accelerated E-sequence convention and proved non-realizability of several nonperiodic classes, including all irrational mechanical valuation words.
+
+**Parvaix (1999).**  
+Bruno Parvaix, Substitution invariant sturmian bisequences, Journal de théorie des nombres de Bordeaux 11, 201-210.  
+Use: characterization of substitution-invariant Sturmian systems, supporting the statement that Wang's mechanical obstruction intersects a genuine substitutive subclass.
 
 **Bell (2020).**  
 Jason P. Bell, The upper density of an automatic set is rational, Journal de théorie des nombres de Bordeaux 32, 585-604. DOI 10.5802/jtnb.1135.  
