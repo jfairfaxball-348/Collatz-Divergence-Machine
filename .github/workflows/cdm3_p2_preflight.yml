@@ -1,0 +1,106 @@
+name: CDM3-P2 integration preflight
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "production/cdm3_p2_*"
+      - "tools/cdm3_p2_*"
+      - "benchmarks/cdm3_p2_*"
+      - "tests/cdm3_p2_*"
+      - ".github/workflows/cdm3_p2_preflight.yml"
+      - "experiments/CDM3_P1_WORK_UNIT_DIGESTS.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Host provenance
+        run: |
+          set -euxo pipefail
+          uname -a
+          lscpu
+          gcc --version
+          pkg-config --modversion gmp || true
+
+      - name: Build P2 and comparison binaries
+        run: |
+          set -euxo pipefail
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread \
+            production/cdm3_p2_engine.c -lgmp -o cdm3_p2_engine
+          gcc -O1 -g -std=c11 -Wall -Wextra -Werror -pthread \
+            -fsanitize=address,undefined -fno-omit-frame-pointer \
+            production/cdm3_p2_engine.c -lgmp -o cdm3_p2_engine_san
+          gcc -O2 -march=native -std=c11 -Wall -Wextra -Werror -pthread \
+            tests/cdm3_p2_opt_escape.c -lgmp -o cdm3_p2_opt_escape_test
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread \
+            benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_native
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread \
+            benchmarks/cdm3_p2_integration_bench.c -lgmp -o cdm3_p2_integration_bench
+
+      - name: Exact correctness gates
+        run: |
+          set -euxo pipefail
+          ./cdm3_p2_opt_escape_test
+          ./cdm3_p2_engine --selftest /tmp/cdm3p2_preflight.chk
+          ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 \
+            ./cdm3_p2_engine_san --selftest /tmp/cdm3p2_san.chk
+          python3 tools/cdm3_p2_replay.py --selftest --engine ./cdm3_p2_engine --steps 256
+
+      - name: Frozen counter non-overlap gate
+        run: |
+          set -euxo pipefail
+          python3 tools/cdm3_p2_counter_audit.py \
+            experiments/CDM3_P1_WORK_UNIT_DIGESTS.json \
+            CDM3_P2_COUNTER_AUDIT.json
+          cat CDM3_P2_COUNTER_AUDIT.json
+
+      - name: B1-to-P2 integration throughput and digest gate
+        run: |
+          set -euxo pipefail
+          ./cdm3_b1_native --bench opt 4096 5 > b1_opt.jsonl
+          ./cdm3_p2_integration_bench 4096 5 > p2_opt.jsonl
+          python3 tools/cdm3_p2_integration_check.py \
+            b1_opt.jsonl p2_opt.jsonl CDM3_P2_INTEGRATION_CHECK.json
+          cat CDM3_P2_INTEGRATION_CHECK.json
+
+      - name: Provenance and hashes
+        run: |
+          set -euxo pipefail
+          ./cdm3_p2_engine --provenance > CDM3_P2_PROVENANCE.json
+          sha256sum \
+            production/cdm3_p2_engine.c \
+            production/cdm3_p2_part0.inc \
+            production/cdm3_p2_part1.inc \
+            production/cdm3_p2_part2.inc \
+            production/cdm3_p2_part3.inc \
+            tools/cdm3_p2_replay.py \
+            tools/cdm3_p2_counter_audit.py \
+            tools/cdm3_p2_integration_check.py \
+            tools/cdm3_p2_aggregate.py \
+            benchmarks/cdm3_p2_integration_bench.c \
+            tests/cdm3_p2_opt_escape.c \
+            cdm3_p2_engine cdm3_p2_engine_san cdm3_p2_opt_escape_test \
+            > CDM3_P2_SHA256SUMS.txt
+          cat CDM3_P2_PROVENANCE.json
+          cat CDM3_P2_SHA256SUMS.txt
+
+      - name: Upload preflight evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-p2-preflight
+          path: |
+            CDM3_P2_COUNTER_AUDIT.json
+            CDM3_P2_INTEGRATION_CHECK.json
+            CDM3_P2_PROVENANCE.json
+            CDM3_P2_SHA256SUMS.txt
+            b1_opt.jsonl
+            p2_opt.jsonl
+          if-no-files-found: error
