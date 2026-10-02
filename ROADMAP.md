@@ -225,13 +225,19 @@ T6 also proves that finite scaled-unit closure occurs exactly for torsion units;
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-**CDM4-T7 closeout.** T7 proves that every finite true (k)-kernel output admits a scalar Mahler equation of order at most the kernel dimension, but this does not place order (>1) under Bugeaud–Yao. A natural balanced finite-abelian translation class Fourier-diagonalizes exactly into first-order character equations. In genuine higher rank, however, the exact Collatz output is a prescribed sum of several character values at the same 2-adic point (W=2^B/3^k). Separate transcendence of those components does not exclude rational cancellation.
+**CDM4-T7 closeout.** T7 proves that every finite true \(k\)-kernel output admits a scalar Mahler equation of order at most the kernel dimension, but this does not place order \(>1\) under Bugeaud–Yao. A natural balanced finite-abelian translation class Fourier-diagonalizes exactly into first-order character equations. In genuine higher rank, however, the exact Collatz output is a prescribed sum of several character values at the same 2-adic point
 
-No peer-reviewed p-adic theorem was verified whose checked hypotheses give the required same-point linear/algebraic independence for this exact Collatz system. Xu–Wang 2004 and Wang 2006 remain high-priority sources but were not load-bearing because their full theorem hypotheses were not sufficiently exposed in the audited text. Regular-singular theory remains structural rather than an arithmetic-value theorem. No new recursive class was excluded and no new bounded-(R_m) implication was proved.
+\[
+W=2^B/3^k.
+\]
+
+Separate transcendence of those components does not exclude rational cancellation.
+
+No peer-reviewed p-adic theorem was verified whose checked hypotheses give the required same-point linear/algebraic independence for this exact Collatz system. Xu–Wang 2004 and Wang 2006 remain high-priority sources but were not load-bearing because their full theorem hypotheses were not sufficiently exposed in the audited text. Regular-singular theory remains structural rather than an arithmetic-value theorem. No new recursive class was excluded and no new bounded-\(R_m\) implication was proved.
 
 No anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-**Next theory substage: CDM4-T8.** Attack the p-adic same-point no-cancellation problem for balanced finite abelian translation kernels, preferably elementary (2)-groups. Recover and check the full Xu–Wang/Wang theorem hypotheses, or prove a Collatz-specific no-cancellation identity among the Fourier-character values.
+**Next theory substage: CDM4-T8.** Attack the p-adic same-point no-cancellation problem for balanced finite abelian translation kernels, preferably elementary \(2\)-groups. Recover and check the full Xu–Wang/Wang theorem hypotheses, or prove a Collatz-specific no-cancellation identity among the Fourier-character values.
 
 No substitution enumeration, finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, or GPU/cloud/distributed work are authorized.
 
@@ -259,7 +265,7 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 **CDM4-T8 — p-adic same-point no-cancellation audit, theory only.**
 
-Begin with balanced finite abelian translation kernels, preferably elementary (2)-group state spaces so that the character equations remain over (mathbb Q). The exact Fourier decomposition has
+Begin with balanced finite abelian translation kernels, preferably elementary \(2\)-group state spaces so that the character equations remain over \(\mathbb Q\). The exact Fourier decomposition has
 
 \[
 \widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k)
@@ -273,7 +279,7 @@ W=2^B/3^k.
 
 Single theorem target:
 
-> Prove, using a fully verified peer-reviewed p-adic theorem or a Collatz-specific arithmetic identity, that the nontrivial character values cannot cancel to a rational number at the same point (W); or prove that the relevant Xu–Wang/Wang hypotheses still do not cover the system and isolate the exact missing theorem.
+> Prove, using a fully verified peer-reviewed p-adic theorem or a Collatz-specific arithmetic identity, that the nontrivial character values cannot cancel to a rational number at the same point \(W\); or prove that the relevant Xu–Wang/Wang hypotheses still do not cover the system and isolate the exact missing theorem.
 
 Do not enumerate substitutions to find favorable character polynomials. Do not infer no-cancellation from separate transcendence. Do not substitute complex lifting theorems for p-adic ones.
 
