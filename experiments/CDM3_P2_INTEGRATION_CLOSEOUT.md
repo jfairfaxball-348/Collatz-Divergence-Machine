@@ -1,25 +1,22 @@
 # CDM3-P2 Integration Session Closeout — 2026-10-02
 
-**Status:** IMPLEMENTATION PREPARED; SCIENTIFIC EXECUTION NOT YET AUTHORIZED.
+**Status:** P2 INTEGRATION COMPLETE; ALL FROZEN PREFLIGHT GATES PASS; SCIENTIFIC EXECUTION NOT YET RUN.
 
-**Claim boundary:** no CDM3-P2 scientific population was executed in this session. No counterexample was found or claimed.
+**Claim boundary:** this session executed zero frozen P2 scientific starts. No counterexample was found or claimed.
 
-## What this session completed
+## Completed integration
 
-A dedicated P2 implementation was created on branch `cdm3-p2-20261002` without modifying the historical P1 production bundle.
+A dedicated `CDM3-P2-v1` production engine was created without modifying the historical P1 source bundle.
 
-The P2 implementation deliberately preserves the exact P1 generator mapping and generator version `CDM3-P1-gen-v1` so the frozen P2 counter bases select the intended scientific population rather than a silently changed distribution.
+The exact P1 generator semantics remain frozen as `CDM3-P1-gen-v1`, so P2 changes the engine and counter ranges but does not silently change the scientific sampling distribution.
 
-The dedicated engine version is `CDM3-P2-v1`.
+The B1-selected hot path is integrated exactly:
 
-The B1-selected production hot path is integrated:
+- destructive `mul3add1` while the normalized state occupies fewer than 64 limbs;
+- recovery copy only when the input already occupies all 64 limbs;
+- exact original-state restoration and `DISP_FREEZE_ESCAPE` routing if fixed capacity is exceeded.
 
-- destructive `mul3add1` on the ordinary path while the normalized state occupies fewer than 64 limbs;
-- full-state recovery copy only when the input already occupies all 64 limbs;
-- exact original-state restoration and `DISP_FREEZE_ESCAPE` routing on fixed-capacity overflow;
-- exact odd-only and shortened-step-equivalent accounting retained.
-
-The P2 scientific group interface hard-codes the frozen 10,000,000-start counter intervals:
+The scientific interface hard-codes exactly 10,000,000 starts in each frozen band/arm interval:
 
 | bits | arm | counter base | half-open interval |
 |---:|:---:|---:|---|
@@ -30,57 +27,61 @@ The P2 scientific group interface hard-codes the frozen 10,000,000-start counter
 | 1024 | U | 148,000,012 | [148,000,012, 158,000,012) |
 | 1024 | L | 160,000,015 | [160,000,015, 170,000,015) |
 
-The command-line scientific interface therefore cannot substitute an arbitrary production counter base or count.
+## Preflight result
 
-Internal P2 guards are equal to or stricter than the frozen campaign envelope:
+**FINITE-VERIFIED:** GitHub Actions run `36982432002`, job `110759729097`, completed successfully.
 
-- <=8 worker threads;
-- <=890 seconds wall per process;
-- <=590 process CPU-seconds per scientific group, so six groups have a structural aggregate cap of <=3540 CPU-seconds < 3600;
-- 4096-bit fixed path;
-- 32,768 U-step exceptional trigger;
-- +512-bit peak exceptional trigger;
-- <=290 MiB result-storage guard.
+All required gates passed:
 
-Supporting validation/replay tools were added for:
-
-- optimized fixed-limb vs GMP agreement;
+- fixed-limb vs GMP;
+- optimized-kernel vs GMP;
 - odd-only vs shortened-map equivalence;
 - exact forced 4096-bit overflow preservation;
+- independent Python replay;
+- ASan/UBSan;
 - deterministic work-unit replay;
 - checkpoint/restart equality;
 - one-thread/four-thread digest equality;
-- independent Python big-integer replay;
-- exact P1/P2 counter-interval non-overlap;
-- same-host B1 OPT vs committed P2 integration timing and exact digest equality;
-- checkpoint/work-unit manifest extraction;
-- P2 campaign aggregation.
+- P2/P1 counter non-overlap;
+- executable budget guards;
+- same-host B1-to-P2 throughput/digest comparison.
 
-A dedicated GitHub Actions preflight workflow was added. It is engineering-only and does not execute any frozen P2 scientific counter interval.
+The P1/P2 counter audit proved a 64,999,985-counter gap between the final committed P1 interval and the first P2 interval.
 
-## What remains unverified
+Same-host median P2/B1 OPT U-step throughput ratios were:
 
-This session does **not** claim that the new P2 source is preflight-passed merely because it was written.
+- 256 bits: 98.283%;
+- 512 bits: 99.428%;
+- 1024 bits: 100.091%.
 
-Before any P2 scientific start is executed, the dedicated preflight workflow must complete successfully and its artifacts must be audited. In particular the repository still requires observed evidence for:
+Exact output equality passed at all three bands.
 
-1. compilation under `-O3 -march=native`;
-2. fixed-limb/GMP agreement;
-3. optimized overflow preservation;
-4. odd-only/shortened-map equivalence;
-5. independent Python replay;
-6. ASan/UBSan;
-7. work-unit replay;
-8. checkpoint/restart equality;
-9. one-thread/multi-thread digest equality;
-10. exact non-overlap with every committed P1 interval;
-11. source/compiler/executable hashes;
-12. same-host B1-vs-P2 integration timing with no material hot-path regression.
+Authoritative preflight details are preserved in:
 
-If any gate fails, the 60,000,000-start scientific campaign remains unauthorized.
+- `experiments/CDM3_P2_PREFLIGHT_REPORT.md`;
+- `experiments/CDM3_P2_PREFLIGHT_RESULT.json`.
 
-## Next session
+## Frozen execution boundary for the next session
 
-The next session should begin by treating the repository and the P2 preflight evidence as authoritative. It should repair any preflight failure before scientific execution. Only if every frozen gate passes may it run the exact 60,000,000-start campaign.
+After this integration is merged into `main`, the next session may execute **only** the already-frozen P2 population:
 
-No GPU work, P3 enlargement, new ranking metric, altered counter range, or post-hoc population extension is authorized.
+- 60,000,000 generated starts exactly;
+- 30,000,000 Arm U and 30,000,000 Arm L;
+- exactly 256 / 512 / 1024 bits;
+- the six frozen counter intervals above;
+- <=8 workers;
+- <=15 minutes wall;
+- <=60 CPU-minutes;
+- <=1 GiB RAM;
+- <=300 MiB committed result storage;
+- no GPU.
+
+Do not enlarge the population after observing results.
+
+If an exceptional candidate freezes, stop broad processing of that object, preserve exact provenance, independently replay it, and transfer it to structural/certification analysis. A freeze is finite evidence only.
+
+## Next-session task
+
+Execute the frozen 60M campaign only from the merged, preflight-passed P2 implementation. Preserve work-unit/checkpoint integrity and exact resource accounting. Close out with exact generated/executed/pruned/basin/freeze counts, U-step and shortened-step totals, survivor-tail statistics, source/compiler/executable hashes, every exceptional object, whether any candidate entered structural analysis, and whether any counterexample was found or claimed.
+
+A null result does not authorize P3 or GPU work.
