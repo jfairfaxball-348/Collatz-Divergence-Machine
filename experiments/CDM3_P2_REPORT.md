@@ -121,7 +121,7 @@ Frozen ceilings were respected.
 - active scientific wall: **437.370285 s** = 7.2895 min <= 15 min;
 - summed process CPU: **1,081.483885 s** = 18.0247 CPU-min <= 60 CPU-min;
 - summed per-group maximum RSS observations: **15,468 KiB**; every group was individually far below 1 GiB;
-- committed closeout files are far below the 300 MiB result-storage ceiling;
+- committed closeout artifacts (`CDM3_P2_REPORT.md`, `CDM3_P2_RESULT.json`, `CDM3_P2_WORK_UNIT_DIGESTS.json`) total **32,419 bytes**, far below the 300 MiB result-storage ceiling;
 - GPU execution: **none**.
 
 The campaign ran on GitHub-hosted x86_64 runners with GCC 13.3.0 and GMP 6.3.0. Because the required production build uses `-march=native`, executable hashes vary with runner CPU while the source bundle is invariant.
