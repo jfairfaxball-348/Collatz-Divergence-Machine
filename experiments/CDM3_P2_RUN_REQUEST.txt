@@ -5,3 +5,5 @@ Branch: cdm3-p2
 Authorization: execute the complete mandatory P2 preflight. Only if every gate passes, execute exactly the frozen 60,000,000-start CPU population already declared in docs/COMPUTE_BUDGET.md.
 
 No GPU execution. No population enlargement. Stop on any preflight failure, exceptional freeze, or frozen campaign resource ceiling.
+
+Retry authorization: 2026-10-02 preflight attempt 2 after installing the repository's declared pytest test environment. Attempt 1 consumed zero P2 scientific starts.
