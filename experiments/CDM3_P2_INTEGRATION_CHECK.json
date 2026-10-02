@@ -1,0 +1,82 @@
+{
+  "criterion": "P2 median U-steps/s must be >=90% of same-host B1 optimized path at every band, with exact per-pass workload/digest equality.",
+  "details": {
+    "1024": {
+      "b1_median_u_steps_per_s": 73899041.68388,
+      "exact_workload_equality": [
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 0
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 1
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 2
+        }
+      ],
+      "minimum_ratio": 0.9,
+      "p2_median_u_steps_per_s": 71268826.463204,
+      "p2_over_b1_ratio": 0.9644079928407279,
+      "passes": 3,
+      "throughput_pass": true
+    },
+    "256": {
+      "b1_median_u_steps_per_s": 92329570.3396,
+      "exact_workload_equality": [
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 0
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 1
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 2
+        }
+      ],
+      "minimum_ratio": 0.9,
+      "p2_median_u_steps_per_s": 98561268.794575,
+      "p2_over_b1_ratio": 1.0674940696902848,
+      "passes": 3,
+      "throughput_pass": true
+    },
+    "512": {
+      "b1_median_u_steps_per_s": 85199148.009118,
+      "exact_workload_equality": [
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 0
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 1
+        },
+        {
+          "differences": {},
+          "equal": true,
+          "pass": 2
+        }
+      ],
+      "minimum_ratio": 0.9,
+      "p2_median_u_steps_per_s": 92816151.874802,
+      "p2_over_b1_ratio": 1.0894023478364927,
+      "passes": 3,
+      "throughput_pass": true
+    }
+  },
+  "pass": true,
+  "schema": "CDM3-P2-integration-check-v1"
+}

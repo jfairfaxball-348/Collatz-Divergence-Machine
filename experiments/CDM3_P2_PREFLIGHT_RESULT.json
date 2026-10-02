@@ -1,0 +1,200 @@
+{
+  "all_gates_passed": true,
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "counter_audit": {
+    "p1_generator_version": "CDM3-P1-gen-v1",
+    "p1_intervals": [
+      {
+        "arm": "L",
+        "base": 30000015,
+        "bits": 1024,
+        "count": 5000000,
+        "end_exclusive": 35000015
+      },
+      {
+        "arm": "U",
+        "base": 24000012,
+        "bits": 1024,
+        "count": 5000000,
+        "end_exclusive": 29000012
+      },
+      {
+        "arm": "L",
+        "base": 6000003,
+        "bits": 256,
+        "count": 5000000,
+        "end_exclusive": 11000003
+      },
+      {
+        "arm": "U",
+        "base": 0,
+        "bits": 256,
+        "count": 5000000,
+        "end_exclusive": 5000000
+      },
+      {
+        "arm": "L",
+        "base": 18000009,
+        "bits": 512,
+        "count": 5000000,
+        "end_exclusive": 23000009
+      },
+      {
+        "arm": "U",
+        "base": 12000006,
+        "bits": 512,
+        "count": 5000000,
+        "end_exclusive": 17000006
+      }
+    ],
+    "p1_manifest": "experiments/CDM3_P1_WORK_UNIT_DIGESTS.json",
+    "p1_p2_collisions": [],
+    "p1_p2_disjoint": true,
+    "p2_intervals": [
+      {
+        "arm": "U",
+        "base": 100000000,
+        "bits": 256,
+        "count": 10000000,
+        "end_exclusive": 110000000
+      },
+      {
+        "arm": "L",
+        "base": 112000003,
+        "bits": 256,
+        "count": 10000000,
+        "end_exclusive": 122000003
+      },
+      {
+        "arm": "U",
+        "base": 124000006,
+        "bits": 512,
+        "count": 10000000,
+        "end_exclusive": 134000006
+      },
+      {
+        "arm": "L",
+        "base": 136000009,
+        "bits": 512,
+        "count": 10000000,
+        "end_exclusive": 146000009
+      },
+      {
+        "arm": "U",
+        "base": 148000012,
+        "bits": 1024,
+        "count": 10000000,
+        "end_exclusive": 158000012
+      },
+      {
+        "arm": "L",
+        "base": 160000015,
+        "bits": 1024,
+        "count": 10000000,
+        "end_exclusive": 170000015
+      }
+    ],
+    "p2_pairwise_collisions": [],
+    "p2_pairwise_disjoint": true,
+    "pass": true,
+    "schema": "CDM3-P2-counter-audit-v1"
+  },
+  "executable_sha256": "10ada7c94ddba90dd4f09a0c2e17a50c04b7d6d6668049dbb782389618c463fa",
+  "gmp": "6.3.0",
+  "integration_check": {
+    "criterion": "P2 median U-steps/s must be >=90% of same-host B1 optimized path at every band, with exact per-pass workload/digest equality.",
+    "details": {
+      "1024": {
+        "b1_median_u_steps_per_s": 73899041.68388,
+        "exact_workload_equality": [
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 0
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 1
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 2
+          }
+        ],
+        "minimum_ratio": 0.9,
+        "p2_median_u_steps_per_s": 71268826.463204,
+        "p2_over_b1_ratio": 0.9644079928407279,
+        "passes": 3,
+        "throughput_pass": true
+      },
+      "256": {
+        "b1_median_u_steps_per_s": 92329570.3396,
+        "exact_workload_equality": [
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 0
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 1
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 2
+          }
+        ],
+        "minimum_ratio": 0.9,
+        "p2_median_u_steps_per_s": 98561268.794575,
+        "p2_over_b1_ratio": 1.0674940696902848,
+        "passes": 3,
+        "throughput_pass": true
+      },
+      "512": {
+        "b1_median_u_steps_per_s": 85199148.009118,
+        "exact_workload_equality": [
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 0
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 1
+          },
+          {
+            "differences": {},
+            "equal": true,
+            "pass": 2
+          }
+        ],
+        "minimum_ratio": 0.9,
+        "p2_median_u_steps_per_s": 92816151.874802,
+        "p2_over_b1_ratio": 1.0894023478364927,
+        "passes": 3,
+        "throughput_pass": true
+      }
+    },
+    "pass": true,
+    "schema": "CDM3-P2-integration-check-v1"
+  },
+  "machine": "x86_64",
+  "p1_source_unchanged": true,
+  "python_replay": {
+    "cases": 30,
+    "failures": [],
+    "generator_version": "CDM3-P1-gen-v1",
+    "pass": true,
+    "version": "CDM3-P2-python-replay-v1"
+  },
+  "release_build_flags": "-O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread",
+  "sanitizers": "AddressSanitizer,UndefinedBehaviorSanitizer",
+  "schema": "CDM3-P2-preflight-result-v1",
+  "scientific_population_consumed_before_preflight": 0,
+  "source_bundle_sha256": "1244a4af54d3377ad5f51869f63e9fd3668cdb267483bf66fa628f253f03bd7e"
+}

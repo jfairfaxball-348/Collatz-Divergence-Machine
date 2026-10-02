@@ -1,0 +1,98 @@
+{
+  "p1_generator_version": "CDM3-P1-gen-v1",
+  "p1_intervals": [
+    {
+      "arm": "L",
+      "base": 30000015,
+      "bits": 1024,
+      "count": 5000000,
+      "end_exclusive": 35000015
+    },
+    {
+      "arm": "U",
+      "base": 24000012,
+      "bits": 1024,
+      "count": 5000000,
+      "end_exclusive": 29000012
+    },
+    {
+      "arm": "L",
+      "base": 6000003,
+      "bits": 256,
+      "count": 5000000,
+      "end_exclusive": 11000003
+    },
+    {
+      "arm": "U",
+      "base": 0,
+      "bits": 256,
+      "count": 5000000,
+      "end_exclusive": 5000000
+    },
+    {
+      "arm": "L",
+      "base": 18000009,
+      "bits": 512,
+      "count": 5000000,
+      "end_exclusive": 23000009
+    },
+    {
+      "arm": "U",
+      "base": 12000006,
+      "bits": 512,
+      "count": 5000000,
+      "end_exclusive": 17000006
+    }
+  ],
+  "p1_manifest": "experiments/CDM3_P1_WORK_UNIT_DIGESTS.json",
+  "p1_p2_collisions": [],
+  "p1_p2_disjoint": true,
+  "p2_intervals": [
+    {
+      "arm": "U",
+      "base": 100000000,
+      "bits": 256,
+      "count": 10000000,
+      "end_exclusive": 110000000
+    },
+    {
+      "arm": "L",
+      "base": 112000003,
+      "bits": 256,
+      "count": 10000000,
+      "end_exclusive": 122000003
+    },
+    {
+      "arm": "U",
+      "base": 124000006,
+      "bits": 512,
+      "count": 10000000,
+      "end_exclusive": 134000006
+    },
+    {
+      "arm": "L",
+      "base": 136000009,
+      "bits": 512,
+      "count": 10000000,
+      "end_exclusive": 146000009
+    },
+    {
+      "arm": "U",
+      "base": 148000012,
+      "bits": 1024,
+      "count": 10000000,
+      "end_exclusive": 158000012
+    },
+    {
+      "arm": "L",
+      "base": 160000015,
+      "bits": 1024,
+      "count": 10000000,
+      "end_exclusive": 170000015
+    }
+  ],
+  "p2_pairwise_collisions": [],
+  "p2_pairwise_disjoint": true,
+  "pass": true,
+  "schema": "CDM3-P2-counter-audit-v1"
+}
