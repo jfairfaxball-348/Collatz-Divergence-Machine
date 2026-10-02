@@ -70,30 +70,35 @@ def freeze_replay(result_path:str,output_path:str,checkpoint_interval:int):
     n=make_start(bits,arm,counter)
     expected=int(exc['start_hex'],16)
     start_ok=(n==expected)
-    start=n; peak=bits; u=0; short=0; checkpoints=[]; valuations={}; seen={n}
+    start=n; peak=bits; u=0; short=0; checkpoints=[]; valuations={}; tort=n; power=1; lam=0
     reason=None; escaped_next_odd=None
     while n >= (1<<71):
         if u>=32768:
             reason='FREEZE_U_STEPS'; break
         x=3*n+1
+        if x.bit_length()>4096:
+            a=v2(x); escaped_next_odd=x>>a
+            reason='FREEZE_ESCAPE'
+            checkpoints.append({'u_steps':u,'shortened_steps':short,'state_hex':format(n,'x'),'escaped_next_odd_hex':format(escaped_next_odd,'x'),'escaped_next_odd_bits':escaped_next_odd.bit_length(),'v2':a})
+            break
         odd_out_bits=(x>>1).bit_length()
         if odd_out_bits>peak: peak=odd_out_bits
         if odd_out_bits>=bits+512:
             reason='FREEZE_PEAK'
             checkpoints.append({'u_steps':u,'shortened_steps':short,'state_hex':format(n,'x'),'pending_3n1_hex':format(x,'x'),'peak_bits':peak})
             break
-        if x.bit_length()>4096:
-            a=v2(x); escaped_next_odd=x>>a
-            reason='FREEZE_ESCAPE'
-            checkpoints.append({'u_steps':u,'shortened_steps':short,'state_hex':format(n,'x'),'escaped_next_odd_hex':format(escaped_next_odd,'x'),'escaped_next_odd_bits':escaped_next_odd.bit_length(),'v2':a})
-            break
         a=v2(x); valuations[str(a)]=valuations.get(str(a),0)+1
         n=x>>a; u+=1; short+=a
+        lam+=1
+        repeated=(n==tort)
+        if not repeated and lam==power:
+            tort=n
+            if power <= ((1<<64)-1)>>1: power <<= 1
+            lam=0
         if u%checkpoint_interval==0:
             checkpoints.append({'u_steps':u,'shortened_steps':short,'state_hex':format(n,'x'),'state_bits':n.bit_length(),'peak_bits':peak})
-        if n in seen:
+        if repeated:
             reason='FREEZE_REPEAT'; checkpoints.append({'u_steps':u,'shortened_steps':short,'state_hex':format(n,'x'),'state_bits':n.bit_length(),'peak_bits':peak}); break
-        seen.add(n)
     if n < (1<<71): reason='TIER2_BASIN'
     expected_reason=exc.get('freeze_reason')
     checks={
