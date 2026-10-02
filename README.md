@@ -37,10 +37,14 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T4 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
+**CDM4-T5 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-The sparse-search machine is parked after the ordinary-null CDM3-P2 campaign and P2A audit. T4 re-derived the residual primitive constant-length carry system, proved the exact 3-adic endpoint-cylinder dual, and showed that endpoint/two-sided substitution-return divisibility reduces to the same asymptotic threshold already obtained in T3. The universal bounded-representative-implies-periodic theorem remains unresolved.
+T5 derived the exact inverse-Collatz 2-adic series from the finite cylinders and proved an exact finite multivariate monomial/Mahler-type representation for uniform substitutions. For equal substituted-block valuation sums, the inverse value further reduces to a classical one-variable automatic-coefficient Mahler value at `W=2^B/3^k`.
 
-No explicit anchored aperiodic word, positive divergent orbit, or counterexample was found. The next authorized action is theory-only CDM4-T5 on automatic inverse-Collatz rationality/Mahler rigidity; no new starts, generator/distribution, or GPU work.
+The literature audit found no verified theorem that converts those representations into the required **2-adic** nonrationality statement. General modern Mahler value theorems audited are complex; automatic p-adic number theorems concern the canonical digits of the number being tested, not automatic Collatz valuation gaps. The exact identity `H=Phi(V)` shows that the general missing rationality bridge is a restricted instance of Lagarias' open 3x+1 Periodicity Conjecture.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T4 report](experiments/CDM4_T4_REPORT.md) before doing research.
+No new automatic/primitive constant-length class was excluded, no explicit anchored aperiodic word was found, and no positive divergent orbit or counterexample was claimed.
+
+The next authorized action is theory-only CDM4-T6: attack the completion-correct p-adic rationality of the balanced one-variable Mahler subclass before attempting the generic multivariate value problem. No new starts, generator/distribution, finite-code ranking, or GPU work is authorized.
+
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T5 report](experiments/CDM4_T5_REPORT.md) before doing research.
