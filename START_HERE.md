@@ -32,7 +32,7 @@
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
 - Immediate next task: **CDM4-T5 — automatic inverse-Collatz rationality audit, theory only: for non-eventually-periodic automatic {1,2}-valuation words with mean below log_2(3), determine whether verified Mahler/automatic-number or p-adic transcendence theorems can rule out an ordinary positive integer value of the exact inverse-Collatz series**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T4 theory/structural analysis only**, as specified in T3 report Section 13; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T5 theory/literature analysis only**, as specified in the T4 report; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -77,6 +77,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 35. `experiments/CDM4_T3_REPORT.md`
 36. `experiments/CDM4_T3_SYMBOLIC_CHECK_RESULT.json`
 37. `experiments/CDM4_T3_INPUT_MANIFEST.json`
+38. `experiments/CDM4_T4_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
