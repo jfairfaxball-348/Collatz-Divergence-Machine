@@ -327,3 +327,48 @@ The six P2 scientific groups ran on different GitHub-hosted CPU models. The requ
 **Lesson:** per-group production throughput is valid resource accounting for the campaign, but cross-band or cross-arm rate differences from this run are confounded by host heterogeneity and must not be used as a clean kernel-performance comparison.
 
 **Action:** use the controlled same-host B1/P2 preflight measurements for kernel-regression claims. Use P2 scientific-group throughput only for observed campaign economics unless later execution is pinned to comparable hardware.
+
+
+## F0030 — Same-distribution P1/P2 scaling has exhausted its current information-gain argument
+
+**Status:** FAILED as the next-campaign route; the exact sparse-search architecture remains preserved.
+
+Across CDM3-P1 and CDM3-P2, the programme generated 90,000,000 starts, executed 70,003,982 exact trajectories after Arm-L pruning, and every executed trajectory reached the Tier-2 basin. P2 used a disjoint deterministic population twice the size of P1 while preserving the same generator semantics, bit bands, arms, basin stop and exceptional triggers.
+
+Per-band/per-arm mean U-step costs and deterministic p50/p90/p99/p99.9 summaries remained effectively stable. Finite maxima moved only modestly and inconsistently. No exceptional freeze, bigint escape, repeat, invariant failure or structural/certification promotion occurred.
+
+**Lesson:** the current same-distribution scaling path has no demonstrated mechanism by which another population multiple is expected to produce qualitatively new scientific information. This does not falsify the counterexample-at-scale hypothesis or say anything universal about untested distributions.
+
+**Action:** do not authorize P3 or another same-distribution population increase without a genuinely new theorem, scale-selection mechanism, distributional mechanism, or other information-gain argument.
+
+## F0031 — Arm-L mod-9 pruning saves trajectory work but does not enrich the surviving population
+
+**Status:** exact binary kill **PROVED** at its least-divergent scope; lack of observed survivor enrichment is **COMPUTATIONAL-EVIDENCE** from P1/P2.
+
+Across P1+P2, Arm L generated 45,000,000 starts and exactly killed 19,996,018 before trajectory execution, a pruning fraction of **44.4356%**. This exactly avoided 19,996,018 trajectory launches.
+
+The exact counterfactual number of U-steps saved is unknowable because killed starts were deliberately not executed. Actual U-step work per generated Arm-L start was about 55.56% of Arm U, consistent with the survivor fraction.
+
+Among executed trajectories, Arm-L means and deterministic tail quantiles were essentially the same as Arm U at the corresponding bit length in both campaigns, with no coherent enrichment direction.
+
+**Action:** retain Arm L as exact binary pruning only inside an independently justified least-divergent-targeted search. Do not call its survivors enriched, predictive, or more divergence-like without new evidence.
+
+## F0032 — GPU acceleration currently solves a throughput problem, not the scientific bottleneck
+
+**Status:** RESEARCH-DESIGN LESSON from CDM3-B1/P2A.
+
+CDM3-B1 restored R3-class exact CPU throughput, and CDM3-P2 completed its full frozen 60M-start population well inside the declared resource envelope. P2A found no scientific mechanism supporting more draws from the same distribution.
+
+**Lesson:** faster execution is no longer the limiting uncertainty. A GPU could increase the rate of sampling, but under the current distribution it would primarily reproduce ordinary finite trajectory geometry faster.
+
+**Action:** GPU benchmarking and GPU production remain unauthorized until a separately justified scientific workload is expensive enough that accelerator throughput is a material barrier to answering it.
+
+## F0033 — The current bottleneck is the finite-description-to-infinite-behavior bridge
+
+**Status:** UNKNOWN theorem target / durable research lesson.
+
+CDM2-R1/R2 supply exact finite-prefix and inverse-tree mathematics, but after any finite family of the known inverse kills, an unbounded survivor residue—if one remains—can still be combined by CRT with every finite future parity block. P1/P2 add no exceptional trajectory from which to extract a different mechanism.
+
+The missing object is therefore not another finite anomaly score. It is an effective nonlocal or recursively closed structure that converts finite description into forced indefinite future behavior and can ultimately support both unboundedness and exclusion from the `1`-basin.
+
+**Action:** prioritize CDM4-T1 theory work on recursively closed divergence mechanisms. Reject proposed routes that collapse to observed-prefix information, finite residue sieves, magnitude/clearance scores, or other already-preserved finite-depth failures.
