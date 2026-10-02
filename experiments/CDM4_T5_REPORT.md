@@ -722,9 +722,35 @@ Even if all functional algebraic-independence, regularity, and singularity condi
 
 The missing implication is arithmetic across completions, not a lack of a complex functional equation.
 
----
+### 8.4 Checked hypothesis ledger
 
-## 9. Exact conjugacy bridge and the open Periodicity Conjecture
+For avoidance of ambiguity, the theorem hypotheses that looked closest to the T5 value problem were checked as follows.
+
+**Adamczewski-Faverjon 2026, one-variable value theorem.** The integer Mahler base is \(q\ge2\). The coefficient field \(\mathbb K\) is a subfield of \(\overline{\mathbb Q}\subset\mathbb C\), hence characteristic zero. The Mahler function lies in \(\mathbb K\{z\}\), so convergence is complex analytic near zero. The algebraic argument \(\alpha\in\mathbb K\) satisfies \(0<|\alpha|<1\) in the ordinary complex absolute value and the function must be well-defined at \(\alpha\). Their several-value theorem also imposes the stated multiplicative-independence alternative. The values in the theorem are explicitly **complex numbers**. Consequently it does not test the 2-adic value of \(H\).
+
+**Adamczewski-Faverjon 2026, multivariate lifting theorem.** The variables and coefficients are over \(\overline{\mathbb Q}\) in characteristic zero. The functions are convergent complex power series near the origin and satisfy a linear monomial Mahler system. The algebraic point must be regular for the system and the pair consisting of the transformation and the point must be admissible. The conclusion transfers algebraic relations between functions to algebraic relations between their **complex** values. Equation (13) supplies a related monomial recurrence, but its conversion to the exact invertible system and regular/admissible point required by a particular lifting theorem is substitution-dependent. More decisively, the T5 target is a 2-adic value.
+
+**Adamczewski-Faverjon 2017.** The Mahler base is an integer \(q\ge2\); coefficients lie in a number field, characteristic zero; the argument is algebraic with \(0<|\alpha|<1\) in the complex absolute value and must not be a forbidden pole/singularity for the evaluated function. The conclusion concerns complex algebraicity/transcendence and, when algebraic, membership in the expected number field. It does not identify the 2-adic specialization of the same formal series.
+
+**Bugeaud-Yao 2017 automatic p-adic numbers.** The ambient field has characteristic zero and is \(p\)-adic. The expansion base is \(b=p^w\), \(w\ge1\). The sequence required to be \(k\)-automatic is the **canonical digit sequence of the p-adic number being tested**, with digits \(0,\ldots,b-1\). This is not the T5 hypothesis: \(a_n\) is an automatic sequence of Collatz valuation gaps, not the canonical \(2^w\)-adic digits of \(H\).
+
+**Bugeaud-Yao 2017 Theorem 3.1.** Here \(p\) is prime, \(b=p^w\), \(f(z)=\sum c_mz^m\) has integer coefficients, and \(f\) satisfies a specified order-one equation
+\[
+f(z)=A(z)/B(z)+(C(z)/D(z))f(z^d)
+\]
+with \(A,B,C,D\in\mathbb Z[z]\), \(d\ge2\). The relevant denominator/numerator factors must stay nonzero along \(b^{d^m}\), and an infinite controlled sequence of nonzero Hankel determinants is required. The conclusion is p-adic transcendence/irrationality information for \(f(b)\). The balanced Collatz argument \(W=2^B/3^k\) is not a pure \(2\)-power, and no required order-one/Hankel package has been proved for its \(G\).
+
+**Nishioka 1986.** The cited p-adic theorem is for a specific lacunary function, with algebraic arguments strictly inside the p-adic unit disk and additional multiplicative-independence conditions. It is a genuine p-adic value theorem but for the wrong function family; there is no reduction of \(H\) to that family.
+
+**Christol.** The coefficient field has positive characteristic, normally a finite field \(\mathbb F_q\), and the conclusion concerns algebraicity of a formal power series over \(\mathbb F_q(z)\) versus automaticity of its coefficient sequence. \(H\) is a characteristic-zero 2-adic arithmetic value, so the theorem does not apply to \(H\) itself.
+
+**Cobham.** The hypothesis is that the same finite-alphabet sequence is automatic in two multiplicatively independent integer bases. No second automatic base has been proved for \(a_n\), for the variable-length parity word, or for the canonical digits of \(H\). The integers 2 and 3 appearing as arithmetic factors in the Collatz formula do not instantiate Cobham's hypothesis.
+
+**Wang 2006.** The article is peer reviewed and its abstract confirms p-adic transcendence measures for some Mahler-type functions. The exact theorem statement and all singularity/function-class hypotheses were not sufficiently recoverable from the accessible source during T5. Under the project protocol that prevents promotion, rather than allowing an inference from the title or abstract.
+
+**Brechler 2026.** The current source is an arXiv preprint. It proves broad functional properties, including p-adic meromorphy on unit balls for its \(M_T\)-class, but the inspected lifting/value results do not supply a certified p-adic algebraic-value theorem that maps (15) to nonrationality. It is therefore informative but non-load-bearing.
+
+---\n\n## 9. Exact conjugacy bridge and the open Periodicity Conjecture
 
 The positions of the 1s in the shortened parity point are
 
@@ -1045,7 +1071,7 @@ Sources were checked on 2026-10-02. Peer-reviewed status is stated explicitly. T
 
 6. **Boris Adamczewski and Colin Faverjon**, *Mahler's method in several variables and finite automata*, Annals of Mathematics 204 (2026), 455–533. DOI: https://doi.org/10.4007/annals.2026.204.2.1. **Peer reviewed; published 2026-09-13.** General multivariate linear Mahler systems, complex algebraic values, and Cobham-type applications. Its value statements are explicitly complex.
 
-7. **Yann Bugeaud and Guo-Niu Han/Yann?** The relevant source used here is **Yann Bugeaud and Guo-Niu Yao**, *Hankel determinants, Padé approximations, and irrationality exponents for p-adic numbers*, Annali di Matematica Pura ed Applicata 196 (2017), 929–946. DOI: https://doi.org/10.1007/s10231-016-0602-7. **Peer reviewed.** Defines automatic p-adic numbers through canonical \(p^w\)-adic digits and gives a special p-adic Mahler value theorem at \(p^w\).
+7. **Yann Bugeaud and Jia-Yan Yao**, *Hankel determinants, Padé approximations, and irrationality exponents for p-adic numbers*, Annali di Matematica Pura ed Applicata 196 (2017), 929–946. DOI: https://doi.org/10.1007/s10231-016-0602-7. **Peer reviewed.** Defines automatic p-adic numbers through canonical \(p^w\)-adic digits and gives a special p-adic Mahler value theorem at \(p^w\).
 
 8. **Boris Adamczewski and Yann Bugeaud**, *On the complexity of algebraic numbers I. Expansions in integer bases*, Annals of Mathematics 165 (2007), 547–565. **Peer reviewed.** Digit-complexity transcendence machinery; the p-adic automatic-number consequence used in later literature concerns the digits of the tested p-adic number.
 
