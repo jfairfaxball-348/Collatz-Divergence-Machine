@@ -1,14 +1,6 @@
 name: CDM3-P2 frozen CPU campaign
 
 on:
-  pull_request:
-    branches: [main]
-    paths:
-      - "production/cdm3_p2_*"
-      - "tools/cdm3_p2_*"
-      - "benchmarks/cdm3_p2_*"
-      - "tests/cdm3_p2_*"
-      - ".github/workflows/cdm3_p2.yml"
   workflow_dispatch:
 
 permissions:
