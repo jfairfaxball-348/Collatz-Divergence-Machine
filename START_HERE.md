@@ -3,11 +3,12 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM3-P2 COMPLETE — exact frozen 60,000,000-start population exhausted with classification P2-ORDINARY-NULL; STOP AND AUDIT**
+- Project stage: **CDM3-P2A COMPLETE — STRUCTURE/THEORY PIVOT JUSTIFIED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
 - Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
+- Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
 - Current CDM3-B1 machine-readable result: `experiments/CDM3_B1_RESULT.json`
 - Current CDM3-B1 implementation note: `docs/CDM3_B1_ENGINEERING.md`
@@ -28,10 +29,10 @@
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **CDM3-P2 COMPLETE; no further scientific population, GPU benchmark, or new distribution is authorized. The project is in STOP-AND-AUDIT state.**
-- Immediate next task: **CDM3-P2A — post-campaign scientific audit of P1/P2 tail stability, pruning economics, search-distribution value, and whether any materially different next research direction can be justified before new compute**
-- Forbidden next action: automatic P3/further CPU scaling, GPU production or benchmark work, a new sampling distribution, a new ranking metric, or any scientific campaign not separately justified and frozen after the P2 audit
-- Explicitly permitted next action: analysis/audit only using the completed P1/P2 evidence and existing theory/engineering records; no new scientific starts are authorized
+- CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
+- Immediate next task: **CDM4-T1 — recursively closed divergence-mechanism audit: theory/structural work only, seeking an exact finite-description-to-infinite-behavior bridge that escapes the finite-depth CRT obstruction**
+- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
+- Explicitly permitted next action: **CDM4-T1 theory/structural analysis only** using existing mathematics and completed evidence; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -66,6 +67,7 @@ The repository, not conversational memory, is the authoritative research state.
 27. `experiments/CDM3_P2_REPORT.md`
 28. `experiments/CDM3_P2_RESULT.json`
 29. `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
+30. `experiments/CDM3_P2A_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -194,9 +196,9 @@ All 600 frozen work units completed. Active scientific wall was 437.370285 secon
 
 P2's survivor-cost means and deterministic tail quantiles closely matched P1 at the same bit-length/arm cells. The doubled sample produced only modest finite increases in maxima; the global P2 maximum was 3,357 U-steps and +29 peak bits, far below the exceptional thresholds.
 
-This null result does not support automatic scaling. The repository state is therefore **STOP AND AUDIT**.
+This null result did not support automatic scaling and placed the repository in **STOP AND AUDIT** pending CDM3-P2A. The subsequent P2A audit has now closed that decision point.
 
-## Authoritative next-session prompt
+## Historical CDM3-P2A session prompt — completed
 
 ### CDM3-P2A — POST-CAMPAIGN AUDIT AND NEXT-STEP DECISION
 
@@ -246,3 +248,37 @@ Classify candidate next directions, kill weak routes, and if a new compute campa
 If no new direction clears that bar, say so and preserve STOP-AND-AUDIT / theory-design status.
 
 No finite null result is evidence that Collatz is true, and no finite survivor statistic is proof of divergence.
+
+
+## CDM3-P2A closeout — 2026-10-02
+
+CDM3-P2A is complete. Authoritative audit: `experiments/CDM3_P2A_REPORT.md`.
+
+**Decision: C — STRUCTURE/THEORY PIVOT JUSTIFIED; NO NEW COMPUTE CAMPAIGN AUTHORIZED.**
+
+Across P1+P2, the programme generated **90,000,000** starts, exactly pruned **19,996,018** Arm-L starts before trajectory execution, executed **70,003,982** exact trajectories, and every executed trajectory reached the Tier-2 basin. No exceptional object entered structural or certification analysis.
+
+P2's disjoint doubled population reproduced P1's per-band/per-arm means and deterministic p50/p90/p99/p99.9 tail geometry. The modest and inconsistent changes in finite maxima do not supply evidence of a changing survivor-tail regime.
+
+Arm L remains mathematically valid as exact least-divergent binary pruning and removed **44.4356%** of generated Arm-L starts across P1+P2. Its surviving trajectories showed no empirical enrichment over Arm U. It is pruning, not a predictive ranker.
+
+The current 256/512/1024-bit sparse distribution remains a valid baseline, but it is **not justified as the next production distribution**. More of the same CPU sampling has no current information-gain argument. GPU acceleration would presently address throughput rather than the scientific bottleneck.
+
+No materially different reach-first design is ready to freeze. `docs/COMPUTE_BUDGET.md` is therefore unchanged.
+
+The strongest unresolved bottleneck is the missing finite-description-to-infinite-behavior bridge: an effective nonlocal or recursively closed structure that forces indefinite future behavior after the finite-prefix and finite inverse-sieve freedoms already proved in CDM2-R1/R2.
+
+No explicit unbounded orbit was found. No counterexample was claimed.
+
+## Authoritative next task — CDM4-T1
+
+**CDM4-T1 — RECURSIVELY CLOSED DIVERGENCE-MECHANISM AUDIT.**
+
+Work theory-first. Seek a finitely describable exact structure with recursive closure under the Collatz dynamics and a rigorously increasing quantity, or prove that candidate representations collapse to the existing finite-depth lift/CRT obstruction.
+
+A qualifying route must be capable in principle of bridging finite description to an indefinitely repeatable growth mechanism and exclusion from the `1`-basin. Do not substitute a larger finite sieve, finite anomaly score, or higher throughput for that bridge.
+
+**Scientific starts authorized: NO.**  
+**GPU work authorized: NO.**  
+**New generator/distribution authorized: NO.**  
+**Theory/structural work authorized: YES.**
