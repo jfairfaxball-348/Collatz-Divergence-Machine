@@ -316,3 +316,14 @@ No candidate froze exceptionally, escaped the 4096-bit fast path, repeated a sta
 **Lesson:** within the tested distribution, simply doubling the sample size produced more of the same ordinary finite trajectory geometry rather than a qualitatively new survivor class. This is not evidence that Collatz is true and does not show that all larger samples or different distributions would behave similarly.
 
 **Action:** do not automatically scale the same campaign to P3 and do not infer a GPU mandate from available throughput. Enter **STOP AND AUDIT**. Any further compute must first identify a materially different scientific reason—distribution, structural mechanism, or reach question—and freeze a new envelope before execution.
+
+
+## F0029 — Native-build campaign throughput on heterogeneous hosted runners is not a clean cross-group benchmark
+
+**Status:** FINITE-VERIFIED execution/provenance lesson from CDM3-P2.
+
+The six P2 scientific groups ran on different GitHub-hosted CPU models. The required `-march=native` build therefore produced different executable hashes across hosts. Exact trajectory semantics and the scientific source-bundle hash remained fixed, but raw U-steps/s varied materially with runner hardware.
+
+**Lesson:** per-group production throughput is valid resource accounting for the campaign, but cross-band or cross-arm rate differences from this run are confounded by host heterogeneity and must not be used as a clean kernel-performance comparison.
+
+**Action:** use the controlled same-host B1/P2 preflight measurements for kernel-regression claims. Use P2 scientific-group throughput only for observed campaign economics unless later execution is pinned to comparable hardware.
