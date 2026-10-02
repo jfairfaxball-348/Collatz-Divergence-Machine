@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM3-P2A COMPLETE — STRUCTURE/THEORY PIVOT JUSTIFIED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T1 COMPLETE — C: NEW THEORETICAL OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T1_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: parity/residue affine identities, exact K-survival logic, finite inverse-tree binary pruning, lift-quotient future-block freedom, and the finite inverse-sieve/CRT obstruction
+- Current symbolic frontier: parity/residue affine identities; the R1/R2 finite inverse-sieve/CRT obstruction; CDM4-T1 eventual-periodic parity obstruction; the arithmetic-progression family closure obstruction; and the nested-residue ordinary-integer anchoring criterion
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T1 — recursively closed divergence-mechanism audit: theory/structural work only, seeking an exact finite-description-to-infinite-behavior bridge that escapes the finite-depth CRT obstruction**
-- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T1 theory/structural analysis only** using existing mathematics and completed evidence; no new scientific starts are authorized
+- Immediate next task: **CDM4-T2 — aperiodic integer-anchor / nested-cylinder theorem audit: theory-only work on recursively generated valuation/parity languages that must simultaneously anchor to one explicit positive integer and force unbounded growth**
+- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
+- Explicitly permitted next action: **CDM4-T2 theory/structural analysis only** on aperiodic recursive languages, nested cylinders, and positive-integer anchoring; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -270,13 +270,40 @@ The strongest unresolved bottleneck is the missing finite-description-to-infinit
 
 No explicit unbounded orbit was found. No counterexample was claimed.
 
-## Authoritative next task — CDM4-T1
+## CDM4-T1 closeout — 2026-10-02
 
-**CDM4-T1 — RECURSIVELY CLOSED DIVERGENCE-MECHANISM AUDIT.**
+CDM4-T1 is complete. Authoritative report: `experiments/CDM4_T1_REPORT.md`.
 
-Work theory-first. Seek a finitely describable exact structure with recursive closure under the Collatz dynamics and a rigorously increasing quantity, or prove that candidate representations collapse to the existing finite-depth lift/CRT obstruction.
+**Classification: C — NEW THEORETICAL OBSTRUCTION FOUND.**
 
-A qualifying route must be capable in principle of bridging finite description to an indefinitely repeatable growth mechanism and exclusion from the `1`-basin. Do not substitute a larger finite sieve, finite anomaly score, or higher throughput for that bridge.
+No scientific Collatz starts were generated.
+
+The session proved three durable project-level obstructions:
+
+- **eventually periodic parity obstruction:** any positive integer with eventually periodic shortened-map parity has an eventually periodic, bounded orbit; therefore a fixed expanding block cannot repeat forever on a positive integer, and an autonomous deterministic finite-state block machine cannot certify divergence;
+- **arithmetic-progression closure obstruction:** if a fixed positive-length Collatz block maps an entire arithmetic-progression family into another such family, the 2-adic valuation of the family period strictly drops; therefore no finite directed cycle of whole progression families can close recursively;
+- **ordinary-integer anchoring criterion:** a compatible nested residue tower with moduli tending to infinity represents one nonnegative ordinary integer if and only if its canonical residues eventually stabilize. A 2-adic/profinite inverse-limit point is not by itself a positive-integer candidate.
+
+The strongest surviving framework is an **aperiodic recursively generated parity/valuation language** with both:
+
+1. exact start-cylinder residues eventually stabilizing to one explicit positive integer N; and
+2. accumulated valuation growth forcing `limsup 3^m/2^A_m = infinity` (or another exact unbounded-growth theorem).
+
+No such explicit language/anchor was found. No unbounded orbit was found. No counterexample was claimed.
+
+No new compute, generator/distribution, finite-code ranker, or GPU workload is authorized.
+
+## Authoritative next task — CDM4-T2
+
+**CDM4-T2 — APERIODIC INTEGER-ANCHOR / NESTED-CYLINDER THEOREM AUDIT.**
+
+Work theory-first on the single sharpened obligation left by T1:
+
+> construct, or rule out for a broad recursive class, an aperiodic finitely generated parity/valuation language whose exact starting residue tower eventually stabilizes to one explicit positive integer while its accumulated valuations force an unbounded growth factor.
+
+Priority objects may include substitutions/morphic words, recursively nested mixed-adic cylinders, transducers with an unbounded scale parameter, or equivalent exact structures. They must be proved equivalent to actual Collatz dynamics and must retain the ordinary-positive-integer anchor.
+
+Do not optimize finite exponent codes, finite drift, finite residue rates, or another finite score.
 
 **Scientific starts authorized: NO.**  
 **GPU work authorized: NO.**  
