@@ -1,0 +1,196 @@
+name: CDM3-P2 frozen CPU campaign
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - cdm3-p2
+    paths:
+      - experiments/CDM3_P2_RUN_REQUEST.txt
+
+permissions:
+  contents: read
+
+jobs:
+  p2:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Host and source provenance
+        run: |
+          set -euxo pipefail
+          mkdir -p p2_artifacts
+          {
+            uname -a
+            lscpu
+            gcc --version
+            pkg-config --modversion gmp || true
+            git rev-parse HEAD
+          } | tee p2_artifacts/host_provenance.txt
+          sha256sum             production/cdm3_p1_engine.c production/cdm3_p1_part0.inc production/cdm3_p1_part1.inc production/cdm3_p1_part2.inc production/cdm3_p1_part3.inc             production/cdm3_p2_engine.c production/cdm3_p2_part0.inc production/cdm3_p2_part1.inc production/cdm3_p2_part2.inc production/cdm3_p2_part3.inc             tools/cdm3_p2_replay.py tools/cdm3_p2_counter_audit.py tools/cdm3_p2_integration_check.py tests/cdm3_p2_forced_escape.c             | tee p2_artifacts/source_hashes.txt
+
+      - name: Prove historical P1 source unchanged
+        run: |
+          set -euxo pipefail
+          python3 - <<'PY' | tee p2_artifacts/p1_immutability.json
+          import hashlib, json
+          expected={
+            "production/cdm3_p1_engine.c":"07fc20ebeaa1519e9d8cc4a400ee79332ac4844f4122c331b03a245ae1f4ce04",
+            "production/cdm3_p1_part0.inc":"e892e94a859420f22117f99002c034a47b26dc27777fd47596914b418008bf05",
+            "production/cdm3_p1_part1.inc":"f8e7343b3bd78ca277b503263516166689d00885e402f22d03fa13f7005b563f",
+            "production/cdm3_p1_part2.inc":"d5ea642e3785664496fa231ac86a489787f53630cf8e14b865b6652c7d76675c",
+            "production/cdm3_p1_part3.inc":"bf1b2e5163113b68100abd6e77f3d85fa8a955b594bd93150b775c4939a8f24c",
+          }
+          actual={p:hashlib.sha256(open(p,'rb').read()).hexdigest() for p in expected}
+          out={"expected":expected,"actual":actual,"pass":actual==expected}
+          print(json.dumps(out,sort_keys=True))
+          if not out["pass"]: raise SystemExit(1)
+          PY
+
+      - name: Build P2 release, sanitizer, escape test, and same-host B1 reference
+        run: |
+          set -euxo pipefail
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread production/cdm3_p2_engine.c -lgmp -o cdm3_p2_engine
+          gcc -O1 -g -std=c11 -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -fno-omit-frame-pointer production/cdm3_p2_engine.c -lgmp -o cdm3_p2_engine_san
+          gcc -O2 -std=c11 -Wall -Wextra -Werror -pthread tests/cdm3_p2_forced_escape.c -lgmp -o cdm3_p2_escape_test
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_native
+          SOURCE_SHA="$(cat production/cdm3_p2_engine.c production/cdm3_p2_part0.inc production/cdm3_p2_part1.inc production/cdm3_p2_part2.inc production/cdm3_p2_part3.inc | sha256sum | awk '{print $1}')"
+          EXE_SHA="$(sha256sum cdm3_p2_engine | awk '{print $1}')"
+          printf '%s\n' "$SOURCE_SHA" > p2_artifacts/p2_source_bundle_sha256.txt
+          printf '%s\n' "$EXE_SHA" > p2_artifacts/p2_executable_sha256.txt
+          sha256sum cdm3_p2_engine cdm3_p2_engine_san cdm3_p2_escape_test cdm3_b1_native | tee p2_artifacts/executable_hashes.txt
+          ./cdm3_p2_engine --provenance | tee p2_artifacts/p2_executable_provenance.json
+
+      - name: P2 release correctness gates
+        run: |
+          set -euxo pipefail
+          ./cdm3_p2_engine --selftest /tmp/cdm3p2_release_preflight.chk 2>&1 | tee p2_artifacts/release_selftest.log
+          ./cdm3_p2_escape_test 2>&1 | tee p2_artifacts/forced_escape.log
+          python3 tools/cdm3_p2_replay.py --selftest --engine ./cdm3_p2_engine --steps 256 | tee p2_artifacts/python_replay.json
+          python3 tools/cdm3_p2_counter_audit.py --manifest experiments/CDM3_P1_WORK_UNIT_DIGESTS.json --output p2_artifacts/counter_audit.json
+          python3 -m pytest -q | tee p2_artifacts/pytest.log
+
+      - name: ASan and UBSan gate
+        run: |
+          set -euxo pipefail
+          ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 ./cdm3_p2_engine_san --selftest /tmp/cdm3p2_sanitizer_preflight.chk 2>&1 | tee p2_artifacts/sanitizer_selftest.log
+
+      - name: Same-host B1 production integration gate
+        run: |
+          set -euxo pipefail
+          ./cdm3_b1_native --bench opt 4096 3 > p2_artifacts/b1_opt_same_host.jsonl
+          ./cdm3_p2_engine --bench 4096 3 > p2_artifacts/p2_integration.jsonl
+          python3 tools/cdm3_p2_integration_check.py             --b1 p2_artifacts/b1_opt_same_host.jsonl             --p2 p2_artifacts/p2_integration.jsonl             --min-ratio 0.90             --output p2_artifacts/integration_check.json
+          cat p2_artifacts/b1_opt_same_host.jsonl
+          cat p2_artifacts/p2_integration.jsonl
+          cat p2_artifacts/integration_check.json
+
+      - name: Freeze preflight result
+        run: |
+          set -euxo pipefail
+          python3 - <<'PY'
+          import json, pathlib, platform, subprocess
+          p=pathlib.Path("p2_artifacts")
+          counter=json.loads((p/"counter_audit.json").read_text())
+          integ=json.loads((p/"integration_check.json").read_text())
+          imm=json.loads((p/"p1_immutability.json").read_text())
+          replay=json.loads((p/"python_replay.json").read_text())
+          out={
+            "schema":"CDM3-P2-preflight-result-v1",
+            "all_gates_passed":True,
+            "scientific_population_consumed_before_preflight":0,
+            "counter_audit":counter,
+            "p1_source_unchanged":imm["pass"],
+            "python_replay":replay,
+            "integration_check":integ,
+            "source_bundle_sha256":(p/"p2_source_bundle_sha256.txt").read_text().strip(),
+            "executable_sha256":(p/"p2_executable_sha256.txt").read_text().strip(),
+            "compiler":subprocess.check_output(["gcc","--version"],text=True).splitlines()[0],
+            "gmp":subprocess.check_output(["pkg-config","--modversion","gmp"],text=True).strip(),
+            "machine":platform.machine(),
+            "release_build_flags":"-O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread",
+            "sanitizers":"AddressSanitizer,UndefinedBehaviorSanitizer",
+          }
+          pathlib.Path("experiments/CDM3_P2_PREFLIGHT_RESULT.json").write_text(json.dumps(out,indent=2,sort_keys=True)+"\n")
+          print(json.dumps(out,sort_keys=True))
+          PY
+
+      - name: Execute exact frozen 60-million-start CPU campaign
+        id: campaign
+        run: |
+          set -euxo pipefail
+          mkdir -p p2_checkpoints
+          THREADS="$(nproc)"
+          if [ "$THREADS" -gt 8 ]; then THREADS=8; fi
+          SOURCE_SHA="$(cat p2_artifacts/p2_source_bundle_sha256.txt)"
+          EXE_SHA="$(cat p2_artifacts/p2_executable_sha256.txt)"
+          set +e
+          ./cdm3_p2_engine --pilot "$THREADS" experiments/CDM3_P2_RESULT.json p2_checkpoints "$GITHUB_SHA" "$SOURCE_SHA" "$EXE_SHA"
+          RC=$?
+          set -e
+          echo "$RC" | tee p2_artifacts/campaign_exit_code.txt
+          if [ "$RC" -ne 0 ] && [ "$RC" -ne 24 ] && [ "$RC" -ne 30 ]; then exit "$RC"; fi
+          cat experiments/CDM3_P2_RESULT.json
+
+      - name: Independent exceptional replay
+        if: always() && hashFiles('experiments/CDM3_P2_RESULT.json') != ''
+        run: |
+          set -euxo pipefail
+          python3 tools/cdm3_p2_replay.py             --freeze-result experiments/CDM3_P2_RESULT.json             --output experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json             --checkpoint-interval 256
+          cat experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json
+
+      - name: Preserve work-unit and checkpoint digests
+        if: always() && hashFiles('experiments/CDM3_P2_RESULT.json') != ''
+        run: |
+          set -euxo pipefail
+          mkdir -p p2_artifacts/checkpoint_dumps
+          for cp in p2_checkpoints/*.chk; do
+            [ -e "$cp" ] || continue
+            name="$(basename "$cp")"
+            ./cdm3_p2_engine --dump-checkpoint "$cp" > "p2_artifacts/checkpoint_dumps/$name.json"
+          done
+          sha256sum p2_checkpoints/*.chk 2>/dev/null | tee p2_artifacts/checkpoint_hashes.txt || true
+          python3 - <<'PY'
+          import glob, hashlib, json, pathlib
+          result=json.loads(pathlib.Path("experiments/CDM3_P2_RESULT.json").read_text())
+          groups=[]
+          for fn in sorted(glob.glob("p2_artifacts/checkpoint_dumps/*.json")):
+              d=json.loads(pathlib.Path(fn).read_text())
+              cp=pathlib.Path(d["path"])
+              d["checkpoint_sha256"]=hashlib.sha256(cp.read_bytes()).hexdigest()
+              groups.append(d)
+          out={
+            "schema":"CDM3-P2-work-unit-digest-manifest-v1",
+            "engine_version":result["version"],
+            "generator_version":result["generator_version"],
+            "repo_commit":result["repo_commit"],
+            "engine_source_sha256":result["source_sha256"],
+            "engine_executable_sha256":result["executable_sha256"],
+            "groups":groups,
+          }
+          pathlib.Path("experiments/CDM3_P2_WORK_UNIT_DIGESTS.json").write_text(json.dumps(out,indent=2,sort_keys=True)+"\n")
+          PY
+          cat experiments/CDM3_P2_WORK_UNIT_DIGESTS.json
+
+      - name: Final resource and artifact hashes
+        if: always()
+        run: |
+          set -euxo pipefail
+          du -sh p2_artifacts p2_checkpoints experiments/CDM3_P2_* 2>/dev/null || true
+          sha256sum experiments/CDM3_P2_*.json 2>/dev/null | tee p2_artifacts/result_hashes.txt || true
+
+      - name: Upload P2 execution record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-p2-execution
+          path: |
+            p2_artifacts
+            p2_checkpoints
+            experiments/CDM3_P2_PREFLIGHT_RESULT.json
+            experiments/CDM3_P2_RESULT.json
+            experiments/CDM3_P2_WORK_UNIT_DIGESTS.json
+            experiments/CDM3_P2_EXCEPTIONAL_REPLAY.json
+          if-no-files-found: warn
