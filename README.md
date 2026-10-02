@@ -37,8 +37,10 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM2-E1 is complete. CDM2 remains open for a theory-first filter redesign; CDM3 is blocked.**
+**CDM4-T3 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-CDM2-E1 calibrated theorem-conditioned length-24 parity-prefix classes against exact matched K-survivor controls in a verified convergent domain. The proposed generator, debt-margin ranking, and completed odd-to-odd valuation-load ranking did not demonstrate reproducible post-prefix information value. No scientific divergence candidate was produced and no CDM3 generator is currently authorized.
+The sparse-search machine is parked after the ordinary-null CDM3-P2 campaign and P2A audit. T3 derived exact block carry and substitution recurrences, proved a return-prefix obstruction that excludes a substantial recursive subclass including the Thue-Morse valuation coding, and rejected promotion of an unverified parity-density shortcut. General automatic and primitive substitutive realization remain unresolved.
 
-Read `AGENTS.md`, `START_HERE.md`, `experiments/CDM2_E1_REPORT.md`, and the current policies under `docs/` before doing research.
+No explicit positive divergent orbit was found and no counterexample was claimed. The next authorized action is theory-only CDM4-T4 on residual primitive constant-length substitution carry rigidity; no new starts, generator/distribution, or GPU work.
+
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T3 report](experiments/CDM4_T3_REPORT.md) before doing research.

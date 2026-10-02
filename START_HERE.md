@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T2 COMPLETE — C: NEW ANCHORING / APERIODICITY OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T3 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T2_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T3_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,16 +25,18 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: parity/residue affine identities; the R1/R2 finite inverse-sieve/CRT obstruction; T1 periodic/progression/profinite obstructions; and T2 exact accelerated start cylinders with anchor-carry digits, equivalent boundedness/stabilization criteria, and the theorem that a positive anchored aperiodic parity language is automatically unbounded
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 exact block carry/affine cocycle and fixed-dimensional substitution recurrences; a proved return-prefix/height obstruction and primitive-substitution criterion; exact exclusion of the Thue-Morse valuation coding; critical bounded-discrepancy exclusion; no general automatic/morphic anchoring theorem
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T3 — anchor-carry extinction / recursive-language realizability audit: theory-only work on proving or ruling out eventual-zero anchor carry for finite-alphabet recursive valuation/parity languages**
+- Immediate next task: **CDM4-T4 — residual uniform-substitution carry rigidity, theory only: for primitive constant-length substitutions coded into valuations {1,2}, outside T3's exclusions, prove that bounded exact representatives force eventual periodicity of the output**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T3 theory/structural analysis only** on anchor-carry extinction, primitive substitutions/morphic words, and independently verified parity-density obstructions; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T4 theory/structural analysis only**, as specified in T3 report Section 13; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
+
+The dated closeouts below preserve historical decisions. Their then-next actions are superseded by this live state and the final authoritative next-task section. In particular, earlier P1/P2 authorizations do not authorize another campaign.
 
 ## Read before working
 
@@ -72,6 +74,9 @@ The repository, not conversational memory, is the authoritative research state.
 32. `experiments/CDM3_P2A_REPORT.md`
 33. `experiments/CDM4_T1_REPORT.md`
 34. `experiments/CDM4_T2_REPORT.md`
+35. `experiments/CDM4_T3_REPORT.md`
+36. `experiments/CDM4_T3_SYMBOLIC_CHECK_RESULT.json`
+37. `experiments/CDM4_T3_INPUT_MANIFEST.json`
 
 ## Strategic course correction — 2026-10-01
 
@@ -341,7 +346,7 @@ No explicit candidate, unbounded orbit, or counterexample was found or claimed.
 
 No compute-budget, metric-catalog, generator/distribution, or GPU authorization changed.
 
-## Authoritative next task — CDM4-T3
+## Historical T2 handover — CDM4-T3 (completed below)
 
 **CDM4-T3 — ANCHOR-CARRY EXTINCTION / RECURSIVE-LANGUAGE REALIZABILITY AUDIT.**
 
@@ -362,3 +367,38 @@ Do not enumerate finite words looking for attractive residue rates. Do not optim
 **New generator/distribution authorized: NO.**  
 **Finite-code ranker campaign authorized: NO.**  
 **Theory/structural work authorized: YES.**
+
+## CDM4-T3 closeout — 2026-10-02
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+Authoritative report: `experiments/CDM4_T3_REPORT.md`.
+
+**PROVED:** exact block lift and composition laws, an affine cocycle, and a fixed-dimensional ordered substitution recurrence. Finite arithmetic dimension does not make its growing integer registers finite-state.
+
+**PROVED:** if an aperiodic valuation prefix of length r_j repeats at shift ell_j, with both lengths tending to infinity and
+
+`A_(ell_j) + A_(r_j) - (log_2 3) ell_j - (1/3) log_2(ell_j+1) -> +infinity`,
+
+then no positive integer anchors the word; `R_m -> infinity` and carry is nonzero infinitely often. The proof compares exact-cylinder divisibility with a distinct-orbit height bound. It is related to Wang's prior return-prefix obstruction; no global novelty claim is made.
+
+For primitive substitutions with output mean alpha and specified substitution-prefix return ratio `ell_j/r_j -> K`, the strict inequality `alpha*(1+1/K)>log_2 3` suffices. The single analytically selected Thue-Morse valuation coding `a_(n+1)=1+t_n` is excluded exactly. Aperiodic critical bounded-discrepancy words are also excluded.
+
+**FAILED for promotion:** López-Stoll 2021's density equality. T3 identified an unproved transfer between real and 2-adic limits and an associated prescribed-parity identification. The claim is not disproved, but it cannot support a blanket class exclusion. Bell's published density result yields only a strict exponential-growth requirement for hypothetical aperiodic automatic anchors. General primitive/automatic/morphic cases remain **UNKNOWN**.
+
+Tiny fixed identity checks passed; no scientific starts or scientific trajectories were executed. No explicit candidate, unbounded orbit, or counterexample was found or claimed. Compute budget and metric catalog are unchanged.
+
+## Authoritative next task — CDM4-T4
+
+**CDM4-T4 — RESIDUAL UNIFORM-SUBSTITUTION CARRY RIGIDITY.**
+
+Single theorem target: for a growing primitive constant-length substitution, prolongable on an initial letter and coded into valuations `{1,2}`, prove that bounded exact representatives imply eventual periodicity of the coded output. Focus on aperiodic outputs with mean below `log_2 3` outside the proved T3 exclusions.
+
+Begin by checking T3's proofs and Wang overlap, then attack the unbounded arithmetic state in T3 equations (12)–(13). Do not assume a universal early-return property, ordinary density for arbitrary automatic words, or the López-Stoll density equality. No enumeration or finite scoring of substitutions is authorized.
+
+The positive certification bridge remains one explicit aperiodic word with a proved bounded representative tower and identified stabilized integer `N>1`.
+
+- **Scientific starts authorized: NO.**
+- **GPU work authorized: NO.**
+- **New generator/distribution authorized: NO.**
+- **Finite-code ranker campaign authorized: NO.**
+- **Theory/structural work authorized: YES; tiny frozen exact identity checks only.**

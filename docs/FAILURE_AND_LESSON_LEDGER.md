@@ -535,3 +535,67 @@ Finite mixed 2/3-adic CRT compatibility therefore remains insufficient, and the 
 **Lesson:** the exact mixed-adic coupling is a useful representation, not yet an anchoring theorem.
 
 **Action:** future mixed-adic work must prove a genuine archimedean bound or carry-extinction statement. Do not promote finite 2/3-adic compatibility, finite residue decay, or finite zero-carry runs as evidence of an ordinary anchor.
+
+## F0042 — Real and 2-adic limits cannot be identified by shared rational approximants
+
+**Status: FAILED proof dependency / NOT PROMOTED in CDM4-T3.**
+
+The López-Stoll 2021 preprint's density equality would be powerful, but its Theorem 1 proof (printed page 29) relies on a real-to-2-adic rationality inference from Section 2, equations (15)–(16), which T3 could not validate. The prescribed-branch/actual-parity identification in Lemma 24 also needs a bridge. Well-defined parity of a rational does not establish that a prescribed word is its actual parity word.
+
+T3 gives an elementary rational-approximant example with irrational real limit and rational 2-adic limit. That example refutes the general transfer inference; it is not a Collatz series and does not disprove the claimed density theorem.
+
+**Lesson:** convergence in two completions does not identify their limits or transfer rationality. No global automatic or primitive-substitution class exclusion may depend on this unvalidated equality.
+
+**Action:** preserve the preprint's status and the exact missing dependency. Use only the independently proved positive-integer lower parity-density inequality, not equality. See `experiments/CDM4_T3_REPORT.md`, Section 10.
+
+## F0043 — A sufficiently early exact prefix return prohibits an aperiodic positive anchor
+
+**Status: PROVED in CDM4-T3; related prior art explicitly acknowledged.**
+
+For an aperiodic positively anchored valuation word, all odd orbit states are distinct. Thus
+
+`x_ell <= N e^(1/3) (ell+1)^(1/3) 2^((log_2 3)ell-A_ell)`.
+
+If the first r valuations repeat at shift ell, both N and x_ell lie in the same exact cylinder, so `2^(A_r+1)` divides the nonzero difference `x_ell-N`. Therefore positive anchoring is impossible when infinitely many such pairs, with ell and r tending to infinity, satisfy
+
+`A_ell+A_r-(log_2 3)ell-(1/3)log_2(ell+1) -> +infinity`.
+
+This forces `R_m -> infinity` and infinitely many nonzero anchor carries. For a primitive substitution with mean alpha and a specified substitution-prefix return ratio `ell/r -> K`, `alpha*(1+1/K)>log_2 3` suffices. The single analytically selected Thue-Morse valuation coding `a_(n+1)=1+t_n` is excluded exactly by this argument.
+
+**Lesson:** symbolic recurrence is useful when its cylinder divisibility exceeds a proved archimedean height. The inequality is an infinite theorem hypothesis, not a finite score. Wang's earlier return-prefix obstruction is prior art; T3 removes its every-prefix growth assumption by using the distinct-orbit product bound and a logarithmic margin.
+
+**Action:** kill this precise class. Do not generalize the result to every primitive substitution or select new substitutions by finite return/residue scoring. Proof and scope: T3 Sections 5–7.
+
+## F0044 — Finite-dimensional substitution arithmetic is not a finite-state Collatz orbit
+
+**Status: PROVED recurrence; FAILED finite-state and bounded-cocycle shortcuts.**
+
+For chronological blocks uv, `C_uv=3^|v| C_u+2^B(u) C_v`. The block carry satisfies `D_uv(S)=D_u(S)+2^B(u) D_v(S_u)`, with the updated arithmetic state essential. A substitution admits a fixed number of integer registers, but their size and the endpoint are unbounded.
+
+The inverse affine data satisfy `h_uv=h_u+s_u h_v` and `s_uv=s_u s_v`. Real boundedness of h alone is not boundedness of the canonical representative `R=h+sY`; the excluded Thue-Morse example already has bounded h. Bounded coboundaries can occur on aperiodic minimal symbolic systems. Gottschalk-Hedlund does not imply periodicity and has not been supplied a continuous compact-base canonical-carry observable here.
+
+**Lesson:** finite return alphabets, finite derived substitutions, finite kernels, and finite arithmetic dimension do not make the unbounded orbit state finite. Sparse substitution-level normalized residues also do not inherit T2's all-depth bounded-alphabet equivalence without proof.
+
+**Action:** retain the exact block/substitution recurrences in T3 Sections 3–4. Require a real arithmetic bound or rigidity theorem; do not replace it with a finite-state analogy.
+
+## F0045 — Critical bounded valuation discrepancy is incompatible with aperiodic anchoring
+
+**Status: PROVED in CDM4-T3.**
+
+If `|A_m-(log_2 3)m|<=D`, the exact affine sum gives `x_m>=2^(-2D)m/3` under a positive anchor. Aperiodicity gives distinct positive states, whose product correction is at most `e^(1/3)(m+1)^(1/3)`. The same endpoint is therefore at most `N 2^D e^(1/3)(m+1)^(1/3)`, a contradiction.
+
+**Lesson:** critical bounded-discrepancy words are excluded without the López-Stoll equality. Subcritical balanced words need additional return or arithmetic hypotheses; balance alone has not been killed in general.
+
+**Action:** preserve this exact class obstruction. Do not infer a blanket bounded-discrepancy or morphic exclusion. See T3 Section 8.1.
+
+## F0046 — Automatic frequencies force a strict growth gap, not an anchor contradiction
+
+**Status: PROVED necessary condition using Bell; general realization UNKNOWN.**
+
+Bell's published theorem gives rational limsup mean for nonnegative rational-valued automatic outputs. The independently proved positive aperiodic orbit bound gives `limsup A_m/m<=log_2 3`. Consequently an automatic valuation anchor would have rational limsup strictly below `log_2 3` and exponential odd-orbit growth. An automatic source-parity anchor would similarly have rational lower one-density strictly above `log_3 2` and exponential shortened growth.
+
+Primitive substitution block-coded means are algebraic. Gelfond-Schneider, together with unique factorization excluding rational logarithmic ratios, proves `log_2 3` and `log_3 2` transcendental. A primitive aperiodic anchor would likewise have a strict growth gap. This is not an inconsistency.
+
+**Lesson:** an inequality plus rational/algebraic frequencies does not yield the equality needed by the proposed blanket exclusion. Variable-length odd-gap encoding also cannot be assumed to preserve automaticity in the same base.
+
+**Action:** CDM4-T4 may attack residual primitive constant-length substitutions coded into `{1,2}`, using the exact unbounded arithmetic recurrence. No new scientific starts, generator, scoring campaign, or GPU work is justified.

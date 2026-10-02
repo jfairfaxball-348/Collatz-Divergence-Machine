@@ -1,0 +1,51 @@
+{
+  "checks": [
+    "closed affine constant",
+    "ordered block matrix product",
+    "inverse affine cocycle",
+    "block lift quotient",
+    "exact odd endpoint",
+    "mixed-radix composition",
+    "normalized representative",
+    "substitution pair recurrence",
+    "specified prefix return",
+    "mixed-radix finite sum"
+  ],
+  "counterexample_claimed": false,
+  "explicit_candidate_found": false,
+  "maximum_substitution_level_checked": 3,
+  "maximum_symbol_count_for_return_check": 32,
+  "purpose": "fixed symbolic identity fixtures only; no infinite proof by computation",
+  "scientific_starts_generated": 0,
+  "scientific_trajectories_executed": 0,
+  "session": "CDM4-T3",
+  "status": "FINITE-VERIFIED",
+  "substitutions_analyzed": 1,
+  "thue_morse_fixtures": [
+    {
+      "A": 3,
+      "C": 5,
+      "R": 11,
+      "Y": 13,
+      "level": 1,
+      "valuation_length": 2
+    },
+    {
+      "A": 6,
+      "C": 101,
+      "R": 107,
+      "Y": 137,
+      "level": 2,
+      "valuation_length": 4
+    },
+    {
+      "A": 12,
+      "C": 14773,
+      "R": 107,
+      "Y": 175,
+      "level": 3,
+      "valuation_length": 8
+    }
+  ],
+  "unbounded_orbit_found": false
+}

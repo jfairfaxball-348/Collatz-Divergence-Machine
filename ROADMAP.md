@@ -1,5 +1,7 @@
 # Roadmap
 
+Historical stage decisions below retain their original context. The live authorization is the final immediate-next-task section; completed P1/P2 budgets do not authorize new scientific starts.
+
 ## CDM0 — SCAFFOLD AND CALIBRATION
 
 **Status: COMPLETE.**
@@ -164,10 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T2 COMPLETE — CLASSIFICATION C: NEW ANCHORING / APERIODICITY OBSTRUCTION FOUND.**
+**Status: CDM4-T3 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
+
+Current authoritative theory report: experiments/CDM4_T3_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -191,9 +195,11 @@ The focused literature audit also identified a strong existing route kill: Wang'
 
 No general theorem was found excluding all aperiodic primitive substitutions or morphic valuation words.
 
-**Next theory substage: CDM4-T3.** Audit anchor-carry extinction for finite-alphabet recursive languages, beginning with primitive substitutions and morphic words. The theorem target is to classify when d_m is eventually zero, or equivalently when R_m is bounded and stabilizes to one explicit positive integer.
+**CDM4-T3 closeout.** Exact block carry composition and a fixed-dimensional ordered substitution recurrence are now proved. A return-prefix/height inequality excludes a broad specified recursive subclass, including the Thue-Morse valuation coding `a_(n+1)=1+t_n`. Critical bounded-discrepancy words are also excluded. The proof is related to Wang's prior return-prefix work; no global novelty claim is made.
 
-Any load-bearing use of the López-Stoll 2021 parity-density result must first be independently verified because that source is a preprint.
+The López-Stoll 2021 density equality did not survive independent proof validation for project use: its real-to-2-adic inference lacks the needed bridge. The claim is not disproved, and no global automatic/substitution exclusion is promoted. Bell's theorem gives a strict growth-gap requirement for hypothetical aperiodic automatic anchors, not their impossibility.
+
+**Next theory substage: CDM4-T4.** Address residual primitive constant-length substitutions coded into valuations `{1,2}`. Prove bounded exact representatives force eventual periodicity, in the cases outside T3's explicit exclusions. See T3 Section 13 for the single theorem obligation.
 
 No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
 
@@ -219,18 +225,18 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T3 — anchor-carry extinction / recursive-language realizability audit.**
+**CDM4-T4 — residual uniform-substitution carry rigidity, theory only.**
 
-Start from the T2 exact-cylinder state rather than from finite trajectory anomalies:
+Start from the exact block and substitution recurrences in T3 equations (3)–(13), retaining the unbounded endpoint/carry state.
 
-A_m, C_m, R_m, Y_m, d_m.
+Single theorem target:
 
-Primary target:
+> For a growing primitive constant-length substitution with letter coding into valuations `{1,2}`, prove that bounded exact canonical representatives force eventual periodicity of the coded output. Address the residual aperiodic class with mean below `log_2 3` outside T3's proved exclusions.
 
-> For a non-eventually-periodic finite-alphabet recursive valuation/parity language, prove or rule out eventual zero anchor carry d_m=0; equivalently prove or rule out bounded/stabilizing exact canonical start representatives R_m.
+First verify the T3 argument and its Wang overlap. Then investigate arithmetic rigidity where the sufficient return-prefix inequality fails. Do not assume that every primitive word has the required early returns or that finite arithmetic dimension makes a finite-state orbit.
 
-Prioritize primitive substitutions, morphic words, automatic subcases, return-word recurrences and exact carry/transducer structure. Use the bounded-alphabet equivalence R_m/2^{A_m+1}->0 where useful.
+The positive certification obligation remains bounded representatives for one explicit aperiodic word, identifying its stabilized `N>1`. No such candidate exists. The unvalidated López-Stoll equality cannot be a theorem premise.
 
-Do not treat finite residue decay, finite drift, or a finite run of zero carries as evidence of an anchor. Do not enumerate or optimize finite words.
+Do not treat finite residue decay, finite drift, or a finite run of zero carries as evidence of an anchor. Do not enumerate or optimize words or substitutions. Only tiny frozen exact identity checks may support the theory work.
 
 Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, finite exponent-code/ranking campaigns, and longer candidate trajectories remain unauthorized.

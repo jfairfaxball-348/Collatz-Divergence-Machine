@@ -1,0 +1,183 @@
+{
+  "session": "CDM4-T3",
+  "repository": "jfairfaxball-348/Collatz-Divergence-Machine",
+  "authority_commit": "a33e846537cda2733c10c10436cfb60ce5a3f1e7",
+  "required_files_read_before_mathematical_work": true,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "96b67790943f2f4c4e12ec709dba699cff030ab4a084e47b761b60669a7a04d2",
+      "bytes": 3811
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "167d11f8101bf29adc73152a0a2242bf2bd48fe19da5640038f2b788ecd137c0",
+      "bytes": 21381
+    },
+    {
+      "path": "PROJECT_CHARTER.md",
+      "sha256": "b872a1aa63e0d826ea9a6e22712906eade7ccdfe31cab9b3875f59a62b282328",
+      "bytes": 3971
+    },
+    {
+      "path": "ROADMAP.md",
+      "sha256": "2e9a0574c0afe1c90f2b55484af8073b4a2de472c7d1cd9be5e8f6edca2d309e",
+      "bytes": 17799
+    },
+    {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "sha256": "288aba993e952618e9654496c592c46d280daa1c90314a2dc475e15f686cb932",
+      "bytes": 2978
+    },
+    {
+      "path": "docs/COMPUTE_BUDGET.md",
+      "sha256": "c571a1ff49958f3cb17084e1d96900aa14a29d27700fb4cb23698dc056dbdf47",
+      "bytes": 30103
+    },
+    {
+      "path": "docs/PROMOTION_POLICY.md",
+      "sha256": "2c78e4e9e57c0db76bf46f9fa69ae08bd9e88c935450717ad5d4f3bce262f950",
+      "bytes": 2812
+    },
+    {
+      "path": "docs/CERTIFICATION_POLICY.md",
+      "sha256": "3b6e170d827f7ca899b69bc2d6e2483b78b18708af38e4b31bdc5c2e7d713358",
+      "bytes": 1254
+    },
+    {
+      "path": "docs/FAILURE_AND_LESSON_LEDGER.md",
+      "sha256": "2516e2cdb0fb73f464f83b314f736fc7547273d1c3a9c0708cc6308a8de1e4c4",
+      "bytes": 36575
+    },
+    {
+      "path": "docs/PREVIOUS_WORK_AUDIT.md",
+      "sha256": "f7cfc23c7932946eac1cbdeb90052352bc6220d6144473afcca854dac08ee3c6",
+      "bytes": 4793
+    },
+    {
+      "path": "docs/CDM1_STATE_OF_THE_ART_AUDIT.md",
+      "sha256": "00d5c458da2097123b8a319edb71c2a6ba5ecf0c946dcc62ef7035fe90248c75",
+      "bytes": 46303
+    },
+    {
+      "path": "docs/METRIC_CATALOG.md",
+      "sha256": "c7bfafa11c45ddfbde44c2074ba86057b2ea13f3a86b442f59b1538c4f46b9b4",
+      "bytes": 11181
+    },
+    {
+      "path": "docs/BASIN_AND_CACHE_POLICY.md",
+      "sha256": "35b9468559be74329ae5bcdbe8d2fd1cbd610c0ab894b9614c407633fe78d7e9",
+      "bytes": 3807
+    },
+    {
+      "path": "experiments/CDM2_E1_REPORT.md",
+      "sha256": "05bb9f128fdda86aa023026cce79f564c92e01c3a06bbb6f1158e7cb6f486aea",
+      "bytes": 10716
+    },
+    {
+      "path": "experiments/CDM2_E1_RESULT.json",
+      "sha256": "d591d8ab88b57e3532649df289575a25f7723bf40734652e61b1d4f395ceb4b1",
+      "bytes": 6621
+    },
+    {
+      "path": "experiments/CDM2_R1_REPORT.md",
+      "sha256": "6099f4538e3feaaea967b557a890ef98c29ce597f30d0620353705be1921b30b",
+      "bytes": 10780
+    },
+    {
+      "path": "experiments/CDM2_R2_REPORT.md",
+      "sha256": "c6ed81e55ca2d47d3a8987f06c14b9ba5feb0aeae3428a32b757e0d110d5e256",
+      "bytes": 21205
+    },
+    {
+      "path": "experiments/CDM2_R3_REPORT.md",
+      "sha256": "471e1efee29577402be1c28a49f04439d037af2ea631c0505a2a25dafca3baac",
+      "bytes": 25863
+    },
+    {
+      "path": "docs/CDM2_R3_ARCHITECTURE.md",
+      "sha256": "cde9bed0135f613b73aa3ea98e36a1aa0b04a01f4fc0ff51747d22be26cbff2c",
+      "bytes": 11026
+    },
+    {
+      "path": "experiments/CDM2_R3_BENCHMARK_RESULT.json",
+      "sha256": "39ad53ea8bd7ebcd11c2da6c033ccd673be0201c9225ac6fabdcb2f56890a717",
+      "bytes": 11797
+    },
+    {
+      "path": "experiments/CDM3_P1_REPORT.md",
+      "sha256": "ccad62e7d85b001619fba6c3da876c002ca8dd9afc793500a2ec8d3bc3ebba59",
+      "bytes": 8882
+    },
+    {
+      "path": "experiments/CDM3_P1_RESULT.json",
+      "sha256": "484c925ec32e9d1fc7529be3ba47eca489595690c061273cdf3c0a329181ba76",
+      "bytes": 9264
+    },
+    {
+      "path": "experiments/CDM3_P1_WORK_UNIT_DIGESTS.json",
+      "sha256": "55124f2229d3313c32bb66de4110488461adaa6aae5fb1b0e39515f02993d33d",
+      "bytes": 7559
+    },
+    {
+      "path": "experiments/CDM3_B1_REPORT.md",
+      "sha256": "821c0a25bca6a3eec6c5364502aa3efd8115f6450d81da8eebc96db10ccf8f4b",
+      "bytes": 8842
+    },
+    {
+      "path": "experiments/CDM3_B1_RESULT.json",
+      "sha256": "9d523f63db0fda56f0184c95aa45875a73b81d772900cbd5f1e7925a5a0198ea",
+      "bytes": 7727
+    },
+    {
+      "path": "docs/CDM3_B1_ENGINEERING.md",
+      "sha256": "c666538d332cbe6242981fc597c771e40f85e59b8763b7a9860a9d9c2dbd2c5f",
+      "bytes": 2219
+    },
+    {
+      "path": "experiments/CDM3_P2_PREFLIGHT_REPORT.md",
+      "sha256": "ff6be0d0535472a6e8cf7af431e5e49fce92d84cd5395c2b525814e7219e456c",
+      "bytes": 4351
+    },
+    {
+      "path": "experiments/CDM3_P2_PREFLIGHT_RESULT.json",
+      "sha256": "24653e8b9998b10233a7847ec8c7ac9419eeb608d46bb7a08a5615db9191f346",
+      "bytes": 2635
+    },
+    {
+      "path": "experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md",
+      "sha256": "aabd74a42c86729965835c42cc20cf93d366cd706d7369a49b8c68e02d06ad31",
+      "bytes": 3621
+    },
+    {
+      "path": "experiments/CDM3_P2_REPORT.md",
+      "sha256": "59b4179350c819bee6ff127bcc2a0f200b91727e94856ade488616088efe444c",
+      "bytes": 11173
+    },
+    {
+      "path": "experiments/CDM3_P2_RESULT.json",
+      "sha256": "54e002ae6c629e082c35ad8287a1e671b81d20b97b0597a3316b5dfbe9d5b699",
+      "bytes": 12420
+    },
+    {
+      "path": "experiments/CDM3_P2_WORK_UNIT_DIGESTS.json",
+      "sha256": "e2df9b135045036543ae55e0bca586a825f561fcf7162bd40810a34248c6aacb",
+      "bytes": 13038
+    },
+    {
+      "path": "experiments/CDM3_P2A_REPORT.md",
+      "sha256": "e0bc44a65b597aa54c7558a3e3c6f6c9c9eda6b4e5524082803f5d56b0b919ef",
+      "bytes": 19143
+    },
+    {
+      "path": "experiments/CDM4_T1_REPORT.md",
+      "sha256": "8d2963593835622ea10969406cdd85e018c82ddf73593de31015f45d208050ae",
+      "bytes": 35043
+    },
+    {
+      "path": "experiments/CDM4_T2_REPORT.md",
+      "sha256": "09610ad1e2a6e0e0f386060ca23cefb504f2649fcc36b63d321bab1cf7edc40d",
+      "bytes": 42608
+    }
+  ]
+}
