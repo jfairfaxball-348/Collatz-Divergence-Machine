@@ -484,39 +484,45 @@ The generic higher-rank balanced automatic kernel class remains unresolved and s
 
 ## CDM4-T7 closeout — 2026-10-02
 
-CDM4-T7 is complete. Authoritative report: `experiments/CDM4_T7_REPORT.md`.
+CDM4-T7 is complete. Authoritative report: experiments/CDM4_T7_REPORT.md.
 
 **Classification: D — NO QUALIFYING THEOREM FOUND.**
 
 T7 derived the exact higher-rank finite-kernel system and proved that every scalar Collatz output satisfies a scalar Mahler equation of order at most the true kernel dimension. It then isolated a natural higher-rank class — balanced finite abelian translation substitutions — for which the complete kernel system Fourier-diagonalizes into first-order character equations.
 
-This does not yet give a new anchor obstruction. In the genuine higher-rank case the exact Collatz output is generally a prescribed sum of several nontrivial character values at the same 2-adic point (W=2^B/3^k). Separate transcendence of the character values would not exclude rational cancellation. No peer-reviewed p-adic theorem was verified whose checked hypotheses give the needed same-point linear/algebraic independence for this exact system. The Xu–Wang 2004 and Wang 2006 papers remain high-priority sources, but their full theorem hypotheses were not sufficiently exposed in the audited authoritative text to be load-bearing.
+This does not yet give a new anchor obstruction. In the genuine higher-rank case the exact Collatz output is generally a prescribed sum of several nontrivial character values at the same 2-adic point
+
+\[
+W=2^B/3^k.
+\]
+
+Separate transcendence of the character values would not exclude rational cancellation. No peer-reviewed p-adic theorem was verified whose checked hypotheses give the needed same-point linear/algebraic independence for this exact system. The Xu–Wang 2004 and Wang 2006 papers remain high-priority sources, but their full theorem hypotheses were not sufficiently exposed in the audited authoritative text to be load-bearing.
 
 Regular-singular structure is not itself a p-adic value theorem. Adamczewski–Faverjon's modern lifting/value results remain archimedean for the values relevant here. Bugeaud–Yao remains load-bearing only after an exact first-order scalar reduction. Cobham remains unavailable and López–Stoll remains non-load-bearing.
 
-No new higher-rank class was ruled out, no new bounded-(R_m) periodicity theorem was obtained, no anchored aperiodic word was found, and no candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
+No new higher-rank class was ruled out, no new bounded-\(R_m\) periodicity theorem was obtained, no anchored aperiodic word was found, and no candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
 
 ## Authoritative next task — CDM4-T8
 
 **CDM4-T8 — P-ADIC SAME-POINT NO-CANCELLATION AUDIT.**
 
-Begin with balanced finite abelian translation substitutions, preferably elementary (2)-group state spaces so that all Fourier characters are rational-valued. For the exact nontrivial character equations
+Begin with balanced finite abelian translation substitutions, preferably elementary \(2\)-group state spaces so that all Fourier characters are rational-valued. For the exact nontrivial character equations
 
-[
+\[
 \widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k),
-]
+\]
 
 and the exact Collatz linear combination at
 
-[
+\[
 W=2^B/3^k,
-]
+\]
 
 either:
 
-1. verify a peer-reviewed p-adic theorem giving enough linear/algebraic independence of the values (\widehat F_\chi(W)) to forbid rational cancellation;
+1. verify a peer-reviewed p-adic theorem giving enough linear/algebraic independence of the values \(\widehat F_\chi(W)\) to forbid rational cancellation;
 2. recover and check the full Xu–Wang 2004 / Wang 2006 theorem statements against the exact system;
-3. prove a Collatz-specific no-cancellation identity from the block constants (C_a), character polynomials (S_\chi), and (W);
+3. prove a Collatz-specific no-cancellation identity from the block constants \(C_a\), character polynomials \(S_\chi\), and \(W\);
 4. or isolate the exact theorem still missing.
 
 Do not enumerate substitutions to find favorable character polynomials.
