@@ -871,19 +871,19 @@ Combining with T2, bounded canonical representatives \(R_m\) force eventual peri
 
 **Status: PROVED structural reduction / FAILED inference in CDM4-T7.**
 
-For an exact true (m)-state (k)-kernel system
+For an exact true \(m\)-state \(k\)-kernel system
 
-[
+\[
 \mathbf G(z)=M(z)\mathbf G(z^k),
-]
+\]
 
-every rational linear output (L(z)=\ell^T\mathbf G(z)) satisfies a scalar Mahler equation of order at most (m). This follows because the (m+1) row vectors expressing
+every rational linear output \(L(z)=\ell^T\mathbf G(z)\) satisfies a scalar Mahler equation of order at most \(m\). This follows because the \(m+1\) row vectors expressing
 
-[
-L(z),L(z^k),\dots,L(z^{k^m})
-]
+\[
+L(z),L(z^k),\ldots,L(z^{k^m})
+\]
 
-against the common terminal vector (\mathbf G(z^{k^m})) are linearly dependent over (mathbb Q(z)).
+against the common terminal vector \(\mathbf G(z^{k^m})\) are linearly dependent over \(\mathbb Q(z)\).
 
 The scalar order can be greater than one, and elimination may introduce new denominator factors. Bugeaud–Yao 2017, as verified in T6, is a first-order theorem. No audited rule promotes a higher-order scalar equation to its scope.
 
@@ -898,34 +898,38 @@ The scalar order can be greater than one, and elimination may introduce new deno
 
 For a finite abelian translation substitution
 
-[
+\[
 \sigma(a)_r=a+\varepsilon_r,
-]
+\]
 
 the exact shifted Collatz coefficient system is
 
-[
+\[
 F_a(z)=\sum_r z^rF_{a+\varepsilon_r}(z^k).
-]
+\]
 
-Finite Fourier transform diagonalizes it. For each character (\chi),
+Finite Fourier transform diagonalizes it. For each character \(\chi\),
 
-[
+\[
 \widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k),
-qquad
+\qquad
 S_\chi(z)=\sum_r\chi(\varepsilon_r)z^r.
-]
+\]
 
 The trivial character is rational. In the T6 binary case there is only one nontrivial character, so the Collatz output reduces to one first-order nonrational component plus a rational term.
 
 In genuine higher rank there are generally several nontrivial characters and
 
-[
+\[
 F_0(W)=\frac1{|A|}\sum_\chi\widehat F_\chi(W).
-]
+\]
 
-Even if every nontrivial character value were separately transcendental, their prescribed sum could still be rational. T7 did not verify a peer-reviewed p-adic theorem giving the needed same-point linear/algebraic independence at (W=2^B/3^k).
+Even if every nontrivial character value were separately transcendental, their prescribed sum could still be rational. T7 did not verify a peer-reviewed p-adic theorem giving the needed same-point linear/algebraic independence at
 
-**Lesson:** the higher-rank bottleneck is not merely diagonalizing the matrix. It is ruling out arithmetic cancellation among several p-adic Mahler values at the same non-torsion rational (S)-unit point.
+\[
+W=2^B/3^k.
+\]
 
-**Action:** CDM4-T8 should attack this no-cancellation theorem directly, beginning with elementary (2)-group translation kernels and a full source-level audit of Xu–Wang 2004 / Wang 2006. Do not enumerate substitutions or infer no-cancellation from separate transcendence.
+**Lesson:** the higher-rank bottleneck is not merely diagonalizing the matrix. It is ruling out arithmetic cancellation among several p-adic Mahler values at the same non-torsion rational \(S\)-unit point.
+
+**Action:** CDM4-T8 should attack this no-cancellation theorem directly, beginning with elementary \(2\)-group translation kernels and a full source-level audit of Xu–Wang 2004 / Wang 2006. Do not enumerate substitutions or infer no-cancellation from separate transcendence.
