@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T6 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T7 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T6_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T7_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a new balanced complementary binary constant-length class. Bugeaud-Yao's first-order theorem explicitly permits the rational 2-adic unit in `W=2^B/3^k`; the unresolved remainder is the higher-rank balanced automatic kernel class.
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a balanced complementary binary class; T7 proves scalar Mahler reduction of order at most the true k-kernel dimension and exact Fourier diagonalization for finite abelian translation kernels, but finds no verified p-adic same-point no-cancellation theorem for the resulting multi-character Collatz value. The unresolved remainder is still the higher-rank balanced automatic kernel class.
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T7 — higher-rank p-adic S-unit Mahler-system audit, theory only: begin with balanced automatic Collatz coefficient systems whose exact finite k-kernel system does not reduce to the T6 first-order class, and either apply a verified p-adic higher-rank value theorem at `W=2^B/3^k`, derive a controlled scalar reduction, or isolate the exact missing theorem**
+- Immediate next task: **CDM4-T8 — p-adic same-point no-cancellation audit, theory only: begin with balanced finite abelian translation kernels (preferably elementary 2-groups), recover and check the full Xu-Wang/Wang p-adic theorem hypotheses, and either prove enough linear/algebraic independence of the nontrivial character values at `W=2^B/3^k` to exclude a rational Collatz combination or isolate the exact missing theorem**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T7 theory/literature analysis only**, as specified in the T6 report; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T8 theory/literature analysis only**, as specified in the T7 report; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -80,6 +80,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 38. `experiments/CDM4_T4_REPORT.md`
 39. `experiments/CDM4_T5_REPORT.md`
 40. `experiments/CDM4_T6_REPORT.md`
+41. `experiments/CDM4_T7_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -479,3 +480,49 @@ Therefore no nonperiodic word in this class has a rational 2-adic anchor. Combin
 T6 also proved that naive finite unit-state absorption closes exactly for torsion units, so the actual non-torsion unit \(3^{-k}\) still does not close by scaled copies. Separately, an exact automatic-series construction shows that one rational p-adic value does not generically force a finite-valued automatic generating function to be rational. Extra first-order or Collatz-specific structure is essential.
 
 The generic higher-rank balanced automatic kernel class remains unresolved and still contains a restricted Periodicity-Conjecture problem. Cobham remains unavailable; López-Stoll remains non-load-bearing. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
+
+
+## CDM4-T7 closeout — 2026-10-02
+
+CDM4-T7 is complete. Authoritative report: `experiments/CDM4_T7_REPORT.md`.
+
+**Classification: D — NO QUALIFYING THEOREM FOUND.**
+
+T7 derived the exact higher-rank finite-kernel system and proved that every scalar Collatz output satisfies a scalar Mahler equation of order at most the true kernel dimension. It then isolated a natural higher-rank class — balanced finite abelian translation substitutions — for which the complete kernel system Fourier-diagonalizes into first-order character equations.
+
+This does not yet give a new anchor obstruction. In the genuine higher-rank case the exact Collatz output is generally a prescribed sum of several nontrivial character values at the same 2-adic point (W=2^B/3^k). Separate transcendence of the character values would not exclude rational cancellation. No peer-reviewed p-adic theorem was verified whose checked hypotheses give the needed same-point linear/algebraic independence for this exact system. The Xu–Wang 2004 and Wang 2006 papers remain high-priority sources, but their full theorem hypotheses were not sufficiently exposed in the audited authoritative text to be load-bearing.
+
+Regular-singular structure is not itself a p-adic value theorem. Adamczewski–Faverjon's modern lifting/value results remain archimedean for the values relevant here. Bugeaud–Yao remains load-bearing only after an exact first-order scalar reduction. Cobham remains unavailable and López–Stoll remains non-load-bearing.
+
+No new higher-rank class was ruled out, no new bounded-(R_m) periodicity theorem was obtained, no anchored aperiodic word was found, and no candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
+
+## Authoritative next task — CDM4-T8
+
+**CDM4-T8 — P-ADIC SAME-POINT NO-CANCELLATION AUDIT.**
+
+Begin with balanced finite abelian translation substitutions, preferably elementary (2)-group state spaces so that all Fourier characters are rational-valued. For the exact nontrivial character equations
+
+[
+\widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k),
+]
+
+and the exact Collatz linear combination at
+
+[
+W=2^B/3^k,
+]
+
+either:
+
+1. verify a peer-reviewed p-adic theorem giving enough linear/algebraic independence of the values (\widehat F_\chi(W)) to forbid rational cancellation;
+2. recover and check the full Xu–Wang 2004 / Wang 2006 theorem statements against the exact system;
+3. prove a Collatz-specific no-cancellation identity from the block constants (C_a), character polynomials (S_\chi), and (W);
+4. or isolate the exact theorem still missing.
+
+Do not enumerate substitutions to find favorable character polynomials.
+
+- **Scientific starts authorized: NO.**
+- **GPU work authorized: NO.**
+- **New generator/distribution authorized: NO.**
+- **Finite-code ranker campaign authorized: NO.**
+- **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
