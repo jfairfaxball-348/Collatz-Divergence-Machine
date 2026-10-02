@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T7 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T8 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T7_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T8_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a balanced complementary binary class; T7 proves scalar Mahler reduction of order at most the true k-kernel dimension and exact Fourier diagonalization for finite abelian translation kernels, but finds no verified p-adic same-point no-cancellation theorem for the resulting multi-character Collatz value. The unresolved remainder is still the higher-rank balanced automatic kernel class.
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a balanced complementary binary class; T7 proves higher-rank scalarization and finite-abelian Fourier diagonalization; T8 reduces balanced elementary-2-group translation kernels exactly to the reachable output quotient `E/K_C`, proves every character factor is a 2-adic unit along the full Collatz Mahler orbit, and obtains exact infinite-product and valuation formulae, but still finds no verified p-adic same-point linear/algebraic-independence theorem for a genuinely multi-character output. The unresolved remainder is the nonsingular higher-rank Walsh-product no-cancellation problem.
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T8 — p-adic same-point no-cancellation audit, theory only: begin with balanced finite abelian translation kernels (preferably elementary 2-groups), recover and check the full Xu-Wang/Wang p-adic theorem hypotheses, and either prove enough linear/algebraic independence of the nontrivial character values at `W=2^B/3^k` to exclude a rational Collatz combination or isolate the exact missing theorem**
+- Immediate next task: **CDM4-T9 — p-adic Walsh-product same-point independence audit, theory only: attack the exact normalized products `P_i(z)=S_i(z)P_i(z^k)` after quotient/support reduction and prove or recover a completion-correct theorem making `1,P_1(W),...,P_t(W)` linearly independent over algebraic numbers at `W=2^B/3^k`, or derive a Collatz-specific weighted no-cancellation substitute**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T8 theory/literature analysis only**, as specified in the T7 report; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T9 theory/literature analysis only**, as specified in the T8 report; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -81,6 +81,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 39. `experiments/CDM4_T5_REPORT.md`
 40. `experiments/CDM4_T6_REPORT.md`
 41. `experiments/CDM4_T7_REPORT.md`
+42. `experiments/CDM4_T8_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -502,30 +503,90 @@ Regular-singular structure is not itself a p-adic value theorem. Adamczewski–F
 
 No new higher-rank class was ruled out, no new bounded-\(R_m\) periodicity theorem was obtained, no anchored aperiodic word was found, and no candidate, unbounded orbit, or counterexample was found or claimed. No new scientific compute is authorized.
 
-## Authoritative next task — CDM4-T8
+## CDM4-T8 closeout — 2026-10-02
 
-**CDM4-T8 — P-ADIC SAME-POINT NO-CANCELLATION AUDIT.**
+CDM4-T8 is complete. Authoritative report: \`experiments/CDM4_T8_REPORT.md\`.
 
-Begin with balanced finite abelian translation substitutions, preferably elementary \(2\)-group state spaces so that all Fourier characters are rational-valued. For the exact nontrivial character equations
+**Classification: D — NO QUALIFYING THEOREM FOUND.**
+
+T8 worked theorem-first on balanced elementary-2-group translation kernels. Let \(E\) be the subgroup generated by the digit translations and let
+
+\[
+K_C=\{h\in E:C_{x+h}=C_x\text{ for every }x\in E\}.
+\]
+
+The exact true k-kernel dimension is now
+
+\[
+m=|E/K_C|.
+\]
+
+Walsh transform over the reduced quotient gives exact first-order character equations
 
 \[
 \widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k),
+\qquad
+S_\chi(z)=\sum_r\chi(\varepsilon_r)z^r\in\mathbb Z[z],
 \]
 
-and the exact Collatz linear combination at
+with exact Fourier support \(\widehat C_\chi\ne0\). The trivial component is rational; nontrivial character projections can themselves be rational if their projected automatic sequence is eventually periodic, so formal character distinctness is not treated as functional independence.
+
+The main new exact theorem is an all-depth 2-adic singularity result. Because \(\varepsilon_0=0\) and \(v_2(W)=B\),
 
 \[
-W=2^B/3^k,
+S_\chi(W^{k^j})\equiv1\pmod{2^{Bk^j}}
 \]
 
-either:
+for every character and every \(j\ge0\). Thus every character factor and the full determinant are nonzero along the entire exact Collatz Mahler orbit. Each supported value has the convergent product representation
 
-1. verify a peer-reviewed p-adic theorem giving enough linear/algebraic independence of the values \(\widehat F_\chi(W)\) to forbid rational cancellation;
-2. recover and check the full Xu–Wang 2004 / Wang 2006 theorem statements against the exact system;
-3. prove a Collatz-specific no-cancellation identity from the block constants \(C_a\), character polynomials \(S_\chi\), and \(W\);
-4. or isolate the exact theorem still missing.
+\[
+\widehat F_\chi(W)=
+\widehat C_\chi\prod_{j\ge0}S_\chi(W^{k^j}),
+\]
 
-Do not enumerate substitutions to find favorable character polynomials.
+and therefore
+
+\[
+v_2(\widehat F_\chi(W))=v_2(\widehat C_\chi).
+\]
+
+These identities do not solve rational cancellation. No class-wide valuation separation was proved, and valuation separation alone would not exclude a rational sum. Multiplicative functional relations reduce exactly to rational Mahler coboundaries, but generic functional algebraic independence is not proved.
+
+Bugeaud–Yao remains applicable character-by-character when a supported component is nonrational, yielding separate p-adic transcendence; this does not imply same-point linear independence. Flicker's original 1979 p-adic algebraic-independence theorem was recovered and audited, but its functional-independence/dominance hypotheses were not verified for the stationary Collatz character family. Serious source-level attempts to recover the full Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 theorem statements did not yield hypothesis-checkable full text in the available authoritative sources, so they remain non-load-bearing rather than being inferred from titles or abstracts.
+
+No genuinely multi-character higher-rank class was excluded, no new bounded-\(R_m\) periodicity theorem was proved, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed. Cobham remains unavailable; López–Stoll remains non-load-bearing. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T9
+
+**CDM4-T9 — P-ADIC WALSH-PRODUCT SAME-POINT INDEPENDENCE AUDIT.**
+
+Work on the exact T8 reduced family
+
+\[
+P_i(z)=S_i(z)P_i(z^k),
+\qquad
+S_i(z)\in\mathbb Z[z],
+\quad
+S_i(0)=1,
+\]
+
+at
+
+\[
+W=2^B/3^k.
+\]
+
+First remove zero, rational, duplicate, and rational-coboundary components exactly. Then attack the single missing bridge:
+
+> Under a checkable functional multiplicative/algebraic-independence hypothesis, prove or recover a peer-reviewed **p-adic** theorem implying that
+> \[
+> 1,P_1(W),\ldots,P_t(W)
+> \]
+> are linearly independent over algebraic numbers at the same rational non-torsion S-unit point; or derive a Collatz-specific theorem excluding the exact weighted Fourier sum from \(\mathbb Q\).
+
+A theorem of algebraic independence is sufficient but stronger than necessary. Preserve the distinction between functional independence and value independence, and do not use an archimedean value-lifting result as a p-adic theorem.
+
+Do not enumerate substitutions or optimize finite residues/carries/exponent codes.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
