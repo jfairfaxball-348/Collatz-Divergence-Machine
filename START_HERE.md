@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T3 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T4 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T3_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T4_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,12 +25,12 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 exact block carry/affine cocycle and fixed-dimensional substitution recurrences; a proved return-prefix/height obstruction and primitive-substitution criterion; exact exclusion of the Thue-Morse valuation coding; critical bounded-discrepancy exclusion; no general automatic/morphic anchoring theorem
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 exact block carry/affine cocycle, substitution recurrences, return-prefix/height obstruction, Thue-Morse exclusion, and critical bounded-discrepancy exclusion; T4 re-derived the residual constant-length state, proved the exact 3-adic endpoint-cylinder dual, and showed that endpoint/two-sided return divisibility does not improve T3's asymptotic return threshold; no general automatic/Mahler anchoring theorem
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T4 — residual uniform-substitution carry rigidity, theory only: for primitive constant-length substitutions coded into valuations {1,2}, outside T3's exclusions, prove that bounded exact representatives force eventual periodicity of the output**
+- Immediate next task: **CDM4-T5 — automatic inverse-Collatz rationality audit, theory only: for non-eventually-periodic automatic {1,2}-valuation words with mean below log_2(3), determine whether verified Mahler/automatic-number or p-adic transcendence theorems can rule out an ordinary positive integer value of the exact inverse-Collatz series**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
 - Explicitly permitted next action: **CDM4-T4 theory/structural analysis only**, as specified in T3 report Section 13; no new scientific starts are authorized
 
@@ -387,18 +387,41 @@ For primitive substitutions with output mean alpha and specified substitution-pr
 
 Tiny fixed identity checks passed; no scientific starts or scientific trajectories were executed. No explicit candidate, unbounded orbit, or counterexample was found or claimed. Compute budget and metric catalog are unchanged.
 
-## Authoritative next task — CDM4-T4
+## CDM4-T4 closeout — 2026-10-02
 
-**CDM4-T4 — RESIDUAL UNIFORM-SUBSTITUTION CARRY RIGIDITY.**
+**Classification: D — NO QUALIFYING THEOREM FOUND.**  
+Authoritative report: `experiments/CDM4_T4_REPORT.md`.
 
-Single theorem target: for a growing primitive constant-length substitution, prolongable on an initial letter and coded into valuations `{1,2}`, prove that bounded exact representatives imply eventual periodicity of the coded output. Focus on aperiodic outputs with mean below `log_2 3` outside the proved T3 exclusions.
+T4 re-derived the exact T3 block, carry, substitution-level, and all-depth anchoring recurrences for primitive constant-length substitutions coded into valuations `{1,2}`.
 
-Begin by checking T3's proofs and Wang overlap, then attack the unbounded arithmetic state in T3 equations (12)–(13). Do not assume a universal early-return property, ordinary density for arbitrary automatic words, or the López-Stoll density equality. No enumeration or finite scoring of substitutions is authorized.
+**PROVED:** equal length-`r` valuation blocks have odd endpoints congruent modulo `3^r`. This is the exact 3-adic endpoint-cylinder dual of T2's 2-adic start cylinder.
 
-The positive certification bridge remains one explicit aperiodic word with a proved bounded representative tower and identified stabilized integer `N>1`.
+**NEGATIVE AUDIT RESULT:** when that endpoint congruence is applied to substitution-scale prefix returns, its height/divisibility exponent reduces to the same strict return inequality already proved in T3. Combining past and future cylinders in a two-sided context also conserves the same exponent budget. These routes therefore do not kill a new residual class.
+
+For any hypothetical aperiodic primitive constant-length `{1,2}` anchor, the mean valuation is rational and must satisfy `1<alpha<log_2 3`; the resulting odd orbit would grow exponentially. This is necessary but not contradictory.
+
+Finite kernels, finite return-word systems, and fixed-modulus endpoint synchronization still do not bound the growing arithmetic registers or the full canonical representative tower. The universal statement “bounded `R_m` implies periodic output” remains **UNKNOWN** for the residual class.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No new scientific compute, generator/distribution, finite-code ranking, or GPU work is justified.
+
+## Authoritative next task — CDM4-T5
+
+**CDM4-T5 — AUTOMATIC INVERSE-COLLATZ RATIONALITY AUDIT.**
+
+For a non-eventually-periodic `k`-automatic valuation sequence `a_n in {1,2}` with mean `alpha<log_2 3`, study the exact inverse-Collatz value
+
+`H = -sum_{j>=0} 2^{A_j}/3^{j+1}` in `Z_2`.
+
+Single theorem target:
+
+> Under explicitly verified hypotheses, prove that `H` cannot be an ordinary positive integer unless the valuation word is eventually periodic; or prove that the available automatic/Mahler/p-adic transcendence theorems do not imply this.
+
+Audit every bridge carefully. In particular, do not identify automaticity of the valuation word with automaticity of the binary expansion of the anchor; do not infer that a variable-length odd-gap coding remains automatic in the same base; do not treat the appearances of 2 and 3 as Cobham's two-base hypothesis; and do not use the López-Stoll 2021 density equality unless independently repaired.
+
+The positive certification bridge remains one explicit aperiodic word with proved bounded exact representatives and an identified stabilized integer `N>1`.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
 - **New generator/distribution authorized: NO.**
 - **Finite-code ranker campaign authorized: NO.**
-- **Theory/structural work authorized: YES; tiny frozen exact identity checks only.**
+- **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
