@@ -164,20 +164,36 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T1 COMPLETE — CLASSIFICATION C: NEW THEORETICAL OBSTRUCTION FOUND.**
+**Status: CDM4-T2 COMPLETE — CLASSIFICATION C: NEW ANCHORING / APERIODICITY OBSTRUCTION FOUND.**
 
-Authoritative T1 report: `experiments/CDM4_T1_REPORT.md`.
+Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
+Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-CDM4-T1 proved that eventually periodic parity cannot support a positive divergent orbit. A fixed expanding block therefore cannot be self-repeated indefinitely by a positive integer, and an autonomous deterministic finite-state block machine eventually collapses to bounded periodic behavior.
+CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
-T1 also proved the arithmetic-progression closure obstruction. If a fixed positive-length Collatz block maps every member of one full arithmetic-progression tail into another, the target family period has at least K fewer powers of two than the source period, where K is the block length. Hence no directed cycle of such whole-family progression edges can exist.
+CDM4-T2 then derived the exact accelerated valuation-prefix start cylinder. For A_m=sum a_i and C_{m+1}=3C_m+2^{A_m}, exact realization of a_1,...,a_m is the unique residue
 
-Finally, T1 isolated the ordinary-integer anchoring obstruction for infinite nested residue systems: compatible canonical residues modulo nested moduli tending to infinity represent one nonnegative integer exactly when those residues eventually stabilize. Thus a nonempty 2-adic/profinite inverse limit is not enough.
+R_m == 3^{-m}(2^{A_m}-C_m)  (mod 2^{A_m+1}).
 
-**Next theory substage: CDM4-T2.** Audit aperiodic finite-description mechanisms that escape those obstructions, especially substitution/morphic valuation languages and nested mixed-adic cylinders with an unbounded scale parameter. A qualifying route must simultaneously prove:
+Successive exact cylinders satisfy
 
-- eventual stabilization of the exact starting residue tower to one explicit positive integer; and
-- an exact growth theorem, for example unbounded `3^m/2^A_m` along the same realized valuation language.
+R_{m+1}=R_m+d_m2^{A_m+1},
+
+with one exact anchor digit
+
+0<=d_m<2^{a_{m+1}}.
+
+T2 proved that one ordinary nonnegative anchor is equivalent to bounded canonical representatives, eventual stabilization, eventual d_m=0, and the cross-normalized limit R_{m+1}/2^{A_m+1}->0. For bounded valuation alphabets it is also equivalent to R_m/2^{A_m+1}->0.
+
+T2 additionally completed the boundedness/periodicity equivalence for positive Collatz orbits: a positive orbit is bounded if and only if its shortened source-parity sequence is eventually periodic. Consequently, an explicit positive integer realizing a provably aperiodic parity/valuation language is automatically an unbounded orbit and cannot reach 1. A separate quantitative 3^m/2^{A_m} growth theorem remains sufficient but is no longer logically necessary once exact anchoring and aperiodicity are established.
+
+The focused literature audit also identified a strong existing route kill: Wang's peer-reviewed 2019 E-sequence theorem proves that every irrational mechanical valuation word a_n=floor(n theta)-floor((n-1)theta) fails to be the E-sequence of an odd positive integer. This includes growth-favorable choices 1<theta<log_2 3, demonstrating concretely that exact symbolic growth can coexist with complete failure of the ordinary-integer anchor.
+
+No general theorem was found excluding all aperiodic primitive substitutions or morphic valuation words.
+
+**Next theory substage: CDM4-T3.** Audit anchor-carry extinction for finite-alphabet recursive languages, beginning with primitive substitutions and morphic words. The theorem target is to classify when d_m is eventually zero, or equivalently when R_m is bounded and stabilizes to one explicit positive integer.
+
+Any load-bearing use of the López-Stoll 2021 parity-density result must first be independently verified because that source is a preprint.
 
 No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
 
@@ -203,10 +219,18 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T2 — aperiodic integer-anchor / nested-cylinder theorem audit.**
+**CDM4-T3 — anchor-carry extinction / recursive-language realizability audit.**
 
-Start from the T1 theorem package rather than from finite trajectory anomalies. Investigate whether a finitely generated aperiodic parity/valuation language can be proved to have an exact ordinary-positive-integer anchor while also forcing unbounded accumulated growth.
+Start from the T2 exact-cylinder state rather than from finite trajectory anomalies:
 
-The central obligation is simultaneous: the exact starting residue tower must eventually stabilize to one explicit positive integer, and the same infinite language must force an unbounded growth factor. A profinite symbolic point without an ordinary integer anchor is insufficient; an anchored language without growth is also insufficient.
+A_m, C_m, R_m, Y_m, d_m.
+
+Primary target:
+
+> For a non-eventually-periodic finite-alphabet recursive valuation/parity language, prove or rule out eventual zero anchor carry d_m=0; equivalently prove or rule out bounded/stabilizing exact canonical start representatives R_m.
+
+Prioritize primitive substitutions, morphic words, automatic subcases, return-word recurrences and exact carry/transducer structure. Use the bounded-alphabet equivalence R_m/2^{A_m+1}->0 where useful.
+
+Do not treat finite residue decay, finite drift, or a finite run of zero carries as evidence of an anchor. Do not enumerate or optimize finite words.
 
 Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, finite exponent-code/ranking campaigns, and longer candidate trajectories remain unauthorized.
