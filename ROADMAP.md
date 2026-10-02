@@ -88,7 +88,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: CDM3-P2 PREFLIGHT COMPLETE — ALL FROZEN GATES PASS; EXACT 60,000,000-START CPU CAMPAIGN AUTHORIZED / NOT YET EXECUTED.**
+**Status: CDM3-P2 COMPLETE — P2-ORDINARY-NULL; EXACT 60,000,000-START POPULATION EXHAUSTED; STOP AND AUDIT.**
 
 CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
@@ -109,7 +109,9 @@ CDM3-P1 completed the full frozen 30,000,000-start population after all prefligh
 
 CDM3-B1 then isolated and removed that engineering regression. Native compilation materially improved the unchanged P1 path, and moving the recovery copy off the ordinary U-step restored R3-class throughput while preserving exact escape/replay semantics. The optimized path reached 102.35%, 101.39% and 99.70% of the local R3 U-step rate at 256, 512 and 1024 bits. B1 closed B1-A.
 
-CDM3-P2 integration then created the separate `CDM3-P2-v1` engine while preserving the exact `CDM3-P1-gen-v1` generator semantics. Workflow run `36982432002` / job `110759729097` passed fixed-limb/GMP, optimized overflow preservation, odd-only/shortened equivalence, Python replay, ASan/UBSan, work-unit replay, checkpoint/restart, thread-determinism, counter non-overlap, budget-guard and same-host B1/P2 throughput gates. No frozen P2 scientific start was executed by preflight. The next authorized action is the exact 60,000,000-start CPU campaign only.
+CDM3-P2 integration then created the separate `CDM3-P2-v1` engine while preserving the exact `CDM3-P1-gen-v1` generator semantics. Workflow run `36982432002` / job `110759729097` passed fixed-limb/GMP, optimized overflow preservation, odd-only/shortened equivalence, Python replay, ASan/UBSan, work-unit replay, checkpoint/restart, thread-determinism, counter non-overlap, budget-guard and same-host B1/P2 throughput gates.
+
+The exact frozen P2 campaign was then exhausted in workflow run `36984984470`. Exactly 60,000,000 starts were generated; 13,330,798 Arm-L starts were exactly pruned; 46,669,202 exact trajectories were executed and every one reached `n<2^71`. No exceptional freeze, repeated state, bigint escape, invariant failure, or resource stop occurred. No candidate entered structural/certification analysis and no counterexample was found or claimed.
 
 ### CDM3-P1 closeout
 
@@ -127,6 +129,20 @@ Engineering note: `docs/CDM3_B1_ENGINEERING.md`.
 **FINITE-VERIFIED engineering result:** every correctness gate passed. The final optimized exact production candidate reached 67.478M, 66.241M and 51.339M U-steps/s at 256, 512 and 1024 bits, recovering 102.35%, 101.39% and 99.70% of the side-by-side R3 reference. The P1 full-state-copy hypothesis and missing-`-march=native` hypothesis were both confirmed material.
 
 **Decision:** freeze CDM3-P2 as the smallest justified scientific scale-up: exactly 60,000,000 generated CPU starts, double P1, with the same three bands and dual arms. P2 execution is conditional on dedicated production integration and complete preflight. GPU work remains unauthorized.
+
+### CDM3-P2 closeout
+
+Authoritative report: `experiments/CDM3_P2_REPORT.md`.  
+Machine-readable result: `experiments/CDM3_P2_RESULT.json`.  
+Work-unit provenance: `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`.
+
+**COMPUTATIONAL-EVIDENCE:** the full 60,000,000-start frozen population completed. Arm L pruned 13,330,798 starts before trajectory execution; 46,669,202 exact trajectories executed and all reached the Tier-2 basin. The campaign performed 59,293,075,669 exact U-steps and 118,586,359,433 shortened-step equivalents.
+
+The deterministic survivor-cost tail remained close to P1 at every band/arm cell. Global P2 maxima were 3,357 U-steps, 6,273 shortened steps, 1,053 peak bits and +29 peak bits. These finite maxima did not approach the exceptional thresholds.
+
+All frozen resource ceilings were respected: 437.37 seconds active scientific wall, 1,081.48 process CPU-seconds, at most six concurrent worker threads, and no GPU execution.
+
+**Decision:** P2 does not authorize P3, more CPU sampling, GPU benchmarking, a new distribution, or a new ranker. The next stage is a no-new-start post-campaign audit of scientific information gain and next-direction justification.
 
 ## CDM4 — STRUCTURAL EXTRACTION
 
@@ -154,6 +170,8 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-Implement the separately versioned CDM3-P2 production engine using the B1 rare-path-copy kernel and native compilation. Prove counter non-overlap, pass every frozen preflight gate, then execute only the 60,000,000-start P2 CPU campaign if all gates pass.
+**CDM3-P2A — post-campaign audit and next-step decision.**
 
-Do not enlarge P2 after observing results. Do not begin GPU/cloud/volunteer scaling. A null P2 result does not authorize P3 by itself.
+Use the completed P1/P2 results to audit survivor-tail stability, Arm-L pruning economics, finite-maxima/sample-size effects, and whether the current sampling architecture has produced any scientifically useful signal beyond efficient ordinary resolution.
+
+Execute no new scientific starts. Do not begin P3, GPU/cloud/volunteer scaling, a new distribution, or a new ranking-metric campaign. Any later compute proposal must be separately justified, frozen, and left unexecuted until explicitly authorized.
