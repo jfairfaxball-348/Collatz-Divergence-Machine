@@ -3,7 +3,7 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM3-B1 complete — B1-A throughput regression resolved; bounded CDM3-P2 CPU campaign frozen, execution conditional on P2 production integration/preflight**
+- Project stage: **CDM3-P2 integration/preflight complete — all frozen preflight gates pass; the exact 60,000,000-start CPU campaign is authorized but not yet executed**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
 - Current authoritative theory report: `experiments/CDM2_R2_REPORT.md`
@@ -11,6 +11,9 @@
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
 - Current CDM3-B1 machine-readable result: `experiments/CDM3_B1_RESULT.json`
 - Current CDM3-B1 implementation note: `docs/CDM3_B1_ENGINEERING.md`
+- Current CDM3-P2 preflight report: `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
+- Current CDM3-P2 preflight result: `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
+- Current CDM3-P2 integration closeout: `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
 - Current R3 architecture specification: `docs/CDM2_R3_ARCHITECTURE.md`
 - Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`
 - Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
@@ -23,10 +26,10 @@
 - Current computational-reach frontier: **P1 exhausted 30,000,000 frozen 256/512/1024-bit sparse starts; B1 recovered production hot-path parity with local R3 at 67.48M / 66.24M / 51.34M U-steps/s on its benchmark host**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **CDM3-B1 COMPLETE AS B1-A; the bounded CDM3-P2 CPU campaign is the only authorized larger scientific path and remains gated on committed P2 integration/preflight**
-- Immediate next task: **CDM3-P2 — build a separately versioned production engine using the B1 rare-path-copy kernel and native compilation, prove counter non-overlap, pass every frozen preflight gate, then execute only the frozen 60,000,000-start CPU campaign if all gates pass**
-- Forbidden next action: enlarging CDM3-P2 beyond its frozen 60,000,000 starts, GPU production/benchmark work, skipping P2 preflight, reusing P1 counters, or treating finite survival as proof
-- Explicitly permitted next action: implement and validate the dedicated P2 engine; after every preflight gate passes, execute only the frozen CDM3-P2 CPU envelope in `docs/COMPUTE_BUDGET.md`
+- CDM3: **CDM3-P2 PREFLIGHT PASSED; the bounded 60,000,000-start CPU campaign is the only authorized larger scientific path and is ready for execution**
+- Immediate next task: **CDM3-P2 — execute and close out only the frozen 60,000,000-start CPU campaign using the preflight-passed `CDM3-P2-v1` engine and the six frozen counter intervals**
+- Forbidden next action: enlarging CDM3-P2 beyond its frozen 60,000,000 starts, GPU production/benchmark work, changing the frozen P2 counters/generator, or treating finite survival as proof
+- Explicitly permitted next action: execute only the frozen CDM3-P2 CPU envelope in `docs/COMPUTE_BUDGET.md`, preserving checkpoints, work-unit digests, resource accounting, and exceptional-candidate freeze/replay semantics
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -55,6 +58,9 @@ The repository, not conversational memory, is the authoritative research state.
 21. `experiments/CDM3_B1_REPORT.md`
 22. `experiments/CDM3_B1_RESULT.json`
 23. `docs/CDM3_B1_ENGINEERING.md`
+24. `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
+25. `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
+26. `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -158,6 +164,8 @@ CDM3-B1 is complete as **B1-A — THROUGHPUT REGRESSION RESOLVED**.
 The final exact optimized path recovered 102.35%, 101.39% and 99.70% of the side-by-side R3 U-step rate at 256, 512 and 1024 bits. Every correctness gate passed. Native compilation and unconditional recovery-copy placement were both confirmed material causes.
 
 The next scientific action is frozen in `docs/COMPUTE_BUDGET.md` as CDM3-P2: exactly 60,000,000 generated starts, double P1, with no GPU execution.
+
+On 2026-10-02 the dedicated `CDM3-P2-v1` integration passed every frozen preflight gate in workflow run `36982432002` / job `110759729097`. The exact P1 generator semantics remain `CDM3-P1-gen-v1`; the P2 counter audit proves all six frozen intervals are disjoint from P1 and each other. No P2 scientific start was executed by preflight. The immediate next action is now the exact frozen 60,000,000-start CPU campaign.
 
 ## Authoritative next-session prompt
 

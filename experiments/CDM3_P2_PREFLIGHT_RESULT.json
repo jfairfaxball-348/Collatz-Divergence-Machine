@@ -1,0 +1,83 @@
+{
+  "schema": "CDM3-P2-preflight-result-v1",
+  "date": "2026-10-02",
+  "status": "FINITE-VERIFIED",
+  "all_gates_passed": true,
+  "scientific_population_executed": 0,
+  "counterexample_claimed": false,
+  "workflow": {
+    "run_id": 36982432002,
+    "job_id": 110759729097,
+    "head_sha": "f9045276b6680489a4b247681944cfdb68b51512",
+    "artifact_id": 11215666957,
+    "artifact_digest": "sha256:09dd90989a0eb1e8a6994b03134c57ed89eb4d431ae16a8dff046c477982e356"
+  },
+  "host": {
+    "architecture": "x86_64",
+    "cpu_model": "AMD EPYC 9V74 80-Core Processor",
+    "logical_cpus": 4,
+    "compiler": "gcc 13.3.0",
+    "gmp": "6.3.0"
+  },
+  "correctness": {
+    "fixed_vs_gmp_cases": 49152,
+    "optimized_vs_gmp_cases": 49152,
+    "odd_short_equivalence_cases": 384,
+    "forced_escape_replay_bits": 4097,
+    "forced_escape_state_preserved": true,
+    "workunit_replay_digest": "8cd1672982f5ff19",
+    "checkpoint_restart_digest": "5744783f209cd4e5",
+    "multithread_digest": "609049e609d80bc8",
+    "python_replay_cases": 30,
+    "python_replay_failures": 0,
+    "asan_ubsan_passed": true
+  },
+  "counters": {
+    "pass": true,
+    "max_p1_end": 35000015,
+    "min_p2_start": 100000000,
+    "gap": 64999985
+  },
+  "integration_timing": {
+    "pass": true,
+    "threshold": 0.9,
+    "exact_output_equality": true,
+    "median_u_steps_per_s": {
+      "256": {
+        "b1_opt": 82158657.142587,
+        "p2": 80747952.195856,
+        "ratio": 0.982829503356138
+      },
+      "512": {
+        "b1_opt": 78136918.533178,
+        "p2": 77690330.057431,
+        "ratio": 0.9942845394452383
+      },
+      "1024": {
+        "b1_opt": 62274426.975711,
+        "p2": 62330891.473694,
+        "ratio": 1.0009067044166462
+      }
+    }
+  },
+  "executable_limits": {
+    "max_threads": 8,
+    "group_cpu_seconds": 590,
+    "six_group_cpu_cap_seconds": 3540,
+    "wall_seconds": 890,
+    "fast_path_bits": 4096,
+    "u_step_freeze": 32768,
+    "peak_excess_bits": 512,
+    "result_storage_mib": 290,
+    "generated_total_ceiling": 60000000
+  },
+  "source_hashes": {
+    "engine": "4127892ccaa8c283f70b63f8452e1b93f9554e8931273a467b8cd548f0fdc9ab",
+    "part0": "a962e55c59268753028a291a2dc286d84348cfe2743b6da78b7a077bf1ed0702",
+    "part1": "6d95945d057cbd603a839edc915a0cd29d3bb2ea67b29b9ef89bb833fe06865e",
+    "part2": "d722cc1c1ea0e183fd1a333c9099a15119ce1cb46ff8bf480a93a84ba707dc13",
+    "part3": "6b3c3438bd1de2ff0f2638085c86610810892fa3db116856414d5ab4ae3fc20c",
+    "executable": "0f2fa3bf341ed83d13c45aa976dd19664906375c064c15ba95a4709341e8af33"
+  },
+  "decision": "P2_SCIENTIFIC_EXECUTION_AUTHORIZED_AFTER_INTEGRATION_MERGE_ONLY"
+}

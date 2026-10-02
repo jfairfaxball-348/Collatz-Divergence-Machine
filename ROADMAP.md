@@ -88,7 +88,7 @@ Fixed-limb odd-only execution was about 1.8–2.2x faster than scalar shortened 
 
 ## CDM3 — CONTROLLED HIGH-MAGNITUDE EXPLICIT SEARCH
 
-**Status: CDM3-B1 COMPLETE — B1-A THROUGHPUT REGRESSION RESOLVED; CDM3-P2 BOUNDED CPU CAMPAIGN FROZEN / EXECUTION CONDITIONAL ON PREFLIGHT.**
+**Status: CDM3-P2 PREFLIGHT COMPLETE — ALL FROZEN GATES PASS; EXACT 60,000,000-START CPU CAMPAIGN AUTHORIZED / NOT YET EXECUTED.**
 
 CDM3-P1 is the bounded dual-arm sparse pilot specified by R3:
 
@@ -108,6 +108,8 @@ A pilot survivor remains finite evidence only. Any exceptional object is frozen,
 CDM3-P1 completed the full frozen 30,000,000-start population after all preflight gates passed. All 23,334,780 executed trajectories reached the Tier-2 basin; no exceptional candidate froze and no counterexample was found or claimed. The survivor-cost tail remained manageable, but production hot-path throughput was materially below the R3 benchmark economics. CDM3-P1 therefore closed P1-B.
 
 CDM3-B1 then isolated and removed that engineering regression. Native compilation materially improved the unchanged P1 path, and moving the recovery copy off the ordinary U-step restored R3-class throughput while preserving exact escape/replay semantics. The optimized path reached 102.35%, 101.39% and 99.70% of the local R3 U-step rate at 256, 512 and 1024 bits. B1 closed B1-A.
+
+CDM3-P2 integration then created the separate `CDM3-P2-v1` engine while preserving the exact `CDM3-P1-gen-v1` generator semantics. Workflow run `36982432002` / job `110759729097` passed fixed-limb/GMP, optimized overflow preservation, odd-only/shortened equivalence, Python replay, ASan/UBSan, work-unit replay, checkpoint/restart, thread-determinism, counter non-overlap, budget-guard and same-host B1/P2 throughput gates. No frozen P2 scientific start was executed by preflight. The next authorized action is the exact 60,000,000-start CPU campaign only.
 
 ### CDM3-P1 closeout
 
