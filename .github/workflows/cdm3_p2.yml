@@ -1,0 +1,260 @@
+name: CDM3-P2 frozen CPU campaign
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "production/cdm3_p2_*"
+      - "tools/cdm3_p2_*"
+      - "benchmarks/cdm3_p2_*"
+      - "tests/cdm3_p2_*"
+      - ".github/workflows/cdm3_p2.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build release, reference, and sanitizer binaries
+        run: |
+          set -euxo pipefail
+          mkdir -p preflight
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread production/cdm3_p2_engine.c -lgmp -o cdm3_p2_native
+          gcc -O1 -g -std=c11 -Wall -Wextra -Werror -pthread -fsanitize=address,undefined -fno-omit-frame-pointer production/cdm3_p2_engine.c -lgmp -o cdm3_p2_san
+          gcc -O2 -std=c11 -Wall -Wextra -Werror -pthread tests/cdm3_p2_opt_escape.c -lgmp -o cdm3_p2_escape_test
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_p2_integration_bench.c -lgmp -o cdm3_p2_integration
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread benchmarks/cdm3_b1_hotpath_bench.c -lgmp -o cdm3_b1_native
+
+      - name: Verify historical P1 source is unchanged
+        run: |
+          set -euxo pipefail
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          r=json.loads(Path("experiments/CDM3_B1_RESULT.json").read_text())["provenance"]
+          files={
+            "p1_engine_sha256":"production/cdm3_p1_engine.c",
+            "p1_part0_sha256":"production/cdm3_p1_part0.inc",
+            "p1_part1_sha256":"production/cdm3_p1_part1.inc",
+            "p1_part2_sha256":"production/cdm3_p1_part2.inc",
+            "p1_part3_sha256":"production/cdm3_p1_part3.inc",
+          }
+          got={k:hashlib.sha256(Path(p).read_bytes()).hexdigest() for k,p in files.items()}
+          checks={k:(got[k]==r[k]) for k in files}
+          out={"schema":"CDM3-P2-p1-immutability-v1","pass":all(checks.values()),"checks":checks,"current":got,"b1_recorded":{k:r[k] for k in files}}
+          Path("preflight/p1_unchanged.json").write_text(json.dumps(out,indent=2,sort_keys=True)+"\n")
+          print(json.dumps(out,sort_keys=True))
+          if not out["pass"]: raise SystemExit(2)
+          PY
+
+      - name: Counter non-overlap proof
+        run: |
+          set -euxo pipefail
+          python3 tools/cdm3_p2_counter_audit.py experiments/CDM3_P1_WORK_UNIT_DIGESTS.json preflight/counter_audit.json
+
+      - name: Release correctness gates
+        run: |
+          set -euxo pipefail
+          ./cdm3_p2_native --selftest /tmp/cdm3p2_release.chk 2>&1 | tee preflight/release_selftest.log
+          ./cdm3_p2_escape_test 2>&1 | tee preflight/escape_test.log
+          python3 tools/cdm3_p2_replay.py --selftest --engine ./cdm3_p2_native --steps 256 | tee preflight/python_replay.json
+
+      - name: ASan and UBSan gates
+        run: |
+          set -euxo pipefail
+          ASAN_OPTIONS=detect_leaks=1 UBSAN_OPTIONS=halt_on_error=1 ./cdm3_p2_san --selftest /tmp/cdm3p2_san.chk 2>&1 | tee preflight/sanitizer_selftest.log
+
+      - name: Production throughput integration gate
+        run: |
+          set -euxo pipefail
+          ./cdm3_b1_native --bench opt 4096 5 > preflight/b1_opt.jsonl
+          ./cdm3_p2_integration 4096 5 > preflight/p2_integration.jsonl
+          python3 tools/cdm3_p2_integration_check.py preflight/b1_opt.jsonl preflight/p2_integration.jsonl preflight/integration_check.json
+
+      - name: Provenance and preflight record
+        run: |
+          set -euxo pipefail
+          ./cdm3_p2_native --provenance > preflight/engine_provenance.json
+          uname -a > preflight/uname.txt
+          lscpu > preflight/lscpu.txt
+          gcc --version > preflight/gcc.txt
+          sha256sum \
+            production/cdm3_p2_engine.c production/cdm3_p2_part0.inc production/cdm3_p2_part1.inc production/cdm3_p2_part2.inc production/cdm3_p2_part3.inc \
+            tools/cdm3_p2_replay.py tools/cdm3_p2_counter_audit.py tools/cdm3_p2_integration_check.py tools/cdm3_p2_aggregate.py \
+            benchmarks/cdm3_p2_integration_bench.c tests/cdm3_p2_opt_escape.c \
+            cdm3_p2_native cdm3_p2_san cdm3_p2_escape_test cdm3_p2_integration cdm3_b1_native > preflight/sha256.txt
+          python3 - <<'PY'
+          import hashlib,json,os,platform
+          from pathlib import Path
+          def h(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          files=["production/cdm3_p2_engine.c","production/cdm3_p2_part0.inc","production/cdm3_p2_part1.inc","production/cdm3_p2_part2.inc","production/cdm3_p2_part3.inc"]
+          bundle=hashlib.sha256(b"".join(Path(p).read_bytes() for p in files)).hexdigest()
+          integ=json.loads(Path("preflight/integration_check.json").read_text())
+          counters=json.loads(Path("preflight/counter_audit.json").read_text())
+          p1=json.loads(Path("preflight/p1_unchanged.json").read_text())
+          replay=json.loads(Path("preflight/python_replay.json").read_text())
+          engine=json.loads(Path("preflight/engine_provenance.json").read_text())
+          cpu="unknown"
+          for line in Path("/proc/cpuinfo").read_text().splitlines():
+              if line.lower().startswith("model name"): cpu=line.split(":",1)[1].strip(); break
+          result={
+            "schema":"CDM3-P2-preflight-result-v1","claim_status":"FINITE-VERIFIED implementation validation",
+            "all_gates_passed":bool(integ["pass"] and counters["pass"] and p1["pass"] and replay["pass"]),
+            "repository_commit":os.environ.get("GITHUB_SHA",""),"source_bundle_sha256":bundle,
+            "release_executable_sha256":h("cdm3_p2_native"),"sanitizer_executable_sha256":h("cdm3_p2_san"),
+            "build":{"flags":"-O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread","compiler":engine["compiler"],"gmp":engine["gmp"],"platform":platform.platform(),"cpu_model":cpu},
+            "generator_version":engine["generator_version"],"engine_version":engine["version"],
+            "gates":{
+              "p1_historical_source_unchanged":p1["pass"],"counter_non_overlap":counters["pass"],
+              "fixed_limb_vs_gmp":"PASS via release selftest","optimized_path_vs_gmp":"PASS via release selftest",
+              "forced_4096_escape_preservation":"PASS via release selftest + dedicated escape test",
+              "odd_only_shortened_equivalence":"PASS via release selftest","python_replay":replay["pass"],
+              "asan_ubsan":"PASS","work_unit_replay":"PASS via release selftest","checkpoint_restart":"PASS via release selftest",
+              "thread_determinism":"PASS via release selftest","provenance":"PASS","executable_budget_guards":"PASS via release selftest",
+              "production_throughput_integration":integ["pass"]
+            },
+            "integration_check":integ,"counter_audit_summary":{"max_p1_end":counters["global_separation"]["max_p1_end"],"min_p2_start":counters["global_separation"]["min_p2_start"],"gap":counters["global_separation"]["gap"]}
+          }
+          Path("preflight/CDM3_P2_PREFLIGHT_RESULT.json").write_text(json.dumps(result,indent=2,sort_keys=True)+"\n")
+          print(json.dumps(result,sort_keys=True))
+          if not result["all_gates_passed"]: raise SystemExit(2)
+          PY
+
+      - name: Upload P2 preflight
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-p2-preflight
+          path: preflight/
+          if-no-files-found: error
+
+  scientific:
+    needs: preflight
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        include:
+          - { bits: 256, arm: U }
+          - { bits: 256, arm: L }
+          - { bits: 512, arm: U }
+          - { bits: 512, arm: L }
+          - { bits: 1024, arm: U }
+          - { bits: 1024, arm: L }
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build host-native P2 production engine
+        run: |
+          set -euxo pipefail
+          mkdir -p out
+          gcc -O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread production/cdm3_p2_engine.c -lgmp -o cdm3_p2_native
+          cat production/cdm3_p2_engine.c production/cdm3_p2_part0.inc production/cdm3_p2_part1.inc production/cdm3_p2_part2.inc production/cdm3_p2_part3.inc | sha256sum | awk '{print $1}' > out/source_bundle_sha256.txt
+          sha256sum cdm3_p2_native | awk '{print $1}' > out/executable_sha256.txt
+          python3 - <<'PY'
+          import json,os,platform,subprocess
+          from pathlib import Path
+          cpu="unknown"
+          for line in Path("/proc/cpuinfo").read_text().splitlines():
+              if line.lower().startswith("model name"): cpu=line.split(":",1)[1].strip();break
+          engine=json.loads(subprocess.check_output(["./cdm3_p2_native","--provenance"],text=True))
+          out={"repository_commit":os.environ["GITHUB_SHA"],"bits":int(os.environ["BITS"]),"arm":os.environ["ARM"],"build_flags":"-O3 -march=native -std=c11 -Wall -Wextra -Werror -pthread","compiler":engine["compiler"],"gmp":engine["gmp"],"cpu_model":cpu,"platform":platform.platform(),"source_bundle_sha256":Path("out/source_bundle_sha256.txt").read_text().strip(),"executable_sha256":Path("out/executable_sha256.txt").read_text().strip()}
+          Path("out/provenance.json").write_text(json.dumps(out,indent=2,sort_keys=True)+"\n")
+          PY
+        env:
+          BITS: ${{ matrix.bits }}
+          ARM: ${{ matrix.arm }}
+
+      - name: Execute one frozen scientific group
+        run: |
+          set -uo pipefail
+          ulimit -v 1048576
+          SOURCE_SHA="$(cat out/source_bundle_sha256.txt)"
+          EXE_SHA="$(cat out/executable_sha256.txt)"
+          set +e
+          /usr/bin/time -v -o out/time.txt timeout 895s ./cdm3_p2_native --group \
+            "${{ matrix.bits }}" "${{ matrix.arm }}" 1 \
+            out/checkpoint.chk 0 out/group.json \
+            "$GITHUB_SHA" "$SOURCE_SHA" "$EXE_SHA"
+          rc=$?
+          set -e
+          echo "$rc" > out/exit_code.txt
+          if [ -f out/checkpoint.chk ]; then
+            ./cdm3_p2_native --dump-checkpoint out/checkpoint.chk > out/checkpoint.json
+            sha256sum out/checkpoint.chk > out/checkpoint.sha256
+          fi
+          bytes="$(du -sb out | cut -f1)"
+          echo "$bytes" > out/storage_bytes.txt
+          if [ "$bytes" -gt $((50*1024*1024)) ]; then
+            echo "Per-group storage guard exceeded" >&2
+            echo 25 > out/exit_code.txt
+          fi
+          cat out/group.json || true
+          cat out/time.txt || true
+          exit 0
+
+      - name: Upload frozen group records
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-p2-group-${{ matrix.bits }}-${{ matrix.arm }}
+          path: out/
+          if-no-files-found: error
+
+      - name: Enforce group outcome
+        if: always()
+        run: |
+          rc="$(cat out/exit_code.txt 2>/dev/null || echo 99)"
+          if [ "$rc" -ne 0 ]; then
+            echo "Frozen group stopped with code $rc" >&2
+            exit "$rc"
+          fi
+
+  aggregate:
+    needs: [preflight, scientific]
+    if: always() && needs.preflight.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download scientific records
+        uses: actions/download-artifact@v4
+        with:
+          pattern: cdm3-p2-group-*
+          path: campaign_artifacts
+      - name: Aggregate exact campaign result
+        run: |
+          set +e
+          python3 tools/cdm3_p2_aggregate.py \
+            --root campaign_artifacts \
+            --out CDM3_P2_RESULT.json \
+            --manifest CDM3_P2_WORK_UNIT_DIGESTS.json | tee aggregate_summary.txt
+          rc=${PIPESTATUS[0]}
+          set -e
+          echo "$rc" > aggregate_exit_code.txt
+          cat CDM3_P2_RESULT.json || true
+          exit 0
+      - name: Upload authoritative raw result bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdm3-p2-campaign-result
+          path: |
+            CDM3_P2_RESULT.json
+            CDM3_P2_WORK_UNIT_DIGESTS.json
+            aggregate_summary.txt
+            aggregate_exit_code.txt
+            campaign_artifacts/
+          if-no-files-found: error
+      - name: Enforce aggregate resource/integrity gates
+        if: always()
+        run: |
+          rc="$(cat aggregate_exit_code.txt 2>/dev/null || echo 99)"
+          exit "$rc"
