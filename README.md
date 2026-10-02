@@ -37,22 +37,34 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T6 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T7 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-T6 sharpened the balanced one-variable Mahler route into a genuine 2-adic obstruction for an infinite exact recursive class. The peer-reviewed Bugeaud-Yao first-order p-adic Mahler theorem has an explicit extension from \(p^w\) to rational \(p\)-adic-unit multiples \(r p^w/s\), so the Collatz point \(W=2^B/3^k\) is admissible when the exact Mahler equation has their required first-order form and its orbit avoids singularities.
+T7 audited the higher-rank balanced automatic Mahler system at the exact 2-adic Collatz point
 
-For non-eventually-periodic balanced complementary binary \(k\)-uniform substitutions with even \(k\), equal half-zero/half-one image counts, and valuation coding \(0\mapsto1,\ 1\mapsto2\), T6 derives an exact two-state automatic-kernel system and a scalar first-order equation. At
+[
+W=2^B/3^k.
+]
 
-\[
-W=2^{3k/2}/3^k=(8/9)^{k/2},
-\]
+For a true (m)-state (k)-kernel, the exact system is
 
-all singularity hypotheses are proved exactly. The integer-scaled exact inverse-Collatz value is therefore p-adically transcendental. Hence no nonperiodic word in this class has a rational or positive-integer anchor, and combining with T2 shows that bounded canonical representatives \(R_m\) force eventual periodicity for this class.
+[
+\mathbf G(z)=M(z)\mathbf G(z^k),
+]
 
-T6 also proves that naive finite scaled-unit Mahler closure occurs exactly for torsion units, so the non-torsion unit \(3^{-k}\) still cannot be absorbed that way. Separately, a generic finite-valued positive automatic power series can have a rational value at one algebraic p-adic point while remaining nonrational; automaticity alone is therefore insufficient.
+with (M(z)in M_m(\mathbb Z[z])). T7 proves that every rational linear Collatz output satisfies a scalar Mahler equation of order at most (m). This is a structural reduction only: order (>1) is not covered by the first-order Bugeaud–Yao theorem used in T6, and scalar elimination can introduce additional singularities.
 
-The generic higher-rank balanced automatic kernel class remains open and still contains a restricted Lagarias Periodicity-Conjecture problem. Cobham remains unavailable and López-Stoll remains non-load-bearing. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
+T7 also isolates a natural genuine higher-rank class with exact finite Fourier diagonalization. For balanced finite abelian translation substitutions, the character components satisfy first-order equations
 
-The next authorized action is theory-only **CDM4-T7 — higher-rank p-adic S-unit Mahler-system audit**. Start from balanced exact \(k\)-kernel systems that do not reduce to the T6 first-order class and seek a verified p-adic higher-rank value theorem, a controlled scalar reduction, or an exact obstruction. No substitution enumeration, new starts, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, or distributed work is authorized.
+[
+\widehat F_\chi(z)=S_\chi(z)\widehat F_\chi(z^k).
+]
 
-Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and [the T6 report](experiments/CDM4_T6_REPORT.md) before doing research.
+The trivial character is rational. The T6 binary complementary case has only one nontrivial character and therefore reduces to a single first-order nonrational component. In higher rank, however, the exact Collatz output is generally a prescribed sum of several nontrivial character values at the same (W). Even separate transcendence of every component would not exclude rational cancellation.
+
+No peer-reviewed p-adic theorem was verified whose checked hypotheses supply the required same-point linear/algebraic independence for this exact system. Xu–Wang 2004 and Wang 2006 are directly relevant and are the next source-level targets, but T7 did not promote them because their full theorem hypotheses were not sufficiently exposed in the audited authoritative text. Regular-singular Mahler theory remains functional structure, not by itself a p-adic arithmetic-value theorem. Modern Adamczewski–Faverjon lifting/value results audited here remain archimedean for the values relevant to this project.
+
+No new higher-rank recursive class was ruled out, no new bounded-(R_m) periodicity theorem was obtained, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed. The generic balanced remainder still contains a restricted Lagarias Periodicity-Conjecture problem. Cobham remains unavailable and López–Stoll remains non-load-bearing.
+
+The next authorized action is theory-only **CDM4-T8 — p-adic same-point no-cancellation audit**. Begin with balanced finite abelian translation kernels, preferably elementary (2)-groups, and either verify a peer-reviewed p-adic theorem strong enough to forbid cancellation among the character values at (W), prove a Collatz-specific no-cancellation identity, or isolate the exact missing theorem. No substitution enumeration, new starts, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, or distributed work is authorized.
+
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T7 report](experiments/CDM4_T7_REPORT.md) before doing research.
