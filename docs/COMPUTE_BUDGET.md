@@ -330,7 +330,7 @@ The selected kernel uses the destructive fixed-limb `mul3add1` directly when the
 
 ## CDM3-P2 frozen bounded CPU campaign
 
-**Status:** AUTHORIZED DESIGN / EXECUTION CONDITIONAL. CDM3-B1 recovered production-credible CPU throughput. P2 may execute only after a dedicated P2 production engine is committed and passes the preflight below. CDM3-B1 itself did not execute P2.
+**Status:** PREFLIGHT PASSED / SCIENTIFIC EXECUTION AUTHORIZED. The dedicated `CDM3-P2-v1` engine passed every frozen P2 preflight gate on 2026-10-02 in workflow run `36982432002` / job `110759729097`. No frozen P2 scientific start was executed by preflight. The exact 60,000,000-start CPU campaign may now execute; no enlargement or GPU work is authorized.
 
 ### Purpose
 
@@ -409,6 +409,8 @@ Before any of the 60,000,000 scientific starts may execute:
 12. a small integration timing check showing the committed P2 engine has not reintroduced the B1 hot-path regression.
 
 If any gate fails, scientific execution is not authorized.
+
+**Observed 2026-10-02 preflight result: PASS.** Authoritative evidence: `experiments/CDM3_P2_PREFLIGHT_REPORT.md` and `experiments/CDM3_P2_PREFLIGHT_RESULT.json`. P1/P2 counter separation is 64,999,985 counters from the final P1 interval end to the first P2 interval. Same-host P2/B1 OPT median U-step throughput ratios were 98.283%, 99.428%, and 100.091% at 256, 512, and 1024 bits, with exact output equality.
 
 ### P2 resource ceilings
 
