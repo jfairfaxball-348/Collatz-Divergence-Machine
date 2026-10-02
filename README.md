@@ -37,10 +37,10 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T3 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T4 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-The sparse-search machine is parked after the ordinary-null CDM3-P2 campaign and P2A audit. T3 derived exact block carry and substitution recurrences, proved a return-prefix obstruction that excludes a substantial recursive subclass including the Thue-Morse valuation coding, and rejected promotion of an unverified parity-density shortcut. General automatic and primitive substitutive realization remain unresolved.
+The sparse-search machine is parked after the ordinary-null CDM3-P2 campaign and P2A audit. T4 re-derived the residual primitive constant-length carry system, proved the exact 3-adic endpoint-cylinder dual, and showed that endpoint/two-sided substitution-return divisibility reduces to the same asymptotic threshold already obtained in T3. The universal bounded-representative-implies-periodic theorem remains unresolved.
 
-No explicit positive divergent orbit was found and no counterexample was claimed. The next authorized action is theory-only CDM4-T4 on residual primitive constant-length substitution carry rigidity; no new starts, generator/distribution, or GPU work.
+No explicit anchored aperiodic word, positive divergent orbit, or counterexample was found. The next authorized action is theory-only CDM4-T5 on automatic inverse-Collatz rationality/Mahler rigidity; no new starts, generator/distribution, or GPU work.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T3 report](experiments/CDM4_T3_REPORT.md) before doing research.
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and [the T4 report](experiments/CDM4_T4_REPORT.md) before doing research.
