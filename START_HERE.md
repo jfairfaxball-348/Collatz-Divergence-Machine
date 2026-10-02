@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T4 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T5 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T4_REPORT.md`
+- Current authoritative theory report: `experiments/CDM4_T5_REPORT.md`
 - Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
 - Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
 - Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
@@ -25,14 +25,14 @@
 - Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
 - Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
 - Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 exact block carry/affine cocycle, substitution recurrences, return-prefix/height obstruction, Thue-Morse exclusion, and critical bounded-discrepancy exclusion; T4 re-derived the residual constant-length state, proved the exact 3-adic endpoint-cylinder dual, and showed that endpoint/two-sided return divisibility does not improve T3's asymptotic return threshold; no general automatic/Mahler anchoring theorem
+- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact 2-adic inverse-conjugacy series plus a finite multivariate substitution/Mahler-type representation, and a one-variable Mahler reduction for equal block valuation sums. No verified p-adic value theorem rules out rationality of the residual automatic inverse value.
 - Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T5 — automatic inverse-Collatz rationality audit, theory only: for non-eventually-periodic automatic {1,2}-valuation words with mean below log_2(3), determine whether verified Mahler/automatic-number or p-adic transcendence theorems can rule out an ordinary positive integer value of the exact inverse-Collatz series**
+- Immediate next task: **CDM4-T6 — completion-correct p-adic Mahler value theorem audit, theory only: begin with the balanced-block one-variable subclass H=-(1/3)G(2^B/3^k), and prove p-adic nonrationality under checked hypotheses or identify the exact missing arithmetic condition**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T5 theory/literature analysis only**, as specified in the T4 report; no new scientific starts are authorized
+- Explicitly permitted next action: **CDM4-T6 theory/literature analysis only**, as specified in the T5 report; no new scientific starts are authorized
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -78,6 +78,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 36. `experiments/CDM4_T3_SYMBOLIC_CHECK_RESULT.json`
 37. `experiments/CDM4_T3_INPUT_MANIFEST.json`
 38. `experiments/CDM4_T4_REPORT.md`
+39. `experiments/CDM4_T5_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -405,21 +406,49 @@ Finite kernels, finite return-word systems, and fixed-modulus endpoint synchroni
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No new scientific compute, generator/distribution, finite-code ranking, or GPU work is justified.
 
-## Authoritative next task — CDM4-T5
+## CDM4-T5 closeout — 2026-10-02
 
-**CDM4-T5 — AUTOMATIC INVERSE-COLLATZ RATIONALITY AUDIT.**
+Authoritative report: \`experiments/CDM4_T5_REPORT.md\`.
 
-For a non-eventually-periodic `k`-automatic valuation sequence `a_n in {1,2}` with mean `alpha<log_2 3`, study the exact inverse-Collatz value
+**Classification: D — NO QUALIFYING THEOREM FOUND.**
 
-`H = -sum_{j>=0} 2^{A_j}/3^{j+1}` in `Z_2`.
+T5 re-derived the exact finite inverse identity
 
-Single theorem target:
+\`N = -sum_(j=0)^(m-1) 2^(A_j)/3^(j+1) + (2^(A_m)/3^m)Y_m\`
 
-> Under explicitly verified hypotheses, prove that `H` cannot be an ordinary positive integer unless the valuation word is eventually periodic; or prove that the available automatic/Mahler/p-adic transcendence theorems do not imply this.
+and therefore the exact 2-adic inverse value
 
-Audit every bridge carefully. In particular, do not identify automaticity of the valuation word with automaticity of the binary expansion of the anchor; do not infer that a variable-length odd-gap coding remains automatic in the same base; do not treat the appearances of 2 and 3 as Cobham's two-base hypothesis; and do not use the López-Stoll 2021 density equality unless independently repaired.
+\`H = -sum_(j>=0) 2^(A_j)/3^(j+1)\`.
 
-The positive certification bridge remains one explicit aperiodic word with proved bounded exact representatives and an identified stabilized integer `N>1`.
+For a realized positive integer, the remainder tends to zero 2-adically and \`H=N\`. In the subcritical real regime \`alpha<log_2 3\`, the same rational partial sums instead converge to a negative real limit, so no real/2-adic rationality transfer is permitted.
+
+For a \`k\`-automatic \`{1,2}\` valuation word, \`A_n\` is \`k\`-regular but \`2^(A_n)\` is not: integral \`k\`-regular sequences have polynomial growth while \`2^(A_n)>=2^n\`. Thus the naive regular-coefficient Mahler route fails.
+
+T5 nevertheless obtained an exact finite multivariate monomial/Mahler-type recurrence for every uniform-substitution presentation, using prefix Parikh vectors. The inverse value is its 2-adic specialization at letter weights \`q_s=2^(v(s))/3\`. If every substituted block has the same total valuation \`B\`, this further reduces to a classical one-variable \`k\`-Mahler value at \`W=2^B/3^k\`.
+
+The literature audit found no verified theorem converting either representation into the required 2-adic nonrationality statement. General modern Mahler value theorems audited are complex; published p-adic automatic-number results require automatic canonical p-adic digits of the number being tested; and the closest published p-adic Mahler theorem found uses a pure \`p^w\` argument plus special functional-equation/Hankel hypotheses.
+
+Writing \`V=sum_(j>=0)2^(A_j)\` for the shortened parity point, the exact conjugacy gives \`H=Phi(V)\`. Therefore the full rationality bridge needed by T5 is a restricted instance of Lagarias' open 3x+1 Periodicity Conjecture. Automaticity of the valuation gaps does not automatically make the variable-length parity word automatic in the same base, and Cobham's two-base hypothesis is not present.
+
+No new automatic or primitive constant-length class was killed. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. López-Stoll remains non-load-bearing. No new compute, generator/distribution, finite-code ranking, or GPU work is justified.
+
+## Authoritative next task — CDM4-T6
+
+**CDM4-T6 — COMPLETION-CORRECT P-ADIC MAHLER VALUE AUDIT.**
+
+Begin with the balanced-block subclass isolated in T5. Let
+
+\`G(z)=sum_(n>=0) g_n z^n\`
+
+have the finite-valued non-eventually-periodic \`k\`-automatic coefficient sequence produced by a balanced \`k\`-uniform Collatz valuation substitution, and let
+
+\`W=2^B/3^k\`, with \`B<k log_2 3\`.
+
+Primary theorem target:
+
+> Prove, under fully checked hypotheses in the **2-adic completion**, that \`G(W)\` is nonrational; or prove that current p-adic Mahler theory does not cover this S-unit argument and identify the exact additional theorem required.
+
+If that subclass is resolved, extend to the generic multivariate T5 value \`S(q)\` under the monomial incidence transformation. Do not replace the 2-adic value by the complex value of the same formal series.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
