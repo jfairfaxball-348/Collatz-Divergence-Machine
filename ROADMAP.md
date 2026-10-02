@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T3 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+**Status: CDM4-T4 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T3_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T4_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -199,7 +199,11 @@ No general theorem was found excluding all aperiodic primitive substitutions or 
 
 The López-Stoll 2021 density equality did not survive independent proof validation for project use: its real-to-2-adic inference lacks the needed bridge. The claim is not disproved, and no global automatic/substitution exclusion is promoted. Bell's theorem gives a strict growth-gap requirement for hypothetical aperiodic automatic anchors, not their impossibility.
 
-**Next theory substage: CDM4-T4.** Address residual primitive constant-length substitutions coded into valuations `{1,2}`. Prove bounded exact representatives force eventual periodicity, in the cases outside T3's explicit exclusions. See T3 Section 13 for the single theorem obligation.
+**CDM4-T4 closeout.** The residual universal constant-length carry-rigidity theorem was not proved and no anchored aperiodic substitution was found. T4 proved the exact 3-adic endpoint-cylinder identity for repeated valuation blocks, but showed that on substitution-scale returns its height/divisibility exponent is the same threshold already obtained in T3. Two-sided start/end cylinder combinations conserve the same exponent budget and therefore do not supply a new residual class kill.
+
+For a hypothetical aperiodic primitive constant-length `{1,2}` anchor, the mean valuation is rational and necessarily lies strictly between `1` and `log_2 3`; exponential odd-orbit growth follows but is not a contradiction. Finite return-word systems and finite automatic kernels still leave an unbounded arithmetic register and growing moduli.
+
+**Next theory substage: CDM4-T5.** Audit automatic/Mahler and p-adic rationality/transcendence theorems against the exact inverse-Collatz series for a non-eventually-periodic automatic `{1,2}` valuation word. The target is to rule out an ordinary positive integer inverse-Collatz value under verified hypotheses, or to prove that the available theorem machinery does not supply that implication.
 
 No scientific starts, finite exponent-code ranker campaign, new generator/distribution, or GPU work are authorized.
 
@@ -225,18 +229,18 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T4 — residual uniform-substitution carry rigidity, theory only.**
+**CDM4-T5 — automatic inverse-Collatz rationality audit, theory only.**
 
-Start from the exact block and substitution recurrences in T3 equations (3)–(13), retaining the unbounded endpoint/carry state.
+Let `a_n in {1,2}` be a non-eventually-periodic `k`-automatic valuation sequence with mean `alpha<log_2 3`, put `A_j=sum_{i<=j}a_i`, and consider the exact 2-adic inverse-Collatz series
+
+`H=-sum_{j>=0}2^{A_j}/3^{j+1}`.
 
 Single theorem target:
 
-> For a growing primitive constant-length substitution with letter coding into valuations `{1,2}`, prove that bounded exact canonical representatives force eventual periodicity of the coded output. Address the residual aperiodic class with mean below `log_2 3` outside T3's proved exclusions.
+> Prove, under explicitly verified automatic/Mahler/p-adic hypotheses, that `H` cannot be an ordinary positive integer unless the valuation word is eventually periodic; or prove that the available theorems do not imply this.
 
-First verify the T3 argument and its Wang overlap. Then investigate arithmetic rigidity where the sufficient return-prefix inequality fails. Do not assume that every primitive word has the required early returns or that finite arithmetic dimension makes a finite-state orbit.
+Begin from T4's negative result: return-prefix, endpoint-cylinder, two-sided-cylinder, finite-kernel, and finite-return-alphabet arguments do not by themselves control the growing representative tower.
 
-The positive certification obligation remains bounded representatives for one explicit aperiodic word, identifying its stabilized `N>1`. No such candidate exists. The unvalidated López-Stoll equality cannot be a theorem premise.
+Audit Mahler functional equations, automatic/regular weighted sums, p-adic automatic-number transcendence, rationality criteria, Cobham hypotheses, and the exact relation between the valuation word, its variable-length shortened-parity coding, and the Collatz conjugacy. Do not identify the anchor's binary digits with its parity vector. Do not use the López-Stoll 2021 density equality unless its missing bridge is independently repaired.
 
-Do not treat finite residue decay, finite drift, or a finite run of zero carries as evidence of an anchor. Do not enumerate or optimize words or substitutions. Only tiny frozen exact identity checks may support the theory work.
-
-Execute no new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, a new generator/distribution, finite exponent-code/ranking campaigns, and longer candidate trajectories remain unauthorized.
+No substitution enumeration, finite residue/carry optimization, candidate trajectories, or new scientific starts. P3, further same-distribution CPU scaling, GPU/cloud/volunteer work, and new generators/distributions remain unauthorized.
