@@ -48,7 +48,7 @@ static int fixed_vs_gmp_transition_test(void){
 static int optimized_vs_gmp_transition_test(void){
     int bitsv[]={256,512,1024}; mpz_t z;mpz_init(z); uint64_t cases=0;
     for(int bi=0;bi<3;bi++)for(int ai=0;ai<2;ai++)for(uint64_t i=0;i<64;i++){
-        char arm=ai?'L':'U';bigfix a;make_start(&a,bitsv[bi],arm,100000000ULL+i);fix_to_mpz(&a,z);
+        char arm=ai?'L':'U';bigfix a;make_start(&a,bitsv[bi],arm,50000000ULL+i);fix_to_mpz(&a,z);
         for(int k=0;k<64;k++){
             if(!(a.w[0]&1ULL)){mpz_clear(z);return 0;} bigfix b=a; if(!mul3add1_preserve(&b)){mpz_clear(z);return 0;} unsigned v=ctz_big(&b);shr_bits(&b,v);
             mpz_mul_ui(z,z,3);mpz_add_ui(z,z,1);mp_bitcnt_t vg=mpz_scan1(z,0);mpz_tdiv_q_2exp(z,z,vg);bigfix g;if(v!=(unsigned)vg||!mpz_to_fix(z,&g)||!eq(&b,&g)){mpz_clear(z);return 0;}a=b;cases++;
