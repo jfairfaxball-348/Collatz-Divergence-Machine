@@ -876,31 +876,98 @@ The singular-incidence stable-image torus remains open because a Laurent monomia
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T19
+## CDM4-T19 closeout — 2026-10-03
 
-**CDM4-T19 — NONPRIMITIVE REAL-CONTRACTION / POSITIVE-ANCHOR COMPLETION AUDIT.**
+CDM4-T19 is complete. Authoritative report: experiments/CDM4_T19_REPORT.md.
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+
+T19 closes the nonprimitive ordinary-real completion gap for the exact T18 \(k\)-uniform framework.
+
+For the nonnegative incidence matrix,
+\[
+\mathbf1^TM=k\mathbf1^T.
+\]
+In Frobenius form, a strongly connected block has spectral radius \(k\) exactly when it is final. Every nonfinal block has spectral radius \(<k\). Hence no chain of \(k\)-spectral blocks exists and the canonical Parikh dynamics has no \(j^ek^j\), \(e>0\), correction. Equal-radius chains can occur only below \(k\), where their polynomial corrections are \(o(k^j)\).
+
+After normalization \(P=M/k\), the final SCCs are the recurrent classes of a finite rational Markov chain. If \(D\) is the lcm of their periods, then for every state
+\[
+B_j(s)
+=
+k^j b_{s,j\bmod D}
++
+O(j^E\rho_*^j),
+\qquad
+b_{s,r}\in\mathbb Q,\quad \rho_*<k.
+\]
+Thus imprimitive modulation is exact and rational, and no residue-class mean can equal \(\log_2 3\).
+
+The important completion correction is that T18 does not need every real monomial coordinate to enter the unit polydisc. If
+\[
+A_n=\sum_{i<n}v(u_i),
+\]
+then the valuation word is \(k\)-automatic. Under a hypothetical genuinely aperiodic positive integer anchor, T3 plus Bell gives
+\[
+\beta=\limsup A_n/n\in\mathbb Q,
+\qquad
+\beta<\log_2 3.
+\]
+Hence for some \(\varepsilon>0\),
+\[
+A_n\le(\log_2 3-\varepsilon)n
+\]
+eventually.
+
+For the canonical positive scalar,
+\[
+S(x)=\sum_nx^{c(n)},
+\]
+the exact fixed-point identity is
+\[
+S(\tau^Jq)
+=
+\sum_{n\ge0}
+\frac{2^{A_{nk^J}}}{3^{nk^J}}.
+\]
+Therefore \(S\), and every canonical state subseries, converges absolutely in the ordinary real completion at every actual monomial-orbit point used by T18, even if some individual coordinates are \(>1\).
+
+The T18 reduced system remains exact and scalar-preserving, relation lifting still has
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X),
+\]
+and the lifted identity can now be evaluated at the same real algebraic tail point by pointwise absolute convergence. Exact reconstruction yields
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+contradicting positivity for \(N>0\).
+
+Therefore every genuinely aperiodic nonprimitive T18-admissible \(k\)-uniform system has
+\[
+H\notin\mathbb Z_{>0}.
+\]
+Together with T18, the primitive/nonprimitive split is removed for positive-integer anchors inside the complete T18 framework. Under T2's finite-alphabet anchoring hypotheses,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+throughout the newly closed class.
+
+T19 does not automatically exclude an abstract positive rational noninteger value. That stronger conclusion still requires independently known ordinary real subcriticality. Negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T20
+
+**CDM4-T20 — NONUNIFORM MORPHIC SCALAR-CONVERGENCE / COMPLETION-PORTABILITY AUDIT.**
 
 Primary target:
 
-> Start from the now-closed T18 stable-orbit-closure reduction and exact mixed-place lifting theorem. For a nonprimitive uniform substitution under a hypothetical ordinary positive Collatz anchor, classify the reachable recurrent/transient components and determine whether every component that contributes to the exact reconstructed scalar must be strictly subcritical in the ordinary real completion.
+> Replace the two uniform ingredients used by T19—the \(k\)-automatic global limsup theorem and the exact identity
+> \[
+> S(\tau^Jq)=\sum_n2^{A_{nk^J}}/3^{nk^J}
+> \]
+>—by an exact variable-length morphic analogue. Determine whether a hypothetical ordinary positive integer anchor forces enough real summability of the canonical scalar for a completion-sign contradiction, or isolate the precise nonuniform growth/return obstruction.
 
-Treat as closed:
-
-\[
-Y=tH,\qquad
-R_Y=H^\perp,\qquad
-\Gamma_Y=\pi_Y(\mathbb N^m),
-\qquad
-w_Y(A_Y^n\gamma)=k^{Rn}w_Y(\gamma),
-\]
-
-together with dense-coset regular-tail completion, scalar-preserving re-minimalization, the T18 toric zero theorem, and exact specialization
-
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X).
-\]
-
-Do not infer ordinary real contraction from algebraic lifting alone. Analyze critical, supercritical, transient, and recurrent nonprimitive components explicitly and preserve the canonical positive scalar throughout.
+Treat T18 orbit-closure reduction and T19 uniform scalar completion as closed. Do not reimpose coordinatewise contraction when pointwise canonical scalar convergence is sufficient.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
