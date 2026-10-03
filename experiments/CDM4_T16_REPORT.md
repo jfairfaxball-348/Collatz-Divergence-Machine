@@ -49,10 +49,10 @@ with
 
 The theorem is proved for the full homogeneous polynomial relation problem under the mixed-place hypotheses. The Collatz application needs only degree one.
 
-Applying it to a hypothetical positive rational anchor
+Applying it to a hypothetical realized positive integer anchor
 
 \[
-H=N\in\mathbb Q_{>0}
+H=N\in\mathbb Z_{>0}
 \]
 
 gives the exact transported 2-adic relation
@@ -82,9 +82,20 @@ T\in\mathcal M,\ T\text{-independent T14 system}
 }
 \]
 
-has a positive rational anchor. In particular no positive integer anchor exists in that class.
+has a positive integer anchor.
 
-Negative rational values are not excluded. If \(H=N<0\), the real identity
+There is an important rational-value boundary. T14 derives the ordinary real contraction used above from the existence of a **positive integer realized orbit**. It does not derive that contraction from an arbitrary abstract value \(H\in\mathbb Q_{>0}\). Therefore T16 does not unconditionally exclude every positive rational value in the whole primitive dominant class.
+
+If the same system is known **independently** to satisfy the uniform real-subcriticality condition
+\[
+q_j\to0
+\]
+in the positive real polydisc, then the identical lifting/sign proof excludes every
+\[
+H\in\mathbb Q_{>0}.
+\]
+
+Negative rational values remain unexcluded. If \(H=N<0\) in a subcritical system, the real identity
 
 \[
 S^{(\infty)}(q)=-3N>0
@@ -967,7 +978,7 @@ Appending \(1\) is therefore harmless in the T16 theorem exactly as required.
 
 ---
 
-## 11. Theorem T16.11 — primitive dominant Collatz completion-sign obstruction
+## 11. Theorem T16.11 — primitive dominant positive-integer Collatz obstruction
 
 ### Statement
 
@@ -983,19 +994,19 @@ q\text{ is }T\text{-independent},
 
 and assume the substitution is primitive.
 
-If the associated recursive parity/valuation language is genuinely aperiodic, then its exact inverse anchor satisfies
-
-\[
-\boxed{
-H\notin\mathbb Q_{>0}.
-}
-\]
-
-In particular,
+If the associated recursive parity/valuation language is genuinely aperiodic, then its exact inverse anchor cannot be a positive integer:
 
 \[
 \boxed{
 H\notin\mathbb Z_{>0}.
+}
+\]
+
+If, in addition, ordinary real contraction of the same monomial tail is known independently of positive-integer realizability, then the stronger conditional conclusion holds:
+
+\[
+\boxed{
+H\notin\mathbb Q_{>0}.
 }
 \]
 
@@ -1004,7 +1015,7 @@ H\notin\mathbb Z_{>0}.
 Assume for contradiction that
 
 \[
-H=N\in\mathbb Q_{>0}.
+H=N\in\mathbb Z_{>0}.
 \]
 
 The exact scalar identity is
@@ -1105,8 +1116,10 @@ Also \(N>0\). Contradiction.
 Therefore
 
 \[
-H\notin\mathbb Q_{>0}.
+H\notin\mathbb Z_{>0}.
 \]
+
+If real tail contraction is supplied as an independent hypothesis rather than derived from the realized positive-integer orbit, the same proof permits \(N\in\mathbb Q_{>0}\) and yields the stronger conditional exclusion \(H\notin\mathbb Q_{>0}\).
 
 QED.
 
@@ -1114,41 +1127,55 @@ QED.
 
 ## 12. Exact rational sign boundary
 
-T16 closes more than the positive-integer branch.
-
-For the covered primitive dominant class,
+Under the inherited T14 primitive hypotheses alone, T16 proves
 
 \[
 \boxed{
-H\notin\mathbb Q_{>0}.
+H\notin\mathbb Z_{>0}.
 }
 \]
 
-Thus every positive rational and every positive integer is excluded.
+This is the unconditional Collatz anchoring conclusion.
 
-T16 does **not** prove
-
-\[
-H\notin\mathbb Q
-\]
-
-without a sign restriction.
-
-If a rational value \(H=N<0\) survived, the transported and lifted real identity would read
+The reason T16 does not automatically promote this to
 
 \[
-S^{(\infty)}(q)=-3N>0,
+H\notin\mathbb Q_{>0}
 \]
 
-which is compatible with positivity.
+for every primitive dominant recursive system is precise: T14 proves the Perron–Frobenius inequality
 
-Therefore:
+\[
+\alpha<\log_2 3
+\]
 
-- positive rational anchor: **EXCLUDED**;
-- positive integer anchor: **EXCLUDED**;
-- zero anchor: incompatible with the positive real scalar, but irrelevant to the root objective;
-- negative rational anchor: **NOT EXCLUDED BY T16**;
-- negative integer anchor: **NOT EXCLUDED BY T16**;
+from the existence of a **positive integer realized orbit**. An abstract positive rational value of the 2-adic inverse series is not itself an integer Collatz orbit, so that argument cannot be reused to manufacture ordinary real contraction.
+
+There is, however, a stronger conditional statement. If a covered dominant system independently satisfies uniform real subcriticality,
+
+\[
+\exists\varepsilon>0,\ J_0:
+\qquad
+\frac{B_j(s)}{k^j}
+\le
+\log_2 3-\varepsilon
+\]
+
+for every reachable state \(s\) and every \(j\ge J_0\), then the ordinary real tail converges and the T16 completion-sign proof excludes every
+
+\[
+\boxed{
+H\in\mathbb Q_{>0}.
+}
+\]
+
+Thus:
+
+- positive integer anchor: **EXCLUDED unconditionally in the covered primitive dominant class**;
+- positive rational noninteger value: **NOT excluded from primitivity alone; excluded under independently verified real subcriticality**;
+- zero value: incompatible with the positive reconstructed real scalar whenever the real subcriticality hypothesis is available, but irrelevant to the root objective;
+- negative rational value: **NOT EXCLUDED BY T16**;
+- negative integer value: **NOT EXCLUDED BY T16**;
 - negative rational value as a Collatz counterexample: **NO**.
 
 The theorem does not assert equality of a 2-adic and a real limit. The bridge is the lifted algebraic functional identity with exact specialization.
@@ -1245,7 +1272,7 @@ Forcing an arbitrary lattice basis into a nonnegative affine matrix is neither p
 | finite abelian translations | closed by T11 | genuinely nonperiodic covered values are nonrational; no positive anchor |
 | finite nonabelian translations | closed by T12 | no genuinely nonperiodic positive-integer anchor |
 | balanced one-variable finite-kernel systems | closed by T13 | no genuinely nonperiodic positive-integer anchor; bounded \(R_m\Rightarrow\) eventual periodicity |
-| primitive dominant multivariate \(T\in\mathcal M\), exact \(T\)-independent systems | **newly closed by T16** | no positive rational anchor; hence no positive integer anchor; bounded \(R_m\Rightarrow\) eventual periodicity |
+| primitive dominant multivariate \(T\in\mathcal M\), exact \(T\)-independent systems | **newly closed by T16 for Collatz positive anchoring** | no positive integer anchor; bounded \(R_m\Rightarrow\) eventual periodicity; positive noninteger rationals additionally excluded when real subcriticality is independently known |
 | nonprimitive dominant multivariate systems | open | T16 lifting may apply if both completions are available, but T14 real contraction/positivity transport is not proved generally |
 | singular-incidence stable-image torus systems | open | T15 algebraic reduction exists; toric lifting theorem still missing |
 | general multivariate/unbalanced finite-state systems | open | outside the proved primitive dominant theorem |
@@ -1300,8 +1327,8 @@ The 2026 addendum is published in the same Annals issue. It does not supply the 
 - portability of the lifted **algebraic** functional identity across completions;
 - harmlessness of adjoining \(1\);
 - a mixed-place exact nonarchimedean multivariate lifting theorem;
-- exclusion of every positive rational anchor in the primitive dominant \(T\in\mathcal M\), exact \(T\)-independent class;
-- exclusion of every positive integer anchor in that class;
+- exclusion of every positive integer anchor in the primitive dominant \(T\in\mathcal M\), exact \(T\)-independent class;
+- conditional exclusion of all positive rational values when uniform real subcriticality is independently available;
 - a new bounded-\(R_m\Rightarrow\) eventual-periodicity class.
 
 ### Not proved
@@ -1367,7 +1394,7 @@ No counterexample was claimed.
 | intrinsic torus-isogeny extension | **NO** |
 | T15 stable-image singular class covered | **NO** |
 | completion-sign argument applies | **YES** |
-| positive rational anchors excluded | **YES in the covered primitive dominant class** |
+| positive rational values excluded | **ONLY with independently verified real subcriticality; not from primitivity alone** |
 | positive integer anchors excluded | **YES in the covered primitive dominant class** |
 | negative rational exception survives | **YES, not excluded** |
 | new bounded-\(R_m\) periodicity class | **YES** |
