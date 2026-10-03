@@ -37,63 +37,54 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T10 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T11 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-T10 completed the mandatory tenth-session progress/correction audit and recovered the missing completion-correct same-point Mahler lifting theorem.
+T10's arbitrary-place Mahler lifting theorem is now closed infrastructure. T11 solves the exact residual pairwise-collision problem for the reduced elementary-2 Walsh family.
 
-Adamczewski–Bell–Smertnig, JEMS 25 (2023), Theorems 4.2–4.3, treat one-variable linear Mahler systems at an arbitrary place of a number field. At a regular algebraic point \(\alpha\) with \(0<|\alpha|_v<1\), functional transcendence degree is preserved at the values and homogeneous value relations lift to functional relations.
-
-This applies directly to the exact T9 Walsh products
+For full-length digit polynomials
 \[
-P_i(z)=S_i(z)P_i(z^k)
+S(0)=T(0)=1,
+\qquad
+\deg S=\deg T=k-1,
 \]
-at
+T11 proves that a nontrivial Mahler coboundary
 \[
-W=2^B/3^k
+\frac{S(z)}{T(z)}
+=
+\frac{R(z)}{R(z^k)}
 \]
-in the 2-adic completion. T8 already proves
+forces
 \[
-S_i(W^{k^j})\ne0
+S(z)=Q_\beta(z),
+\qquad
+T(z)=Q_\alpha(z),
+\qquad
+Q_\gamma(z)=\frac{z^k-\gamma}{z-\gamma},
 \]
-for every \(i,j\), so \(W\) is regular. The rational non-torsion unit \(3^{-k}\) requires no special absorption or torsion hypothesis.
+where \(\alpha\) and \(\beta\) are nonzero fixed points of \(z\mapsto z^k\).
 
-Therefore the T9 coboundary condition
+In the elementary-2 Walsh family, the \(\pm1\) coefficient restriction leaves only the odd-\(k\) trivial/alternating pair. Both are rational components already removed by T9/T10. Therefore every genuine nonrational rational-multiple class is a singleton.
+
+The grouped Collatz weights consequently reduce exactly to
 \[
-\Lambda=0
+A_{\{\chi\}}(W)=\widehat C_\chi\ne0
 \]
-now implies algebraic independence of
+on exact support. Same-point rational cancellation is impossible for every genuinely nonperiodic covered family.
+
+At the exact Collatz point
 \[
-P_1(W),\ldots,P_t(W)
+W=\frac{2^B}{3^k},
 \]
-over algebraic numbers.
+T10 then gives linear independence of the surviving values over algebraic numbers. The inverse-Collatz value is a **transcendental 2-adic integer**: it remains in \(\mathbb Z_2\), but it is not rational and therefore is not an ordinary integer or a positive-integer anchor.
 
-For the additive Collatz sum, T10 proves a sharper linear statement. After removing zero and rational components, define
-\[
-i\sim j
-\Longleftrightarrow
-P_i/P_j\in\mathbb Q(z)^\times,
-\]
-equivalently \(e_i-e_j\in\Lambda\). Representatives of distinct classes, together with \(1\), are functionally linearly independent and hence have linearly independent values at \(W\).
+The same divisor theorem extends to balanced finite-abelian translation kernels over the appropriate cyclotomic coefficient field: a distinct pairwise coboundary can occur only between individually rational character products. After rational-character removal, genuine classes are again singletons.
 
-Writing
-\[
-P_i(z)=R_i(z)P_{r(C)}(z)
-\]
-inside each rational-multiple class \(C\), define
-\[
-A_C(W)=\sum_{i\in C}\widehat C_iR_i(W).
-\]
+Thus the covered elementary-2 and finite-abelian translation branches are closed as aperiodic positive-anchoring routes. Combining with T2, bounded canonical representatives \(R_m\) imply eventual periodicity throughout these covered classes.
 
-Then the exact higher-rank Fourier value is algebraic/rational **if and only if every nonrational class has \(A_C(W)=0\)**. If at least one grouped coefficient is nonzero, the exact inverse-Collatz value is 2-adically transcendental and cannot be a positive-integer anchor.
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found or claimed.
 
-In particular, if no two genuine nonrational Walsh products are rational-function multiples, same-point rational cancellation is impossible automatically. This gives a genuinely higher-rank recursive-language obstruction and a new class for which bounded canonical representatives \(R_m\) force eventual periodicity.
-
-The mandatory T10 correction is that the T9 literature conclusion was incomplete: the required nonarchimedean lifting theorem was already present in the 2023 JEMS paper. Xu–Wang 2004, Wang 2006, Wang–Xu 2006, and Flicker are no longer needed to close this bridge.
-
-No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
-
-The next authorized action is theory-only **CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit**. It must classify the exact rational-multiple classes and prove that at least one \(A_C(W)\) is always nonzero, or classify the exact exceptional rational-value families and pass only those to ordinary-integrality/positivity analysis.
+The next authorized action is theory-only **CDM4-T12 — finite nonabelian translation / higher-dimensional representation audit**. It should derive the irreducible matrix Mahler blocks for balanced finite-group translation systems and classify the rational-function linear/module relations that can affect the prescribed Collatz coordinate at \(W\).
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T10_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T11_REPORT.md before doing research.
