@@ -876,24 +876,31 @@ The singular-incidence stable-image torus remains open because a Laurent monomia
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T18
+## Authoritative next task — CDM4-T19
 
-**CDM4-T18 — STABLE-ORBIT-CLOSURE / CYCLOTOMIC-FACTOR REDUCTION AND REGULAR-TAIL COMPLETION.**
+**CDM4-T19 — NONPRIMITIVE REAL-CONTRACTION / POSITIVE-ANCHOR COMPLETION AUDIT.**
 
 Primary target:
 
-> Start from a T15 stable-image torus for which T17 relative independence, the no-root-of-unity condition, or complete regular-tail avoidance fails. Pass to an exact arithmetic-progression tail and its minimal invariant torus/coset, descend the scalar-preserving Mahler system without losing \(G_1=S\), and determine whether the reduced system enters the T17 toric lifting class.
+> Start from the now-closed T18 stable-orbit-closure reduction and exact mixed-place lifting theorem. For a nonprimitive uniform substitution under a hypothetical ordinary positive Collatz anchor, classify the reachable recurrent/transient components and determine whether every component that contributes to the exact reconstructed scalar must be strictly subcritical in the ordinary real completion.
 
-Preserve the T17 canonical boundary data whenever the reduction permits it:
+Treat as closed:
+
 \[
-\Gamma_0=\pi(\mathbb N^m),
+Y=tH,\qquad
+R_Y=H^\perp,\qquad
+\Gamma_Y=\pi_Y(\mathbb N^m),
 \qquad
-w(\pi(a))=\mathbf1^Ta,
-\qquad
-w(\overline M^n\gamma)=k^nw(\gamma).
+w_Y(A_Y^n\gamma)=k^{Rn}w_Y(\gamma),
 \]
 
-Do not infer that a general invariant subvariety is a character coset without proof. Keep denominator trapping explicit. Keep the nonprimitive real-contraction problem separate.
+together with dense-coset regular-tail completion, scalar-preserving re-minimalization, the T18 toric zero theorem, and exact specialization
+
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X).
+\]
+
+Do not infer ordinary real contraction from algebraic lifting alone. Analyze critical, supercritical, transient, and recurrent nonprimitive components explicitly and preserve the canonical positive scalar throughout.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
