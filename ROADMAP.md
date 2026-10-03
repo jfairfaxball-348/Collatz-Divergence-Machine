@@ -716,21 +716,16 @@ Positive rational noninteger values still require independently known real subcr
 
 ## Immediate next task
 
-**CDM4-T20 — nonuniform morphic scalar-convergence / completion-portability audit, theory only.**
+**CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit, theory only.**
 
-Treat the T18 orbit-closure/lifting machinery and T19 uniform scalar-convergence theorem as closed infrastructure.
+Treat T20 exact endpoint transport, scalar-tail transport, algebraic-mean strictness, and primitive Perron-weight toric lifting as closed.
 
-Primary obligation:
+The target is to classify
+\[
+\beta=\limsup_{n\to\infty}\frac{A_n}{n}
+\]
+for expanding reducible pure morphic fixed points while retaining equal-radius block chains, polynomial corrections, imprimitive modulation, and unequal substituted lengths. Prove that \(\beta\) is algebraic or belongs to a finite algebraic set if possible; otherwise isolate the exact return-prefix mechanism preventing such a theorem.
 
-1. formulate the exact variable-length morphic analogue of the canonical scalar and substitution transport;
-2. track actual substitution lengths rather than replacing them by \(k^j\);
-3. determine whether a hypothetical positive integer anchor forces a strict ordinary-real summability gap for the canonical scalar;
-4. identify which automatic/limsup arguments fail when constant length is lost;
-5. prove pointwise completion portability if canonical scalar convergence is available;
-6. otherwise isolate the exact nonuniform growth/return obstruction.
+For every newly strict-gap class, separately determine whether the reduced stable orbit admits a strictly positive expanding weight sufficient for T17/T18 exact lifting.
 
-Do not reimpose coordinatewise real contraction when pointwise canonical convergence is sufficient.
-
-Do not repeat substitution enumeration, finite residue/carry/exponent-code optimization, candidate trajectories, new scientific starts, generator/distribution work, CPU/GPU scaling, cloud, distributed, or volunteer work.
-
-No new scientific compute is authorized.
+No substitution enumeration, new scientific starts, candidate trajectories, CPU/GPU/cloud/distributed work, or finite-code search is authorized.
