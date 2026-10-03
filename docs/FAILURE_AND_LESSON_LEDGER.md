@@ -1917,3 +1917,88 @@ For a general invariant subvariety, T15 does not claim that a single character r
 
 **Action:** in the dominant \(T\in\mathcal M\), \(T\)-independent class, use Zariski density to exclude proper arithmetic-progression traps. Outside that class, classify the invariant orbit closure before making periodicity or balance claims.
 
+---
+
+### F0082 — The T15 nonarchimedean lifting gap splits into a global orbit layer and a local completion layer
+
+**Status: RESOLVED FOR THE PRIMITIVE DOMINANT MIXED-PLACE CLASS in CDM4-T16.**
+
+T15 treated the Adamczewski–Faverjon proof as carrying a large complex-analytic package. T16's line-by-line audit of the final revised proof shows that the load-bearing completion dependence is narrower.
+
+The global layer consists of:
+
+- ordinary admissibility of the algebraic monomial orbit;
+- Theorem 6.4's vanishing statement;
+- the relation ideal;
+- Hilbert-function/dimension estimates;
+- Nullstellensatz relation matrices;
+- algebraic cocycle propagation;
+- degree and height bounds.
+
+For the primitive dominant T14 tail, this layer is already available in the ordinary embedding because
+\[
+T\in\mathcal M
+\]
+and exact \(T\)-independence give Adamczewski–Faverjon admissibility.
+
+The local layer consists of:
+
+- the analytic branch of the primitive algebraic relation-matrix element;
+- translated expansions at a deep orbit point;
+- the high-order support upper bound;
+- coefficient recurrence bounds;
+- analytic continuation on the chosen local domain;
+- local lower bounds for nonzero algebraic numbers.
+
+This layer admits direct nonarchimedean replacements using rigid Hensel theory, Tate/Gauss norms, injective restriction on concentric affinoid polydiscs, the ultrametric triangle inequality, and the product formula.
+
+The crucial logical point is that the 2-adic value relation is never inserted into the complex vanishing theorem. The vanishing theorem only certifies zero/nonzero behavior of algebraic functions on the same algebraic orbit.
+
+**Lesson:** a completion mismatch can sometimes be removed without reproving the global Mahler zero estimate at the new place. Separate orbit-algebraic information from the local analytic evaluation argument before declaring the whole proof completion-specific.
+
+**Action:** preserve T16's mixed-place theorem as closed infrastructure for primitive dominant systems. Do not overstate it as a completely arbitrary-place theorem with no archimedean side hypothesis.
+
+---
+
+### F0083 — Exact nonarchimedean lifting closes the primitive dominant multivariate positive-anchor class, but not the stable-image torus
+
+**Status: PROVED RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T16.**
+
+For the exact T14/T15 dominant system, assume
+\[
+\det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent},
+\]
+and assume the substitution is primitive.
+
+T16 proves exact mixed-place lifting at a sufficiently deep regular tail. A hypothetical
+\[
+H=N\in\mathbb Q_{>0}
+\]
+gives the transported 2-adic relation
+\[
+\ell_J\mathbf G(q_J)+3N=0.
+\]
+After adjoining \(1\), the lifted algebraic functional relation has exactly the same specialization polynomial. Embedding that algebraic identity into the ordinary completion and using T14 real contraction plus exact scalar reconstruction gives
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+which contradicts positivity.
+
+Therefore
+\[
+\boxed{H\notin\mathbb Q_{>0}}
+\]
+for every genuinely aperiodic member of the covered primitive dominant class. In particular positive integer anchors are excluded. By T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+in this new class under the exact finite-alphabet anchoring hypotheses.
+
+Negative rational values are not excluded.
+
+The T15 singular-incidence stable-image torus remains outside the theorem. The obstacle is no longer generic nonarchimedean analysis. It is the affine auxiliary-function filtration: a Laurent monomial torus isogeny near a toric boundary has no automatic \(\mathbb N^m\) total-degree structure with which to reproduce the high-order support estimate.
+
+**Lesson:** once exact specialization is available, the primitive real positivity argument is decisive. The remaining multivariate frontier is now geometric/toric rather than a generic completion mismatch.
+
+**Action:** CDM4-T17 should build an intrinsic toric boundary chart and semigroup/weight filtration, prove a toric support-displacement estimate, and retain exact specialization. No scientific compute is authorized.
+
