@@ -335,6 +335,6 @@ Single theorem target:
 
 > Prove or recover a peer-reviewed characteristic-zero **p-adic** lifting theorem that transfers functional algebraic, or at minimum functional linear, independence of several stationary first-order \(k\)-Mahler functions to sufficient independence of their values at the same regular algebraic point. Verify the theorem independently for the rational non-torsion unit in \(W\). If no such theorem is available, derive a Collatz-specific theorem excluding the exact weighted Fourier sum from \(\mathbb Q\).
 
-Because T10 is the tenth numbered CDM4 theory session, it must also carry out the mandatory progress-and-correction audit in \`AGENTS.md\`.
+Because T10 is the tenth numbered CDM4 theory session, it must also carry out the mandatory progress-and-correction audit in `AGENTS.md`.
 
 Do not infer value independence from functional independence, separate transcendence, multiplicative independence, or archimedean lifting. Do not restart substitution enumeration, finite residue/carry optimization, candidate trajectories, new starts, generator/distribution design, P3 scaling, GPU, cloud, distributed, or volunteer work.
