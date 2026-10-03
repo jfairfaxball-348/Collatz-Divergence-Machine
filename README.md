@@ -42,50 +42,49 @@ The intended feedback loop is:
 T9 continued the exact p-adic same-point no-cancellation problem for the balanced elementary-2-group Walsh family isolated in T8.
 
 The true reachable/output quotient remains
-
-[
+\[
 G=E/K_C,
-qquad
+\qquad
 m=|G|.
-]
+\]
 
 For every reduced character,
-[
-P_chi(z)=S_chi(z)P_chi(z^k),
-qquad
-S_chi(z)=sum_rchi(arepsilon_r)z^r,
-]
+\[
+P_\chi(z)=S_\chi(z)P_\chi(z^k),
+\qquad
+S_\chi(z)=\sum_r\chi(\varepsilon_r)z^r,
+\]
 and T8 already proves complete 2-adic regularity along
-[
+\[
 W=2^B/3^k.
-]
+\]
 
 T9 now classifies the rational character projections exactly. If
-[
-f_chi(n)=chi(u_n),
-]
+\[
+f_\chi(n)=\chi(u_n),
+\]
 then
-[
-f_chi(kn+r)=f_chi(n)chi(arepsilon_r).
-]
-An eventually periodic ({pm1})-valued projection is necessarily trivial, or, only when (k) is odd, the unique alternating projection
-[
-f_chi(n)=(-1)^n.
-]
-Thus after exact quotienting the only rational normalized Walsh components are (1/(1-z)) and at most one (1/(1+z)). Distinct quotient characters also have distinct cocycle polynomials.
+\[
+f_\chi(kn+r)=f_\chi(n)\chi(\varepsilon_r).
+\]
+An eventually periodic \(\{\pm1\}\)-valued projection is necessarily trivial, or, only when \(k\) is odd, the unique alternating projection
+\[
+f_\chi(n)=(-1)^n.
+\]
+Thus after exact quotienting the only rational normalized Walsh components are \(1/(1-z)\) and at most one \(1/(1+z)\). Distinct quotient characters also have distinct cocycle polynomials.
 
-The main new structural theorem is a source-level application of Kubota's first-order functional criterion: the surviving normalized products are algebraically independent over the rational-function field **if and only if** their cocycles are multiplicatively independent modulo rational Mahler coboundaries
-[
-prod_i S_i(z)^{m_i}=R(z)/R(z^k).
-]
+The main new structural theorem is a source-level application of Kubota's first-order functional criterion: the surviving normalized products are algebraically independent over the rational-function field if and only if their cocycles are multiplicatively independent modulo rational Mahler coboundaries
+\[
+\prod_i S_i(z)^{m_i}=R(z)/R(z^k).
+\]
 Hence the functional-independence side is now exact.
 
 The remaining gap is arithmetic specialization. The adjacent Kubota/Nishioka same-point value theorem recovered in peer-reviewed form is archimedean, not 2-adic. Bugeaud–Yao remains an individual first-order theorem. Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 still lack recoverable theorem text sufficient to certify the required simultaneous same-point application. Flicker's theorem genuinely permits p-adic completions, but its transformation-limit/dominance package is not verified for the stationary Walsh family, and the normalized Collatz values all have 2-adic valuation zero.
 
-No Collatz-specific identity was found that excludes rational cancellation in the exact weighted Fourier sum. No genuinely multi-character higher-rank recursive class was newly ruled out, no new bounded-(R_m)-implies-periodicity theorem was obtained, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
+No Collatz-specific identity was found that excludes rational cancellation in the exact weighted Fourier sum. No genuinely multi-character higher-rank recursive class was newly ruled out, no new bounded-\(R_m\)-implies-periodicity theorem was obtained, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
 
-The next authorized action is theory-only **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit**. It must prove or recover a completion-correct nonarchimedean functional-to-value lifting theorem for the exact T9-reduced family at (W), or derive a Collatz-specific additive substitute. Because T10 is the tenth numbered CDM4 theory session, it must also perform the mandatory progress-and-correction audit required by `AGENTS.md`.
+The next authorized action is theory-only **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit**. It must prove or recover a completion-correct nonarchimedean functional-to-value lifting theorem for the exact T9-reduced family at \(W\), or derive a Collatz-specific additive substitute. Because T10 is the tenth numbered CDM4 theory session, it must also perform the mandatory progress-and-correction audit required by \`AGENTS.md\`.
 
 No substitution enumeration, new starts, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T9_REPORT.md` before doing research.
+Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T9_REPORT.md\` before doing research.
