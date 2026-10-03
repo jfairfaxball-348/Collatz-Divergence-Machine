@@ -1741,3 +1741,179 @@ Thus the real-sign side is ready in the primitive regular-tail subclass. The mis
 **Lesson:** a complex multivariate lifting theorem cannot be applied to a p-adic value relation merely because the same formal functions and algebraic point exist in both completions.
 
 **Action:** CDM4-T15 should audit or prove the nonarchimedean multivariate lifting theorem, and separately formalize stable-image rational minimalization for singular incidence. No scientific compute is authorized.
+
+---
+
+### F0079 — P-adic multivariate meromorphy is not nonarchimedean value-relation lifting
+
+**Status: FAILED LOAD-BEARING BRIDGE / SHARPENED in CDM4-T15.**
+
+The focused T15 literature audit did not recover a peer-reviewed characteristic-zero theorem with all four properties:
+
+\[
+\text{multivariate}
++
+\text{nonarchimedean value relation}
++
+\text{general rational Mahler system}
++
+\text{exact specialization}.
+\]
+
+Adamczewski–Faverjon 2026 Theorem 2.3 has the correct multivariate lifting shape and exact specialization, but is a complex value theorem. Adamczewski–Bell–Smertnig 2023 Theorem 4.3 is arbitrary-place and exact-specialization, but one-variable.
+
+Flicker 1979 Theorem 2 is genuinely multivariate and p-adic, but requires a separate limiting-function algebraic-independence and growth/valuation package not implied by T14 regularity, \(T\)-independence, or rational-functional minimality.
+
+Brechler arXiv:2607.24877v1 remains a preprint as of 2026-10-03. Its Proposition 3.12 genuinely proves that multivariate Mahler functions in its class are meromorphic on every p-adic open unit ball. Its Theorem 1.2 gives a stronger polynomial-coefficient lifting theorem with exact specialization, but the theorem still invokes Adamczewski–Faverjon's ordinary multivariate value-lifting theorem and is not stated for a p-adic value relation.
+
+A direct transplantation of Adamczewski–Faverjon Theorem 2.3 was not completed. The published proof uses complex convergent germs/polydiscs, Cauchy estimates, translated complex expansions, and analytic continuation. A rigid-analytic replacement preserving the **same specialization polynomial** remains to be proved.
+
+**Lesson:** analytic continuation or meromorphy of the functions in \(C_p^n\) does not by itself give a theorem lifting algebraic relations among their p-adic values.
+
+**Action:** do not treat Brechler Proposition 3.12, p-adic internal tools in an archimedean proof, or a multivariate p-adic algebraic-independence theorem with unrelated hypotheses as the missing T15 bridge.
+
+---
+
+### F0080 — Singular incidence admits an exact stable-image torus and scalar-preserving meromorphic minimalization
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T15.**
+
+Let \(J_0\) be past stabilization of the ranks of \(M^j\) and put
+
+\[
+L=\ker_{\mathbb Z}(M^{J_0}).
+\]
+
+The eventual image
+
+\[
+X=\operatorname{im}\tau^{J_0}
+\]
+
+is a torus with character lattice
+
+\[
+\boxed{
+X^*(X)\cong\mathbb Z^m/L.
+}
+\]
+
+The induced pullback is
+
+\[
+[\mu]\mapsto[M\mu].
+\]
+
+Stable-kernel equality makes this map injective. Hence the induced map
+
+\[
+\tau_X:X\to X
+\]
+
+is a surjective finite torus isogeny, and is étale in characteristic zero.
+
+The exact Collatz tail satisfies
+
+\[
+q_{J_0+n}=\tau_X^n(q_{J_0}).
+\]
+
+The canonical series restrict analytically to the intersection of \(X\) with the open nonarchimedean unit polydisc. Over \(K(X)\), define
+
+\[
+r_X=
+\dim_{K(X)}
+\operatorname{span}_{K(X)}
+\{F_t|_X\}.
+\]
+
+Because \(\tau_X\) is dominant, pullback on \(K(X)\) is injective. Therefore an exact rational-functional basis can be chosen with
+
+\[
+G_1=S=\sum_tF_t,
+\]
+
+and the resulting stable-image system is invertible:
+
+\[
+\boxed{
+\mathbf G(x)=A_X(x)\mathbf G(\tau_X(x)),
+\qquad
+A_X(x)\in\operatorname{GL}_{r_X}(K(X)).
+}
+\]
+
+The exact forward product from the original ambient system reconstructs \(S(q)\) without inverting any early singular matrix.
+
+This does **not** automatically produce a standard affine multivariate Mahler system at the origin. An intrinsic character-lattice basis may introduce negative exponents, and the ambient point \(0\) is a toric boundary point rather than a point of \(X\).
+
+**Lesson:** the singular-incidence problem splits into an algebraic stable-image reduction, now solved at the meromorphic level, and a separate theorem-interface problem with affine/power-series Mahler lifting.
+
+**Action:** preserve the stable-image torus and prescribed scalar. Do not force an artificial affine parameterization or assume the induced integral exponent matrix has nonnegative entries.
+
+---
+
+### F0081 — Arithmetic-progression singular trapping is an invariant orbit-closure mechanism
+
+**Status: PROVED STRUCTURAL CLASSIFICATION in CDM4-T15.**
+
+If a stable-image bad locus \(Z\) contains
+
+\[
+q_{a+rn}
+\qquad
+\forall n\ge0,
+\]
+
+let
+
+\[
+\phi=\tau_X^r
+\]
+
+and let \(Y\) be the Zariski closure of that subsequence. Then
+
+\[
+Y\subseteq Z
+\]
+
+and
+
+\[
+\boxed{\phi(Y)=Y.}
+\]
+
+Thus an arithmetic-progression trap contains a proper invariant orbit closure.
+
+For a character-coset trap
+
+\[
+x^\mu=c,
+\]
+
+the exact Collatz formula forces
+
+\[
+\mathbf1^T\mu=0
+\]
+
+and constancy of \(v^TM^{a+rn}\mu\). Hence, for
+
+\[
+\nu=(M^r-I)\mu,
+\]
+
+\[
+\mathbf1^T\nu=0,
+\qquad
+v^TM^{a+rn}\nu=0
+\]
+
+for all \(n\). If \(\nu\ne0\), this is exactly a \(T\)-independence obstruction. If \(\nu=0\), then \(M\) has a root-of-unity eigenvalue on the span of \(\mu\), excluded in the Adamczewski–Faverjon admissible class.
+
+For a general invariant subvariety, T15 does not claim that a single character relation must exist.
+
+**Lesson:** dynamical Mordell–Lang identifies the temporal shape of infinite hits; the Zariski closure identifies the algebraic mechanism. A character relation is an exact mechanism in toric-coset cases, not a universal conclusion for every invariant variety.
+
+**Action:** in the dominant \(T\in\mathcal M\), \(T\)-independent class, use Zariski density to exclude proper arithmetic-progression traps. Outside that class, classify the invariant orbit closure before making periodicity or balance claims.
+
