@@ -1,7 +1,7 @@
 # CDM4-T11 — Rational-Coboundary Collision / Grouped-Weight Cancellation Audit
 
 **Date:** 2026-10-03  
-**Authoritative starting commit:** \`defee5d1288e6dcd11334e8f95974005b671475c\`  
+**Authoritative starting commit:** `defee5d1288e6dcd11334e8f95974005b671475c`  
 **Session type:** theorem / exact symbolic audit only  
 **Scientific Collatz starts generated:** **0**  
 **Candidate trajectories extended:** **0**  
@@ -889,8 +889,8 @@ T11 establishes no theorem-derived scientific workload.
 - CPU campaign: **NOT JUSTIFIED**;
 - GPU work: **NOT JUSTIFIED**;
 - cloud/distributed/volunteer work: **NOT JUSTIFIED**;
-- \`docs/COMPUTE_BUDGET.md\`: **UNCHANGED**;
-- \`docs/METRIC_CATALOG.md\`: **UNCHANGED**.
+- `docs/COMPUTE_BUDGET.md`: **UNCHANGED**;
+- `docs/METRIC_CATALOG.md`: **UNCHANGED**.
 
 The theorem removes a symbolic class; it creates no candidate population to extend.
 
