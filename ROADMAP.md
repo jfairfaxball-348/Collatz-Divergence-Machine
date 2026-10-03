@@ -404,6 +404,40 @@ for this enlarged class.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+**CDM4-T13 closeout.** T13 closes the complete balanced one-variable finite-\(k\)-kernel class as aperiodic positive-integer anchoring routes.
+
+For the exact true kernel system
+\[
+\mathbf F(z)=M(z)\mathbf F(z^k),
+\qquad
+M(z)=\sum_rz^rA_r,
+\]
+\(M(0)=A_0\) is the functional matrix of the digit-zero map. If \(A_0\) is a permutation, all Mahler iterates are 2-adically regular. If \(\det M\not\equiv0\), only finitely many nonzero iterates can be singular.
+
+If
+\[
+\det M\equiv0,
+\]
+the canonical state functions are rational-function linearly dependent. More generally, choose a \(\mathbb Q(z)\)-basis from the exact kernel state series with \(G_1=F_0\). The induced minimal system
+\[
+\mathbf G(z)=A(z)\mathbf G(z^k)
+\]
+has
+\[
+A(z)\in\operatorname{GL}_d(\mathbb Q(z)).
+\]
+Every such rational system is regular on a sufficiently deep nonzero Mahler tail.
+
+Early singular canonical matrices do not need to be inverted: the exact root value is transported forward by their product to the regular tail. A hypothetical aperiodic positive anchor forces \(0<W<1\), so Adamczewski–Bell–Smertnig relation lifting at the tail produces a functional identity whose real specialization reconstructs \(F_0^{(\infty)}(W)>0\) and contradicts the positive anchor relation.
+
+Therefore no genuinely nonperiodic balanced one-variable finite-kernel family has an ordinary positive-integer anchor, including canonical systems with singular \(A_0\), finitely many early singular iterates, or identically singular determinant. By T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+throughout this class.
+
+Universal \(H\notin\mathbb Q\) is not proved. In a subcritical family, any rational exception is a negative element of \(\mathbb Q\cap\mathbb Z_2\). No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -426,22 +460,19 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T13 — generic balanced finite-kernel regularity / completion-sign audit, theory only.**
+**CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit, theory only.**
 
-Treat the finite-group translation branch as closed for positive anchoring.
+Treat the complete balanced one-variable finite-kernel branch as closed for positive anchoring.
 
-For the exact reachable/output-reduced balanced finite-\(k\)-kernel system
-\[
-\mathbf F(z)=M(z)\mathbf F(z^k),
-\]
-without assuming the digit transition matrices form a group action, classify exactly when
-\[
-W=2^B/3^k
-\]
-is regular at every Mahler iterate.
+Return to the exact T5 multivariate Parikh/monomial functional system for unbalanced automatic inverse constructions. Determine whether:
 
-Where regularity holds, apply the T12 relation-lifting/sign argument directly to the prescribed positive Collatz coordinate. Where regularity fails, classify the singular obstruction and determine whether a regular subsystem, exact desingularization, or scalar quotient preserves the prescribed coordinate.
+1. exact rational-linear minimalization preserves the prescribed positive Collatz scalar;
+2. the multivariate monomial orbit admits a completion-correct regular tail for an applicable arbitrary-place lifting theorem;
+3. a transported 2-adic anchor relation can be lifted with exact specialization; and
+4. the resulting functional identity can be evaluated in the real completion while reconstructing the original positive scalar series.
 
-Do not reopen generic p-adic lifting, finite-abelian or finite-nonabelian translation representation analysis, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
+If a universal multivariate theorem does not apply, isolate the sharpest exact unbalanced subclass where the T13 transport mechanism survives.
+
+Do not reopen balanced finite-kernel regularity, generic one-variable p-adic lifting, finite-abelian or finite-nonabelian translation representation analysis, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
 No new scientific compute is authorized.
