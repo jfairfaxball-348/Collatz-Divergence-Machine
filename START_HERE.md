@@ -3,32 +3,33 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T10 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T11 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T10_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T11_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact anchoring cylinders; T3/T4 return and endpoint obstructions; T5 inverse/Mahler representation; T6 one-dimensional p-adic obstruction; T7–T9 exact higher-rank Walsh quotient, support, regularity, rational-character classification, and Mahler-coboundary functional theory. **T10 now supplies the missing characteristic-zero nonarchimedean same-point lifting theorem through Adamczewski–Bell–Smertnig 2023.**
-- T10 correction: the prior working conclusion that the relevant modern Mahler value lifting remained archimedean was incomplete. JEMS 25 (2023), Theorems 4.2–4.3, are explicitly formulated at arbitrary places of number fields and apply to the exact diagonal Walsh system at W=2^B/3^k because T8 already proves regularity at every Mahler iterate.
-- T10 additive theorem: after zero and rational components are removed, define i~j iff P_i/P_j is rational, equivalently iff the pairwise cocycle quotient is a rational Mahler coboundary. Representatives of distinct classes, together with 1, are functionally linearly independent and therefore have linearly independent values over algebraic numbers at W.
-- Exact residual boundary: writing P_i=R_i P_r inside each rational-multiple class C, the nonrational Fourier contribution is grouped by
-  \[
-  A_C(W)=\sum_{i\in C}\widehat C_iR_i(W).
-  \]
-  The exact value F_0(W) is algebraic/rational **if and only if every nonrational class has A_C(W)=0**. If at least one class coefficient is nonzero, F_0(W) and the inverse value H are transcendental in the 2-adic completion.
-- Important special case: if no two genuine nonrational Walsh products are rational-function multiples, rational same-point cancellation is impossible automatically, even when higher multiplicative relations exist.
-- New project consequence: for the T10-covered higher-rank recursive class, bounded R_m implies eventual periodicity. The restricted Periodicity-Conjecture boundary is reduced to exact rational-coboundary collision classes and grouped-weight cancellation.
+- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies the arbitrary-place same-point lifting theorem for the regular one-variable Mahler system at (W=2^B/3^k).
+- T11 pairwise-collision theorem: for full-length digit polynomials (S,T) with (S(0)=T(0)=1) and degree (k-1), a nontrivial coboundary (S/T=R/R(z^k)) forces (S=Q_\beta), (T=Q_\alpha), where (Q_\gamma=(z^k-\gamma)/(z-\gamma)) and (alpha,eta) are fixed points of (z\mapsto z^k).
+- Elementary-2 consequence: the only distinct Walsh pair satisfying that criterion is, for odd (k), the trivial/alternating rational pair. After rational components are removed, **every genuine nonrational rational-multiple class is a singleton**.
+- Exact grouped weights therefore collapse to
+  [
+  A_{\{\chi\}}(W)=\widehat C_\chi\ne0
+  ]
+  on exact support. Same-point rational cancellation is impossible for every genuinely nonperiodic reduced elementary-2 Walsh family.
+- Stronger corollary: the same degree argument shows that in finite abelian translation kernels any distinct pairwise coboundary can occur only between individually rational character products. After rational-character removal, genuine classes are singletons over the cyclotomic splitting field as well.
+- Project consequence: no genuinely nonperiodic family in the covered elementary-2 class, and more generally the covered finite-abelian translation class, has an ordinary positive-integer anchor. Hence bounded canonical representatives (R_m) imply eventual periodicity throughout these covered classes.
+- Restricted Periodicity-Conjecture boundary: the balanced finite-abelian translation branch is closed; the live residual boundary moves to higher-dimensional/nonabelian translation blocks, generic finite (k)-kernel Mahler systems, and the more general multivariate/unbalanced automatic inverse systems.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit, theory only**
-- T11 target: classify pairwise rational-function-multiple Walsh components exactly and determine whether all grouped coefficients A_C(W) can vanish simultaneously. Prove a universal nonvanishing theorem or classify the exceptional rational-value families for ordinary-integrality/positivity analysis.
+- Immediate next task: **CDM4-T12 — finite nonabelian translation / higher-dimensional representation audit, theory only**
+- T12 target: derive the exact irreducible matrix Mahler blocks for balanced finite-group translation systems and classify the functional linear/module relations relevant to the prescribed Collatz coordinate, using T10 lifting as closed infrastructure.
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T11 theorem/symbolic analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T12 theorem/symbolic analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -80,6 +81,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 42. `experiments/CDM4_T8_REPORT.md`
 43. `experiments/CDM4_T9_REPORT.md`
 44. `experiments/CDM4_T10_REPORT.md`
+45. `experiments/CDM4_T11_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -649,3 +651,14 @@ Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform
 - **New generator/distribution authorized: NO.**
 - **Finite-code ranker campaign authorized: NO.**
 - **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
+
+
+## CDM4-T11 closeout — 2026-10-03
+
+CDM4-T11 is complete. Authoritative report: `experiments/CDM4_T11_REPORT.md`.
+
+The rational-coboundary collision problem is closed for the exact reduced elementary-2 Walsh family. The degree-((k-1)) divisor budget forces every nontrivial pairwise coboundary to be a fixed-point cocycle ratio; with (pm1) Walsh coefficients the only distinct possibility is the odd-(k) trivial/alternating rational pair already removed by T9/T10.
+
+Therefore every genuine nonrational class is a singleton and every grouped coefficient is exactly its supported Fourier weight, hence nonzero. No genuinely nonperiodic rational exceptional inverse value survives. The entire balanced reduced elementary-2 higher-rank Walsh class is excluded from positive-integer anchoring.
+
+The same divisor theorem extends the collision exclusion to finite abelian translation kernels after exact rational-character removal. No scientific compute is authorized. The next theory obligation is the higher-dimensional/nonabelian representation boundary.
