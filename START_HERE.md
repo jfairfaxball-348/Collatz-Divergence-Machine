@@ -3,58 +3,63 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T16 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T17 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T16_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T17_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T10–T13 remain closed infrastructure: Adamczewski–Bell–Smertnig 2023 closes the arbitrary-place one-variable lifting gap, finite abelian/nonabelian translation subclasses are closed, and the complete balanced one-variable finite-kernel class is closed as a positive-anchor route.
-- T14 exact multivariate system remains
+- T10–T13 remain closed infrastructure: arbitrary-place one-variable exact lifting, finite abelian/nonabelian translation obstructions, and the complete balanced one-variable finite-kernel positive-anchor obstruction.
+- T14–T15 remain the exact multivariate foundation. For singular incidence,
   \[
-  \mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
-  \qquad
-  H=-\frac13S(q),
-  \qquad
-  q_s=\frac{2^{v(s)}}3.
+  L=\ker_{\mathbb Z}(M^{J_0}),\qquad
+  X^*(X)=\mathbb Z^m/L,
   \]
-  In the dominant case \(\det M\ne0\), rational-linear minimalization retains \(G_1=S\) and gives an invertible rational system.
-- For \(T=M^T\in\mathcal M\) and exact \(T\)-independence, T14 gives Zariski density and a sufficiently deep regular tail. In the primitive case, a hypothetical genuinely aperiodic positive anchor also forces ordinary real contraction of the monomial tail.
-- T15 supplies the singular-incidence stable-image torus, scalar-preserving meromorphic minimalization, and the exact arithmetic-progression trapping mechanism. It does not automatically turn the torus isogeny into a nonnegative affine Mahler map.
-- **T16 proves the missing completion bridge for the primitive dominant affine subclass.** The theorem is mixed-place: Adamczewski–Faverjon's published complex admissibility/vanishing theorem controls the same algebraic orbit, while the input relation and the local lifting argument are carried out at the chosen nonarchimedean place.
-- T16 works in strict Tate algebras on nested rigid polydiscs. Rigid Hensel theory replaces the complex implicit-function step; Gauss norms replace Cauchy estimates; the rigid identity theorem replaces analytic continuation; ultrametric translated-expansion estimates replace Adamczewski–Faverjon Lemmas 9.6–9.8; and the product formula supplies the local-place Liouville bounds.
-- The lifted relation is algebraic and preserves the original polynomial exactly:
+  and the stable tail is an orbit of a finite torus isogeny. Scalar-preserving minimalization retains \(G_1=S|_X\).
+- T16 remains the mixed-place exact lifting theorem for the primitive dominant affine subclass and preserves the specialization polynomial exactly.
+- **T17 solves the intrinsic toric support-growth problem for the canonical stable-image boundary chart.** With
+  \[
+  \Gamma_0=\pi(\mathbb N^m)\subset X^*(X),
+  \qquad
+  w(\pi(a))=\mathbf1^Ta,
+  \]
+  the weight is well defined and satisfies
+  \[
+  w(\overline M^n\gamma)=k^n w(\gamma).
+  \]
+- The chart
+  \[
+  U_0=\operatorname{Spec}K[\Gamma_0]
+  \]
+  has a torus-fixed closed boundary point \(o\), and the exact 2-adic stable Collatz tail converges to \(o\). The weighted semigroup filtration is finite-codimensional and the associated toric Tate algebra has the exact Gauss/support estimate needed by the T16 auxiliary-function argument.
+- T17 also proves a relative toric zero theorem. Under relative independence modulo the stable kernel and absence of root-of-unity eigenvalues for \(\overline M\), Corvaja–Zannier \(S\)-unit trapping plus the inherited T15 dynamical Mordell–Lang dichotomy gives only finitely many zeros for a nonzero toric analytic function on the stable tail.
+- Therefore T17 obtains a **semigroup-admissible toric mixed-place exact lifting theorem** with
   \[
   Q(\alpha,\mathbf X)=P(\mathbf X).
   \]
-  It is therefore portable to the real completion without identifying raw real and 2-adic limits.
-- For every genuinely aperiodic **primitive dominant**
-  \[
-  \det M\ne0,\qquad T\in\mathcal M,\qquad q\text{ \(T\)-independent}
-  \]
-  system covered by T14/T16,
+  Adamczewski–Faverjon Theorem 6.4 is not applied literally in Laurent coordinates; its zero-set role is replaced by the toric theorem.
+- For every genuinely aperiodic **primitive stable-image system** with a complete regular tail, relative independence modulo \(L\), and no root-of-unity eigenvalue of \(\overline M\),
   \[
   H\notin\mathbb Z_{>0}.
   \]
-  T14 derives the real contraction used in this contradiction from the existence of the realized positive integer orbit itself. If uniform real subcriticality is independently known, T16 strengthens this to \(H\notin\mathbb Q_{>0}\).
-- Project consequence for the newly closed class:
+  Under the exact T2 anchoring hypotheses this gives
   \[
-  R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+  R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
   \]
-  under the exact T2 finite-alphabet anchoring hypotheses.
-- Positive rational noninteger values are not excluded from primitivity alone; they are excluded when real subcriticality is independently verified. Negative rational values remain open and are not Collatz counterexamples.
-- The T15 singular-incidence stable-image torus remains open. The missing step is now an intrinsic toric boundary version of the auxiliary-function support-growth argument, not generic p-adic meromorphy.
-- Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon Annals addendum was checked and does not change the arbitrary-place boundary.
+- T17 does **not** close all singular-incidence systems. Cyclotomic stable factors, relative-dependence, and general invariant bad-locus/orbit-closure reduction remain open.
+- Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
+- Nonprimitive real contraction remains a separate open problem even when toric relation lifting applies.
+- Brechler arXiv:2607.24877 remains a preprint as of the 2026-10-03 status check and is non-load-bearing.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum, theory only**
-- T17 target: extend T16 from the affine positive-monoid setting to the T15 stable-image torus by using a toric/formal/rigid boundary chart and an intrinsic semigroup/weight filtration, while preserving exact specialization.
+- Immediate next task: **CDM4-T18 — stable-orbit-closure / cyclotomic-factor reduction and regular-tail completion, theory only**
+- T18 target: when T17 relative independence or the no-root-of-unity condition fails, pass to the exact arithmetic-progression orbit closure/minimal invariant torus or coset and determine whether the scalar-preserving Mahler system descends to another T17-admissible boundary chart; also resolve denominator trapping on that minimal orbit closure.
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T17 theorem analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T18 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -112,6 +117,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 48. `experiments/CDM4_T14_REPORT.md`
 49. `experiments/CDM4_T15_REPORT.md`
 50. `experiments/CDM4_T16_REPORT.md`
+51. `experiments/CDM4_T17_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
