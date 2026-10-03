@@ -2356,3 +2356,183 @@ R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
 **Lesson:** the residual T18 obstruction was not a nonprimitive Perron/Jordan anomaly. It was an unnecessarily strong formulation of real convergence.
 
 **Action:** the next theory boundary is nonuniform morphic scalar convergence/completion portability. Do not reopen T18 orbit geometry or authorize scientific compute.
+
+
+---
+
+### F0093 — Variable length changes the endpoint map, not the exact canonical scalar transport
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T20.**
+
+For a nonerasing morphism with incidence matrix \(M\), define
+\[
+\ell_J(s)=\mathbf1^TM^Je_s
+\]
+and
+\[
+L_J(n)=\sum_{i<n}\ell_J(u_i)=\mathbf1^TM^Jc(n).
+\]
+
+The fixed-point identity gives
+\[
+\boxed{
+\sigma^J(u_{<n})=u_{<L_J(n)}
+}
+\]
+and hence
+\[
+\boxed{
+c(L_J(n))=M^Jc(n),
+\qquad
+A_{L_J(n)}=v^TM^Jc(n).
+}
+\]
+
+The canonical finite multivariate system remains stationary:
+\[
+\mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)).
+\]
+
+At
+\[
+q_s=2^{v(s)}/3,
+\]
+one has
+\[
+\boxed{
+S(q_J)
+=
+\sum_{n\ge0}
+\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+}
+\]
+
+Thus the uniform formula \(nk^J\) must not be forced into a variable-length substitution. The correct object is the nonlinear endpoint \(L_J(n)\).
+
+Because the morphism is nonerasing,
+\[
+L_J(n)\ge n.
+\]
+Therefore any eventual global gap
+\[
+A_n\le(\log_2 3-\varepsilon)n
+\]
+makes every canonical scalar tail and state subseries absolutely convergent.
+
+**Lesson:** nonuniformity does not destroy exact scalar transport. It destroys the linear endpoint formula.
+
+**Action:** preserve \(L_J(n)\) as closed infrastructure in every future variable-length completion argument.
+
+---
+
+### F0094 — Primitive variable-length stable-image lifting uses Perron weight, not ordinary word length
+
+**Status: PROVED RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T20.**
+
+The uniform T17 grading
+\[
+w(\pi(a))=\mathbf1^Ta
+\]
+cannot be reused automatically when column sums vary.
+
+For a primitive growing incidence matrix, choose a positive left Perron eigenvector
+\[
+h^TM=\rho h^T,
+\qquad h>0.
+\]
+
+If
+\[
+L=\ker_{\mathbb Z}(M^{J_0}),
+\]
+then
+\[
+L\subseteq\ker h^T.
+\]
+Hence
+\[
+\boxed{
+w_h(\pi(a))=h^Ta
+}
+\]
+is a well-defined positive grading on the stable positive semigroup and satisfies
+\[
+\boxed{
+w_h(\overline M^n\gamma)=\rho^n w_h(\gamma).
+}
+\]
+
+After T18 reduction to a dense arithmetic-progression orbit coset, a constant character has bounded ordinary length exponent
+\[
+\mathbf1^TM^{a+Rn}\mu.
+\]
+Primitive Perron-Frobenius asymptotics force
+\[
+h^T\mu=0,
+\]
+so the same Perron weight descends through the complete relation lattice.
+
+The T17/T18 weighted support displacement, toric boundary contraction, \(S\)-unit height comparison, dense-orbit regular-tail theorem, rigid-local analysis and exact-specialization proof survive with \(\rho^n\) replacing \(k^n\).
+
+For a hypothetical positive integer anchor, primitive letter frequencies give the algebraic valuation mean
+\[
+\alpha=\frac{v^Tr}{\mathbf1^Tr}.
+\]
+T3 gives \(\alpha\le\log_2 3\). Since \(\log_2 3\) is transcendental, equality is impossible and \(\alpha<\log_2 3\). F0093 then gives real scalar convergence at every actual tail.
+
+The exact lifting/sign contradiction therefore excludes positive integer anchors for every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding, including singular incidence. Under T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
+
+**Lesson:** integrality of the toric weight is not the invariant requirement. Positivity, descent to the character quotient, finite-codimensional support filtration, and exact exponential scaling are the load-bearing properties.
+
+**Action:** treat the primitive variable-length branch as closed. Do not require \(\mathbf1^TM=k\mathbf1^T\) there.
+
+---
+
+### F0095 — Algebraic substituted-block ratios do not yet control the ordinary prefix limsup in reducible variable-length words
+
+**Status: OPEN BOUNDARY / PROVED NON-IMPLICATION in CDM4-T20.**
+
+For an expanding reducible substitution, finite-matrix Perron-Frobenius/Jordan theory gives algebraic exponential-polynomial asymptotics for
+\[
+\ell_J(s)=\mathbf1^TM^Je_s,
+\qquad
+B_J(s)=v^TM^Je_s.
+\]
+
+After passage to suitable residue classes,
+\[
+\frac{B_J(s)}{\ell_J(s)}
+\]
+has algebraic limits wherever the block occurs indefinitely. Hence no such state-block limit can equal the transcendental threshold
+\[
+\log_2 3.
+\]
+
+This does **not** prove that
+\[
+\lim_{n\to\infty}\frac{A_n}{n}
+\]
+exists, nor that
+\[
+\limsup_{n\to\infty}\frac{A_n}{n}
+\]
+is algebraic.
+
+The reason is geometric: ordinary prefixes can terminate inside substituted blocks whose lengths have different growth classes. Equal-dominant-radius component chains may also introduce leading
+\[
+J^e\rho^J
+\]
+terms, unlike the uniform T19 setting.
+
+Known convergence of normalized substituted-letter blocks, and even existence of logarithmic morphic frequencies, is not sufficient for the geometric scalar bound required by the completion-sign argument.
+
+**Lesson:** do not promote statewise/blockwise noncriticality to a global prefix gap.
+
+**Action:** CDM4-T21 must analyze the actual return-prefix decomposition of expanding reducible morphic fixed points and classify the arithmetic of
+\[
+\beta=\limsup A_n/n.
+\]
+Keep the separate positive-grading/lifting obligation visible. No scientific compute is authorized.
