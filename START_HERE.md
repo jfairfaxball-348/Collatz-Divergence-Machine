@@ -2,37 +2,33 @@
 
 ## Live repository state
 
-- Repository: `jfairfaxball-348/Collatz-Divergence-Machine`
-- Project stage: **CDM4-T9 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
-- Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach `1`
+- Repository: jfairfaxball-348/Collatz-Divergence-Machine
+- Project stage: **CDM4-T10 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: `experiments/CDM4_T9_REPORT.md`
-- Current authoritative scientific-search report: `experiments/CDM3_P2_REPORT.md`
-- Current authoritative post-campaign audit: `experiments/CDM3_P2A_REPORT.md`
-- Current authoritative engineering benchmark: `experiments/CDM3_B1_REPORT.md`
-- Current CDM3-B1 machine-readable result: `experiments/CDM3_B1_RESULT.json`
-- Current CDM3-B1 implementation note: `docs/CDM3_B1_ENGINEERING.md`
-- Current CDM3-P2 preflight report: `experiments/CDM3_P2_PREFLIGHT_REPORT.md`
-- Current CDM3-P2 preflight result: `experiments/CDM3_P2_PREFLIGHT_RESULT.json`
-- Current CDM3-P2 integration closeout: `experiments/CDM3_P2_INTEGRATION_CLOSEOUT.md`
-- Current CDM3-P2 scientific result: `experiments/CDM3_P2_RESULT.json`
-- Current CDM3-P2 work-unit provenance: `experiments/CDM3_P2_WORK_UNIT_DIGESTS.json`
-- Current R3 architecture specification: `docs/CDM2_R3_ARCHITECTURE.md`
-- Current R3 benchmark result: `experiments/CDM2_R3_BENCHMARK_RESULT.json`
-- Current CDM3-P1 preflight report: `experiments/CDM3_P1_PREFLIGHT_REPORT.md`
-- Current CDM3-P1 pilot result: `experiments/CDM3_P1_RESULT.json`
-- Current CDM3-P1 work-unit provenance: `experiments/CDM3_P1_WORK_UNIT_DIGESTS.json`
-- Current machine-readable CDM2 experiment result: `experiments/CDM2_E1_RESULT.json`
-- Current external discovery-coverage frontier: Tier 2 through `n<2^71`; Tier 3 live report through `n<2075*2^60` as audited on 2026-10-01
-- Current explicit candidate frontier: calibration-only candidates `CDM-00000001` (27) and `CDM-00000002` (127), both resolved; **no scientific divergence candidate**
-- Current symbolic frontier: T2 exact cylinders and anchoring equivalences; T3 return-prefix/height and critical-discrepancy obstructions; T4 exact 3-adic endpoint cylinders with no stronger residual return threshold; T5 exact inverse-conjugacy/Mahler representations; T6 proves a p-adic transcendence obstruction for a balanced complementary binary class; T7 proves higher-rank scalarization and finite-abelian Fourier diagonalization; T8 reduces balanced elementary-2-group translation kernels exactly to `E/K_C` and proves all-depth 2-adic nonsingularity. T9 then classifies the rational projected characters exactly (trivial, plus at most the odd-`k` alternating character), proves duplicate character polynomials cannot survive exact quotienting, and uses Kubota's first-order criterion to identify rational Mahler-coboundary independence as exactly equivalent to functional algebraic independence. No verified p-adic same-point functional-to-value lifting theorem was recovered, so the unresolved remainder is now the regular, functionally classified higher-rank Walsh-product specialization problem.
-- Current computational-reach frontier: **P2 exhausted 60,000,000 additional frozen 256/512/1024-bit sparse starts using CDM3-P2-v1 / CDM3-P1-gen-v1; 13,330,798 Arm-L starts were exactly pruned, 46,669,202 exact trajectories all reached the Tier-2 basin, and no exceptional freeze occurred**
+- Current authoritative theory report: experiments/CDM4_T10_REPORT.md
+- Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
+- Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
+- Current engineering benchmark: experiments/CDM3_B1_REPORT.md
+- Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
+- Current symbolic frontier: T2 exact anchoring cylinders; T3/T4 return and endpoint obstructions; T5 inverse/Mahler representation; T6 one-dimensional p-adic obstruction; T7–T9 exact higher-rank Walsh quotient, support, regularity, rational-character classification, and Mahler-coboundary functional theory. **T10 now supplies the missing characteristic-zero nonarchimedean same-point lifting theorem through Adamczewski–Bell–Smertnig 2023.**
+- T10 correction: the prior working conclusion that the relevant modern Mahler value lifting remained archimedean was incomplete. JEMS 25 (2023), Theorems 4.2–4.3, are explicitly formulated at arbitrary places of number fields and apply to the exact diagonal Walsh system at W=2^B/3^k because T8 already proves regularity at every Mahler iterate.
+- T10 additive theorem: after zero and rational components are removed, define i~j iff P_i/P_j is rational, equivalently iff the pairwise cocycle quotient is a rational Mahler coboundary. Representatives of distinct classes, together with 1, are functionally linearly independent and therefore have linearly independent values over algebraic numbers at W.
+- Exact residual boundary: writing P_i=R_i P_r inside each rational-multiple class C, the nonrational Fourier contribution is grouped by
+  \[
+  A_C(W)=\sum_{i\in C}\widehat C_iR_i(W).
+  \]
+  The exact value F_0(W) is algebraic/rational **if and only if every nonrational class has A_C(W)=0**. If at least one class coefficient is nonzero, F_0(W) and the inverse value H are transcendental in the 2-adic completion.
+- Important special case: if no two genuine nonrational Walsh products are rational-function multiples, rational same-point cancellation is impossible automatically, even when higher multiplicative relations exist.
+- New project consequence: for the T10-covered higher-rank recursive class, bounded R_m implies eventual periodicity. The restricted Periodicity-Conjecture boundary is reduced to exact rational-coboundary collision classes and grouped-weight cancellation.
+- Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
-- CDM3: **CDM3-P2A COMPLETE; same-distribution CPU scaling, GPU work, and a new generator/distribution remain unauthorized. The sparse-search machine is parked pending a new scientific mechanism.**
-- Immediate next task: **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit, theory only: prove or recover a completion-correct nonarchimedean lifting theorem for the T9 functionally independent first-order family at `W=2^B/3^k`, or derive a Collatz-specific additive substitute**
-- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, longer candidate trajectories, or any scientific starts not separately justified and frozen after a later research decision
-- Explicitly permitted next action: **CDM4-T10 theory/literature analysis only**, as specified in the T9 report; no new scientific starts are authorized
+- CDM3: **parked pending a new scientific mechanism**
+- Immediate next task: **CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit, theory only**
+- T11 target: classify pairwise rational-function-multiple Walsh components exactly and determine whether all grouped coefficients A_C(W) can vanish simultaneously. Prove a universal nonvanishing theorem or classify the exceptional rational-value families for ordinary-integrality/positivity analysis.
+- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
+- Explicitly permitted next action: **CDM4-T11 theorem/symbolic analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -83,6 +79,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 41. `experiments/CDM4_T7_REPORT.md`
 42. `experiments/CDM4_T8_REPORT.md`
 43. `experiments/CDM4_T9_REPORT.md`
+44. `experiments/CDM4_T10_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
