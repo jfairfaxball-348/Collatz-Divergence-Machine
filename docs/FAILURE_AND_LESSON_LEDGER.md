@@ -1315,3 +1315,153 @@ The same divisor argument extends to finite abelian translation characters over 
 **Lesson:** no Collatz-specific cancellation identity is needed in the covered abelian translation class once the coboundary degree theorem is known.
 
 **Action:** move the theory boundary to nonabelian/higher-dimensional representation blocks or generic finite-kernel Mahler systems. No scientific compute is authorized.
+
+
+## F0069 — Nonabelian output reduction is a coset E-set, not generally a quotient group
+
+**Status: PROVED in CDM4-T12.**
+
+For the finite digit-translation group
+\[
+E=\langle\varepsilon_0,\ldots,\varepsilon_{k-1}\rangle
+\]
+and exact Collatz block-constant profile \(C:E\to\mathbb Z_{>0}\), define
+\[
+K_C=\{h\in E:C(xh)=C(x)\ \forall x\in E\}.
+\]
+
+Then two reachable kernel states \(g,h\) produce the same complete output sequence if and only if
+\[
+g^{-1}h\in K_C.
+\]
+
+Therefore the exact reachable/output state space is
+\[
+E/K_C
+\]
+as a right-coset set with the natural left \(E\)-action, and the exact number of distinct kernel sequences is
+\[
+[E:K_C].
+\]
+
+Normality of \(K_C\) is not automatic and is not needed.
+
+**Lesson:** in nonabelian finite-state reductions, output equivalence should be treated first as a congruence for the actual transition action. Calling it a quotient group without proving normality adds nonexistent structure.
+
+**Action:** use the coset permutation representation \(\operatorname{Ind}_{K_C}^{E}1\) in all future nonabelian translation arguments.
+
+
+## F0070 — Finite-group translation Mahler blocks are automatically regular at the complete 2-adic Collatz orbit
+
+**Status: PROVED in CDM4-T12.**
+
+For every irreducible constituent \(\rho\) of the reduced coset permutation representation,
+\[
+M_\rho(z)=\sum_{r=0}^{k-1}z^r\rho(\varepsilon_r)
+\]
+up to the explicit dual/inverse convention.
+
+Prolongability gives
+\[
+\varepsilon_0=e,
+\qquad
+M_\rho(0)=I.
+\]
+
+At any place \(v\mid2\), a finite-group representation admits an \(E\)-stable \(\mathcal O_v\)-lattice. In a lattice basis,
+\[
+\rho(g)\in\operatorname{GL}_{d_\rho}(\mathcal O_v).
+\]
+Since
+\[
+0<|W|_v<1,
+\]
+for every \(j\ge0\),
+\[
+M_\rho(W^{k^j})\equiv I\pmod{\mathfrak m_v},
+\]
+and therefore
+\[
+\det M_\rho(W^{k^j})\in\mathcal O_v^\times.
+\]
+
+**Lesson:** the finite-group translation hypothesis supplies an all-depth unit theorem directly. Numerical singularity checks and determinant root enumeration are unnecessary.
+
+**Action:** treat complete Mahler-orbit regularity as closed infrastructure for balanced finite-group translation systems.
+
+
+## F0071 — Higher-dimensional determinant data do not classify rational Mahler modules
+
+**Status: PROVED boundary / UNKNOWN classification in CDM4-T12.**
+
+In standard column orientation, a rational module morphism between irreducible blocks satisfies
+\[
+A_\rho(z)R(z^k)=R(z)A_\sigma(z).
+\]
+
+For an invertible equal-rank gauge this implies
+\[
+\frac{\det A_\rho(z)}{\det A_\sigma(z)}
+=
+\frac{\det R(z)}{\det R(z^k)}.
+\]
+
+This determinant coboundary is necessary, not sufficient. Moreover
+\[
+\deg\det M_\rho\le d_\rho(k-1),
+\]
+so the exact scalar degree budget used in T11 no longer forces a one-zero/one-pole divisor when \(d_\rho>1\).
+
+Schur's lemma and Burnside's theorem exclude constant proper invariant subspaces of an irreducible \(d_\rho>1\) block, but they do not exclude \(z\)-dependent rational submodules.
+
+**Lesson:** matrix Mahler rigidity cannot be inferred from irreducibility of the underlying finite-group representation or from determinant data alone.
+
+**Action:** do not promote determinant independence to coordinate independence or matrix gauge rigidity. The rational semilinear Hom-space is the correct unresolved object if the stronger conclusion \(H\notin\mathbb Q\) is pursued.
+
+
+## F0072 — Regular relation lifting plus real sign closes finite nonabelian translations as positive-anchor routes
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T12.**
+
+For a genuinely aperiodic balanced finite-group translation word, a hypothetical positive integer anchor \(N\) is subject to T3's exact height bound. Balance gives substitution-level mean \(B/k\), so
+\[
+B/k<\log_2 3
+\]
+and hence
+\[
+0<W=2^B/3^k<1
+\]
+in the real absolute value.
+
+The exact balanced inverse identity is
+\[
+H=-F_{K_C}(W)/3^k.
+\]
+If \(H=N>0\), then in the 2-adic completion
+\[
+F_{K_C}(W)+3^kN=0.
+\]
+
+By F0070 the augmented Mahler system containing \(1\) and the reduced state vector is regular at \(W\). Adamczewski–Bell–Smertnig Theorem 4.3 therefore lifts this homogeneous linear value relation to an algebraic functional identity whose specialization at \(z=W\) is exactly the same linear form.
+
+After embedding the coefficient number field into \(\mathbb C\), the formal identity remains valid. Because \(0<W<1\), the state series converge there and have positive exact Collatz coefficients, so
+\[
+F_{K_C}^{(\infty)}(W)>0.
+\]
+The lifted specialization would require
+\[
+F_{K_C}^{(\infty)}(W)=-3^kN<0,
+\]
+a contradiction.
+
+Thus no genuinely nonperiodic balanced finite-group translation family, including the nonabelian case, has an ordinary positive-integer anchor. By T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+for this entire covered class.
+
+The stronger statement \(H\notin\mathbb Q\) remains open for general nonabelian blocks. In the subcritical case, any surviving rational exception lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; it may still be a negative ordinary integer.
+
+**Lesson:** same-point value independence is not the only way to close a recursive anchoring class. Once a Mahler system is regular, exact relation lifting can turn a hypothetical positive anchor into a functional identity, and a sign invariant in another completion can contradict that identity.
+
+**Action:** move the primary boundary to generic balanced finite-\(k\)-kernel systems and classify regularity there. Do not spend another session completing nonabelian gauge classification unless the stronger rationality question becomes load-bearing.
