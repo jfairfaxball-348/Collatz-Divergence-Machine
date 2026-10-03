@@ -499,6 +499,39 @@ Exact forward scalar transport survives.
 
 This stable-image system is not automatically a standard affine Mahler system: an intrinsic lattice basis may introduce negative exponents and the ambient origin is a toric boundary point. No new genuinely multivariate/unbalanced positive-anchor class is closed and no new bounded-\(R_m\Rightarrow\) periodicity implication is promoted.
 
+**CDM4-T16 closeout.** T16 proves a mixed-place exact nonarchimedean multivariate lifting theorem sufficient for the primitive dominant T14 class.
+
+The proof keeps Adamczewski–Faverjon's global admissibility/vanishing machinery at the ordinary embedding of the same algebraic orbit, but moves the input relation and local analytic contradiction to the chosen characteristic-zero nonarchimedean place. The local replacements are explicit: strict Tate algebras, Gauss norms, translated Tate expansions, rigid Hensel lifting, injectivity of restriction on concentric affinoid polydiscs, ultrametric coefficient estimates replacing Lemmas 9.6–9.8, and local-place Liouville inequalities.
+
+The Section 9.4 normalization remains algebraic, so the output preserves the exact input polynomial:
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X).
+\]
+
+For a primitive dominant Collatz system with
+\[
+\det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ \(T\)-independent},
+\]
+the exact 2-adic positive-rational anchor relation therefore lifts to an algebraic functional identity. T14 real contraction and exact scalar reconstruction then give
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+contradicting \(S^{(\infty)}(q)>0\) for \(N>0\). Hence
+\[
+H\notin\mathbb Q_{>0}
+\]
+throughout this newly closed primitive dominant class. In particular no positive integer anchor exists there, and T2 gives
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+under the exact finite-alphabet anchoring hypotheses.
+
+The theorem is deliberately mixed-place rather than fully arbitrary-place: T16 does not prove a nonarchimedean replacement for Adamczewski–Faverjon Theorem 6.4 because the T14 primitive tail already supplies the ordinary admissible embedding needed for that global zero estimate.
+
+The T15 singular-incidence stable-image torus remains open. The affine auxiliary-function proof still depends on the positive exponent monoid \(\mathbb N^m\), total-degree truncation at the affine origin, and exponential displacement of high-order support. A Laurent monomial isogeny approaching a toric boundary needs an intrinsic toric semigroup/weight filtration and boundary chart.
+
+Negative rational anchors are not excluded. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -521,24 +554,24 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T16 — rigid/nonarchimedean monomial lifting at a regular torus tail, theory only.**
+**CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum, theory only.**
 
-Treat the balanced one-variable branch as closed and retain the T14 regular-tail theorem plus the T15 stable-image torus/minimalization theorem as structural infrastructure.
+Treat T16's primitive dominant affine positive-anchor obstruction as closed infrastructure.
 
 Primary obligation:
 
-1. prove a characteristic-zero nonarchimedean relation-lifting theorem for a nonsingular monomial map at a regular algebraic point with exact specialization
+1. start from the T15 stable-image torus \(X\) and finite torus isogeny \(\tau_X\);
+2. choose a toric compactification or rigid/formal boundary chart adapted to the exact Collatz tail;
+3. replace the affine \(\mathbb N^m\) total-degree filtration by an intrinsic finitely generated semigroup or weight filtration of characters regular on that chart;
+4. prove the toric analogue of T16's exponential support-displacement/Gauss estimate;
+5. preserve exact specialization
    \[
    Q(\alpha,\mathbf X)=P(\mathbf X);
    \]
-2. it is sufficient to cover the dominant class
-   \[
-   T\in\mathcal M,\qquad q\text{ is }T\text{-independent};
-   \]
-3. replace the complex-germ/polydisc continuation and Cauchy-estimate steps of Adamczewski–Faverjon Theorem 2.3 by a complete rigid-analytic argument;
-4. use Brechler Proposition 3.12 only as non-load-bearing proof guidance unless publication status changes;
-5. if exact lifting is obtained, execute the completion-sign contradiction immediately;
-6. if possible, formulate the theorem intrinsically for torus isogenies so that the T15 singular-incidence stable-image reduction is covered without forcing artificial affine coordinates.
+6. determine whether the T15 singular-incidence stable-image class is thereby closed;
+7. keep the nonprimitive real-contraction problem separate.
+
+Do not force a nonnegative exponent matrix merely to fit the affine theorem.
 
 Do not repeat the generic literature audit, balanced finite-kernel regularity, group-translation analysis, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
