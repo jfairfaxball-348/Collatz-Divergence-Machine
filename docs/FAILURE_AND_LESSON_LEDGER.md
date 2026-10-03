@@ -1245,3 +1245,73 @@ for every rational-multiple class \(C\).
 **Lesson:** once a generic bridge is closed, return immediately to the project-specific algebra instead of accumulating adjacent transcendence machinery.
 
 **Action:** the Mahler route is **NARROWED**. T11 is theorem-only rational-coboundary collision and grouped-weight cancellation analysis. No scientific compute, substitution enumeration, CPU/GPU scaling, or new sampling distribution is authorized.
+
+
+## F0067 — Full-length pairwise Mahler coboundaries collapse to fixed-point cocycles
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T11.**
+
+Let \(S,T\in\overline{\mathbb Q}[z]\) satisfy
+\[
+S(0)=T(0)=1,
+\qquad
+\deg S=\deg T=k-1,
+\]
+and suppose
+\[
+\frac{S(z)}{T(z)}
+=
+\frac{R(z)}{R(z^k)}.
+\]
+
+Writing \(D=\operatorname{div}(R)\), the conditions at \(0\) and \(\infty\) force \(D(0)=D(\infty)=0\). If the positive degree of \(D\) is \(d\), then on \(\mathbb G_m\)
+\[
+\|\phi^*D\|_1=k\|D\|_1,
+\qquad
+\phi(z)=z^k.
+\]
+Hence
+\[
+\|D-\phi^*D\|_1\ge2(k-1)d.
+\]
+But a ratio of two degree-\((k-1)\) polynomials has divisor \(L^1\)-norm at most \(2(k-1)\). Therefore \(d\le1\).
+
+For a nontrivial coboundary, \(d=1\), so \(D=[\alpha]-[\beta]\). The remaining degree budget forces both \(\alpha\) and \(\beta\) to be fixed by \(z\mapsto z^k\), and consequently
+\[
+S(z)=Q_\beta(z),
+\qquad
+T(z)=Q_\alpha(z),
+\qquad
+Q_\gamma(z)=\frac{z^k-\gamma}{z-\gamma}.
+\]
+
+In the elementary-2 Walsh family, the coefficient restriction \(\{\pm1\}\) leaves only \(\gamma=\pm1\). Thus the sole distinct collision is the odd-\(k\) trivial/alternating rational pair already removed by T9/T10.
+
+**Lesson:** the exact one-digit degree budget is itself a coboundary rigidity theorem. Genuine nonrational elementary-2 Walsh components cannot collide pairwise.
+
+**Action:** do not repeat pairwise Walsh factor searches or root-orbit enumeration. Treat the elementary-2 pairwise collision problem as closed.
+
+
+## F0068 — Grouped-weight cancellation disappears after rational-character removal
+
+**Status: PROVED in CDM4-T11.**
+
+After exact zero/rational preprocessing, every genuine elementary-2 rational-multiple class is a singleton:
+\[
+C_\chi=\{\chi\}.
+\]
+Therefore
+\[
+A_{C_\chi}(W)=\widehat C_\chi\ne0
+\]
+by exact Fourier support.
+
+T5's injectivity of the exact block constant \(w\mapsto C_w\) ensures that a genuinely nonperiodic valuation-block language cannot collapse to a periodic block-constant sequence. Hence a genuinely nonperiodic reduced family has at least one genuine supported character.
+
+Combining this with T10's arbitrary-place same-point lifting theorem proves that the exact inverse-Collatz value is a transcendental 2-adic integer, not a rational or ordinary positive integer.
+
+The same divisor argument extends to finite abelian translation characters over their cyclotomic coefficient field: a distinct pairwise coboundary can occur only between individually rational character products. After rational-character removal, genuine finite-abelian classes are also singletons.
+
+**Lesson:** no Collatz-specific cancellation identity is needed in the covered abelian translation class once the coboundary degree theorem is known.
+
+**Action:** move the theory boundary to nonabelian/higher-dimensional representation blocks or generic finite-kernel Mahler systems. No scientific compute is authorized.
