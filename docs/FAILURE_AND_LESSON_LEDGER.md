@@ -1970,9 +1970,9 @@ For the exact T14/T15 dominant system, assume
 \]
 and assume the substitution is primitive.
 
-T16 proves exact mixed-place lifting at a sufficiently deep regular tail. A hypothetical
+T16 proves exact mixed-place lifting at a sufficiently deep regular tail. A hypothetical realized positive integer anchor
 \[
-H=N\in\mathbb Q_{>0}
+H=N\in\mathbb Z_{>0}
 \]
 gives the transported 2-adic relation
 \[
@@ -1986,13 +1986,15 @@ which contradicts positivity.
 
 Therefore
 \[
-\boxed{H\notin\mathbb Q_{>0}}
+\boxed{H\notin\mathbb Z_{>0}}
 \]
-for every genuinely aperiodic member of the covered primitive dominant class. In particular positive integer anchors are excluded. By T2,
+for every genuinely aperiodic member of the covered primitive dominant class. By T2,
 \[
 R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
 \]
 in this new class under the exact finite-alphabet anchoring hypotheses.
+
+T14 derives the ordinary real contraction used here from the realized positive integer orbit. An abstract positive rational noninteger value is therefore not excluded from primitivity alone. If uniform real subcriticality is independently verified, the same T16 argument excludes every \(H\in\mathbb Q_{>0}\).
 
 Negative rational values are not excluded.
 
