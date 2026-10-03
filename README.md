@@ -37,77 +37,78 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T13 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T14 is complete — D: NO QUALIFYING THEOREM FOUND. Multivariate tail regularity is substantially sharpened, but no new scientific compute is authorized.**
 
-T10's arbitrary-place Mahler relation-lifting theorem remains closed infrastructure. T11 closes balanced finite-abelian translations more strongly by transcendence, and T12 closes balanced finite nonabelian translations as positive-anchor routes.
+T10's arbitrary-place one-variable Mahler relation-lifting theorem remains closed infrastructure. T11 closes balanced finite-abelian translations, T12 closes balanced finite-nonabelian translations as positive-anchor routes, and T13 closes the complete balanced one-variable finite-\(k\)-kernel branch as a positive-anchor route.
 
-T13 removes the finite-group hypothesis from the positive-anchor obstruction.
+T14 returns to the exact unbalanced T5 system. For a \(k\)-uniform substitution with prefix Parikh vector \(c(n)\), incidence matrix \(M\), and prefix maps \(p_r\),
 
-For the exact true finite-\(k\)-kernel Collatz coefficient system,
 \[
-\mathbf F(z)=M(z)\mathbf F(z^k),
+c(kn+r)=Mc(n)+p_r(u_n).
+\]
+
+With
+
+\[
+F_t(x)=\sum_{n:u_n=t}x^{c(n)},
 \qquad
-M(z)=\sum_{r=0}^{k-1}z^rA_r,
+\tau(x)_s=\prod_t x_t^{M_{t,s}},
 \]
-the states are the distinct reachable kernel sequences of the exact positive block-constant output. Each \(A_r\) is merely deterministic; it need not be a permutation or belong to a group action.
 
-The constant matrix is
-\[
-M(0)=A_0.
-\]
-If the digit-zero map is a permutation, \(A_0\) is a permutation matrix and the complete 2-adic Mahler orbit is regular. If \(A_0\) is singular, that alone is not an intrinsic obstruction.
+the exact finite system is
 
-Let
 \[
-D(z)=\det M(z).
+\mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
 \]
-If \(D\not\equiv0\), only finitely many nonzero Mahler iterates can be singular. If
-\[
-D\equiv0,
-\]
-the canonical state series are rational-function linearly dependent.
 
-More generally, choose a \(\mathbb Q(z)\)-basis of the exact state-series span that includes the prescribed root series \(F_0\). The induced minimal system is
+and at
+
 \[
-\mathbf G(z)=A(z)\mathbf G(z^k),
+q_s=\frac{2^{v(s)}}3
+\]
+
+the exact inverse value is
+
+\[
+H=-\frac13\sum_tF_t(q).
+\]
+
+T14 first removes unreachable and output-equivalent states exactly. It then separates finite-state minimality from rational-function linear minimality. When \(\det M\ne0\), the monomial map is dominant and an exact rational-linear basis may be chosen with the prescribed Collatz scalar
+
+\[
+S(x)=\sum_tF_t(x)
+\]
+
+as a basis coordinate; the induced minimal system is invertible over \(\mathbb Q(x)\). When \(\det M=0\), naive full-field rational minimalization is not automatically legitimate because rational denominators can vanish identically on the lower-dimensional monomial image.
+
+The exact monomial orbit is
+
+\[
+q_{j,s}=\frac{2^{B_j(s)}}{3^{k^j}},
 \qquad
-A(z)\in\operatorname{GL}_d(\mathbb Q(z)),
+B_j(s)=v^TM^je_s.
 \]
-with \(G_1=F_0\). Every such one-variable rational system is regular on a sufficiently deep nonzero Mahler tail
+
+It is pairwise distinct and tends coordinatewise to \(0\) 2-adically. T14 derives the exact \(T\)-independence criterion and proves a dynamical Mordell–Lang dichotomy: after passage to the stable image torus, every algebraic singular variety is hit either finitely often or along an arithmetic-progression suborbit.
+
+For the dominant Adamczewski–Faverjon admissible subclass—\(T=M^T\) in their class \(\mathcal M\) and the exact Collatz point \(T\)-independent—the orbit is Zariski dense. Hence every proper singular variety is hit only finitely often and every invertible rational minimal system has a sufficiently deep regular tail.
+
+T14 also proves the needed real-tail statement for primitive substitutions. A hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation
+
 \[
-\alpha=W^{k^J},
-\qquad
-W=\frac{2^B}{3^k}.
+\alpha<\log_2 3,
 \]
 
-Early singular canonical matrices do not need to be inverted. The exact root value is transported forward through their product to the regular tail.
+which implies uniform coordinatewise convergence of the deep real monomial orbit to \(0\). Forward transport preserves the exact positive scalar, so the real sign side of the T13 mechanism survives.
 
-A hypothetical genuinely aperiodic positive anchor forces
-\[
-\frac Bk<\log_2 3,
-\qquad
-0<W<1
-\]
-in the ordinary real absolute value. The transported 2-adic anchor relation at \(\alpha\) is regular, so Adamczewski–Bell–Smertnig Theorem 4.3 lifts it to a functional identity with the exact specialization. Evaluating that identity in the real completion reconstructs the original positive block-constant series
-\[
-F_0^{(\infty)}(W)>0,
-\]
-contradicting the sign required by a positive anchor.
+The remaining load-bearing gap is completion-specific. Adamczewski–Faverjon, *Annals of Mathematics* 204 (2026), provides a multivariate lifting theorem with exact specialization for **complex** values. It does not lift the required 2-adic anchor relation. The 2026 Brechler work explicitly targeting multivariate \(p\)-adic meromorphy/lifting remains a preprint and is non-load-bearing.
 
-Hence **no genuinely nonperiodic balanced one-variable finite-\(k\)-kernel Collatz family has an ordinary positive-integer anchor**, including canonical systems with singular \(A_0\), finitely many early singular iterates, or \(\det M\equiv0\).
-
-Combining with T2,
-\[
-R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
-\]
-throughout the covered balanced finite-kernel class.
-
-T13 does **not** prove universal \(H\notin\mathbb Q\). In a subcritical family, any surviving rational inverse value lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; a negative integer remains possible and is not a Collatz counterexample.
+Therefore T14 does not exclude a new genuinely multivariate/unbalanced positive-anchor class, does not prove a new bounded-\(R_m\Rightarrow\) periodicity theorem, and does not justify new computation.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
 
-The next authorized action is theory-only **CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit**. It should return to the exact T5 multivariate Parikh/monomial system, preserve the exact positive Collatz scalar through any reduction, and determine whether a completion-correct regular-tail plus relation-lifting argument survives beyond the balanced one-variable setting.
+The next authorized action is theory-only **CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit**. The primary obligation is to recover or prove a peer-reviewed-quality characteristic-zero arbitrary-place multivariate/monomial relation-lifting theorem with exact specialization for the T14 regular/admissible tail class. The secondary obligation is an exact scalar-preserving stable-image reduction for singular incidence matrices.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T13_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T14_REPORT.md before doing research.
