@@ -1004,3 +1004,133 @@ Specialized peer-reviewed p-adic algebraic-independence theorems such as Bundsch
 
 **Action:** CDM4-T9 should attack that theorem directly. Do not infer same-point no-cancellation from titles, abstracts, separate transcendence, functional independence alone, or complex value theorems.
 
+
+
+## F0061 — Projected elementary-2-group characters have only a trivial/alternating rational exception
+
+**Status: PROVED in CDM4-T9.**
+
+For a reduced translation character define
+
+[
+f_chi(n)=chi(u_n),
+qquad
+a_r=chi(arepsilon_r)in{pm1}.
+]
+
+Then
+
+[
+f_chi(kn+r)=f_chi(n)a_r,
+qquad
+a_0=1.
+]
+
+T9 proves directly that if this strongly (k)-multiplicative sequence is eventually periodic, then either
+
+[
+a_r=1quadorall r
+]
+
+and (f_chiequiv1), or (k) is odd and
+
+[
+a_r=(-1)^r,
+qquad
+f_chi(n)=(-1)^n.
+]
+
+Hence after the exact quotient (G=E/K_C), the only rational normalized Walsh components are the trivial
+
+[
+P(z)=1/(1-z)
+]
+
+and at most one odd-(k) alternating component
+
+[
+P(z)=1/(1+z).
+]
+
+Distinct quotient characters also have distinct cocycle polynomials (S_chi), because the digit translations generate (G).
+
+**Lesson:** formal character rationality is no longer an uncontrolled preprocessing ambiguity in the T8 elementary-2-group class. It has an exact symbolic classification.
+
+**Action:** remove zero components through (widehat C_chi=0), remove the trivial and possible alternating rational components exactly, and do not spend future sessions enumerating substitutions merely to discover projected periodicity.
+
+
+## F0062 — Mahler-coboundary independence is exactly functional algebraic independence for the first-order Walsh products
+
+**Status: PROVED theorem match in CDM4-T9; VALUE INFERENCE STILL FAILED.**
+
+A peer-reviewed restatement of Kubota's theorem applies to nonzero power series satisfying
+
+[
+f_i(z^k)=c_i(z)f_i(z).
+]
+
+It states that the functions are algebraically independent over the rational-function field if and only if their cocycles are multiplicatively independent modulo
+
+[
+H_k=
+left{
+g(z^k)/g(z):gin K(z)^	imes
+ight}.
+]
+
+For the normalized Walsh products
+
+[
+P_i(z)=S_i(z)P_i(z^k),
+]
+
+this means exactly:
+
+[
+P_1,ldots,P_t
+	ext{ algebraically independent}
+iff
+prod_iS_i(z)^{m_i}
+e R(z)/R(z^k)
+]
+
+for every nonzero integer vector (m).
+
+The coboundary equation is equivalently the divisor equation
+
+[
+operatorname{div}!left(prod_iS_i^{m_i}ight)
+=
+D-phi^*D,
+qquad
+phi(z)=z^k.
+]
+
+Thus a proposed multiplicative relation is an exact symbolic factor/orbit problem.
+
+The adjacent Kubota/Nishioka value theorem recovered in the same peer-reviewed source assumes ordinary (0<|gamma|<1). It is an archimedean lifting theorem and does not specialize the 2-adic values at (W=2^B/3^k).
+
+**Lesson:** T9 closes the functional-independence question but not the arithmetic specialization question. Functional algebraic independence is not p-adic value algebraic independence.
+
+**Action:** future work must attack the nonarchimedean functional-to-value bridge itself. Do not repeat Fourier diagonalization, determinant regularity, or functional coboundary independence as if they settled same-point rational cancellation.
+
+
+## F0063 — No checked same-point p-adic lifting theorem was recovered for the stationary Walsh family
+
+**Status: NO QUALIFYING THEOREM FOUND in CDM4-T9.**
+
+T9 performed another source-level audit after the functional hypotheses were sharpened.
+
+- Bugeaud–Yao remains a one-function first-order theorem. Its rational-unit extension is load-bearing only in that scalar setting.
+- Xu–Wang 2004 remains directly relevant by title and venue, but the accessible official material still does not expose enough theorem text to certify same-point, common-base, rational-unit, singularity, functional-independence, or height hypotheses.
+- Wang 2006 likewise remains source-level incomplete for simultaneous use.
+- Wang–Xu 2006 is cited inside Bugeaud–Yao's scalar proof, but that does not certify a several-function same-point theorem.
+- Flicker 1979 genuinely works over p-adic completions, but its transformation-sequence, limiting-function, growth, direction, and dominance hypotheses are not established for the stationary Walsh products. Its nonarchimedean mechanism also uses valuation separation, whereas T8 proves (v_2(P_i(W))=0) for every normalized product.
+- Bundschuh–Nishioka and Väänänen–Wallisser provide genuine p-adic independence results for different special function families.
+- Modern Mahler lifting theorems recovered in the relevant characteristic-zero setting remain archimedean for their value conclusions.
+
+No Collatz-specific additive identity was found that substitutes for the missing value theorem.
+
+**Lesson:** after T8–T9, the missing bridge is now sharply isolated: a characteristic-zero nonarchimedean same-point lifting theorem for several stationary first-order Mahler products at a regular algebraic rational S-unit point, or an exact Collatz-specific weighted no-cancellation theorem.
+
+**Action:** CDM4-T10 should audit/prove that bridge and, because it is the tenth numbered CDM4 session, simultaneously perform the mandatory progress-and-correction audit. No scientific compute is authorized.
