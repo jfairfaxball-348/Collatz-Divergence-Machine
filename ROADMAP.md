@@ -365,6 +365,45 @@ The same divisor theorem extends to balanced finite-abelian translation kernels:
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+**CDM4-T12 closeout.** T12 closes balanced finite nonabelian translation systems as aperiodic positive-integer anchoring routes.
+
+For the exact Collatz output profile, define
+\[
+K_C=\{h\in E:C(xh)=C(x)\ \forall x\in E\}.
+\]
+The true reachable/output state space is the coset \(E\)-set
+\[
+X=E/K_C,
+\]
+with exact kernel cardinality \([E:K_C]\); normality is not assumed. Over a splitting field,
+\[
+K[X]\cong\operatorname{Ind}_{K_C}^{E}1
+\cong\bigoplus_\rho V_\rho^{\oplus \dim V_\rho^{K_C}},
+\]
+and the irreducible Mahler blocks are \(M_\rho(z)=\sum_rz^r\rho(\varepsilon_r)\), up to the explicit inverse/contragredient convention.
+
+Because \(\varepsilon_0=e\), every block has constant term \(I\). A finite-group-stable lattice at every place above \(2\) gives
+\[
+M_\rho(W^{k^j})\equiv I\pmod{\mathfrak m_v}
+\]
+for all \(j\ge0\), so the complete reduced system is regular at the entire Mahler orbit.
+
+The stronger higher-dimensional rational-gauge problem remains open: rational module morphisms satisfy
+\[
+A_\rho(z)R(z^k)=R(z)A_\sigma(z),
+\]
+and determinant coboundaries are necessary but not sufficient. T12 does not claim universal \(H\notin\mathbb Q\) for nonabelian blocks.
+
+For the project objective, that unresolved module classification is not load-bearing. A hypothetical aperiodic positive anchor forces \(B/k<\log_2 3\), hence \(0<W<1\). Adamczewski–Bell–Smertnig Theorem 4.3 lifts the 2-adic anchor relation to a functional identity with the same specialization. Evaluating that identity in the real completion contradicts positivity of the exact Collatz coefficient series.
+
+Therefore no genuinely nonperiodic balanced finite-group translation family has an ordinary positive-integer anchor, and T2 yields
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+for this enlarged class.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -387,15 +426,22 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T12 — finite nonabelian translation / higher-dimensional representation audit, theory only.**
+**CDM4-T13 — generic balanced finite-kernel regularity / completion-sign audit, theory only.**
 
-Use the T10 arbitrary-place Mahler lifting theorem and the T11 first-order collision theorem as closed infrastructure.
+Treat the finite-group translation branch as closed for positive anchoring.
 
-For balanced finite-group translation systems with irreducible representation blocks of dimension greater than one, derive the exact reduced matrix Mahler blocks and the prescribed Collatz output coordinate. Classify rational-function linear/module relations among the relevant block outputs and determine whether those relations permit algebraic cancellation at
+For the exact reachable/output-reduced balanced finite-\(k\)-kernel system
 \[
-W=2^B/3^k.
+\mathbf F(z)=M(z)\mathbf F(z^k),
 \]
+without assuming the digit transition matrices form a group action, classify exactly when
+\[
+W=2^B/3^k
+\]
+is regular at every Mahler iterate.
 
-If a general theorem fails, isolate the exact higher-dimensional obstruction and the smallest natural subclass left open. Do not reopen generic p-adic lifting, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
+Where regularity holds, apply the T12 relation-lifting/sign argument directly to the prescribed positive Collatz coordinate. Where regularity fails, classify the singular obstruction and determine whether a regular subsystem, exact desingularization, or scalar quotient preserves the prescribed coordinate.
+
+Do not reopen generic p-adic lifting, finite-abelian or finite-nonabelian translation representation analysis, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
 No new scientific compute is authorized.
