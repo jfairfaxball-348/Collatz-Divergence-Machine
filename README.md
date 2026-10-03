@@ -37,57 +37,51 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T15 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
+**CDM4-T16 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-The balanced one-variable finite-kernel branch remains closed as a positive-anchor route by T13. T14 then established the dominant multivariate regular-tail infrastructure. T15 audited the missing completion bridge and the singular-incidence stable-image reduction.
+The balanced one-variable finite-kernel branch remains closed by T13. T14–T15 supplied the dominant multivariate regular-tail infrastructure and the singular-incidence stable-image torus. T16 now proves the missing completion bridge for the **primitive dominant affine subclass**.
 
-The literature boundary is now exact:
+The new T16 theorem is a mixed-place / bi-admissible exact lifting theorem. For a nonsingular nonnegative monomial map, an algebraic regular point, and algebraic-coefficient Mahler functions:
 
-- Adamczewski–Faverjon 2026 gives multivariate Mahler relation lifting with exact specialization in the **complex** setting.
-- Adamczewski–Bell–Smertnig 2023 gives exact relation lifting at an **arbitrary place**, but only in **one variable**.
-- Flicker 1979 is genuinely multivariate and p-adic, but requires a separate strong limiting-function/growth package and is not a generic lifting theorem for the T14 regular-tail class.
-- Brechler arXiv:2607.24877v1 remains a **preprint** as of 2026-10-03. Its Proposition 3.12 proves p-adic multivariate meromorphy; its Theorem 1.2 strengthens the ordinary Adamczewski–Faverjon lifting theorem but is not stated as an arbitrary-place p-adic value-lifting theorem.
+- the published Adamczewski–Faverjon complex admissibility/vanishing theorem is retained for the same algebraic orbit;
+- the input value relation may live in a characteristic-zero nonarchimedean completion;
+- local analytic branches are constructed by rigid Hensel theory;
+- Tate/Gauss norms replace Cauchy estimates;
+- the rigid identity theorem replaces complex analytic continuation;
+- local-place Liouville bounds replace the archimedean lower-bound use;
+- and the lifted algebraic relation preserves the exact specialization
+  \[
+  Q(\alpha,\mathbf X)=P(\mathbf X).
+  \]
 
-A direct nonarchimedean transplant of Adamczewski–Faverjon Theorem 2.3 was not completed. The missing proof package is rigid-analytic: replace complex convergent germs/polydiscs, Cauchy estimates, translated expansions, and analytic continuation while preserving the exact specialization polynomial.
-
-T15 does complete the singular-incidence stable-image algebra.
-
-If \(J_0\) is past rank stabilization and
+This is sufficient for the T14 primitive dominant class
 \[
-L=\ker_{\mathbb Z}(M^{J_0}),
+\det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent}.
 \]
-then the eventual stable image
+A hypothetical positive rational anchor transports to a regular 2-adic tail, lifts with its exact polynomial, and then evaluates in the real completion. Exact reconstruction gives
 \[
-X=\operatorname{im}\tau^{J_0}
+S^{(\infty)}(q)+3N=0,
 \]
-has character lattice
+contradicting \(S^{(\infty)}(q)>0\) and \(N>0\). Hence no genuinely aperiodic covered system has
 \[
-X^*(X)\cong\mathbb Z^m/L.
+H\in\mathbb Q_{>0},
 \]
-The induced monomial map is a surjective torus isogeny. The exact Collatz tail lies in \(X\).
+and in particular none has a positive-integer anchor.
 
-The canonical series restrict analytically to the 2-adic unit-domain of \(X\). Over \(K(X)\), exact rational-linear minimalization gives
+By T2, throughout the newly closed primitive dominant class,
 \[
-\mathbf G(x)=A_X(x)\mathbf G(\tau_X(x)),
-\qquad
-A_X(x)\in\operatorname{GL}_{r_X}(K(X)),
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
 \]
-with the prescribed scalar retained exactly as
-\[
-G_1=S=\sum_tF_t.
-\]
-Forward scalar transport from the original ambient system remains exact.
+under the exact finite-alphabet anchoring hypotheses.
 
-This stable-image meromorphic system is not automatically in the standard affine multivariate Mahler theorem class: an intrinsic lattice basis can introduce negative exponents, and the ambient origin is a toric boundary point rather than a point of the stable-image torus.
+T16 does **not** close the T15 singular-incidence stable-image torus class. The affine auxiliary-function proof still uses the positive exponent monoid, total-degree truncation at the affine origin, and high-order support displacement. An intrinsic Laurent/toric version must work in a boundary chart rather than force an artificial nonnegative matrix.
 
-T15 therefore does not exclude a new genuinely multivariate/unbalanced positive-anchor class, does not prove a new bounded-\(R_m\Rightarrow\) periodicity theorem, and does not find an explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample.
+Negative rational anchor values are not excluded. No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
-The next authorized action is theory-only **CDM4-T16 — rigid/nonarchimedean monomial lifting at a regular torus tail**. The target is an exact homogeneous relation-lifting theorem at a nonarchimedean place with
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X),
-\]
-at minimum for the T14 dominant \(T\in\mathcal M\), \(T\)-independent regular-tail subclass. A stronger intrinsic torus-isogeny theorem would also absorb the T15 stable-image reduction.
+Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon 2026 Annals addendum was checked and does not supply an arbitrary-place theorem.
+
+The next authorized action is theory-only **CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum**. Build a toric/formal/rigid chart for the T15 stable-image tail, replace affine total degree by an intrinsic semigroup/weight filtration, and prove the toric analogue of the exponential support-displacement/Gauss estimate while preserving exact specialization.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T15_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T16_REPORT.md before doing research.
