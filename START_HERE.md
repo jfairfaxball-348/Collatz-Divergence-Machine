@@ -3,60 +3,62 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T12 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T13 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T12_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T13_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies arbitrary-place same-point relation lifting for regular Mahler systems at \(W=2^B/3^k\).
-- T11 scalar/abelian infrastructure remains closed: after rational-character removal, genuine finite-abelian first-order character classes are singletons and genuinely nonperiodic covered abelian inverse values are transcendental.
-- T12 exact nonabelian output reduction: for \(E=\langle\varepsilon_r\rangle\),
+- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies arbitrary-place relation lifting for regular one-variable Mahler systems.
+- T11 finite-abelian translation branch remains closed by the stronger transcendence obstruction.
+- T12 finite nonabelian translation branch remains closed as a positive-anchoring route.
+- T13 exact generic finite-kernel system:
   \[
-  K_C=\{h\in E:C(xh)=C(x)\ \forall x\in E\},
+  \mathbf F(z)=M(z)\mathbf F(z^k),
   \qquad
-  X=E/K_C.
+  M(z)=\sum_{r=0}^{k-1}z^rA_r,
   \]
-  The quotient is a transitive coset \(E\)-set; \(K_C\) need not be normal. The exact number of distinct \(k\)-kernel sequences is \(m=[E:K_C]\).
-- T12 representation decomposition:
+  where the states are the distinct true reachable \(k\)-kernel sequences and each \(A_r\) is the exact deterministic digit-transition matrix.
+- T13 digit-zero classification: \(M(0)=A_0\). Since \(A_0\) has one \(1\) in each row, it is invertible exactly when the digit-zero map is a permutation. In that case \(M(W^{k^j})\) is a 2-adic unit matrix at every depth.
+- T13 canonical determinant classification: if \(D(z)=\det M(z)\not\equiv0\), only finitely many nonzero Mahler iterates can be singular. If \(D\equiv0\), the canonical state series are rational-function linearly dependent, so the presentation is Mahler-linearly nonminimal.
+- T13 rational-linear minimalization: with
   \[
-  K[X]\cong\operatorname{Ind}_{K_C}^E1
-  \cong\bigoplus_\rho V_\rho^{\oplus m_\rho},
+  d=\dim_{\mathbb Q(z)}\operatorname{span}\{F_i\},
+  \]
+  one can choose an exact basis \(\mathbf G\) from the original state functions with \(G_1=F_0\). It satisfies
+  \[
+  \mathbf G(z)=A(z)\mathbf G(z^k),
   \qquad
-  m_\rho=\dim V_\rho^{K_C},
+  A(z)\in\operatorname{GL}_d(\mathbb Q(z)).
   \]
-  with matrix blocks \(M_\rho(z)=\sum_r z^r\rho(\varepsilon_r)\) up to the explicit dual/inverse convention.
-- T12 all-depth regularity: because \(\varepsilon_0=e\), every block has \(M_\rho(0)=I\). At every place above \(2\), an \(E\)-stable integral lattice gives
+  Thus the exact Collatz coordinate survives every reduction.
+- T13 tail regularity: every invertible rational one-variable Mahler system is regular on a sufficiently deep nonzero tail
   \[
-  M_\rho(W^{k^j})\equiv I\pmod{\mathfrak m_v},
+  \alpha=W^{k^J}
   \]
-  so every supported block and the full reduced system are regular at every Mahler iterate.
-- T12 positive-anchor obstruction: a hypothetical genuinely aperiodic positive anchor forces \(B/k<\log_2 3\), hence \(0<W<1\) in the real absolute value. The 2-adic relation
+  because its nonzero zeros/poles form a finite set and the Mahler orbit points are distinct. Early singular canonical matrices need not be inverted; the exact anchor relation is transported forward through their product.
+- T13 positive-anchor obstruction: a genuinely aperiodic positive anchor forces
   \[
-  F_{K_C}(W)+3^kN=0
+  B/k<\log_2 3,\qquad 0<W<1.
   \]
-  lifts by Adamczewski–Bell–Smertnig Theorem 4.3 to a functional identity with the same specialization. Evaluating that identity in the real completion contradicts positivity of the exact Collatz coefficient series. Therefore no genuinely nonperiodic balanced finite-group translation family, including the nonabelian case, has an ordinary positive-integer anchor.
-- Project consequence: for the complete covered balanced finite-group translation class,
+  The transported 2-adic anchor relation at the regular tail lifts by Adamczewski–Bell–Smertnig Theorem 4.3 to a functional identity with the exact specialization. Real evaluation reconstructs the original positive series \(F_0^{(\infty)}(W)>0\), contradicting a positive anchor.
+- Therefore **no genuinely nonperiodic balanced one-variable finite-\(k\)-kernel Collatz family has an ordinary positive-integer anchor**, including canonical systems with singular \(A_0\), finitely many early singular Mahler iterates, or \(\det M\equiv0\).
+- Project consequence for the complete covered balanced finite-kernel class:
   \[
   R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
   \]
-- Stronger nonabelian rationality remains open: T12 does **not** prove \(H\notin\mathbb Q\) for every nonabelian matrix system. In the subcritical case any surviving rational value lies in \(\mathbb Q\cap\mathbb Z_2\) and is negative in the ordinary real embedding; no value in \(\mathbb Z_{>0}\) survives.
-- Higher-dimensional rational module relations are precisely semilinear Hom/gauge equations such as
-  \[
-  A_\rho(z)R(z^k)=R(z)A_\sigma(z).
-  \]
-  Constant proper invariant subspaces are excluded inside irreducible \(d_\rho>1\) blocks, but \(z\)-dependent rational submodules are not classified. Determinant coboundaries are necessary for equal-rank gauge equivalence, not sufficient.
-- Restricted Periodicity-Conjecture boundary: finite abelian translations are closed by T11; finite nonabelian balanced translations are now closed as positive-anchoring routes by T12. The live residual boundary moves to generic balanced finite-\(k\)-kernel Mahler systems, multivariate/unbalanced automatic inverse systems, and recursive languages outside the balanced one-variable framework.
+- Stronger rationality remains open: T13 does **not** prove \(H\notin\mathbb Q\) universally. In any subcritical family, a surviving rational value lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; a negative integer is not excluded.
+- Restricted Periodicity-Conjecture boundary: balanced finite abelian translations are closed by T11, finite nonabelian translations by T12, and the full balanced one-variable finite-kernel class is now closed as a positive-anchoring route by T13. The live residual boundary moves to multivariate/unbalanced automatic inverse systems and broader morphic/recursive languages without this one-variable finite-kernel reduction.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T13 — generic balanced finite-kernel regularity / completion-sign audit, theory only**
-- T13 target: classify complete Mahler-orbit regularity for the exact reachable/output-reduced balanced finite-\(k\)-kernel Collatz system without assuming a finite-group translation action; wherever regularity holds, apply the T12 relation-lifting/sign obstruction directly to the prescribed Collatz coordinate.
+- Immediate next task: **CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit, theory only**
+- T14 target: start from the exact T5 multivariate Parikh/monomial system, preserve the exact positive Collatz scalar through any rational-linear reduction, determine whether a completion-correct regular tail exists for an applicable arbitrary-place lifting theorem, and test whether the lifted identity can be evaluated in the real completion with the exact scalar reconstructed.
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T13 theorem/symbolic analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T14 theorem/literature analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -707,15 +709,45 @@ Therefore no genuinely nonperiodic balanced finite-group translation family, inc
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T13
+## CDM4-T13 closeout — 2026-10-03
 
-**CDM4-T13 — GENERIC BALANCED FINITE-KERNEL REGULARITY / COMPLETION-SIGN AUDIT.**
+CDM4-T13 is complete. Authoritative report: experiments/CDM4_T13_REPORT.md.
 
-Work with the exact reachable/output-reduced balanced finite-\(k\)-kernel Mahler system without assuming the digit matrices form a finite group action.
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
-Primary target: classify when the exact Collatz point \(W=2^B/3^k\) is regular for the complete Mahler orbit. In every regular case, apply the T12 relation-lifting/sign argument to the prescribed positive Collatz coordinate. If regularity fails, classify the singular finite-kernel subclasses and determine whether a regular subsystem or exact desingularization preserves that coordinate.
+T13 removes the finite-group hypothesis from the positive-anchor obstruction. For the exact true finite-\(k\)-kernel system
+\[
+\mathbf F(z)=M(z)\mathbf F(z^k),
+\]
+the canonical determinant may be singular at \(0\), at finitely many early orbit points, or identically. These cases are no longer load-bearing.
 
-Do not reopen finite-group translation representation theory unless required by a new hypothesis. Do not return to generic p-adic lifting literature, scalar Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, new starts, candidate trajectories, or CPU/GPU/cloud/distributed work.
+If \(\det M\equiv0\), the canonical state functions are rational-function linearly dependent. Choosing a \(\mathbb Q(z)\)-basis from the original state functions with \(F_0\) included produces an exact minimal system
+\[
+\mathbf G(z)=A(z)\mathbf G(z^k),
+\qquad
+A(z)\in\operatorname{GL}_d(\mathbb Q(z)),
+\]
+with \(G_1=F_0\). Every such rational system is regular on a sufficiently deep nonzero Mahler tail because it has only finitely many nonzero singular points.
+
+The original anchor relation is transported to that tail using only forward products of the canonical matrices, so no early singular matrix is inverted. A hypothetical aperiodic positive anchor forces \(0<W<1\); Adamczewski–Bell–Smertnig relation lifting at the regular tail then yields a functional identity whose real specialization reconstructs the positive root series and gives the opposite sign. Therefore no genuinely nonperiodic balanced one-variable finite-kernel family has a positive integer anchor.
+
+Combining with T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+for the full covered balanced finite-kernel class.
+
+The stronger statement \(H\notin\mathbb Q\) remains open. In the subcritical regime, any rational exception is a negative element of \(\mathbb Q\cap\mathbb Z_2\). No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T14
+
+**CDM4-T14 — MULTIVARIATE/UNBALANCED FINITE-STATE MAHLER TAIL-REGULARITY / COMPLETION-SIGN AUDIT.**
+
+Move to the exact T5 multivariate Parikh/monomial Mahler system for unbalanced automatic inverse constructions.
+
+Primary target: determine whether exact rational-linear minimalization and a completion-correct regular-tail theorem preserve the prescribed positive Collatz scalar under the multivariate monomial orbit. If a suitable arbitrary-place lifting theorem applies, test whether the T13 forward-transport/sign mechanism closes an unbalanced class. If not, isolate the sharpest exact subclass where it does.
+
+Do not reopen balanced one-variable finite-kernel regularity, finite-group translation representation theory, scalar Walsh coboundaries, generic one-variable p-adic lifting, substitution enumeration, finite residue/carry/exponent-code optimization, new starts, candidate trajectories, or CPU/GPU/cloud/distributed work.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
