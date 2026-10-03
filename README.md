@@ -37,80 +37,78 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T18 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T19 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-The balanced one-variable finite-kernel branch remains closed by T13, T16 remains the exact mixed-place lifting/completion-sign theorem for the primitive dominant affine multivariate class, and T17 remains the intrinsic toric boundary/lifting infrastructure for the T15 stable image.
+T18 remains the exact stable-orbit-closure reduction and mixed-place lifting theorem. T19 closes the independent nonprimitive ordinary-real completion gap for positive integer anchors in the exact \(k\)-uniform T18 framework.
 
-T18 closes the residual **algebraic singular-incidence** geometry inside that stable-image framework.
-
-For the T15 stable image,
+For a \(k\)-uniform substitution incidence matrix,
 \[
-L=\ker_{\mathbb Z}(M^{J_0}),
+\mathbf1^TM=k\mathbf1^T.
+\]
+A strongly connected Frobenius block has spectral radius \(k\) exactly when it is final. Every nonfinal block has spectral radius \(<k\). Hence distinct \(k\)-spectral blocks cannot form a chain and the canonical nonnegative Parikh dynamics has no \(j^ek^j\), \(e>0\), correction.
+
+After scaling \(P=M/k\), the final SCCs are the recurrent classes of a finite rational Markov chain. Along a common period \(D\),
+\[
+B_j(s)
+=
+k^jb_{s,j\bmod D}
++
+O(j^E\rho_*^j),
 \qquad
-N=X^*(X)=\mathbb Z^m/L,
+b_{s,r}\in\mathbb Q,\quad \rho_*<k.
 \]
-the exact Collatz stable orbit consists of \(S\)-unit points lying in a finitely generated multiplicative group. Laurent's torus Mordell–Lang theorem therefore forces every arithmetic-progression orbit closure to be a finite union of torus cosets.
+Thus imprimitive modulation is explicit and exact critical equality with \(\log_2 3\) is impossible.
 
-After passing to a further progression of minimal orbit-closure dimension, the exact closure is a single irreducible coset
-\[
-Y=tH
-\]
-and the selected progression is Zariski dense in \(Y\). Translating by \(t^{-1}\) gives an étale self-map of \(H\) of the form
-\[
-\rho(h)=c\,\Psi_H(h),
-\]
-with \(\Psi_H\) a torus isogeny.
+The key T19 correction is that T18 does not require every real monomial coordinate to enter the unit polydisc.
 
-The complete character-relation lattice
+Let
 \[
-R_Y=H^\perp
+A_n=\sum_{i<n}v(u_i).
 \]
-is saturated. The canonical positive monoid and T17 grading descend:
+The finite-valued valuation word of a uniform substitution is \(k\)-automatic. Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3's exact height inequality plus Bell's rational automatic limsup theorem gives
 \[
-N_Y=N/R_Y,
-\qquad
-\Gamma_Y=\pi_Y(\mathbb N^m),
-\]
-\[
-w_Y(\pi_Y(a))=\mathbf1^Ta,
-\qquad
-w_Y(A_Y^n\gamma)=k^{Rn}w_Y(\gamma).
-\]
-The reduced tail converges 2-adically to the torus-fixed boundary point of
-\[
-U_Y=\operatorname{Spec}K[\Gamma_Y].
+\limsup_{n\to\infty}\frac{A_n}{n}<\log_2 3.
 \]
 
-T18 restricts the **canonical** functional system to \(Y\) before rational-linear minimalization. This avoids inverting old denominators that vanish identically on the smaller closure and retains the exact Collatz scalar
+For the canonical positive scalar,
 \[
-G_{Y,1}=S|_Y.
+S(x)=\sum_nx^{c(n)},
 \]
+one has the exact fixed-point identity
+\[
+S(\tau^Jq)
+=
+\sum_{n\ge0}
+\frac{2^{A_{nk^J}}}{3^{nk^J}}.
+\]
+Therefore the scalar and every canonical state subseries converge absolutely in the ordinary real completion at every actual monomial-orbit point needed by T18, even if some individual coordinates exceed \(1\).
 
-Because the reduced orbit is Zariski dense and \(\rho\) is étale, Bell–Ghioca–Tucker implies that every proper algebraic zero/pole locus has only finitely many reduced-orbit hits. Combined with Corvaja–Zannier \(S\)-unit trapping, this gives the required toric zero theorem on the reduced coset.
-
-A key correction is that minimal orbit-closure reduction does **not** necessarily remove every root-of-unity eigenvalue of the reduced linear character map. Such a cyclotomic direction may remain only with non-torsion affine translation drift. It is then not an actual character relation and does not obstruct the dense-orbit zero theorem. Thus T18 replaces T17's separate (RI)/(RE) interface by the more intrinsic condition already produced by the reduction: a Zariski-dense orbit under an étale self-map.
-
-The T17 mixed-place auxiliary-function machinery therefore descends to the reduced system while preserving exact specialization:
+T18 exact lifting still preserves
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X).
 \]
-
-Hence every genuinely aperiodic **primitive** T15 stable-image system now satisfies
+Evaluating the lifted algebraic identity at the same real algebraic tail point and reconstructing the canonical scalar gives
 \[
-H\notin\mathbb Z_{>0},
+S^{(\infty)}(q)+3N=0,
 \]
-including the former relative-dependence, cyclotomic, and denominator-trapping cases. By T2, under the inherited finite-alphabet anchoring hypotheses,
+which contradicts positivity for \(N>0\).
+
+Hence every genuinely aperiodic nonprimitive T18-admissible \(k\)-uniform system satisfies
+\[
+H\notin\mathbb Z_{>0}.
+\]
+Together with T18, primitivity is no longer needed for the positive-anchor conclusion inside the complete T18 framework. Under T2's finite-alphabet anchoring hypotheses,
 \[
 R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
 \]
-throughout the complete primitive stable-image class.
+throughout the newly closed class.
 
-This does **not** solve the full Periodicity Conjecture. The independent nonprimitive ordinary real-contraction problem remains open: the algebraic orbit-closure reduction and exact relation lifting survive, but a universal real positivity/convergence theorem is still missing. Positive rational noninteger values are excluded only when real subcriticality is independently established; negative rational values remain unexcluded.
+This does **not** solve the full Periodicity Conjecture. General nonuniform morphic/substitutive recursive languages and general systems outside the exact T5/T15/T18 analytic framework remain open. Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known; negative rational values remain unexcluded.
 
-No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. Brechler arXiv:2607.24877 remains a preprint in the 2026-10-03 status check and is non-load-bearing.
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. T19 did not recheck Brechler's publication status; T18's 2026-10-03 preprint status remains the inherited non-load-bearing state.
 
-The next authorized action is theory-only **CDM4-T19 — nonprimitive real-contraction / positive-anchor completion audit**. Its task is to analyze the reachable strongly connected components of a nonprimitive uniform substitution under a hypothetical positive integer anchor and determine whether every component contributing to the reconstructed scalar must be ordinarily real-subcritical.
+The next authorized action is theory-only **CDM4-T20 — nonuniform morphic scalar-convergence / completion-portability audit**.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T18_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T19_REPORT.md before doing research.
