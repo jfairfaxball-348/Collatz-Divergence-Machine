@@ -773,25 +773,82 @@ The positive-anchor proof nevertheless stops at the completion bridge. Adamczews
 
 Therefore no new genuinely multivariate/unbalanced positive-anchor class is closed, no new bounded-\(R_m\) periodicity theorem is promoted, and no scientific compute is authorized.
 
-## Authoritative next task — CDM4-T15
+## CDM4-T15 closeout — 2026-10-03
 
-**CDM4-T15 — NONARCHIMEDEAN MULTIVARIATE MAHLER LIFTING / STABLE-IMAGE COMPLETION AUDIT.**
+CDM4-T15 is complete. Authoritative report: experiments/CDM4_T15_REPORT.md.
 
-Primary target: recover or prove a characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization for the T14 regular/admissible tail
+**Classification: D — NO QUALIFYING THEOREM FOUND.**
+
+The focused theorem audit did not recover or prove the missing characteristic-zero nonarchimedean **multivariate** exact relation-lifting theorem.
+
+Adamczewski–Faverjon 2026 remains the exact multivariate lifting theorem with exact specialization, but its value theory is complex. Adamczewski–Bell–Smertnig 2023 remains the exact arbitrary-place lifting theorem, but only in one variable. Flicker 1979 is genuinely multivariate and p-adic, but its Theorem 2 has a substantially stronger limiting-function/growth hypothesis package and is not a generic lifting theorem for the T14 regular-tail class.
+
+Brechler arXiv:2607.24877v1 remains a preprint as of 2026-10-03. Its Proposition 3.12 genuinely proves p-adic meromorphy on multivariate unit balls. Its Theorem 1.2 strengthens the Adamczewski–Faverjon lifting theorem to polynomial coefficients with exact specialization, but it still invokes the ordinary Adamczewski–Faverjon value-lifting result and is not stated as an arbitrary-place p-adic lifting theorem.
+
+T15 also audited a direct nonarchimedean transplant of Adamczewski–Faverjon Theorem 2.3. The algebraic/difference-algebraic parts are compatible with such a program, but the published proof uses complex convergent germs and polydiscs, Cauchy–Hadamard/Cauchy estimates, translated complex expansions, and analytic continuation. A complete rigid-analytic replacement preserving the **same specialization polynomial** was not proved.
+
+The singular-incidence branch is nevertheless sharpened exactly. If the ranks of \(M^j\) stabilize at \(J_0\), let
 \[
-T=M^T\in\mathcal M,
+L=\ker_{\mathbb Z}(M^{J_0}).
+\]
+Then the eventual stable image
+\[
+X=\operatorname{im}\tau^{J_0}
+\]
+has character lattice
+\[
+X^*(X)\cong\mathbb Z^m/L.
+\]
+The induced lattice endomorphism is injective, so \(\tau|_X\) is a surjective torus isogeny and is étale in characteristic zero. The exact Collatz tail lies in \(X\).
+
+The canonical series restrict analytically to the 2-adic unit-domain of \(X\). Over \(K(X)\), their exact rational-functional span has dimension
+\[
+r_X=
+\dim_{K(X)}
+\operatorname{span}_{K(X)}
+\{F_t|_X\},
+\]
+and a basis may be chosen with
+\[
+G_1=S=\sum_tF_t.
+\]
+This yields an invertible meromorphic system
+\[
+\mathbf G(x)=A_X(x)\mathbf G(\tau_X(x)),
+\qquad
+A_X(x)\in\operatorname{GL}_{r_X}(K(X)).
+\]
+The prescribed Collatz scalar and exact forward transport survive.
+
+This does **not** automatically put the singular case into the published affine multivariate Mahler theorem class: an intrinsic lattice basis can introduce negative exponents, and the ambient origin is a toric boundary point rather than a point of \(X\).
+
+Arithmetic-progression singular trapping now has a precise algebraic form: it produces a proper invariant orbit closure for a power of the torus isogeny. For a character-coset trap, the exact Collatz formula produces a \(T\)-independence obstruction (or a root-of-unity eigenvalue), so such trapping is impossible in the dominant \(T\in\mathcal M\), \(T\)-independent class.
+
+No new multivariate/unbalanced positive-anchor class is closed, no new bounded-\(R_m\Rightarrow\) periodicity theorem is promoted, and no scientific compute is authorized.
+
+## Authoritative next task — CDM4-T16
+
+**CDM4-T16 — RIGID/NONARCHIMEDEAN MONOMIAL LIFTING AT A REGULAR TORUS TAIL.**
+
+Primary target:
+
+> Prove a characteristic-zero nonarchimedean homogeneous relation-lifting theorem for a nonsingular monomial map at an algebraic regular point, preserving the exact specialization
+> \[
+> Q(\alpha,\mathbf X)=P(\mathbf X).
+> \]
+
+It is sufficient to cover the T14 dominant regular-tail class
+\[
+T\in\mathcal M,
 \qquad
 q\text{ is }T\text{-independent}.
 \]
 
-If such a theorem is obtained, combine it immediately with T14's regular-tail theorem, exact scalar transport, primitive real-tail contraction, and positivity to test the completion-sign contradiction.
+A stronger intrinsic torus-isogeny theorem would also absorb the T15 singular-incidence stable-image reduction.
 
-In parallel, when \(\det M=0\), formalize the stable-image torus reduction and determine when the exact canonical system descends to a dominant rational Mahler system preserving
-\[
-S=\sum_tF_t.
-\]
+The proof should replace the exact complex-analytic steps of Adamczewski–Faverjon Theorem 2.3 by rigid-analytic statements. Brechler Proposition 3.12 may be used as non-load-bearing proof guidance unless its publication status changes.
 
-Do not reopen balanced one-variable finite-kernel regularity, finite-group translation representation theory, scalar Walsh coboundaries, generic one-variable p-adic lifting, substitution enumeration, finite residue/carry/exponent-code optimization, new starts, candidate trajectories, or CPU/GPU/cloud/distributed work.
+If the lift is obtained, run the T15 completion-sign argument immediately. Do not repeat the generic literature audit.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
