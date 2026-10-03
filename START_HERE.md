@@ -3,95 +3,90 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T18 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T20 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T18_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T20_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T10–T13 remain closed infrastructure: arbitrary-place one-variable exact lifting, finite abelian/nonabelian translation obstructions, and the complete balanced one-variable finite-kernel positive-anchor obstruction.
-- T14–T15 remain the exact multivariate foundation. For singular incidence,
+- T16-T18 remain exact mixed-place/orbit-closure lifting infrastructure. T19 remains the complete \(k\)-uniform scalar-completion theorem, including the nonprimitive branch.
+- **T20 proves exact variable-length prefix transport.** For
   \[
-  L=\ker_{\mathbb Z}(M^{J_0}),\qquad
-  X^*(X)=\mathbb Z^m/L,
+  \ell_J(s)=\mathbf1^TM^Je_s,\qquad
+  L_J(n)=\mathbf1^TM^Jc(n),
   \]
-  and the stable tail is an orbit of a finite torus isogeny. Scalar-preserving minimalization retains \(G_1=S|_X\).
-- T16 remains the mixed-place exact lifting theorem for the primitive dominant affine subclass and preserves the specialization polynomial exactly.
-- T17 remains closed toric infrastructure. Its canonical stable-image semigroup and weight are
+  one has
   \[
-  \Gamma_0=\pi(\mathbb N^m),
+  \sigma^J(u_0\cdots u_{n-1})
+  =
+  u_0\cdots u_{L_J(n)-1},
   \qquad
-  w(\pi(a))=\mathbf1^Ta,
-  \qquad
-  w(\overline M^n\gamma)=k^nw(\gamma),
+  A_{L_J(n)}=v^TM^Jc(n).
   \]
-  and the exact stable tail approaches the torus-fixed boundary point of
+- The canonical finite multivariate functional system survives variable length:
   \[
-  U_0=\operatorname{Spec}K[\Gamma_0].
+  \mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)).
   \]
-  T17's weighted toric Tate estimates, local rigid lemmas, scalar reconstruction, exact specialization, and mixed-place lifting architecture remain closed.
-- **T18 closes the residual algebraic singular-incidence geometry inside the T15 stable-image framework.** The exact Collatz stable orbit lies in a finitely generated \(S\)-unit subgroup. Laurent's torus Mordell–Lang theorem therefore forces every arithmetic-progression orbit closure to be a finite union of torus cosets.
-- After passing to a further progression of minimal orbit-closure dimension, one obtains an irreducible coset
+  The valuation word is morphic/substitutive; fixed-base automaticity is **not** assumed.
+- At the exact Collatz point,
   \[
-  Y=tH
+  q_{J,s}=\frac{2^{B_J(s)}}{3^{\ell_J(s)}},
   \]
-  with a Zariski-dense orbit under a translated torus isogeny
+  and the exact nonuniform scalar identity is
   \[
-  \rho(h)=c\,\Psi_H(h).
+  S(q_J)
+  =
+  \sum_{n\ge0}
+  \frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
   \]
-  The map is finite, dominant, and étale.
-- The complete relation lattice
+  Every canonical state function is the corresponding positive subseries.
+- Therefore any strict global prefix gap
   \[
-  R_Y=H^\perp
+  \limsup A_n/n<\log_2 3
   \]
-  is saturated. With
+  gives ordinary-real scalar convergence at every actual monomial tail, without requiring coordinatewise contraction.
+- For a primitive growing variable-length substitution, ordinary letter frequencies exist and the valuation mean
   \[
-  N_Y=N/R_Y,\qquad
-  \Gamma_Y=\pi_Y(\mathbb N^m),
+  \alpha=\frac{v^Tr}{\mathbf1^Tr}
   \]
-  the T17 grading descends exactly:
+  is algebraic. Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3 gives \(\alpha\le\log_2 3\). Since \(\log_2 3\) is transcendental, equality is impossible, so
   \[
-  w_Y(\pi_Y(a))=\mathbf1^Ta,
-  \qquad
-  w_Y(A_Y^n\gamma)=k^{Rn}w_Y(\gamma).
+  \alpha<\log_2 3.
   \]
-  The reduced arithmetic-progression tail converges 2-adically to the torus-fixed boundary point \(o_Y\) of
+- **T20 also extends the toric lifting architecture to primitive variable length.** If
   \[
-  U_Y=\operatorname{Spec}K[\Gamma_Y].
+  h^TM=\rho h^T,\qquad h>0,
   \]
-- T18 rebuilds the rational-functional minimal system **after** canonical restriction to \(Y\), retains
+  the Perron weight
   \[
-  G_{Y,1}=S|_Y,
+  w_h(\pi(a))=h^Ta
   \]
-  and uses injectivity of pullback on \(K(H)\). Old denominators that vanish identically on \(Y\) are not inverted; all newly introduced denominator loci are proper.
-- Because the reduced orbit is Zariski dense and the translated self-map is étale, Bell–Ghioca–Tucker implies that every proper algebraic bad locus has only finitely many reduced-orbit hits. Together with Corvaja–Zannier \(S\)-unit trapping, this gives the reduced toric zero theorem without a separate T17 (RE) assumption.
-- Reduced relative independence is automatic after quotienting the complete relation lattice. Root-of-unity eigenvalues can still remain in the reduced linear character map, but only with non-torsion affine translation drift; they are no longer a zero-set obstruction.
-- Therefore T18 extends exact toric mixed-place lifting, with
+  descends to the stable character lattice and scales exactly by
   \[
-  Q(\alpha,\mathbf X)=P(\mathbf X),
+  w_h(\overline M^n\gamma)=\rho^n w_h(\gamma).
   \]
-  to every orbit-closure-reduced T15 stable-image system after a sufficiently deep regular tail.
-- For every genuinely aperiodic **primitive** T15 stable-image system,
+  After T18 orbit-closure reduction it descends through the complete relation lattice as well. This replaces the uniform grading \(w=\mathbf1^T\).
+- The T17/T18 weighted toric support, boundary-contraction, \(S\)-unit zero, regular-tail, rigid-local, and exact-specialization arguments survive with \(\rho^n\) in place of \(k^n\). This covers primitive variable-length systems even when \(M\) is singular.
+- Therefore every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding satisfies
   \[
   H\notin\mathbb Z_{>0}.
   \]
-  Under the exact T2 finite-alphabet anchoring hypotheses,
+  Under T2's inherited finite-alphabet anchoring hypotheses,
   \[
   R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
   \]
-- The complete **algebraic singular-incidence** stable-image class is now closed. The remaining stable-image gap is the independent **nonprimitive ordinary real-contraction** problem: algebraic relation lifting survives, but the completion-sign contradiction still needs real convergence/positivity.
+- The remaining variable-length obstruction is **reducible/nonprimitive ordinary-prefix asymptotics plus positive grading**. Substituted-block ratios \(B_J(s)/\ell_J(s)\) have algebraic residue-class limits in the expanding finite-matrix setting, but this does not prove that the ordinary fixed-point prefix limsup \(\limsup A_n/n\) is algebraic or strict. Equal-dominant-radius block chains may produce leading \(J^e\rho^J\) terms.
 - Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
-- Brechler arXiv:2607.24877 remains a preprint as of the 2026-10-03 status check and is non-load-bearing.
+- T20 is the mandatory twentieth-session progress/correction audit. Scope remains aligned, no scientific compute is justified, failed-route memory is preserved, and the strategy is repaired toward the reducible prefix-limsup theorem rather than more finite search.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T19 — nonprimitive real-contraction / positive-anchor completion audit, theory only**
-- T19 target: classify the reachable strongly connected components of a nonprimitive uniform substitution under a hypothetical ordinary positive Collatz anchor and determine whether positivity forces ordinary real subcriticality on every component contributing to the exact reconstructed scalar, or isolate the exact surviving obstruction.
+- Immediate next task: **CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit, theory only**
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T19 theorem analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T21 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -151,6 +146,8 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 50. `experiments/CDM4_T16_REPORT.md`
 51. `experiments/CDM4_T17_REPORT.md`
 52. `experiments/CDM4_T18_REPORT.md`
+53. `experiments/CDM4_T19_REPORT.md`
+54. `experiments/CDM4_T20_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
