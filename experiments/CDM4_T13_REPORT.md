@@ -601,6 +601,29 @@ Equivalently, canonical all-depth regularity fails exactly when a nonzero root o
 \tag{20}
 \]
 
+Because every orbit point is rational and positive, this criterion is symbolically decidable from the rational roots of \(D\). A root
+\[
+\rho\in\mathbb Q_{>0}
+\]
+lies on the Collatz Mahler orbit if and only if, in lowest terms,
+
+\[
+v_p(\rho)=0\quad(p\ne2,3),
+\]
+
+and there is an integer \(j\ge0\) such that
+
+\[
+\frac{v_2(\rho)}{B}
+=
+\frac{-v_3(\rho)}{k}
+=
+k^j.
+\tag{20a}
+\]
+
+Nonrational roots, negative roots, and the root \(0\) cannot be Mahler orbit points. Thus exact factorization/rational-root data suffice; no depth cutoff or floating-point determinant sampling is part of the theorem.
+
 This is an exact all-depth theorem, not a finite numerical determinant check.
 
 If \(A_0\) is singular and \(D\not\equiv0\), then
