@@ -1099,7 +1099,7 @@ The adjacent Kubota/Nishioka value theorem recovered in the same peer-reviewed s
 
 ## F0063 — No checked same-point p-adic lifting theorem was recovered for the stationary Walsh family
 
-**Status: NO QUALIFYING THEOREM FOUND in CDM4-T9.**
+**Status: SUPERSEDED by CDM4-T10 / F0064. Historical T9 audit result preserved below.**
 
 T9 performed another source-level audit after the functional hypotheses were sharpened.
 
@@ -1116,3 +1116,132 @@ No Collatz-specific additive identity was found that substitutes for the missing
 **Lesson:** after T8–T9, the missing bridge is now sharply isolated: a characteristic-zero nonarchimedean same-point lifting theorem for several stationary first-order Mahler products at a regular algebraic rational S-unit point, or an exact Collatz-specific weighted no-cancellation theorem.
 
 **Action:** CDM4-T10 should audit/prove that bridge and, because it is the tenth numbered CDM4 session, simultaneously perform the mandatory progress-and-correction audit. No scientific compute is authorized.
+
+
+## F0064 — The missing characteristic-zero p-adic same-point Mahler lifting theorem already exists
+
+**Status: PROVED THEOREM MATCH / CORRECTION in CDM4-T10.**
+
+Adamczewski–Bell–Smertnig, “A height gap theorem for coefficients of Mahler functions,” JEMS 25 (2023), Section 4, is explicitly formulated at an arbitrary place \(v\) of a number field.
+
+For a linear \(k\)-Mahler system
+\[
+\mathbf f(z)=A(z)\mathbf f(z^k)
+\]
+and an algebraic regular point \(\alpha\) with
+\[
+0<|\alpha|_v<1,
+\]
+their Theorem 4.2 preserves transcendence degree between the functions and their values. Their Theorem 4.3 lifts every homogeneous algebraic relation among the values to a homogeneous functional relation.
+
+For the exact Walsh products,
+\[
+A(z)=\operatorname{diag}(S_1(z),\ldots,S_t(z)),
+\qquad
+W=2^B/3^k.
+\]
+T8 already proves
+\[
+S_i(W^{k^j})\ne0
+\]
+for every \(i,j\), so \(W\) is regular. Also
+\[
+0<|W|_2=2^{-B}<1.
+\]
+
+Hence the theorem applies directly in the 2-adic completion. The rational non-torsion unit \(3^{-k}\) requires no additional hypothesis.
+
+In particular,
+\[
+\Lambda=0
+\Longrightarrow
+P_1(W),\ldots,P_t(W)
+\]
+are algebraically independent over \(\overline{\mathbb Q}\).
+
+**Correction:** the T9 conclusion that the relevant modern lifting literature was only archimedean was incomplete. The Adamczewski–Faverjon statements directly audited in T9 were archimedean, but the later Adamczewski–Bell–Smertnig paper contains the needed arbitrary-place extension.
+
+**Lesson:** source searches must include theorem sections inside papers whose titles do not advertise the relevant specialization theorem. Do not infer absence of a p-adic lift from the titles of the standard Mahler-value papers alone.
+
+**Action:** treat the p-adic functional-to-value bridge as CLOSED for the one-variable linear Walsh system. Do not repeat generic p-adic lifting searches in T11.
+
+
+## F0065 — Pairwise rational-coboundary classes are the exact additive obstruction after p-adic lifting
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T10.**
+
+Adjoin
+\[
+P_0(z)=1,
+\qquad
+S_0(z)=1
+\]
+to a finite family of nonzero first-order products
+\[
+P_i(z)=S_i(z)P_i(z^k).
+\]
+
+A minimal-support argument proves that the family is linearly independent over \(\overline{\mathbb Q}(z)\) if and only if no quotient \(P_i/P_j\) of distinct members is rational. Indeed, applying \(z\mapsto z^k\) to a minimal linear relation forces
+\[
+\frac{(r_i/r_j)(z^k)}{(r_i/r_j)(z)}
+=
+\frac{S_i(z)}{S_j(z)},
+\]
+which is exactly a pairwise rational Mahler-coboundary relation.
+
+For the T9 family define
+\[
+i\sim j
+\Longleftrightarrow
+P_i/P_j\in\mathbb Q(z)^\times
+\Longleftrightarrow
+e_i-e_j\in\Lambda.
+\]
+
+Choose one representative from each class. Adamczewski–Bell–Smertnig Theorem 4.3 then gives linear independence over \(\overline{\mathbb Q}\) of \(1\) and the representative values at the exact 2-adic Collatz point \(W\).
+
+If
+\[
+P_i(z)=R_i(z)P_{r(C)}(z)
+\]
+inside class \(C\), define
+\[
+A_C(W)
+=
+\sum_{i\in C}\widehat C_iR_i(W).
+\]
+
+Then
+\[
+F_0(W)\in\overline{\mathbb Q}
+\]
+if and only if
+\[
+A_C(W)=0
+\]
+for every nonrational class \(C\). If at least one grouped coefficient is nonzero, \(F_0(W)\) is transcendental.
+
+In the important special case where no two genuine nonrational products are rational-function multiples, every class is a singleton and \(\widehat C_i\ne0\) by exact support. Rational same-point cancellation is therefore impossible automatically, even when higher multiplicative relations exist.
+
+**Lesson:** full algebraic elimination is unnecessarily strong for the Collatz sum. The additive problem should preserve linearity and quotient only by pairwise rational-function multiples.
+
+**Action:** T11 should classify the pairwise rational-coboundary classes and the exact grouped weights \(A_C(W)\). No generic same-point p-adic independence gap remains.
+
+
+## F0066 — T10 mandatory progress audit narrows the Mahler programme instead of extending it indefinitely
+
+**Status: PROVED project decision in CDM4-T10.**
+
+The T5–T9 Mahler programme produced genuine mathematical narrowing, but T10 found that its remaining literature bottleneck was partly self-inflicted: a published arbitrary-place lifting theorem had been missed.
+
+With F0064–F0065 in place, further open-ended Mahler literature search has low expected information gain.
+
+The remaining higher-rank Walsh problem is exact and Collatz-specific:
+\[
+A_C(W)=0
+\]
+for every rational-multiple class \(C\).
+
+**Lesson:** once a generic bridge is closed, return immediately to the project-specific algebra instead of accumulating adjacent transcendence machinery.
+
+**Action:** the Mahler route is **NARROWED**. T11 is theorem-only rational-coboundary collision and grouped-weight cancellation analysis. No scientific compute, substitution enumeration, CPU/GPU scaling, or new sampling distribution is authorized.
