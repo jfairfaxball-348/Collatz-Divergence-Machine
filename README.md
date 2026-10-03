@@ -37,54 +37,63 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T9 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
+**CDM4-T10 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-T9 continued the exact p-adic same-point no-cancellation problem for the balanced elementary-2-group Walsh family isolated in T8.
+T10 completed the mandatory tenth-session progress/correction audit and recovered the missing completion-correct same-point Mahler lifting theorem.
 
-The true reachable/output quotient remains
+Adamczewski–Bell–Smertnig, JEMS 25 (2023), Theorems 4.2–4.3, treat one-variable linear Mahler systems at an arbitrary place of a number field. At a regular algebraic point \(\alpha\) with \(0<|\alpha|_v<1\), functional transcendence degree is preserved at the values and homogeneous value relations lift to functional relations.
+
+This applies directly to the exact T9 Walsh products
 \[
-G=E/K_C,
-\qquad
-m=|G|.
+P_i(z)=S_i(z)P_i(z^k)
+\]
+at
+\[
+W=2^B/3^k
+\]
+in the 2-adic completion. T8 already proves
+\[
+S_i(W^{k^j})\ne0
+\]
+for every \(i,j\), so \(W\) is regular. The rational non-torsion unit \(3^{-k}\) requires no special absorption or torsion hypothesis.
+
+Therefore the T9 coboundary condition
+\[
+\Lambda=0
+\]
+now implies algebraic independence of
+\[
+P_1(W),\ldots,P_t(W)
+\]
+over algebraic numbers.
+
+For the additive Collatz sum, T10 proves a sharper linear statement. After removing zero and rational components, define
+\[
+i\sim j
+\Longleftrightarrow
+P_i/P_j\in\mathbb Q(z)^\times,
+\]
+equivalently \(e_i-e_j\in\Lambda\). Representatives of distinct classes, together with \(1\), are functionally linearly independent and hence have linearly independent values at \(W\).
+
+Writing
+\[
+P_i(z)=R_i(z)P_{r(C)}(z)
+\]
+inside each rational-multiple class \(C\), define
+\[
+A_C(W)=\sum_{i\in C}\widehat C_iR_i(W).
 \]
 
-For every reduced character,
-\[
-P_\chi(z)=S_\chi(z)P_\chi(z^k),
-\qquad
-S_\chi(z)=\sum_r\chi(\varepsilon_r)z^r,
-\]
-and T8 already proves complete 2-adic regularity along
-\[
-W=2^B/3^k.
-\]
+Then the exact higher-rank Fourier value is algebraic/rational **if and only if every nonrational class has \(A_C(W)=0\)**. If at least one grouped coefficient is nonzero, the exact inverse-Collatz value is 2-adically transcendental and cannot be a positive-integer anchor.
 
-T9 now classifies the rational character projections exactly. If
-\[
-f_\chi(n)=\chi(u_n),
-\]
-then
-\[
-f_\chi(kn+r)=f_\chi(n)\chi(\varepsilon_r).
-\]
-An eventually periodic \(\{\pm1\}\)-valued projection is necessarily trivial, or, only when \(k\) is odd, the unique alternating projection
-\[
-f_\chi(n)=(-1)^n.
-\]
-Thus after exact quotienting the only rational normalized Walsh components are \(1/(1-z)\) and at most one \(1/(1+z)\). Distinct quotient characters also have distinct cocycle polynomials.
+In particular, if no two genuine nonrational Walsh products are rational-function multiples, same-point rational cancellation is impossible automatically. This gives a genuinely higher-rank recursive-language obstruction and a new class for which bounded canonical representatives \(R_m\) force eventual periodicity.
 
-The main new structural theorem is a source-level application of Kubota's first-order functional criterion: the surviving normalized products are algebraically independent over the rational-function field if and only if their cocycles are multiplicatively independent modulo rational Mahler coboundaries
-\[
-\prod_i S_i(z)^{m_i}=R(z)/R(z^k).
-\]
-Hence the functional-independence side is now exact.
+The mandatory T10 correction is that the T9 literature conclusion was incomplete: the required nonarchimedean lifting theorem was already present in the 2023 JEMS paper. Xu–Wang 2004, Wang 2006, Wang–Xu 2006, and Flicker are no longer needed to close this bridge.
 
-The remaining gap is arithmetic specialization. The adjacent Kubota/Nishioka same-point value theorem recovered in peer-reviewed form is archimedean, not 2-adic. Bugeaud–Yao remains an individual first-order theorem. Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 still lack recoverable theorem text sufficient to certify the required simultaneous same-point application. Flicker's theorem genuinely permits p-adic completions, but its transformation-limit/dominance package is not verified for the stationary Walsh family, and the normalized Collatz values all have 2-adic valuation zero.
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
 
-No Collatz-specific identity was found that excludes rational cancellation in the exact weighted Fourier sum. No genuinely multi-character higher-rank recursive class was newly ruled out, no new bounded-\(R_m\)-implies-periodicity theorem was obtained, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
+The next authorized action is theory-only **CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit**. It must classify the exact rational-multiple classes and prove that at least one \(A_C(W)\) is always nonzero, or classify the exact exceptional rational-value families and pass only those to ordinary-integrality/positivity analysis.
 
-The next authorized action is theory-only **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit**. It must prove or recover a completion-correct nonarchimedean functional-to-value lifting theorem for the exact T9-reduced family at \(W\), or derive a Collatz-specific additive substitute. Because T10 is the tenth numbered CDM4 theory session, it must also perform the mandatory progress-and-correction audit required by `AGENTS.md`.
+No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-No substitution enumeration, new starts, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
-
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T9_REPORT.md` before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T10_REPORT.md before doing research.
