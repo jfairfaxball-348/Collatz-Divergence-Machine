@@ -655,7 +655,7 @@ Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform
 
 ## CDM4-T11 closeout — 2026-10-03
 
-CDM4-T11 is complete. Authoritative report: \`experiments/CDM4_T11_REPORT.md\`.
+CDM4-T11 is complete. Authoritative report: `experiments/CDM4_T11_REPORT.md`.
 
 **Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
