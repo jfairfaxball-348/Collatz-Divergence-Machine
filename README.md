@@ -37,78 +37,92 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T19 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T20 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-T18 remains the exact stable-orbit-closure reduction and mixed-place lifting theorem. T19 closes the independent nonprimitive ordinary-real completion gap for positive integer anchors in the exact \(k\)-uniform T18 framework.
+T18 remains the exact orbit-closure-reduced mixed-place lifting infrastructure and T19 remains the complete \(k\)-uniform scalar-completion theorem.
 
-For a \(k\)-uniform substitution incidence matrix,
+T20 proves that variable length does not destroy the canonical multivariate functional system. With
 \[
-\mathbf1^TM=k\mathbf1^T.
-\]
-A strongly connected Frobenius block has spectral radius \(k\) exactly when it is final. Every nonfinal block has spectral radius \(<k\). Hence distinct \(k\)-spectral blocks cannot form a chain and the canonical nonnegative Parikh dynamics has no \(j^ek^j\), \(e>0\), correction.
-
-After scaling \(P=M/k\), the final SCCs are the recurrent classes of a finite rational Markov chain. Along a common period \(D\),
-\[
-B_j(s)
-=
-k^jb_{s,j\bmod D}
-+
-O(j^E\rho_*^j),
+\ell_J(s)=\mathbf1^TM^Je_s,
 \qquad
-b_{s,r}\in\mathbb Q,\quad \rho_*<k.
+L_J(n)=\mathbf1^TM^Jc(n),
 \]
-Thus imprimitive modulation is explicit and exact critical equality with \(\log_2 3\) is impossible.
-
-The key T19 correction is that T18 does not require every real monomial coordinate to enter the unit polydisc.
-
-Let
+the exact fixed-point transport is
 \[
-A_n=\sum_{i<n}v(u_i).
+\sigma^J(u_{<n})=u_{<L_J(n)},
+\qquad
+A_{L_J(n)}=v^TM^Jc(n).
 \]
-The finite-valued valuation word of a uniform substitution is \(k\)-automatic. Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3's exact height inequality plus Bell's rational automatic limsup theorem gives
+At the Collatz point
 \[
-\limsup_{n\to\infty}\frac{A_n}{n}<\log_2 3.
+q_s=2^{v(s)}/3,
 \]
-
-For the canonical positive scalar,
+the exact nonuniform scalar tail is
 \[
-S(x)=\sum_nx^{c(n)},
-\]
-one has the exact fixed-point identity
-\[
-S(\tau^Jq)
+\boxed{
+S(q_J)
 =
 \sum_{n\ge0}
-\frac{2^{A_{nk^J}}}{3^{nk^J}}.
+\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+}
 \]
-Therefore the scalar and every canonical state subseries converge absolutely in the ordinary real completion at every actual monomial-orbit point needed by T18, even if some individual coordinates exceed \(1\).
+Every canonical state function is the corresponding positive subseries.
 
-T18 exact lifting still preserves
+Thus any strict global prefix gap
 \[
-Q(\alpha,\mathbf X)=P(\mathbf X).
+\limsup A_n/n<\log_2 3
 \]
-Evaluating the lifted algebraic identity at the same real algebraic tail point and reconstructing the canonical scalar gives
+gives ordinary-real scalar convergence at every actual monomial tail, with no need to force coordinatewise contraction.
+
+For a primitive growing variable-length substitution, the ordinary valuation mean
 \[
-S^{(\infty)}(q)+3N=0,
+\alpha=\frac{v^Tr}{\mathbf1^Tr}
 \]
-which contradicts positivity for \(N>0\).
-
-Hence every genuinely aperiodic nonprimitive T18-admissible \(k\)-uniform system satisfies
+exists and is algebraic. Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3 gives
 \[
-H\notin\mathbb Z_{>0}.
+\alpha\le\log_2 3.
 \]
-Together with T18, primitivity is no longer needed for the positive-anchor conclusion inside the complete T18 framework. Under T2's finite-alphabet anchoring hypotheses,
+The threshold \(\log_2 3\) is transcendental by Gelfond-Schneider, so equality is impossible and
 \[
-R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\alpha<\log_2 3.
 \]
-throughout the newly closed class.
 
-This does **not** solve the full Periodicity Conjecture. General nonuniform morphic/substitutive recursive languages and general systems outside the exact T5/T15/T18 analytic framework remain open. Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known; negative rational values remain unexcluded.
+T20 also extends the stable-image toric lifting architecture beyond constant length. If
+\[
+h^TM=\rho h^T,\qquad h>0,
+\]
+then
+\[
+w_h(\pi(a))=h^Ta
+\]
+is the primitive Perron-weight replacement for T17's uniform total-length grading. It descends through the stable kernel and, after T18 orbit-closure reduction, through the complete relation lattice, with exact expansion
+\[
+w_h(\overline M^n\gamma)=\rho^nw_h(\gamma).
+\]
+The weighted support, boundary-contraction, \(S\)-unit zero, regular-tail, rigid-local, and exact-specialization arguments survive with \(\rho^n\) replacing \(k^n\).
 
-No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. T19 did not recheck Brechler's publication status; T18's 2026-10-03 preprint status remains the inherited non-load-bearing state.
+Consequently every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding satisfies
+\[
+H\notin\mathbb Z_{>0},
+\]
+including singular-incidence systems. Under T2's inherited finite-alphabet anchoring hypotheses,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
 
-The next authorized action is theory-only **CDM4-T20 — nonuniform morphic scalar-convergence / completion-portability audit**.
+The remaining variable-length boundary is reducible/nonprimitive. Equal-dominant-radius SCC chains can produce leading \(J^e\rho^J\) corrections, and ordinary prefixes can cut through blocks of unequal growth. Although substituted-block valuation/length ratios have algebraic residue-class limits in the expanding finite-matrix setting, T20 does not prove that the global ordinary-prefix limsup
+\[
+\limsup A_n/n
+\]
+is algebraic or strictly subcritical. A universal positive expanding toric grading is also not proved for the reducible singular class.
+
+This does **not** solve the full Periodicity Conjecture. Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known; negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. T20 did not recheck Brechler's publication status; T18's 2026-10-03 preprint status remains the inherited non-load-bearing state.
+
+The next authorized action is theory-only **CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit**.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T19_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T20_REPORT.md before doing research.
+
