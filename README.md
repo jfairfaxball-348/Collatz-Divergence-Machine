@@ -37,67 +37,77 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T12 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T13 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-T10's arbitrary-place Mahler lifting theorem and T11's scalar/finite-abelian collision theorem remain closed infrastructure.
+T10's arbitrary-place Mahler relation-lifting theorem remains closed infrastructure. T11 closes balanced finite-abelian translations more strongly by transcendence, and T12 closes balanced finite nonabelian translations as positive-anchor routes.
 
-T12 treats balanced finite-group translations without assuming commutativity. For the exact Collatz block-constant profile,
+T13 removes the finite-group hypothesis from the positive-anchor obstruction.
+
+For the exact true finite-\(k\)-kernel Collatz coefficient system,
 \[
-K_C=\{h\in E:C(xh)=C(x)\ \forall x\in E\},
+\mathbf F(z)=M(z)\mathbf F(z^k),
+\qquad
+M(z)=\sum_{r=0}^{k-1}z^rA_r,
 \]
-and the true reachable/output state space is the right-coset \(E\)-set
+the states are the distinct reachable kernel sequences of the exact positive block-constant output. Each \(A_r\) is merely deterministic; it need not be a permutation or belong to a group action.
+
+The constant matrix is
 \[
-X=E/K_C.
+M(0)=A_0.
 \]
-The subgroup \(K_C\) need not be normal, so no quotient-group structure is assumed. The exact number of distinct \(k\)-kernel sequences is
+If the digit-zero map is a permutation, \(A_0\) is a permutation matrix and the complete 2-adic Mahler orbit is regular. If \(A_0\) is singular, that alone is not an intrinsic obstruction.
+
+Let
 \[
-[E:K_C].
+D(z)=\det M(z).
+\]
+If \(D\not\equiv0\), only finitely many nonzero Mahler iterates can be singular. If
+\[
+D\equiv0,
+\]
+the canonical state series are rational-function linearly dependent.
+
+More generally, choose a \(\mathbb Q(z)\)-basis of the exact state-series span that includes the prescribed root series \(F_0\). The induced minimal system is
+\[
+\mathbf G(z)=A(z)\mathbf G(z^k),
+\qquad
+A(z)\in\operatorname{GL}_d(\mathbb Q(z)),
+\]
+with \(G_1=F_0\). Every such one-variable rational system is regular on a sufficiently deep nonzero Mahler tail
+\[
+\alpha=W^{k^J},
+\qquad
+W=\frac{2^B}{3^k}.
 \]
 
-Over a splitting field,
-\[
-K[X]\cong\operatorname{Ind}_{K_C}^{E}1
-\cong
-\bigoplus_\rho V_\rho^{\oplus\dim V_\rho^{K_C}},
-\]
-with irreducible Mahler blocks
-\[
-M_\rho(z)=\sum_{r=0}^{k-1}z^r\rho(\varepsilon_r)
-\]
-up to the explicit inverse/contragredient convention.
-
-Because the fixed-point translation system has \(\varepsilon_0=e\), every block satisfies \(M_\rho(0)=I\). At a place above \(2\), a finite-group-stable integral lattice gives
-\[
-M_\rho(W^{k^j})\equiv I\pmod{\mathfrak m_v}
-\]
-for every \(j\ge0\). Thus the entire reduced nonabelian system is regular at the exact Collatz Mahler orbit.
-
-T12 does **not** prove universal rational-gauge rigidity or \(H\notin\mathbb Q\) for every nonabelian matrix system. Instead it obtains a project-sufficient obstruction.
+Early singular canonical matrices do not need to be inverted. The exact root value is transported forward through their product to the regular tail.
 
 A hypothetical genuinely aperiodic positive anchor forces
 \[
 \frac Bk<\log_2 3,
 \qquad
-0<W=\frac{2^B}{3^k}<1.
+0<W<1
 \]
-Its 2-adic anchor relation
+in the ordinary real absolute value. The transported 2-adic anchor relation at \(\alpha\) is regular, so Adamczewski–Bell–Smertnig Theorem 4.3 lifts it to a functional identity with the exact specialization. Evaluating that identity in the real completion reconstructs the original positive block-constant series
 \[
-F_{K_C}(W)+3^kN=0
+F_0^{(\infty)}(W)>0,
 \]
-is therefore at a regular point. Adamczewski–Bell–Smertnig Theorem 4.3 lifts that relation to an algebraic functional identity with the same specialization. Evaluating the lifted identity in the real completion contradicts positivity of the exact Collatz coefficient series.
+contradicting the sign required by a positive anchor.
 
-Hence **no genuinely nonperiodic balanced finite-group translation family, including the finite nonabelian case, has an ordinary positive-integer anchor**. Combining with T2,
+Hence **no genuinely nonperiodic balanced one-variable finite-\(k\)-kernel Collatz family has an ordinary positive-integer anchor**, including canonical systems with singular \(A_0\), finitely many early singular iterates, or \(\det M\equiv0\).
+
+Combining with T2,
 \[
 R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
 \]
-throughout this covered class.
+throughout the covered balanced finite-kernel class.
 
-A rational exceptional nonabelian inverse value is not completely excluded; in the subcritical case it must lie in \(\mathbb Q\cap\mathbb Z_2\) with negative ordinary real sign. No value in \(\mathbb Z_{>0}\) survives.
+T13 does **not** prove universal \(H\notin\mathbb Q\). In a subcritical family, any surviving rational inverse value lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; a negative integer remains possible and is not a Collatz counterexample.
 
-No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found or claimed.
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
 
-The next authorized action is theory-only **CDM4-T13 — generic balanced finite-kernel regularity / completion-sign audit**. It should drop the finite-group translation hypothesis, classify complete Mahler-orbit regularity of the exact reduced finite-\(k\)-kernel system, and apply the T12 sign obstruction wherever regularity holds.
+The next authorized action is theory-only **CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit**. It should return to the exact T5 multivariate Parikh/monomial system, preserve the exact positive Collatz scalar through any reduction, and determine whether a completion-correct regular-tail plus relation-lifting argument survives beyond the balanced one-variable setting.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T12_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T13_REPORT.md before doing research.
