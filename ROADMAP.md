@@ -512,25 +512,27 @@ For a primitive dominant Collatz system with
 \[
 \det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ \(T\)-independent},
 \]
-the exact 2-adic positive-rational anchor relation therefore lifts to an algebraic functional identity. T14 real contraction and exact scalar reconstruction then give
+the exact 2-adic positive-integer anchor relation therefore lifts to an algebraic functional identity. T14 real contraction and exact scalar reconstruction then give
 \[
 S^{(\infty)}(q)+3N=0,
 \]
 contradicting \(S^{(\infty)}(q)>0\) for \(N>0\). Hence
 \[
-H\notin\mathbb Q_{>0}
+H\notin\mathbb Z_{>0}
 \]
-throughout this newly closed primitive dominant class. In particular no positive integer anchor exists there, and T2 gives
+throughout this newly closed primitive dominant Collatz anchoring class, and T2 gives
 \[
 R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
 \]
 under the exact finite-alphabet anchoring hypotheses.
 
+T14 obtains the real contraction in this argument from the existence of the realized positive integer orbit. Thus primitivity alone does not exclude an abstract positive rational noninteger value. If uniform real subcriticality is independently verified, the same T16 lifting/sign proof excludes all \(H\in\mathbb Q_{>0}\).
+
 The theorem is deliberately mixed-place rather than fully arbitrary-place: T16 does not prove a nonarchimedean replacement for Adamczewski–Faverjon Theorem 6.4 because the T14 primitive tail already supplies the ordinary admissible embedding needed for that global zero estimate.
 
 The T15 singular-incidence stable-image torus remains open. The affine auxiliary-function proof still depends on the positive exponent monoid \(\mathbb N^m\), total-degree truncation at the affine origin, and exponential displacement of high-order support. A Laurent monomial isogeny approaching a toric boundary needs an intrinsic toric semigroup/weight filtration and boundary chart.
 
-Negative rational anchors are not excluded. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+Negative rational values are not excluded; positive rational noninteger values require independently verified real subcriticality for exclusion. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
