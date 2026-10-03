@@ -2,8 +2,6 @@
 
 **Date:** 2026-10-03  
 **Authoritative input commit:** 73acddd50c3f8a273b619f1bbe0df4e6ff49048d  
-**Classification:** **C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND**
-
 Scientific starts: **0**. Candidate trajectories: **0**. Substitution enumeration: **NONE**. CPU/GPU/cloud/distributed scientific work: **NONE**. Explicit anchored aperiodic word: **NO**. Unbounded orbit: **NO**. Counterexample claimed: **NO**.
 
 ## 1. Executive result
@@ -595,4 +593,4 @@ No scientific computation is authorized.
 
 The report contains: inherited T19 state; exact variable-length incidence/length dynamics; SCC and spectral audit; polynomial/Jordan corrections; length and valuation asymptotics; \(B_J(s)/\ell_J(s)\); exact \(L_J(n)\); exact scalar identity; morphic-vs-automatic interface; mean existence/arithmetic; critical-system treatment; reducible treatment; scalar relevance including zero-density infinite components; weakest convergence criterion; pointwise portability; exact lifting status; exact specialization; harmless adjoining of \(1\); real scalar reconstruction; positive-integer exclusion; positive-rational boundary; negative-rational boundary; T2 consequence; Periodicity-Conjecture boundary; Cobham/López-Stoll/Brechler status; explicit-word/candidate/counterexample status; compute decision; mandatory T20 audit; and exact T21 obligation.
 
-**C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND**
+C — new recursive-language obstruction found
