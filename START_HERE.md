@@ -412,27 +412,27 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 
 ## CDM4-T5 closeout — 2026-10-02
 
-Authoritative report: \`experiments/CDM4_T5_REPORT.md\`.
+Authoritative report: `experiments/CDM4_T5_REPORT.md`.
 
 **Classification: D — NO QUALIFYING THEOREM FOUND.**
 
 T5 re-derived the exact finite inverse identity
 
-\`N = -sum_(j=0)^(m-1) 2^(A_j)/3^(j+1) + (2^(A_m)/3^m)Y_m\`
+`N = -sum_(j=0)^(m-1) 2^(A_j)/3^(j+1) + (2^(A_m)/3^m)Y_m`
 
 and therefore the exact 2-adic inverse value
 
-\`H = -sum_(j>=0) 2^(A_j)/3^(j+1)\`.
+`H = -sum_(j>=0) 2^(A_j)/3^(j+1)`.
 
-For a realized positive integer, the remainder tends to zero 2-adically and \`H=N\`. In the subcritical real regime \`alpha<log_2 3\`, the same rational partial sums instead converge to a negative real limit, so no real/2-adic rationality transfer is permitted.
+For a realized positive integer, the remainder tends to zero 2-adically and `H=N`. In the subcritical real regime `alpha<log_2 3`, the same rational partial sums instead converge to a negative real limit, so no real/2-adic rationality transfer is permitted.
 
-For a \`k\`-automatic \`{1,2}\` valuation word, \`A_n\` is \`k\`-regular but \`2^(A_n)\` is not: integral \`k\`-regular sequences have polynomial growth while \`2^(A_n)>=2^n\`. Thus the naive regular-coefficient Mahler route fails.
+For a `k`-automatic `{1,2}` valuation word, `A_n` is `k`-regular but `2^(A_n)` is not: integral `k`-regular sequences have polynomial growth while `2^(A_n)>=2^n`. Thus the naive regular-coefficient Mahler route fails.
 
-T5 nevertheless obtained an exact finite multivariate monomial/Mahler-type recurrence for every uniform-substitution presentation, using prefix Parikh vectors. The inverse value is its 2-adic specialization at letter weights \`q_s=2^(v(s))/3\`. If every substituted block has the same total valuation \`B\`, this further reduces to a classical one-variable \`k\`-Mahler value at \`W=2^B/3^k\`.
+T5 nevertheless obtained an exact finite multivariate monomial/Mahler-type recurrence for every uniform-substitution presentation, using prefix Parikh vectors. The inverse value is its 2-adic specialization at letter weights `q_s=2^(v(s))/3`. If every substituted block has the same total valuation `B`, this further reduces to a classical one-variable `k`-Mahler value at `W=2^B/3^k`.
 
-The literature audit found no verified theorem converting either representation into the required 2-adic nonrationality statement. General modern Mahler value theorems audited are complex; published p-adic automatic-number results require automatic canonical p-adic digits of the number being tested; and the closest published p-adic Mahler theorem found uses a pure \`p^w\` argument plus special functional-equation/Hankel hypotheses.
+The literature audit found no verified theorem converting either representation into the required 2-adic nonrationality statement. General modern Mahler value theorems audited are complex; published p-adic automatic-number results require automatic canonical p-adic digits of the number being tested; and the closest published p-adic Mahler theorem found uses a pure `p^w` argument plus special functional-equation/Hankel hypotheses.
 
-Writing \`V=sum_(j>=0)2^(A_j)\` for the shortened parity point, the exact conjugacy gives \`H=Phi(V)\`. Therefore the full rationality bridge needed by T5 is a restricted instance of Lagarias' open 3x+1 Periodicity Conjecture. Automaticity of the valuation gaps does not automatically make the variable-length parity word automatic in the same base, and Cobham's two-base hypothesis is not present.
+Writing `V=sum_(j>=0)2^(A_j)` for the shortened parity point, the exact conjugacy gives `H=Phi(V)`. Therefore the full rationality bridge needed by T5 is a restricted instance of Lagarias' open 3x+1 Periodicity Conjecture. Automaticity of the valuation gaps does not automatically make the variable-length parity word automatic in the same base, and Cobham's two-base hypothesis is not present.
 
 No new automatic or primitive constant-length class was killed. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. López-Stoll remains non-load-bearing. No new compute, generator/distribution, finite-code ranking, or GPU work is justified.
 
@@ -442,17 +442,17 @@ No new automatic or primitive constant-length class was killed. No explicit anch
 
 Begin with the balanced-block subclass isolated in T5. Let
 
-\`G(z)=sum_(n>=0) g_n z^n\`
+`G(z)=sum_(n>=0) g_n z^n`
 
-have the finite-valued non-eventually-periodic \`k\`-automatic coefficient sequence produced by a balanced \`k\`-uniform Collatz valuation substitution, and let
+have the finite-valued non-eventually-periodic `k`-automatic coefficient sequence produced by a balanced `k`-uniform Collatz valuation substitution, and let
 
-\`W=2^B/3^k\`, with \`B<k log_2 3\`.
+`W=2^B/3^k`, with `B<k log_2 3`.
 
 Primary theorem target:
 
-> Prove, under fully checked hypotheses in the **2-adic completion**, that \`G(W)\` is nonrational; or prove that current p-adic Mahler theory does not cover this S-unit argument and identify the exact additional theorem required.
+> Prove, under fully checked hypotheses in the **2-adic completion**, that `G(W)` is nonrational; or prove that current p-adic Mahler theory does not cover this S-unit argument and identify the exact additional theorem required.
 
-If that subclass is resolved, extend to the generic multivariate T5 value \`S(q)\` under the monomial incidence transformation. Do not replace the 2-adic value by the complex value of the same formal series.
+If that subclass is resolved, extend to the generic multivariate T5 value `S(q)` under the monomial incidence transformation. Do not replace the 2-adic value by the complex value of the same formal series.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
@@ -463,7 +463,7 @@ If that subclass is resolved, extend to the generic multivariate T5 value \`S(q)
 
 ## CDM4-T6 closeout — 2026-10-02
 
-CDM4-T6 is complete. Authoritative report: \`experiments/CDM4_T6_REPORT.md\`.
+CDM4-T6 is complete. Authoritative report: `experiments/CDM4_T6_REPORT.md`.
 
 **Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
@@ -506,7 +506,7 @@ No new higher-rank class was ruled out, no new bounded-\(R_m\) periodicity theor
 
 ## CDM4-T8 closeout — 2026-10-02
 
-CDM4-T8 is complete. Authoritative report: \`experiments/CDM4_T8_REPORT.md\`.
+CDM4-T8 is complete. Authoritative report: `experiments/CDM4_T8_REPORT.md`.
 
 **Classification: D — NO QUALIFYING THEOREM FOUND.**
 
@@ -598,7 +598,7 @@ Do not enumerate substitutions or optimize finite residues/carries/exponent code
 
 ## CDM4-T9 closeout — 2026-10-03
 
-CDM4-T9 is complete. Authoritative report: \`experiments/CDM4_T9_REPORT.md\`.
+CDM4-T9 is complete. Authoritative report: `experiments/CDM4_T9_REPORT.md`.
 
 **Classification: D — NO QUALIFYING THEOREM FOUND.**
 
@@ -645,7 +645,7 @@ Primary theorem target:
 
 If no general theorem is available, attack the exact Collatz weighted relation directly. Do not return to substitution enumeration, finite residues/carries/exponent codes, or numerical singularity checks.
 
-Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform the binding **PROGRESS AND CORRECTION AUDIT** required by \`AGENTS.md\`: re-check scope, hidden assumptions, failed-route memory, theorem-source quality, compute economics, and whether the Mahler route should be killed, narrowed, or continued.
+Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform the binding **PROGRESS AND CORRECTION AUDIT** required by `AGENTS.md`: re-check scope, hidden assumptions, failed-route memory, theorem-source quality, compute economics, and whether the Mahler route should be killed, narrowed, or continued.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
