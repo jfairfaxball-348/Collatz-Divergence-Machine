@@ -292,17 +292,23 @@ Thus the T17 residual possibility of a genuinely more general invariant orbit cl
 
 ## 5. Irreducible dense component and exact iterate
 
-The finite union \(Y_0\) may be reducible.
+The finite union \(Y_0\) may be reducible, so an arbitrary component choice is not enough.
 
-Choose an irreducible component \(C\) containing infinitely many points of \(\mathcal O_{a,r}\).
+Among all further arithmetic-progression suborbits of the original \(\mathcal O_{a,r}\), choose one whose Zariski closure has **minimal dimension**. Rename this progression \(\mathcal O_{a,r}\) and its closure \(Y_0\), and write
 
-The map
+\[
+d=\dim Y_0.
+\]
+
+By Section 4, \(Y_0\) is a finite union of torus cosets.
+
+Choose an irreducible component \(C\) containing infinitely many points of this progression. The map
 
 \[
 \psi=\phi^r
 \]
 
-is étale on \(X\). Bell-Ghioca-Tucker Theorem 1.3 therefore says that the hitting set of \(C\) by the \(\psi\)-orbit is a finite union of full arithmetic-progressions plus finitely many points.
+is étale on \(X\). Bell-Ghioca-Tucker Theorem 1.3 therefore says that the hitting set of \(C\) by the \(\psi\)-orbit is a finite union of full arithmetic progressions plus finitely many points.
 
 Hence there exist integers \(b\ge0\) and \(s\ge1\) such that
 
@@ -318,31 +324,45 @@ and
 \{\Psi^n(\beta):n\ge0\}\subseteq C.
 \]
 
-Replace \(C\) by the Zariski closure of this suborbit. Because \(C\) is irreducible and the chosen suborbit is infinite, Laurent again shows that the closure is an irreducible torus coset.
+Let \(Y\) be the Zariski closure of this further suborbit. By minimality of \(d\),
 
-Call it
+\[
+\dim Y\ge d.
+\]
+
+But \(Y\subseteq C\subseteq Y_0\), so
+
+\[
+\dim Y\le\dim C\le d.
+\]
+
+Therefore all dimensions are equal to \(d\). Since \(C\) is irreducible and \(Y\subseteq C\) is closed with the same dimension,
+
+\[
+Y=C.
+\]
+
+Thus the selected further progression is Zariski dense in one irreducible component. Laurent now gives that this component is a single torus coset:
 
 \[
 \boxed{Y=tH}.
 \]
 
-Choose \(s\) minimally among positive periods for which this selected irreducible component is stable. Then
+Choose \(s\) minimally among positive progression periods realizing this dense component, and choose \(t\) to be one of the actual reduced Collatz orbit points in \(Y\). Then \(t\) is itself an algebraic \(S\)-unit point. Put
 
 \[
-R=rs
+R=rs.
 \]
 
-is the minimal power used for the geometric reduction.
-
-Removing finitely many initial points does not affect the closure, so
+The shifted tail is dense in \(Y\), and applying \(\Psi\) removes only its first point. Hence \(\Psi(Y)\) contains a Zariski-dense subset of \(Y\). Since \(\Psi\) is finite and therefore closed,
 
 \[
 \boxed{
-\Psi(Y)=Y
+\Psi(Y)=Y.
 }
 \]
 
-and
+Also,
 
 \[
 \boxed{
@@ -953,9 +973,31 @@ Translation changes coefficients only.
 
 ### Weighted analytic estimate
 
-On sufficiently small strict weighted affinoids, fixed algebraic multipliers \(u_\gamma\) are dominated by the exact exponential support displacement. Equivalently, for the \(n\)-fold iterate the accumulated multiplier is the normalized character value of \(t^{-1}\Psi^n(t)\), while the monomial support has weight \(k^{Rn}w_Y(\gamma)\).
+For the \(n\)-fold iterate,
 
-The T17 high-support decay remains exponential in \(k^{Rn}p\), after changing only fixed radius/constants.
+\[
+(\rho^n)^*\theta^\gamma
+=
+u_{n,\gamma}\theta^{A_Y^n\gamma},
+\]
+
+where \(u_{n,\gamma}\) is the normalized character value contributed by the translation.
+
+Choose a nonnegative ambient lift \(a\in\mathbb N^m\) of \(\gamma\). Because \(t\) is an actual stable Collatz point and the later Collatz points converge coordinatewise to the boundary, after one further finite tail shift one has
+
+\[
+\left|\frac{q_{j+Rn,s}}{t_s}\right|_2\le1
+\]
+
+for every ambient coordinate \(s\) and every \(n\ge0\). Hence
+
+\[
+|u_{n,\gamma}|_2\le1
+\]
+
+for every \(\gamma\in\Gamma_Y\).
+
+Thus the translation multipliers do not weaken the weighted Gauss estimate. The T17 high-support decay remains exponential in \(k^{Rn}p\), with only the harmless finite tail shift and fixed radius constants changed.
 
 ### Degree
 
