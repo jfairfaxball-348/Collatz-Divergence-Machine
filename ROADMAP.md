@@ -477,6 +477,28 @@ The completion-sign route nevertheless stops one theorem short. Adamczewski–Fa
 
 Therefore no new genuinely multivariate/unbalanced positive-anchor class is excluded, no new bounded-\(R_m\) periodicity implication is promoted, no explicit anchored aperiodic word or counterexample is found, and no scientific compute is authorized.
 
+**CDM4-T15 closeout.** T15 does not recover or prove the missing characteristic-zero nonarchimedean multivariate exact relation-lifting theorem.
+
+Adamczewski–Faverjon 2026 remains exact-specialization multivariate lifting in the complex completion. Adamczewski–Bell–Smertnig 2023 remains arbitrary-place exact lifting in one variable. Flicker 1979 is genuinely p-adic and multivariate but requires a different strong limiting-function/growth package. Brechler arXiv:2607.24877v1 remains a preprint; Proposition 3.12 gives p-adic multivariate meromorphy, while Theorem 1.2 still invokes the ordinary Adamczewski–Faverjon lifting theorem and is not an arbitrary-place value-lifting theorem.
+
+A direct rigid-analytic transplant of Adamczewski–Faverjon Theorem 2.3 was not completed. The missing proof package is now exact: replace complex convergent germs/polydiscs, Cauchy estimates, translated expansions, and analytic continuation by rigid-analytic statements while preserving the original specialization polynomial.
+
+The singular-incidence algebraic reduction is sharpened. If \(J_0\) is past rank stabilization and
+\[
+L=\ker_{\mathbb Z}(M^{J_0}),
+\]
+then the stable image torus \(X=\operatorname{im}\tau^{J_0}\) has
+\[
+X^*(X)=\mathbb Z^m/L.
+\]
+The induced map is a torus isogeny. The canonical series restrict analytically to the 2-adic unit-domain of \(X\), and exact rational-linear minimalization over \(K(X)\) gives an invertible meromorphic system retaining
+\[
+G_1=S=\sum_tF_t.
+\]
+Exact forward scalar transport survives.
+
+This stable-image system is not automatically a standard affine Mahler system: an intrinsic lattice basis may introduce negative exponents and the ambient origin is a toric boundary point. No new genuinely multivariate/unbalanced positive-anchor class is closed and no new bounded-\(R_m\Rightarrow\) periodicity implication is promoted.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -499,20 +521,25 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit, theory only.**
+**CDM4-T16 — rigid/nonarchimedean monomial lifting at a regular torus tail, theory only.**
 
-Treat the balanced one-variable finite-kernel branch as closed for positive anchoring and retain T14's multivariate regular-tail theorem as structural infrastructure.
+Treat the balanced one-variable branch as closed and retain the T14 regular-tail theorem plus the T15 stable-image torus/minimalization theorem as structural infrastructure.
 
 Primary obligation:
 
-1. recover a peer-reviewed characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization whose hypotheses cover the T14 regular/admissible tail
+1. prove a characteristic-zero nonarchimedean relation-lifting theorem for a nonsingular monomial map at a regular algebraic point with exact specialization
    \[
-   T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent};
+   Q(\alpha,\mathbf X)=P(\mathbf X);
    \]
-2. if none is available, prove the required nonarchimedean lift for this restricted monomial class or isolate the exact obstruction;
-3. if the lift is obtained, combine it immediately with T14's regular-tail theorem, primitive real contraction, exact forward scalar transport, and positivity to test the completion-sign contradiction;
-4. in parallel, for singular incidence matrices, formalize descent to the stable-image torus and determine when the exact canonical system admits a dominant rational minimalization preserving \(S=\sum_tF_t\).
+2. it is sufficient to cover the dominant class
+   \[
+   T\in\mathcal M,\qquad q\text{ is }T\text{-independent};
+   \]
+3. replace the complex-germ/polydisc continuation and Cauchy-estimate steps of Adamczewski–Faverjon Theorem 2.3 by a complete rigid-analytic argument;
+4. use Brechler Proposition 3.12 only as non-load-bearing proof guidance unless publication status changes;
+5. if exact lifting is obtained, execute the completion-sign contradiction immediately;
+6. if possible, formulate the theorem intrinsically for torus isogenies so that the T15 singular-incidence stable-image reduction is covered without forcing artificial affine coordinates.
 
-Do not reopen balanced finite-kernel regularity, finite-group translation representation analysis, Walsh-product coboundaries, generic one-variable p-adic lifting, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
+Do not repeat the generic literature audit, balanced finite-kernel regularity, group-translation analysis, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
 No new scientific compute is authorized.
