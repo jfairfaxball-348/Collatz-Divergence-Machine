@@ -757,13 +757,39 @@ for the full covered balanced finite-kernel class.
 
 The stronger statement \(H\notin\mathbb Q\) remains open. In the subcritical regime, any rational exception is a negative element of \(\mathbb Q\cap\mathbb Z_2\). No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T14
+## CDM4-T14 closeout — 2026-10-03
 
-**CDM4-T14 — MULTIVARIATE/UNBALANCED FINITE-STATE MAHLER TAIL-REGULARITY / COMPLETION-SIGN AUDIT.**
+CDM4-T14 is complete. Authoritative report: experiments/CDM4_T14_REPORT.md.
 
-Move to the exact T5 multivariate Parikh/monomial Mahler system for unbalanced automatic inverse constructions.
+**Classification: D — NO QUALIFYING THEOREM FOUND.**
 
-Primary target: determine whether exact rational-linear minimalization and a completion-correct regular-tail theorem preserve the prescribed positive Collatz scalar under the multivariate monomial orbit. If a suitable arbitrary-place lifting theorem applies, test whether the T13 forward-transport/sign mechanism closes an unbalanced class. If not, isolate the sharpest exact subclass where it does.
+T14 reconstructs the exact multivariate T5 system, proves scalar-preserving rational minimalization in the dominant case, classifies the exact multiplicative-relation / \(T\)-independence condition for the Collatz monomial orbit, and replaces the false one-variable intuition about singular hypersurfaces by an exact dynamical Mordell–Lang dichotomy.
+
+After passage to the stable image torus, every algebraic singular variety is hit either finitely often or along an arithmetic-progression suborbit. For the dominant Adamczewski–Faverjon class \(\mathcal M\) with a \(T\)-independent exact Collatz point, the orbit is Zariski dense and every proper singular variety is hit only finitely often. Thus a regular tail exists for every invertible rational minimal system in that subclass.
+
+For primitive substitutions, a hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation below \(\log_2 3\), which in turn forces uniform deep real contraction of all monomial coordinates. Exact forward transport preserves the positive Collatz scalar.
+
+The positive-anchor proof nevertheless stops at the completion bridge. Adamczewski–Faverjon 2026 is a complex multivariate lifting theorem; it does not lift the required 2-adic value relation. Brechler's 2026 p-adic multivariate work remains a preprint and is non-load-bearing. No peer-reviewed characteristic-zero nonarchimedean multivariate exact relation-lifting theorem was verified.
+
+Therefore no new genuinely multivariate/unbalanced positive-anchor class is closed, no new bounded-\(R_m\) periodicity theorem is promoted, and no scientific compute is authorized.
+
+## Authoritative next task — CDM4-T15
+
+**CDM4-T15 — NONARCHIMEDEAN MULTIVARIATE MAHLER LIFTING / STABLE-IMAGE COMPLETION AUDIT.**
+
+Primary target: recover or prove a characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization for the T14 regular/admissible tail
+\[
+T=M^T\in\mathcal M,
+\qquad
+q\text{ is }T\text{-independent}.
+\]
+
+If such a theorem is obtained, combine it immediately with T14's regular-tail theorem, exact scalar transport, primitive real-tail contraction, and positivity to test the completion-sign contradiction.
+
+In parallel, when \(\det M=0\), formalize the stable-image torus reduction and determine when the exact canonical system descends to a dominant rational Mahler system preserving
+\[
+S=\sum_tF_t.
+\]
 
 Do not reopen balanced one-variable finite-kernel regularity, finite-group translation representation theory, scalar Walsh coboundaries, generic one-variable p-adic lifting, substitution enumeration, finite residue/carry/exponent-code optimization, new starts, candidate trajectories, or CPU/GPU/cloud/distributed work.
 
