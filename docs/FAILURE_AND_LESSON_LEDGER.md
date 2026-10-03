@@ -2284,3 +2284,75 @@ Positive rational noninteger values are excluded only under independently proved
 **Lesson:** after T18, the residual stable-image obstruction is no longer algebraic orbit geometry. It is the ordinary real-convergence/positivity problem for nonprimitive systems.
 
 **Action:** CDM4-T19 should audit nonprimitive real contraction component-by-component. Do not reopen the toric orbit-closure reduction or authorize scientific compute.
+
+
+---
+
+### F0091 — Coordinatewise real contraction is stronger than the T18 completion-sign argument needs
+
+**Status: PROVED REPLACEMENT PRINCIPLE in CDM4-T19.**
+
+T14 used primitivity to force every deep real monomial coordinate into the open unit polydisc. In a nonprimitive system this need not follow from scalar subcriticality.
+
+For the canonical scalar
+\[
+S(x)=\sum_{n\ge0}x^{c(n)}
+\]
+and the exact Collatz monomial orbit \(q_J=\tau^J(q)\), T19 proves
+\[
+S(q_J)
+=
+\sum_{n\ge0}
+\frac{2^{A_{nk^J}}}{3^{nk^J}}.
+\]
+
+If a genuinely aperiodic finite-valued \(k\)-automatic valuation word had a positive integer anchor, T3 plus Bell gives
+\[
+\limsup A_n/n<\log_2 3.
+\]
+Therefore the displayed positive series converges at every \(J\), and every canonical state series is an absolutely convergent subseries.
+
+Some individual coordinates \(q_{J,s}\) may nevertheless be \(>1\). T19 gives an exact nonprimitive example showing root-scalar subcriticality can coexist with a supercritical final coordinate.
+
+**Lesson:** real unit-polydisc inclusion is a sufficient primitive device, not the intrinsic completion requirement. The exact requirement is convergence of the canonical positive scalar and the canonical functions needed for reconstruction at the actual algebraic tail point.
+
+**Action:** future completion arguments must formulate the weakest pointwise scalar convergence criterion first. Do not demand coordinatewise contraction unless a theorem interface genuinely requires an open polydisc.
+
+---
+
+### F0092 — Uniformity rules out \(k\)-spectral block chains and closes the nonprimitive T18 positive-anchor gap
+
+**Status: PROVED RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T19.**
+
+For a \(k\)-uniform incidence matrix
+\[
+\mathbf1^TM=k\mathbf1^T,
+\]
+a strongly connected Frobenius block has spectral radius \(k\) if and only if it is final. Every nonfinal block has spectral radius \(<k\).
+
+Hence distinct \(k\)-spectral blocks cannot form a directed chain, and canonical nonnegative Parikh powers cannot contain \(j^ek^j\) terms with \(e>0\). Equal-radius chains and Jordan polynomial factors may occur only below \(k\) and are \(o(k^j)\).
+
+After scaling by \(k\), the incidence matrix is a rational column-stochastic matrix. Its recurrent classes are the final SCCs. Along a common period \(D\),
+\[
+B_j(s)
+=
+k^j b_{s,j\bmod D}
++
+O(j^E\rho_*^j),
+\]
+with every \(b_{s,r}\in\mathbb Q\) and \(\rho_*<k\). Thus exact critical equality with \(\log_2 3\) is impossible.
+
+The global scalar convergence theorem from F0091 lets the already-closed T18 relation lift be evaluated in the real completion without assuming all coordinates are subcritical. The exact specialization and scalar reconstruction then give
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+contradicting positivity for a realized \(N>0\).
+
+Therefore every genuinely aperiodic nonprimitive T18-admissible \(k\)-uniform system has no positive integer anchor. Under T2's inherited finite-alphabet hypotheses,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
+
+**Lesson:** the residual T18 obstruction was not a nonprimitive Perron/Jordan anomaly. It was an unnecessarily strong formulation of real convergence.
+
+**Action:** the next theory boundary is nonuniform morphic scalar convergence/completion portability. Do not reopen T18 orbit geometry or authorize scientific compute.
