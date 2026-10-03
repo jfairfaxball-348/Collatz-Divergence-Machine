@@ -11,17 +11,17 @@
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies the arbitrary-place same-point lifting theorem for the regular one-variable Mahler system at (W=2^B/3^k).
-- T11 pairwise-collision theorem: for full-length digit polynomials (S,T) with (S(0)=T(0)=1) and degree (k-1), a nontrivial coboundary (S/T=R/R(z^k)) forces (S=Q_\beta), (T=Q_\alpha), where (Q_\gamma=(z^k-\gamma)/(z-\gamma)) and (alpha,eta) are fixed points of (z\mapsto z^k).
-- Elementary-2 consequence: the only distinct Walsh pair satisfying that criterion is, for odd (k), the trivial/alternating rational pair. After rational components are removed, **every genuine nonrational rational-multiple class is a singleton**.
+- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies the arbitrary-place same-point lifting theorem for the regular one-variable Mahler system at \(W=2^B/3^k\).
+- T11 pairwise-collision theorem: for full-length digit polynomials \(S,T\) with \(S(0)=T(0)=1\) and degree \(k-1\), a nontrivial coboundary \(S/T=R/R(z^k)\) forces \(S=Q_\beta\), \(T=Q_\alpha\), where \(Q_\gamma=(z^k-\gamma)/(z-\gamma)\) and \(\alpha,\beta\) are fixed points of \(z\mapsto z^k\).
+- Elementary-2 consequence: the only distinct Walsh pair satisfying that criterion is, for odd \(k\), the trivial/alternating rational pair. After rational components are removed, **every genuine nonrational rational-multiple class is a singleton**.
 - Exact grouped weights therefore collapse to
-  [
+  \[
   A_{\{\chi\}}(W)=\widehat C_\chi\ne0
-  ]
+  \]
   on exact support. Same-point rational cancellation is impossible for every genuinely nonperiodic reduced elementary-2 Walsh family.
 - Stronger corollary: the same degree argument shows that in finite abelian translation kernels any distinct pairwise coboundary can occur only between individually rational character products. After rational-character removal, genuine classes are singletons over the cyclotomic splitting field as well.
-- Project consequence: no genuinely nonperiodic family in the covered elementary-2 class, and more generally the covered finite-abelian translation class, has an ordinary positive-integer anchor. Hence bounded canonical representatives (R_m) imply eventual periodicity throughout these covered classes.
-- Restricted Periodicity-Conjecture boundary: the balanced finite-abelian translation branch is closed; the live residual boundary moves to higher-dimensional/nonabelian translation blocks, generic finite (k)-kernel Mahler systems, and the more general multivariate/unbalanced automatic inverse systems.
+- Project consequence: no genuinely nonperiodic family in the covered elementary-2 class, and more generally the covered finite-abelian translation class, has an ordinary positive-integer anchor. Hence bounded canonical representatives \(R_m\) imply eventual periodicity throughout these covered classes.
+- Restricted Periodicity-Conjecture boundary: the balanced finite-abelian translation branch is closed; the live residual boundary moves to higher-dimensional/nonabelian translation blocks, generic finite \(k\)-kernel Mahler systems, and the more general multivariate/unbalanced automatic inverse systems.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
@@ -655,10 +655,12 @@ Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform
 
 ## CDM4-T11 closeout — 2026-10-03
 
-CDM4-T11 is complete. Authoritative report: `experiments/CDM4_T11_REPORT.md`.
+CDM4-T11 is complete. Authoritative report: \`experiments/CDM4_T11_REPORT.md\`.
 
-The rational-coboundary collision problem is closed for the exact reduced elementary-2 Walsh family. The degree-((k-1)) divisor budget forces every nontrivial pairwise coboundary to be a fixed-point cocycle ratio; with (pm1) Walsh coefficients the only distinct possibility is the odd-(k) trivial/alternating rational pair already removed by T9/T10.
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
-Therefore every genuine nonrational class is a singleton and every grouped coefficient is exactly its supported Fourier weight, hence nonzero. No genuinely nonperiodic rational exceptional inverse value survives. The entire balanced reduced elementary-2 higher-rank Walsh class is excluded from positive-integer anchoring.
+The rational-coboundary collision problem is closed for the exact reduced elementary-2 Walsh family. The degree-\((k-1)\) divisor budget forces every nontrivial pairwise coboundary to be a fixed-point cocycle ratio; with \(\pm1\) Walsh coefficients the only distinct possibility is the odd-\(k\) trivial/alternating rational pair already removed by T9/T10.
+
+Therefore every genuine nonrational class is a singleton and every grouped coefficient is exactly its supported Fourier weight, hence nonzero. No genuinely nonperiodic rational exceptional inverse value survives. The ambient inverse value remains a 2-adic integer, but it is transcendental over \(\mathbb Q\), so it is not an ordinary integer or positive-integer anchor.
 
 The same divisor theorem extends the collision exclusion to finite abelian translation kernels after exact rational-character removal. No scientific compute is authorized. The next theory obligation is the higher-dimensional/nonabelian representation boundary.
