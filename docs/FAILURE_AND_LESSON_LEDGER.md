@@ -1465,3 +1465,134 @@ The stronger statement \(H\notin\mathbb Q\) remains open for general nonabelian 
 **Lesson:** same-point value independence is not the only way to close a recursive anchoring class. Once a Mahler system is regular, exact relation lifting can turn a hypothetical positive anchor into a functional identity, and a sign invariant in another completion can contradict that identity.
 
 **Action:** move the primary boundary to generic balanced finite-\(k\)-kernel systems and classify regularity there. Do not spend another session completing nonabelian gauge classification unless the stronger rationality question becomes load-bearing.
+
+
+---
+
+### F0073 — Rational-linear minimalization removes intrinsic one-variable finite-kernel presentation singularity
+
+**Status: PROVED NEW STRUCTURAL THEOREM in CDM4-T13.**
+
+For the exact true finite-\(k\)-kernel system
+\[
+\mathbf F(z)=M(z)\mathbf F(z^k),
+\qquad
+M(z)=\sum_{r=0}^{k-1}z^rA_r,
+\]
+the canonical state set is already reachable and output-minimized, but it need not be linearly minimal over \(\mathbb Q(z)\).
+
+If
+\[
+\det M(z)\equiv0,
+\]
+a nonzero rational left-null row \(q(z)\) satisfies
+\[
+q(z)M(z)=0,
+\]
+hence
+\[
+q(z)\mathbf F(z)=0.
+\]
+Thus an identically singular canonical determinant always exposes an exact rational-function dependence among the kernel state series.
+
+More generally let
+\[
+d=\dim_{\mathbb Q(z)}
+\operatorname{span}\{F_0,\ldots,F_{m-1}\}.
+\]
+Choose a basis \(\mathbf G\) from the original state functions with \(G_1=F_0\), and write
+\[
+\mathbf F=C(z)\mathbf G.
+\]
+The induced square system
+\[
+\mathbf G(z)=A(z)\mathbf G(z^k)
+\]
+has
+\[
+A(z)\in\operatorname{GL}_d(\mathbb Q(z)).
+\]
+If \(A\) were singular, a nonzero left-null row would contradict the chosen linear independence of \(\mathbf G\).
+
+The digit-zero matrix remains useful but is not the intrinsic boundary. Since \(A_0\) is a deterministic row-one matrix,
+\[
+A_0\text{ invertible}\iff\delta_0\text{ is a permutation}.
+\]
+That condition is sufficient for complete 2-adic unit regularity, but a singular \(A_0\) may still have \(\det M(z)\not\equiv0\) and a completely regular nonzero Mahler orbit.
+
+**Lesson:** equality-minimization of automatic/kernel states and rational Mahler-linear minimalization are different operations. Do not call \(\det M\equiv0\), singular \(M(0)\), digit-zero transients, or a synchronizing zero-map an intrinsic singular Mahler obstruction before passing to the exact rational-function span while preserving the prescribed coordinate.
+
+**Action:** for one-variable finite-kernel systems, minimize rationally with \(F_0\) retained as a basis coordinate. Do not delete transient coordinates merely from the functional graph of \(A_0\) unless invariance under the full digit action is proved.
+
+---
+
+### F0074 — Forward relation transport through early singularities closes the balanced finite-kernel positive-anchor route
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T13.**
+
+After the F0073 rational-linear reduction,
+\[
+\mathbf G(z)=A(z)\mathbf G(z^k),
+\qquad
+A(z)\in\operatorname{GL}_d(\mathbb Q(z)).
+\]
+
+An invertible rational matrix and its inverse have only finitely many nonzero singular points. For
+\[
+W=2^B/3^k,\qquad 0<|W|_2<1,
+\]
+the nonzero orbit points
+\[
+W,W^k,W^{k^2},\ldots
+\]
+are pairwise distinct. Hence some sufficiently deep
+\[
+\alpha=W^{k^J}
+\]
+is regular for the complete future orbit of the minimal system, and the exact reconstruction matrix is also defined there.
+
+The early canonical matrices need not be inverted. With
+\[
+P_J(W)=M(W)M(W^k)\cdots M(W^{k^{J-1}}),
+\]
+the exact root coordinate satisfies
+\[
+F_0(W)
+=
+e_0^TP_J(W)C(\alpha)\mathbf G(\alpha).
+\]
+Therefore a hypothetical positive anchor relation at \(W\) transports exactly to a homogeneous linear value relation at the regular point \(\alpha\), even if one or more early canonical matrices are singular.
+
+For a genuinely aperiodic positive anchor, T3 plus balance forces
+\[
+B/k<\log_2 3,\qquad 0<W<1
+\]
+in the ordinary real absolute value.
+
+Adamczewski–Bell–Smertnig Theorem 4.3 lifts the transported 2-adic relation at \(\alpha\) to a functional identity with the exact specialization. In the real completion the same reconstruction returns the original positive exact block-constant series
+\[
+F_0^{(\infty)}(W)>0,
+\]
+contradicting the sign required by a positive integer anchor.
+
+Thus
+\[
+\boxed{
+\text{no genuinely nonperiodic balanced one-variable finite-}k\text{-kernel family has }
+H\in\mathbb Z_{>0}.
+}
+\]
+
+By T2,
+\[
+\boxed{
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+}
+\]
+throughout the covered balanced finite-kernel class.
+
+T13 does not prove universal \(H\notin\mathbb Q\). In a subcritical family, any surviving rational exception lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign.
+
+**Lesson:** regularity at the original Mahler point is sufficient but not necessary for the completion-sign obstruction. For one variable, rational-linear minimality plus eventual tail regularity and exact forward coordinate transport are enough.
+
+**Action:** treat the balanced one-variable finite-kernel branch as closed for positive anchoring. Move the theorem boundary to the multivariate/unbalanced T5 systems. Do not spend compute on finite singularity sampling or reopen balanced finite-kernel automaton enumeration.
