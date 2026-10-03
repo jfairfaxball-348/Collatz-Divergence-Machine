@@ -843,20 +843,24 @@ The singular-incidence stable-image torus remains open because a Laurent monomia
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T17
+## Authoritative next task — CDM4-T18
 
-**CDM4-T17 — INTRINSIC TORIC/NONARCHIMEDEAN LIFTING AT AN ATTRACTING BOUNDARY STRATUM.**
+**CDM4-T18 — STABLE-ORBIT-CLOSURE / CYCLOTOMIC-FACTOR REDUCTION AND REGULAR-TAIL COMPLETION.**
 
 Primary target:
 
-> Starting from the T15 stable-image torus and finite torus isogeny, construct a toric/formal/rigid boundary chart adapted to the exact Collatz tail and replace the affine total-degree filtration by an intrinsic semigroup or weight filtration. Prove the toric analogue of the exponential support-displacement/Gauss estimate and retain exact specialization
-> \[
-> Q(\alpha,\mathbf X)=P(\mathbf X).
-> \]
+> Start from a T15 stable-image torus for which T17 relative independence, the no-root-of-unity condition, or complete regular-tail avoidance fails. Pass to an exact arithmetic-progression tail and its minimal invariant torus/coset, descend the scalar-preserving Mahler system without losing \(G_1=S\), and determine whether the reduced system enters the T17 toric lifting class.
 
-Do not force a nonnegative matrix representation merely to fit the affine theorem.
+Preserve the T17 canonical boundary data whenever the reduction permits it:
+\[
+\Gamma_0=\pi(\mathbb N^m),
+\qquad
+w(\pi(a))=\mathbf1^Ta,
+\qquad
+w(\overline M^n\gamma)=k^nw(\gamma).
+\]
 
-Keep the nonprimitive real-contraction problem separate: no completion-sign theorem may be promoted there without an ordinary real convergence theorem for the canonical positive scalar.
+Do not infer that a general invariant subvariety is a character coset without proof. Keep denominator trapping explicit. Keep the nonprimitive real-contraction problem separate.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
