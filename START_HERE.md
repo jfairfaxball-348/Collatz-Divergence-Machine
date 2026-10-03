@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T13 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T14 COMPLETE — D: NO QUALIFYING THEOREM FOUND; MULTIVARIATE TAIL REGULARITY SHARPENED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T13_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T14_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
@@ -50,15 +50,30 @@
   R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
   \]
 - Stronger rationality remains open: T13 does **not** prove \(H\notin\mathbb Q\) universally. In any subcritical family, a surviving rational value lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; a negative integer is not excluded.
-- Restricted Periodicity-Conjecture boundary: balanced finite abelian translations are closed by T11, finite nonabelian translations by T12, and the full balanced one-variable finite-kernel class is now closed as a positive-anchoring route by T13. The live residual boundary moves to multivariate/unbalanced automatic inverse systems and broader morphic/recursive languages without this one-variable finite-kernel reduction.
+- Restricted Periodicity-Conjecture boundary: balanced finite abelian translations are closed by T11, finite nonabelian translations by T12, and the full balanced one-variable finite-kernel class is closed as a positive-anchoring route by T13. T14 does not close a new genuinely multivariate/unbalanced positive-anchor class.
+- T14 reconstructs the exact T5 multivariate system
+  \[
+  \mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
+  \qquad
+  H=-\frac13\sum_tF_t(q),
+  \qquad
+  q_s=\frac{2^{v(s)}}3.
+  \]
+  After exact reachable/output quotienting, finite-state minimality is still distinct from rational-function linear minimality.
+- If the incidence matrix is nonsingular, the monomial map is dominant and exact rational-linear minimalization over \(\mathbb Q(x)\) can retain the prescribed scalar \(S=\sum_tF_t\) as a basis coordinate, yielding an invertible rational system. If the incidence matrix is singular, naive full-field rational minimalization is not automatically legitimate because denominators can vanish identically on the lower-dimensional monomial image.
+- T14 exact monomial-orbit theorem: after passage to the stable image torus, Bell–Ghioca–Tucker dynamical Mordell–Lang gives a finite-hit / arithmetic-progression-trapping dichotomy for every algebraic singular variety.
+- In the dominant Adamczewski–Faverjon class \(\mathcal M\), if the exact Collatz point is \(T\)-independent, T14 proves the orbit is Zariski dense and every proper singular variety is hit only finitely often. Hence every invertible rational minimal system in this subclass has a sufficiently deep regular tail.
+- T14 primitive real-tail theorem: a hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation \(\alpha<\log_2 3\), and therefore every coordinate of the deep real monomial orbit tends to zero uniformly. The exact positive scalar is reconstructible through forward transport.
+- The remaining load-bearing gap is completion-specific: Adamczewski–Faverjon 2026 supplies multivariate lifting with exact specialization for complex values, not the required 2-adic anchor relation. Brechler's 2026 multivariate p-adic preprint remains non-load-bearing. No peer-reviewed characteristic-zero nonarchimedean multivariate lifting theorem was verified for the exact T5 system.
+- Therefore T14 proves no new bounded-\(R_m\) periodicity class and does not exclude positive anchoring for a new genuinely multivariate/unbalanced class.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit, theory only**
-- T14 target: start from the exact T5 multivariate Parikh/monomial system, preserve the exact positive Collatz scalar through any rational-linear reduction, determine whether a completion-correct regular tail exists for an applicable arbitrary-place lifting theorem, and test whether the lifted identity can be evaluated in the real completion with the exact scalar reconstructed.
+- Immediate next task: **CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit, theory only**
+- T15 target: recover or prove a characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization for the T14 regular/admissible tail class; in parallel formalize scalar-preserving dominant reduction on the stable-image torus when the incidence matrix is singular.
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T14 theorem/literature analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T15 theorem/literature analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -113,6 +128,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 45. `experiments/CDM4_T11_REPORT.md`
 46. `experiments/CDM4_T12_REPORT.md`
 47. `experiments/CDM4_T13_REPORT.md`
+48. `experiments/CDM4_T14_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
