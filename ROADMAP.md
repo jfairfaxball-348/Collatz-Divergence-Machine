@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T11 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+**Status: CDM4-T14 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND; MULTIVARIATE TAIL REGULARITY SHARPENED; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T11_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T14_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -438,6 +438,45 @@ throughout this class.
 
 Universal \(H\notin\mathbb Q\) is not proved. In a subcritical family, any rational exception is a negative element of \(\mathbb Q\cap\mathbb Z_2\). No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+**CDM4-T14 closeout.** T14 reconstructs the exact T5 multivariate/unbalanced finite-state Mahler system and classifies the principal obstruction to extending T13.
+
+For the exact quotient substitution,
+\[
+\mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
+\qquad
+\tau(x)_s=\prod_t x_t^{M_{t,s}},
+\]
+with Collatz point
+\[
+q_s=2^{v(s)}/3,
+\qquad
+H=-\frac13\sum_tF_t(q).
+\]
+
+Reachability and output equivalence are removed exactly before functional analysis. Finite-state minimality remains distinct from rational-function linear minimality. If \(\det M\ne0\), the monomial map is dominant, rational-linear minimalization over \(\mathbb Q(x)\) is legitimate, the prescribed scalar \(S=\sum_tF_t\) can be retained as a basis coordinate, and the induced minimal system is invertible. If \(\det M=0\), naive full-field rational minimalization is not automatically legitimate because the monomial image is lower-dimensional.
+
+The exact orbit
+\[
+q_{j,s}=2^{B_j(s)}/3^{k^j},
+\qquad
+B_j(s)=v^TM^je_s,
+\]
+is pairwise distinct and tends to the origin 2-adically.
+
+T14 proves an exact multivariate singular-hit dichotomy. After passage to the stable image torus, the monomial map is an étale isogeny, so Bell–Ghioca–Tucker dynamical Mordell–Lang implies that every algebraic singular variety is hit either finitely often or along a complete arithmetic-progression suborbit.
+
+For the dominant Adamczewski–Faverjon admissible subclass, \(T=M^T\in\mathcal M\) with the exact Collatz point \(T\)-independent, Laurent's torus Mordell–Lang theorem plus Bell–Ghioca–Tucker imply Zariski density of the orbit. Therefore every proper singular variety is hit only finitely often and every invertible rational minimal system has a sufficiently deep regular tail.
+
+T14 also proves that in the primitive case a hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation
+\[
+\alpha<\log_2 3,
+\]
+which yields uniform coordinatewise contraction of the deep monomial orbit in the ordinary real completion. Forward transport preserves the exact positive scalar.
+
+The completion-sign route nevertheless stops one theorem short. Adamczewski–Faverjon, *Annals of Mathematics* 204 (2026), supplies multivariate relation lifting with exact specialization in the complex setting. It is not a nonarchimedean theorem. Brechler's 2026 work explicitly addressing multivariate \(p\)-adic meromorphy/lifting remains a preprint and is non-load-bearing.
+
+Therefore no new genuinely multivariate/unbalanced positive-anchor class is excluded, no new bounded-\(R_m\) periodicity implication is promoted, no explicit anchored aperiodic word or counterexample is found, and no scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -460,19 +499,20 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T14 — multivariate/unbalanced finite-state Mahler tail-regularity / completion-sign audit, theory only.**
+**CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit, theory only.**
 
-Treat the complete balanced one-variable finite-kernel branch as closed for positive anchoring.
+Treat the balanced one-variable finite-kernel branch as closed for positive anchoring and retain T14's multivariate regular-tail theorem as structural infrastructure.
 
-Return to the exact T5 multivariate Parikh/monomial functional system for unbalanced automatic inverse constructions. Determine whether:
+Primary obligation:
 
-1. exact rational-linear minimalization preserves the prescribed positive Collatz scalar;
-2. the multivariate monomial orbit admits a completion-correct regular tail for an applicable arbitrary-place lifting theorem;
-3. a transported 2-adic anchor relation can be lifted with exact specialization; and
-4. the resulting functional identity can be evaluated in the real completion while reconstructing the original positive scalar series.
+1. recover a peer-reviewed characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization whose hypotheses cover the T14 regular/admissible tail
+   \[
+   T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent};
+   \]
+2. if none is available, prove the required nonarchimedean lift for this restricted monomial class or isolate the exact obstruction;
+3. if the lift is obtained, combine it immediately with T14's regular-tail theorem, primitive real contraction, exact forward scalar transport, and positivity to test the completion-sign contradiction;
+4. in parallel, for singular incidence matrices, formalize descent to the stable-image torus and determine when the exact canonical system admits a dominant rational minimalization preserving \(S=\sum_tF_t\).
 
-If a universal multivariate theorem does not apply, isolate the sharpest exact unbalanced subclass where the T13 transport mechanism survives.
-
-Do not reopen balanced finite-kernel regularity, generic one-variable p-adic lifting, finite-abelian or finite-nonabelian translation representation analysis, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
+Do not reopen balanced finite-kernel regularity, finite-group translation representation analysis, Walsh-product coboundaries, generic one-variable p-adic lifting, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
 No new scientific compute is authorized.
