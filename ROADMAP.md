@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T9 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
+**Status: CDM4-T10 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T9_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T10_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -297,6 +297,55 @@ The corresponding same-point Kubota/Nishioka value theorem recovered in the same
 
 No Collatz-specific weighted no-cancellation identity was found, no genuinely higher-rank class was newly excluded, and no scientific compute is authorized.
 
+
+**CDM4-T10 closeout.** T10 completed the mandatory tenth-session progress/correction audit and recovered the missing completion-correct same-point lifting theorem.
+
+The load-bearing source is Adamczewski–Bell–Smertnig, Journal of the European Mathematical Society 25 (2023), Theorems 4.2–4.3. Their one-variable linear Mahler specialization theorem is explicitly valid for an arbitrary place of a number field. For a regular algebraic point \(\alpha\) with \(0<|\alpha|_v<1\), functional transcendence degree is preserved at the values, and every homogeneous value relation lifts to a homogeneous functional relation.
+
+For the exact T9 Walsh products
+\[
+P_i(z)=S_i(z)P_i(z^k),
+\]
+the diagonal system matrix is \(A(z)=\operatorname{diag}(S_i(z))\). The exact Collatz point
+\[
+W=2^B/3^k
+\]
+is rational with \(0<|W|_2<1\), and T8 already proves every \(S_i(W^{k^j})\) is a nonzero 2-adic unit. Therefore \(W\) is regular and the JEMS theorem applies without any pure-power or torsion restriction on the rational unit \(3^{-k}\).
+
+Consequently,
+\[
+\Lambda=0
+\Longrightarrow
+P_1(W),\ldots,P_t(W)
+\]
+are algebraically independent over \(\overline{\mathbb Q}\).
+
+T10 also proved the weaker additive criterion actually needed by Collatz. Adjoin \(P_0=1\). A finite family of first-order products is linearly independent over \(\overline{\mathbb Q}(z)\) exactly when no two members have rational quotient. Thus, after grouping the genuine nonrational components by
+\[
+i\sim j
+\Longleftrightarrow
+P_i/P_j\in\mathbb Q(z)^\times
+\Longleftrightarrow
+e_i-e_j\in\Lambda,
+\]
+one representative from each class together with \(1\) is functionally linearly independent. The JEMS relation-lifting theorem makes the corresponding same-point values linearly independent over \(\overline{\mathbb Q}\).
+
+If \(P_i=R_iP_{r(C)}\) inside class \(C\), define
+\[
+A_C(W)=\sum_{i\in C}\widehat C_iR_i(W).
+\]
+Then the exact higher-rank Fourier value is algebraic/rational if and only if every nonrational class has \(A_C(W)=0\). If at least one grouped coefficient is nonzero, the inverse-Collatz value is 2-adically transcendental.
+
+In particular, when no two genuine nonrational components are rational-function multiples, same-point rational cancellation is impossible automatically. This yields a genuinely higher-rank recursive-language obstruction and a new class for which bounded \(R_m\) forces eventual periodicity.
+
+The mandatory correction is that the T9 literature conclusion was incomplete: modern nonarchimedean Mahler lifting was already present in the 2023 JEMS paper. Xu–Wang 2004, Wang 2006, Wang–Xu 2006, and Flicker are no longer needed for the bridge.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+**Next theory substage: CDM4-T11.** Classify rational-coboundary collision classes exactly and determine whether the grouped Collatz coefficients \(A_C(W)\) can vanish simultaneously for every nonrational class. Prove universal nonvanishing, or classify the exact exceptional rational-value families and pass only those to ordinary-integrality/positivity analysis.
+
+No substitution enumeration, finite residue/carry/exponent-code optimization, candidate trajectories, new starts, generator/distribution work, CPU/GPU scaling, cloud, distributed, or volunteer work are authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -319,22 +368,30 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit, theory only.**
+**CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit, theory only.**
 
-Use the exact T9-reduced family
+Use the T10 same-point lifting theorem as closed infrastructure. Do not repeat the generic p-adic Mahler literature search.
+
+For the exact T9/T10 nonrational Walsh products, classify
 \[
-P_i(z)=S_i(z)P_i(z^k)
+i\sim j
+\Longleftrightarrow
+P_i/P_j\in\mathbb Q(z)^\times
+\Longleftrightarrow
+e_i-e_j\in\Lambda.
 \]
-at
+
+For each class choose a representative, derive the exact rational multipliers \(R_i(z)\), and study
 \[
-W=2^B/3^k,
+A_C(W)
+=
+\sum_{i\in C}\widehat C_iR_i(W),
+\qquad
+W=2^B/3^k.
 \]
-with zero and rational components removed and rational Mahler-coboundary relations accounted for.
 
 Single theorem target:
 
-> Prove or recover a peer-reviewed characteristic-zero **p-adic** lifting theorem that transfers functional algebraic, or at minimum functional linear, independence of several stationary first-order \(k\)-Mahler functions to sufficient independence of their values at the same regular algebraic point. Verify the theorem independently for the rational non-torsion unit in \(W\). If no such theorem is available, derive a Collatz-specific theorem excluding the exact weighted Fourier sum from \(\mathbb Q\).
+> Prove that at least one \(A_C(W)\) is nonzero in every genuinely nonperiodic reduced balanced elementary-2-group translation family, thereby excluding the entire remaining higher-rank Walsh class; or classify all exact exceptional families for which every grouped coefficient vanishes, and determine whether any exceptional rational inverse value can be an ordinary positive integer compatible with the prescribed valuation word.
 
-Because T10 is the tenth numbered CDM4 theory session, it must also carry out the mandatory progress-and-correction audit in `AGENTS.md`.
-
-Do not infer value independence from functional independence, separate transcendence, multiplicative independence, or archimedean lifting. Do not restart substitution enumeration, finite residue/carry optimization, candidate trajectories, new starts, generator/distribution design, P3 scaling, GPU, cloud, distributed, or volunteer work.
+No substitution enumeration or scientific starts are authorized. Tiny exact symbolic divisor/coboundary checks are permitted only when theorem-driven. Do not modify the compute budget or metric catalog unless a genuinely new theorem-derived workload is established.
