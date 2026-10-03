@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T10 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+**Status: CDM4-T11 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T10_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T11_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -346,6 +346,25 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 
 No substitution enumeration, finite residue/carry/exponent-code optimization, candidate trajectories, new starts, generator/distribution work, CPU/GPU scaling, cloud, distributed, or volunteer work are authorized.
 
+
+**CDM4-T11 closeout.** T11 closes the residual rational-coboundary collision problem for the reduced elementary-2 Walsh family. A divisor \(L^1\)-degree argument proves that any nontrivial full-length coboundary
+\[
+S(z)/T(z)=R(z)/R(z^k),
+\qquad
+S(0)=T(0)=1,\quad \deg S=\deg T=k-1,
+\]
+forces \(S\) and \(T\) to be fixed-point cocycles \(Q_\gamma(z)=(z^k-\gamma)/(z-\gamma)\). In the elementary-2 case the only distinct possibility is the odd-\(k\) trivial/alternating pair, and both components are already rational.
+
+After rational-component removal every genuine class is therefore a singleton, so
+\[
+A_{\{\chi\}}(W)=\widehat C_\chi\ne0
+\]
+on exact support. Same-point rational cancellation is impossible for every genuinely nonperiodic covered family. The inverse value remains a 2-adic integer but is transcendental over \(\mathbb Q\), so it is not an ordinary positive-integer anchor.
+
+The same divisor theorem extends to balanced finite-abelian translation kernels: any distinct pairwise coboundary occurs only between individually rational character products. After rational-character removal, genuine classes are singletons there as well.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -368,30 +387,15 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T11 — rational-coboundary collision / grouped-weight cancellation audit, theory only.**
+**CDM4-T12 — finite nonabelian translation / higher-dimensional representation audit, theory only.**
 
-Use the T10 same-point lifting theorem as closed infrastructure. Do not repeat the generic p-adic Mahler literature search.
+Use the T10 arbitrary-place Mahler lifting theorem and the T11 first-order collision theorem as closed infrastructure.
 
-For the exact T9/T10 nonrational Walsh products, classify
+For balanced finite-group translation systems with irreducible representation blocks of dimension greater than one, derive the exact reduced matrix Mahler blocks and the prescribed Collatz output coordinate. Classify rational-function linear/module relations among the relevant block outputs and determine whether those relations permit algebraic cancellation at
 \[
-i\sim j
-\Longleftrightarrow
-P_i/P_j\in\mathbb Q(z)^\times
-\Longleftrightarrow
-e_i-e_j\in\Lambda.
-\]
-
-For each class choose a representative, derive the exact rational multipliers \(R_i(z)\), and study
-\[
-A_C(W)
-=
-\sum_{i\in C}\widehat C_iR_i(W),
-\qquad
 W=2^B/3^k.
 \]
 
-Single theorem target:
+If a general theorem fails, isolate the exact higher-dimensional obstruction and the smallest natural subclass left open. Do not reopen generic p-adic lifting, first-order Walsh coboundaries, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
 
-> Prove that at least one \(A_C(W)\) is nonzero in every genuinely nonperiodic reduced balanced elementary-2-group translation family, thereby excluding the entire remaining higher-rank Walsh class; or classify all exact exceptional families for which every grouped coefficient vanishes, and determine whether any exceptional rational inverse value can be an ordinary positive integer compatible with the prescribed valuation word.
-
-No substitution enumeration or scientific starts are authorized. Tiny exact symbolic divisor/coboundary checks are permitted only when theorem-driven. Do not modify the compute budget or metric catalog unless a genuinely new theorem-derived workload is established.
+No new scientific compute is authorized.
