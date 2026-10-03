@@ -598,31 +598,31 @@ Do not enumerate substitutions or optimize finite residues/carries/exponent code
 
 ## CDM4-T9 closeout — 2026-10-03
 
-CDM4-T9 is complete. Authoritative report: `experiments/CDM4_T9_REPORT.md`.
+CDM4-T9 is complete. Authoritative report: \`experiments/CDM4_T9_REPORT.md\`.
 
 **Classification: D — NO QUALIFYING THEOREM FOUND.**
 
 T9 sharpened the exact functional preprocessing of the balanced elementary-2-group Walsh family without generating any scientific Collatz starts.
 
-For the true reachable/output quotient (G=E/K_C), each projected character sequence satisfies
-[
-f_chi(kn+r)=f_chi(n)chi(arepsilon_r).
-]
-T9 proves directly that an eventually periodic ({pm1})-valued projected sequence is either trivial or, only when (k) is odd, the unique alternating sequence (f(n)=(-1)^n). Hence the only rational normalized Walsh components are (1/(1-z)) and the possible alternating (1/(1+z)). Distinct quotient characters also have distinct cocycle polynomials (S_chi).
+For the true reachable/output quotient \(G=E/K_C\), each projected character sequence satisfies
+\[
+f_\chi(kn+r)=f_\chi(n)\chi(\varepsilon_r).
+\]
+T9 proves directly that an eventually periodic \(\{\pm1\}\)-valued projected sequence is either trivial or, only when \(k\) is odd, the unique alternating sequence \(f(n)=(-1)^n\). Hence the only rational normalized Walsh components are \(1/(1-z)\) and the possible alternating \(1/(1+z)\). Distinct quotient characters also have distinct cocycle polynomials \(S_\chi\).
 
 The main positive structural result is a source-level Kubota criterion: for first-order normalized products
-[
+\[
 P_i(z)=S_i(z)P_i(z^k),
-]
+\]
 functional algebraic independence is **equivalent** to multiplicative independence of the cocycles modulo rational Mahler coboundaries
-[
-prod_iS_i(z)^{m_i}=R(z)/R(z^k).
-]
-Thus the functional-independence side of the T8/T9 problem is now exact. A divisor equation on (mathbb P^1) gives an exact factor/orbit test for any proposed coboundary relation.
+\[
+\prod_iS_i(z)^{m_i}=R(z)/R(z^k).
+\]
+Thus the functional-independence side of the T8/T9 problem is now exact. A divisor equation on \(\mathbb P^1\) gives an exact factor/orbit test for any proposed coboundary relation.
 
 The adjacent Kubota/Nishioka value-lifting theorem recovered in peer-reviewed form is archimedean, not 2-adic. Bugeaud–Yao remains individual only. Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 still lack recoverable theorem text sufficient to certify a simultaneous same-point application. Flicker's theorem genuinely permits p-adic completions but its transformation-limit/dominance package, including the nonarchimedean valuation-separation mechanism, is not established for the stationary unit-valued Walsh family.
 
-No Collatz-specific identity was found that excludes rational cancellation in the prescribed weighted Fourier sum. No genuinely multi-character recursive class was newly ruled out, and no new bounded-(R_m)-implies-periodicity theorem was obtained. The generic balanced automatic remainder still meets the restricted Periodicity-Conjecture boundary.
+No Collatz-specific identity was found that excludes rational cancellation in the prescribed weighted Fourier sum. No genuinely multi-character recursive class was newly ruled out, and no new bounded-\(R_m\)-implies-periodicity theorem was obtained. The generic balanced automatic remainder still meets the restricted Periodicity-Conjecture boundary.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed. No scientific compute, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
@@ -631,21 +631,21 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 **CDM4-T10 — P-ADIC DIAGONAL MAHLER LIFTING / SAME-POINT VALUE THEOREM AUDIT.**
 
 Work only with the exact T9-reduced first-order family
-[
+\[
 P_i(z)=S_i(z)P_i(z^k)
-]
+\]
 after zero/rational components and all detected rational Mahler-coboundary relations are accounted for.
 
 Primary theorem target:
 
-> Prove, or recover from complete peer-reviewed theorem text, a characteristic-zero nonarchimedean lifting theorem which at a regular algebraic point (alpha), (0<|alpha|_2<1), transfers functional algebraic (or at minimum functional linear) independence of several stationary first-order (k)-Mahler functions to algebraic (or sufficient linear) independence of their values at the **same point**. The theorem must be checked independently for the rational non-torsion S-unit
-> [
-> alpha=W=2^B/3^k.
-> ]
+> Prove, or recover from complete peer-reviewed theorem text, a characteristic-zero nonarchimedean lifting theorem which at a regular algebraic point \(\alpha\), \(0<|\alpha|_2<1\), transfers functional algebraic (or at minimum functional linear) independence of several stationary first-order \(k\)-Mahler functions to algebraic (or sufficient linear) independence of their values at the **same point**. The theorem must be checked independently for the rational non-torsion S-unit
+> \[
+> \alpha=W=2^B/3^k.
+> \]
 
 If no general theorem is available, attack the exact Collatz weighted relation directly. Do not return to substitution enumeration, finite residues/carries/exponent codes, or numerical singularity checks.
 
-Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform the binding **PROGRESS AND CORRECTION AUDIT** required by `AGENTS.md`: re-check scope, hidden assumptions, failed-route memory, theorem-source quality, compute economics, and whether the Mahler route should be killed, narrowed, or continued.
+Because CDM4-T10 is the tenth numbered CDM4 theory session, it must also perform the binding **PROGRESS AND CORRECTION AUDIT** required by \`AGENTS.md\`: re-check scope, hidden assumptions, failed-route memory, theorem-source quality, compute economics, and whether the Mahler route should be killed, narrowed, or continued.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
