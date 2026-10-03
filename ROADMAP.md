@@ -714,6 +714,46 @@ for the newly closed nonprimitive class.
 
 Positive rational noninteger values still require independently known real subcriticality for exclusion. Negative rational values remain unexcluded. No explicit anchored aperiodic word, candidate, unbounded orbit or counterexample was found. No scientific compute is authorized.
 
+**CDM4-T20 closeout.** T20 proves the exact variable-length endpoint/scalar transport theorem and closes the primitive growing variable-length substitutive positive-anchor class.
+
+For
+\[
+L_J(n)=\mathbf1^TM^Jc(n),
+\]
+one has
+\[
+\sigma^J(u_{<n})=u_{<L_J(n)},
+\qquad
+A_{L_J(n)}=v^TM^Jc(n),
+\]
+and therefore
+\[
+S(q_J)=\sum_{n\ge0}\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+\]
+
+For primitive variable-length substitutions the valuation mean is algebraic. A hypothetical positive integer anchor bounds it by \(\log_2 3\), while Gelfond-Schneider excludes equality, giving a strict global prefix gap and ordinary-real scalar convergence at every actual tail.
+
+The uniform T17 grading is replaced by the positive left Perron weight
+\[
+h^TM=\rho h^T,
+\qquad
+w_h(\pi(a))=h^Ta.
+\]
+It descends through the stable kernel and, after T18 orbit-closure reduction, through the complete relation lattice, with exact scaling by \(\rho^n\). The T17/T18 support, boundary-contraction, zero-set, rigid-local, regular-tail and exact-specialization proof therefore extends to primitive variable-length systems, including singular incidence.
+
+Hence every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding has
+\[
+H\notin\mathbb Z_{>0},
+\]
+and T2 gives
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
+
+The remaining variable-length branch is reducible/nonprimitive. Equal-dominant-radius chains can contribute leading \(J^e\rho^J\) terms, and algebraic substituted-block ratios do not yet imply an algebraic or strict ordinary-prefix limsup. A universal positive expanding toric grading is also unproved in the reducible singular class.
+
+T20 is the mandatory twentieth-session progress/correction audit. No scientific compute is authorized.
+
 ## Immediate next task
 
 **CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit, theory only.**
