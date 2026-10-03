@@ -2004,3 +2004,132 @@ The T15 singular-incidence stable-image torus remains outside the theorem. The o
 
 **Action:** CDM4-T17 should build an intrinsic toric boundary chart and semigroup/weight filtration, prove a toric support-displacement estimate, and retain exact specialization. No scientific compute is authorized.
 
+
+
+---
+
+### F0084 — Singular stable-image reduction preserves a canonical positive boundary monoid and exact expanding weight
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T17.**
+
+The T15 stable-image torus does not need an arbitrary character-lattice basis in order to recover the positive support structure used by the Mahler auxiliary-function argument.
+
+Let
+\[
+L=\ker_{\mathbb Z}(M^{J_0}),
+\qquad
+N=\mathbb Z^m/L,
+\qquad
+\pi:\mathbb Z^m\to N.
+\]
+
+Because the substitution is \(k\)-uniform,
+\[
+\mathbf1^TM=k\mathbf1^T.
+\]
+For every \(\ell\in L\),
+\[
+0=\mathbf1^TM^{J_0}\ell=k^{J_0}\mathbf1^T\ell,
+\]
+so
+\[
+L\subseteq\ker\mathbf1^T.
+\]
+
+Therefore
+\[
+w(\pi(a))=\mathbf1^Ta
+\]
+is a well-defined homomorphism on the stable character lattice. On the canonical semigroup
+\[
+\Gamma_0=\pi(\mathbb N^m)
+\]
+it is positive away from zero, and the induced stable pullback satisfies
+\[
+\boxed{
+w(\overline M^n\gamma)=k^nw(\gamma).
+}
+\]
+
+Thus
+\[
+U_0=\operatorname{Spec}K[\Gamma_0]
+\]
+is a canonical affine toric boundary chart with a torus-fixed closed orbit. The exact 2-adic stable Collatz tail converges to that boundary point, not to a point of the torus.
+
+The filtration by \(w\)-weight is finite-codimensional. Its weighted toric Tate completion has a Gauss norm and gives exponential high-support decay under iteration. An arbitrary Laurent basis is therefore unnecessary for the load-bearing support estimate.
+
+**Lesson:** negative exponents are a coordinate artifact of choosing a free lattice basis. The quotient of the original positive monoid is the intrinsic object.
+
+**Action:** do not restart T17 by searching for a basis in which the stable isogeny matrix is nonnegative. Preserve \(\Gamma_0\), \(w\), and the toric boundary point as closed infrastructure.
+
+---
+
+### F0085 — The stable torus needs a relative zero theorem, not a literal application of the affine Adamczewski–Faverjon vanishing theorem
+
+**Status: PROVED RELATIVE TORIC VANISHING THEOREM in CDM4-T17.**
+
+Adamczewski–Faverjon Theorem 6.4 is not automatically a theorem for an arbitrary Laurent matrix on the T15 stable torus.
+
+T17 instead lifts every algebraic-coefficient \(\Gamma_0\)-analytic series to an ordinary ambient power series by choosing nonnegative exponent representatives. The exact Collatz tail consists of \(S\)-units for a fixed finite set of places, tends to the ambient origin 2-adically, and satisfies the Corvaja–Zannier height-versus-contraction condition.
+
+Assume the exact relative-independence condition
+\[
+\mathbf1^T\mu=0,\quad
+v^TM^{J_0+a+rn}\mu=0\ \forall n\ge0
+\Longrightarrow
+\mu\in L
+\]
+and assume that the induced injective lattice endomorphism \(\overline M\) has no root-of-unity eigenvalue.
+
+If a nonzero toric analytic function vanished at infinitely many stable-tail points, Corvaja–Zannier Theorem 3 would trap an infinite zero subsequence in finitely many torus cosets. The inherited T15 dynamical Mordell–Lang dichotomy would then place an arithmetic-progression suborbit in a proper character coset. Comparing consecutive points on that progression gives either:
+
+- a nontrivial character equal to \(1\) on an arithmetic-progression suborbit, contradicting relative independence modulo \(L\); or
+- a nonzero character fixed by a power of \(\overline M\), forcing a root-of-unity eigenvalue.
+
+Hence every nonzero toric analytic function has only finitely many zeros on the relatively admissible stable tail.
+
+**Lesson:** the published affine vanishing theorem should not be cited through a Laurent coordinate change. Its required zero-set role can be rebuilt from the underlying \(S\)-unit theorem plus the exact stable-orbit trapping mechanism.
+
+**Action:** preserve the relative toric zero theorem for the T17 class. When relative independence or the no-root-of-unity hypothesis fails, reduce the actual orbit closure rather than pretending the vanishing theorem still applies on \(X\).
+
+---
+
+### F0086 — Toric exact lifting closes a new singular-incidence positive-anchor subclass, not the whole stable-image class
+
+**Status: PROVED RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T17.**
+
+Using the canonical semigroup/weight filtration, weighted rigid Gauss estimates, local torus binomial translation, the relative toric zero theorem, and the algebraic layers already audited in T16, T17 proves a semigroup-admissible toric mixed-place relation-lifting theorem.
+
+For a complete regular stable tail satisfying relative independence modulo \(L\) and with no root-of-unity eigenvalue of \(\overline M\), every homogeneous nonarchimedean value relation lifts to an algebraic functional relation with the exact input specialization polynomial:
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X).
+}
+\]
+
+For a genuinely aperiodic **primitive** member of this class, a hypothetical positive integer anchor transports to a deep stable-torus point, lifts exactly, and evaluates in the ordinary real completion. T14 real subcriticality plus exact scalar reconstruction gives
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+contradicting positivity. Thus
+\[
+H\notin\mathbb Z_{>0}
+\]
+throughout the newly covered class, and T2 gives
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
+
+This does not close:
+
+- stable-image systems with root-of-unity factors;
+- systems failing relative independence modulo \(L\);
+- persistent general invariant-subvariety/denominator traps;
+- the independent nonprimitive real-contraction gap.
+
+Positive rational noninteger values are excluded only with independently verified ordinary real subcriticality. Negative rational values remain unexcluded.
+
+**Lesson:** intrinsic toric support growth is no longer the limiting obstruction. The remaining singular-incidence problem is exact orbit-closure/cyclotomic-factor reduction plus regular-tail completion.
+
+**Action:** CDM4-T18 should descend arithmetic-progression tails to their minimal invariant torus/coset while preserving the exact scalar and then re-test the T17 hypotheses. No scientific compute is authorized.
