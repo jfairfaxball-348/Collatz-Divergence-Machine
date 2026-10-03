@@ -36,15 +36,15 @@
   \]
   system covered by T14/T16,
   \[
-  H\notin\mathbb Q_{>0}.
+  H\notin\mathbb Z_{>0}.
   \]
-  Hence no positive integer anchor exists in this class.
+  T14 derives the real contraction used in this contradiction from the existence of the realized positive integer orbit itself. If uniform real subcriticality is independently known, T16 strengthens this to \(H\notin\mathbb Q_{>0}\).
 - Project consequence for the newly closed class:
   \[
   R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
   \]
   under the exact T2 finite-alphabet anchoring hypotheses.
-- Negative rational values remain open and are not Collatz counterexamples.
+- Positive rational noninteger values are not excluded from primitivity alone; they are excluded when real subcriticality is independently verified. Negative rational values remain open and are not Collatz counterexamples.
 - The T15 singular-incidence stable-image torus remains open. The missing step is now an intrinsic toric boundary version of the auxiliary-function support-growth argument, not generic p-adic meromorphy.
 - Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon Annals addendum was checked and does not change the arbitrary-place boundary.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
@@ -827,11 +827,11 @@ This yields a mixed-place exact lifting theorem covering the primitive dominant 
 \[
 \det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ \(T\)-independent}.
 \]
-The T15 completion-sign argument then excludes every
+The T15 completion-sign argument then excludes every realized positive integer anchor,
 \[
-H\in\mathbb Q_{>0},
+H\in\mathbb Z_{>0},
 \]
-hence every positive integer anchor, in that class. By T2, bounded \(R_m\) implies eventual periodicity there.
+in that class. By T2, bounded \(R_m\) implies eventual periodicity there. If ordinary real subcriticality is independently available, the same proof also excludes all \(H\in\mathbb Q_{>0}\).
 
 The singular-incidence stable-image torus remains open because a Laurent monomial isogeny approaching a toric boundary does not inherit the affine \(\mathbb N^m\) total-degree filtration used in the auxiliary-function upper bound.
 
