@@ -111,6 +111,8 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 43. `experiments/CDM4_T9_REPORT.md`
 44. `experiments/CDM4_T10_REPORT.md`
 45. `experiments/CDM4_T11_REPORT.md`
+46. `experiments/CDM4_T12_REPORT.md`
+47. `experiments/CDM4_T13_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
