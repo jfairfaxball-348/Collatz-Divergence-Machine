@@ -672,23 +672,64 @@ Mandatory progress-and-correction audits.
 
 Triggered only when a candidate has a plausible exact mechanism capable of proving unboundedness.
 
+**CDM4-T19 closeout.** T19 closes the nonprimitive ordinary-real completion gap inside the exact T18 \(k\)-uniform framework.
+
+For the nonnegative \(k\)-uniform incidence matrix,
+\[
+\mathbf1^TM=k\mathbf1^T.
+\]
+In Frobenius form, an SCC has spectral radius \(k\) exactly when it is final. Every nonfinal block has spectral radius \(<k\), so no chain of \(k\)-spectral blocks exists and no \(j^ek^j\), \(e>0\), term occurs in the canonical nonnegative Parikh dynamics. Polynomial equal-radius corrections may survive only below \(k\).
+
+With \(P=M/k\), the incidence dynamics becomes a rational finite Markov chain. Its final SCCs are the recurrent classes. Along a common period \(D\),
+\[
+B_j(s)=k^jb_{s,j\bmod D}+O(j^E\rho_*^j),
+\qquad
+b_{s,r}\in\mathbb Q,\quad \rho_*<k.
+\]
+Imprimitive modulation is therefore explicit and rational, and no residue-class valuation mean can equal the irrational threshold \(\log_2 3\).
+
+The decisive completion theorem is global rather than coordinatewise. If a genuinely aperiodic uniform valuation word had an ordinary positive integer anchor, T3's height bound and Bell's rational automatic limsup theorem give
+\[
+\limsup A_n/n<\log_2 3.
+\]
+For the canonical scalar,
+\[
+S(\tau^Jq)
+=
+\sum_{n\ge0}\frac{2^{A_{nk^J}}}{3^{nk^J}}.
+\]
+Hence \(S\) and every canonical state subseries converge absolutely in the real completion at every actual monomial-orbit point used by T18, even when an individual coordinate is real-supercritical.
+
+The T18 exact reduced lifting theorem can therefore be evaluated at the same real algebraic tail point. Exact scalar reconstruction gives
+\[
+S^{(\infty)}(q)+3N=0,
+\]
+contradicting positivity for \(N>0\).
+
+Thus every genuinely aperiodic nonprimitive T18-admissible \(k\)-uniform system has no positive integer anchor. Together with T18, the primitive/nonprimitive split is removed for positive anchors inside the complete T18 framework. T2 then gives
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+for the newly closed nonprimitive class.
+
+Positive rational noninteger values still require independently known real subcriticality for exclusion. Negative rational values remain unexcluded. No explicit anchored aperiodic word, candidate, unbounded orbit or counterexample was found. No scientific compute is authorized.
+
 ## Immediate next task
 
-**CDM4-T19 — nonprimitive real-contraction / positive-anchor completion audit, theory only.**
+**CDM4-T20 — nonuniform morphic scalar-convergence / completion-portability audit, theory only.**
 
-Treat the T18 stable-orbit-closure reduction, dense-coset toric zero theorem, scalar-preserving descent, exact reduced semigroup/weight, regular-tail theorem, mixed-place lifting, and exact specialization as closed infrastructure.
+Treat the T18 orbit-closure/lifting machinery and T19 uniform scalar-convergence theorem as closed infrastructure.
 
 Primary obligation:
 
-1. classify the reachable strongly connected components of a nonprimitive \(k\)-uniform substitution and the exact block-triangular form of its incidence dynamics;
-2. assume a hypothetical ordinary positive Collatz anchor and determine which recurrent/transient components actually contribute to the exact reconstructed scalar;
-3. derive the sharp ordinary-real growth condition for every contributing component;
-4. determine whether positivity of the realized orbit forces all contributing components to be strictly subcritical, including critical components and polynomial/Jordan corrections;
-5. if some critical or supercritical component can survive, isolate the exact algebraic/positivity obstruction rather than hiding it inside the toric theorem;
-6. when real convergence is established, apply the already closed T18 exact lifting/sign contradiction immediately;
-7. state separately the stronger positive-rational conclusion, which still requires independently verified real subcriticality.
+1. formulate the exact variable-length morphic analogue of the canonical scalar and substitution transport;
+2. track actual substitution lengths rather than replacing them by \(k^j\);
+3. determine whether a hypothetical positive integer anchor forces a strict ordinary-real summability gap for the canonical scalar;
+4. identify which automatic/limsup arguments fail when constant length is lost;
+5. prove pointwise completion portability if canonical scalar convergence is available;
+6. otherwise isolate the exact nonuniform growth/return obstruction.
 
-Do not reopen orbit-closure reduction, T17 support growth, Laurent/Bell–Ghioca–Tucker reduction, or exact specialization.
+Do not reimpose coordinatewise real contraction when pointwise canonical convergence is sufficient.
 
 Do not repeat substitution enumeration, finite residue/carry/exponent-code optimization, candidate trajectories, new scientific starts, generator/distribution work, CPU/GPU scaling, cloud, distributed, or volunteer work.
 
