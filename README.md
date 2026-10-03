@@ -58,15 +58,16 @@ This is sufficient for the T14 primitive dominant class
 \[
 \det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent}.
 \]
-A hypothetical positive rational anchor transports to a regular 2-adic tail, lifts with its exact polynomial, and then evaluates in the real completion. Exact reconstruction gives
+A hypothetical realized positive integer anchor transports to a regular 2-adic tail, lifts with its exact polynomial, and then evaluates in the real completion. Exact reconstruction gives
 \[
 S^{(\infty)}(q)+3N=0,
 \]
 contradicting \(S^{(\infty)}(q)>0\) and \(N>0\). Hence no genuinely aperiodic covered system has
 \[
-H\in\mathbb Q_{>0},
+H\in\mathbb Z_{>0}.
 \]
-and in particular none has a positive-integer anchor.
+
+T14 derives the required real contraction from the existence of that positive integer realized orbit. Therefore primitivity alone does not exclude an abstract positive rational noninteger value. If uniform real subcriticality is independently known for the system, the same T16 lifting/sign argument strengthens the conclusion to \(H\notin\mathbb Q_{>0}\).
 
 By T2, throughout the newly closed primitive dominant class,
 \[
@@ -76,7 +77,7 @@ under the exact finite-alphabet anchoring hypotheses.
 
 T16 does **not** close the T15 singular-incidence stable-image torus class. The affine auxiliary-function proof still uses the positive exponent monoid, total-degree truncation at the affine origin, and high-order support displacement. An intrinsic Laurent/toric version must work in a boundary chart rather than force an artificial nonnegative matrix.
 
-Negative rational anchor values are not excluded. No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
+Negative rational values are not excluded; positive rational noninteger values are excluded only under independently verified real subcriticality. No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon 2026 Annals addendum was checked and does not supply an arbitrary-place theorem.
 
