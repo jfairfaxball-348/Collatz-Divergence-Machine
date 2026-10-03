@@ -37,52 +37,53 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T16 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T17 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-The balanced one-variable finite-kernel branch remains closed by T13. T14–T15 supplied the dominant multivariate regular-tail infrastructure and the singular-incidence stable-image torus. T16 now proves the missing completion bridge for the **primitive dominant affine subclass**.
+The balanced one-variable finite-kernel branch remains closed by T13, and T16 remains the exact mixed-place lifting/completion-sign theorem for the primitive dominant affine multivariate class.
 
-The new T16 theorem is a mixed-place / bi-admissible exact lifting theorem. For a nonsingular nonnegative monomial map, an algebraic regular point, and algebraic-coefficient Mahler functions:
+T17 extends the obstruction into a genuinely singular-incidence stable-image subclass without forcing an arbitrary Laurent basis into a nonnegative affine matrix.
 
-- the published Adamczewski–Faverjon complex admissibility/vanishing theorem is retained for the same algebraic orbit;
-- the input value relation may live in a characteristic-zero nonarchimedean completion;
-- local analytic branches are constructed by rigid Hensel theory;
-- Tate/Gauss norms replace Cauchy estimates;
-- the rigid identity theorem replaces complex analytic continuation;
-- local-place Liouville bounds replace the archimedean lower-bound use;
-- and the lifted algebraic relation preserves the exact specialization
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X).
-  \]
-
-This is sufficient for the T14 primitive dominant class
+For the T15 stable image, put
 \[
-\det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ is }T\text{-independent}.
+L=\ker_{\mathbb Z}(M^{J_0}),\qquad
+N=\mathbb Z^m/L,
+\qquad
+\Gamma_0=\pi(\mathbb N^m).
 \]
-A hypothetical realized positive integer anchor transports to a regular 2-adic tail, lifts with its exact polynomial, and then evaluates in the real completion. Exact reconstruction gives
+Uniformity of the substitution makes
 \[
-S^{(\infty)}(q)+3N=0,
+w(\pi(a))=\mathbf1^Ta
 \]
-contradicting \(S^{(\infty)}(q)>0\) and \(N>0\). Hence no genuinely aperiodic covered system has
+a well-defined positive grading on the regular-character semigroup, and the stable isogeny satisfies the exact expansion law
 \[
-H\in\mathbb Z_{>0}.
+\boxed{w(\overline M^n\gamma)=k^nw(\gamma).}
 \]
 
-T14 derives the required real contraction from the existence of that positive integer realized orbit. Therefore primitivity alone does not exclude an abstract positive rational noninteger value. If uniform real subcriticality is independently known for the system, the same T16 lifting/sign argument strengthens the conclusion to \(H\notin\mathbb Q_{>0}\).
-
-By T2, throughout the newly closed primitive dominant class,
+The canonical affine toric chart
 \[
-R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+U_0=\operatorname{Spec}K[\Gamma_0]
 \]
-under the exact finite-alphabet anchoring hypotheses.
+has a torus-fixed boundary point \(o\), and the exact 2-adic stable Collatz tail converges to \(o\). Weighted toric Tate algebras give the required Gauss coefficient estimate and exponential high-weight-tail bound. Local translation at a deep torus point uses ordinary rigid parameters; negative lattice exponents are harmless there because the generalized integer binomial series converges on strict unit discs.
 
-T16 does **not** close the T15 singular-incidence stable-image torus class. The affine auxiliary-function proof still uses the positive exponent monoid, total-degree truncation at the affine origin, and high-order support displacement. An intrinsic Laurent/toric version must work in a boundary chart rather than force an artificial nonnegative matrix.
+T17 does not apply Adamczewski–Faverjon Theorem 6.4 blindly in Laurent coordinates. Instead, under relative independence modulo \(L\) and absence of root-of-unity eigenvalues of \(\overline M\), Corvaja–Zannier \(S\)-unit trapping together with the inherited T15 dynamical Mordell–Lang dichotomy gives the required toric zero-set theorem. The remainder of T16's algebraic/global and rigid-local lifting architecture survives in the semigroup presentation.
 
-Negative rational values are not excluded; positive rational noninteger values are excluded only under independently verified real subcriticality. No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
+The resulting semigroup-admissible toric lifting theorem preserves the original specialization polynomial exactly:
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X).
+\]
 
-Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon 2026 Annals addendum was checked and does not supply an arbitrary-place theorem.
+Hence every genuinely aperiodic **primitive** stable-image system with a complete regular tail, relative independence modulo \(L\), and no root-of-unity eigenvalue satisfies
+\[
+H\notin\mathbb Z_{>0}.
+\]
+By T2, bounded canonical representatives force eventual periodicity throughout this newly closed class.
 
-The next authorized action is theory-only **CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum**. Build a toric/formal/rigid chart for the T15 stable-image tail, replace affine total degree by an intrinsic semigroup/weight filtration, and prove the toric analogue of the exponential support-displacement/Gauss estimate while preserving exact specialization.
+This is a subclass theorem, not a closure of all singular incidence. Cyclotomic factors, relative-dependence, and general invariant bad-locus/orbit-closure reduction remain open. Nonprimitive ordinary real contraction remains a separate gap. Positive rational noninteger values are excluded only when real subcriticality is independently established; negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. Brechler arXiv:2607.24877 remains a preprint in the 2026-10-03 status check and is non-load-bearing.
+
+The next authorized action is theory-only **CDM4-T18 — stable-orbit-closure / cyclotomic-factor reduction and regular-tail completion**. The target is to descend failed-(RI)/(RE) arithmetic-progression tails and persistent denominator traps to their minimal invariant torus/coset while preserving the exact scalar, then test whether the resulting system enters the T17 toric lifting class.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T16_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T17_REPORT.md before doing research.
