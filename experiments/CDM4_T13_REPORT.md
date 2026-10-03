@@ -1101,7 +1101,11 @@ F_0(W)=\ell\,\mathbf G(\alpha).
 
 This is the load-bearing coordinate-preservation identity.
 
-Early canonical singularity can lower the particular row \(\ell\), but it cannot destroy the equality. If \(\ell=0\), then (39) would force \(F_0(W)=0\), impossible because \(F_0(W)\) is a nonzero 2-adic value of a positive-constant-term series. Thus the transported coordinate is nontrivial.
+Early canonical singularity can lower the particular row \(\ell\), but it cannot destroy the equality. If \(\ell=0\), then (39) would force \(F_0(W)=0\). This is impossible for the exact Collatz block-constant series: its constant coefficient is odd, since every block constant has leading term \(3^{k-1}\) and all later terms are even, while \(v_2(W)=B>0\). Hence
+\[
+F_0(W)\equiv F_0(0)\equiv1\pmod2
+\]
+after reduction modulo the 2-adic maximal ideal. Thus \(F_0(W)\) is a 2-adic unit and the transported coordinate is nontrivial.
 
 ---
 
