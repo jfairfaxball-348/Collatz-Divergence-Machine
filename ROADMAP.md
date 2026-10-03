@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T8 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
+**Status: CDM4-T9 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T8_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T9_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -285,6 +285,18 @@ at the same rational non-torsion S-unit point \(W=2^B/3^k\), under a checkable f
 
 No substitution enumeration, finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, or GPU/cloud/distributed work are authorized.
 
+**CDM4-T9 closeout.** T9 completes the theorem-first preprocessing of the elementary-2-group Walsh-product family as far as current verified functional theory permits. On the exact quotient (G=E/K_C), the only eventually periodic projected characters are the trivial character and, for odd (k), at most one alternating character with (chi(arepsilon_r)=(-1)^r). Distinct quotient characters have distinct (S_chi).
+
+A peer-reviewed restatement of Kubota gives an exact functional theorem: for
+[
+P_i(z)=S_i(z)P_i(z^k),
+]
+the products are algebraically independent over the rational-function field if and only if the cocycles (S_i) are multiplicatively independent modulo rational Mahler coboundaries. Hence the functional algebraic-independence criterion is now exact; a divisor equation on (mathbb P^1) gives a symbolic test for a proposed coboundary.
+
+The corresponding same-point Kubota/Nishioka value theorem recovered in the same source is archimedean. No checked p-adic analogue was recovered that handles several stationary first-order functions at the same (W=2^B/3^k). Bugeaud–Yao remains individual; Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 remain non-load-bearing for simultaneous use; Flicker's p-adic theorem does not have its transformation-limit/dominance hypotheses verified for the unit-valued stationary Walsh family.
+
+No Collatz-specific weighted no-cancellation identity was found, no genuinely higher-rank class was newly excluded, and no scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -307,30 +319,22 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T9 — p-adic Walsh-product same-point independence audit, theory only.**
+**CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit, theory only.**
 
-Work with the exact T8 reduced normalized products
-
-\[
-P_i(z)=S_i(z)P_i(z^k),
-\qquad
-S_i(z)\in\mathbb Z[z],
-\quad
-S_i(0)=1,
-\]
-
+Use the exact T9-reduced family
+[
+P_i(z)=S_i(z)P_i(z^k)
+]
 at
-
-\[
-W=2^B/3^k.
-\]
-
-Remove zero, rational, duplicate, and rational-coboundary components exactly before invoking any value theorem.
+[
+W=2^B/3^k,
+]
+with zero and rational components removed and rational Mahler-coboundary relations accounted for.
 
 Single theorem target:
 
-> Prove or recover a peer-reviewed completion-correct p-adic theorem that transfers a checkable functional multiplicative/algebraic-independence hypothesis to linear independence of \(1,P_1(W),\ldots,P_t(W)\) over algebraic numbers at the same rational S-unit point; or prove a Collatz-specific no-cancellation theorem for the exact Fourier weights.
+> Prove or recover a peer-reviewed characteristic-zero **p-adic** lifting theorem that transfers functional algebraic, or at minimum functional linear, independence of several stationary first-order (k)-Mahler functions to sufficient independence of their values at the same regular algebraic point. Verify the theorem independently for the rational non-torsion unit in (W). If no such theorem is available, derive a Collatz-specific theorem excluding the exact weighted Fourier sum from (mathbb Q).
 
-Do not infer value independence from separate transcendence or functional independence. Do not substitute an archimedean lifting theorem for a p-adic theorem.
+Because T10 is the tenth numbered CDM4 theory session, it must also carry out the mandatory progress-and-correction audit in `AGENTS.md`.
 
-No finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, P3 scaling, GPU, cloud, distributed, or volunteer work are authorized.
+Do not infer value independence from functional independence, separate transcendence, multiplicative independence, or archimedean lifting. Do not restart substitution enumeration, finite residue/carry optimization, candidate trajectories, new starts, generator/distribution design, P3 scaling, GPU, cloud, distributed, or volunteer work.
