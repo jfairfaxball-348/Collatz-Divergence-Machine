@@ -83,8 +83,8 @@ The remaining gap is arithmetic specialization. The adjacent Kubota/Nishioka sam
 
 No Collatz-specific identity was found that excludes rational cancellation in the exact weighted Fourier sum. No genuinely multi-character higher-rank recursive class was newly ruled out, no new bounded-\(R_m\)-implies-periodicity theorem was obtained, and no explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
 
-The next authorized action is theory-only **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit**. It must prove or recover a completion-correct nonarchimedean functional-to-value lifting theorem for the exact T9-reduced family at \(W\), or derive a Collatz-specific additive substitute. Because T10 is the tenth numbered CDM4 theory session, it must also perform the mandatory progress-and-correction audit required by \`AGENTS.md\`.
+The next authorized action is theory-only **CDM4-T10 — p-adic diagonal Mahler lifting / same-point value theorem audit**. It must prove or recover a completion-correct nonarchimedean functional-to-value lifting theorem for the exact T9-reduced family at \(W\), or derive a Collatz-specific additive substitute. Because T10 is the tenth numbered CDM4 theory session, it must also perform the mandatory progress-and-correction audit required by `AGENTS.md`.
 
 No substitution enumeration, new starts, generator/distribution, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T9_REPORT.md\` before doing research.
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T9_REPORT.md` before doing research.
