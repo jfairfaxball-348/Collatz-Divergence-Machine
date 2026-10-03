@@ -3,77 +3,58 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T14 COMPLETE — D: NO QUALIFYING THEOREM FOUND; MULTIVARIATE TAIL REGULARITY SHARPENED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T16 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T14_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T16_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T10 infrastructure remains closed: Adamczewski–Bell–Smertnig 2023 supplies arbitrary-place relation lifting for regular one-variable Mahler systems.
-- T11 finite-abelian translation branch remains closed by the stronger transcendence obstruction.
-- T12 finite nonabelian translation branch remains closed as a positive-anchoring route.
-- T13 exact generic finite-kernel system:
-  \[
-  \mathbf F(z)=M(z)\mathbf F(z^k),
-  \qquad
-  M(z)=\sum_{r=0}^{k-1}z^rA_r,
-  \]
-  where the states are the distinct true reachable \(k\)-kernel sequences and each \(A_r\) is the exact deterministic digit-transition matrix.
-- T13 digit-zero classification: \(M(0)=A_0\). Since \(A_0\) has one \(1\) in each row, it is invertible exactly when the digit-zero map is a permutation. In that case \(M(W^{k^j})\) is a 2-adic unit matrix at every depth.
-- T13 canonical determinant classification: if \(D(z)=\det M(z)\not\equiv0\), only finitely many nonzero Mahler iterates can be singular. If \(D\equiv0\), the canonical state series are rational-function linearly dependent, so the presentation is Mahler-linearly nonminimal.
-- T13 rational-linear minimalization: with
-  \[
-  d=\dim_{\mathbb Q(z)}\operatorname{span}\{F_i\},
-  \]
-  one can choose an exact basis \(\mathbf G\) from the original state functions with \(G_1=F_0\). It satisfies
-  \[
-  \mathbf G(z)=A(z)\mathbf G(z^k),
-  \qquad
-  A(z)\in\operatorname{GL}_d(\mathbb Q(z)).
-  \]
-  Thus the exact Collatz coordinate survives every reduction.
-- T13 tail regularity: every invertible rational one-variable Mahler system is regular on a sufficiently deep nonzero tail
-  \[
-  \alpha=W^{k^J}
-  \]
-  because its nonzero zeros/poles form a finite set and the Mahler orbit points are distinct. Early singular canonical matrices need not be inverted; the exact anchor relation is transported forward through their product.
-- T13 positive-anchor obstruction: a genuinely aperiodic positive anchor forces
-  \[
-  B/k<\log_2 3,\qquad 0<W<1.
-  \]
-  The transported 2-adic anchor relation at the regular tail lifts by Adamczewski–Bell–Smertnig Theorem 4.3 to a functional identity with the exact specialization. Real evaluation reconstructs the original positive series \(F_0^{(\infty)}(W)>0\), contradicting a positive anchor.
-- Therefore **no genuinely nonperiodic balanced one-variable finite-\(k\)-kernel Collatz family has an ordinary positive-integer anchor**, including canonical systems with singular \(A_0\), finitely many early singular Mahler iterates, or \(\det M\equiv0\).
-- Project consequence for the complete covered balanced finite-kernel class:
-  \[
-  R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
-  \]
-- Stronger rationality remains open: T13 does **not** prove \(H\notin\mathbb Q\) universally. In any subcritical family, a surviving rational value lies in \(\mathbb Q\cap\mathbb Z_2\) and has negative ordinary real sign; a negative integer is not excluded.
-- Restricted Periodicity-Conjecture boundary: balanced finite abelian translations are closed by T11, finite nonabelian translations by T12, and the full balanced one-variable finite-kernel class is closed as a positive-anchoring route by T13. T14 does not close a new genuinely multivariate/unbalanced positive-anchor class.
-- T14 reconstructs the exact T5 multivariate system
+- T10–T13 remain closed infrastructure: Adamczewski–Bell–Smertnig 2023 closes the arbitrary-place one-variable lifting gap, finite abelian/nonabelian translation subclasses are closed, and the complete balanced one-variable finite-kernel class is closed as a positive-anchor route.
+- T14 exact multivariate system remains
   \[
   \mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
   \qquad
-  H=-\frac13\sum_tF_t(q),
+  H=-\frac13S(q),
   \qquad
   q_s=\frac{2^{v(s)}}3.
   \]
-  After exact reachable/output quotienting, finite-state minimality is still distinct from rational-function linear minimality.
-- If the incidence matrix is nonsingular, the monomial map is dominant and exact rational-linear minimalization over \(\mathbb Q(x)\) can retain the prescribed scalar \(S=\sum_tF_t\) as a basis coordinate, yielding an invertible rational system. If the incidence matrix is singular, naive full-field rational minimalization is not automatically legitimate because denominators can vanish identically on the lower-dimensional monomial image.
-- T14 exact monomial-orbit theorem: after passage to the stable image torus, Bell–Ghioca–Tucker dynamical Mordell–Lang gives a finite-hit / arithmetic-progression-trapping dichotomy for every algebraic singular variety.
-- In the dominant Adamczewski–Faverjon class \(\mathcal M\), if the exact Collatz point is \(T\)-independent, T14 proves the orbit is Zariski dense and every proper singular variety is hit only finitely often. Hence every invertible rational minimal system in this subclass has a sufficiently deep regular tail.
-- T14 primitive real-tail theorem: a hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation \(\alpha<\log_2 3\), and therefore every coordinate of the deep real monomial orbit tends to zero uniformly. The exact positive scalar is reconstructible through forward transport.
-- The remaining load-bearing gap is completion-specific: Adamczewski–Faverjon 2026 supplies multivariate lifting with exact specialization for complex values, not the required 2-adic anchor relation. Brechler's 2026 multivariate p-adic preprint remains non-load-bearing. No peer-reviewed characteristic-zero nonarchimedean multivariate lifting theorem was verified for the exact T5 system.
-- Therefore T14 proves no new bounded-\(R_m\) periodicity class and does not exclude positive anchoring for a new genuinely multivariate/unbalanced class.
+  In the dominant case \(\det M\ne0\), rational-linear minimalization retains \(G_1=S\) and gives an invertible rational system.
+- For \(T=M^T\in\mathcal M\) and exact \(T\)-independence, T14 gives Zariski density and a sufficiently deep regular tail. In the primitive case, a hypothetical genuinely aperiodic positive anchor also forces ordinary real contraction of the monomial tail.
+- T15 supplies the singular-incidence stable-image torus, scalar-preserving meromorphic minimalization, and the exact arithmetic-progression trapping mechanism. It does not automatically turn the torus isogeny into a nonnegative affine Mahler map.
+- **T16 proves the missing completion bridge for the primitive dominant affine subclass.** The theorem is mixed-place: Adamczewski–Faverjon's published complex admissibility/vanishing theorem controls the same algebraic orbit, while the input relation and the local lifting argument are carried out at the chosen nonarchimedean place.
+- T16 works in strict Tate algebras on nested rigid polydiscs. Rigid Hensel theory replaces the complex implicit-function step; Gauss norms replace Cauchy estimates; the rigid identity theorem replaces analytic continuation; ultrametric translated-expansion estimates replace Adamczewski–Faverjon Lemmas 9.6–9.8; and the product formula supplies the local-place Liouville bounds.
+- The lifted relation is algebraic and preserves the original polynomial exactly:
+  \[
+  Q(\alpha,\mathbf X)=P(\mathbf X).
+  \]
+  It is therefore portable to the real completion without identifying raw real and 2-adic limits.
+- For every genuinely aperiodic **primitive dominant**
+  \[
+  \det M\ne0,\qquad T\in\mathcal M,\qquad q\text{ \(T\)-independent}
+  \]
+  system covered by T14/T16,
+  \[
+  H\notin\mathbb Q_{>0}.
+  \]
+  Hence no positive integer anchor exists in this class.
+- Project consequence for the newly closed class:
+  \[
+  R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+  \]
+  under the exact T2 finite-alphabet anchoring hypotheses.
+- Negative rational values remain open and are not Collatz counterexamples.
+- The T15 singular-incidence stable-image torus remains open. The missing step is now an intrinsic toric boundary version of the auxiliary-function support-growth argument, not generic p-adic meromorphy.
+- Brechler arXiv:2607.24877 remains a preprint as of 2026-10-03 and is non-load-bearing. The Adamczewski–Faverjon Annals addendum was checked and does not change the arbitrary-place boundary.
 - Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit, theory only**
-- T15 target: recover or prove a characteristic-zero arbitrary-place multivariate/monomial Mahler relation-lifting theorem with exact specialization for the T14 regular/admissible tail class; in parallel formalize scalar-preserving dominant reduction on the stable-image torus when the incidence matrix is singular.
+- Immediate next task: **CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum, theory only**
+- T17 target: extend T16 from the affine positive-monoid setting to the T15 stable-image torus by using a toric/formal/rigid boundary chart and an intrinsic semigroup/weight filtration, while preserving exact specialization.
 - Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T15 theorem/literature analysis only**. No new scientific starts are authorized.
+- Explicitly permitted next action: **CDM4-T17 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -129,6 +110,8 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 46. `experiments/CDM4_T12_REPORT.md`
 47. `experiments/CDM4_T13_REPORT.md`
 48. `experiments/CDM4_T14_REPORT.md`
+49. `experiments/CDM4_T15_REPORT.md`
+50. `experiments/CDM4_T16_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -826,29 +809,48 @@ Arithmetic-progression singular trapping now has a precise algebraic form: it pr
 
 No new multivariate/unbalanced positive-anchor class is closed, no new bounded-\(R_m\Rightarrow\) periodicity theorem is promoted, and no scientific compute is authorized.
 
-## Authoritative next task — CDM4-T16
+## CDM4-T16 closeout — 2026-10-03
 
-**CDM4-T16 — RIGID/NONARCHIMEDEAN MONOMIAL LIFTING AT A REGULAR TORUS TAIL.**
+CDM4-T16 is complete. Authoritative report: experiments/CDM4_T16_REPORT.md.
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+
+T16 reconstructs the final Adamczewski–Faverjon lifting proof step-by-step and isolates the completion-sensitive core. The global relation-ideal, Nullstellensatz, height, and vanishing machinery can remain at the ordinary embedding of the same algebraic Collatz tail. The local value-relation argument can be moved to a characteristic-zero nonarchimedean completion.
+
+The rigid replacement uses strict Tate algebras, Gauss norms, translated Tate expansions, a concentric-polydisc identity theorem, a Hensel/implicit algebraic branch, ultrametric analogues of Lemmas 9.6–9.8, and local-place Liouville bounds. The Section 9.4 normalization remains algebraic and preserves
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
+exactly.
+
+This yields a mixed-place exact lifting theorem covering the primitive dominant T14 class
+\[
+\det M\ne0,\qquad T=M^T\in\mathcal M,\qquad q\text{ \(T\)-independent}.
+\]
+The T15 completion-sign argument then excludes every
+\[
+H\in\mathbb Q_{>0},
+\]
+hence every positive integer anchor, in that class. By T2, bounded \(R_m\) implies eventual periodicity there.
+
+The singular-incidence stable-image torus remains open because a Laurent monomial isogeny approaching a toric boundary does not inherit the affine \(\mathbb N^m\) total-degree filtration used in the auxiliary-function upper bound.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T17
+
+**CDM4-T17 — INTRINSIC TORIC/NONARCHIMEDEAN LIFTING AT AN ATTRACTING BOUNDARY STRATUM.**
 
 Primary target:
 
-> Prove a characteristic-zero nonarchimedean homogeneous relation-lifting theorem for a nonsingular monomial map at an algebraic regular point, preserving the exact specialization
+> Starting from the T15 stable-image torus and finite torus isogeny, construct a toric/formal/rigid boundary chart adapted to the exact Collatz tail and replace the affine total-degree filtration by an intrinsic semigroup or weight filtration. Prove the toric analogue of the exponential support-displacement/Gauss estimate and retain exact specialization
 > \[
 > Q(\alpha,\mathbf X)=P(\mathbf X).
 > \]
 
-It is sufficient to cover the T14 dominant regular-tail class
-\[
-T\in\mathcal M,
-\qquad
-q\text{ is }T\text{-independent}.
-\]
+Do not force a nonnegative matrix representation merely to fit the affine theorem.
 
-A stronger intrinsic torus-isogeny theorem would also absorb the T15 singular-incidence stable-image reduction.
-
-The proof should replace the exact complex-analytic steps of Adamczewski–Faverjon Theorem 2.3 by rigid-analytic statements. Brechler Proposition 3.12 may be used as non-load-bearing proof guidance unless its publication status changes.
-
-If the lift is obtained, run the T15 completion-sign argument immediately. Do not repeat the generic literature audit.
+Keep the nonprimitive real-contraction problem separate: no completion-sign theorem may be promoted there without an ordinary real convergence theorem for the canonical positive scalar.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
