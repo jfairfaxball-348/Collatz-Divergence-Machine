@@ -1044,7 +1044,7 @@ P(X_0,\mathbf X)
 This is a homogeneous linear polynomial over \(\overline{\mathbb Q}\), and
 
 \[
-P(1,\mathbf G_2(q_J))=0
+P(1,\mathbf G(q_J))=0
 \]
 
 in the 2-adic completion.
