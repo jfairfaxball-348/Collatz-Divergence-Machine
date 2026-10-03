@@ -952,19 +952,56 @@ T19 does not automatically exclude an abstract positive rational noninteger valu
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T20
+## CDM4-T20 closeout — 2026-10-03
 
-**CDM4-T20 — NONUNIFORM MORPHIC SCALAR-CONVERGENCE / COMPLETION-PORTABILITY AUDIT.**
+CDM4-T20 is complete. Authoritative report: experiments/CDM4_T20_REPORT.md.
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+
+T20 proves the exact variable-length endpoint theorem
+\[
+L_J(n)=\mathbf1^TM^Jc(n),
+\qquad
+\sigma^J(u_{<n})=u_{<L_J(n)},
+\qquad
+A_{L_J(n)}=v^TM^Jc(n),
+\]
+and the exact scalar identity
+\[
+S(q_J)=\sum_{n\ge0}\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+\]
+
+For primitive growing variable-length substitutions the valuation mean is algebraic. Under a hypothetical positive integer anchor, T3 bounds it by \(\log_2 3\), while Gelfond-Schneider excludes equality. This gives a strict global prefix gap and ordinary-real convergence of every canonical tail series.
+
+The uniform T17 grading is replaced by the positive left Perron weight
+\[
+h^TM=\rho h^T,\qquad
+w_h(\pi(a))=h^Ta,
+\]
+which descends through the stable kernel and the T18 complete orbit-relation lattice and scales exactly by \(\rho^n\). The T17/T18 toric lifting proof therefore extends to primitive variable-length systems, including singular incidence, with exact specialization preserved.
+
+Hence every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding has no positive integer anchor. Under T2,
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
+\]
+
+The remaining variable-length branch is reducible/nonprimitive: ordinary-prefix limsup arithmetic and a universal positive expanding grading are not yet closed.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T21
+
+**CDM4-T21 — REDUCIBLE MORPHIC ORDINARY-PREFIX LIMSUP / POSITIVE-GRADING AUDIT.**
 
 Primary target:
 
-> Replace the two uniform ingredients used by T19—the \(k\)-automatic global limsup theorem and the exact identity
+> For an expanding reducible nonerasing morphism, classify
 > \[
-> S(\tau^Jq)=\sum_n2^{A_{nk^J}}/3^{nk^J}
+> \beta=\limsup_{n\to\infty}\frac{A_n}{n}
 > \]
->—by an exact variable-length morphic analogue. Determine whether a hypothetical ordinary positive integer anchor forces enough real summability of the canonical scalar for a completion-sign contradiction, or isolate the precise nonuniform growth/return obstruction.
+> from the actual return-prefix decomposition while retaining unequal growth scales, equal-radius SCC chains, leading polynomial corrections, and imprimitive modulation. Prove that \(\beta\) is algebraic or belongs to a finite algebraic set if possible; otherwise isolate the exact mechanism preventing this. Separately, for every strict-gap class, determine whether the reduced stable orbit has a strictly positive expanding weight sufficient for T17/T18 exact lifting.
 
-Treat T18 orbit-closure reduction and T19 uniform scalar completion as closed. Do not reimpose coordinatewise contraction when pointwise canonical scalar convergence is sufficient.
+Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as closed.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
