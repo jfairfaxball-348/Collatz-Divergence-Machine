@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T14 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND; MULTIVARIATE TAIL REGULARITY SHARPENED; NO NEW SCIENTIFIC COMPUTE.**
+**Status: CDM4-T17 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T14_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T17_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -534,6 +534,60 @@ The T15 singular-incidence stable-image torus remains open. The affine auxiliary
 
 Negative rational values are not excluded; positive rational noninteger values require independently verified real subcriticality for exclusion. No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+
+**CDM4-T17 closeout.** T17 proves the intrinsic toric support-growth theorem needed at the T15 stable-image boundary and closes a new singular-incidence positive-anchor subclass.
+
+Let
+\[
+L=\ker_{\mathbb Z}(M^{J_0}),\qquad
+N=\mathbb Z^m/L,\qquad
+\Gamma_0=\pi(\mathbb N^m).
+\]
+Because \(\mathbf1^TM=k\mathbf1^T\) and \(L\subseteq\ker\mathbf1^T\), the functional
+\[
+w(\pi(a))=\mathbf1^Ta
+\]
+is well defined on \(N\), positive on \(\Gamma_0\setminus\{0\}\), and satisfies the exact expansion identity
+\[
+w(\overline M^n\gamma)=k^nw(\gamma).
+\]
+
+Thus
+\[
+U_0=\operatorname{Spec}K[\Gamma_0]
+\]
+is the canonical affine toric boundary chart. Its closed torus orbit \(o\) is the exact 2-adic attracting boundary point for the stable Collatz tail. The \(w\)-filtration is finite-codimensional, and the weighted toric Tate norm gives the high-support estimate
+\[
+\|f\circ\phi^n\|_r
+\le
+\|f\|_{r_0}
+\left(\frac{r^{k^n}}{r_0}\right)^p
+\]
+for support of weight at least \(p\).
+
+At a deep torus point, ordinary multiplicative local coordinates reduce translation to convergent generalized binomial expansions, so negative lattice exponents do not obstruct the rigid local argument.
+
+The global vanishing step is not obtained by pretending the induced lattice matrix is a published affine nonnegative Mahler matrix. Instead T17 proves a relative toric zero theorem. Under relative independence modulo \(L\) and absence of root-of-unity eigenvalues of \(\overline M\), Corvaja–Zannier's \(S\)-unit hypersurface theorem plus the inherited T15 dynamical Mordell–Lang finite/AP dichotomy prevents an infinite zero subsequence of a nonzero toric analytic function.
+
+With that replacement, the T16 relation ideals, Hilbert-function argument, Nullstellensatz relation matrices, cocycle propagation, global degree/height estimates, local Liouville bounds, exact specialization algebra and completion portability survive. T17 obtains a semigroup-admissible toric mixed-place lifting theorem preserving
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X).
+\]
+
+For a genuinely aperiodic primitive stable-image system with a complete regular tail, relative independence modulo \(L\), and no root-of-unity eigenvalue, the exact positive-integer anchor relation therefore lifts and the real completion-sign contradiction excludes
+\[
+H\in\mathbb Z_{>0}.
+\]
+T2 then gives
+\[
+R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}
+\]
+for this newly closed recursive class.
+
+The full singular-incidence class is not closed. Root-of-unity factors, relative-dependence and general invariant bad-locus/orbit-closure reduction remain. Nonprimitive real contraction remains independent. Positive rational noninteger values require independently verified real subcriticality; negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit or counterexample was found. No scientific compute is authorized.
+
 ## CDM5 — SYMBOLIC DIVERGENCE SEARCH
 
 Investigate structured families beyond direct brute-force reach with the objective of finding indefinitely reproducible growth mechanisms.
@@ -556,25 +610,26 @@ Triggered only when a candidate has a plausible exact mechanism capable of provi
 
 ## Immediate next task
 
-**CDM4-T17 — intrinsic toric/nonarchimedean lifting at an attracting boundary stratum, theory only.**
+**CDM4-T18 — stable-orbit-closure / cyclotomic-factor reduction and regular-tail completion, theory only.**
 
-Treat T16's primitive dominant affine positive-anchor obstruction as closed infrastructure.
+Treat T17's canonical toric boundary semigroup, exact weight expansion, weighted rigid estimates, relative toric zero theorem, exact specialization, and primitive completion-sign obstruction as closed infrastructure.
 
 Primary obligation:
 
-1. start from the T15 stable-image torus \(X\) and finite torus isogeny \(\tau_X\);
-2. choose a toric compactification or rigid/formal boundary chart adapted to the exact Collatz tail;
-3. replace the affine \(\mathbb N^m\) total-degree filtration by an intrinsic finitely generated semigroup or weight filtration of characters regular on that chart;
-4. prove the toric analogue of T16's exponential support-displacement/Gauss estimate;
-5. preserve exact specialization
+1. start from a T15 stable-image system for which T17 relative independence (RI), the no-root-of-unity condition (RE), or complete regular-tail avoidance fails;
+2. determine the exact Zariski closure of an appropriate arithmetic-progression tail;
+3. classify the cyclotomic/character-coset factor and the minimal invariant torus or torus coset containing that tail;
+4. descend the scalar-preserving Mahler system to that minimal orbit closure without losing \(G_1=S\);
+5. determine whether persistent denominator bad loci force a further exact invariant reduction or become finite after descent;
+6. rebuild the canonical positive boundary semigroup on the reduced torus and test the T17 hypotheses there;
+7. preserve exact specialization
    \[
    Q(\alpha,\mathbf X)=P(\mathbf X);
    \]
-6. determine whether the T15 singular-incidence stable-image class is thereby closed;
-7. keep the nonprimitive real-contraction problem separate.
+8. keep the nonprimitive ordinary real-contraction problem separate.
 
-Do not force a nonnegative exponent matrix merely to fit the affine theorem.
+Do not reopen T17's support-growth proof, force an arbitrary Laurent basis into a nonnegative matrix, or infer a character relation from a general invariant subvariety without proof.
 
-Do not repeat the generic literature audit, balanced finite-kernel regularity, group-translation analysis, substitution enumeration, finite residue/carry/exponent-code optimization, or scientific trajectory search.
+Do not repeat substitution enumeration, finite residue/carry/exponent-code optimization, candidate trajectories, new scientific starts, generator/distribution work, CPU/GPU scaling, cloud, distributed, or volunteer work.
 
 No new scientific compute is authorized.
