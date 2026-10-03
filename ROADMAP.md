@@ -285,15 +285,15 @@ at the same rational non-torsion S-unit point \(W=2^B/3^k\), under a checkable f
 
 No substitution enumeration, finite residue/carry optimization, candidate trajectories, new scientific starts, new generator/distribution, or GPU/cloud/distributed work are authorized.
 
-**CDM4-T9 closeout.** T9 completes the theorem-first preprocessing of the elementary-2-group Walsh-product family as far as current verified functional theory permits. On the exact quotient (G=E/K_C), the only eventually periodic projected characters are the trivial character and, for odd (k), at most one alternating character with (chi(arepsilon_r)=(-1)^r). Distinct quotient characters have distinct (S_chi).
+**CDM4-T9 closeout.** T9 completes the theorem-first preprocessing of the elementary-2-group Walsh-product family as far as current verified functional theory permits. On the exact quotient \(G=E/K_C\), the only eventually periodic projected characters are the trivial character and, for odd \(k\), at most one alternating character with \(\chi(\varepsilon_r)=(-1)^r\). Distinct quotient characters have distinct \(S_\chi\).
 
 A peer-reviewed restatement of Kubota gives an exact functional theorem: for
-[
+\[
 P_i(z)=S_i(z)P_i(z^k),
-]
-the products are algebraically independent over the rational-function field if and only if the cocycles (S_i) are multiplicatively independent modulo rational Mahler coboundaries. Hence the functional algebraic-independence criterion is now exact; a divisor equation on (mathbb P^1) gives a symbolic test for a proposed coboundary.
+\]
+the products are algebraically independent over the rational-function field if and only if the cocycles \(S_i\) are multiplicatively independent modulo rational Mahler coboundaries. Hence the functional algebraic-independence criterion is now exact; a divisor equation on \(\mathbb P^1\) gives a symbolic test for a proposed coboundary.
 
-The corresponding same-point Kubota/Nishioka value theorem recovered in the same source is archimedean. No checked p-adic analogue was recovered that handles several stationary first-order functions at the same (W=2^B/3^k). Bugeaud–Yao remains individual; Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 remain non-load-bearing for simultaneous use; Flicker's p-adic theorem does not have its transformation-limit/dominance hypotheses verified for the unit-valued stationary Walsh family.
+The corresponding same-point Kubota/Nishioka value theorem recovered in the same source is archimedean. No checked p-adic analogue was recovered that handles several stationary first-order functions at the same \(W=2^B/3^k\). Bugeaud–Yao remains individual; Xu–Wang 2004, Wang 2006, and Wang–Xu 2006 remain non-load-bearing for simultaneous use; Flicker's p-adic theorem does not have its transformation-limit/dominance hypotheses verified for the unit-valued stationary Walsh family.
 
 No Collatz-specific weighted no-cancellation identity was found, no genuinely higher-rank class was newly excluded, and no scientific compute is authorized.
 
