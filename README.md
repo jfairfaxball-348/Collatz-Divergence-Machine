@@ -37,78 +37,57 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T14 is complete — D: NO QUALIFYING THEOREM FOUND. Multivariate tail regularity is substantially sharpened, but no new scientific compute is authorized.**
+**CDM4-T15 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-T10's arbitrary-place one-variable Mahler relation-lifting theorem remains closed infrastructure. T11 closes balanced finite-abelian translations, T12 closes balanced finite-nonabelian translations as positive-anchor routes, and T13 closes the complete balanced one-variable finite-\(k\)-kernel branch as a positive-anchor route.
+The balanced one-variable finite-kernel branch remains closed as a positive-anchor route by T13. T14 then established the dominant multivariate regular-tail infrastructure. T15 audited the missing completion bridge and the singular-incidence stable-image reduction.
 
-T14 returns to the exact unbalanced T5 system. For a \(k\)-uniform substitution with prefix Parikh vector \(c(n)\), incidence matrix \(M\), and prefix maps \(p_r\),
+The literature boundary is now exact:
 
+- Adamczewski–Faverjon 2026 gives multivariate Mahler relation lifting with exact specialization in the **complex** setting.
+- Adamczewski–Bell–Smertnig 2023 gives exact relation lifting at an **arbitrary place**, but only in **one variable**.
+- Flicker 1979 is genuinely multivariate and p-adic, but requires a separate strong limiting-function/growth package and is not a generic lifting theorem for the T14 regular-tail class.
+- Brechler arXiv:2607.24877v1 remains a **preprint** as of 2026-10-03. Its Proposition 3.12 proves p-adic multivariate meromorphy; its Theorem 1.2 strengthens the ordinary Adamczewski–Faverjon lifting theorem but is not stated as an arbitrary-place p-adic value-lifting theorem.
+
+A direct nonarchimedean transplant of Adamczewski–Faverjon Theorem 2.3 was not completed. The missing proof package is rigid-analytic: replace complex convergent germs/polydiscs, Cauchy estimates, translated expansions, and analytic continuation while preserving the exact specialization polynomial.
+
+T15 does complete the singular-incidence stable-image algebra.
+
+If \(J_0\) is past rank stabilization and
 \[
-c(kn+r)=Mc(n)+p_r(u_n).
+L=\ker_{\mathbb Z}(M^{J_0}),
 \]
-
-With
-
+then the eventual stable image
 \[
-F_t(x)=\sum_{n:u_n=t}x^{c(n)},
+X=\operatorname{im}\tau^{J_0}
+\]
+has character lattice
+\[
+X^*(X)\cong\mathbb Z^m/L.
+\]
+The induced monomial map is a surjective torus isogeny. The exact Collatz tail lies in \(X\).
+
+The canonical series restrict analytically to the 2-adic unit-domain of \(X\). Over \(K(X)\), exact rational-linear minimalization gives
+\[
+\mathbf G(x)=A_X(x)\mathbf G(\tau_X(x)),
 \qquad
-\tau(x)_s=\prod_t x_t^{M_{t,s}},
+A_X(x)\in\operatorname{GL}_{r_X}(K(X)),
 \]
-
-the exact finite system is
-
+with the prescribed scalar retained exactly as
 \[
-\mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)),
+G_1=S=\sum_tF_t.
 \]
+Forward scalar transport from the original ambient system remains exact.
 
-and at
+This stable-image meromorphic system is not automatically in the standard affine multivariate Mahler theorem class: an intrinsic lattice basis can introduce negative exponents, and the ambient origin is a toric boundary point rather than a point of the stable-image torus.
 
+T15 therefore does not exclude a new genuinely multivariate/unbalanced positive-anchor class, does not prove a new bounded-\(R_m\Rightarrow\) periodicity theorem, and does not find an explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample.
+
+The next authorized action is theory-only **CDM4-T16 — rigid/nonarchimedean monomial lifting at a regular torus tail**. The target is an exact homogeneous relation-lifting theorem at a nonarchimedean place with
 \[
-q_s=\frac{2^{v(s)}}3
+Q(\alpha,\mathbf X)=P(\mathbf X),
 \]
-
-the exact inverse value is
-
-\[
-H=-\frac13\sum_tF_t(q).
-\]
-
-T14 first removes unreachable and output-equivalent states exactly. It then separates finite-state minimality from rational-function linear minimality. When \(\det M\ne0\), the monomial map is dominant and an exact rational-linear basis may be chosen with the prescribed Collatz scalar
-
-\[
-S(x)=\sum_tF_t(x)
-\]
-
-as a basis coordinate; the induced minimal system is invertible over \(\mathbb Q(x)\). When \(\det M=0\), naive full-field rational minimalization is not automatically legitimate because rational denominators can vanish identically on the lower-dimensional monomial image.
-
-The exact monomial orbit is
-
-\[
-q_{j,s}=\frac{2^{B_j(s)}}{3^{k^j}},
-\qquad
-B_j(s)=v^TM^je_s.
-\]
-
-It is pairwise distinct and tends coordinatewise to \(0\) 2-adically. T14 derives the exact \(T\)-independence criterion and proves a dynamical Mordell–Lang dichotomy: after passage to the stable image torus, every algebraic singular variety is hit either finitely often or along an arithmetic-progression suborbit.
-
-For the dominant Adamczewski–Faverjon admissible subclass—\(T=M^T\) in their class \(\mathcal M\) and the exact Collatz point \(T\)-independent—the orbit is Zariski dense. Hence every proper singular variety is hit only finitely often and every invertible rational minimal system has a sufficiently deep regular tail.
-
-T14 also proves the needed real-tail statement for primitive substitutions. A hypothetical genuinely aperiodic positive anchor forces the Perron–Frobenius mean valuation
-
-\[
-\alpha<\log_2 3,
-\]
-
-which implies uniform coordinatewise convergence of the deep real monomial orbit to \(0\). Forward transport preserves the exact positive scalar, so the real sign side of the T13 mechanism survives.
-
-The remaining load-bearing gap is completion-specific. Adamczewski–Faverjon, *Annals of Mathematics* 204 (2026), provides a multivariate lifting theorem with exact specialization for **complex** values. It does not lift the required 2-adic anchor relation. The 2026 Brechler work explicitly targeting multivariate \(p\)-adic meromorphy/lifting remains a preprint and is non-load-bearing.
-
-Therefore T14 does not exclude a new genuinely multivariate/unbalanced positive-anchor class, does not prove a new bounded-\(R_m\Rightarrow\) periodicity theorem, and does not justify new computation.
-
-No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found or claimed.
-
-The next authorized action is theory-only **CDM4-T15 — nonarchimedean multivariate Mahler lifting / stable-image completion audit**. The primary obligation is to recover or prove a peer-reviewed-quality characteristic-zero arbitrary-place multivariate/monomial relation-lifting theorem with exact specialization for the T14 regular/admissible tail class. The secondary obligation is an exact scalar-preserving stable-image reduction for singular incidence matrices.
+at minimum for the T14 dominant \(T\in\mathcal M\), \(T\)-independent regular-tail subclass. A stronger intrinsic torus-isogeny theorem would also absorb the T15 stable-image reduction.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T14_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T15_REPORT.md before doing research.
