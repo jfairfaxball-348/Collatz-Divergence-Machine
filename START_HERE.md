@@ -981,7 +981,7 @@ Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as
 
 ## CDM4-T21 closeout — 2026-10-04
 
-CDM4-T21 is complete. Authoritative report: \`experiments/CDM4_T21_REPORT.md\`.
+CDM4-T21 is complete. Authoritative report: `experiments/CDM4_T21_REPORT.md`.
 
 **Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
