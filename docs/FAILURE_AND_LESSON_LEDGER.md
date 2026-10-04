@@ -2805,3 +2805,62 @@ Fixed weighted-projective embeddings, fixed monomial changes, and associated-gra
 **Lesson:** the remaining obstruction is not the absence of a multigrading. It is the absence of a multiscale analytic zero/lifting theorem.
 
 **Action:** CDM4-T23 should investigate a genuinely stratified/asynchronous zero theorem or prove that one is impossible. No scientific compute is authorized.
+
+---
+
+### F0103 — The slowest growth face can be eliminated without a full common-scale theorem
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T23.**
+
+Let \(I_{>1}\) be the monomial ideal of characters above the slowest positive T22 profile. If an algebraic-coefficient toric analytic function \(f\) vanishes on an infinite subsequence of the exact T18-reduced dense orbit, then
+\[
+f\bmod I_{>1}=0
+\]
+on the slow projected torus.
+
+The remainder in \(I_{>1}\) decays on a strictly faster exponential-polynomial scale and is therefore smaller than every fixed power of the slow projected norm. The slow projection itself is internally balanced, so Corvaja–Zannier Proposition 3 applies there. The T18 finite-hit property makes every infinite subsequence Zariski dense, forcing the slow restriction to vanish identically.
+
+If moreover
+\[
+I_{>1}=(\theta^\delta)
+\]
+is principal, repeated exact division shows that any analytic function with infinitely many orbit zeros lies in every power of \(I_{>1}\), hence is zero. Therefore the dense-orbit analytic zero theorem is proved for this genuine unequal-growth principal-high-ideal subclass.
+
+**Lesson:** the T22 common-scale failure does not make every Newton-face argument fail. Projecting to one balanced stratum plus a super-small-value theorem yields real multiscale information.
+
+**Action:** keep this zero theorem separate from exact relation lifting. Do not promote it to a positive-anchor exclusion without rebuilding the auxiliary-function step.
+
+---
+
+### F0104 — General stratified induction stops at moving analytic coefficients, not at scale matching
+
+**Status: OPEN BOUNDARY / PROVED NON-IMPLICATION in CDM4-T23.**
+
+The canonical toric Mahler system is exactly filtered in character support:
+\[
+\rho^*(I_{>i})\subseteq I_{>i}.
+\]
+However, associated graded pieces are modules over slower analytic strata and do not automatically split as independent balanced systems.
+
+After slow-face elimination in a nonprincipal high ideal,
+\[
+f=\sum_j m_j f_j,
+\]
+the coefficient values \(f_j(q_n^{\rm slow})\) are generally values of algebraic-coefficient analytic functions. They need not be algebraic numbers.
+
+Moving-target Subspace Theorems require algebraic moving forms/hypersurfaces with coefficient height \(o(h(x_n))\). Algebraic truncation to precision on the next growth scale requires degree
+\[
+D_n g_{\rm slow}(n)\gtrsim g_{\rm next}(n),
+\]
+so its height is already
+\[
+\Omega(g_{\rm next}(n)),
+\]
+not \(o(g_{\rm next}(n))\).
+
+Separately, asynchronous integers \(k_i\) can make \(k_i^{e_i}\rho_i^{k_i}\) comparable, but the exact functional system and canonical scalar transport require one synchronized orbit time.
+
+**Lesson:** the remaining general obstruction is a relative/moving-analytic-coefficient theorem or a new exact \(I\)-adic lifting architecture, not a clever choice of separate iterate counts.
+
+**Action:** CDM4-T24 should test the principal-fast-ideal \(I\)-adic auxiliary route first. No scientific compute is authorized.
+
