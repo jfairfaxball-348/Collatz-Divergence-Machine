@@ -881,30 +881,93 @@ Asynchronous scale matching is possible at the level of growth functions but not
 No Route B analytic counterexample was found. No new positive-anchor class is excluded, and no scientific compute is authorized.
 
 
+**CDM4-T24 closeout.** T24 proves a new principal-I-adic structural obstruction but does not restore exact unequal-growth relation lifting.
+
+If
+[
+I_{>1}=(m),qquad m=	heta^delta,
+]
+then the principal hypothesis forces exactly two positive profiles. Writing
+[
+Gamma_{m slow}
+=
+{0}cup{gamma:operatorname{prof}(gamma)=g_1},
+]
+every positive character has a unique decomposition
+[
+gamma=kdelta+eta,
+qquad
+kinmathbb N,
+quad
+etainGamma_{m slow}.
+]
+Hence
+[
+Gamma_Ycongmathbb NdeltaoplusGamma_{m slow}.
+]
+There are no intermediate/further faster positive profiles hidden inside powers of (m), and (m) lies on the unique fastest positive profile.
+
+Writing
+[
+A_Ydelta=adelta+eta,
+qquad
+etainGamma_{m slow},
+]
+T24 proves
+[
+ho^*m=u,m^a	heta^eta,
+qquad
+operatorname{ord}_I(ho^{n*}m)=a^n.
+]
+The (I)-adic order can nevertheless miss the polynomial part of the fast profile: in the equal-radius triangular case
+[
+g_{m fast}(n)asymp n^{e_1+1}a^n
+]
+while the exact pullback order is only (a^n).
+
+Direct evaluation of (m^P) on the exact orbit gives genuine fast local decay on (P,g_{m fast}(n)). The obstruction is the auxiliary construction. Because the slow base is positive-dimensional,
+[
+mathcal A_Y/I^P
+cong
+igoplus_{k=0}^{P-1}m^kmathcal A_{m slow}
+]
+is infinite dimensional. Exact (I^P)-vanishing requires complete slow analytic functional identities and is not the finite-codimensional Hilbert condition used by the T16/T17 point-order auxiliary argument.
+
+Finite slow truncation leaves a slow remainder and restores the T22 fast/slow mismatch. Explicit multiplication by (m^P) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and creates no independently enlargable Mahler multiplicity parameter. In addition, orbit-regular rational denominators can have positive (m)-order, so a future proof needs a divisor-regular/(I)-saturated relation module.
+
+Accordingly T24 does not obtain
+[
+Q(alpha,mathbf X)=P(mathbf X)
+]
+for a new unequal-growth class and excludes no new positive-integer anchor class.
+
+T24 is classified **C — new recursive-language obstruction found** in the project taxonomy, with the qualification that the new theorem is a structural/exact-lifting obstruction, not a positive-anchor exclusion.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit or counterexample was found. No scientific compute is authorized.
+
+
 ## Immediate next task
 
-**CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit, theory only.**
+**CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit, theory only.**
 
 Treat as closed:
 
 - all T20–T22 infrastructure;
-- T23 slowest-face elimination;
-- T23 exact character-support filtration of the canonical system;
-- T23 dense-orbit analytic zero theorem for principal higher-growth ideal \(I_{>1}\);
-- T23 failure of mere asynchronous scale matching to preserve exact scalar transport;
-- T23 moving-analytic-coefficient obstruction for the general nonprincipal induction.
+- T23 slowest-face elimination and principal-high-ideal zero theorem;
+- T24 principal two-profile/direct-product theorem;
+- T24 exact pullback order (operatorname{ord}_I(ho^{n*}m)=a^n);
+- T24 failure of bare finite-codimensional (I^P) auxiliary replacement;
+- T24 explicit-factor neutrality and divisor-denominator warning.
 
-Primary target: determine whether, in the principal-high-ideal subclass, auxiliary vanishing can be imposed in powers
-\[
-I_{>1}^P
-\]
-so that the local upper bound is measured on the fast ideal scale rather than the slow ambient scale, while retaining enough Hilbert dimension and preserving the exact relation-ideal/Nullstellensatz argument.
+Primary target: determine whether the canonical state functions admit a relative (m)-adic multiplicity theorem over the slow analytic coefficient algebra which produces exact high (m)-order by cancellation using algebraic/rational coefficient functions of controlled degree and height.
 
-A successful theorem must still output
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X).
-\]
+The same theorem must support relation matrices over a divisor-regular localization and preserve exactly
+[
+Q(alpha,mathbf X)=P(mathbf X).
+]
 
-If that succeeds, run T21 scalar convergence, pointwise real completion portability and the completion-sign contradiction immediately. If it fails, isolate the exact \(I\)-adic obstruction before returning to the full moving-analytic-coefficient problem.
+Audit Zorin's stable-ideal multiplicity framework first, but verify the exact coefficient field, divisor order, completion, height, regularity and specialization hypotheses before use.
+
+If a positive relative theorem is obtained, run the Liouville comparison and completion-sign chain immediately. If it fails, isolate a quantitative upper bound or an algebraicity obstruction for attainable (m)-adic multiplicity.
 
 No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
