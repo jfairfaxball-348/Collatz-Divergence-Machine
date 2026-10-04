@@ -37,96 +37,79 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T26 is complete — C: NEW RELATIVE-ALGEBRAIC PERIODICITY THEOREM AND SPECIAL-FIBRE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T27 is complete — C: CANONICAL DIVISOR DEGENERATION CLASSIFIED AND POSITIVE-SLOPE EXACT LIFTING PROVED. No new scientific compute is authorized.**
 
-T20–T25 remain closed infrastructure.
+T20–T26 remain closed infrastructure.
 
-In the principal-fast splitting
+T27 does not prove automatic canonical special-fibre injectivity. The standalone question
 \[
-\Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow},
+\lambda_m=0?
+\]
+remains open, and no valid canonical principal-fast example with \(\lambda_m>0\) has been found.
+
+What T27 does prove is an exact classification of the defect. If
+\[
+\mathscr L_1=\mathscr E/\mathscr R
+\]
+is the saturated degree-one lattice, and
+\[
+E_0=\mathscr E/m\mathscr E,
 \qquad
-m=\theta^\delta,
+R_0=(\mathscr R+m\mathscr E)/m\mathscr E,
 \]
-T26 eliminates two residual T25 branches.
-
-Exact prefix self-similarity gives
+then for the raw first-fast-cut matrix \(\overline{\mathcal A}\),
 \[
-\kappa(L_R(n))=a\kappa(n),
+\boxed{
+\operatorname{coker}\overline\Phi
+\cong
+E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+}
+\]
+
+Thus a special-fibre kernel is exactly a genuine source direction whose first-fast-truncated image becomes a boundary relation. It need not be a rational functional relation in the generic fibre.
+
+If the elementary divisors are
+\[
+m^{e_1},\ldots,m^{e_r},
 \qquad
-a\ge2.
+\mu_m=\max_i e_i,
 \]
-Since \(\kappa(n)\) is nondecreasing, bounded \(\kappa\) would force \(\kappa\equiv0\), contradicting the existence of the fast generator. Therefore
+then degree-\(D\) inverse transport through \(n\) semilinear iterates loses at most
 \[
-\boxed{\kappa(n)\to\infty}
+D\mu_m\frac{a^n-1}{a-1}
 \]
-automatically in every live principal-fast system.
+units of \(m\)-order.
 
-T26 also proves
+The T25 relative Hermite–Padé multiplicity
+\[
+P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
+\]
+dominates this finite slope tax. For fixed \(D_X\), the tax is fixed while \(P_{\rm rel}\) grows without bound in \(D_f\).
+
+Therefore every genuinely aperiodic principal-fast system admits exact mixed-place relation lifting for arbitrary finite \(\lambda_m\), with
 \[
 \boxed{
-d_{\rm rel}=0
-\Longrightarrow
-\text{eventual periodicity}.
-}
-\]
-The proof specializes the algebraic canonical state functions along a positive-grading toric curve. Bézivin's theorem forces the resulting D-finite series with finitely generated multiplicative coefficients to be rational, and Skolem–Mahler–Lech turns their labelled supports into an eventually periodic state word.
-
-Hence genuine aperiodicity automatically gives
-\[
-\boxed{d_{\rm rel}>0.}
-\]
-
-For the canonical saturated degree-one divisor lattice, semilinear transport is the linear twisted-lattice map
-\[
-\Phi:\rho^*\mathscr L_1\to\mathscr L_1.
-\]
-T26 proves
-\[
-\boxed{
-\lambda_m
-=
-\operatorname{length}_{\mathcal O}\operatorname{coker}\Phi
-}
-\]
-and
-\[
-\boxed{
-\lambda_m=0
-\iff
-\overline\Phi
-\text{ is bijective on the special fibre }m=0.
-}
-\]
-
-Thus \(\lambda_m>0\) is exactly canonical special-fibre degeneration. Automatic \(\lambda_m=0\) is still open; no valid canonical \(\lambda_m>0\) example was found.
-
-Combining T26 with T25, every genuinely aperiodic principal-fast system with
-\[
-\lambda_m=0
-\]
-admits exact mixed-place relation lifting with
-\[
 Q(\alpha,\mathbf X)=P(\mathbf X)
+}
 \]
-literally preserved. The inherited T21 completion-sign chain excludes positive-integer anchors throughout this divisor-unramified class.
+literally preserved on the original canonical lattice.
+
+The inherited T21 completion-sign chain now excludes positive-integer anchors throughout the complete genuinely aperiodic principal-fast class, including any canonical divisor-degenerate system.
 
 Under the inherited T2 finite-alphabet anchoring hypotheses,
 \[
-\lambda_m=0,\quad
+\boxed{
 R_m\text{ bounded}
 \Longrightarrow
-\text{eventual periodicity}.
+\text{eventual periodicity}
+}
 \]
+throughout the full principal-fast class.
 
-The sole residual genuinely aperiodic principal-fast branch is
-\[
-\boxed{\lambda_m>0.}
-\]
-
-The next live theorem is **CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification**.
+The next live theorem is **CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit**.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T26_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T27_REPORT.md before doing research.
