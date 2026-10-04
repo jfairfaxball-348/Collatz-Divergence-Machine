@@ -3,10 +3,10 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T23 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T24 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T23_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T24_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
@@ -25,6 +25,25 @@
   \]
   **is principal.** Repeated exact division forces any analytic function with infinitely many orbit zeros into every power of \(I_{>1}\), hence to zero.
 - This new zero theorem does **not** yet restore exact relation lifting. T22's independent auxiliary upper-bound / Liouville lower-bound mismatch remains. The principal-ideal geometry suggests an \(I\)-adic auxiliary construction, but T23 does not prove it.
+- **T24 proves that the principal hypothesis is itself rigid.** If \(I_{>1}=(\theta^\delta)\), then every positive character above the slow face has the same profile as \(\delta\). Thus the principal subclass has exactly two positive profiles, and \(\delta\) lies on the global fastest profile.
+- Writing \(m=\theta^\delta\), T24 proves the exact pullback normal form
+  \[
+  \rho^*m=u_\delta m^a\theta^\varepsilon,
+  \qquad \varepsilon\in\Gamma_{\le1}\cup\{0\},
+  \]
+  with intrinsic integer \(a\ge1\), and
+  \[
+  \operatorname{ord}_I(\rho^{n*}m)=a^n.
+  \]
+  The \(I\)-adic order need not equal the full fast profile: in the equal-radius Jordan-extension case the valuation scale can be \(n^{e_1+1}a^n\) while the exact \(I\)-order is only \(a^n\).
+- The combined support/\(I\)-adic Hilbert count is not the obstruction. For \(w_\Delta\le D\) and \(\operatorname{ord}_I\ge P\), multiplication by \(m^P\) gives exactly
+  \[
+  \dim V(D,P)=H_\Gamma(D-Pw_\Delta(\delta)),
+  \]
+  so a fixed positive \(P/D\) retains the full Hilbert degree.
+- **T24 kills the naive principal \(I\)-adic Liouville repair.** Since \(I^P=(m^P)\), every forced \(I^P\)-auxiliary factor is an actual common algebraic factor. Its fast 2-adic decay is accompanied by global height on the same fast scale. Exact division removes both contributions, and the functional relation ideal is automatically \(m\)-saturated. Therefore principal \(I\)-adic divisibility alone does not repair the T22 slow-local / fast-global mismatch.
+- T18 pointwise denominator regularity does not imply \(I\)-adic-unit localization: a denominator can be nonzero at every torus orbit point while still having boundary order along \(m=0\). A future filtered proof must control boundary pole order explicitly.
+- T24 does **not** prove exact unequal-growth relation lifting, exclude a new positive-integer anchor class, or produce a Collatz counterexample.
 - The canonical Mahler system is filtered exactly in character support:
   \[
   \rho^*(I_{>i})\subseteq I_{>i},
@@ -44,8 +63,8 @@
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit, theory only**
-- Explicitly permitted next action: **CDM4-T24 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T25 — divisor-saturated / relative-height exact-lifting audit, theory only**
+- Explicitly permitted next action: **CDM4-T25 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -108,6 +127,7 @@ The repository, not conversational memory, is the authoritative research state.
 55. `experiments/CDM4_T21_REPORT.md`
 56. `experiments/CDM4_T22_REPORT.md`
 57. `experiments/CDM4_T23_REPORT.md`
+58. `experiments/CDM4_T24_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -1016,3 +1036,33 @@ Q(\alpha,\mathbf X)=P(\mathbf X),
 or whether there is a genuine \(S\)-unit height/contraction obstruction.
 
 No scientific computation is authorized.
+**CDM4-T24 closeout.** T24 closes the proposed raw principal-ideal auxiliary repair as a proof-method route, while leaving exact lifting for the principal unequal-growth subclass open.
+
+If
+\[
+I_{>1}=(m),\qquad m=\theta^\delta,
+\]
+then principalness forces all positive characters above the slow face to have the single profile \(\operatorname{prof}(\delta)=g_{\rm fast}\). Writing
+\[
+a=\max\{j\ge1:A_Y\delta-j\delta\in\Gamma_Y\},
+\]
+one has
+\[
+\rho^*m=u_\delta m^a\theta^\varepsilon,
+\qquad \varepsilon\text{ slow or }0,
+\]
+and
+\[
+\operatorname{ord}_I(\rho^{n*}m)=a^n.
+\]
+The combined \(w_\Delta/I\)-adic auxiliary space retains full Hilbert degree:
+\[
+\dim V(D,P)=H_{\Gamma_Y}(D-Pw_\Delta(\delta)).
+\]
+Thus Hilbert dimension is not the obstruction.
+
+The decisive obstruction is arithmetic. Because \(I^P=(m^P)\), an auxiliary function in \(I^P\) has an actual common factor \(m^P\). Along the exact orbit this supplies fast 2-adic decay, but the same algebraic factor has global height on the fast scale. Dividing it out removes both contributions, and the functional relation ideal is already \(m\)-saturated. Hence raw principal \(I\)-adic divisibility cannot by itself repair T22's auxiliary/Liouville mismatch. Deep pointwise regularity also does not guarantee that localization is \(I\)-integral.
+
+No new exact lift, positive-anchor exclusion, explicit anchored aperiodic word, unbounded orbit, or counterexample was obtained. No scientific compute is authorized.
+
+
