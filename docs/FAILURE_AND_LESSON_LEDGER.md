@@ -2989,3 +2989,225 @@ T23 had already shown that rational-functional minimalization need not visibly r
 
 **Action:** CDM4-T25 must audit relation matrices over the local/divisor-regular ring at \((m)\), not merely over the full rational function field.
 
+
+
+---
+
+### F0108 — Canonical finite divisor jets can be algebraic over the slow base even though the full analytic quotient is infinite dimensional
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T25.**
+
+In the T24 splitting
+\[
+\Gamma_Y=\mathbb N\delta\oplus\Gamma_{\rm slow},
+\qquad
+m=\theta^\delta,
+\]
+write
+\[
+\pi_Y(e_s)=\kappa_s\delta+\eta_s.
+\]
+For prefix Parikh vectors,
+\[
+\kappa(n)=\sum_{i<n}\kappa_{u_i}
+\]
+is nondecreasing.
+
+If
+\[
+\kappa(n)\to\infty,
+\]
+then for every fixed \(j\) only finitely many prefix indices satisfy \(\kappa(n)=j\). Consequently every canonical coefficient
+\[
+[m^j]F_t
+\]
+is a finite slow polynomial:
+\[
+[m^j]F_t\in K[\Gamma_{\rm slow}].
+\]
+
+Hence
+\[
+F_t\in K[\Gamma_{\rm slow}][[m]]
+\]
+for the canonical state functions in this branch.
+
+This does not contradict F0106: the unrestricted quotient
+\[
+\mathcal A_Y/(m^P)
+\]
+remains infinite dimensional because arbitrary slow analytic coefficients are still allowed.
+
+If \(\kappa(n)\) is bounded, monotonicity makes it eventually constant and each canonical state function is a finite polynomial in \(m\) with slow analytic coefficients.
+
+**Lesson:** full analytic codimension is too coarse to decide the canonical relative auxiliary problem.
+
+**Action:** preserve the bounded/unbounded \(\kappa\) dichotomy in all future principal-fast work.
+
+---
+
+### F0109 — Saturation recovers a divisor-regular lattice, but determinant ramification controls inverse transport
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T25.**
+
+Put
+\[
+B=K[\Gamma_{\rm slow}],
+\qquad
+F=K(\Gamma_{\rm slow}),
+\qquad
+\mathcal O=B[m]_{(m)}
+\cong F[m]_{(m)}.
+\]
+
+Then \(\mathcal O\) is a DVR with uniformizer \(m\), residue field \(F\), and completion
+\[
+\widehat{\mathcal O}=F[[m]].
+\]
+
+For every fixed state-polynomial degree, the contraction of the original functional relation ideal to \(\mathcal O[\mathbf X]\) is \(m\)-saturated. The quotient is therefore torsion-free and free over \(\mathcal O\).
+
+On the saturated degree-one quotient define
+\[
+\lambda_m=\operatorname{ord}_m(\det B_1).
+\]
+
+Under a divisor-regular semilinear basis change
+\[
+B_1'=U B_1\rho^*(U^{-1}),
+\qquad
+U\in GL_r(\mathcal O),
+\]
+the determinant valuation is unchanged.
+
+Therefore
+\[
+\lambda_m=0
+\iff
+B_1\in GL_r(\mathcal O).
+\]
+
+If \(\lambda_m>0\), inverse relation transport necessarily has negative \(m\)-order in every basis of the same saturated lattice.
+
+**Lesson:** saturation solves relation-module torsion, not semilinear ramification.
+
+**Action:** CDM4-T26 must determine whether the canonical saturated module always has \(\lambda_m=0\).
+
+---
+
+### F0110 — Relative slow-rational cancellation gives a genuine principal-divisor multiplicity amplifier
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T25.**
+
+Assume
+\[
+\kappa(n)\to\infty.
+\]
+
+Let
+\[
+L=K(\Gamma_{\rm slow})(m)
+\]
+and let \(J\subset L[\mathbf X]\) be the original functional relation ideal. Define
+\[
+h(D_X)
+=
+\dim_L
+L[\mathbf X]_{\le D_X}/J_{\le D_X}.
+\]
+
+For \(L\)-independent representatives
+\[
+g_1,\ldots,g_{h(D_X)}
+\]
+and coefficients
+\[
+A_i(m)\in K(\Gamma_{\rm slow})[m],
+\qquad
+\deg_mA_i\le D_f,
+\]
+there are
+\[
+(D_f+1)h(D_X)
+\]
+unknowns over the slow rational field.
+
+Each successive exact \(m\)-coefficient identity is one linear condition over that field. After all common explicit powers of \(m\) are removed, the cancellation multiplicity satisfies
+\[
+\boxed{
+P_{\rm rel}\ge(h(D_X)-1)(D_f+1).
+}
+\]
+
+Canonical finite jets are slow polynomials, so the slow rational coefficients can be cleared with finite slow degree and algebraic height. The new slow cost remains on the slow orbit scale.
+
+If
+\[
+d_{\rm rel}
+=
+\operatorname{trdeg}_{L}L(G_1,\ldots,G_r)>0,
+\]
+then
+\[
+h(D_X)=\Theta(D_X^{d_{\rm rel}}).
+\]
+
+If also
+\[
+\lambda_m=0,
+\]
+the T16/T17 mixed-place lifting architecture rebuilds over the divisor-regular saturated lattice and preserves
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
+exactly.
+
+The inherited completion-sign argument excludes genuinely aperiodic positive-integer anchors in this subclass.
+
+**Lesson:** principal divisor multiplicity is not intrinsically neutral. It becomes a genuine amplifier when produced by relative cancellation rather than by inserting a removable factor.
+
+**Action:** treat
+\[
+\kappa(n)\to\infty,\qquad d_{\rm rel}>0,\qquad\lambda_m=0
+\]
+as closed.
+
+---
+
+### F0111 — Relative algebraicity imposes a finite-extension valuation ceiling
+
+**Status: PROVED METHOD OBSTRUCTION in CDM4-T25.**
+
+If
+\[
+d_{\rm rel}=0,
+\]
+then the state field is a finite algebraic extension of
+\[
+K(\Gamma_{\rm slow})(m).
+\]
+
+At the analytic place above \(m=0\), normalize fixed algebraic generators to be integral. For a nonzero bounded-degree auxiliary \(E\), take the field norm to the rational base.
+
+The numerator/denominator \(m\)-degree of the norm is
+\[
+O(D_f+D_X+1),
+\]
+and the norm valuation is the weighted sum of valuations above \(m=0\).
+
+Therefore
+\[
+\boxed{
+\operatorname{ord}_m(E)
+\le
+C(D_f+D_X+1).
+}
+\]
+
+Hence the relative-algebraic branch has no independently enlargable Hermite–Padé multiplicity-to-fast-complexity ratio.
+
+This does not prove that every possible arithmetic argument fails.
+
+**Lesson:** positive relative transcendence is the resource that makes the relative Hilbert function amplify multiplicity.
+
+**Action:** CDM4-T26 must prove \(d_{\rm rel}>0\) in the genuinely aperiodic canonical branch or turn the finite-extension ceiling into a stronger anchoring obstruction.
