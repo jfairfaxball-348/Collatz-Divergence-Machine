@@ -37,76 +37,96 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T25 is complete — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND. No new scientific compute is authorized.**
+**CDM4-T26 is complete — C: NEW RELATIVE-ALGEBRAIC PERIODICITY THEOREM AND SPECIAL-FIBRE OBSTRUCTION FOUND. No new scientific compute is authorized.**
 
-T20–T24 remain closed infrastructure.
+T20–T25 remain closed infrastructure.
 
-In the T24 principal-fast splitting
+In the principal-fast splitting
 \[
 \Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow},
 \qquad
 m=\theta^\delta,
 \]
-T25 introduces the canonical fast count
+T26 eliminates two residual T25 branches.
+
+Exact prefix self-similarity gives
 \[
-\kappa(n)=\sum_{i<n}\kappa_{u_i}.
+\kappa(L_R(n))=a\kappa(n),
+\qquad
+a\ge2.
+\]
+Since \(\kappa(n)\) is nondecreasing, bounded \(\kappa\) would force \(\kappa\equiv0\), contradicting the existence of the fast generator. Therefore
+\[
+\boxed{\kappa(n)\to\infty}
+\]
+automatically in every live principal-fast system.
+
+T26 also proves
+\[
+\boxed{
+d_{\rm rel}=0
+\Longrightarrow
+\text{eventual periodicity}.
+}
+\]
+The proof specializes the algebraic canonical state functions along a positive-grading toric curve. Bézivin's theorem forces the resulting D-finite series with finitely generated multiplicative coefficients to be rational, and Skolem–Mahler–Lech turns their labelled supports into an eventually periodic state word.
+
+Hence genuine aperiodicity automatically gives
+\[
+\boxed{d_{\rm rel}>0.}
 \]
 
-If
+For the canonical saturated degree-one divisor lattice, semilinear transport is the linear twisted-lattice map
 \[
-\kappa(n)\to\infty,
+\Phi:\rho^*\mathscr L_1\to\mathscr L_1.
 \]
-every fixed canonical \(m\)-jet coefficient is a finite slow polynomial:
+T26 proves
 \[
-[m^j]F_t\in K[\Gamma_{\rm slow}].
+\boxed{
+\lambda_m
+=
+\operatorname{length}_{\mathcal O}\operatorname{coker}\Phi
+}
 \]
-
-The correct divisor-local coefficient ring is
+and
 \[
-\mathcal O=K(\Gamma_{\rm slow})[m]_{(m)},
-\]
-a DVR. Finite-degree relation modules are \(m\)-saturated and free over \(\mathcal O\).
-
-T25 defines the basis-invariant divisor ramification
-\[
-\lambda_m=\operatorname{ord}_m(\det B_1).
-\]
-Two-sided divisor-regular relation transport is available exactly when
-\[
-\lambda_m=0.
+\boxed{
+\lambda_m=0
+\iff
+\overline\Phi
+\text{ is bijective on the special fibre }m=0.
+}
 \]
 
-Relative Hermite–Padé cancellation over the slow rational field produces genuine principal-divisor multiplicity:
-\[
-P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
-\]
-after all common explicit \(m\)-factors are removed.
+Thus \(\lambda_m>0\) is exactly canonical special-fibre degeneration. Automatic \(\lambda_m=0\) is still open; no valid canonical \(\lambda_m>0\) example was found.
 
-If
+Combining T26 with T25, every genuinely aperiodic principal-fast system with
 \[
-d_{\rm rel}>0
-\quad\text{and}\quad
-\lambda_m=0,
+\lambda_m=0
 \]
-the T16/T17 mixed-place lifting architecture rebuilds over the divisor-regular lattice and preserves
+admits exact mixed-place relation lifting with
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X)
 \]
-exactly. The inherited T21 real-convergence/sign argument excludes genuinely aperiodic positive-integer anchors in this newly closed subclass.
+literally preserved. The inherited T21 completion-sign chain excludes positive-integer anchors throughout this divisor-unramified class.
 
-If
+Under the inherited T2 finite-alphabet anchoring hypotheses,
 \[
-d_{\rm rel}=0,
+\lambda_m=0,\quad
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}.
 \]
-finite-extension valuation theory gives only a linear \(m\)-multiplicity ceiling.
 
-The residual principal-fast cases are: bounded \(\kappa\); relative algebraicity; and positive relative transcendence with \(\lambda_m>0\).
+The sole residual genuinely aperiodic principal-fast branch is
+\[
+\boxed{\lambda_m>0.}
+\]
 
-The next live theorem is **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit**.
+The next live theorem is **CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification**.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T25_REPORT.md\` before doing research.
-
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T26_REPORT.md before doing research.
