@@ -37,66 +37,86 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T24 is complete — C: NEW PRINCIPAL-I-ADIC STRUCTURAL OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T25 is complete — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND. No new scientific compute is authorized.**
 
-T20–T23 remain closed infrastructure: exact variable-length scalar transport, strict real prefix gap and scalar convergence under a hypothetical positive integer anchor, positive reduced grading, intrinsic multiscale profiles, exact fast-height / slow-contraction asymptotics, scalar-support fullness, slowest-face elimination, and the principal-high-ideal dense-orbit analytic zero theorem.
+T20–T24 remain closed infrastructure. In particular, T24 gives the two-profile principal splitting
+[
+Gamma_Ycongmathbb NdeltaoplusGamma_{m slow},
+qquad
+m=	heta^delta,
+]
+the exact pullback
+[
+ho^*m=c,m^a,
+]
+and the warning that the unrestricted analytic quotient modulo (m^P) is infinite dimensional over the algebraic coefficient field.
 
-T24 proves that the principal-high hypothesis is much more rigid than previously recorded. If
-\[
-I_{>1}=(m),\qquad m=\theta^\delta,
-\]
-then there are exactly two positive growth profiles and the reduced positive semigroup splits as
-\[
-\Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow}.
-\]
-The generator \(m\) lies on the unique fastest positive profile; intermediate or further faster profiles cannot be hidden in its powers.
+T25 refines that warning at the level of the **canonical** state series. If the prefix fast count
+[
+kappa(n)=sum_{i<n}kappa_{u_i}
+]
+tends to infinity, every fixed canonical (m)-jet is a finite slow polynomial:
+[
+F_t|_Yin K[Gamma_{m slow}][[m]].
+]
 
-Writing
-\[
-A_Y\delta=a\delta+\eta,
-\qquad
-\eta\in\Gamma_{\rm slow},
-\]
-one has
-\[
-\rho^*m=u\,m^a\theta^\eta,
-\qquad
-\operatorname{ord}_I(\rho^{n*}m)=a^n.
-\]
-The \(I\)-adic order can still differ from the full growth profile: equal-radius lower-stratum forcing can contribute an extra polynomial factor.
+The exact divisor-local ring is
+[
+mathcal O=K(Gamma_{m slow})[m]_{(m)},
+]
+a DVR. Finite-degree contractions of the original functional relation ideal are (m)-saturated, so their quotients are free over (mathcal O).
 
-A true factor
-\[
-m^P
-\]
-does evaluate on the exact orbit with fast \(2\)-adic decay
-\[
--\log|m(q_n)^P|_2=\Theta(Pg_{\rm fast}(n)).
-\]
-The T24 obstruction is the auxiliary construction. Exact divisorial order is relative:
-\[
-\mathcal A_Y/I^P
-\cong
-\bigoplus_{k=0}^{P-1}m^k\mathcal A_{\rm slow},
-\]
-so imposing
-\[
-E\in I^P
-\]
-means killing complete slow analytic coefficient functions. It is not the finite-codimensional point-order condition used in the T16/T17 Mahler auxiliary argument.
+T25 identifies a new divisor ramification invariant
+[
+lambda_m=operatorname{ord}_m(det B_1).
+]
+Inverse relation transport is divisor regular exactly when
+[
+lambda_m=0.
+]
 
-Finite slow truncation leaves a slow-scale remainder and restores the T22 fast/slow mismatch. Explicit multiplication by \(m^P\) consumes ordinary support degree linearly and creates no independent multiplicity amplification. In addition, a denominator may avoid every orbit point while having positive \(m\)-order, so ordinary regularity does not guarantee divisor-regular relation matrices.
+In the unbounded-fast-count branch, relative Hermite–Padé cancellation over
+[
+K(Gamma_{m slow})
+]
+produces genuine exact divisor multiplicity. If
+[
+h(D_X)=dim_{K(Gamma_{m slow})(m)}
+K(Gamma_{m slow})(m)[mathbf X]_{le D_X}/J_{le D_X},
+]
+then after every common explicit (m)-factor is removed,
+[
+P_{m rel}ge(h(D_X)-1)(D_f+1).
+]
 
-Accordingly T24 does **not** prove new exact relation lifting and does not obtain
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X)
-\]
-for any new unequal-growth class. No new positive-integer anchor class is excluded.
+Consequently the subclass
+[
+kappa(n)	oinfty,qquad
+d_{m rel}>0,qquad
+lambda_m=0
+]
+admits a divisor-regular rebuild of the T16/T17 mixed-place lifting proof. The resulting relation lies in the original functional relation ideal and preserves
+[
+Q(alpha,mathbf X)=P(mathbf X)
+]
+exactly. The inherited T21 real-convergence and positivity argument then excludes genuinely aperiodic positive-integer anchors in this new subclass.
 
-The next live theorem is **CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit**. It must decide whether exact high \(m\)-adic order can be produced by cancellation over the slow analytic base using algebraic/rational coefficient functions of controlled degree and height, while preserving divisor-regular localization and exact specialization.
+If instead
+[
+d_{m rel}=0,
+]
+finite-extension valuation theory gives
+[
+operatorname{ord}_m(E)le C(D_f+D_X+1),
+]
+so the relative-algebraic branch has no independently enlargable Hermite–Padé multiplicity parameter.
+
+The residual principal cases are: bounded fast count; relative algebraicity; and positive relative transcendence with (lambda_m>0).
+
+The next live theorem is **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit**.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T24_REPORT.md` before doing research.
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T25_REPORT.md` before doing research.
