@@ -3,79 +3,75 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T26 COMPLETE — C: NEW RELATIVE-ALGEBRAIC PERIODICITY THEOREM AND SPECIAL-FIBRE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T27 COMPLETE — C: CANONICAL DIVISOR DEGENERATION CLASSIFIED AND POSITIVE-SLOPE EXACT LIFTING PROVED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T26_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T27_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20–T25 remain closed infrastructure.
-- T26 proves that in the live principal-fast expanding class the canonical fast count cannot be bounded. Exact prefix self-similarity gives
+- T20–T26 remain closed infrastructure.
+- T27 does **not** prove automatic canonical divisor-unramifiedness. The standalone question
   \[
-  \kappa(L_R(n))=a\kappa(n),\qquad a\ge2,
+  \lambda_m=0?
   \]
-  so bounded monotone \(\kappa\) would force \(\kappa\equiv0\), contradicting the fast generator. Hence
+  remains open.
+- T27 classifies the special-fibre defect exactly. If \(\mathscr E\) is the canonical state-generator lattice, \(\mathscr R\) its saturated degree-one relation module,
   \[
-  \kappa(n)\to\infty
+  E_0=\mathscr E/m\mathscr E,\qquad
+  R_0=(\mathscr R+m\mathscr E)/m\mathscr E,
   \]
-  automatically.
-- T26 proves the relative-algebraic periodicity theorem
+  and \(\overline{\mathcal A}\) is the raw first-fast-cut transport, then
   \[
-  d_{\rm rel}=0\Longrightarrow\text{eventual periodicity}.
+  \boxed{
+  \operatorname{coker}\overline\Phi
+  \cong
+  E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+  }
   \]
-  The proof uses a positive-grading one-variable toric specialization, Bézivin's D-finite multiplicative-coefficient rationality theorem, and Skolem–Mahler–Lech on the resulting rational support sets.
-- Therefore genuine aperiodicity automatically forces
+  Thus a nonzero kernel is exactly new boundary-relation creation after the first-fast cut.
+- If the elementary divisors are \(m^{e_i}\), then
   \[
-  d_{\rm rel}>0.
+  \mu_m=\max_i e_i
   \]
-- On the canonical saturated degree-one lattice, semilinear transport is the linear map from the twisted lattice
+  controls inverse transport. In state-polynomial degree \(D\), \(n\) inverse semilinear transports lose at most
   \[
-  \Phi:\rho^*\mathscr L_1\to\mathscr L_1.
+  D\mu_m\frac{a^n-1}{a-1}
   \]
-  T26 proves
+  units of divisor order.
+- The T25 relative Hermite–Padé multiplicity dominates this finite slope tax. For fixed \(D_X\),
   \[
-  \lambda_m
-  =
-  \operatorname{length}_{\mathcal O}\operatorname{coker}\Phi,
+  P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
   \]
-  and
+  grows without bound in \(D_f\), whereas
   \[
-  \lambda_m=0
-  \iff
-  \overline\Phi
-  \text{ is an isomorphism on the special fibre }m=0.
+  D_X\mu_m/(a-1)
   \]
-  Thus \(\lambda_m>0\) is exactly canonical special-fibre degeneration.
-- Automatic \(\lambda_m=0\) is **still open/conditional**. No valid canonical principal-fast example with \(\lambda_m>0\) was found.
-- Combining T26 with T25, every genuinely aperiodic principal-fast system with
+  is fixed.
+- Consequently every genuinely aperiodic principal-fast system admits exact mixed-place relation lifting **for arbitrary finite \(\lambda_m\)**, with
   \[
-  \lambda_m=0
+  \boxed{Q(\alpha,\mathbf X)=P(\mathbf X)}
   \]
-  admits exact mixed-place relation lifting with
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X)
-  \]
-  literally preserved.
-- The inherited T21 completion-sign chain excludes positive-integer anchors throughout that divisor-unramified principal-fast class.
+  literally preserved on the original canonical lattice.
+- The inherited T21 completion-sign chain therefore excludes positive-integer anchors throughout the **complete genuinely aperiodic principal-fast class**, including any canonical \(\lambda_m>0\) systems.
 - Under the inherited T2 finite-alphabet anchoring hypotheses,
   \[
-  \lambda_m=0,\quad R_m\text{ bounded}
+  \boxed{
+  R_m\text{ bounded}
   \Longrightarrow
-  \text{eventual periodicity}.
+  \text{eventual periodicity}
+  }
   \]
-- The sole residual genuinely aperiodic principal-fast branch is
-  \[
-  \lambda_m>0.
-  \]
-- Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known in the relative-transcendental branch. Negative rational values remain unexcluded.
+  throughout the full principal-fast class, with no divisor-unramified hypothesis.
+- Canonical positive elementary divisors are not proved impossible and no valid canonical example was found. They are no longer an exact-lifting obstruction.
+- Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification, theory only**
+- Immediate next task: **CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit, theory only**
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -141,6 +137,7 @@ The repository, not conversational memory, is the authoritative research state.
 58. `experiments/CDM4_T24_REPORT.md`
 59. `experiments/CDM4_T25_REPORT.md`
 60. `experiments/CDM4_T26_REPORT.md`
+61. `experiments/CDM4_T27_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
