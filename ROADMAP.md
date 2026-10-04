@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T18 COMPLETE — CLASSIFICATION C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE.**
+**Status: CDM4-T22 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T18_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T22_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -806,21 +806,79 @@ The full exact lifting/sign contradiction is closed for the balanced-growth redu
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+**CDM4-T22 closeout.** T22 does not prove universal exact lifting for genuinely unequal-growth reducible systems, but it resolves the multiscale geometry sharply enough to identify the exact failure point of the inherited T16–T18 method.
+
+For a reduced T18 character \(\gamma=\pi_Y(\mu)\), define
+\[
+L_\gamma(n)=\mathbf1^TM^a(M^{Rn}-I)\mu,
+\qquad
+V_\gamma(n)=v^TM^a(M^{Rn}-I)\mu.
+\]
+These normalized exponent recurrences are independent of the chosen lift. After a finite phase refinement every positive reduced character has an intrinsic exponential-polynomial profile
+\[
+(\rho(\gamma),e(\gamma)).
+\]
+
+The positive semigroup has a finite \(A_Y\)-stable growth filtration. Positive profile is max-additive, while the T21 increment grading \(w_\Delta\) remains additive and positive, so the existing scalar grading still gives finite-dimensional Hilbert truncations and exponential support displacement.
+
+For any finite positive toric coordinate presentation along the reduced Collatz orbit,
+\[
+\widehat h(x_n)=\Theta(g_{\rm fast}(n)),
+\qquad
+-\log\max_i|x_{n,i}|_2=\Theta(g_{\rm slow}(n)).
+\]
+Corvaja–Zannier Theorem 3 requires
+\[
+\widehat h(x_n)=O(-\log\max_i|x_{n,i}|_2).
+\]
+Thus, in the reduced Collatz toric setting, the inherited zero theorem applies exactly when the fastest and slowest effective positive growth classes are comparable. Distinct radii, or equal radii with distinct polynomial exponents, make the required ratio diverge.
+
+The 2026 Adamczewski–Faverjon publication was rechecked and its admissibility definition still requires a common exponential contraction scale. Fixed multigradings, Rees filtrations, weighted-projective embeddings and fixed monomial coordinate changes alter bookkeeping/constants but not the orbit-level fast/slow ratio.
+
+T22 also proves
+\[
+\left\langle\operatorname{Supp}(S|_Y)\right\rangle_{\mathbb Z}=N_Y.
+\]
+Indeed
+\[
+c(n+1)-c(n)=e_{u_n},
+\]
+and every reachable letter occurs in the prolongable fixed point. Therefore no positive-dimensional torus quotient can delete a surviving growth direction while preserving the exact canonical scalar. T18's selected orbit is already Zariski dense, so no further fixed proper orbit closure removes the problem either.
+
+The same fast/slow mismatch appears in the T16/T17 auxiliary upper-bound versus Liouville lower-bound comparison. No fixed auxiliary degree or vector weight can compensate a ratio
+\[
+g_{\rm fast}(n)/g_{\rm slow}(n)\to\infty.
+\]
+
+Accordingly, T22 closes no new positive-anchor class beyond T21 and is classified D. The remaining theorem must be genuinely new: a stratified/asynchronous analytic zero and exact-lifting theorem, or a counterexample showing such a zero theorem is false.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## Immediate next task
 
-**CDM4-T22 — multiscale reducible toric relation-lifting / height-filtration audit, theory only.**
+**CDM4-T23 — stratified/asynchronous multiscale analytic zero theorem and exact-lifting audit, theory only.**
 
-Treat the following as closed:
+Treat as closed:
 
 - T20 exact variable-length endpoint/scalar transport;
-- T21 algebraicity of \(\limsup A_n/n\) for the expanding nonerasing pure-morphic class in scope;
-- T21 strict scalar convergence under a hypothetical positive integer anchor;
-- T21 universal post-T18 positive increment grading.
+- T21 algebraic ordinary-prefix limsup and positive-integer strict gap;
+- T21 universal post-T18 positive increment grading;
+- T22 intrinsic reduced growth profiles and finite growth filtration;
+- T22 exact fast-height / slow-contraction asymptotics;
+- T22 equivalence between the inherited Corvaja–Zannier condition and effective balanced growth;
+- T22 scalar-support fullness;
+- T22 failure of fixed multigrading/re-embedding/quotienting to repair a genuine active scale gap.
 
-The target is to determine whether several surviving exponential-polynomial growth classes can be handled by a multigraded/growth-filtered extension of T17/T18 preserving
+The target is a theorem that works when
+\[
+g_{\rm fast}(n)/g_{\rm slow}(n)\to\infty.
+\]
+It must either prove a stratified/asynchronous analytic zero theorem strong enough to reconstruct the exact T17/T18 lifting with
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X),
 \]
-or whether the unequal-scale \(S\)-unit height/contraction comparison is a genuine obstruction.
+or exhibit a genuine algebraic-coefficient analytic zero-set obstruction showing that such a theorem is false in this generality.
+
+Do not substitute finite experiments, numerical sampling, another orbit-closure reduction, or a weaker transcendence-degree statement for exact specialization.
 
 No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
