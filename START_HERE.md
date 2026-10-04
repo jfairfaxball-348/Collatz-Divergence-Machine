@@ -3,73 +3,49 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T22 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T23 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T22_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T23_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20 exact variable-length endpoint/scalar transport remains closed.
-- T21 ordinary-prefix arithmetic remains closed: for every expanding nonerasing pure-morphic fixed point in scope, the liminf and limsup of \(A_n/n\) are algebraic extremal values of a finite discounted-control problem, and the full accumulation set is the interval between them.
-- Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T21 gives
+- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below \(\log_2 3\), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
+- T22 reduced multiscale profiles, the finite growth filtration, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair the common-scale gap remain closed.
+- **T23 proves a new slowest-face theorem.** If an algebraic-coefficient toric analytic function vanishes on an infinite subsequence of the exact reduced unequal-growth orbit, its restriction modulo the higher-growth ideal
   \[
-  \limsup A_n/n<\log_2 3,
+  I_{>1}
   \]
-  hence absolute real convergence of the canonical scalar and canonical state subseries at every actual variable-length tail.
-- T21 positive support geometry remains closed after T18 reduction:
+  vanishes identically on the slow projected torus. The proof applies Corvaja–Zannier Proposition 3 only after projection to the internally balanced slow stratum; it does not reapply their full theorem to the multiscale point.
+- **T23 also proves a genuine unequal-growth dense-orbit zero theorem when**
   \[
-  d^T=\mathbf1^TM^a(M^R-I),
-  \qquad
-  w_\Delta(\pi_Y(x))=d^Tx,
+  I_{>1}=(\theta^\delta)
   \]
-  with a positive finite-codimensional grading and exponential support displacement.
-- **T22 classifies the exact reduced multiscale geometry.** For a reduced character \(\gamma=\pi_Y(\mu)\),
+  **is principal.** Repeated exact division forces any analytic function with infinitely many orbit zeros into every power of \(I_{>1}\), hence to zero.
+- This new zero theorem does **not** yet restore exact relation lifting. T22's independent auxiliary upper-bound / Liouville lower-bound mismatch remains. The principal-ideal geometry suggests an \(I\)-adic auxiliary construction, but T23 does not prove it.
+- The canonical Mahler system is filtered exactly in character support:
   \[
-  L_\gamma(n)=\mathbf1^TM^a(M^{Rn}-I)\mu,
-  \qquad
-  V_\gamma(n)=v^TM^a(M^{Rn}-I)\mu
+  \rho^*(I_{>i})\subseteq I_{>i},
   \]
-  are independent of the lift \(\mu\). After period refinement every positive reduced character has an intrinsic exponential-polynomial profile \((\rho,e)\).
-- Positive profiles form a finite \(A_Y\)-stable growth filtration. For positive characters, profile is max-additive, while the T21 degree \(w_\Delta\) remains additive and supplies the finite-dimensional Hilbert truncations. A new vector grading is therefore not needed for support counting.
-- **T22 identifies the exact global obstruction.** For any finite positive toric coordinate set,
+  and quotient-first re-minimalization is legitimate. The finite state-function matrix need not split into independent growth blocks.
+- Asynchronous times can make separate scales \(k_i^{e_i}\rho_i^{k_i}\) comparable, but the exact functional system and T20 scalar transport require one synchronized iterate. No exact asynchronous scalar reassembly was found.
+- Existing moving-target Subspace Theorems require algebraic moving targets of height \(o(h(x_n))\). After slow-face elimination, the next-face coefficients are generally analytic slow-variable values and need not be algebraic; truncation to next-scale precision incurs height \(\Omega(g_i)\), so the known moving-target interface does not close the gap.
+- No direct Route B analytic counterexample was found. The principal-high-ideal theorem rules one out in that subclass.
+- The published 2026 Adamczewski–Faverjon paper remains common-scale at the admissibility interface. Brechler arXiv:2607.24877 remains a preprint and is non-load-bearing.
+- No newly lifted unequal-growth class reaches exact specialization
   \[
-  \widehat h(x_n)=\Theta(g_{\rm fast}(n)),
-  \qquad
-  -\log\max_i|x_{n,i}|_2=\Theta(g_{\rm slow}(n)).
+  Q(\alpha,\mathbf X)=P(\mathbf X).
   \]
-  Corvaja–Zannier Theorem 3 requires
-  \[
-  \widehat h(x_n)=O(-\log\max_i|x_{n,i}|_2),
-  \]
-  so in this reduced Collatz setting it applies exactly when all active positive coordinate profiles are comparable. This is the T21 balanced-growth regime.
-- If active growth classes are genuinely unequal, the height/contraction ratio diverges exponentially or polynomially. Fixed multigradings, Rees filtrations, weighted-projective embeddings, fixed monomial coordinate changes and fixed auxiliary-degree choices do not change that orbit-level ratio.
-- The canonical scalar prevents quotienting away a slow active direction:
-  \[
-  \langle\operatorname{Supp}(S|_Y)\rangle_{\mathbb Z}=N_Y.
-  \]
-  This follows from
-  \[
-  c(n+1)-c(n)=e_{u_n}
-  \]
-  and occurrence of every reachable letter in the prolongable fixed point. Thus no positive-dimensional torus quotient can delete a surviving scale while preserving the exact scalar specialization.
-- T18 orbit-closure reduction is already minimal for this purpose: the selected orbit is Zariski dense and étale, so Bell–Ghioca–Tucker rules out a further fixed proper algebraic orbit closure.
-- The published 2026 Adamczewski–Faverjon theorem was rechecked. Its admissibility condition still requires a common exponential contraction scale; publication does not silently close genuine active multiscale systems.
-- T22 therefore does **not** prove exact relation lifting for genuinely active unequal-growth reducible systems and does not exclude a new positive-integer anchor class beyond T21.
-- The T21 balanced-growth reducible class remains closed, including exact specialization
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X),
-  \]
-  pointwise completion portability, the real sign contradiction, and the inherited T2 bounded-\(R_m\) consequence.
-- Positive rational noninteger values are excluded only where intrinsic real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
-- No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found.
+- No new positive-integer anchor class is excluded in T23; no new T2 bounded-\(R_m\) implication is promoted.
+- No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T23 — stratified/asynchronous multiscale analytic zero theorem and exact-lifting audit, theory only**
-- Explicitly permitted next action: **CDM4-T23 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit, theory only**
+- Explicitly permitted next action: **CDM4-T24 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -131,6 +107,7 @@ The repository, not conversational memory, is the authoritative research state.
 54. `experiments/CDM4_T20_REPORT.md`
 55. `experiments/CDM4_T21_REPORT.md`
 56. `experiments/CDM4_T22_REPORT.md`
+57. `experiments/CDM4_T23_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
