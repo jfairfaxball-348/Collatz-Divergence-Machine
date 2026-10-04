@@ -756,16 +756,19 @@ T20 is the mandatory twentieth-session progress/correction audit. No scientific 
 
 ## Immediate next task
 
-**CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit, theory only.**
+**CDM4-T22 — multiscale reducible toric relation-lifting / height-filtration audit, theory only.**
 
-Treat T20 exact endpoint transport, scalar-tail transport, algebraic-mean strictness, and primitive Perron-weight toric lifting as closed.
+Treat the following as closed:
 
-The target is to classify
-\[
-\beta=\limsup_{n\to\infty}\frac{A_n}{n}
-\]
-for expanding reducible pure morphic fixed points while retaining equal-radius block chains, polynomial corrections, imprimitive modulation, and unequal substituted lengths. Prove that \(\beta\) is algebraic or belongs to a finite algebraic set if possible; otherwise isolate the exact return-prefix mechanism preventing such a theorem.
+- T20 exact variable-length endpoint/scalar transport;
+- T21 algebraicity of (limsup A_n/n) for the expanding nonerasing pure-morphic class in scope;
+- T21 strict scalar convergence under a hypothetical positive integer anchor;
+- T21 universal post-T18 positive increment grading.
 
-For every newly strict-gap class, separately determine whether the reduced stable orbit admits a strictly positive expanding weight sufficient for T17/T18 exact lifting.
+The target is to determine whether several surviving exponential-polynomial growth classes can be handled by a multigraded/growth-filtered extension of T17/T18 preserving
+[
+Q(alpha,mathbf X)=P(mathbf X),
+]
+or whether the unequal-scale (S)-unit height/contraction comparison is a genuine obstruction.
 
-No substitution enumeration, new scientific starts, candidate trajectories, CPU/GPU/cloud/distributed work, or finite-code search is authorized.
+No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
