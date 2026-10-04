@@ -3,90 +3,57 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T20 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T21 COMPLETE — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T20_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T21_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T16-T18 remain exact mixed-place/orbit-closure lifting infrastructure. T19 remains the complete \(k\)-uniform scalar-completion theorem, including the nonprimitive branch.
-- **T20 proves exact variable-length prefix transport.** For
-  \[
-  \ell_J(s)=\mathbf1^TM^Je_s,\qquad
-  L_J(n)=\mathbf1^TM^Jc(n),
-  \]
-  one has
-  \[
-  \sigma^J(u_0\cdots u_{n-1})
-  =
-  u_0\cdots u_{L_J(n)-1},
+- T20 exact variable-length endpoint/scalar transport and primitive Perron-weight lifting remain closed infrastructure.
+- **T21 closes the reducible ordinary-prefix limsup obstruction for expanding nonerasing pure-morphic fixed points.** Using the exact Dumont–Thomas prefix decomposition and the fact that every most-significant nonempty prefix digit contains the prolongation letter (a_0), arbitrary prefixes reduce after Frobenius/Jordan normalization to a finite-state discounted ratio problem.
+- Equal-radius SCC chains and leading (J^e\rho^J) terms are retained. The common polynomial factor cancels projectively, while imprimitive modulation becomes a finite phase variable.
+- There is a finite explicitly described algebraic set (mathcal E) arising from deterministic stationary policies on the phase-augmented prefix automaton such that
+  [
+  \liminf_{n\to\infty}\frac{A_n}{n}=\min\mathcal E,
   \qquad
-  A_{L_J(n)}=v^TM^Jc(n).
-  \]
-- The canonical finite multivariate functional system survives variable length:
-  \[
-  \mathbf F(x)=\mathcal A(x)\mathbf F(\tau(x)).
-  \]
-  The valuation word is morphic/substitutive; fixed-base automaticity is **not** assumed.
-- At the exact Collatz point,
-  \[
-  q_{J,s}=\frac{2^{B_J(s)}}{3^{\ell_J(s)}},
-  \]
-  and the exact nonuniform scalar identity is
-  \[
-  S(q_J)
-  =
-  \sum_{n\ge0}
-  \frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
-  \]
-  Every canonical state function is the corresponding positive subseries.
-- Therefore any strict global prefix gap
-  \[
-  \limsup A_n/n<\log_2 3
-  \]
-  gives ordinary-real scalar convergence at every actual monomial tail, without requiring coordinatewise contraction.
-- For a primitive growing variable-length substitution, ordinary letter frequencies exist and the valuation mean
-  \[
-  \alpha=\frac{v^Tr}{\mathbf1^Tr}
-  \]
-  is algebraic. Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3 gives \(\alpha\le\log_2 3\). Since \(\log_2 3\) is transcendental, equality is impossible, so
-  \[
-  \alpha<\log_2 3.
-  \]
-- **T20 also extends the toric lifting architecture to primitive variable length.** If
-  \[
-  h^TM=\rho h^T,\qquad h>0,
-  \]
-  the Perron weight
-  \[
-  w_h(\pi(a))=h^Ta
-  \]
-  descends to the stable character lattice and scales exactly by
-  \[
-  w_h(\overline M^n\gamma)=\rho^n w_h(\gamma).
-  \]
-  After T18 orbit-closure reduction it descends through the complete relation lattice as well. This replaces the uniform grading \(w=\mathbf1^T\).
-- The T17/T18 weighted toric support, boundary-contraction, \(S\)-unit zero, regular-tail, rigid-local, and exact-specialization arguments survive with \(\rho^n\) in place of \(k^n\). This covers primitive variable-length systems even when \(M\) is singular.
-- Therefore every genuinely aperiodic primitive growing nonerasing substitution with finite positive valuation coding satisfies
-  \[
-  H\notin\mathbb Z_{>0}.
-  \]
-  Under T2's inherited finite-alphabet anchoring hypotheses,
-  \[
-  R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
-  \]
-- The remaining variable-length obstruction is **reducible/nonprimitive ordinary-prefix asymptotics plus positive grading**. Substituted-block ratios \(B_J(s)/\ell_J(s)\) have algebraic residue-class limits in the expanding finite-matrix setting, but this does not prove that the ordinary fixed-point prefix limsup \(\limsup A_n/n\) is algebraic or strict. Equal-dominant-radius block chains may produce leading \(J^e\rho^J\) terms.
-- Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
-- T20 is the mandatory twentieth-session progress/correction audit. Scope remains aligned, no scientific compute is justified, failed-route memory is preserved, and the strategy is repaired toward the reducible prefix-limsup theorem rather than more finite search.
-- Current computational-reach frontier: P2 exhausted 60,000,000 additional frozen sparse starts; no exceptional object or counterexample occurred. Same-distribution scaling remains unauthorized.
+  \limsup_{n\to\infty}\frac{A_n}{n}=\max\mathcal E.
+  ]
+  Hence both endpoints are algebraic.
+- The full accumulation set of (A_n/n) is the interval between those endpoints. An ordinary mean need not exist.
+- Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3 gives
+  [
+  \beta:=\limsup A_n/n\le\log_2 3.
+  ]
+  Since T21 proves (eta) algebraic and (log_2 3) is transcendental, equality is impossible:
+  [
+  \beta<\log_2 3.
+  ]
+- By the T20 exact scalar identity, this strict global prefix gap gives absolute ordinary-real convergence of the canonical scalar and every canonical state subseries at every actual tail for the full T21 expanding reducible class. Coordinatewise contraction remains unnecessary.
+- **T21 also closes the literal positive-grading obstruction after T18 orbit-closure reduction.** On a sufficiently deep period-refined tail define
+  [
+  d^T=\mathbf1^TM^a(M^R-I).
+  ]
+  It annihilates the complete character-relation lattice and is positive on every reachable generator. Thus
+  [
+  w_\Delta(\pi_Y(x))=d^Tx
+  ]
+  is a well-defined positive integral grading with uniform exponential support expansion
+  [
+  w_\Delta(A_Y^n\gamma)\ge C\kappa^n w_\Delta(\gamma)
+  ]
+  for some (kappa>1).
+- Scalar convergence and grading are **not** conflated with exact relation lifting. T21 closes the lifting/sign contradiction for the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. In genuinely unequal-growth reducible systems, the multiscale global (S)-unit height-versus-boundary-contraction step remains open.
+- Therefore every genuinely aperiodic balanced-growth reducible variable-length system in the T18-reduced class has no positive integer anchor; under T2, bounded (R_m) implies eventual periodicity there.
+- Positive rational noninteger values are excluded only when real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
+- No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found.
+- No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T21 — reducible morphic ordinary-prefix limsup / positive-grading audit, theory only**
-- Forbidden next action: P3/further same-distribution CPU scaling, GPU production or benchmark work, cloud/distributed/volunteer scaling, a new sampling distribution/generator, a new ranking metric or finite exponent-code optimization campaign, substitution enumeration, or longer candidate trajectories.
-- Explicitly permitted next action: **CDM4-T21 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T22 — multiscale reducible toric relation-lifting / height-filtration audit, theory only**
+- Explicitly permitted next action: **CDM4-T22 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -148,6 +115,7 @@ The dated closeouts below preserve historical decisions. Their then-next actions
 52. `experiments/CDM4_T18_REPORT.md`
 53. `experiments/CDM4_T19_REPORT.md`
 54. `experiments/CDM4_T20_REPORT.md`
+55. `experiments/CDM4_T21_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -1008,3 +976,50 @@ Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as
 - **New generator/distribution authorized: NO.**
 - **Finite-code ranker campaign authorized: NO.**
 - **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
+
+
+## CDM4-T21 closeout — 2026-10-04
+
+CDM4-T21 is complete. Authoritative report: `experiments/CDM4_T21_REPORT.md`.
+
+**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
+
+T21 proves that for every expanding nonerasing pure-morphic fixed point in scope,
+[
+\beta=\limsup_{n\to\infty}\frac{A_n}{n}
+]
+is algebraic. The exact Dumont–Thomas prefix representation shows that every positive prefix begins, at its highest substitution depth, with a nonempty prefix of (sigma(a_0)), hence with a block containing (a_0). That leading block already has the maximal reachable Frobenius/Jordan growth scale. Lower growth classes are negligible after normalization, while equal-radius polynomial corrections survive absolutely but cancel in the projective prefix ratio.
+
+After phase refinement, every subsequential prefix mean is a discounted ratio on a finite prefix automaton. The extremal ratios are attained by deterministic stationary policies, hence by eventually periodic paths, and therefore belong to a finite explicit algebraic set. The complete cluster set of (A_n/n) is the interval from the algebraic liminf to the algebraic limsup.
+
+Under a hypothetical positive integer anchor, the inherited T3 inequality gives (eta\le\log_2 3). Transcendence of (log_2 3) forces strict inequality, so T20 scalar transport gives absolute real convergence of all canonical tail series for the full expanding reducible T21 class.
+
+T21 separately proves a universal positive expanding grading after T18 orbit-closure reduction. On a deep period-refined tail,
+[
+d^T=\mathbf1^TM^a(M^R-I)
+]
+annihilates the complete character-relation lattice and is positive on every positive generator. The descended grading
+[
+w_\Delta(\pi_Y(x))=d^Tx
+]
+has finite-codimensional support and uniform exponential displacement.
+
+The exact mixed-place lifting/sign proof is closed in the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. Positive integer anchors are excluded there, and T2 gives bounded-(R_mRightarrow) eventual periodicity.
+
+The remaining variable-length theorem boundary is the genuinely unequal-growth reduced class. Scalar convergence and positive grading are proved, but the T17/T18 global (S)-unit height-versus-boundary-contraction step has not yet been extended to a multiscale filtration.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+## Authoritative next task — CDM4-T22
+
+**CDM4-T22 — MULTISCALE REDUCIBLE TORIC RELATION-LIFTING / HEIGHT-FILTRATION AUDIT.**
+
+Treat T20 exact endpoint/scalar transport and the T21 ordinary-prefix algebraicity and increment-grading theorems as closed.
+
+Determine whether a T18-reduced expanding reducible system with several surviving exponential-polynomial growth classes admits a multigraded or growth-filtered extension of the T17/T18 exact lifting theorem preserving
+[
+Q(\alpha,\mathbf X)=P(\mathbf X),
+]
+or whether there is a genuine (S)-unit height/contraction obstruction.
+
+No scientific computation is authorized.
