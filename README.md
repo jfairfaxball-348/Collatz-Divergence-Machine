@@ -124,4 +124,4 @@ The next authorized action is theory-only **CDM4-T22 — multiscale reducible to
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T21_REPORT.md\` before doing research.
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T21_REPORT.md` before doing research.
