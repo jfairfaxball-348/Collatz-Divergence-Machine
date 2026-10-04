@@ -42,64 +42,64 @@ The intended feedback loop is:
 T20–T22 remain closed infrastructure: exact variable-length scalar transport, algebraic ordinary-prefix limsup and strict positive-integer gap, positive reduced grading, intrinsic reduced multiscale profiles, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair genuine active scale separation.
 
 T23 remains the exact zero-theorem input. If the high-growth ideal above the slowest profile is principal,
-[
-I_{>1}=(m),qquad m=	heta^delta,
-]
+\[
+I_{>1}=(m),\qquad m=\theta^\delta,
+\]
 then every nonzero algebraic-coefficient toric analytic function has only finitely many zeros on the exact dense reduced orbit.
 
-T24 proves that the principal hypothesis is more rigid than previously recorded. Equality of monomial ideals forces every positive character above the slow face to have the same profile as (delta). Thus the principal subclass has exactly two positive growth profiles,
-[
-g_1<g_delta=g_{m fast}.
-]
+T24 proves that the principal hypothesis is more rigid than previously recorded. Equality of monomial ideals forces every positive character above the slow face to have the same profile as \(\delta\). Thus the principal subclass has exactly two positive growth profiles,
+\[
+g_1<g_\delta=g_{\rm fast}.
+\]
 
 The pullback of the principal generator has an exact semigroup normal form
-[
-ho^*m=u_delta m^a	heta^arepsilon,
-qquad
-arepsilon	ext{ slow or }0,
-]
+\[
+\rho^*m=u_\delta m^a\theta^\varepsilon,
+\qquad
+\varepsilon\text{ slow or }0,
+\]
 with intrinsic integer
-[
-a=max{jge1:A_Ydelta-jdeltainGamma_Y}.
-]
+\[
+a=\max\{j\ge1:A_Y\delta-j\delta\in\Gamma_Y\}.
+\]
 Consequently
-[
-operatorname{ord}_I(ho^{n*}m)=a^n.
-]
+\[
+\operatorname{ord}_I(\rho^{n*}m)=a^n.
+\]
 This divisibility order need not equal the full fast valuation profile: an equal-radius Jordan extension can contribute an additional polynomial factor.
 
-Imposing (I)-adic order does not destroy the auxiliary Hilbert space. For simultaneous bounds
-[
-w_Deltale D,
-qquad
-operatorname{ord}_Ige P,
-]
-multiplication by (m^P) gives the exact dimension identity
-[
-dim V(D,P)=H_{Gamma_Y}(D-Pw_Delta(delta)).
-]
-Hence a fixed positive (P/D) retains the full Hilbert degree.
+Imposing \(I\)-adic order does not destroy the auxiliary Hilbert space. For simultaneous bounds
+\[
+w_\Delta\le D,
+\qquad
+\operatorname{ord}_I\ge P,
+\]
+multiplication by \(m^P\) gives the exact dimension identity
+\[
+\dim V(D,P)=H_{\Gamma_Y}(D-Pw_\Delta(\delta)).
+\]
+Hence a fixed positive \(P/D\) retains the full Hilbert degree.
 
 The decisive T24 result is a proof-method obstruction. Since
-[
+\[
 I^P=(m^P),
-]
-the proposed fast local decay is the decay of an actual common algebraic factor. The same factor has global algebraic height on the fast scale. Product-formula / Liouville lower bounds therefore pay for the same contribution, and exact division removes both. The functional relation ideal is already (m)-saturated, so multiplying by a principal boundary factor cannot manufacture a new functional relation.
+\]
+the proposed fast local decay is the decay of an actual common algebraic factor. The same factor has global algebraic height on the fast scale. Product-formula / Liouville lower bounds therefore pay for the same contribution, and exact division removes both. The functional relation ideal is already \(m\)-saturated, so multiplying by a principal boundary factor cannot manufacture a new functional relation.
 
-T24 also separates ordinary deep-tail regularity from boundary regularity: a denominator can be nonzero at every torus orbit point and still have nonzero order along (m=0), so localization may destroy (I)-adic order unless boundary poles are controlled explicitly.
+T24 also separates ordinary deep-tail regularity from boundary regularity: a denominator can be nonzero at every torus orbit point and still have nonzero order along \(m=0\), so localization may destroy \(I\)-adic order unless boundary poles are controlled explicitly.
 
 Accordingly, exact relation lifting for genuine active unequal growth remains open. No new class obtains
-[
-Q(alpha,mathbf X)=P(mathbf X),
-]
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X),
+\]
 and no new positive-integer anchor class is excluded.
 
 This does **not** solve the full Periodicity Conjecture. Positive rational noninteger and negative rational boundaries remain as stated in T21–T24.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
-The next authorized action is theory-only **CDM4-T25 — divisor-saturated / relative-height exact-lifting audit**. It must factor every forced (m^P) contribution before the Liouville comparison and seek genuine residual fast-scale smallness after that cancellation, while preserving exact specialization.
+The next authorized action is theory-only **CDM4-T25 — divisor-saturated / relative-height exact-lifting audit**. It must factor every forced \(m^P\) contribution before the Liouville comparison and seek genuine residual fast-scale smallness after that cancellation, while preserving exact specialization.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T24_REPORT.md` before doing research.
+Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T24_REPORT.md\` before doing research.
