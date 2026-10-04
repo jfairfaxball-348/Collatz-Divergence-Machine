@@ -37,58 +37,46 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T22 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
+**CDM4-T23 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-T20 exact variable-length endpoint/scalar transport and T21 ordinary-prefix/scalar-convergence/positive-grading results remain closed.
+T20–T22 remain closed infrastructure: exact variable-length scalar transport, algebraic ordinary-prefix limsup and strict positive-integer gap, positive reduced grading, intrinsic reduced multiscale profiles, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair genuine active scale separation.
 
-T22 resolves the geometry of the remaining unequal-growth lifting problem without claiming a universal lift. On a T18-reduced dense arithmetic-progression tail, every reduced character \(\gamma\) has exact normalized length and valuation exponent recurrences
+T23 proves that the multiscale zero-set problem is not uniformly blocked by the T22 height ratio.
+
+Let
 \[
-L_\gamma(n)=\mathbf1^TM^a(M^{Rn}-I)\mu,
-\qquad
-V_\gamma(n)=v^TM^a(M^{Rn}-I)\mu,
+I_{>1}
 \]
-independent of the chosen ambient lift \(\mu\). After period refinement, each positive reduced character has an intrinsic exponential-polynomial profile \((\rho,e)\).
-
-These profiles form a finite growth filtration. Positive profile is max-additive, while the T21 increment weight
+be the monomial ideal of characters above the slowest T22 growth profile. If an algebraic-coefficient toric analytic function vanishes on an infinite subsequence of the exact T18-reduced dense orbit, its slow boundary restriction
 \[
-w_\Delta(\pi_Y(x))=\mathbf1^TM^a(M^R-I)x
+f\bmod I_{>1}
 \]
-remains additive, positive and exponentially expanding. Thus one scalar grading already suffices for finite-dimensional Hilbert truncations and local support displacement; a vector grading is useful bookkeeping but is not the missing theorem.
+vanishes identically. The faster remainder is smaller than every fixed power of the slow norm, so Corvaja–Zannier Proposition 3 applies after exact projection to the internally balanced slow stratum.
 
-The decisive T22 result is the exact height/contraction comparison. For positive toric coordinates along the reduced Collatz orbit,
+If
 \[
-\widehat h(x_n)=\Theta(g_{\rm fast}(n)),
-\qquad
--\log\max_i|x_{n,i}|_2=\Theta(g_{\rm slow}(n)).
+I_{>1}=(\theta^\delta)
 \]
-Corvaja–Zannier Theorem 3 requires
-\[
-\widehat h(x_n)=O(-\log\max_i|x_{n,i}|_2).
-\]
-Hence the inherited T17/T18 analytic zero theorem applies exactly in the effective balanced-growth regime. If two active profiles have unequal radii, or equal radius with unequal polynomial degree, the required ratio diverges.
+is principal, exact division can be repeated. Any function with infinitely many orbit zeros then lies in every power of \(I_{>1}\), hence is zero. This gives a genuine unequal-growth dense-orbit analytic zero theorem for the principal-high-ideal subclass.
 
-Fixed multigradings, Rees algebras, weighted-projective embeddings and fixed monomial re-embeddings do not change the actual orbit height or slowest local contraction. Nor can a slow direction simply be quotiented out while preserving the Collatz scalar: T22 proves
-\[
-\left\langle\operatorname{Supp}(S|_Y)\right\rangle_{\mathbb Z}=N_Y.
-\]
-The scalar prefix support therefore spans the entire reduced character lattice.
+The canonical Mahler system is filtered exactly in monomial support, but its finite state-function matrix need not split into independent growth blocks. The new zero theorem also does not automatically repair exact relation lifting: T22's auxiliary upper-bound / Liouville lower-bound mismatch remains a separate quantitative step.
 
-The selected T18 orbit is already Zariski dense under an étale map, so there is no further fixed proper orbit closure to pass to. Laurent/Bell–Ghioca–Tucker reduction remains valid; the missing step is a genuinely new multiscale analytic zero/lifting theorem.
+The general nonprincipal induction now stops at a sharper point. After the slow face is removed, next-face coefficients are analytic functions of slower variables. Their values need not be algebraic, so known moving-target Subspace Theorems do not apply. Algebraic truncation at next-scale precision costs height on the next scale itself.
 
-The published 2026 Adamczewski–Faverjon paper was rechecked and retains a common-scale admissibility condition. Brechler arXiv:2607.24877 was also rechecked and no journal publication was located; it is not used as a load-bearing closure theorem.
+Asynchronous times can equalize the separate functions \(k_i^{e_i}\rho_i^{k_i}\), but they do not preserve the exact synchronized Collatz functional orbit or T20 scalar transport.
 
-Therefore genuine active unequal-growth reducible variable-length systems remain open for exact specialization
+No direct analytic counterexample to the desired zero theorem was found. No newly lifted unequal-growth class obtains
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X).
 \]
-The T21 balanced-growth class remains closed, with pointwise real completion portability and the positive sign contradiction.
+No new positive-integer anchor class is excluded.
 
-This does **not** solve the full Periodicity Conjecture. No new positive-integer anchor class is excluded in T22; positive rational noninteger and negative rational boundaries remain as stated in T21.
+This does **not** solve the full Periodicity Conjecture. Positive rational noninteger and negative rational boundaries remain as stated in T21–T23.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
-The next authorized action is theory-only **CDM4-T23 — stratified/asynchronous multiscale analytic zero theorem and exact-lifting audit**.
+The next authorized action is theory-only **CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit**.
 
-No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
+No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T22_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T23_REPORT.md before doing research.
