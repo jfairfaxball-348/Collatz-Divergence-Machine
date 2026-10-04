@@ -3,71 +3,101 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T24 COMPLETE — C: NEW PRINCIPAL-I-ADIC STRUCTURAL OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T25 COMPLETE — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T24_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T25_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20 exact variable-length endpoint/scalar transport remains closed.
-- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below \(\log_2 3\), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
-- T22 reduced multiscale profiles, the finite growth filtration, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair the common-scale gap remain closed.
-- T23 slowest-face elimination and the principal-high-ideal dense-orbit analytic zero theorem remain closed.
-- **T24 proves that the T23 principal-high hypothesis is intrinsically two-scale.** If
-  \[
-  I_{>1}=(m),\qquad m=\theta^\delta,
-  \]
-  then there are exactly two positive profiles and
-  \[
-  \Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow}.
-  \]
-  Thus the principal generator is necessarily on the unique fastest positive profile; intermediate/further faster positive profiles cannot be hidden in powers of \(m\).
-- Writing
-  \[
-  A_Y\delta=a\delta+\eta,\qquad \eta\in\Gamma_{\rm slow},
-  \]
-  T24 proves the exact pullback law
-  \[
-  \rho^*m=u\,m^a\theta^\eta,
-  \qquad
-  \operatorname{ord}_I(\rho^{n*}m)=a^n.
-  \]
-  The \(I\)-adic order need not equal the full fast profile: in the equal-radius triangular case the profile can be
-  \[
-  n^{e_1+1}a^n
-  \]
-  while the exact \(I\)-order is only \(a^n\).
-- Direct evaluation of \(m^P\) on the exact orbit does give fast \(2\)-adic decay on
-  \[
-  P\,g_{\rm fast}(n).
-  \]
-  The obstruction is construction, not evaluation.
-- **T24 Route B obstruction:** exact divisorial order \(E\in I^P\) is not a finite-codimensional Hilbert condition. In the exact splitting,
-  \[
-  \mathcal A_Y/I^P
-  \cong
-  \bigoplus_{k=0}^{P-1}m^k\mathcal A_{\rm slow},
-  \]
-  and \(\mathcal A_{\rm slow}\) is positive-dimensional/infinite-dimensional. Exact \(I^P\)-vanishing therefore requires \(P\) complete slow analytic functional identities.
-- Finite slow truncation reintroduces a \(g_{\rm slow}\) remainder and therefore the T22 fast/slow mismatch. Explicit multiplication by \(m^P\) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and supplies no new Mahler multiplicity amplification.
-- Rational-functional regularity on the orbit does not imply divisor-regularity: denominators may have positive \(m\)-order while remaining nonzero at every orbit point. A future proof would require an \(I\)-saturated/divisor-regular relation module.
-- Consequently T24 does **not** prove exact relation lifting for the principal-high subclass and does not obtain
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X)
-  \]
-  for any new unequal-growth class.
-- The next theorem is now relative: a slow-base \(m\)-adic multiplicity / divisor-regular Mahler lifting theorem with algebraic coefficient and height control and exact specialization.
-- No new positive-integer anchor class is excluded in T24; no new T2 bounded-\(R_m\) implication is promoted.
-- Positive rational noninteger and negative rational boundaries remain unchanged.
+- T20–T24 infrastructure remains closed, including exact variable-length scalar transport, T21 strict positive-integer real gap/scalar convergence, T22 multiscale profiles and scalar-support fullness, T23 slowest-face/principal analytic zero theorem, and the T24 two-profile principal splitting and exact (m)-pullback law.
+- In the T24 splitting
+  [
+  Gamma_Y=mathbb NdeltaoplusGamma_{m slow},
+  qquad m=	heta^delta,
+  ]
+  T25 identifies the exact divisor-local coefficient ring
+  [
+  mathcal O=K(Gamma_{m slow})[m]_{(m)},
+  qquad
+  widehat{mathcal O}=K(Gamma_{m slow})[[m]],
+  ]
+  and the pullback is semilinear over the slow difference field:
+  [
+  mmapsto c,m^a,qquad bmapstosigma(b).
+  ]
+- For each letter write
+  [
+  pi_Y(e_s)=kappa_sdelta+eta_s.
+  ]
+  The prefix fast count
+  [
+  kappa(n)=sum_{i<n}kappa_{u_i}
+  ]
+  is monotone. If (kappa(n)	oinfty), every fixed (m)-jet of every canonical state series is a finite slow polynomial:
+  [
+  F_t|_Yin K[Gamma_{m slow}][[m]].
+  ]
+  If (kappa(n)) is bounded, the canonical state vector is polynomial in (m) with slow analytic coefficients.
+- For every fixed state-polynomial degree, contraction of the original functional-relation ideal to (mathcal O[mathbf X]) is (m)-saturated. The finite-degree quotient is torsion-free and therefore free over the DVR (mathcal O). This supplies a genuine divisor-regular relation lattice.
+- T25 defines the divisor ramification invariant
+  [
+  lambda_m=operatorname{ord}_m(det B_1)
+  ]
+  for forward transport on the saturated degree-one lattice. It is invariant under (GL_r(mathcal O)) basis changes. The inverse transport is divisor-regular exactly when
+  [
+  lambda_m=0.
+  ]
+  If (lambda_m>0), no divisor-regular basis of the same saturated lattice removes the (m)-pole.
+- In the unbounded-(kappa) branch, a relative Hermite–Padé construction over
+  [
+  F=K(Gamma_{m slow})
+  ]
+  produces genuine exact (m)-multiplicity by cancellation. If
+  [
+  h(D_X)=dim_{F(m)}F(m)[mathbf X]_{le D_X}/J_{le D_X},
+  ]
+  then after removing all common explicit (m)-factors one can achieve
+  [
+  P_{m rel}ge (h(D_X)-1)(D_f+1).
+  ]
+  This is not the T24-neutral construction (m^PE_0).
+- Slow rational coefficients can be cleared to slow polynomials with finite degree/height. Their orbit cost is on
+  [
+  D_sg_{m slow}(n),
+  ]
+  while the true divisor multiplicity contributes
+  [
+  P_{m rel}g_{m fast}(n).
+  ]
+  No uncontrolled slow analytic remainder is discarded.
+- **Newly closed T25 subclass:** if
+  [
+  kappa(n)	oinfty,qquad
+  d_{m rel}:=operatorname{trdeg}_{F(m)}F(m)(G_1,ldots,G_r)>0,qquad
+  lambda_m=0,
+  ]
+  the T16/T17 mixed-place proof can be rebuilt over the divisor-regular lattice. It yields an original algebraic functional identity with the exact prescribed specialization
+  [
+  Q(alpha,mathbf X)=P(mathbf X).
+  ]
+  Appending (1), T21 scalar convergence, pointwise completion portability, scalar reconstruction, and real positivity then exclude genuinely aperiodic positive-integer anchors in this subclass.
+- **Relative-algebraic obstruction:** if (d_{m rel}=0), the state field is finite over (F(m)). A norm/valuation argument bounds every nonzero divisor-regular bounded-degree auxiliary by
+  [
+  operatorname{ord}_m(E)le C(D_f+D_X+1),
+  ]
+  so there is no independently enlargable relative Hermite–Padé multiplicity factor.
+- Zorin 2013 and Nishioka 1990 were checked at theorem level. Their zero-order estimates are one-parameter point-order results and do not supply the required semilinear slow-base arithmetic lifting theorem. Brechler 2026 remains a non-peer-reviewed preprint and is non-load-bearing.
+- Residual principal cases: bounded (kappa); unbounded (kappa) with (d_{m rel}=0); and unbounded (kappa), (d_{m rel}>0), (lambda_m>0).
+- Positive rational nonintegers still require intrinsic real subcriticality; negative rationals remain non-counterexamples.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit, theory only**
-- Explicitly permitted next action: **CDM4-T25 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit, theory only**
+- Explicitly permitted next action: **CDM4-T26 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -131,6 +161,7 @@ The repository, not conversational memory, is the authoritative research state.
 56. `experiments/CDM4_T22_REPORT.md`
 57. `experiments/CDM4_T23_REPORT.md`
 58. `experiments/CDM4_T24_REPORT.md`
+59. `experiments/CDM4_T25_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
