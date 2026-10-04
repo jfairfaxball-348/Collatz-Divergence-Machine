@@ -3,49 +3,71 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T23 COMPLETE — D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T24 COMPLETE — C: NEW PRINCIPAL-I-ADIC STRUCTURAL OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T23_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T24_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20 exact variable-length endpoint/scalar transport remains closed.
-- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below \(\log_2 3\), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
+- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below (log_2 3), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
 - T22 reduced multiscale profiles, the finite growth filtration, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair the common-scale gap remain closed.
-- **T23 proves a new slowest-face theorem.** If an algebraic-coefficient toric analytic function vanishes on an infinite subsequence of the exact reduced unequal-growth orbit, its restriction modulo the higher-growth ideal
-  \[
-  I_{>1}
-  \]
-  vanishes identically on the slow projected torus. The proof applies Corvaja–Zannier Proposition 3 only after projection to the internally balanced slow stratum; it does not reapply their full theorem to the multiscale point.
-- **T23 also proves a genuine unequal-growth dense-orbit zero theorem when**
-  \[
-  I_{>1}=(\theta^\delta)
-  \]
-  **is principal.** Repeated exact division forces any analytic function with infinitely many orbit zeros into every power of \(I_{>1}\), hence to zero.
-- This new zero theorem does **not** yet restore exact relation lifting. T22's independent auxiliary upper-bound / Liouville lower-bound mismatch remains. The principal-ideal geometry suggests an \(I\)-adic auxiliary construction, but T23 does not prove it.
-- The canonical Mahler system is filtered exactly in character support:
-  \[
-  \rho^*(I_{>i})\subseteq I_{>i},
-  \]
-  and quotient-first re-minimalization is legitimate. The finite state-function matrix need not split into independent growth blocks.
-- Asynchronous times can make separate scales \(k_i^{e_i}\rho_i^{k_i}\) comparable, but the exact functional system and T20 scalar transport require one synchronized iterate. No exact asynchronous scalar reassembly was found.
-- Existing moving-target Subspace Theorems require algebraic moving targets of height \(o(h(x_n))\). After slow-face elimination, the next-face coefficients are generally analytic slow-variable values and need not be algebraic; truncation to next-scale precision incurs height \(\Omega(g_i)\), so the known moving-target interface does not close the gap.
-- No direct Route B analytic counterexample was found. The principal-high-ideal theorem rules one out in that subclass.
-- The published 2026 Adamczewski–Faverjon paper remains common-scale at the admissibility interface. Brechler arXiv:2607.24877 remains a preprint and is non-load-bearing.
-- No newly lifted unequal-growth class reaches exact specialization
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X).
-  \]
-- No new positive-integer anchor class is excluded in T23; no new T2 bounded-\(R_m\) implication is promoted.
+- T23 slowest-face elimination and the principal-high-ideal dense-orbit analytic zero theorem remain closed.
+- **T24 proves that the T23 principal-high hypothesis is intrinsically two-scale.** If
+  [
+  I_{>1}=(m),qquad m=	heta^delta,
+  ]
+  then there are exactly two positive profiles and
+  [
+  Gamma_Ycongmathbb NdeltaoplusGamma_{m slow}.
+  ]
+  Thus the principal generator is necessarily on the unique fastest positive profile; intermediate/further faster positive profiles cannot be hidden in powers of (m).
+- Writing
+  [
+  A_Ydelta=adelta+eta,qquad etainGamma_{m slow},
+  ]
+  T24 proves the exact pullback law
+  [
+  ho^*m=u,m^a	heta^eta,
+  qquad
+  operatorname{ord}_I(ho^{n*}m)=a^n.
+  ]
+  The (I)-adic order need not equal the full fast profile: in the equal-radius triangular case the profile can be
+  [
+  n^{e_1+1}a^n
+  ]
+  while the exact (I)-order is only (a^n).
+- Direct evaluation of (m^P) on the exact orbit does give fast (2)-adic decay on
+  [
+  P,g_{m fast}(n).
+  ]
+  The obstruction is construction, not evaluation.
+- **T24 Route B obstruction:** exact divisorial order (Ein I^P) is not a finite-codimensional Hilbert condition. In the exact splitting,
+  [
+  mathcal A_Y/I^P
+  cong
+  igoplus_{k=0}^{P-1}m^kmathcal A_{m slow},
+  ]
+  and (mathcal A_{m slow}) is positive-dimensional/infinite-dimensional. Exact (I^P)-vanishing therefore requires (P) complete slow analytic functional identities.
+- Finite slow truncation reintroduces a (g_{m slow}) remainder and therefore the T22 fast/slow mismatch. Explicit multiplication by (m^P) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and supplies no new Mahler multiplicity amplification.
+- Rational-functional regularity on the orbit does not imply divisor-regularity: denominators may have positive (m)-order while remaining nonzero at every orbit point. A future proof would require an (I)-saturated/divisor-regular relation module.
+- Consequently T24 does **not** prove exact relation lifting for the principal-high subclass and does not obtain
+  [
+  Q(alpha,mathbf X)=P(mathbf X)
+  ]
+  for any new unequal-growth class.
+- The next theorem is now relative: a slow-base (m)-adic multiplicity / divisor-regular Mahler lifting theorem with algebraic coefficient and height control and exact specialization.
+- No new positive-integer anchor class is excluded in T24; no new T2 bounded-(R_m) implication is promoted.
+- Positive rational noninteger and negative rational boundaries remain unchanged.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit, theory only**
-- Explicitly permitted next action: **CDM4-T24 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit, theory only**
+- Explicitly permitted next action: **CDM4-T25 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
