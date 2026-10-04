@@ -2,7 +2,7 @@
 
 Date: 2026-10-04
 
-Authoritative input commit: \`3a3df26b59d6f9f42f779c6333c5a0ee97ad95eb\`
+Authoritative input commit: `3a3df26b59d6f9f42f779c6333c5a0ee97ad95eb`
 
 Session type: theorem / toric semigroup / auxiliary-function / literature audit only
 
@@ -1613,9 +1613,9 @@ No cloud, cluster, distributed, or volunteer computation.
 
 No tiny symbolic check was required; the T24 results follow by exact semigroup and Hilbert arguments.
 
-\`docs/COMPUTE_BUDGET.md\`: **UNCHANGED**.
+`docs/COMPUTE_BUDGET.md`: **UNCHANGED**.
 
-\`docs/METRIC_CATALOG.md\`: **UNCHANGED**.
+`docs/METRIC_CATALOG.md`: **UNCHANGED**.
 
 ---
 
