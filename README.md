@@ -37,91 +37,58 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T21 is complete — C: NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T22 is complete — D: NO QUALIFYING THEOREM FOUND. No new scientific compute is authorized.**
 
-T20 exact variable-length endpoint/scalar transport and the T16–T18 mixed-place/orbit-closure lifting infrastructure remain closed.
+T20 exact variable-length endpoint/scalar transport and T21 ordinary-prefix/scalar-convergence/positive-grading results remain closed.
 
-T21 closes the ordinary-prefix asymptotic obstruction for every expanding nonerasing pure-morphic fixed point in scope. Every ordinary prefix has the exact Dumont–Thomas decomposition
+T22 resolves the geometry of the remaining unequal-growth lifting problem without claiming a universal lift. On a T18-reduced dense arithmetic-progression tail, every reduced character \(\gamma\) has exact normalized length and valuation exponent recurrences
 \[
-u_{<n}
-=
-\sigma^k(p_k)\sigma^{k-1}(p_{k-1})\cdots p_0.
-\]
-The most significant digit \(p_k\) is a nonempty prefix of
-\[
-\sigma(a_0)=a_0w,
-\]
-so it contains \(a_0\). Thus the leading substituted block already carries the maximal reachable Frobenius/Jordan scale
-\[
-k^e\rho^k.
-\]
-
-Unequal lower growth classes are negligible after normalization. Equal-radius SCC chains and their leading polynomial factors are retained, but the common \(k^e\) factor cancels in the projective prefix ratio. Imprimitive modulation is handled by a finite phase.
-
-The prefix-mean problem therefore becomes a finite-state discounted ratio problem with algebraic rewards and discount \(\rho^{-1}\). Its extremal values are attained by deterministic stationary policies, giving a finite algebraic set \(\mathcal E\) such that
-\[
-\boxed{
-\liminf_{n\to\infty}\frac{A_n}{n}
-=
-\min\mathcal E,
+L_\gamma(n)=\mathbf1^TM^a(M^{Rn}-I)\mu,
 \qquad
-\limsup_{n\to\infty}\frac{A_n}{n}
-=
-\max\mathcal E.
-}
+V_\gamma(n)=v^TM^a(M^{Rn}-I)\mu,
 \]
-The full accumulation set is the interval between these two algebraic endpoints. The ordinary mean need not exist.
+independent of the chosen ambient lift \(\mu\). After period refinement, each positive reduced character has an intrinsic exponential-polynomial profile \((\rho,e)\).
 
-Consequently, under a hypothetical genuinely aperiodic positive integer Collatz anchor, the inherited T3 bound
+These profiles form a finite growth filtration. Positive profile is max-additive, while the T21 increment weight
 \[
-\beta:=\limsup A_n/n\le\log_2 3
+w_\Delta(\pi_Y(x))=\mathbf1^TM^a(M^R-I)x
 \]
-is strict because \(\beta\) is algebraic while \(\log_2 3\) is transcendental:
-\[
-\boxed{\beta<\log_2 3.}
-\]
-Combined with the T20 exact scalar identity
-\[
-S(q_J)
-=
-\sum_{n\ge0}
-\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}},
-\]
-this proves absolute real convergence of the canonical scalar and all canonical state subseries at every actual tail throughout the expanding reducible T21 class.
+remains additive, positive and exponentially expanding. Thus one scalar grading already suffices for finite-dimensional Hilbert truncations and local support displacement; a vector grading is useful bookkeeping but is not the missing theorem.
 
-T21 separately proves a universal positive expanding grading after T18 orbit-closure reduction. On a sufficiently deep period-refined tail,
+The decisive T22 result is the exact height/contraction comparison. For positive toric coordinates along the reduced Collatz orbit,
 \[
-d^T=\mathbf1^TM^a(M^R-I)
+\widehat h(x_n)=\Theta(g_{\rm fast}(n)),
+\qquad
+-\log\max_i|x_{n,i}|_2=\Theta(g_{\rm slow}(n)).
 \]
-annihilates the complete character-relation lattice and is positive on every reachable positive generator. Hence
+Corvaja–Zannier Theorem 3 requires
 \[
-w_\Delta(\pi_Y(x))=d^Tx
+\widehat h(x_n)=O(-\log\max_i|x_{n,i}|_2).
 \]
-is a well-defined positive integral grading with
+Hence the inherited T17/T18 analytic zero theorem applies exactly in the effective balanced-growth regime. If two active profiles have unequal radii, or equal radius with unequal polynomial degree, the required ratio diverges.
+
+Fixed multigradings, Rees algebras, weighted-projective embeddings and fixed monomial re-embeddings do not change the actual orbit height or slowest local contraction. Nor can a slow direction simply be quotiented out while preserving the Collatz scalar: T22 proves
 \[
-w_\Delta(A_Y^n\gamma)
-\ge
-C\kappa^n w_\Delta(\gamma)
+\left\langle\operatorname{Supp}(S|_Y)\right\rangle_{\mathbb Z}=N_Y.
 \]
-for some \(\kappa>1\). A single global reducible Perron vector is not required.
+The scalar prefix support therefore spans the entire reduced character lattice.
 
-Scalar convergence and grading are still kept separate from algebraic relation lifting. T21 closes the exact lifting/sign contradiction for the **balanced-growth reducible subclass**, where all surviving reduced generators have one comparable exponential-polynomial growth scale. Every genuinely aperiodic member of that subclass has
+The selected T18 orbit is already Zariski dense under an étale map, so there is no further fixed proper orbit closure to pass to. Laurent/Bell–Ghioca–Tucker reduction remains valid; the missing step is a genuinely new multiscale analytic zero/lifting theorem.
+
+The published 2026 Adamczewski–Faverjon paper was rechecked and retains a common-scale admissibility condition. Brechler arXiv:2607.24877 was also rechecked and no journal publication was located; it is not used as a load-bearing closure theorem.
+
+Therefore genuine active unequal-growth reducible variable-length systems remain open for exact specialization
 \[
-H\notin\mathbb Z_{>0},
+Q(\alpha,\mathbf X)=P(\mathbf X).
 \]
-and under T2's inherited finite-alphabet anchoring hypotheses,
-\[
-R_m\text{ bounded}\Longrightarrow\text{eventual periodicity}.
-\]
+The T21 balanced-growth class remains closed, with pointwise real completion portability and the positive sign contradiction.
 
-The remaining variable-length boundary is now narrower: in a T18-reduced reducible system with genuinely unequal surviving growth scales, scalar convergence and positive grading are proved, but the global \(S\)-unit height-versus-boundary-contraction step of the exact mixed-place lifting theorem has not yet been established in multiscale form.
+This does **not** solve the full Periodicity Conjecture. No new positive-integer anchor class is excluded in T22; positive rational noninteger and negative rational boundaries remain as stated in T21.
 
-This does **not** solve the full Periodicity Conjecture. Positive rational noninteger values are excluded only when ordinary real subcriticality is independently known; negative rational values remain unexcluded.
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
-No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found. Brechler's 2026 multivariate Mahler work was rechecked in T21 and remains a non-load-bearing preprint.
-
-The next authorized action is theory-only **CDM4-T22 — multiscale reducible toric relation-lifting / height-filtration audit**.
+The next authorized action is theory-only **CDM4-T23 — stratified/asynchronous multiscale analytic zero theorem and exact-lifting audit**.
 
 No substitution enumeration, new starts, generator/distribution work, finite-code ranking, CPU/GPU scaling, cloud, distributed, or volunteer work is authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T21_REPORT.md` before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T22_REPORT.md before doing research.
