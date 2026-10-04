@@ -12,40 +12,40 @@
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20 exact variable-length endpoint/scalar transport and primitive Perron-weight lifting remain closed infrastructure.
-- **T21 closes the reducible ordinary-prefix limsup obstruction for expanding nonerasing pure-morphic fixed points.** Using the exact Dumont–Thomas prefix decomposition and the fact that every most-significant nonempty prefix digit contains the prolongation letter (a_0), arbitrary prefixes reduce after Frobenius/Jordan normalization to a finite-state discounted ratio problem.
-- Equal-radius SCC chains and leading (J^e\rho^J) terms are retained. The common polynomial factor cancels projectively, while imprimitive modulation becomes a finite phase variable.
-- There is a finite explicitly described algebraic set (mathcal E) arising from deterministic stationary policies on the phase-augmented prefix automaton such that
-  [
+- **T21 closes the reducible ordinary-prefix limsup obstruction for expanding nonerasing pure-morphic fixed points.** Using the exact Dumont–Thomas prefix decomposition and the fact that every most-significant nonempty prefix digit contains the prolongation letter \(a_0\), arbitrary prefixes reduce after Frobenius/Jordan normalization to a finite-state discounted ratio problem.
+- Equal-radius SCC chains and leading \(J^e\rho^J\) terms are retained. The common polynomial factor cancels projectively, while imprimitive modulation becomes a finite phase variable.
+- There is a finite explicitly described algebraic set \(\mathcal E\) arising from deterministic stationary policies on the phase-augmented prefix automaton such that
+  \[
   \liminf_{n\to\infty}\frac{A_n}{n}=\min\mathcal E,
   \qquad
   \limsup_{n\to\infty}\frac{A_n}{n}=\max\mathcal E.
-  ]
+  \]
   Hence both endpoints are algebraic.
-- The full accumulation set of (A_n/n) is the interval between those endpoints. An ordinary mean need not exist.
+- The full accumulation set of \(A_n/n\) is the interval between those endpoints. An ordinary mean need not exist.
 - Under a hypothetical genuinely aperiodic positive integer Collatz anchor, T3 gives
-  [
+  \[
   \beta:=\limsup A_n/n\le\log_2 3.
-  ]
-  Since T21 proves (eta) algebraic and (log_2 3) is transcendental, equality is impossible:
-  [
+  \]
+  Since T21 proves \(\beta\) algebraic and \(\log_2 3\) is transcendental, equality is impossible:
+  \[
   \beta<\log_2 3.
-  ]
+  \]
 - By the T20 exact scalar identity, this strict global prefix gap gives absolute ordinary-real convergence of the canonical scalar and every canonical state subseries at every actual tail for the full T21 expanding reducible class. Coordinatewise contraction remains unnecessary.
 - **T21 also closes the literal positive-grading obstruction after T18 orbit-closure reduction.** On a sufficiently deep period-refined tail define
-  [
+  \[
   d^T=\mathbf1^TM^a(M^R-I).
-  ]
+  \]
   It annihilates the complete character-relation lattice and is positive on every reachable generator. Thus
-  [
+  \[
   w_\Delta(\pi_Y(x))=d^Tx
-  ]
+  \]
   is a well-defined positive integral grading with uniform exponential support expansion
-  [
+  \[
   w_\Delta(A_Y^n\gamma)\ge C\kappa^n w_\Delta(\gamma)
-  ]
-  for some (kappa>1).
-- Scalar convergence and grading are **not** conflated with exact relation lifting. T21 closes the lifting/sign contradiction for the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. In genuinely unequal-growth reducible systems, the multiscale global (S)-unit height-versus-boundary-contraction step remains open.
-- Therefore every genuinely aperiodic balanced-growth reducible variable-length system in the T18-reduced class has no positive integer anchor; under T2, bounded (R_m) implies eventual periodicity there.
+  \]
+  for some \(\kappa>1\).
+- Scalar convergence and grading are **not** conflated with exact relation lifting. T21 closes the lifting/sign contradiction for the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. In genuinely unequal-growth reducible systems, the multiscale global \(S\)-unit height-versus-boundary-contraction step remains open.
+- Therefore every genuinely aperiodic balanced-growth reducible variable-length system in the T18-reduced class has no positive integer anchor; under T2, bounded \(R_m\) implies eventual periodicity there.
 - Positive rational noninteger values are excluded only when real subcriticality is independently known. Negative rational values remain unexcluded and are not Collatz counterexamples.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
@@ -978,35 +978,36 @@ Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as
 - **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
 
 
+
 ## CDM4-T21 closeout — 2026-10-04
 
-CDM4-T21 is complete. Authoritative report: `experiments/CDM4_T21_REPORT.md`.
+CDM4-T21 is complete. Authoritative report: \`experiments/CDM4_T21_REPORT.md\`.
 
 **Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
 
 T21 proves that for every expanding nonerasing pure-morphic fixed point in scope,
-[
+\[
 \beta=\limsup_{n\to\infty}\frac{A_n}{n}
-]
-is algebraic. The exact Dumont–Thomas prefix representation shows that every positive prefix begins, at its highest substitution depth, with a nonempty prefix of (sigma(a_0)), hence with a block containing (a_0). That leading block already has the maximal reachable Frobenius/Jordan growth scale. Lower growth classes are negligible after normalization, while equal-radius polynomial corrections survive absolutely but cancel in the projective prefix ratio.
+\]
+is algebraic. The exact Dumont–Thomas prefix representation shows that every positive prefix begins, at its highest substitution depth, with a nonempty prefix of \(\sigma(a_0)\), hence with a block containing \(a_0\). That leading block already has the maximal reachable Frobenius/Jordan growth scale. Lower growth classes are negligible after normalization, while equal-radius polynomial corrections survive absolutely but cancel in the projective prefix ratio.
 
-After phase refinement, every subsequential prefix mean is a discounted ratio on a finite prefix automaton. The extremal ratios are attained by deterministic stationary policies, hence by eventually periodic paths, and therefore belong to a finite explicit algebraic set. The complete cluster set of (A_n/n) is the interval from the algebraic liminf to the algebraic limsup.
+After phase refinement, every subsequential prefix mean is a discounted ratio on a finite prefix automaton. The extremal ratios are attained by deterministic stationary policies, hence by eventually periodic paths, and therefore belong to a finite explicit algebraic set. The complete cluster set of \(A_n/n\) is the interval from the algebraic liminf to the algebraic limsup.
 
-Under a hypothetical positive integer anchor, the inherited T3 inequality gives (eta\le\log_2 3). Transcendence of (log_2 3) forces strict inequality, so T20 scalar transport gives absolute real convergence of all canonical tail series for the full expanding reducible T21 class.
+Under a hypothetical positive integer anchor, the inherited T3 inequality gives \(\beta\le\log_2 3\). Transcendence of \(\log_2 3\) forces strict inequality, so T20 scalar transport gives absolute real convergence of all canonical tail series for the full expanding reducible T21 class.
 
 T21 separately proves a universal positive expanding grading after T18 orbit-closure reduction. On a deep period-refined tail,
-[
+\[
 d^T=\mathbf1^TM^a(M^R-I)
-]
+\]
 annihilates the complete character-relation lattice and is positive on every positive generator. The descended grading
-[
+\[
 w_\Delta(\pi_Y(x))=d^Tx
-]
+\]
 has finite-codimensional support and uniform exponential displacement.
 
-The exact mixed-place lifting/sign proof is closed in the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. Positive integer anchors are excluded there, and T2 gives bounded-(R_mRightarrow) eventual periodicity.
+The exact mixed-place lifting/sign proof is closed in the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. Positive integer anchors are excluded there, and T2 gives bounded-\(R_m\Rightarrow\) eventual periodicity.
 
-The remaining variable-length theorem boundary is the genuinely unequal-growth reduced class. Scalar convergence and positive grading are proved, but the T17/T18 global (S)-unit height-versus-boundary-contraction step has not yet been extended to a multiscale filtration.
+The remaining variable-length theorem boundary is the genuinely unequal-growth reduced class. Scalar convergence and positive grading are proved, but the T17/T18 global \(S\)-unit height-versus-boundary-contraction step has not yet been extended to a multiscale filtration.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
@@ -1017,9 +1018,9 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 Treat T20 exact endpoint/scalar transport and the T21 ordinary-prefix algebraicity and increment-grading theorems as closed.
 
 Determine whether a T18-reduced expanding reducible system with several surviving exponential-polynomial growth classes admits a multigraded or growth-filtered extension of the T17/T18 exact lifting theorem preserving
-[
+\[
 Q(\alpha,\mathbf X)=P(\mathbf X),
-]
-or whether there is a genuine (S)-unit height/contraction obstruction.
+\]
+or whether there is a genuine \(S\)-unit height/contraction obstruction.
 
 No scientific computation is authorized.
