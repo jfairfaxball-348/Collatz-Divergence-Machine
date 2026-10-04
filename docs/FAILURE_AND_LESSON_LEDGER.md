@@ -3502,3 +3502,181 @@ The only unresolved genuinely aperiodic principal-fast branch is
 
 **Action:** prove canonical special-fibre injectivity or classify the exact degeneration and repair lifting without changing the canonical lattice.
 
+---
+
+### F0117 — First-fast degeneration is exactly new boundary-relation creation
+
+**Status: PROVED STRUCTURAL CLASSIFICATION in CDM4-T27.**
+
+Let
+\[
+\mathscr L_1=\mathscr E/\mathscr R
+\]
+be the canonical saturated degree-one lattice, with
+\[
+E_0=\mathscr E/m\mathscr E,
+\qquad
+R_0=(\mathscr R+m\mathscr E)/m\mathscr E.
+\]
+
+Let
+\[
+\overline{\mathcal A}
+\]
+be the raw canonical first-fast-cut matrix.
+
+Then
+\[
+\boxed{
+\operatorname{coker}\overline\Phi
+\cong
+E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+}
+\]
+
+Hence
+\[
+\boxed{
+\ker\overline\Phi\ne0
+\iff
+R_0+\operatorname{im}\overline{\mathcal A}\ne E_0.
+}
+\]
+
+A nonzero kernel vector is therefore a genuine source direction, not already in the saturated relation space, whose first-fast-truncated image becomes a relation on the boundary.
+
+This need not lift to a rational functional relation in the generic fibre. An equation
+\[
+\Phi(x)=my
+\]
+is a divisor-degeneration statement, not a zero relation.
+
+Reachability, full-word recurrence, SCC connectivity, and scalar-support fullness do not individually imply boundary state-module generation.
+
+**Lesson:** the special-fibre obstruction is a quotient-generation defect, not generic functional redundancy and not raw graph connectivity.
+
+**Action:** use the exact defect
+\[
+\mathcal D_{\rm ff}
+=
+E_0/(R_0+\operatorname{im}\overline{\mathcal A})
+\]
+whenever the standalone canonical-lattice question is revisited. Do not infer generic relations from a boundary kernel.
+
+---
+
+### F0118 — Positive elementary divisors impose only a finite geometric inverse-transport tax
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T27.**
+
+Let the elementary divisors of
+\[
+\Phi:\rho^*\mathscr L_1\to\mathscr L_1
+\]
+be
+\[
+m^{e_1},\ldots,m^{e_r},
+\]
+and put
+\[
+\mu_m=\max_i e_i.
+\]
+
+Since
+\[
+m^{\mu_m}\operatorname{coker}\Phi=0,
+\]
+one inverse degree-one transport has \(m\)-pole order at most \(\mu_m\).
+
+In state-polynomial degree at most \(D\), the pole order is at most
+\[
+D\mu_m.
+\]
+
+Because
+\[
+\operatorname{ord}_m(\rho^{j*}f)
+=
+a^j\operatorname{ord}_m(f),
+\]
+the total inverse loss through \(n\) semilinear iterates is at most
+\[
+\boxed{
+D\mu_m\frac{a^n-1}{a-1}.
+}
+\]
+
+Thus an initial divisor multiplicity \(P\) retains at least
+\[
+a^n
+\left(
+P-\frac{D\mu_m}{a-1}
+\right)
++
+\frac{D\mu_m}{a-1}
+\]
+after the complete worst-case inverse transport.
+
+Positive slope is therefore fatal only if no independent multiplicity resource can exceed the fixed threshold
+\[
+D\mu_m/(a-1).
+\]
+
+**Lesson:** \(\lambda_m>0\) is not by itself an exact-lifting obstruction. It is a finite slope tax that must be compared quantitatively with the available genuine divisor multiplicity.
+
+**Action:** do not require a non-unimodular regular-singular gauge merely to remove positive canonical slopes. Pay the elementary-divisor loss on the original lattice when sufficient genuine multiplicity is available.
+
+---
+
+### F0119 — Relative Hermite–Padé multiplicity closes the full genuinely aperiodic principal-fast class
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T27.**
+
+For genuine aperiodicity, T26 gives
+\[
+\kappa(n)\to\infty,
+\qquad
+d_{\rm rel}>0.
+\]
+
+T25 therefore supplies
+\[
+P_{\rm rel}
+\ge
+(h(D_X)-1)(D_f+1).
+\]
+
+For fixed \(D_X\), the T27 positive-slope tax
+\[
+D_X\mu_m/(a-1)
+\]
+is fixed, while \(P_{\rm rel}\) grows without bound in \(D_f\).
+
+Hence the T25 mixed-place lifting proof survives arbitrary finite canonical elementary divisors. No non-unimodular gauge, explicit \(m^P\) insertion, associated-graded replacement, state quotient, or orbit-dependent slow truncation is used.
+
+Every prescribed homogeneous value relation therefore lifts with
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X)
+}
+\]
+literally preserved.
+
+The inherited T21 completion-sign chain excludes positive-integer anchors throughout the complete genuinely aperiodic principal-fast class.
+
+Under T2's finite-alphabet anchoring hypotheses,
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
+}
+\]
+throughout the full principal-fast class.
+
+Automatic \(\lambda_m=0\) remains open only as a standalone lattice question; it is no longer the positive-anchor bottleneck.
+
+**Lesson:** once positive relative transcendence is available, finite canonical divisor slopes can be absorbed quantitatively. The principal-fast route is exact-lifting closed.
+
+**Action:** move the next theorem-sized obligation back to the nonprincipal multiscale filtration. No scientific compute is authorized.
+
