@@ -12,54 +12,54 @@
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20 exact variable-length endpoint/scalar transport remains closed.
-- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below (log_2 3), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
+- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below \(\log_2 3\), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
 - T22 reduced multiscale profiles, the finite growth filtration, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair the common-scale gap remain closed.
 - T23 slowest-face elimination and the principal-high-ideal dense-orbit analytic zero theorem remain closed.
 - **T24 proves that the T23 principal-high hypothesis is intrinsically two-scale.** If
-  [
-  I_{>1}=(m),qquad m=	heta^delta,
-  ]
+  \[
+  I_{>1}=(m),\qquad m=\theta^\delta,
+  \]
   then there are exactly two positive profiles and
-  [
-  Gamma_Ycongmathbb NdeltaoplusGamma_{m slow}.
-  ]
-  Thus the principal generator is necessarily on the unique fastest positive profile; intermediate/further faster positive profiles cannot be hidden in powers of (m).
+  \[
+  \Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow}.
+  \]
+  Thus the principal generator is necessarily on the unique fastest positive profile; intermediate/further faster positive profiles cannot be hidden in powers of \(m\).
 - Writing
-  [
-  A_Ydelta=adelta+eta,qquad etainGamma_{m slow},
-  ]
+  \[
+  A_Y\delta=a\delta+\eta,\qquad \eta\in\Gamma_{\rm slow},
+  \]
   T24 proves the exact pullback law
-  [
-  ho^*m=u,m^a	heta^eta,
-  qquad
-  operatorname{ord}_I(ho^{n*}m)=a^n.
-  ]
-  The (I)-adic order need not equal the full fast profile: in the equal-radius triangular case the profile can be
-  [
+  \[
+  \rho^*m=u\,m^a\theta^\eta,
+  \qquad
+  \operatorname{ord}_I(\rho^{n*}m)=a^n.
+  \]
+  The \(I\)-adic order need not equal the full fast profile: in the equal-radius triangular case the profile can be
+  \[
   n^{e_1+1}a^n
-  ]
-  while the exact (I)-order is only (a^n).
-- Direct evaluation of (m^P) on the exact orbit does give fast (2)-adic decay on
-  [
-  P,g_{m fast}(n).
-  ]
+  \]
+  while the exact \(I\)-order is only \(a^n\).
+- Direct evaluation of \(m^P\) on the exact orbit does give fast \(2\)-adic decay on
+  \[
+  P\,g_{\rm fast}(n).
+  \]
   The obstruction is construction, not evaluation.
-- **T24 Route B obstruction:** exact divisorial order (Ein I^P) is not a finite-codimensional Hilbert condition. In the exact splitting,
-  [
-  mathcal A_Y/I^P
-  cong
-  igoplus_{k=0}^{P-1}m^kmathcal A_{m slow},
-  ]
-  and (mathcal A_{m slow}) is positive-dimensional/infinite-dimensional. Exact (I^P)-vanishing therefore requires (P) complete slow analytic functional identities.
-- Finite slow truncation reintroduces a (g_{m slow}) remainder and therefore the T22 fast/slow mismatch. Explicit multiplication by (m^P) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and supplies no new Mahler multiplicity amplification.
-- Rational-functional regularity on the orbit does not imply divisor-regularity: denominators may have positive (m)-order while remaining nonzero at every orbit point. A future proof would require an (I)-saturated/divisor-regular relation module.
+- **T24 Route B obstruction:** exact divisorial order \(E\in I^P\) is not a finite-codimensional Hilbert condition. In the exact splitting,
+  \[
+  \mathcal A_Y/I^P
+  \cong
+  \bigoplus_{k=0}^{P-1}m^k\mathcal A_{\rm slow},
+  \]
+  and \(\mathcal A_{\rm slow}\) is positive-dimensional/infinite-dimensional. Exact \(I^P\)-vanishing therefore requires \(P\) complete slow analytic functional identities.
+- Finite slow truncation reintroduces a \(g_{\rm slow}\) remainder and therefore the T22 fast/slow mismatch. Explicit multiplication by \(m^P\) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and supplies no new Mahler multiplicity amplification.
+- Rational-functional regularity on the orbit does not imply divisor-regularity: denominators may have positive \(m\)-order while remaining nonzero at every orbit point. A future proof would require an \(I\)-saturated/divisor-regular relation module.
 - Consequently T24 does **not** prove exact relation lifting for the principal-high subclass and does not obtain
-  [
-  Q(alpha,mathbf X)=P(mathbf X)
-  ]
+  \[
+  Q(\alpha,\mathbf X)=P(\mathbf X)
+  \]
   for any new unequal-growth class.
-- The next theorem is now relative: a slow-base (m)-adic multiplicity / divisor-regular Mahler lifting theorem with algebraic coefficient and height control and exact specialization.
-- No new positive-integer anchor class is excluded in T24; no new T2 bounded-(R_m) implication is promoted.
+- The next theorem is now relative: a slow-base \(m\)-adic multiplicity / divisor-regular Mahler lifting theorem with algebraic coefficient and height control and exact specialization.
+- No new positive-integer anchor class is excluded in T24; no new T2 bounded-\(R_m\) implication is promoted.
 - Positive rational noninteger and negative rational boundaries remain unchanged.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
@@ -130,6 +130,7 @@ The repository, not conversational memory, is the authoritative research state.
 55. `experiments/CDM4_T21_REPORT.md`
 56. `experiments/CDM4_T22_REPORT.md`
 57. `experiments/CDM4_T23_REPORT.md`
+58. `experiments/CDM4_T24_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
