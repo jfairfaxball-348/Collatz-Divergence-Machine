@@ -2536,3 +2536,117 @@ Known convergence of normalized substituted-letter blocks, and even existence of
 \beta=\limsup A_n/n.
 \]
 Keep the separate positive-grading/lifting obligation visible. No scientific compute is authorized.
+
+
+---
+
+### F0096 — Ordinary pure-morphic prefix limsup endpoints are algebraic
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T21.**
+
+T20 correctly refused to infer global ordinary-prefix behavior from substituted-letter block ratios. T21 supplies the missing prefix geometry.
+
+For an expanding nonerasing morphism prolongable on (a_0), every positive fixed-point prefix has the exact Dumont–Thomas form
+[
+u_{<n}
+=
+sigma^k(p_k)sigma^{k-1}(p_{k-1})cdots p_0,
+]
+with a nonempty most-significant prefix (p_k) of (sigma(a_0)).
+
+Because
+[
+sigma(a_0)=a_0w,
+]
+the prefix (p_k) contains (a_0). Hence the leading substituted block already has the maximal reachable Frobenius/Jordan growth scale
+[
+k^eho^k.
+]
+
+After a common imprimitive period refinement, normalized prefix length and valuation sums converge along prefix-automaton paths to discounted sums with algebraic edge weights and algebraic discount (ho^{-1}). The common (k^e) factor from equal-radius critical chains cancels projectively.
+
+The limsup and liminf of
+[
+A_n/n
+]
+are extrema of a finite deterministic discounted ratio problem. An additive Bellman/Dinkelbach reduction shows that extremizers may be taken to be deterministic stationary policies, hence eventually periodic paths. Their discounted ratios are algebraic.
+
+Therefore there is a finite explicitly described algebraic set (mathcal E) such that
+[
+liminf A_n/n=minmathcal E,
+qquad
+limsup A_n/n=maxmathcal E.
+]
+
+Because successive Cesàro means differ by (O(1/n)), the complete cluster set is the interval between those endpoints. The ordinary mean can fail to exist, but the extremal ordinary-prefix means remain algebraic.
+
+**Lesson:** a reducible pure-morphic prefix is not an unconstrained concatenation of substituted letters. Its highest substituted prefix already contains the prolongation letter and therefore the maximal reachable growth scale.
+
+**Action:** treat the ordinary-prefix limsup arithmetic as closed for expanding nonerasing pure-morphic fixed points in the T21 scope. Do not reopen it from state-block frequencies alone.
+
+---
+
+### F0097 — Reducible positive grading is supplied by a length increment after orbit-closure reduction
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T21.**
+
+A single strictly positive left Perron eigenvector need not exist for a reducible incidence matrix. T21 shows that it is unnecessary.
+
+On a sufficiently deep period-refined T18 arithmetic-progression tail (q_{a+Rn}), define
+[
+d^T=mathbf1^TM^a(M^R-I).
+]
+
+For every character relation (mu) constant on the selected dense orbit coset, exact comparison of consecutive Collatz monomial points gives
+[
+2^{v^TM^a(M^R-I)mu}
+3^{-mathbf1^TM^a(M^R-I)mu}=1.
+]
+Multiplicative independence of (2) and (3) implies
+[
+d^Tmu=0.
+]
+
+After taking (a) deep enough, expansion of every reachable letter gives
+[
+d_s>0.
+]
+
+Hence
+[
+w_Delta(pi_Y(x))=d^Tx
+]
+descends through the complete orbit-relation lattice, is positive on the reduced positive semigroup away from zero, and defines a finite-codimensional grading.
+
+Moreover there are (C>0) and (kappa>1) with
+[
+w_Delta(A_Y^ngamma)
+ge
+Ckappa^nw_Delta(gamma)
+]
+for every reduced positive character (gamma).
+
+**Lesson:** in reducible systems, the natural positive weight can be an orbit-increment functional rather than an eigenfunctional.
+
+**Action:** do not cite absence of one global reducible Perron vector as an obstruction to positive support filtration or exponential support displacement after T18 reduction.
+
+---
+
+### F0098 — Scalar convergence plus positive grading does not yet imply universal unequal-growth lifting
+
+**Status: OPEN BOUNDARY / PROVED NON-IMPLICATION in CDM4-T21.**
+
+T21 closes two previously separate obligations:
+
+1. under a hypothetical positive integer anchor, the ordinary-prefix algebraic limsup theorem gives a strict global gap and therefore real scalar convergence;
+2. the T18-reduced positive semigroup always carries the expanding increment grading (w_Delta).
+
+These facts do **not** by themselves verify every global quantitative step in the T17/T18 mixed-place lifting proof.
+
+If all surviving reduced generators have one comparable exponential-polynomial growth scale, the inherited support, boundary-contraction, (S)-unit height, zero-set, rigid-local, relation-ideal and exact-specialization estimates remain comparable. T21 closes this balanced-growth reducible subclass and the completion-sign contradiction excludes positive integer anchors there.
+
+If genuinely unequal growth scales survive, a fast coordinate may dominate global algebraic height while a slower regular character controls local boundary contraction. The required Corvaja–Zannier/auxiliary-function comparison has not been proved in a multiscale form.
+
+**Lesson:** grading controls support geometry, not automatically the global height/contraction balance.
+
+**Action:** CDM4-T22 must audit a multigraded or growth-filtration version of the exact T17/T18 lifting theorem. Do not promote scalar convergence plus grading to a universal reducible lifting theorem.
