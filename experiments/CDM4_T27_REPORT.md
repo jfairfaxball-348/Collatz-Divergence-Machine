@@ -941,6 +941,36 @@ can be made as large as required by the unchanged T25/T16/T17 local upper-bound 
 
 No new scale mismatch appears.
 
+## 16.1 Audit of where negative divisor order enters the inherited proof
+
+T25's use of \(\lambda_m=0\) was confined to the statement that relation transport is divisor-regular in both directions.
+
+The other inherited ingredients already live over the saturated divisor-local lattice or use divisor-order-zero clearing factors:
+
+- the finite-degree relation quotient is free over \(\mathcal O\);
+- canonical finite jets lie over the slow rational field;
+- slow denominator clearing has \(m\)-order zero;
+- forward functional transport is integral;
+- the dense-orbit zero theorem and Liouville bound do not require \(B_1^{-1}\) to be integral.
+
+Thus the only new negative \(m\)-orders in the \(\lambda_m>0\) branch arise when the inverse functional transport is substituted into a finite-degree auxiliary expression.
+
+The relative Hermite–Padé auxiliary is already an element of divisor order at least \(P_{\rm rel}\). Applying inverse transport to that complete auxiliary expression therefore subtracts at most the degree-\(D_X\) pole allowance of Sections 13–15.
+
+No low-order normalization term is separately forced through an uncontrolled pole: the prescribed polynomial \(P\) enters the same algebraic auxiliary construction, while the exact identity
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
+is recovered only in the final algebraic normalization step inherited from T16.
+
+Consequently replacing the zero pole allowance by the finite bound
+\[
+D_X\mu_m\frac{a^n-1}{a-1}
+\]
+changes the local upper-bound exponent but does not alter the relation ideal, the auxiliary parameter count, or the specialization normalization.
+
+This is the precise point at which the T25 proof extends.
+
 ## 17. Why this does not revive the T24 explicit-\(m^P\) failure
 
 The multiplicity used here is still the T25 **relative cancellation multiplicity**.
@@ -1331,7 +1361,7 @@ T27 creates no theorem-derived scientific workload.
 - "docs/COMPUTE_BUDGET.md": **UNCHANGED**;
 - "docs/METRIC_CATALOG.md": **UNCHANGED**.
 
-The residual principal-fast positive-anchor route is closed theoremically; there is no scientific compute consequence.
+The residual principal-fast positive-anchor route is closed theoretically; there is no scientific compute consequence.
 
 ## 31. Permanent T27 lessons
 
