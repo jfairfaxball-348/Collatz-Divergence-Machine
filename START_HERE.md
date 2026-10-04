@@ -3,51 +3,79 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T25 COMPLETE — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T26 COMPLETE — C: NEW RELATIVE-ALGEBRAIC PERIODICITY THEOREM AND SPECIAL-FIBRE OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T25_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T26_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20–T24 remain closed infrastructure.
-- T25 proves that if the canonical fast count \(\kappa(n)\to\infty\), then every fixed canonical \(m\)-jet coefficient is a finite slow polynomial:
+- T20–T25 remain closed infrastructure.
+- T26 proves that in the live principal-fast expanding class the canonical fast count cannot be bounded. Exact prefix self-similarity gives
   \[
-  [m^j]F_t\in K[\Gamma_{\rm slow}].
+  \kappa(L_R(n))=a\kappa(n),\qquad a\ge2,
   \]
-- The divisor-local ring
+  so bounded monotone \(\kappa\) would force \(\kappa\equiv0\), contradicting the fast generator. Hence
   \[
-  \mathcal O=K(\Gamma_{\rm slow})[m]_{(m)}
+  \kappa(n)\to\infty
   \]
-  is a DVR, and finite-degree contractions of the original relation ideal are \(m\)-saturated/free over \(\mathcal O\).
-- The basis-invariant divisor ramification
+  automatically.
+- T26 proves the relative-algebraic periodicity theorem
   \[
-  \lambda_m=\operatorname{ord}_m(\det B_1)
+  d_{\rm rel}=0\Longrightarrow\text{eventual periodicity}.
   \]
-  vanishes exactly when two-sided relation transport is divisor-regular.
-- Relative Hermite–Padé cancellation gives genuine principal-divisor multiplicity
+  The proof uses a positive-grading one-variable toric specialization, Bézivin's D-finite multiplicative-coefficient rationality theorem, and Skolem–Mahler–Lech on the resulting rational support sets.
+- Therefore genuine aperiodicity automatically forces
   \[
-  P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
+  d_{\rm rel}>0.
   \]
-  after all common explicit \(m\)-factors are removed.
-- The branch
+- On the canonical saturated degree-one lattice, semilinear transport is the linear map from the twisted lattice
   \[
-  \kappa(n)\to\infty,\qquad d_{\rm rel}>0,\qquad\lambda_m=0
+  \Phi:\rho^*\mathscr L_1\to\mathscr L_1.
   \]
-  admits exact mixed-place lifting with
+  T26 proves
+  \[
+  \lambda_m
+  =
+  \operatorname{length}_{\mathcal O}\operatorname{coker}\Phi,
+  \]
+  and
+  \[
+  \lambda_m=0
+  \iff
+  \overline\Phi
+  \text{ is an isomorphism on the special fibre }m=0.
+  \]
+  Thus \(\lambda_m>0\) is exactly canonical special-fibre degeneration.
+- Automatic \(\lambda_m=0\) is **still open/conditional**. No valid canonical principal-fast example with \(\lambda_m>0\) was found.
+- Combining T26 with T25, every genuinely aperiodic principal-fast system with
+  \[
+  \lambda_m=0
+  \]
+  admits exact mixed-place relation lifting with
   \[
   Q(\alpha,\mathbf X)=P(\mathbf X)
   \]
-  and therefore has no genuinely aperiodic positive-integer anchor.
-- If \(d_{\rm rel}=0\), finite-extension valuation theory gives only linear \(m\)-multiplicity growth.
-- Remaining principal-fast cases: bounded \(\kappa\); relative algebraicity; positive relative transcendence with \(\lambda_m>0\).
+  literally preserved.
+- The inherited T21 completion-sign chain excludes positive-integer anchors throughout that divisor-unramified principal-fast class.
+- Under the inherited T2 finite-alphabet anchoring hypotheses,
+  \[
+  \lambda_m=0,\quad R_m\text{ bounded}
+  \Longrightarrow
+  \text{eventual periodicity}.
+  \]
+- The sole residual genuinely aperiodic principal-fast branch is
+  \[
+  \lambda_m>0.
+  \]
+- Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known in the relative-transcendental branch. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit, theory only**
+- Immediate next task: **CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification, theory only**
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -112,6 +140,7 @@ The repository, not conversational memory, is the authoritative research state.
 57. `experiments/CDM4_T23_REPORT.md`
 58. `experiments/CDM4_T24_REPORT.md`
 59. `experiments/CDM4_T25_REPORT.md`
+60. `experiments/CDM4_T26_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
