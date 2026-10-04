@@ -881,30 +881,72 @@ Asynchronous scale matching is possible at the level of growth functions but not
 No Route B analytic counterexample was found. No new positive-anchor class is excluded, and no scientific compute is authorized.
 
 
+**CDM4-T24 closeout.** T24 does not prove exact relation lifting for the genuine unequal-growth principal-high-ideal subclass, but it closes the proposed raw principal-(I)-adic auxiliary repair as a proof-method route.
+
+Assume
+\[
+I_{>1}=(m),\qquad m=\theta^\delta.
+\]
+Equality of monomial ideals implies that every positive character above the slow face is of the form \(\delta+\eta\). Positive max-additivity of T22 profiles together with the positive T21 grading shows that no character can have a profile strictly faster than \(\delta\): otherwise repeated principal division would force arbitrarily many copies of \(\delta\) inside one fixed positive character. Hence the principal subclass has exactly two positive profiles,
+\[
+g_1<g_\delta=g_{\rm fast}.
+\]
+
+T24 also computes the exact pullback order. With
+\[
+a=\max\{j\ge1:A_Y\delta-j\delta\in\Gamma_Y\},
+\]
+one has
+\[
+\rho^*m=u_\delta m^a\theta^\varepsilon,
+\qquad \varepsilon\in\Gamma_{\le1}\cup\{0\},
+\]
+and therefore
+\[
+\operatorname{ord}_I(\rho^{n*}m)=a^n.
+\]
+The (I)-adic order and T22 growth profile need not coincide: in the equal-radius Jordan-extension case the divisor value can have scale \(n^{e_1+1}a^n\) while the exact divisibility order is only \(a^n\).
+
+The combined (w_\Delta/I)-adic Hilbert count is favorable rather than obstructive. If (V(D,P)) denotes monomials with (w_\Delta\le D) and (I)-order at least (P), then
+\[
+\dim V(D,P)=H_{\Gamma_Y}(D-Pw_\Delta(\delta)).
+\]
+Thus a fixed positive ratio (P/D) below (1/w_\Delta(\delta)) retains the full Hilbert degree.
+
+The decisive obstruction is arithmetic. Since
+\[
+I^P=(m^P),
+\]
+every forced (I^P)-auxiliary contribution has an actual common factor (m^P). Along the exact orbit this factor gives fast (2)-adic decay, but the same nonzero algebraic factor has global height on the same fast scale. The product formula / Liouville lower bound therefore pays exactly for the apparent local gain. Dividing by (m^P) removes both contributions, and the functional relation ideal is already (m)-saturated. Raw principal (I)-adic divisibility cannot by itself repair T22's slow-local / fast-global mismatch.
+
+T24 also records that T18 pointwise denominator regularity does not imply (I)-adic-unit localization: a rational denominator may be nonzero at every torus orbit point while still carrying boundary order along (m=0).
+
+No new exact lift, positive-anchor exclusion, T2 periodicity class, explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was obtained. No scientific compute is authorized.
+
+
 ## Immediate next task
 
-**CDM4-T24 — principal-fast-ideal / \(I\)-adic auxiliary exact-lifting audit, theory only.**
+**CDM4-T25 — divisor-saturated / relative-height exact-lifting audit, theory only.**
 
 Treat as closed:
 
 - all T20–T22 infrastructure;
-- T23 slowest-face elimination;
-- T23 exact character-support filtration of the canonical system;
-- T23 dense-orbit analytic zero theorem for principal higher-growth ideal \(I_{>1}\);
-- T23 failure of mere asynchronous scale matching to preserve exact scalar transport;
-- T23 moving-analytic-coefficient obstruction for the general nonprincipal induction.
+- T23 slowest-face elimination and the principal-high-ideal dense-orbit zero theorem;
+- T24's two-profile consequence of principalness;
+- T24's exact pullback order \(\operatorname{ord}_I(\rho^{n*}m)=a^n\);
+- T24's exact Hilbert count for simultaneous \(w_\Delta\)-degree and \(I\)-order;
+- T24's route kill showing that the common principal factor \(m^P\) is Liouville-neutral after its matching global height is accounted for;
+- T24's warning that ordinary regular-tail localization need not preserve \(I\)-adic order.
 
-Primary target: determine whether, in the principal-high-ideal subclass, auxiliary vanishing can be imposed in powers
-\[
-I_{>1}^P
-\]
-so that the local upper bound is measured on the fast ideal scale rather than the slow ambient scale, while retaining enough Hilbert dimension and preserving the exact relation-ideal/Nullstellensatz argument.
+Primary target: work only after principal-factor saturation. Factor every forced \(m^P\) contribution before the Liouville comparison and determine whether a genuine relative-height or multiplicity theorem can produce fast-scale residual smallness for \(E/m^P\), with the known divisor height subtracted on both local and global sides.
 
-A successful theorem must still output
+Any successful theorem must control boundary pole order of relation matrices/localizations, preserve the scalar-active direction, produce an actual algebraic functional identity, and retain exactly
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X).
 \]
 
-If that succeeds, run T21 scalar convergence, pointwise real completion portability and the completion-sign contradiction immediately. If it fails, isolate the exact \(I\)-adic obstruction before returning to the full moving-analytic-coefficient problem.
+If that succeeds, run T21 scalar convergence, pointwise real completion portability and the completion-sign contradiction immediately. If it fails, isolate a theorem-level obstruction to every divisor-saturated relative-height repair before returning to the nonprincipal moving-analytic-coefficient problem.
+
+Do not restart raw unsaturated \(I^P\)-divisibility, asynchronous iterate matching, analytic truncation with next-scale coefficient height, fixed multigrading, or quotient deletion.
 
 No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
