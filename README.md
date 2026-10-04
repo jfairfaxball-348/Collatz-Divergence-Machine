@@ -37,66 +37,76 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T24 is complete — C: NEW PRINCIPAL-I-ADIC STRUCTURAL OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T25 is complete — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND. No new scientific compute is authorized.**
 
-T20–T23 remain closed infrastructure: exact variable-length scalar transport, strict real prefix gap and scalar convergence under a hypothetical positive integer anchor, positive reduced grading, intrinsic multiscale profiles, exact fast-height / slow-contraction asymptotics, scalar-support fullness, slowest-face elimination, and the principal-high-ideal dense-orbit analytic zero theorem.
+T20–T24 remain closed infrastructure.
 
-T24 proves that the principal-high hypothesis is much more rigid than previously recorded. If
+In the T24 principal-fast splitting
 \[
-I_{>1}=(m),\qquad m=\theta^\delta,
-\]
-then there are exactly two positive growth profiles and the reduced positive semigroup splits as
-\[
-\Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow}.
-\]
-The generator \(m\) lies on the unique fastest positive profile; intermediate or further faster profiles cannot be hidden in its powers.
-
-Writing
-\[
-A_Y\delta=a\delta+\eta,
+\Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow},
 \qquad
-\eta\in\Gamma_{\rm slow},
+m=\theta^\delta,
 \]
-one has
+T25 introduces the canonical fast count
 \[
-\rho^*m=u\,m^a\theta^\eta,
-\qquad
-\operatorname{ord}_I(\rho^{n*}m)=a^n.
+\kappa(n)=\sum_{i<n}\kappa_{u_i}.
 \]
-The \(I\)-adic order can still differ from the full growth profile: equal-radius lower-stratum forcing can contribute an extra polynomial factor.
 
-A true factor
+If
 \[
-m^P
+\kappa(n)\to\infty,
 \]
-does evaluate on the exact orbit with fast \(2\)-adic decay
+every fixed canonical \(m\)-jet coefficient is a finite slow polynomial:
 \[
--\log|m(q_n)^P|_2=\Theta(Pg_{\rm fast}(n)).
+[m^j]F_t\in K[\Gamma_{\rm slow}].
 \]
-The T24 obstruction is the auxiliary construction. Exact divisorial order is relative:
-\[
-\mathcal A_Y/I^P
-\cong
-\bigoplus_{k=0}^{P-1}m^k\mathcal A_{\rm slow},
-\]
-so imposing
-\[
-E\in I^P
-\]
-means killing complete slow analytic coefficient functions. It is not the finite-codimensional point-order condition used in the T16/T17 Mahler auxiliary argument.
 
-Finite slow truncation leaves a slow-scale remainder and restores the T22 fast/slow mismatch. Explicit multiplication by \(m^P\) consumes ordinary support degree linearly and creates no independent multiplicity amplification. In addition, a denominator may avoid every orbit point while having positive \(m\)-order, so ordinary regularity does not guarantee divisor-regular relation matrices.
+The correct divisor-local coefficient ring is
+\[
+\mathcal O=K(\Gamma_{\rm slow})[m]_{(m)},
+\]
+a DVR. Finite-degree relation modules are \(m\)-saturated and free over \(\mathcal O\).
 
-Accordingly T24 does **not** prove new exact relation lifting and does not obtain
+T25 defines the basis-invariant divisor ramification
+\[
+\lambda_m=\operatorname{ord}_m(\det B_1).
+\]
+Two-sided divisor-regular relation transport is available exactly when
+\[
+\lambda_m=0.
+\]
+
+Relative Hermite–Padé cancellation over the slow rational field produces genuine principal-divisor multiplicity:
+\[
+P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
+\]
+after all common explicit \(m\)-factors are removed.
+
+If
+\[
+d_{\rm rel}>0
+\quad\text{and}\quad
+\lambda_m=0,
+\]
+the T16/T17 mixed-place lifting architecture rebuilds over the divisor-regular lattice and preserves
 \[
 Q(\alpha,\mathbf X)=P(\mathbf X)
 \]
-for any new unequal-growth class. No new positive-integer anchor class is excluded.
+exactly. The inherited T21 real-convergence/sign argument excludes genuinely aperiodic positive-integer anchors in this newly closed subclass.
 
-The next live theorem is **CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit**. It must decide whether exact high \(m\)-adic order can be produced by cancellation over the slow analytic base using algebraic/rational coefficient functions of controlled degree and height, while preserving divisor-regular localization and exact specialization.
+If
+\[
+d_{\rm rel}=0,
+\]
+finite-extension valuation theory gives only a linear \(m\)-multiplicity ceiling.
+
+The residual principal-fast cases are: bounded \(\kappa\); relative algebraicity; and positive relative transcendence with \(\lambda_m>0\).
+
+The next live theorem is **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit**.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T24_REPORT.md` before doing research.
+Read \`AGENTS.md\`, \`START_HERE.md\`, the required prior reports, and \`experiments/CDM4_T25_REPORT.md\` before doing research.
+
