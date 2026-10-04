@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T22 COMPLETE — CLASSIFICATION D: NO QUALIFYING THEOREM FOUND; NO NEW SCIENTIFIC COMPUTE.**
+**Status: CDM4-T25 COMPLETE — CLASSIFICATION C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T22_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T25_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -946,28 +946,90 @@ T24 is classified **C — new recursive-language obstruction found** in the proj
 No explicit anchored aperiodic word, candidate, unbounded orbit or counterexample was found. No scientific compute is authorized.
 
 
+## CDM4-T25 closeout
+
+T25 refines the T24 principal-fast obstruction into a relative semilinear problem over the slow rational field.
+
+If the canonical fast count
+\[
+\kappa(n)=\sum_{i<n}\kappa_{u_i}
+\]
+tends to infinity, every fixed canonical \(m\)-jet coefficient lies in
+\[
+K[\Gamma_{\rm slow}].
+\]
+Thus the recursively generated finite jets are algebraic over the slow base even though the unrestricted analytic quotient modulo \(m^P\) is infinite dimensional.
+
+The divisor-local ring is
+\[
+\mathcal O=K(\Gamma_{\rm slow})[m]_{(m)},
+\]
+a DVR. Finite-degree relation modules are \(m\)-saturated and free over \(\mathcal O\).
+
+The induced semilinear transport has the divisor ramification invariant
+\[
+\lambda_m=\operatorname{ord}_m(\det B_1),
+\]
+which is unchanged by \(GL_r(\mathcal O)\) basis changes. Two-sided divisor-regular transport exists exactly when
+\[
+\lambda_m=0.
+\]
+
+Relative Hermite–Padé cancellation over the slow rational field produces genuine divisor multiplicity:
+\[
+P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
+\]
+after every common explicit \(m\)-factor is removed.
+
+If
+\[
+d_{\rm rel}>0
+\quad\text{and}\quad
+\lambda_m=0,
+\]
+the T16/T17 mixed-place relation-lifting proof rebuilds over the divisor-regular lattice and preserves
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
+exactly. The inherited T21 real-convergence/sign argument excludes genuinely aperiodic positive-integer anchors in this newly closed subclass.
+
+If
+\[
+d_{\rm rel}=0,
+\]
+finite-extension valuation theory gives only a linear multiplicity ceiling. The bounded-\(\kappa\) branch remains a finite \(m\)-degree system with slow analytic coefficients.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## Immediate next task
 
-**CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit, theory only.**
+**CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit, theory only.**
 
 Treat as closed:
 
-- all T20–T22 infrastructure;
-- T23 slowest-face elimination and principal-high-ideal zero theorem;
-- T24 principal two-profile/direct-product theorem;
-- T24 exact pullback order \(\operatorname{ord}_I(\rho^{n*}m)=a^n\);
-- T24 failure of bare finite-codimensional \(I^P\) auxiliary replacement;
-- T24 explicit-factor neutrality and divisor-denominator warning.
+- all T20–T24 infrastructure;
+- the T25 canonical fast-count dichotomy;
+- the T25 divisor DVR and \(m\)-saturated finite-degree relation lattices;
+- the invariant \(\lambda_m\);
+- relative Hermite–Padé multiplicity;
+- the relative-algebraic valuation ceiling;
+- exact lifting and positive-anchor exclusion for
+  \[
+  \kappa(n)\to\infty,\quad d_{\rm rel}>0,\quad\lambda_m=0.
+  \]
 
-Primary target: determine whether the canonical state functions admit a relative \(m\)-adic multiplicity theorem over the slow analytic coefficient algebra which produces exact high \(m\)-order by cancellation using algebraic/rational coefficient functions of controlled degree and height.
+Primary targets:
 
-The same theorem must support relation matrices over a divisor-regular localization and preserve exactly
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X).
-\]
+1. prove or disprove automatic divisor-unramifiedness
+   \[
+   \lambda_m=0
+   \]
+   for the canonical saturated difference module;
+2. prove or disprove that genuine aperiodicity with unbounded fast count forces
+   \[
+   d_{\rm rel}>0;
+   \]
+3. close or sharply classify the bounded-\(\kappa\) finite \(m\)-coefficient branch while preserving exact specialization.
 
-Audit Zorin's stable-ideal multiplicity framework first, but verify the exact coefficient field, divisor order, completion, height, regularity and specialization hypotheses before use.
+No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-If a positive relative theorem is obtained, run the Liouville comparison and completion-sign chain immediately. If it fails, isolate a quantitative upper bound or an algebraicity obstruction for attainable \(m\)-adic multiplicity.
-
-No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
