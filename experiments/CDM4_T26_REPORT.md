@@ -1,0 +1,1557 @@
+# CDM4-T26 — CANONICAL DIVISOR-UNRAMIFIEDNESS / RELATIVE-TRANSCENDENCE COMPLETION AUDIT
+
+**Date:** 2026-10-04  
+**Authoritative input:** T25 branch 'cdm4-t25-relative-slow-base-audit', commit '2916fdbf689ef721f7c588ef8e01dad513012d0a'.  
+**Authority verification:** the stated T25 commit and branch were verified before research. T25 had not been merged into 'main'; the histories were divergent with merge base '3a3df26b59d6f9f42f779c6333c5a0ee97ad95eb'. T26 therefore uses the exact T25 tip as authority.  
+Scientific starts: **0**. Candidate trajectories: **0**. Substitution enumeration: **NONE**. CPU/GPU/cloud/distributed scientific work: **NONE**. Explicit anchored aperiodic word: **NO**. Unbounded orbit: **NO**. Counterexample claimed: **NO**.
+
+## 1. Executive result
+
+T26 closes two of the three residual T25 principal-fast branches and identifies the remaining divisor obstruction intrinsically.
+
+The canonical principal-fast setting is
+
+\[
+\Gamma_Y\cong \mathbb N\delta\oplus\Gamma_{\rm slow},
+\qquad
+m=\theta^\delta,
+\qquad
+\pi_Y(e_s)=\kappa_s\delta+\eta_s.
+\]
+
+T25 left three residual cases:
+
+1. bounded canonical fast count \(\kappa(n)\);
+2. unbounded \(\kappa(n)\) with \(d_{\rm rel}=0\);
+3. unbounded \(\kappa(n)\), \(d_{\rm rel}>0\), and \(\lambda_m>0\).
+
+T26 proves that the first case is empty in the live expanding principal-fast class and that the second case is eventually periodic. Thus every genuinely aperiodic principal-fast system automatically satisfies
+
+\[
+\boxed{
+\kappa(n)\to\infty
+\qquad\text{and}\qquad
+d_{\rm rel}>0.
+}
+\]
+
+The only genuinely aperiodic principal-fast obstruction left after T26 is
+
+\[
+\boxed{\lambda_m>0.}
+\]
+
+### T26-A — exact special-fibre meaning of \(\lambda_m\)
+
+Let
+
+\[
+\mathcal O=K(\Gamma_{\rm slow})[m]_{(m)},
+\qquad
+F=\mathcal O/(m)=K(\Gamma_{\rm slow}),
+\]
+
+and let \(\mathscr L_1\) be the free saturated degree-one relation quotient from T25.
+
+Semilinear transport is equivalently an ordinary \(\mathcal O\)-linear map
+
+\[
+\Phi:\rho^*\mathscr L_1\longrightarrow \mathscr L_1,
+\qquad
+\rho^*\mathscr L_1
+=
+\mathcal O\otimes_{\rho^*,\mathcal O}\mathscr L_1.
+\]
+
+If \(B_1\) is its matrix and
+
+\[
+\lambda_m=\operatorname{ord}_m(\det B_1),
+\]
+
+then
+
+\[
+\boxed{
+\lambda_m
+=
+\operatorname{length}_{\mathcal O}\operatorname{coker}\Phi.
+}
+\]
+
+Equivalently,
+
+\[
+\boxed{
+\lambda_m=0
+\iff
+\overline\Phi:
+F\otimes_{\sigma,F}(\mathscr L_1/m\mathscr L_1)
+\longrightarrow
+\mathscr L_1/m\mathscr L_1
+\text{ is an isomorphism}.
+}
+\]
+
+Thus
+
+\[
+\boxed{
+\lambda_m>0
+\iff
+\text{the canonical saturated transport degenerates on the special fibre }m=0.
+}
+\]
+
+If the elementary divisors are
+
+\[
+m^{e_1},\ldots,m^{e_r},
+\qquad
+e_i\ge0,
+\]
+
+then
+
+\[
+\lambda_m=\sum_i e_i,
+\]
+
+while the number of positive \(e_i\) is the rank loss on the special fibre.
+
+This is the intrinsic Fitting/elementary-divisor classification requested in T26.
+
+It does **not** prove that the canonical Collatz module always has \(\lambda_m=0\). No valid canonical principal-fast example with \(\lambda_m>0\) was constructed either. Therefore:
+
+\[
+\boxed{
+\lambda_m=0\text{ is still conditional, but }\lambda_m>0
+\text{ now has an exact structural meaning.}
+}
+\]
+
+### T26-B — genuine aperiodicity forces positive relative transcendence
+
+Put
+
+\[
+L=K(\Gamma_{\rm slow})(m)
+\]
+
+and
+
+\[
+d_{\rm rel}
+=
+\operatorname{trdeg}_L L(G_1,\ldots,G_r).
+\]
+
+T26 proves
+
+\[
+\boxed{
+d_{\rm rel}=0
+\Longrightarrow
+\text{the underlying finite-state fixed-point word is eventually periodic}.
+}
+\]
+
+Hence
+
+\[
+\boxed{
+\text{genuine aperiodicity}
+\Longrightarrow
+d_{\rm rel}>0.
+}
+\]
+
+The proof is not an inference from nonrationality over a smaller field. It uses the exact relative-algebraic hypothesis over \(L\), a one-variable toric specialization compatible with the positive T21 grading, Bézivin's theorem for D-finite series with coefficients in a finitely generated multiplicative group, and Skolem–Mahler–Lech on the support sets.
+
+This strictly supersedes the T25 finite-extension multiplicity ceiling as the structural conclusion in the \(d_{\rm rel}=0\) branch.
+
+### T26-C — bounded \(\kappa\) is impossible
+
+T24 gives
+
+\[
+A_Y\delta=a\delta+\eta,
+\qquad
+a\ge\rho_{\rm slow}.
+\]
+
+T22's live positive profiles have exponential radius \(>1\), so
+
+\[
+a>1,
+\qquad
+a\in\mathbb Z,
+\qquad
+\boxed{a\ge2.}
+\]
+
+For the exact substituted-prefix endpoint \(L_R(n)\),
+
+\[
+\pi_Y(c(L_R(n)))=A_Y\pi_Y(c(n)).
+\]
+
+Taking fast degree gives
+
+\[
+\boxed{
+\kappa(L_R(n))=a\kappa(n).
+}
+\]
+
+If \(\kappa(n)\) were bounded, its monotonicity would make it eventually constant, say \(J\). For large \(n\),
+
+\[
+J=\kappa(L_R(n))=a\kappa(n)=aJ.
+\]
+
+Since \(a\ge2\),
+
+\[
+J=0.
+\]
+
+Monotonicity and \(\kappa(0)=0\) then force \(\kappa(n)=0\) for every \(n\). Every reachable letter occurs in the fixed point, so every \(\kappa_s=0\). The positive semigroup generated by the reduced letter generators would then be entirely slow, contradicting the existence of the fast generator \(\delta\).
+
+Therefore
+
+\[
+\boxed{
+\text{bounded }\kappa\text{ cannot occur in the live principal-fast class.}
+}
+\]
+
+### T26-D — upgraded exact lifting class
+
+Combining T26-B and T26-C with T25 gives:
+
+\[
+\boxed{
+\text{genuinely aperiodic principal-fast}
+\quad+\quad
+\lambda_m=0
+}
+\]
+
+automatically satisfies the full T25 lifting hypotheses
+
+\[
+\kappa(n)\to\infty,
+\qquad
+d_{\rm rel}>0,
+\qquad
+\lambda_m=0.
+\]
+
+Hence every input value relation lifts with
+
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X)
+}
+\]
+
+literally.
+
+The T21 completion-sign chain applies immediately under a hypothetical positive integer anchor. Therefore no genuinely aperiodic divisor-unramified principal-fast system has a positive integer anchor.
+
+The remaining genuinely aperiodic principal-fast branch is exactly the divisor-degenerate case
+
+\[
+\lambda_m>0.
+\]
+
+No scientific computation follows.
+
+---
+
+## 2. Inherited T25 state
+
+T26 treats as closed:
+
+- T20 exact variable-length endpoint and scalar transport;
+- T21 algebraicity of ordinary-prefix extrema and the strict positive-integer real gap;
+- T21 positive expanding reduced grading \(w_\Delta\);
+- T22 intrinsic reduced growth profiles and scalar-support fullness;
+- T23 principal-high dense-orbit analytic zero theorem;
+- T24 two-profile direct-product splitting;
+- T24 exact pullback
+  \[
+  \rho^*m=c\,m^a;
+  \]
+- T25 canonical finite-jet theorem under \(\kappa\to\infty\);
+- the divisor DVR
+  \[
+  \mathcal O=K(\Gamma_{\rm slow})[m]_{(m)};
+  \]
+- finite-degree \(m\)-saturation and freeness;
+- the invariant \(\lambda_m\);
+- relative Hermite–Padé multiplicity;
+- the T25 finite-extension linear valuation ceiling;
+- exact lifting and positive-anchor exclusion when
+  \[
+  \kappa\to\infty,\quad d_{\rm rel}>0,\quad\lambda_m=0.
+  \]
+
+No part of this infrastructure is reproved.
+
+---
+
+## 3. Target A — the canonical divisor module as a twisted lattice map
+
+### 3.1 The coefficient endomorphism cannot be ignored
+
+Let
+
+\[
+F=K(\Gamma_{\rm slow}),
+\qquad
+\mathcal O=F[m]_{(m)}.
+\]
+
+T25 gives
+
+\[
+\rho^*m=c\,m^a,
+\qquad
+c\in F^\times,
+\]
+
+and the induced injective slow-field endomorphism
+
+\[
+\sigma=\rho^*|_F:F\to F.
+\]
+
+Thus a semilinear map
+
+\[
+v\longmapsto B_1\rho^*(v)
+\]
+
+is not an ordinary linear self-map of \(\mathscr L_1\).
+
+The correct linearization is the twisted source
+
+\[
+\rho^*\mathscr L_1
+=
+\mathcal O\otimes_{\rho^*,\mathcal O}\mathscr L_1.
+\]
+
+Because \(\mathscr L_1\) is free of finite rank, the twist is also free of the same rank as a left \(\mathcal O\)-module.
+
+The semilinear transport becomes the ordinary \(\mathcal O\)-linear map
+
+\[
+\Phi:
+\rho^*\mathscr L_1
+\to
+\mathscr L_1.
+\]
+
+This is the object to which ordinary DVR elementary-divisor theory applies.
+
+### 3.2 Theorem T26.1 — Fitting length equals divisor ramification
+
+Let \(\mathscr L_1\) have rank \(r\). Since T25 proves that the rational transport is invertible,
+
+\[
+\det B_1\ne0.
+\]
+
+Therefore
+
+\[
+C:=\operatorname{coker}\Phi
+\]
+
+is a finite torsion \(\mathcal O\)-module.
+
+Because \(\mathcal O\) is a DVR, Smith normal form gives bases of the twisted source and target for which
+
+\[
+\Phi
+\sim
+\operatorname{diag}
+(m^{e_1},\ldots,m^{e_r}),
+\qquad
+e_i\ge0.
+\]
+
+Consequently
+
+\[
+C
+\cong
+\bigoplus_{i=1}^r
+\mathcal O/(m^{e_i}),
+\]
+
+and
+
+\[
+\operatorname{Fitt}_0(C)
+=
+(\det B_1)
+=
+(m^{\sum_i e_i})
+\]
+
+up to a unit.
+
+Thus
+
+\[
+\boxed{
+\lambda_m
+=
+\operatorname{ord}_m(\det B_1)
+=
+\sum_i e_i
+=
+\operatorname{length}_{\mathcal O}C.
+}
+\]
+
+This proof uses the semilinear coefficient endomorphism correctly: elementary-divisor theory is applied to the \(\mathcal O\)-linear map from the twisted source, not to a falsely linearized self-map.
+
+### 3.3 Special-fibre criterion
+
+Reducing the twisted map modulo \(m\) gives
+
+\[
+\overline\Phi:
+F\otimes_{\sigma,F}
+(\mathscr L_1/m\mathscr L_1)
+\longrightarrow
+\mathscr L_1/m\mathscr L_1.
+\]
+
+Both sides have dimension \(r\) over \(F\).
+
+In Smith form,
+
+\[
+\overline\Phi
+\sim
+\operatorname{diag}(\epsilon_1,\ldots,\epsilon_r),
+\]
+
+where
+
+\[
+\epsilon_i=
+\begin{cases}
+1,&e_i=0,\\
+0,&e_i>0.
+\end{cases}
+\]
+
+Therefore
+
+\[
+\boxed{
+\lambda_m=0
+\iff
+\overline\Phi\text{ has full rank}
+\iff
+\overline\Phi\text{ is an isomorphism}.
+}
+\]
+
+And
+
+\[
+\boxed{
+\lambda_m>0
+\iff
+\operatorname{rank}_F\overline\Phi<r.
+}
+\]
+
+The number of positive elementary divisors records the first-order rank defect, while their sum records the total divisor depth.
+
+This is the exact desired statement
+
+\[
+\boxed{
+\lambda_m>0
+\Longleftrightarrow
+\text{degeneration of the canonical saturated special fibre}.
+}
+\]
+
+### 3.4 Canonical polynomial system before rational minimalization
+
+The exact T20 canonical matrix for the selected iterate can be written, after restriction to the T18 coset and the T24 splitting, in the form
+
+\[
+\mathcal A_{t,s}
+=
+\sum_{\substack{0\le r<|\sigma^R(s)|\\
+\sigma^R(s)_r=t}}
+b_{s,r}\,
+m^{\kappa(p_{s,r})}
+\theta^{\eta(p_{s,r})},
+\]
+
+where:
+
+- \(p_{s,r}\) is the Parikh vector of the prefix of \(\sigma^R(s)\) of length \(r\);
+- \(b_{s,r}\in\overline{\mathbb Q}^\times\) is the fixed torus-translation coefficient;
+- \(\kappa(p_{s,r})\ge0\).
+
+Modulo \(m\),
+
+\[
+\boxed{
+\overline{\mathcal A}_{t,s}
+=
+\sum_{\substack{r:\sigma^R(s)_r=t\\
+\kappa(p_{s,r})=0}}
+\overline b_{s,r}\,
+\theta^{\eta(p_{s,r})}.
+}
+\]
+
+Since every letter fast degree is nonnegative,
+
+\[
+\kappa(p_{s,r})=0
+\]
+
+exactly when no earlier letter in that substituted block prefix has positive fast degree.
+
+Thus the raw canonical special fibre performs a precise **first-fast cut**:
+
+- every position before the first fast-contributing letter survives;
+- the first fast-contributing letter itself survives because its prefix excludes it;
+- every later position is killed modulo \(m\).
+
+The invariant \(\lambda_m\) is not the determinant order of this raw matrix unless the raw state system is already the saturated degree-one quotient. One must first pass through the exact T18/T25 relation contraction and saturation. The correct special-fibre criterion is the rank of the induced map \(\overline\Phi\).
+
+### 3.5 What the inherited structures do and do not force
+
+T26 audits each proposed route.
+
+**Scalar preservation.** The canonical scalar gives a distinguished nonzero state direction and exact reconstruction row. It does not imply full rank of the entire special-fibre transport.
+
+**Boundary/constant term.** Every canonical column has at least the \(r=0\) term before quotienting, so the raw special fibre is not the zero map. Nonzero is weaker than full rank.
+
+**Injectivity of the reduced torus map.** This makes \(\sigma\) and the rational pullback injective. It does not prevent the state transport matrix from losing rank modulo the boundary divisor.
+
+**\(m\)-saturation.** Saturation proves that \(\mathscr L_1\) itself has no \(m\)-torsion. The module
+\[
+\operatorname{coker}\Phi
+\]
+is a different object. Its length is exactly \(\lambda_m\).
+
+**Principal-fast direct product.** This canonically isolates the valuation \(m=0\) and makes the first-fast cut exact. It does not imply that the surviving boundary prefixes span all state directions.
+
+**Exact slow quotient.** Exact reduction modulo \(m\) produces a valid slow-boundary system, but exactness of the quotient does not imply that the induced transport is an automorphism.
+
+**Fitting ideals / elementary divisors.** These diagnose the obstruction completely:
+\[
+\operatorname{Fitt}_0(\operatorname{coker}\Phi)
+=
+(m^{\lambda_m}),
+\]
+but they do not force the ideal to be the unit ideal.
+
+No inherited theorem therefore proves automatic \(\lambda_m=0\).
+
+### 3.6 Non-unimodular lattice changes and local slopes
+
+Let
+
+\[
+U\in GL_r(L)
+\]
+
+be a rational change of lattice/basis with
+
+\[
+q=\operatorname{ord}_m(\det U).
+\]
+
+The semilinear matrix transforms as
+
+\[
+B_1'
+=
+U B_1\rho^*(U^{-1}).
+\]
+
+Since
+
+\[
+\operatorname{ord}_m(\rho^*f)
+=
+a\,\operatorname{ord}_m(f),
+\]
+
+one obtains
+
+\[
+\boxed{
+\operatorname{ord}_m(\det B_1')
+=
+\lambda_m-(a-1)q.
+}
+\]
+
+Thus a non-unimodular commensurable lattice can change the determinant valuation.
+
+This is precisely why a regular-singular or slope-theoretic gauge over the fraction field cannot be substituted silently for the canonical saturated lattice. A change with \(q\ne0\) changes the lattice covolume and generally changes the special fibre.
+
+For
+
+\[
+U\in GL_r(\mathcal O),
+\]
+
+one has \(q=0\), recovering the T25 invariance.
+
+The Newton-polygon viewpoint is therefore useful for classifying possible commensurable lattices, but it does not prove that the canonical exact-specialization lattice is étale.
+
+### 3.7 Target-A status
+
+\[
+\boxed{
+\lambda_m=0\text{ automatic? UNKNOWN / STILL CONDITIONAL.}
+}
+\]
+
+What is now proved is the exact intrinsic criterion:
+
+\[
+\boxed{
+\lambda_m=0
+\iff
+\text{canonical saturated transport is special-fibre bijective}.
+}
+\]
+
+A positive value means a genuine canonical boundary degeneration, measured by the elementary-divisor length.
+
+---
+
+## 4. Target B — relative algebraicity forces eventual periodicity
+
+### 4.1 From \(d_{\rm rel}=0\) to algebraic canonical state functions
+
+Let
+
+\[
+L=K(\Gamma_{\rm slow})(m).
+\]
+
+Because the T24 positive semigroup spans the reduced character lattice,
+
+\[
+L=K(Y)
+\]
+
+up to the fixed algebraic torus translation.
+
+Assume
+
+\[
+d_{\rm rel}=0.
+\]
+
+Then
+
+\[
+E=L(G_1,\ldots,G_r)
+\]
+
+is finite algebraic over \(L\).
+
+The T18 scalar-preserving minimalization reconstructs every canonical state function \(F_t|_Y\) by a rational row over \(L\) from \(\mathbf G\). Hence every
+
+\[
+F_t|_Y
+\]
+
+is algebraic over \(K(Y)\).
+
+This uses relative algebraicity over the full reduced function field. No conclusion is drawn merely from nonrationality or transcendence over a smaller number field.
+
+### 4.2 The positive grading gives a collision-free one-variable support
+
+Let
+
+\[
+w=w_\Delta:N_Y\to\mathbb Z
+\]
+
+be the T21 positive grading and put
+
+\[
+\gamma_n=\pi_Y(c(n)),
+\qquad
+W_n=w(\gamma_n).
+\]
+
+Then
+
+\[
+W_{n+1}-W_n
+=
+w(\pi_Y(e_{u_n}))
+=
+d_{u_n}>0.
+\]
+
+Thus
+
+\[
+\boxed{W_0<W_1<W_2<\cdots.}
+\]
+
+After translating the torus coset, each canonical state has the exact expansion
+
+\[
+F_t|_Y
+=
+\sum_{n:u_n=t}
+a_n\theta^{\gamma_n},
+\qquad
+a_n\in\overline{\mathbb Q}^{\times}.
+\]
+
+The coefficients \(a_n\) lie in a finitely generated multiplicative group: they are products of the finitely many algebraic coordinate values of the fixed translating torus point, with exponents given by the Parikh vector.
+
+### 4.3 Generic toric one-variable specialization
+
+Choose an algebraic torus point
+
+\[
+\zeta\in H(\overline{\mathbb Q})
+\]
+
+and define
+
+\[
+\psi_\zeta(\theta^\gamma)
+=
+\zeta^\gamma z^{w(\gamma)}.
+\]
+
+This sends the positive semigroup algebra to \(\overline{\mathbb Q}[z]\) and the group algebra to \(\overline{\mathbb Q}[z,z^{-1}]\).
+
+For a fixed nonzero algebraic relation of \(F_t\), clear denominators first. At least one Laurent-polynomial coefficient is nonzero. Its weighted homogeneous pieces are nonzero Laurent polynomials in \(\zeta\). Since algebraic torus points are Zariski dense, \(\zeta\) can be chosen so that the specialized relation does not collapse identically.
+
+Therefore
+
+\[
+f_t(z)
+:=
+\psi_\zeta(F_t)
+=
+\sum_{n:u_n=t}
+b_n z^{W_n}
+\]
+
+is algebraic over \(\overline{\mathbb Q}(z)\), where
+
+\[
+b_n=a_n\zeta^{\gamma_n}\ne0.
+\]
+
+The strict increase of \(W_n\) means there is at most one canonical term at each ordinary exponent.
+
+Moreover all nonzero \(b_n\) lie in one finitely generated subgroup of \(\overline{\mathbb Q}^{\times}\), generated by finitely many translation constants and the finitely many values
+
+\[
+\zeta^{\pi_Y(e_s)}.
+\]
+
+Thus the ordinary coefficient sequence of \(f_t\) lies in
+
+\[
+G_t\cup\{0\}
+\]
+
+for a finitely generated multiplicative group \(G_t\).
+
+### 4.4 Bézivin applies exactly
+
+An algebraic power series in characteristic zero is D-finite.
+
+Bézivin's theorem states that if
+
+\[
+f(z)=\sum_{k\ge0}c_k z^k
+\]
+
+is D-finite over a characteristic-zero field and every coefficient satisfies
+
+\[
+c_k\in G\cup\{0\}
+\]
+
+for one finitely generated multiplicative group \(G\), then \(f\) is rational.
+
+The hypotheses above match literally. Hence every specialized canonical state series satisfies
+
+\[
+\boxed{
+f_t(z)\in\overline{\mathbb Q}(z).
+}
+\]
+
+No Mahler regularity, no value specialization, and no unproved multivariate algebraic-to-rational theorem is used in this step.
+
+### 4.5 Rational support implies eventual periodicity of the word
+
+Because \(f_t\) is rational, its coefficient sequence satisfies a constant-coefficient linear recurrence.
+
+By Skolem–Mahler–Lech, its zero set is a finite union of arithmetic progressions together with a finite set.
+
+Since every occupied coefficient \(b_n\) is nonzero, the support is exactly
+
+\[
+S_t
+=
+\{W_n:u_n=t\}.
+\]
+
+Therefore each \(S_t\) is eventually periodic as a subset of \(\mathbb N\).
+
+Take one common period \(P\) and threshold for the finite alphabet. Beyond that threshold, each residue class modulo \(P\) is either:
+
+- never occupied; or
+- always occupied by exactly one state label \(t\).
+
+The sets \(S_t\) are disjoint, and their union is
+
+\[
+\{W_n:n\ge0\}.
+\]
+
+Every sufficiently large interval of length \(P\) therefore contains the same ordered list of occupied residues carrying the same ordered list of state labels.
+
+Enumerating the occupied exponents in increasing order gives an eventually repeated finite block of letters.
+
+Hence:
+
+### Theorem T26.2 — relative algebraicity periodicity theorem
+
+\[
+\boxed{
+d_{\rm rel}=0
+\Longrightarrow
+u\text{ is eventually periodic}.
+}
+\]
+
+Consequently,
+
+\[
+\boxed{
+u\text{ genuinely aperiodic}
+\Longrightarrow
+d_{\rm rel}>0.
+}
+\]
+
+This is the exact T26 Target-B conclusion.
+
+### 4.6 Strongest status under \(d_{\rm rel}=0\)
+
+The T25 norm argument remains correct. After choosing a place \(\mathfrak p\) of the finite extension \(E/L\) over \(m=0\) and one fixed integral model, the norm identity has the form
+
+\[
+v_m(N_{E/L}x)
+=
+\sum_{\mathfrak q\mid(m)}
+f_{\mathfrak q}\,v_{\mathfrak q}(x).
+\]
+
+After fixed denominator normalization this gives a selected-place valuation bound linear in the coefficient/state degrees; ramification and residue degrees alter only the fixed constant.
+
+Therefore the strongest generic quantitative multiplicity statement remains linear:
+
+\[
+\operatorname{ord}_{\mathfrak p}(E)
+\le
+C_{\mathfrak p}(D_f+D_X+1).
+\]
+
+T26 does not manufacture a superlinear norm bound.
+
+But the branch is now structurally much stronger:
+
+\[
+\boxed{
+d_{\rm rel}=0
+\Longrightarrow
+\text{eventual periodicity}.
+}
+\]
+
+Accordingly there is no need to tune the linear constant against the exact Liouville coefficient in order to exclude a genuinely aperiodic positive anchor.
+
+---
+
+## 5. Target C — bounded fast count is empty
+
+### 5.1 The divisor pullback exponent is at least two
+
+T24 writes
+
+\[
+A_Y\delta=a\delta+\eta,
+\qquad
+\eta\in\Gamma_{\rm slow},
+\]
+
+and proves
+
+\[
+a\ge\rho_1,
+\]
+
+where the slow profile is
+
+\[
+g_1(n)\asymp n^{e_1}\rho_1^n.
+\]
+
+In the live T18/T21 expanding reduced tail, T22 proves that every nonzero positive profile has
+
+\[
+\rho_1>1.
+\]
+
+Since
+
+\[
+a\in\mathbb Z,
+\]
+
+it follows that
+
+\[
+\boxed{a\ge2.}
+\]
+
+### 5.2 Fast degree scales exactly under the selected iterate
+
+For any positive reduced character
+
+\[
+\gamma=k\delta+\xi,
+\qquad
+\xi\in\Gamma_{\rm slow},
+\]
+
+one has
+
+\[
+A_Y\gamma
+=
+ka\delta+(k\eta+A_Y\xi).
+\]
+
+The parenthesized term is slow, so uniqueness of the T24 splitting gives
+
+\[
+\boxed{
+\kappa(A_Y\gamma)=a\kappa(\gamma).
+}
+\]
+
+T20 gives the exact selected-iterate prefix identity
+
+\[
+c(L_R(n))=M^Rc(n).
+\]
+
+Passing to the T18 quotient gives
+
+\[
+\pi_Y(c(L_R(n)))
+=
+A_Y\pi_Y(c(n)).
+\]
+
+Hence
+
+\[
+\boxed{
+\kappa(L_R(n))=a\kappa(n).
+}
+\]
+
+### 5.3 Theorem T26.3 — bounded-\(\kappa\) impossibility
+
+Assume \(\kappa(n)\) is bounded.
+
+T25 proved that \(\kappa(n)\) is a nondecreasing sequence of nonnegative integers. Therefore it is eventually constant:
+
+\[
+\kappa(n)=J
+\qquad(n\ge N).
+\]
+
+The morphism is nonerasing, so
+
+\[
+L_R(n)\ge n.
+\]
+
+For \(n\ge N\),
+
+\[
+J
+=
+\kappa(L_R(n))
+=
+a\kappa(n)
+=
+aJ.
+\]
+
+Since \(a\ge2\),
+
+\[
+J=0.
+\]
+
+A nondecreasing nonnegative sequence beginning at zero and eventually equal to zero is identically zero:
+
+\[
+\kappa(n)=0
+\qquad\forall n.
+\]
+
+Therefore every letter that occurs has
+
+\[
+\kappa_s=0.
+\]
+
+Every reachable letter occurs in the prolongable fixed point, and the positive semigroup
+
+\[
+\Gamma_Y=\pi_Y(\mathbb N^m)
+\]
+
+is generated by the reduced letter generators. If every one of those generators is slow, max-additivity of positive profiles makes every element of \(\Gamma_Y\) slow.
+
+This contradicts the existence of the principal fast generator
+
+\[
+\delta\in\Gamma_Y.
+\]
+
+Therefore:
+
+\[
+\boxed{
+\kappa(n)\text{ is necessarily unbounded in every live principal-fast system.}
+}
+\]
+
+Since it is nondecreasing,
+
+\[
+\boxed{\kappa(n)\to\infty.}
+\]
+
+The T25 bounded-\(\kappa\) coefficient system is therefore a formal dichotomy branch that cannot occur under the full T21–T24 principal-fast hypotheses.
+
+No descent/lifting of that finite coefficient system is needed, and the exact-specialization question for that branch is vacuous.
+
+---
+
+## 6. Exact relation lifting after T26
+
+For a genuinely aperiodic principal-fast system, Theorems T26.2 and T26.3 give automatically
+
+\[
+\kappa(n)\to\infty
+\]
+
+and
+
+\[
+d_{\rm rel}>0.
+\]
+
+Thus the T25 exact-lifting theorem now has only one additional local hypothesis:
+
+\[
+\lambda_m=0.
+\]
+
+Therefore:
+
+### Theorem T26.4 — divisor-unramified principal-fast exact lifting
+
+If a principal-fast T18-reduced system is genuinely aperiodic and
+
+\[
+\lambda_m=0,
+\]
+
+then every homogeneous algebraic value relation
+
+\[
+P(\mathbf G(\alpha))=0
+\]
+
+in the chosen nonarchimedean completion lifts to an original algebraic functional relation
+
+\[
+Q(x,\mathbf G(x))=0
+\]
+
+with
+
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X).
+}
+\]
+
+This is not a relation modulo \(m^P\), in an associated graded ring, or merely in a completion.
+
+No non-unimodular lattice change is used.
+
+The relative Hermite–Padé and exact-specialization engine is exactly T25; T26 proves that its fast-count and relative-transcendence hypotheses are automatic under genuine aperiodicity.
+
+---
+
+## 7. Completion-sign consequence
+
+Assume a genuinely aperiodic principal-fast system with
+
+\[
+\lambda_m=0
+\]
+
+has a positive integer anchor
+
+\[
+N\in\mathbb Z_{>0}.
+\]
+
+Append \(1\) and use the exact transported input relation
+
+\[
+P(X_0,\mathbf X)
+=
+3NX_0+\ell\mathbf X.
+\]
+
+Theorem T26.4 lifts it with the same prescribed specialization.
+
+T21 already proves, under the hypothetical positive integer anchor, the strict ordinary real prefix gap and absolute convergence of every canonical scalar/state tail needed here.
+
+The lifted identity is algebraic and portable between completions.
+
+Exact scalar reconstruction therefore gives
+
+\[
+S^{(\infty)}(q)+3N=0.
+\]
+
+But
+
+\[
+S^{(\infty)}(q)>0
+\]
+
+and
+
+\[
+N>0.
+\]
+
+Contradiction.
+
+Hence
+
+\[
+\boxed{
+\text{no genuinely aperiodic divisor-unramified principal-fast system has a positive integer anchor.}
+}
+\]
+
+The sole residual genuinely aperiodic principal-fast positive-anchor branch is
+
+\[
+\boxed{\lambda_m>0.}
+\]
+
+---
+
+## 8. Bounded-\(R_m\) consequence
+
+Under the inherited T2 finite-alphabet anchoring hypotheses,
+
+\[
+R_m\text{ bounded}
+\]
+
+produces an ordinary positive integer anchor.
+
+For a divisor-unramified principal-fast recursive system, a genuinely aperiodic word would then contradict Section 7.
+
+Therefore T26 extends the restricted Periodicity-Conjecture consequence to:
+
+\[
+\boxed{
+\lambda_m=0
+\quad\Longrightarrow\quad
+\bigl(
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
+\bigr)
+}
+\]
+
+throughout the principal-fast class.
+
+The \(d_{\rm rel}=0\) branch is stronger still: it is eventually periodic independently of bounded \(R_m\).
+
+The bounded-\(\kappa\) branch is empty.
+
+The only residual principal-fast branch in which bounded \(R_m\Rightarrow\) eventual periodicity is not yet proved is the canonical divisor-degenerate branch
+
+\[
+\lambda_m>0.
+\]
+
+---
+
+## 9. Positive rational and negative rational values
+
+### Positive integers
+
+Excluded for every genuinely aperiodic principal-fast system with
+
+\[
+\lambda_m=0.
+\]
+
+The relative-algebraic branch is eventually periodic and therefore cannot supply a genuinely aperiodic positive-integer anchor.
+
+### Positive rational nonintegers
+
+T26 does not turn T21's positive-integer-derived strict real prefix gap into an intrinsic statement for an arbitrary abstract positive rational value.
+
+Therefore, in the \(d_{\rm rel}>0,\lambda_m=0\) lifting class, a positive rational noninteger remains excluded only when ordinary real subcriticality is independently known.
+
+In the \(d_{\rm rel}=0\) branch, genuine aperiodicity is already impossible independently of the value.
+
+### Negative rationals
+
+Negative rational values remain unexcluded in the surviving relative-transcendental branches.
+
+They are not Collatz counterexamples.
+
+---
+
+## 10. Literature audit
+
+### 10.1 Difference modules over a DVR
+
+The standard difference-module formalism turns a semilinear map into a linear map from a twisted module. This is exactly the formalism used in Section 3.
+
+The load-bearing T26 result is elementary after this twist: Smith normal form and Fitting ideals over the DVR \(\mathcal O\) identify
+
+\[
+\lambda_m
+=
+\operatorname{length}\operatorname{coker}\Phi.
+\]
+
+No theorem requiring \(\sigma\) to be trivial is used.
+
+Kedlaya's difference/Frobenius-module treatments provide the broader slope and Newton-polygon context. Their hypotheses and geometric setting are not imported as a theorem that the Collatz canonical lattice is étale.
+
+### 10.2 Faverjon–Poulet 2026
+
+Colin Faverjon and Marina Poulet, “Regular singular Mahler equations and Newton polygons,” *Journal of the Mathematical Society of Japan* 78(3) (2026), 799–831, DOI 10.2969/jmsj/94739473, is now published.
+
+It develops regular-singular criteria and Newton-polygon/Frobenius methods for Mahler equations, including Puiseux coefficients.
+
+This is relevant to the interpretation of commensurable Mahler lattices, but it does not state that the canonical saturated Collatz divisor lattice has unit determinant on its special fibre.
+
+It is therefore contextual, not load-bearing for automatic \(\lambda_m=0\).
+
+### 10.3 Bézivin 1986 and Bell–Chen–Hossain 2021
+
+Jean-Paul Bézivin, “Sur un théorème de G. Pólya,” *Journal für die reine und angewandte Mathematik* 364 (1986), 60–68, proves the D-finite/finitely-generated-multiplicative-coefficient rationality theorem used in Section 4.
+
+Jason P. Bell, Shaoshi Chen, and Ehsaan Hossain, “Rational dynamical systems, \(S\)-units, and \(D\)-finite power series,” *Algebra & Number Theory* 15 (2021), 1699–1728, DOI 10.2140/ant.2021.15.1699, restates the exact \(m=1\) theorem as Theorem 6.2 and gives a dynamical proof.
+
+The exact statement used by T26 is:
+
+> characteristic zero + D-finite + every coefficient in \(G\cup\{0\}\) for one finitely generated multiplicative subgroup \(G\) implies rationality.
+
+The T26 specialization was constructed specifically to match this hypothesis.
+
+### 10.4 Skolem–Mahler–Lech
+
+For a rational power series, the coefficient sequence satisfies a constant-coefficient linear recurrence.
+
+The classical Skolem–Mahler–Lech theorem makes its zero set a finite union of arithmetic progressions plus a finite set.
+
+T26 uses this only after Bézivin has proved rationality.
+
+### 10.5 Adamczewski–Faverjon 2026
+
+Boris Adamczewski and Colin Faverjon, “Mahler's method in several variables and finite automata,” *Annals of Mathematics* 204 (2026), with its published addendum, remains the published global lifting architecture inherited through T16–T18.
+
+T26 does not claim that the published theorem itself contains the relative divisor result. The exact relative lifting engine remains the T25 reconstruction.
+
+### 10.6 Brechler 2026 status
+
+Enzo Brechler, “Transcendence of multivariate Mahler functions and algebraic relations between their values,” arXiv:2607.24877v1 (2026), remains a preprint in the current audit.
+
+Its rational–transcendental and descent results are relevant background, but T26 does not use the preprint load-bearingly.
+
+The relative-transcendence conclusion in Section 4 instead uses the published 1986/2021 D-finite coefficient theorem after an exact one-variable specialization.
+
+---
+
+## 11. Exact status table
+
+| Item | T26 status |
+|---|---|
+| T25 divisor DVR / saturated lattices | closed |
+| \(\lambda_m\) as canonical invariant | closed |
+| \(\lambda_m=\operatorname{length}_{\mathcal O}\operatorname{coker}\Phi\) | **PROVED** |
+| \(\lambda_m>0\) iff special-fibre transport loses rank | **PROVED** |
+| \(\lambda_m=0\) automatic in every canonical principal-fast system | **OPEN / STILL CONDITIONAL** |
+| canonical valid example with \(\lambda_m>0\) | **NONE FOUND** |
+| bounded \(\kappa\) branch | **IMPOSSIBLE / CLOSED** |
+| \(d_{\rm rel}=0\) under genuine aperiodicity | **IMPOSSIBLE / CLOSED** |
+| \(d_{\rm rel}=0\Rightarrow\) eventual periodicity | **PROVED** |
+| genuine aperiodicity \(\Rightarrow d_{\rm rel}>0\) | **PROVED** |
+| strongest generic \(d_{\rm rel}=0\) multiplicity bound | linear; structurally superseded by periodicity |
+| exact lift for genuinely aperiodic principal-fast \(\lambda_m=0\) | **PROVED by T25 + T26 reductions** |
+| exact specialization \(Q(\alpha,\mathbf X)=P(\mathbf X)\) | **PRESERVED LITERALLY** |
+| completion-sign contradiction for that class | **APPLIES** |
+| new positive-integer anchor class excluded | **YES** |
+| bounded \(R_m\Rightarrow\) eventual periodicity extended | **YES, throughout divisor-unramified principal-fast class** |
+| positive rational noninteger | conditional on independent real subcriticality in relative-transcendental branch |
+| negative rational | unexcluded |
+| explicit anchored aperiodic word | **NONE** |
+| explicit candidate | **NONE** |
+| unbounded Collatz orbit | **NONE** |
+| certified counterexample | **NONE** |
+| new scientific compute justified | **NO** |
+
+---
+
+## 12. Exact-specialization audit
+
+The two new structural reductions occur before any relation-lifting normalization:
+
+- bounded \(\kappa\) is shown impossible from exact prefix transport;
+- \(d_{\rm rel}=0\) is shown periodic by algebraic one-variable specialization.
+
+Neither operation changes the original input relation polynomial.
+
+When \(\lambda_m=0\), the actual lifting step is the T25 divisor-regular lift inside the original functional relation ideal.
+
+Therefore
+
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X)
+}
+\]
+
+survives literally.
+
+No result only in:
+
+- an associated graded ring;
+- modulo \(m^P\);
+- an \(m\)-adic completion;
+- a quotient deleting the fast direction;
+- or a non-unimodular replacement lattice
+
+is promoted as exact lifting.
+
+---
+
+## 13. Compute and search decision
+
+T26 creates no theorem-derived scientific workload.
+
+- new scientific starts: **NOT AUTHORIZED**;
+- candidate trajectories: **NOT AUTHORIZED**;
+- substitution enumeration: **NOT AUTHORIZED**;
+- finite-code search/ranking: **NOT AUTHORIZED**;
+- new generator/distribution: **NOT AUTHORIZED**;
+- CPU campaign: **NOT AUTHORIZED**;
+- GPU work: **NOT AUTHORIZED**;
+- cloud/distributed/volunteer work: **NOT AUTHORIZED**;
+- docs/COMPUTE_BUDGET.md: **UNCHANGED**;
+- docs/METRIC_CATALOG.md: **UNCHANGED**.
+
+The bottleneck is a single theorem-sized special-fibre question, not computational reach.
+
+---
+
+## 14. Permanent T26 lessons
+
+### T26-L1 — semilinear ramification is a special-fibre defect
+
+The correct object is the linear map from the twisted lattice
+
+\[
+\rho^*\mathscr L_1\to\mathscr L_1.
+\]
+
+Its cokernel length is exactly \(\lambda_m\).
+
+Do not apply ordinary linear-module language without first incorporating the coefficient endomorphism in the source twist.
+
+### T26-L2 — saturation and étaleness are different
+
+The saturated lattice is free, but forward transport can still have a torsion cokernel.
+
+\[
+m\text{-saturation}
+\not\Rightarrow
+\lambda_m=0.
+\]
+
+### T26-L3 — non-unimodular slope normalization changes the exact lattice
+
+A rational gauge may change determinant valuation by
+
+\[
+-(a-1)\operatorname{ord}_m(\det U).
+\]
+
+Such a gauge is not a proof that the canonical lattice is unramified and cannot silently replace the exact-specialization lattice.
+
+### T26-L4 — relative algebraicity is much more rigid than a linear valuation ceiling
+
+After a positive-grading toric specialization, algebraicity plus finitely generated multiplicative coefficients invokes Bézivin and forces rationality.
+
+Support periodicity then forces eventual periodicity of the recursive word.
+
+### T26-L5 — bounded fast count was a formal branch, not a live branch
+
+Exact prefix self-similarity gives
+
+\[
+\kappa(L_R(n))=a\kappa(n),
+\qquad
+a\ge2.
+\]
+
+This is incompatible with nonzero bounded monotone fast count.
+
+### T26-L6 — the principal-fast programme has one residual obstruction
+
+For genuine aperiodicity:
+
+\[
+\kappa\to\infty
+\quad\text{and}\quad
+d_{\rm rel}>0
+\]
+
+are automatic.
+
+Only
+
+\[
+\lambda_m>0
+\]
+
+remains outside the exact lifting/sign theorem.
+
+---
+
+## 15. Exact next theorem-sized obligation
+
+**CDM4-T27 — CANONICAL SPECIAL-FIBRE INJECTIVITY / DIVISOR-DEGENERATION CLASSIFICATION.**
+
+Work only in the residual genuinely aperiodic principal-fast branch.
+
+Let
+
+\[
+\overline\Phi:
+F\otimes_{\sigma,F}(\mathscr L_1/m\mathscr L_1)
+\to
+\mathscr L_1/m\mathscr L_1
+\]
+
+be the canonical saturated special-fibre transport.
+
+The next obligation is:
+
+\[
+\boxed{
+\text{either prove }\overline\Phi\text{ is always injective}
+}
+\]
+
+for every canonical genuinely aperiodic principal-fast system, hence
+
+\[
+\lambda_m=0,
+\]
+
+or classify/construct the exact canonical degeneration responsible for
+
+\[
+\ker\overline\Phi\ne0
+\]
+
+and prove a specialization-preserving lifting theorem that survives its elementary divisors without replacing the canonical lattice by a non-unimodular one.
+
+The first-fast-cut canonical matrix should be analyzed before rational minimalization, then passed through the exact saturated relation quotient.
+
+No scientific computation is authorized.
+
+---
+
+## 16. Source ledger
+
+1. **Jean-Paul Bézivin**, “Sur un théorème de G. Pólya,” *Journal für die reine und angewandte Mathematik* 364 (1986), 60–68, DOI 10.1515/crll.1986.364.60. Published. Load-bearing for the D-finite multiplicative-coefficient rationality theorem.
+2. **Jason P. Bell, Shaoshi Chen, Ehsaan Hossain**, “Rational dynamical systems, S-units, and D-finite power series,” *Algebra & Number Theory* 15 (2021), 1699–1728, DOI 10.2140/ant.2021.15.1699. Published. Theorem 6.2 restates/proves the exact Bézivin case used here.
+3. **Jean-Paul Bézivin**, “Une généralisation du théorème de Skolem-Mahler-Lech,” *Quarterly Journal of Mathematics* 40 (1989), 133–138, DOI 10.1093/qmath/40.2.133. Published background for zero sets; the classical Skolem–Mahler–Lech theorem suffices after rationality.
+4. **Kiran S. Kedlaya**, *p-adic Differential Equations*, difference-algebra/Frobenius-module chapters. Published book background for twisted semilinear modules and slopes; not used to assert automatic unramifiedness.
+5. **Colin Faverjon and Marina Poulet**, “Regular singular Mahler equations and Newton polygons,” *Journal of the Mathematical Society of Japan* 78(3) (2026), 799–831, DOI 10.2969/jmsj/94739473. Published. Context for regular-singular/slope analysis; non-load-bearing for the canonical lattice.
+6. **Boris Adamczewski and Colin Faverjon**, “Mahler's method in several variables and finite automata,” *Annals of Mathematics* 204 (2026), together with its published addendum. Inherited exact-lifting architecture.
+7. **Enzo Brechler**, “Transcendence of multivariate Mahler functions and algebraic relations between their values,” arXiv:2607.24877v1 (2026). **Preprint as of the T26 audit; non-load-bearing.**
+8. T16–T25 reports and their source ledgers remain authoritative for all inherited Collatz/Mahler/toric infrastructure.
+
+---
+
+## 17. End classification
+
+\[
+\boxed{
+\textbf{C — NEW RELATIVE-ALGEBRAIC PERIODICITY THEOREM AND SPECIAL-FIBRE OBSTRUCTION FOUND.}
+}
+\]
+
+T26 closes the bounded-fast and relative-algebraic residual branches and reduces the entire genuinely aperiodic principal-fast programme to one exact question: whether the canonical saturated special-fibre transport can degenerate.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
+
+No scientific compute is authorized.
