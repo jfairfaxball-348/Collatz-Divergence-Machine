@@ -1093,30 +1093,119 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 
 T26 is classified **C — new relative-algebraic periodicity theorem and special-fibre obstruction found**.
 
-## Immediate next task
+## CDM4-T27 closeout
 
-**CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification, theory only.**
+T27 classifies the canonical special-fibre defect and removes it as a positive-anchor obstruction.
 
-Treat T20–T26 as closed. Work only on the residual genuinely aperiodic principal-fast case.
-
-The next theorem-sized obligation is to determine the special-fibre map
+Let
 \[
-\overline\Phi:
-F\otimes_{\sigma,F}(\mathscr L_1/m\mathscr L_1)
-\to
-\mathscr L_1/m\mathscr L_1
+\mathscr L_1=\mathscr E/\mathscr R
 \]
-from the canonical first-fast-cut polynomial matrix through the exact saturated relation quotient.
-
-Either prove
+be the T25 saturated degree-one lattice presented by canonical state generators, and let
 \[
-\overline\Phi\text{ injective}
+\overline{\mathcal A}
 \]
-for every canonical genuinely aperiodic principal-fast system, hence \(\lambda_m=0\), or classify/construct the exact canonical degeneration responsible for
+be the raw first-fast-cut matrix modulo \(m\).
+
+T27 proves
+\[
+\boxed{
+\operatorname{coker}\overline\Phi
+\cong
+E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+}
+\]
+
+Thus
 \[
 \ker\overline\Phi\ne0
 \]
-and find a specialization-preserving lifting theorem that survives its elementary divisors without changing the canonical lattice by a non-unimodular gauge.
+means exactly that a nonrelation source direction becomes a relation after the first-fast boundary cut. Reachability, recurrence, SCC connectivity, scalar-support fullness, and saturation do not individually force this defect to vanish.
 
-No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
+If the elementary divisors are
+\[
+m^{e_1},\ldots,m^{e_r},
+\]
+then
+\[
+d_q
+=
+\dim_F(m^{q-1}\operatorname{coker}\Phi/m^q\operatorname{coker}\Phi)
+=
+\#\{i:e_i\ge q\},
+\]
+so
+\[
+\lambda_m=\sum_{q\ge1}d_q.
+\]
+The first-fast cut controls only \(d_1\); deeper fast-count truncations control the higher elementary-divisor layers.
 
+More importantly, writing
+\[
+\mu_m=\max_i e_i,
+\]
+inverse transport in state-polynomial degree \(D\) through \(n\) semilinear iterates loses at most
+\[
+D\mu_m\frac{a^n-1}{a-1}
+\]
+units of divisor order.
+
+The T25 relative Hermite–Padé order
+\[
+P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
+\]
+dominates this finite slope tax: after \(D_X\) is fixed according to the T25 parameter hierarchy, the tax is fixed while \(P_{\rm rel}\) grows without bound in \(D_f\).
+
+Therefore the T25/T26 exact lifting theorem extends to **every** genuinely aperiodic principal-fast system, with no hypothesis
+\[
+\lambda_m=0.
+\]
+
+The original specialization remains literal:
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X).
+}
+\]
+
+No non-unimodular gauge, associated-graded replacement, state quotient, explicit \(m^P\) insertion, or moving slow truncation is used.
+
+The inherited completion-sign argument therefore excludes positive-integer anchors throughout the complete genuinely aperiodic principal-fast class.
+
+Under the inherited T2 finite-alphabet anchoring hypotheses:
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
+}
+\]
+throughout the full principal-fast class.
+
+Automatic canonical special-fibre injectivity remains open as a standalone lattice question; canonical positive elementary divisors are not proved impossible and no valid example was found. They are no longer a lifting obstruction.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+T27 is classified **C — canonical divisor degeneration classified and positive-slope exact lifting proved**.
+
+## Immediate next task
+
+**CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit, theory only.**
+
+The principal-fast branch is exact-lifting closed. Return to the broader T22/T23 nonprincipal multiscale boundary.
+
+The next theorem-sized obligation is to determine whether the T25/T27 mechanism can be iterated across a finite nonprincipal growth filtration:
+
+1. construct canonical saturated relative lattices for successive high-growth ideals without replacing the original state system;
+2. identify the analogue of relative Hermite–Padé multiplicity on each stratum;
+3. quantify every inter-stratum inverse-transport slope tax;
+4. prove that the available multiplicity budgets dominate those taxes on one synchronized orbit scale; or prove an exact obstruction;
+5. preserve
+   \[
+   Q(\alpha,\mathbf X)=P(\mathbf X)
+   \]
+   literally for the original input relation.
+
+Do not return to bare associated-graded lifting, fixed reweighting, asynchronous iterate counts, moving analytic truncations, substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or a new generator/distribution.
+
+No scientific compute is authorized.
