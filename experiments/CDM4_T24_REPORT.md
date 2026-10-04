@@ -1304,7 +1304,7 @@ Not load-bearing.
 
 ### 22.3 Zorin stable-ideal multiplicity framework
 
-Evgeniy Zorin, “Zero Order Estimates for Analytic Functions,” arXiv:1103.1174, develops general multiplicity estimates by studying stable ideals and includes generalized Mahler functional equations.
+Evgeniy Zorin, “Zero Order Estimates for Analytic Functions,” *International Journal of Number Theory* 9 (2013), 333–392, DOI 10.1142/S1793042112501370, develops general multiplicity estimates by studying stable ideals and includes generalized Mahler functional equations. The earlier arXiv version is 1103.1174.
 
 This is conceptually closer to the new T24 obligation because it treats multiplicity through stable ideals.
 
@@ -1738,7 +1738,7 @@ No scientific computation is authorized.
 
 1. **Boris Adamczewski and Colin Faverjon**, “Mahler’s method in several variables and finite automata,” *Annals of Mathematics* 204 (2026), and the published addendum. Used only for the inherited lifting architecture and the finite-dimensional auxiliary-order benchmark.
 2. **Kumiko Nishioka**, “On an estimate for the orders of zeros of Mahler type functions,” *Acta Arithmetica* 56 (1990), 249–256. Audited as a point-order multiplicity source; not directly applicable to a positive-dimensional principal divisor.
-3. **Evgeniy Zorin**, “Zero Order Estimates for Analytic Functions,” arXiv:1103.1174. Audited as a stable-ideal multiplicity framework; potentially relevant to T25, not load-bearing in T24.
+3. **Evgeniy Zorin**, “Zero Order Estimates for Analytic Functions,” *International Journal of Number Theory* 9 (2013), 333–392, DOI 10.1142/S1793042112501370 (earlier arXiv:1103.1174). Audited as a peer-reviewed stable-ideal multiplicity framework; potentially relevant to T25, not load-bearing in T24.
 4. **Enzo Brechler**, “Transcendence of multivariate Mahler functions and algebraic relations between their values,” arXiv:2607.24877v1 (2026). Preprint; p-adic meromorphy/lifting background only; no applicable principal-divisor multiplicity theorem found.
 5. The T16–T23 reports and their inherited Corvaja–Zannier, Bell–Ghioca–Tucker, Laurent, and Mahler-method source ledgers remain authoritative and are not duplicated here.
 
