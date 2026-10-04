@@ -130,6 +130,7 @@ The repository, not conversational memory, is the authoritative research state.
 53. `experiments/CDM4_T19_REPORT.md`
 54. `experiments/CDM4_T20_REPORT.md`
 55. `experiments/CDM4_T21_REPORT.md`
+56. `experiments/CDM4_T22_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
