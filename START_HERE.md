@@ -3,71 +3,70 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T24 COMPLETE — C: NEW PRINCIPAL-I-ADIC STRUCTURAL OBSTRUCTION FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T25 COMPLETE — C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T24_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T25_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20 exact variable-length endpoint/scalar transport remains closed.
-- T21 ordinary-prefix limsup algebraicity, the positive-integer strict gap below \(\log_2 3\), canonical real scalar convergence, and the post-T18 positive increment grading remain closed.
-- T22 reduced multiscale profiles, the finite growth filtration, exact fast-height / slow-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting to repair the common-scale gap remain closed.
+- T21 ordinary-prefix algebraicity, the strict positive-integer gap below \(\log_2 3\), real scalar convergence, and positive increment grading remain closed.
+- T22 reduced growth profiles, fast/slow height-contraction asymptotics, scalar-support fullness, and the failure of fixed reweighting remain closed.
 - T23 slowest-face elimination and the principal-high-ideal dense-orbit analytic zero theorem remain closed.
-- **T24 proves that the T23 principal-high hypothesis is intrinsically two-scale.** If
+- T24 principal two-profile/direct-product geometry, exact \(m\)-pullback order, failure of bare finite-codimensional \(I^P\) replacement, explicit-factor neutrality, and divisor-denominator warning remain closed.
+- **T25 proves a canonical fast-count dichotomy.** Writing
   \[
-  I_{>1}=(m),\qquad m=\theta^\delta,
-  \]
-  then there are exactly two positive profiles and
-  \[
-  \Gamma_Y\cong\mathbb N\delta\oplus\Gamma_{\rm slow}.
-  \]
-  Thus the principal generator is necessarily on the unique fastest positive profile; intermediate/further faster positive profiles cannot be hidden in powers of \(m\).
-- Writing
-  \[
-  A_Y\delta=a\delta+\eta,\qquad \eta\in\Gamma_{\rm slow},
-  \]
-  T24 proves the exact pullback law
-  \[
-  \rho^*m=u\,m^a\theta^\eta,
+  \pi_Y(e_s)=\kappa_s\delta+\eta_s,
   \qquad
-  \operatorname{ord}_I(\rho^{n*}m)=a^n.
+  \kappa(n)=\sum_{i<n}\kappa_{u_i},
   \]
-  The \(I\)-adic order need not equal the full fast profile: in the equal-radius triangular case the profile can be
+  if \(\kappa(n)\to\infty\), every fixed canonical \(m\)-jet coefficient is a finite slow polynomial:
   \[
-  n^{e_1+1}a^n
+  [m^j]F_t\in K[\Gamma_{\rm slow}].
   \]
-  while the exact \(I\)-order is only \(a^n\).
-- Direct evaluation of \(m^P\) on the exact orbit does give fast \(2\)-adic decay on
+- The correct divisor-local ring is
   \[
-  P\,g_{\rm fast}(n).
+  \mathcal O=K(\Gamma_{\rm slow})[m]_{(m)},
   \]
-  The obstruction is construction, not evaluation.
-- **T24 Route B obstruction:** exact divisorial order \(E\in I^P\) is not a finite-codimensional Hilbert condition. In the exact splitting,
+  a DVR. Finite-degree contractions of the original functional relation ideal are \(m\)-saturated and therefore give free divisor-regular lattices.
+- T25 defines the basis-invariant divisor ramification
   \[
-  \mathcal A_Y/I^P
-  \cong
-  \bigoplus_{k=0}^{P-1}m^k\mathcal A_{\rm slow},
+  \lambda_m=\operatorname{ord}_m(\det B_1).
   \]
-  and \(\mathcal A_{\rm slow}\) is positive-dimensional/infinite-dimensional. Exact \(I^P\)-vanishing therefore requires \(P\) complete slow analytic functional identities.
-- Finite slow truncation reintroduces a \(g_{\rm slow}\) remainder and therefore the T22 fast/slow mismatch. Explicit multiplication by \(m^P\) consumes ordinary support degree linearly, is removable from every nonzero torus orbit value, and supplies no new Mahler multiplicity amplification.
-- Rational-functional regularity on the orbit does not imply divisor-regularity: denominators may have positive \(m\)-order while remaining nonzero at every orbit point. A future proof would require an \(I\)-saturated/divisor-regular relation module.
-- Consequently T24 does **not** prove exact relation lifting for the principal-high subclass and does not obtain
+  Two-sided divisor-regular relation transport is available exactly when \(\lambda_m=0\).
+- In the unbounded-fast-count branch, relative Hermite–Padé cancellation over \(K(\Gamma_{\rm slow})\) gives genuine multiplicity after all common explicit \(m\)-factors are removed:
+  \[
+  P_{\rm rel}\ge (h(D_X)-1)(D_f+1).
+  \]
+- If
+  \[
+  d_{\rm rel}>0
+  \]
+  and
+  \[
+  \lambda_m=0,
+  \]
+  the T16/T17 mixed-place lifting architecture rebuilds over the divisor-regular lattice and preserves
   \[
   Q(\alpha,\mathbf X)=P(\mathbf X)
   \]
-  for any new unequal-growth class.
-- The next theorem is now relative: a slow-base \(m\)-adic multiplicity / divisor-regular Mahler lifting theorem with algebraic coefficient and height control and exact specialization.
-- No new positive-integer anchor class is excluded in T24; no new T2 bounded-\(R_m\) implication is promoted.
-- Positive rational noninteger and negative rational boundaries remain unchanged.
+  exactly. Genuinely aperiodic positive-integer anchors are excluded in this newly closed subclass.
+- If
+  \[
+  d_{\rm rel}=0,
+  \]
+  finite-extension valuation theory gives a linear \(m\)-multiplicity ceiling, so no independently enlargable relative multiplicity amplifier survives.
+- Remaining principal-fast branches: bounded \(\kappa\); relative algebraicity; and positive relative transcendence with \(\lambda_m>0\).
+- Positive rational noninteger and negative rational boundaries remain unchanged except where an independent real subcriticality theorem applies.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T25 — relative slow-base multiplicity / divisor-regular Mahler lifting audit, theory only**
-- Explicitly permitted next action: **CDM4-T25 theorem analysis only**. No new scientific starts are authorized.
+- Immediate next task: **CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit, theory only**
+- Explicitly permitted next action: **CDM4-T26 theorem analysis only**. No new scientific starts are authorized.
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -131,6 +130,7 @@ The repository, not conversational memory, is the authoritative research state.
 56. `experiments/CDM4_T22_REPORT.md`
 57. `experiments/CDM4_T23_REPORT.md`
 58. `experiments/CDM4_T24_REPORT.md`
+59. `experiments/CDM4_T25_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
@@ -972,19 +972,21 @@ The remaining variable-length branch is reducible/nonprimitive: ordinary-prefix 
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
-## Authoritative next task — CDM4-T21
+## Authoritative next task — CDM4-T26
 
-**CDM4-T21 — REDUCIBLE MORPHIC ORDINARY-PREFIX LIMSUP / POSITIVE-GRADING AUDIT.**
+**CDM4-T26 — CANONICAL DIVISOR-UNRAMIFIEDNESS / RELATIVE-TRANSCENDENCE COMPLETION AUDIT.**
 
-Primary target:
+Treat T20–T25 as closed. In the principal-fast class, determine whether the canonical saturated degree-one difference module forces
+\[
+\lambda_m=0,
+\]
+whether genuine aperiodicity with unbounded fast count forces
+\[
+d_{\rm rel}>0,
+\]
+and whether the bounded-\(\kappa\) finite \(m\)-coefficient system can be reduced to the slow system while preserving the original specialization polynomial exactly.
 
-> For an expanding reducible nonerasing morphism, classify
-> \[
-> \beta=\limsup_{n\to\infty}\frac{A_n}{n}
-> \]
-> from the actual return-prefix decomposition while retaining unequal growth scales, equal-radius SCC chains, leading polynomial corrections, and imprimitive modulation. Prove that \(\beta\) is algebraic or belongs to a finite algebraic set if possible; otherwise isolate the exact mechanism preventing this. Separately, for every strict-gap class, determine whether the reduced stable orbit has a strictly positive expanding weight sufficient for T17/T18 exact lifting.
-
-Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as closed.
+Do not re-run the bare \(I^P\), explicit-\(m^P\), slow-truncation, or generic Zorin/Nishioka routes already closed by T24–T25.
 
 - **Scientific starts authorized: NO.**
 - **GPU work authorized: NO.**
@@ -992,50 +994,3 @@ Treat T20 endpoint/scalar transport and primitive Perron-weight toric lifting as
 - **Finite-code ranker campaign authorized: NO.**
 - **Theory/literature work authorized: YES; tiny exact theorem-support checks only.**
 
-
-
-## CDM4-T21 closeout — 2026-10-04
-
-CDM4-T21 is complete. Authoritative report: `experiments/CDM4_T21_REPORT.md`.
-
-**Classification: C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND.**
-
-T21 proves that for every expanding nonerasing pure-morphic fixed point in scope,
-\[
-\beta=\limsup_{n\to\infty}\frac{A_n}{n}
-\]
-is algebraic. The exact Dumont–Thomas prefix representation shows that every positive prefix begins, at its highest substitution depth, with a nonempty prefix of \(\sigma(a_0)\), hence with a block containing \(a_0\). That leading block already has the maximal reachable Frobenius/Jordan growth scale. Lower growth classes are negligible after normalization, while equal-radius polynomial corrections survive absolutely but cancel in the projective prefix ratio.
-
-After phase refinement, every subsequential prefix mean is a discounted ratio on a finite prefix automaton. The extremal ratios are attained by deterministic stationary policies, hence by eventually periodic paths, and therefore belong to a finite explicit algebraic set. The complete cluster set of \(A_n/n\) is the interval from the algebraic liminf to the algebraic limsup.
-
-Under a hypothetical positive integer anchor, the inherited T3 inequality gives \(\beta\le\log_2 3\). Transcendence of \(\log_2 3\) forces strict inequality, so T20 scalar transport gives absolute real convergence of all canonical tail series for the full expanding reducible T21 class.
-
-T21 separately proves a universal positive expanding grading after T18 orbit-closure reduction. On a deep period-refined tail,
-\[
-d^T=\mathbf1^TM^a(M^R-I)
-\]
-annihilates the complete character-relation lattice and is positive on every positive generator. The descended grading
-\[
-w_\Delta(\pi_Y(x))=d^Tx
-\]
-has finite-codimensional support and uniform exponential displacement.
-
-The exact mixed-place lifting/sign proof is closed in the balanced-growth reducible subclass, where all surviving reduced generators have one comparable exponential-polynomial growth scale. Positive integer anchors are excluded there, and T2 gives bounded-\(R_m\Rightarrow\) eventual periodicity.
-
-The remaining variable-length theorem boundary is the genuinely unequal-growth reduced class. Scalar convergence and positive grading are proved, but the T17/T18 global \(S\)-unit height-versus-boundary-contraction step has not yet been extended to a multiscale filtration.
-
-No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
-
-## Authoritative next task — CDM4-T22
-
-**CDM4-T22 — MULTISCALE REDUCIBLE TORIC RELATION-LIFTING / HEIGHT-FILTRATION AUDIT.**
-
-Treat T20 exact endpoint/scalar transport and the T21 ordinary-prefix algebraicity and increment-grading theorems as closed.
-
-Determine whether a T18-reduced expanding reducible system with several surviving exponential-polynomial growth classes admits a multigraded or growth-filtered extension of the T17/T18 exact lifting theorem preserving
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X),
-\]
-or whether there is a genuine \(S\)-unit height/contraction obstruction.
-
-No scientific computation is authorized.
