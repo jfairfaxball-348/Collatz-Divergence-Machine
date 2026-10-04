@@ -1001,35 +1001,122 @@ finite-extension valuation theory gives only a linear multiplicity ceiling. The 
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
 
+## CDM4-T26 closeout
+
+T26 closes two of the three residual T25 principal-fast branches and gives the divisor invariant an intrinsic special-fibre meaning.
+
+First, bounded fast count is impossible. T24 gives
+\[
+A_Y\delta=a\delta+\eta
+\]
+with
+\[
+a\ge\rho_{\rm slow}>1,
+\]
+hence
+\[
+a\ge2.
+\]
+T20 prefix self-similarity and the T24 direct product give
+\[
+\kappa(L_R(n))=a\kappa(n).
+\]
+A bounded nondecreasing integer-valued \(\kappa\) would be eventually constant \(J\), forcing \(J=aJ\), hence \(J=0\). Then every occurring letter would have zero fast degree, contradicting the existence of the principal fast generator. Therefore every live principal-fast system satisfies
+\[
+\boxed{\kappa(n)\to\infty.}
+\]
+
+Second, relative algebraicity forces eventual periodicity:
+\[
+\boxed{
+d_{\rm rel}=0
+\Longrightarrow
+\text{eventual periodicity}.
+}
+\]
+Indeed \(d_{\rm rel}=0\) makes every canonical state function algebraic over the full reduced rational function field. A generic one-variable toric specialization using the positive T21 grading has collision-free support and coefficients in a finitely generated multiplicative group. Bézivin's D-finite coefficient theorem forces each specialized state series to be rational; Skolem–Mahler–Lech then makes every labelled support set eventually periodic, and the state word itself is eventually periodic.
+
+Hence genuine aperiodicity automatically gives
+\[
+\boxed{d_{\rm rel}>0.}
+\]
+
+Third, let \(\mathscr L_1\) be the canonical saturated degree-one divisor lattice. The semilinear transport is correctly linearized as
+\[
+\Phi:\rho^*\mathscr L_1\to\mathscr L_1.
+\]
+Over the divisor DVR,
+\[
+\boxed{
+\lambda_m
+=
+\operatorname{length}_{\mathcal O}\operatorname{coker}\Phi.
+}
+\]
+Equivalently,
+\[
+\boxed{
+\lambda_m=0
+\iff
+\overline\Phi
+\text{ is bijective on the special fibre }m=0.
+}
+\]
+Thus \(\lambda_m>0\) is exactly a canonical special-fibre degeneration; its elementary divisors measure the depth of that degeneration.
+
+T26 does not prove that this degeneration is impossible, and no valid canonical \(\lambda_m>0\) principal-fast example was found. Automatic divisor-unramifiedness therefore remains conditional.
+
+Combining the new reductions with T25 upgrades exact lifting to the complete genuinely aperiodic **divisor-unramified** principal-fast class:
+\[
+\lambda_m=0
+\Longrightarrow
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
+with the input specialization literally preserved. The inherited T21 completion-sign contradiction excludes positive-integer anchors in this class.
+
+Under T2's finite-alphabet anchoring hypotheses,
+\[
+\lambda_m=0,\quad
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}.
+\]
+
+The sole residual genuinely aperiodic principal-fast branch is
+\[
+\boxed{\lambda_m>0.}
+\]
+
+Positive rational noninteger values still require independently known real subcriticality for exclusion in the relative-transcendental branch. Negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+T26 is classified **C — new relative-algebraic periodicity theorem and special-fibre obstruction found**.
+
 ## Immediate next task
 
-**CDM4-T26 — canonical divisor-unramifiedness / relative-transcendence completion audit, theory only.**
+**CDM4-T27 — canonical special-fibre injectivity / divisor-degeneration classification, theory only.**
 
-Treat as closed:
+Treat T20–T26 as closed. Work only on the residual genuinely aperiodic principal-fast case.
 
-- all T20–T24 infrastructure;
-- the T25 canonical fast-count dichotomy;
-- the T25 divisor DVR and \(m\)-saturated finite-degree relation lattices;
-- the invariant \(\lambda_m\);
-- relative Hermite–Padé multiplicity;
-- the relative-algebraic valuation ceiling;
-- exact lifting and positive-anchor exclusion for
-  \[
-  \kappa(n)\to\infty,\quad d_{\rm rel}>0,\quad\lambda_m=0.
-  \]
+The next theorem-sized obligation is to determine the special-fibre map
+\[
+\overline\Phi:
+F\otimes_{\sigma,F}(\mathscr L_1/m\mathscr L_1)
+\to
+\mathscr L_1/m\mathscr L_1
+\]
+from the canonical first-fast-cut polynomial matrix through the exact saturated relation quotient.
 
-Primary targets:
-
-1. prove or disprove automatic divisor-unramifiedness
-   \[
-   \lambda_m=0
-   \]
-   for the canonical saturated difference module;
-2. prove or disprove that genuine aperiodicity with unbounded fast count forces
-   \[
-   d_{\rm rel}>0;
-   \]
-3. close or sharply classify the bounded-\(\kappa\) finite \(m\)-coefficient branch while preserving exact specialization.
+Either prove
+\[
+\overline\Phi\text{ injective}
+\]
+for every canonical genuinely aperiodic principal-fast system, hence \(\lambda_m=0\), or classify/construct the exact canonical degeneration responsible for
+\[
+\ker\overline\Phi\ne0
+\]
+and find a specialization-preserving lifting theorem that survives its elementary divisors without changing the canonical lattice by a non-unimodular gauge.
 
 No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
