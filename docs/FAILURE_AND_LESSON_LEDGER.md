@@ -2864,3 +2864,129 @@ Separately, asynchronous integers \(k_i\) can make \(k_i^{e_i}\rho_i^{k_i}\) com
 
 **Action:** CDM4-T24 should test the principal-fast-ideal \(I\)-adic auxiliary route first. No scientific compute is authorized.
 
+---
+
+### F0105 — A principal higher-growth ideal forces a two-profile direct-product semigroup
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T24.**
+
+Let
+[
+I_{>1}=(m),
+qquad
+m=	heta^delta.
+]
+
+Then the T22 positive profile filtration has exactly two nonzero profiles:
+[
+g_1<g_2.
+]
+
+Every positive reduced character has a unique decomposition
+[
+gamma=kdelta+eta,
+qquad
+kinmathbb N,
+quad
+etainGamma_{m slow},
+]
+where
+[
+Gamma_{m slow}
+=
+{0}cup{gamma:operatorname{prof}(gamma)=g_1}.
+]
+
+Hence
+[
+oxed{
+Gamma_Ycongmathbb NdeltaoplusGamma_{m slow}.
+}
+]
+
+In particular the principal generator lies on the unique fastest positive profile. No intermediate or still faster profile can be hidden in powers of (m) or in (m) times a slower monomial.
+
+Writing
+[
+A_Ydelta=adelta+eta,
+qquad
+etainGamma_{m slow},
+]
+one has
+[
+oxed{
+operatorname{ord}_I(ho^{n*}m)=a^n.
+}
+]
+
+However, if (a) equals the slow exponential radius and (eta
+eq0), the full fast profile can be
+[
+n^{e_1+1}a^n.
+]
+
+**Lesson:** principal (I)-adic order and T22 growth profile are distinct invariants. The former records copies of the principal generator; the latter also records lower-stratum forcing.
+
+**Action:** preserve the T24 direct-product structure in all later principal-divisor work. Do not restart a nested-many-profile audit inside (I_{>1}=(m)).
+
+---
+
+### F0106 — Exact principal-divisor multiplicity is not a finite-codimensional Mahler auxiliary condition
+
+**Status: PROVED METHOD OBSTRUCTION in CDM4-T24.**
+
+In the T24 splitting,
+[
+mathcal A_Y
+sim
+left{
+sum_{kge0}m^kE_k:
+E_kinmathcal A_{m slow}
+ight}.
+]
+
+Therefore
+[
+Ein I^P
+iff
+E_0=cdots=E_{P-1}=0
+]
+as complete slow analytic functions.
+
+Because genuine unequal growth implies a positive-dimensional slow semigroup,
+[
+mathcal A_Y/I^P
+cong
+igoplus_{k=0}^{P-1}m^kmathcal A_{m slow}
+]
+is infinite dimensional over the algebraic coefficient field.
+
+Thus the T16/T17 finite-dimensional Hilbert argument for high order at an attracting point does not transfer merely by replacing ordinary support order with (I)-adic order.
+
+Finite truncation in the slow variables leaves a slow-scale remainder and returns the T22 fast/slow mismatch. Explicitly multiplying an auxiliary by (m^P) consumes ordinary support degree linearly and is removable from every nonzero torus orbit value, so it creates no independent Mahler multiplicity amplification.
+
+**Lesson:** the principal zero theorem does not make divisorial multiplicity a finite scalar condition. Exact (I^P)-vanishing is a relative functional-identity problem over the slow analytic base.
+
+**Action:** do not restart the bare “impose (I^P) and reuse T16/T17” route. A future proof must supply a genuine relative multiplicity theorem with algebraic coefficient/height control.
+
+---
+
+### F0107 — Orbit regularity does not imply divisor-regular localization
+
+**Status: PROVED STRUCTURAL WARNING in CDM4-T24.**
+
+A rational denominator can be nonzero at every exact torus orbit point while still satisfying
+[
+operatorname{ord}_I(d)>0.
+]
+
+Localizing at such a denominator introduces negative (I)-order and can cancel any principal fast factor.
+
+Passing to a deeper regular tail does not change this structural divisor order.
+
+T23 had already shown that rational-functional minimalization need not visibly respect the growth filtration. T24 sharpens this in the principal case: preserving (I)-adic multiplicity through relation matrices requires denominators of (I)-order zero, equivalently a divisor-regular or (I)-saturated relation-module construction.
+
+**Lesson:** pointwise denominator avoidance and (I)-adic regularity are different notions.
+
+**Action:** CDM4-T25 must audit relation matrices over the local/divisor-regular ring at ((m)), not merely over the full rational function field.
+
