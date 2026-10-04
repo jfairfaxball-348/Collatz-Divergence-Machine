@@ -754,6 +754,58 @@ The remaining variable-length branch is reducible/nonprimitive. Equal-dominant-r
 
 T20 is the mandatory twentieth-session progress/correction audit. No scientific compute is authorized.
 
+**CDM4-T21 closeout.** T21 closes the ordinary-prefix limsup obstruction for expanding nonerasing pure-morphic fixed points and the literal positive-grading obstruction after T18 reduction.
+
+For every prefix length \(n\), the exact Dumont–Thomas representation has
+\[
+u_{<n}
+=
+\sigma^k(p_k)\sigma^{k-1}(p_{k-1})\cdots p_0,
+\]
+where the most significant prefix \(p_k\) is nonempty. Because
+\[
+\sigma(a_0)=a_0w,
+\]
+that leading prefix contains \(a_0\), so its substituted block already carries the maximal reachable Frobenius/Jordan scale
+\[
+k^e\rho^k.
+\]
+Unequal lower growth classes vanish after normalization; equal-radius polynomial corrections are retained but cancel projectively.
+
+After period refinement, arbitrary prefix means become finite-state discounted ratios with discount \(\rho^{-1}\). Their extrema are attained by deterministic stationary policies on a finite phase-augmented prefix automaton. Consequently there is a finite algebraic set \(\mathcal E\) with
+\[
+\liminf A_n/n=\min\mathcal E,
+\qquad
+\limsup A_n/n=\max\mathcal E.
+\]
+The full accumulation set is the interval between these algebraic endpoints.
+
+Thus, under a hypothetical genuinely aperiodic positive integer anchor,
+\[
+\beta=\limsup A_n/n\le\log_2 3
+\]
+from T3, while algebraicity of \(\beta\) and transcendence of \(\log_2 3\) force
+\[
+\beta<\log_2 3.
+\]
+T20 then gives absolute real convergence of every canonical scalar/state tail throughout the expanding reducible class in scope.
+
+After T18 orbit-closure reduction, T21 defines the length-increment grading
+\[
+d^T=\mathbf1^TM^a(M^R-I),
+\qquad
+w_\Delta(\pi_Y(x))=d^Tx.
+\]
+On a sufficiently deep period-refined tail, \(d\) is strictly positive on every reachable positive generator and annihilates the complete character-relation lattice. Moreover
+\[
+w_\Delta(A_Y^n\gamma)\ge C\kappa^nw_\Delta(\gamma)
+\]
+for some \(\kappa>1\). This gives a universal positive finite-codimensional expanding support filtration without forcing a reducible Perron vector.
+
+The full exact lifting/sign contradiction is closed for the balanced-growth reducible subclass, where all surviving reduced generators have a common comparable exponential-polynomial scale. Genuinely unequal surviving growth scales remain open at the global \(S\)-unit height-versus-boundary-contraction step; scalar convergence and grading themselves are no longer the obstruction.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
 ## Immediate next task
 
 **CDM4-T22 — multiscale reducible toric relation-lifting / height-filtration audit, theory only.**
@@ -761,14 +813,14 @@ T20 is the mandatory twentieth-session progress/correction audit. No scientific 
 Treat the following as closed:
 
 - T20 exact variable-length endpoint/scalar transport;
-- T21 algebraicity of (limsup A_n/n) for the expanding nonerasing pure-morphic class in scope;
+- T21 algebraicity of \(\limsup A_n/n\) for the expanding nonerasing pure-morphic class in scope;
 - T21 strict scalar convergence under a hypothetical positive integer anchor;
 - T21 universal post-T18 positive increment grading.
 
 The target is to determine whether several surviving exponential-polynomial growth classes can be handled by a multigraded/growth-filtered extension of T17/T18 preserving
-[
-Q(alpha,mathbf X)=P(mathbf X),
-]
-or whether the unequal-scale (S)-unit height/contraction comparison is a genuine obstruction.
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X),
+\]
+or whether the unequal-scale \(S\)-unit height/contraction comparison is a genuine obstruction.
 
 No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
