@@ -2872,38 +2872,38 @@ Separately, asynchronous integers \(k_i\) can make \(k_i^{e_i}\rho_i^{k_i}\) com
 
 **Status: PROVED STRUCTURAL REFINEMENT in CDM4-T24.**
 
-Let the T18-reduced positive semigroup be (Gamma_Y), let (g_1) be the slowest T22 profile, and suppose
-[
-I_{>1}=(	heta^delta).
-]
+Let the T18-reduced positive semigroup be \(\Gamma_Y\), let \(g_1\) be the slowest T22 profile, and suppose
+\[
+I_{>1}=(\theta^\delta).
+\]
 
 Equality of monomial ideals means exactly
-[
-{gammainGamma_Y:operatorname{prof}(gamma)>g_1}
+\[
+\{\gamma\in\Gamma_Y:\operatorname{prof}(\gamma)>g_1\}
 =
-delta+Gamma_Y.
-]
+\delta+\Gamma_Y.
+\]
 
-If some positive (gamma) had profile strictly faster than (delta), then
-[
-gamma=delta+eta_1
-]
-and T22 max-additivity would force (eta_1) to have the same fast profile. Principalness would then permit repeated division,
-[
-gamma=jdelta+eta_j
-qquad
-orall jge1.
-]
+If some positive \(\gamma\) had profile strictly faster than \(\delta\), then
+\[
+\gamma=\delta+\eta_1
+\]
+and T22 max-additivity would force \(\eta_1\) to have the same fast profile. Principalness would then permit repeated division,
+\[
+\gamma=j\delta+\eta_j
+\qquad
+\forall j\ge1.
+\]
 The positive T21 grading gives
-[
-w_Delta(gamma)ge j,w_Delta(delta),
-]
-a contradiction for arbitrarily large (j).
+\[
+w_\Delta(\gamma)\ge j\,w_\Delta(\delta),
+\]
+a contradiction for arbitrarily large \(j\).
 
 Therefore every positive character above the slow face has profile exactly
-[
-operatorname{prof}(delta).
-]
+\[
+\operatorname{prof}(\delta).
+\]
 
 **Lesson:** a principal high-growth ideal cannot secretly contain a chain of strictly faster positive strata. In the T23 principal subclass the positive growth filtration has exactly two profiles.
 
@@ -2911,92 +2911,90 @@ operatorname{prof}(delta).
 
 ---
 
-### F0106 — Raw principal (I)-adic divisibility is Liouville-neutral
+### F0106 — Raw principal \(I\)-adic divisibility is Liouville-neutral
 
 **Status: PROVED METHOD-BOUNDARY / ROUTE KILL in CDM4-T24.**
 
 Put
-[
-I=(m),qquad m=	heta^delta.
-]
+\[
+I=(m),\qquad m=\theta^\delta.
+\]
 
 T24 proves that the raw Hilbert count is favorable. If
-[
+\[
 V(D,P)
 =
-operatorname{span}{
-	heta^gamma:
-w_Delta(gamma)le D, 
-operatorname{ord}_I(	heta^gamma)ge P
-},
-]
+\operatorname{span}\{
+\theta^\gamma:
+w_\Delta(\gamma)\le D,\ 
+\operatorname{ord}_I(\theta^\gamma)\ge P
+\},
+\]
 then
-[
-dim V(D,P)
+\[
+\dim V(D,P)
 =
-H_{Gamma_Y}(D-Pw_Delta(delta)).
-]
-A fixed positive (P/D) therefore retains the full Hilbert degree.
+H_{\Gamma_Y}(D-Pw_\Delta(\delta)).
+\]
+A fixed positive \(P/D\) therefore retains the full Hilbert degree.
 
 The obstruction occurs at the arithmetic comparison. Because
-[
+\[
 I^P=(m^P),
-]
-every (Ein I^P) has an actual factorization
-[
+\]
+every \(E\in I^P\) has an actual factorization
+\[
 E=m^P E_0.
-]
+\]
 Along the exact torus orbit,
-[
-m(q_n)
-e0,
-]
+\[
+m(q_n)\ne0,
+\]
 and the apparent fast local gain is
-[
--log|m(q_n)^P|_2
+\[
+-\log|m(q_n)^P|_2
 =
-Theta(Pg_{m fast}(n)).
-]
+\Theta(Pg_{\rm fast}(n)).
+\]
 But the same algebraic factor has
-[
+\[
 h(m(q_n)^P)
 =
-Theta(Pg_{m fast}(n)).
-]
+\Theta(Pg_{\rm fast}(n)).
+\]
 
-Thus the product formula / Liouville lower bound pays for exactly the factor producing the local smallness. Dividing by (m(q_n)^P) removes both contributions. Moreover the functional relation ideal is a kernel into a domain and is automatically (m)-saturated:
-[
-(mathcal R:m^infty)=mathcal R.
-]
+Thus the product formula / Liouville lower bound pays for exactly the factor producing the local smallness. Dividing by \(m(q_n)^P\) removes both contributions. Moreover the functional relation ideal is a kernel into a domain and is automatically \(m\)-saturated:
+\[
+(\mathcal R:m^\infty)=\mathcal R.
+\]
 
 **Lesson:** multiplication by a small principal boundary monomial is not free Diophantine gain. The next theorem must produce anomalous smallness **after** all forced principal factors have been removed.
 
-**Action:** do not restart the T24 route by merely increasing (P), changing (P/D), or repackaging (m^P) in a Rees/associated-graded construction. Work divisor-saturated.
+**Action:** do not restart the T24 route by merely increasing \(P\), changing \(P/D\), or repackaging \(m^P\) in a Rees/associated-graded construction. Work divisor-saturated.
 
 ---
 
-### F0107 — Pointwise regular-tail localization need not preserve (I)-adic order
+### F0107 — Pointwise regular-tail localization need not preserve \(I\)-adic order
 
 **Status: PROVED NON-IMPLICATION in CDM4-T24.**
 
 T18 proves that after rebuilding the minimal scalar-preserving system on the dense reduced orbit closure, every newly introduced denominator is nonzero on a sufficiently deep exact orbit.
 
 This does **not** imply that the denominator is a unit with respect to the boundary ideal
-[
+\[
 I=(m).
-]
+\]
 
 A rational denominator may have positive vanishing order along the divisor
-[
+\[
 m=0
-]
+\]
 while remaining nonzero at every finite torus orbit point because
-[
-m(q_n)
-e0.
-]
-Inverting such a denominator introduces negative (I)-adic order. Passing deeper in the orbit does not remove this boundary pole.
+\[
+m(q_n)\ne0.
+\]
+Inverting such a denominator introduces negative \(I\)-adic order. Passing deeper in the orbit does not remove this boundary pole.
 
 **Lesson:** orbit regularity and boundary-integrality are different notions.
 
-**Action:** any future (I)-filtered relation-matrix argument must localize only at (I)-adic units or explicitly track the boundary pole order through an (I)-integral / divisor-saturated relation module.
+**Action:** any future \(I\)-filtered relation-matrix argument must localize only at \(I\)-adic units or explicitly track the boundary pole order through an \(I\)-integral / divisor-saturated relation module.
