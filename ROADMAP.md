@@ -2,7 +2,7 @@
 
 ## POST-CDM4 — IRM INTEGER RETURN MECHANISM PROGRAMME
 
-**Status: AUTHORIZED — P1; six-session maximum; hard gate after IRM-3.**
+**Status: IRM-1 COMPLETE — IRM1-C STRUCTURAL NULL; IRM PAUSED; IRM-2 NOT AUTHORIZED.**
 
 The T31 strategic freeze remains in force. CDM4 is not reopened and there is no CDM4-T32.
 
@@ -20,7 +20,15 @@ IRM begins with ordinary positive integers and seeks an exact finite return cert
 \text{explicit unbounded orbit}.
 \]
 
-IRM-1 asks whether the frozen low-complexity one-parameter affine certificate class contains an exact universally closed strictly expanding return mechanism.
+IRM-1 asked whether the frozen low-complexity one-parameter affine certificate class contains an exact universally closed strictly expanding return mechanism.
+
+**IRM-1 answer: NO.** Theorem-level coefficient comparison gives, on every positive-depth cell,
+\[
+u=\frac{3^s}{2^r},
+\]
+so an integer-affine parameter slope is impossible for every \(r\ge1\). At depth zero the only return is \(G(q)=q\), which cannot grow. No enumeration was required. Authoritative report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`.
+
+IRM-1 found zero complete certificates and zero strict positive near-certificates. Therefore **IRM-2 is not authorized**. The programme is paused pending a separately justified root-proximate question; the null result does not authorize a larger template.
 
 Hard rules:
 
@@ -29,7 +37,8 @@ Hard rules:
 - no scientific trajectory campaign;
 - only tiny exact certificate enumeration under the pivot-audit envelope;
 - by IRM-3, an explicit positive integer family/candidate or instantiated positive sufficient condition must exist, else kill;
-- at IRM-6, a mandatory viability audit is required and no automatic successor is authorized.
+- at IRM-6, a mandatory viability audit is required and no automatic successor is authorized;
+- after IRM-1, no new session is authorized merely by relaxing integer-affine coefficients, increasing moduli/depth/cell count, or adding parameters.
 
 
 Historical stage decisions below retain their original context. The live authorization is the final immediate-next-task section; completed P1/P2 budgets do not authorize new scientific starts.
