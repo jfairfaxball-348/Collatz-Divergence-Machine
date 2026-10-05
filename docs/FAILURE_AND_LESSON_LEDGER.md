@@ -4188,9 +4188,9 @@ The T31 comparative failure-mode audit concludes **MOSTLY YES** to the question 
 
 Strategic classification:
 
-[
-oxed{	extbf{C — FREEZE CDM4 / PIVOT}}
-]
+\[
+\boxed{\textbf{C — FREEZE CDM4 / PIVOT}}
+\]
 
 This freeze does not demote T1–T30 mathematics.
 
