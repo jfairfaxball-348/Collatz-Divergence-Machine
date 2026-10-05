@@ -4033,3 +4033,100 @@ through the complete T22 class.
 
 **Action:** move the next theorem-sized obligation outside the T21 expanding nonerasing pure-morphic scope. CDM4-T30 should audit nonexpanding/erasing morphic normalization and the mandatory thirtieth-session progress state.
 
+---
+
+### F0129 — Erasing and mortal letters are not word-level Collatz obstructions
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T30.**
+
+Every morphic word admits an exact representation
+[
+w=	au(sigma^omega(b))
+]
+with (sigma) nonerasing and (	au) a coding.
+
+At the final coding interface there is no shift and no change of output index. Therefore every actual valuation prefix, every ordinary prefix sum (A_n), every T2 exact cylinder, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally.
+
+Intermediate deletion of mortal letters may change presentation lengths and must not be treated as index-preserving. Exactness is recovered only at the final one-sided output equality.
+
+Original output-state series are fixed linear sums of the normalized hidden-state series over coding fibres.
+
+**Lesson:** erasing is a presentation issue once the actual output word is held fixed. Language equivalence or naive mortal-letter deletion is not enough; exact one-sided coding equality is.
+
+**Action:** normalize erasures before any future morphic anchor argument, then work at the exact output index.
+
+---
+
+### F0130 — Universal normalization to the T21 growing class is false
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T30.**
+
+The pure positive-valuation morphism
+[
+eta(1)=112,qquad eta(2)=2
+]
+is nonerasing and prolongable on (1).
+
+If (W_j=eta^j(1)), then
+[
+W_{j+1}=W_jW_j2,
+qquad
+|W_j|=2^{j+1}-1,
+]
+and (W_j) ends in (2^j).
+
+Thus the root prefix grows exponentially while the bounded letter (2) occurs in arbitrarily long all-bounded factors.
+
+Pansiot's theorem gives quadratic factor complexity for this pushy branch:
+[
+p_w(n)=Theta(n^2).
+]
+
+A growing substitution fixed point has factor complexity at most (O(nlog n)), and an exact coding cannot convert that into the quadratic word above. Durand records the equivalent binary example (0mapsto001, 1mapsto1) as non-substitutive.
+
+Hence no change of exact presentation, erasure removal, or coding can place this word inside T21 without changing the word itself.
+
+**Lesson:** the first irreducible single-morphism boundary is recurrent bounded-letter pushiness, not erasing and not slow root growth. Exponential root growth does not imply that every reachable letter grows.
+
+**Action:** do not assert “morphic = growing substitutive”. Split the non-growing class by bounded-letter factor recurrence.
+
+---
+
+### F0131 — Neutral bounded directions destroy the inherited positive grading
+
+**Status: PROVED STRUCTURAL OBSTRUCTION / OPEN BOUNDARY SHARPENED in CDM4-T30.**
+
+T20 exact prefix/scalar transport survives for a nonerasing presentation:
+[
+L_J(n)=mathbf1^TM^Jc(n),
+qquad
+A_{L_J(n)}=v^TM^Jc(n),
+]
+and
+[
+S(q_J)=sum_nrac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+]
+
+But for a bounded periodic letter (b), after period refinement the T21 increment row
+[
+d^T=mathbf1^TM^a(M^R-I)
+]
+satisfies
+[
+d_b=0.
+]
+
+Therefore the grading is only nonnegative. There is no uniform exponential support displacement on every canonical generator and the T22 list of positive growth profiles cannot be imported unchanged.
+
+Pushiness makes the neutral direction dynamically unavoidable because arbitrarily long actual factors may consist only of bounded letters.
+
+Separately, T3 still gives
+[
+limsup A_n/nlelog_2 3
+]
+under a hypothetical aperiodic positive-integer anchor, but T30 did not prove algebraicity of that limsup for every pushy residual word. Frequency algebraicity conditional on frequency existence is insufficient.
+
+**Lesson:** a zero growth profile is not a “very slow” positive profile. Both the Gelfond–Schneider strictness step and the toric filtration need a new neutral-letter theorem.
+
+**Action:** CDM4-T31 should derive an exact growing-skeleton/bounded-run decomposition, audit limsup algebraicity, and test exact rational/algebraic resummation of bounded blocks before any attempt to reuse T29.
+
