@@ -1233,60 +1233,66 @@ T28 is classified **C — new canonical multiscale relative infrastructure prove
 
 T29 closes the remaining nonprincipal T22/T23 multiscale lifting obstruction.
 
-For the actual T28 finite-jet auxiliary class, the next-stratum moving coefficients are values of fixed rational functions on the slower face. Their heights are therefore
-[
-o(g_i(n))
-]
-relative to a current-profile monomial point of height
-[
-Theta(g_i(n)).
-]
+For the actual T28 finite-jet auxiliary class, the next-stratum moving coefficients are values of fixed rational functions on the slower face. Their heights are lower order than the current-profile scale.
 
-Every infinite zero subsequence admits an infinite coherent refinement. After grouping current-profile monomials by slower-face character cosets, any linear dependence over the Ru–Vojta moving coefficient field would clear denominators to a fixed nonzero Laurent relation on the T18 reduced torus. The T18 finite-hit property rules that out, so the required moving-field linear nondegeneracy holds.
+Every infinite zero subsequence admits an infinite coherent refinement. After grouping current-profile monomials by slower-face character cosets, any linear dependence over the Ru–Vojta moving coefficient field clears denominators to a fixed nonzero Laurent relation on the T18 reduced torus. The T18 finite-hit property rules that out.
 
-Inside one T22 profile, use the already-proved exact positive leading coefficient
-[
--log|	heta^gamma(q_n)|_2
+Inside one T22 profile, T22 already gives
+\[
+-\log|\theta^\gamma(q_n)|_2
 =
+\nu_i(\gamma)g_i(n)+o(g_i(n)),
+\qquad
+\nu_i(\gamma)>0.
+\]
+T28 finite jets imply local finiteness of canonical support in \(\nu_i\). Hence every nonzero current-profile component has a finite dominant cluster; omitted same-profile terms have a strict positive local gap and higher-profile terms are smaller on a faster scale.
 
-u_i(gamma)g_i(n)+o(g_i(n)).
-]
-T28 finite jets imply local finiteness of the canonical support in this leading coefficient. Hence every nonzero current-profile component has a finite dominant cluster; omitted same-profile terms have a strict positive local gap and higher-profile terms are smaller on a faster scale.
+There are two projective-height cases.
 
-Putting the dominant monomials in projective coordinates makes the cluster a moving hyperplane. The coordinate hyperplanes contribute the exact (S)-unit baseline (M h(x_n)); the super-small moving form contributes an additional fixed positive proportion of (h(x_n)). Ru–Vojta's moving-target Subspace Theorem allows only ((M+arepsilon)h(x_n)+O(1)). Taking (arepsilon) below the positive gap is impossible unless the dominant cluster vanishes identically.
+If the projective monomial point retains height
+\[
+\Theta(g_i(n)),
+\]
+the target height is \(o(h(x_n))\). Coordinate hyperplanes contribute the exact \(S\)-unit baseline, and the moving hyperplane contributes a fixed positive excess. Ru–Vojta forbids that excess.
 
-Iterating at one synchronized orbit time gives the canonical finite-flag zero theorem:
-[
-oxed{
-E(q_n)=0	ext{ infinitely often}
-Longrightarrow
+If projective cancellation lowers the point height to
+\[
+o(g_i(n)),
+\]
+divide by one dominant monomial. The normalized cluster has algebraic height \(o(g_i(n))\) but 2-adic smallness on the full \(g_i(n)\)-scale. Ordinary Liouville forces exact zero, and T18 finite-hit makes the cluster identically zero.
+
+Iterating at one synchronized orbit time gives
+\[
+\boxed{
+E(q_n)=0\text{ infinitely often}
+\Longrightarrow
 E=0
 }
-]
-modulo the exact functional relation ideal.
+\]
+for the canonical T28 auxiliary class modulo exact functional relations.
 
 This is exactly the missing nonvanishing input for T28. Hilbert–Samuel relative Hermite–Padé multiplicity now combines with the finite Artin–Rees transport tax and the matched fastest-face local/global scale to complete the inherited T16/T17/T25/T27 auxiliary contradiction.
 
 Therefore every genuinely aperiodic T22 multiscale system admits exact relation lifting with
-[
-oxed{
-Q(alpha,mathbf X)=P(mathbf X)
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X)
 }
-]
+\]
 literally preserved on the original canonical variables.
 
 No normalized blowup, Rees-chart relation, integral-closure replacement, non-unimodular gauge, state-direction deletion, or asynchronous orbit time is used. Exact ideal powers remain primary.
 
-The inherited T21 completion-sign argument therefore excludes positive-integer anchors throughout the complete T22 multiscale class.
+The inherited T21 completion-sign argument excludes positive-integer anchors throughout the complete T22 multiscale class.
 
-Under the inherited T2 finite-alphabet anchoring hypotheses:
-[
-oxed{
-R_m	ext{ bounded}
-Longrightarrow
-	ext{eventual periodicity}
+Under the inherited T2 finite-alphabet anchoring hypotheses,
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
 }
-]
+\]
 through the complete T22 class, strictly beyond the principal-fast class closed at T27.
 
 Positive rational noninteger values remain excluded only under independently known ordinary real subcriticality. Negative rational values remain unexcluded.
@@ -1314,4 +1320,3 @@ The next theorem-sized obligation is:
 Do not reopen the T22–T29 multiscale lifting proof.
 
 No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
-
