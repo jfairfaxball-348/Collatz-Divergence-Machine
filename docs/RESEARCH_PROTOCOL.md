@@ -57,7 +57,7 @@ After CDM0, use numbered research sessions. Every tenth session is a progress-an
 
 ## 9. RMI foundational-invention protocol
 
-The active theory programme is RMI — Root Mechanism Invention Programme.
+The most recent theory programme was RMI — Root Mechanism Invention Programme. RMI is **FROZEN after the RMI-3 hard viability gate**; RMI-4 is not authorized.
 
 RMI research selection follows:
 
@@ -89,9 +89,7 @@ Every session reports the unresolved nontrivial root-arrow count before and afte
 
 Continuation beyond RMI-3 requires a finite exact state, direct ordinary-orbit ownership, a proved non-tautological regeneration lemma, a proper physical gain, an indefinite-growth implication theorem, a finite kill condition, and at least one nontrivial exact ordinary-orbit regeneration instance.
 
-RMI-6 is an absolute audit. Continue only after either a complete root certificate or a reduction of the unresolved root-arrow count from two to one with a finitely testable remaining construction problem.
-
-No automatic RMI-7 is authorized.
+The RMI-3 hard viability gate failed with **RMI3-C — HARD GATE FAILED / RMI FROZEN**. The programme therefore terminated at RMI-3; RMI-4 through RMI-6 are not authorized and there is no automatic RMI-7.
 
 ## 10. RMI compute discipline
 
