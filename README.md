@@ -1,4 +1,31 @@
 # COLLATZ DIVERGENCE MACHINE
+
+
+## Current programme — RMI
+
+**RMI-REBOOT-A — ROOT MECHANISM INVENTION PROGRAMME INSTALLED / RMI-1 AUTHORIZED.**
+
+Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+
+RMI — **Root Mechanism Invention Programme** — is the current active research programme.
+
+It does **not** reopen the frozen programmes:
+
+- CDM4 remains frozen; there is no CDM4-T32.
+- IRM remains frozen; IRM-2 remains unauthorized.
+
+RMI changes the research-selection rule. The project may invent genuinely new mathematical structures without prior-art precedent when they are derived from a demonstrated root obstruction, preserve one actual ordinary forward orbit, have a precise proof capability and finite kill condition, and would shorten the route to an explicit unbounded orbit.
+
+The current unresolved nontrivial root-arrow count remains **2**.
+
+Initial RMI budget: at most **6 sessions**, hard viability gate after **RMI-3**, absolute audit at **RMI-6**, no automatic RMI-7.
+
+The only authorized next research target is:
+
+> **RMI-1 — FINITE REGENERATIVE ORBIT-STATE INVENTION AUDIT:** can finite exact information carried by one ordinary Collatz orbit regenerate its own proof power after genuine forward evolution while forcing strict growth in a proper physical quantity, without prescribing an infinite future?
+
+Scientific trajectory compute remains unauthorized.
+
 ## Multi-Stage Search for Unbounded Orbits
 
 **Root objective:** find an explicit positive integer whose orbit under the shortened Collatz map
