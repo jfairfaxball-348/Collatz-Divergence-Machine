@@ -93,6 +93,13 @@ Reopening theory requires a genuinely different root bridge: for example, direct
 
 ## Read before working
 
+Current programme authority should be read first:
+
+- `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`
+- `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
+
+Then retain the repository governance/history reading below as needed:
+
 1. `AGENTS.md`
 2. `PROJECT_CHARTER.md`
 3. `ROADMAP.md`
