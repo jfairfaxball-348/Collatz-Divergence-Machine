@@ -5,9 +5,9 @@
 
 - Project stage: **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
 - Active programme: **RMI — Root Mechanism Invention Programme**
-- Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`
-- Authoritative RMI charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`
-- RMI-1 parent: \`rmi-root-mechanism-invention-reboot\` at \`f3e0591c525b51240d7c1fcf9fbfd5579bb0be04\`
+- Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
+- Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
+- RMI-1 parent: `rmi-root-mechanism-invention-reboot` at `f3e0591c525b51240d7c1fcf9fbfd5579bb0be04`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
@@ -1114,7 +1114,7 @@ No scientific computation is authorized.
 
 ## CDM4-T25 closeout — 2026-10-04
 
-CDM4-T25 is complete. Authoritative report: \`experiments/CDM4_T25_REPORT.md\`.
+CDM4-T25 is complete. Authoritative report: `experiments/CDM4_T25_REPORT.md`.
 
 **Classification: C — NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND.**
 
