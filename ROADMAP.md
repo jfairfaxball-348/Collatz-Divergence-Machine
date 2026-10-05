@@ -4,7 +4,7 @@
 
 **Status: POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND. IRM-2 NOT AUTHORIZED.**
 
-Authoritative audit: `experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md`.
+Authoritative audit: experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md.
 
 The T31 CDM4 freeze remains in force. CDM4 is not reopened and there is no CDM4-T32.
 
@@ -18,17 +18,17 @@ Three independently motivated bridge categories were audited:
 
 None supplied an explicit positive integer together with exact recursively closed genuine forward growth. Strong sufficiency gives hitting/merging constraints rather than constructive closure; stopping-time residue structure remains finite-prefix information without a persistence theorem; conjugacy/embedding routes either reintroduce the ordinary-integer lift bridge or lose exact Collatz ownership after the special source class.
 
-The rational-affine relaxation is not authorized: with (F(q)=q) it reproduces the original branches (q/2) and ((3q+1)/2) exactly, so the unrestricted language is a coordinate rewrite of Collatz unless an independent invariant/growth theorem is supplied.
+The rational-affine relaxation is not authorized: with F(q) = q it reproduces the original branches q/2 and (3q+1)/2 exactly, so the unrestricted language is a coordinate rewrite of Collatz unless an independent invariant/growth theorem is supplied.
 
-A finite multi-state integer-affine recurrent extension is also closed algebraically. For an edge (i	o j),
-[
-u_e=rac{3^{s_e}a_i}{2^{r_e}a_j}.
-]
+A finite multi-state integer-affine recurrent extension is also closed algebraically. For an edge i -> j,
+
+    u_e = 3^(s_e) a_i / (2^(r_e) a_j).
+
 Around a state-cycle the embedding slopes telescope, forcing
-[
-prod_e u_e=rac{3^S}{2^R},
-]
-which cannot be an integer for any recurrent cycle with positive total Collatz depth (Rge1).
+
+    product_e u_e = 3^S / 2^R,
+
+which cannot be an integer for any recurrent cycle with positive total Collatz depth R >= 1.
 
 **Live governance:**
 
