@@ -3,9 +3,9 @@
 
 ## RMI theory-development envelope — 2026-10-05
 
-**Status:** ACTIVE DEFAULT FOR RMI UNLESS A SMALLER SESSION-SPECIFIC ENVELOPE IS FROZEN.
+**Status:** HISTORICAL / CLOSED AFTER RMI-3. RMI IS FROZEN; RMI-4 IS NOT AUTHORIZED.
 
-RMI is theory/design first. No scientific trajectory campaign is authorized.
+RMI was theory/design first. No scientific trajectory campaign was authorized by RMI, and the RMI-3 freeze does not authorize one.
 
 Tiny exact computation is permitted only as theorem-development tooling after the session states the precise proposition, identity, invariant, or finite candidate object the computation can falsify.
 
