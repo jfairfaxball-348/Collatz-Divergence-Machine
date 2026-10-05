@@ -4277,3 +4277,78 @@ Consequences:
 
 **Do not repeat:** do not respond to this null by automatically allowing more cells, larger moduli, deeper returns, multiple parameters, or rational-affine cell maps. Such changes define a different certificate class and require independent root-proximate justification. In particular, a rational piecewise-affine identity parameterization risks merely renaming the original Collatz dynamics.
 
+---
+
+## F0136 — Rational-affine return coordinates are tautological without an independent invariant restriction
+
+**Status: PROVED STRUCTURAL / GOVERNANCE OBSTRUCTION in POST-IRM1.**
+
+For an affine chart (F(q)=aq+b) and a fixed Collatz parity block,
+[
+G=F^{-1}circ T^rcirc F
+]
+is automatically rational-affine. With the identity chart, the one-step maps are exactly
+[
+qmapsto q/2,qquad qmapsto(3q+1)/2.
+]
+
+Thus merely allowing rational-affine return maps places the original Collatz dynamics inside the certificate language verbatim. The language gains scientific content only if an independently motivated domain/invariant/proper-height theorem is supplied first.
+
+**Lesson:** removing the IRM-1 denominator obstruction by relaxing coefficient integrality does not create a new mechanism.
+
+**Action:** do not authorize rational-affine IRM-2 by adjacency.
+
+---
+
+## F0137 — Finite multi-state integer-affine recurrent returns inherit a cycle denominator obstruction
+
+**Status: PROVED STRUCTURAL OBSTRUCTION in POST-IRM1.**
+
+For affine embeddings (F_i(q)=a_iq+b_i), an exact edge (i	o j) of depth (r_e) and odd count (s_e) with integer-affine parameter slope (u_e) satisfies
+[
+u_e=rac{3^{s_e}a_i}{2^{r_e}a_j}.
+]
+
+Around any directed state-cycle the embedding slopes telescope:
+[
+prod_e u_e=rac{3^S}{2^R}.
+]
+
+The left side is an integer. If the recurrent cycle has positive total Collatz depth (Rge1), the right side is not an integer. Hence no finite recurrent positive-depth system of this type exists. Depth-zero recurrence does not advance the physical orbit and cannot certify unboundedness.
+
+**Lesson:** “one affine state failed, therefore several affine states” is not a viable repair while integer-affine parameter returns are retained.
+
+**Action:** preserve this as a closed adjacent loophole; do not launch a multi-state template search.
+
+---
+
+## F0138 — Strong sufficiency is a hitting theorem, not a constructive divergence mechanism
+
+**Status: PROVED STRATEGIC DISTINCTION in POST-IRM1.**
+
+Published strongly sufficient-set results give exact ordinary-integer constraints on every divergent orbit, including compulsory visits to certain residue classes. They preserve actual forward-orbit ownership and are independently motivated.
+
+But a strongly sufficient set need not be forward invariant, does not select an explicit divergent member, and supplies no proper monotone quantity. Enlarging modular graphs or searching more residue sets without a separate constructive theorem would recreate the template-ladder failure mode.
+
+**Lesson:** necessary orbit-hitting structure does not reduce the root bridge unless it is coupled to exact recurrent growth.
+
+**Action:** do not promote modular residue-set search as IRM-2 absent a new closure/growth theorem.
+
+---
+
+## F0139 — IRM freezes after IRM-1; no continuation cleared the post-IRM1 hostile audit
+
+**Status: BINDING STRATEGIC FREEZE from POST-IRM1.**
+
+The bounded authorization audit examined independently motivated ordinary-integer routes from strongly sufficient sets, stopping-time/parity-residue theory, and exact conjugacy/arithmetic embeddings. None supplied an explicit ordinary positive integer with exact recursively closed genuine forward growth.
+
+The rational-affine relaxation is tautological, and the finite multi-state integer-affine recurrent extension is structurally ruled out.
+
+**Decision: POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND.**
+
+IRM-1 remains the only executed IRM mechanism session. IRM-2 is not authorized.
+
+**Reopening criterion:** genuinely new evidence must independently point to one specific ordinary-integer mechanism, such as a new external theorem, a new exact closure identity preserved by actual Collatz iteration, an explicit family with self-regeneration, a theorem-derived candidate prediction, or a positive near-certificate with one mathematically compelled repair.
+
+“More expressive mathematics is available” is not a reopening trigger.
+
