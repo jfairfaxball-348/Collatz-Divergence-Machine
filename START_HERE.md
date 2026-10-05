@@ -5,9 +5,9 @@
 
 - Project stage: **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
 - Active programme: **RMI — Root Mechanism Invention Programme**
-- Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
-- Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
-- RMI-1 parent: `rmi-root-mechanism-invention-reboot` at `f3e0591c525b51240d7c1fcf9fbfd5579bb0be04`
+- Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`
+- Authoritative RMI charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`
+- RMI-1 parent: \`rmi-root-mechanism-invention-reboot\` at \`f3e0591c525b51240d7c1fcf9fbfd5579bb0be04\`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
@@ -18,11 +18,11 @@
 - Exactly one authorized next target: **RMI-2 — FRESH FORWARD-CONTROL RESEEDING / ENDOGENOUS INFORMATION-PRODUCTION AUDIT**
 - RMI-3 remains the **HARD VIABILITY GATE**.
 
-RMI-1 proved that if an infinite ordinary-positive cylinder (n=\rho+2^Kq) follows a common shortened-Collatz block of length (r\le K) with (s) odd steps, then
-[
+RMI-1 proved that if an infinite ordinary-positive cylinder \(n=\rho+2^Kq\) follows a common shortened-Collatz block of length \(r\le K\) with \(s\) odd steps, then
+\[
 T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
-]
-Because (3^s) is odd, the strongest universally forced power-of-two cylinder at the successor has depth exactly (K-r). Finite parity-cylinder proof reserve therefore loses exactly one bit per shortened step and cannot regenerate itself indefinitely.
+\]
+Because \(3^s\) is odd, the strongest universally forced power-of-two cylinder at the successor has depth exactly \(K-r\). Finite parity-cylinder proof reserve therefore loses exactly one bit per shortened step and cannot regenerate itself indefinitely.
 
 RMI-1 also introduced the **Proof-Reserve Regenerative State (PRRS)** as a proof architecture with ordinary ownership, universal family-level compression, bounded genuine forward semantics, proper physical gain, and an explicit premise-renewal ledger. Its generic soundness theorem is valid, but no Collatz-specific non-cylinder reseed law was found.
 
@@ -30,7 +30,7 @@ The single live defect is:
 
 > **No endogenous ordinary-arithmetic source of fresh forward-control information is yet known that can reseed the successor certificate after finite cylinder information is consumed.**
 
-The (27+256q\to31+288q) example is the hostile model: although (v_2(n+1)) appears to improve from (2) to at least (5), the actual universal proof starts from an eight-bit cylinder and ends with a five-bit cylinder. Apparent renewal can therefore be hidden prefix spending.
+The \(27+256q\to31+288q\) example is the hostile model: although \(v_2(n+1)\) appears to improve from \(2\) to at least \(5\), the actual universal proof starts from an eight-bit cylinder and ends with a five-bit cylinder. Apparent renewal can therefore be hidden prefix spending.
 
 RMI-2 may attack only the missing reseeding capability. It must not respond by increasing modulus, prefix depth, state count, parameter dimension, or representation class. The exact next question is:
 
