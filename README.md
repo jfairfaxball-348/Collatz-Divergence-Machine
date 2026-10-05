@@ -37,101 +37,52 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T28 is complete — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN. No new scientific compute is authorized.**
+**CDM4-T29 is complete — C: SYNCHRONIZED MOVING-TARGET ZERO THEOREM AND COMPLETE T22 MULTISCALE EXACT LIFTING PROVED. No new scientific compute is authorized.**
 
-T20–T27 remain closed infrastructure.
+Authoritative T29 report: `experiments/CDM4_T29_REPORT.md`.
 
+T20–T28 remain closed infrastructure.
 
-T28 returns to the nonprincipal T22/T23 multiscale boundary. It proves that every high-growth ideal \(I_{>i}\) is a prime monomial face ideal and that the canonical localization
-\[
-\mathcal O_i=K[\Gamma_Y]_{I_{>i}}
-\]
-has residue field
-\[
-\operatorname{Frac}K[\Gamma_{\le i}].
-\]
+T29 verifies that the actual canonical finite-jet targets produced by T28 satisfy Ru–Vojta's moving-hyperplane Subspace Theorem after one exact reduction:
 
-Fixed canonical jets modulo powers of the face prime contain only finitely many prefix terms, so the T25 finite-jet mechanism genuinely generalizes beyond a principal divisor. Hilbert–Samuel counting gives an unbounded relative Hermite–Padé multiplicity amplifier, while torsion-free local relation modules admit a free-lattice sandwich and an Artin–Rees finite geometric transport tax.
+- canonical jet coefficients are fixed rational functions on the slower face, so their evaluated heights are (o) of the current-stratum point height;
+- every infinite zero subsequence admits a coherent refinement;
+- after grouping current-stratum monomials by slower-face cosets, T18's finite-hit theorem forces linear nondegeneracy over the moving coefficient field;
+- T22's exact 2-adic leading coefficient inside one growth profile identifies a finite dominant cluster, while omitted same-profile terms have a strict local gap and higher-profile terms are smaller on a faster scale;
+- coordinate hyperplanes supply the exact (S)-unit projective-height baseline, so the extra moving-hyperplane proximity contradicts Ru–Vojta unless the current initial form vanishes identically.
 
-Thus T23's moving **analytic** coefficients are eliminated at fixed canonical jet order: the next-stratum coefficients are algebraic and have strictly lower height.
+Iterating at one synchronized orbit time gives the canonical finite-flag zero theorem. Combined with T28's Hilbert–Samuel Hermite–Padé multiplicity and finite Artin–Rees transport tax, this closes exact relation lifting for the complete genuinely aperiodic T22 multiscale class.
 
-T28 does **not** yet prove the full nonprincipal relation lift. The remaining theorem is a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem plus exact descent to the original canonical variables with
-\[
-Q(\alpha,\mathbf X)=P(\mathbf X)
-\]
-literally preserved.
+The prescribed specialization survives literally:
 
-Rees valuations and normalized blowups are useful for interpreting the geometry, but they control integral closures and do not replace the exact powers required by the specialization-safe proof.
-
-T27 does not prove automatic canonical special-fibre injectivity. The standalone question
-\[
-\lambda_m=0?
-\]
-remains open, and no valid canonical principal-fast example with \(\lambda_m>0\) has been found.
-
-What T27 does prove is an exact classification of the defect. If
-\[
-\mathscr L_1=\mathscr E/\mathscr R
-\]
-is the saturated degree-one lattice, and
-\[
-E_0=\mathscr E/m\mathscr E,
-\qquad
-R_0=(\mathscr R+m\mathscr E)/m\mathscr E,
-\]
-then for the raw first-fast-cut matrix \(\overline{\mathcal A}\),
-\[
-\boxed{
-\operatorname{coker}\overline\Phi
-\cong
-E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+[
+oxed{
+Q(alpha,mathbf X)=P(mathbf X).
 }
-\]
+]
 
-Thus a special-fibre kernel is exactly a genuine source direction whose first-fast-truncated image becomes a boundary relation. It need not be a rational functional relation in the generic fibre.
+No normalized blowup, exceptional chart, integral-closure replacement, non-unimodular gauge, deleted scalar direction, or asynchronous orbit time is used.
 
-If the elementary divisors are
-\[
-m^{e_1},\ldots,m^{e_r},
-\qquad
-\mu_m=\max_i e_i,
-\]
-then degree-\(D\) inverse transport through \(n\) semilinear iterates loses at most
-\[
-D\mu_m\frac{a^n-1}{a-1}
-\]
-units of \(m\)-order.
-
-The T25 relative Hermite–Padé multiplicity
-\[
-P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
-\]
-dominates this finite slope tax. For fixed \(D_X\), the tax is fixed while \(P_{\rm rel}\) grows without bound in \(D_f\).
-
-Therefore every genuinely aperiodic principal-fast system admits exact mixed-place relation lifting for arbitrary finite \(\lambda_m\), with
-\[
-\boxed{
-Q(\alpha,\mathbf X)=P(\mathbf X)
-}
-\]
-literally preserved on the original canonical lattice.
-
-The inherited T21 completion-sign chain now excludes positive-integer anchors throughout the complete genuinely aperiodic principal-fast class, including any canonical divisor-degenerate system.
+The inherited T21 completion-sign chain therefore excludes positive-integer anchors throughout the complete T22 multiscale class.
 
 Under the inherited T2 finite-alphabet anchoring hypotheses,
-\[
-\boxed{
-R_m\text{ bounded}
-\Longrightarrow
-\text{eventual periodicity}
-}
-\]
-throughout the full principal-fast class.
 
-The next live theorem is **CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit**.
+[
+oxed{
+R_m	ext{ bounded}
+Longrightarrow
+	ext{eventual periodicity}
+}
+]
+
+now holds through the complete T22 class, strictly beyond the principal-fast class closed by T27.
+
+Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T28_REPORT.md before doing research.
+The next live theorem is **CDM4-T30 — nonexpanding / erasing morphic normalization and anchor-obstruction audit**, also serving as the mandatory thirtieth-session progress/correction audit.
+
+Read `AGENTS.md`, `START_HERE.md`, the required prior reports, and `experiments/CDM4_T29_REPORT.md` before doing research.
