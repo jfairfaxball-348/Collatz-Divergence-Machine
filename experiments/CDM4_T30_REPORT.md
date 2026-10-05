@@ -1,10 +1,10 @@
 # CDM4-T30 — NONEXPANDING / ERASING MORPHIC NORMALIZATION AND ANCHOR-OBSTRUCTION AUDIT
 
 **Date:** 2026-10-05  
-**Authoritative input branch:** `cdm4-t29-moving-target-zero-audit`  
-**Authoritative input commit:** `32f37c1dc1185b26612633ca869127adb1bce198`  
-**T29 merge status at entry:** **NOT MERGED INTO `main`**; `main` diverged from the T29 line, so the exact T29 tip above was used as authority.  
-**Working branch:** `cdm4-t30-nonexpanding-erasing-morphic-normalization`  
+**Authoritative input branch:** cdm4-t29-moving-target-zero-audit  
+**Authoritative input commit:** 32f37c1dc1185b26612633ca869127adb1bce198  
+**T29 merge status at entry:** **NOT MERGED INTO main**; main diverged from the T29 line, so the exact T29 tip above was used as authority.  
+**Working branch:** cdm4-t30-nonexpanding-erasing-morphic-normalization  
 **Session type:** theorem / literature / exact morphic-normalization audit; mandatory thirtieth-session progress/correction audit.
 
 Scientific Collatz starts generated: **0**  
@@ -22,11 +22,11 @@ T30 proves a **partial canonical morphic normalization theorem** and isolates a 
 
 The universal statement
 
-[
-	ext{every genuinely aperiodic pure-morphic positive valuation word}
-Longrightarrow
-	ext{an exact T21 expanding-nonerasing presentation}
-]
+\[
+\text{every genuinely aperiodic pure-morphic positive valuation word}
+\Longrightarrow
+\text{an exact T21 expanding-nonerasing presentation}
+\]
 
 is **false**.
 
@@ -34,18 +34,18 @@ The failure is not caused by erasing letters or mortal letters alone.
 
 A classical Cobham normalization, in the constructive form audited in Charlier–Leroy–Rigo, gives for every morphic word an exact representation
 
-[
-oxed{
-w=	au(sigma^omega(b))
+\[
+\boxed{
+w=\tau(\sigma^\omega(b))
 }
-]
+\]
 
-where (sigma) is nonerasing and prolongable and (	au) is a coding. This is equality of the actual one-sided word, not equality merely of languages or subshifts. Therefore, at the observable valuation-word level:
+where \(\sigma\) is nonerasing and prolongable and \(\tau\) is a coding. This is equality of the actual one-sided word, not equality merely of languages or subshifts. Therefore, at the observable valuation-word level:
 
 - no shift is required;
-- output index (n) is unchanged;
+- output index \(n\) is unchanged;
 - letter order is unchanged;
-- every ordinary prefix sum (A_n) is unchanged;
+- every ordinary prefix sum \(A_n\) is unchanged;
 - every T2 exact valuation-prefix cylinder is unchanged;
 - the canonical inverse-Collatz scalar is unchanged literally;
 - the exact positive-integer anchoring condition is unchanged.
@@ -64,94 +64,94 @@ Two broad classes are thereby closed.
 
 For every word on this growing-normalizable side, the T29 closed theorem applies without redoing T22–T29. A hypothetical positive-integer anchor gives
 
-[
-limsup_{n	oinfty}rac{A_n}{n}
-le log_2 3
-]
+\[
+\limsup_{n\to\infty}\frac{A_n}{n}
+\le \log_2 3
+\]
 
-by the universal T3 Collatz height bound. T21 gives algebraicity of the same ordinary-prefix limsup. Since (log_2 3) is transcendental, equality is impossible, so the gap is strict. The T20/T21 scalar-transport and real-completion chain then applies, and T29 excludes the positive-integer anchor.
+by the universal T3 Collatz height bound. T21 gives algebraicity of the same ordinary-prefix limsup. Since \(\log_2 3\) is transcendental, equality is impossible, so the gap is strict. The T20/T21 scalar-transport and real-completion chain then applies, and T29 excludes the positive-integer anchor.
 
 Thus, under the inherited T2 finite-alphabet anchoring hypotheses,
 
-[
-oxed{
-R_m	ext{ bounded}
-Longrightarrow
-	ext{eventual periodicity}
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
 }
-]
+\]
 
-extends beyond the presentation class stated in T29 to every actual valuation word admitting the exact growing-normalizable presentation described above.
+extends beyond the literal presentation class stated in T29 to every actual valuation word admitting the exact growing-normalizable presentation described above.
 
 The first genuine residual class is the **pushy bounded-letter class**.
 
-Durand records Pansiot's trichotomy for a nonerasing endomorphism (eta) prolongable on (a). If (eta) is non-growing and the fixed point contains arbitrarily long factors consisting entirely of non-growing letters, then its factor complexity is
+Durand records Pansiot's trichotomy for a nonerasing endomorphism \(\eta\) prolongable on \(a\). If \(\eta\) is non-growing and the fixed point contains arbitrarily long factors consisting entirely of non-growing letters, then its factor complexity is
 
-[
-Theta(n^2).
-]
+\[
+\Theta(n^2).
+\]
 
-By contrast a growing substitution fixed point, and therefore any coding of one, has complexity at most (O(nlog n)). Hence a quadratic-complexity pure morphic fixed point cannot be represented exactly as a coding of any growing substitution.
+By contrast a growing substitution fixed point, and therefore any coding of one, has complexity at most \(O(n\log n)\). Hence a quadratic-complexity pure morphic fixed point cannot be represented exactly as a coding of any growing substitution.
 
 The canonical witness is
 
-[
-eta(1)=112,qquad eta(2)=2,
-qquad
-w=eta^omega(1),
-]
+\[
+\eta(1)=112,\qquad \eta(2)=2,
+\qquad
+w=\eta^\omega(1),
+\]
 
-the positive-valuation relabeling of Durand's example (0mapsto001, 1mapsto1).
+the positive-valuation relabeling of Durand's example \(0\mapsto001,\ 1\mapsto1\).
 
-Writing (W_j=eta^j(1)),
+Writing \(W_j=\eta^j(1)\),
 
-[
+\[
 W_{j+1}=W_jW_j2.
-]
+\]
 
-Hence (W_j) ends in (2^j). The bounded letter (2) therefore occurs in arbitrarily long pure bounded-letter factors. Durand states that this fixed point is not substitutive: it cannot be defined by a growing endomorphism. Pansiot's theorem gives quadratic factor complexity.
+Hence \(W_j\) ends in \(j\) consecutive copies of the symbol \(2\). The bounded letter \(2\) therefore occurs in arbitrarily long pure bounded-letter factors. Durand states that this fixed point is not substitutive: it cannot be defined by a growing endomorphism. Pansiot's theorem gives quadratic factor complexity.
 
 This is a word-level obstruction. Changing the original morphic presentation, removing erasures, or inserting a coding cannot produce an exact T21 representation without changing the actual one-sided word.
 
 The residual obstruction is therefore sharper than “polynomial growth”. The witness above has
 
-[
+\[
 |W_j|=2^{j+1}-1,
-]
+\]
 
 so the root prefix grows exponentially even though a reachable letter is bounded.
 
 Genuinely polynomial-growth aperiodic examples also survive and necessarily carry a neutral/bounded direction. For example,
 
-[
-pi(2)=23,qquad pi(3)=31,qquad pi(1)=1
-]
+\[
+\pi(2)=23,\qquad \pi(3)=31,\qquad \pi(1)=1
+\]
 
-is prolongable on (2) and has
+is prolongable on \(2\) and has
 
-[
-|pi^j(2)|=1+j+rac{j(j-1)}2.
-]
+\[
+|\pi^j(2)|=1+j+\frac{j(j-1)}2.
+\]
 
-Its fixed point contains increasing runs of the bounded letter (1). Such systems are outside T21 for the same structural reason: a finite nonerasing system in which every reachable letter grows cannot have polynomial root growth without a bounded terminal component.
+Its fixed point contains increasing runs of the bounded letter \(1\). Such systems are outside T21 for the same structural reason: a finite nonerasing system in which every reachable letter grows cannot have polynomial root growth without a bounded terminal component.
 
 The residual class creates two new theorem-level obstructions.
 
 First, although T3 always gives the universal inequality
 
-[
-eta:=limsup A_n/nlelog_2 3
-]
+\[
+\beta:=\limsup A_n/n\le\log_2 3
+\]
 
-under a hypothetical aperiodic positive-integer anchor, T30 did **not** verify a theorem making (eta) algebraic for every pushy residual morphic word. Existing frequency results are insufficient: algebraicity of a letter frequency when the frequency exists does not by itself prove algebraicity of the weighted prefix limsup when frequencies may fail to exist. Thus the Gelfond–Schneider strictness step is not universal in the residual class.
+under a hypothetical aperiodic positive-integer anchor, T30 did **not** verify a theorem making \(\beta\) algebraic for every pushy residual morphic word. Existing frequency results are insufficient: algebraicity of a letter frequency when the frequency exists does not by itself prove algebraicity of the weighted prefix limsup when frequencies may fail to exist. Thus the Gelfond–Schneider strictness step is not universal in the residual class.
 
-Second, the T21 positive grading degenerates on bounded letters. For a bounded periodic direction (b), after period refinement the length-increment row has
+Second, the T21 positive grading degenerates on bounded letters. For a bounded periodic direction \(b\), after period refinement the length-increment row has
 
-[
+\[
 d_b=0.
-]
+\]
 
-Therefore the inherited positive grading becomes only nonnegative. There is no uniform (kappa>1) support displacement on every canonical generator, and the complete T22 positive-profile filtration cannot simply be imported. Pushiness makes this defect unavoidable: arbitrarily long pieces of the actual output may live predominantly in the neutral direction.
+Therefore the inherited positive grading becomes only nonnegative. There is no uniform \(\kappa>1\) support displacement on every canonical generator, and the complete T22 positive-profile filtration cannot simply be imported. Pushiness makes this defect unavoidable: arbitrarily long pieces of the actual output may live predominantly in the neutral direction.
 
 Accordingly T29 does **not** apply unchanged to the quadratic pushy residual class even in examples where ordinary real subcriticality can be shown separately.
 
@@ -165,7 +165,7 @@ The exact next theorem-sized obligation is:
 
 > **CDM4-T31 — PUSHY BOUNDED-LETTER RESUMMATION / ORDINARY-PREFIX LIMSUP / NEUTRAL-FACE AUDIT.**
 >
-> For genuinely aperiodic nonerasing pure-morphic positive valuation words with recurrent bounded letters and unbounded bounded-letter factors, derive an exact growing-skeleton/bounded-run prefix decomposition; determine whether (limsup A_n/n) has a finite algebraic description; resum the bounded periodic dynamics into exact rational/algebraic coefficient functions while preserving the original output index and Collatz scalar; and decide whether the neutral directions can be quotiented or resummed to recover a finite **positive** toric filtration suitable for T29. If not, prove the first exact neutral-face obstruction.
+> For genuinely aperiodic nonerasing pure-morphic positive valuation words with recurrent bounded letters and unbounded bounded-letter factors, derive an exact growing-skeleton/bounded-run prefix decomposition; determine whether \(\limsup A_n/n\) has a finite algebraic description; resum the bounded periodic dynamics into exact rational/algebraic coefficient functions while preserving the original output index and Collatz scalar; and decide whether the neutral directions can be quotiented or resummed to recover a finite **positive** toric filtration suitable for T29. If not, prove the first exact neutral-face obstruction.
 
 No scientific computation is authorized.
 
@@ -175,21 +175,21 @@ No scientific computation is authorized.
 
 The exact T29 commit
 
-[
-	exttt{32f37c1dc1185b26612633ca869127adb1bce198}
-]
+\[
+\texttt{32f37c1dc1185b26612633ca869127adb1bce198}
+\]
 
 was verified against the branch
 
-[
-	exttt{cdm4-t29-moving-target-zero-audit}.
-]
+\[
+\texttt{cdm4-t29-moving-target-zero-audit}.
+\]
 
 The branch and the supplied SHA were identical.
 
-A direct comparison with `main` showed that `main` had **not** merged T29 and had diverged from the T29 line. Therefore T30 used the exact T29 tip as authority and did not import later divergent `main` changes.
+A direct comparison with main showed that main had **not** merged T29 and had diverged from the T29 line. Therefore T30 used the exact T29 tip as authority and did not import later divergent main changes.
 
-Before mathematical work, the repository governance files and the historical reports required by `START_HERE.md` were audited, with special attention to T18 and T20–T29.
+Before mathematical work, the repository governance files and the historical reports required by START_HERE.md were audited, with special attention to T18 and T20–T29.
 
 The following inherited facts are load-bearing here.
 
@@ -208,45 +208,45 @@ T30 therefore does not revisit multiscale lifting.
 
 Let
 
-[
-w=w_0w_1w_2cdots
-]
+\[
+w=w_0w_1w_2\cdots
+\]
 
-be the actual positive valuation word, with finite alphabet contained in (mathbb Z_{>0}), and define
+be the actual positive valuation word, with finite alphabet contained in \(\mathbb Z_{>0}\), and define
 
-[
-A_n=sum_{0le j<n}w_j.
-]
+\[
+A_n=\sum_{0\le j<n}w_j.
+\]
 
 For the Collatz application, the observable object is this exact one-sided word.
 
-A presentation change is **Collatz-exact** only if it preserves the sequence (w_n) at every index (n). Exact equality of languages, orbit closures, or subshifts is insufficient.
+A presentation change is **Collatz-exact** only if it preserves the sequence \(w_n\) at every index \(n\). Exact equality of languages, orbit closures, or subshifts is insufficient.
 
 If
 
-[
-w=	au(z),qquad z=sigma^omega(b),
-]
+\[
+w=\tau(z),\qquad z=\sigma^\omega(b),
+\]
 
-and (	au) is a coding, then
+and \(\tau\) is a coding, then
 
-[
-w_n=	au(z_n)
-]
+\[
+w_n=\tau(z_n)
+\]
 
 with no change of index. Put
 
-[
-v_sigma(c)=	au(c)inmathbb Z_{>0}.
-]
+\[
+v_\sigma(c)=\tau(c)\in\mathbb Z_{>0}.
+\]
 
 Then
 
-[
+\[
 A_n
 =
-sum_{j<n}v_sigma(z_j)
-]
+\sum_{j<n}v_\sigma(z_j)
+\]
 
 literally.
 
@@ -254,9 +254,9 @@ The project therefore permits a hidden finite alphabet as long as the coding is 
 
 A morphism is called **growing** in the Durand/Pansiot sense when every letter in the relevant alphabet satisfies
 
-[
-|sigma^n(c)|	oinfty.
-]
+\[
+|\sigma^n(c)|\to\infty.
+\]
 
 This is the T21 “every reachable letter expanding” hypothesis after unreachable letters are removed.
 
@@ -270,26 +270,26 @@ A non-growing pure fixed point is called **pushy** here when it has arbitrarily 
 
 ### Theorem T30.1 — exact nonerasing coding normalization
 
-Let (w) be any infinite morphic word. Then there exist
+Let \(w\) be any infinite morphic word. Then there exist
 
-- a finite alphabet (B);
+- a finite alphabet \(B\);
 - a nonerasing morphism
-  [
-  sigma:B^*	o B^*
-  ]
-  prolongable on (b);
+  \[
+  \sigma:B^*\to B^*
+  \]
+  prolongable on \(b\);
 - a coding
-  [
-  	au:B	ooperatorname{alph}(w);
-  ]
+  \[
+  \tau:B\to\operatorname{alph}(w);
+  \]
 
 such that
 
-[
-oxed{
-w=	au(sigma^omega(b))
+\[
+\boxed{
+w=\tau(\sigma^\omega(b))
 }
-]
+\]
 
 as one-sided infinite words.
 
@@ -305,19 +305,19 @@ At an intermediate stage, deleting mortal letters can change preimage word lengt
 
 The correct invariant is the final output equality
 
-[
-w=	au(sigma^omega(b)).
-]
+\[
+w=\tau(\sigma^\omega(b)).
+\]
 
-Because (	au) is a coding, the normalized index is again exactly the output index.
+Because \(\tau\) is a coding, the normalized index is again exactly the output index.
 
 Thus:
 
-[
-oxed{
-	ext{mortal letters are harmless for the Collatz observable word,}
+\[
+\boxed{
+\text{mortal letters are harmless for the Collatz observable word}
 }
-]
+\]
 
 but only after the complete exact coding normalization. “Delete mortal letters and keep the old index” is not an allowed shortcut.
 
@@ -329,12 +329,11 @@ Charlier–Leroy–Rigo explicitly track growth types and do not turn a polynomi
 
 Therefore
 
-[
-	ext{erasure elimination}
-
-otRightarrow
-	ext{T21 normalization}.
-]
+\[
+\text{erasure elimination}
+\not\Rightarrow
+\text{T21 normalization}.
+\]
 
 This distinction is the first important T30 correction to a possible naive route.
 
@@ -344,59 +343,59 @@ This distinction is the first important T30 correction to a possible naive route
 
 Suppose
 
-[
-w=	au(sigma^omega(b))
-]
+\[
+w=\tau(\sigma^\omega(b))
+\]
 
-with (	au) a coding and define (v_sigma(c)=	au(c)).
+with \(\tau\) a coding and define \(v_\sigma(c)=\tau(c)\).
 
 ### 5.1 One-sided word and order
 
-For every (n),
+For every \(n\),
 
-[
-w_n=v_sigma(z_n),
-qquad
-z=sigma^omega(b).
-]
+\[
+w_n=v_\sigma(z_n),
+\qquad
+z=\sigma^\omega(b).
+\]
 
 Hence letter order and output position are identical.
 
 ### 5.2 Ordinary prefix sums
 
-For every (n),
+For every \(n\),
 
-[
-oxed{
+\[
+\boxed{
 A_n(w)
 =
-sum_{j<n}w_j
+\sum_{j<n}w_j
 =
-sum_{j<n}v_sigma(z_j).
+\sum_{j<n}v_\sigma(z_j).
 }
-]
+\]
 
 No interpolation or reindexing occurs.
 
 ### 5.3 T2 exact cylinder
 
-T2's exact cylinder at depth (m) is a deterministic function of
+T2's exact cylinder at depth \(m\) is a deterministic function of
 
-[
-(w_0,ldots,w_{m-1})
-]
+\[
+(w_0,\ldots,w_{m-1})
+\]
 
 and their cumulative sums.
 
 Since the normalized coding gives exactly the same valuation prefix,
 
-[
-oxed{
-R_m^{m normalized}=R_m^{m original}
+\[
+\boxed{
+R_m^{\rm normalized}=R_m^{\rm original}
 }
-]
+\]
 
-for every (m), with the same modulus (2^{A_m+1}).
+for every \(m\), with the same modulus \(2^{A_m+1}\).
 
 Thus the anchor carry sequence is literally unchanged.
 
@@ -404,21 +403,21 @@ Thus the anchor carry sequence is literally unchanged.
 
 The canonical scalar is
 
-[
+\[
 S(w)
 =
-sum_{nge0}rac{2^{A_n}}{3^n}
-]
+\sum_{n\ge0}\frac{2^{A_n}}{3^n}
+\]
 
 in the project normalization.
 
-Because every (A_n) is unchanged,
+Because every \(A_n\) is unchanged,
 
-[
-oxed{
-S_{m normalized}=S_{m original}
+\[
+\boxed{
+S_{\rm normalized}=S_{\rm original}
 }
-]
+\]
 
 term by term in every completion in which it is evaluated.
 
@@ -426,37 +425,37 @@ term by term in every completion in which it is evaluated.
 
 An ordinary positive integer anchor depends only on the exact valuation cylinders. Therefore
 
-[
-oxed{
-w	ext{ has a positive-integer anchor}
-iff
-	au(sigma^omega(b))	ext{ has the same anchor}.
+\[
+\boxed{
+w\text{ has a positive-integer anchor}
+\iff
+\tau(\sigma^\omega(b))\text{ has the same anchor}.
 }
-]
+\]
 
 This is identity, not merely an implication.
 
 ### 5.6 Recursive state functions
 
-Let (F_c^sigma) be the canonical state series associated with a hidden normalized letter (c).
+Let \(F_c^\sigma\) be the canonical state series associated with a hidden normalized letter \(c\).
 
-For each original valuation symbol (r), define
+For each original valuation symbol \(r\), define
 
-[
-F_r^{m out}
+\[
+F_r^{\rm out}
 =
-sum_{	au(c)=r}F_c^sigma.
-]
+\sum_{\tau(c)=r}F_c^\sigma.
+\]
 
-Then (F_r^{m out}) is exactly the series obtained by selecting output positions carrying valuation (r).
+Then \(F_r^{\rm out}\) is exactly the series obtained by selecting output positions carrying valuation \(r\).
 
 Hence the original output-state functions survive as a fixed finite linear projection of the normalized state vector.
 
 The hidden state basis can change, but no observable state support is deleted and the scalar
 
-[
-S=sum_cF_c^sigma
-]
+\[
+S=\sum_cF_c^\sigma
+\]
 
 is unchanged.
 
@@ -468,29 +467,29 @@ This is the exact state-function preservation required for T29 reuse.
 
 ### 6.1 Pansiot non-pushy reduction
 
-For a nonerasing endomorphism (eta) prolongable on (a), let
+For a nonerasing endomorphism \(\eta\) prolongable on \(a\), let
 
-[
-x=eta^omega(a).
-]
+\[
+x=\eta^\omega(a).
+\]
 
 Pansiot's theorem, in Durand's formulation, separates three cases.
 
-1. (eta) is growing.
-2. (eta) is non-growing, but factors consisting only of non-growing letters have bounded length.
+1. \(\eta\) is growing.
+2. \(\eta\) is non-growing, but factors consisting only of non-growing letters have bounded length.
 3. Such bounded-letter factors have unbounded length.
 
-In case 2, Durand records that (x) can be defined as a **substitutive sequence**: an exact coding of a fixed point of a growing substitution.
+In case 2, Durand records that \(x\) can be algorithmically defined as a **substitutive sequence**: an exact coding of a fixed point of a growing substitution.
 
 Therefore case 2 is not a new Collatz class after T30. It can be represented as
 
-[
-x=	au(sigma^omega(b))
-]
+\[
+x=\tau(\sigma^\omega(b))
+\]
 
-with (sigma) growing and (	au) a coding.
+with \(\sigma\) growing and \(\tau\) a coding.
 
-For a positive valuation word, absorb (	au) into the positive valuation map on the hidden alphabet.
+For a positive valuation word, absorb \(\tau\) into the positive valuation map on the hidden alphabet.
 
 All T21 hypotheses then hold on the reachable hidden alphabet.
 
@@ -498,13 +497,13 @@ All T21 hypotheses then hold on the reachable hidden alphabet.
 
 Durand proves:
 
-[
-oxed{
-	ext{uniformly recurrent morphic}
-Longrightarrow
-	ext{primitive substitutive}.
+\[
+\boxed{
+\text{uniformly recurrent morphic}
+\Longrightarrow
+\text{primitive substitutive}.
 }
-]
+\]
 
 A primitive substitution is growing.
 
@@ -516,20 +515,20 @@ This closes a large natural class beyond the literal T21 input syntax.
 
 For every genuinely aperiodic valuation word having such an exact growing presentation:
 
-1. the actual word and all (A_n) are unchanged;
+1. the actual word and all \(A_n\) are unchanged;
 2. T21 gives
-   [
-   eta=limsup A_n/ninoverline{mathbb Q};
-   ]
+   \[
+   \beta=\limsup A_n/n\in\overline{\mathbb Q};
+   \]
 3. a hypothetical positive-integer anchor gives
-   [
-   etalelog_2 3
-   ]
+   \[
+   \beta\le\log_2 3
+   \]
    by T3;
-4. (log_2 3) is transcendental, so
-   [
-   oxed{eta<log_2 3};
-   ]
+4. \(\log_2 3\) is transcendental, so
+   \[
+   \boxed{\beta<\log_2 3};
+   \]
 5. T20/T21 gives ordinary real convergence at every canonical tail point;
 6. the normalized growing system lies in the already closed T22 multiscale framework;
 7. T29 gives exact relation lifting;
@@ -539,23 +538,23 @@ No part of T22–T29 is reproved.
 
 Thus:
 
-[
-oxed{
-	ext{genuinely aperiodic + exact growing-normalizable}
-Longrightarrow
-	ext{no positive-integer anchor}.
+\[
+\boxed{
+\text{genuinely aperiodic + exact growing-normalizable}
+\Longrightarrow
+\text{no positive-integer anchor}.
 }
-]
+\]
 
 Under T2:
 
-[
-oxed{
-R_m	ext{ bounded}
-Longrightarrow
-	ext{eventual periodicity}
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
 }
-]
+\]
 
 through this entire normalized class.
 
@@ -565,72 +564,72 @@ through this entire normalized class.
 
 Consider
 
-[
-eta(1)=112,
-qquad
-eta(2)=2.
-]
+\[
+\eta(1)=112,
+\qquad
+\eta(2)=2.
+\]
 
-It is nonerasing and prolongable on (1).
+It is nonerasing and prolongable on \(1\).
 
 Let
 
-[
-W_j=eta^j(1).
-]
+\[
+W_j=\eta^j(1).
+\]
 
 Then
 
-[
+\[
 W_{j+1}=W_jW_j2.
-]
+\]
 
 By induction,
 
-[
+\[
 |W_j|=2^{j+1}-1,
-]
+\]
 
-and (W_j) ends in (2^j).
+and \(W_j\) ends in \(j\) consecutive symbols \(2\).
 
-Thus the bounded letter (2) occurs in arbitrarily long all-bounded factors.
+Thus the bounded letter \(2\) occurs in arbitrarily long all-bounded factors.
 
 This is exactly the third Pansiot branch.
 
 Pansiot gives
 
-[
-oxed{
-p_w(n)=Theta(n^2).
+\[
+\boxed{
+p_w(n)=\Theta(n^2).
 }
-]
+\]
 
 For a growing substitution fixed point, factor complexity is at most
 
-[
-O(nlog n).
-]
+\[
+O(n\log n).
+\]
 
-A coding cannot increase factor complexity beyond the source asymptotic order required here.
+A coding cannot increase factor complexity beyond the source bound in a way that could produce the quadratic word above.
 
-Therefore the actual word (w) cannot be a coding of any growing substitution fixed point.
+Therefore the actual word \(w\) cannot be a coding of any growing substitution fixed point.
 
 Durand states this directly for the equivalent binary example
 
-[
-0mapsto001,qquad 1mapsto1.
-]
+\[
+0\mapsto001,\qquad 1\mapsto1.
+\]
 
 It is morphic, not uniformly recurrent, and not substitutive; equivalently, it cannot be defined by a growing endomorphism.
 
 Hence:
 
-[
-oxed{
-	ext{not every genuinely aperiodic pure-morphic positive valuation word}
-	ext{ admits a T21 normalization}.
+\[
+\boxed{
+\text{not every genuinely aperiodic pure-morphic positive valuation word}
+\text{ admits a T21 normalization}.
 }
-]
+\]
 
 This disproves the universal Route A target.
 
@@ -642,9 +641,9 @@ The witness is already nonerasing.
 
 The root length is exponential:
 
-[
+\[
 |W_j|=2^{j+1}-1.
-]
+\]
 
 ### Why the obstruction is not presentation-specific
 
@@ -658,33 +657,33 @@ Thus the obstruction is genuinely word-level.
 
 A polynomial-growth example on positive symbols is
 
-[
-pi(2)=23,qquad
-pi(3)=31,qquad
-pi(1)=1.
-]
+\[
+\pi(2)=23,\qquad
+\pi(3)=31,\qquad
+\pi(1)=1.
+\]
 
-It is prolongable on (2).
+It is prolongable on \(2\).
 
 Its incidence dynamics give
 
-[
-|pi^j(2)|
+\[
+|\pi^j(2)|
 =
-1+j+rac{j(j-1)}2.
-]
+1+j+\frac{j(j-1)}2.
+\]
 
-The fixed point begins by concatenating blocks with longer and longer runs of the bounded letter (1).
+The fixed point contains blocks with longer and longer runs of the bounded letter \(1\).
 
 Hence the system is genuinely non-growing and pushy.
 
 The important structural point is not the exact example but the forced neutral direction.
 
-In a finite nonerasing morphism, polynomial growth of a growing root can only occur through a spectral-radius-one chain. Such a chain contains bounded terminal components.
+In a finite nonerasing morphism, polynomial growth of a growing root can only occur through a spectral-radius-one chain. Such a chain has a bounded terminal component in the present pure-morphic setting.
 
-Therefore polynomial-growth pure morphisms cannot satisfy T21's hypothesis that every reachable letter grows.
+Therefore polynomial-growth pure morphisms of this kind cannot satisfy T21's hypothesis that every reachable letter grows.
 
-They do not become T21 systems merely by changing the scale from exponential to polynomial.
+They do not become T21 systems merely by changing the asymptotic scale from exponential to polynomial.
 
 ---
 
@@ -698,25 +697,25 @@ Assume a genuinely aperiodic valuation word is realized by a positive odd intege
 
 T3's distinct-orbit product bound gives
 
-[
+\[
 A_n
-le
-nlog_2 3
+\le
+n\log_2 3
 +
-rac13log_2(n+1)
+\frac13\log_2(n+1)
 +
 O(1).
-]
+\]
 
 Therefore
 
-[
-oxed{
-limsup_{n	oinfty}rac{A_n}{n}
-le
-log_2 3.
+\[
+\boxed{
+\limsup_{n\to\infty}\frac{A_n}{n}
+\le
+\log_2 3.
 }
-]
+\]
 
 This statement is independent of morphic normalization.
 
@@ -724,11 +723,11 @@ This statement is independent of morphic normalization.
 
 T21 gives
 
-[
-oxed{
-eta=limsup A_n/ninoverline{mathbb Q}
+\[
+\boxed{
+\beta=\limsup A_n/n\in\overline{\mathbb Q}
 }
-]
+\]
 
 for the exact growing presentation.
 
@@ -736,25 +735,25 @@ Because the output word is unchanged, this is the ordinary-prefix limsup of the 
 
 ### 9.3 Gelfond–Schneider strictness
 
-(log_2 3) is transcendental.
+\(\log_2 3\) is transcendental.
 
 Indeed if
 
-[
-delta=log_3 2
-]
+\[
+\delta=\log_3 2
+\]
 
-were algebraic irrational, Gelfond–Schneider would make (3^delta) transcendental, contradicting (3^delta=2). It is not rational because no nontrivial powers of (2) and (3) agree.
+were algebraic irrational, Gelfond–Schneider would make \(3^\delta\) transcendental, contradicting \(3^\delta=2\). It is not rational because no nontrivial powers of \(2\) and \(3\) agree.
 
-Thus (log_2 3=1/delta) is transcendental.
+Thus \(\log_2 3=1/\delta\) is transcendental.
 
-Hence an algebraic (eta) satisfying (etalelog_2 3) must satisfy
+Hence an algebraic \(\beta\) satisfying \(\beta\le\log_2 3\) must satisfy
 
-[
-oxed{
-eta<log_2 3.
+\[
+\boxed{
+\beta<\log_2 3.
 }
-]
+\]
 
 This closes the normalized class.
 
@@ -762,71 +761,71 @@ This closes the normalized class.
 
 T30 did not verify a theorem asserting algebraicity of
 
-[
-eta=limsup A_n/n
-]
+\[
+\beta=\limsup A_n/n
+\]
 
 for every pushy pure-morphic valuation word.
 
 Known morphic frequency theorems do not supply this automatically. Statements of the form
 
-[
-	ext{if a letter frequency exists, it is algebraic}
-]
+\[
+\text{if a letter frequency exists, it is algebraic}
+\]
 
 do not prove that all required frequencies exist, nor that a weighted ordinary-prefix limsup is algebraic in their absence.
 
 Therefore the exact residual boundary is:
 
-[
-oxed{
-	ext{universal }etalelog_2 3	ext{ survives;}
-quad
-	ext{universal algebraicity and hence universal strictness do not yet.}
+\[
+\boxed{
+\text{universal }\beta\le\log_2 3\text{ survives;}
+\quad
+\text{universal algebraicity and hence universal strictness do not yet.}
 }
-]
+\]
 
 This is a theorem-level obstruction and must not be replaced by an assumption.
 
-### 9.5 The canonical pushy witness is subcritical
+### 9.5 The canonical pushy witness is subcritical along full substitution prefixes
 
 For
 
-[
-eta(1)=112,qquad eta(2)=2,
-]
+\[
+\eta(1)=112,\qquad \eta(2)=2,
+\]
 
 the full substitution prefixes satisfy
 
-[
-#_1(W_j)=2^j,
-qquad
-#_2(W_j)=2^j-1.
-]
+\[
+\#_1(W_j)=2^j,
+\qquad
+\#_2(W_j)=2^j-1.
+\]
 
 Thus their weighted mean tends to
 
-[
-rac{2^j+2(2^j-1)}{2^{j+1}-1}
-longrightarrow
-rac32.
-]
+\[
+\frac{2^j+2(2^j-1)}{2^{j+1}-1}
+\longrightarrow
+\frac32.
+\]
 
-In fact the ordinary mean exists for this binary pure morphic example. Since
+Since
 
-[
-2^{3/2}=sqrt8<3,
-]
+\[
+2^{3/2}=\sqrt8<3,
+\]
 
 we have
 
-[
-rac32<log_2 3.
-]
+\[
+\frac32<\log_2 3.
+\]
 
-So even a residual pushy word can have a strict ordinary real gap.
+This exact endpoint computation shows that a residual pushy word can already exhibit subcritical behavior on the canonical substitution endpoints.
 
-This does **not** put it in T29 because the toric growth problem below remains.
+T30 does not use this endpoint computation as a substitute for a theorem on the full ordinary-prefix limsup.
 
 ---
 
@@ -834,52 +833,52 @@ This does **not** put it in T29 because the toric growth problem below remains.
 
 Once erasures are removed, the T20 identity remains exact without assuming that every letter grows.
 
-Let (M) be the incidence matrix of a nonerasing prolongable presentation, (c(n)) the Parikh vector of the prefix of length (n), and
+Let \(M\) be the incidence matrix of a nonerasing prolongable presentation, \(c(n)\) the Parikh vector of the prefix of length \(n\), and
 
-[
-L_J(n)=mathbf1^TM^Jc(n).
-]
+\[
+L_J(n)=\mathbf1^TM^Jc(n).
+\]
 
 Then
 
-[
-sigma^J(u_{<n})=u_{<L_J(n)},
-]
+\[
+\sigma^J(u_{<n})=u_{<L_J(n)},
+\]
 
 so
 
-[
+\[
 c(L_J(n))=M^Jc(n)
-]
+\]
 
 and
 
-[
+\[
 A_{L_J(n)}=v^TM^Jc(n).
-]
+\]
 
-At the exact Collatz tail point (q_J),
+At the exact Collatz tail point \(q_J\),
 
-[
-oxed{
+\[
+\boxed{
 S(q_J)
 =
-sum_{nge0}
-rac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+\sum_{n\ge0}
+\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
 }
-]
+\]
 
 Thus T30 does not lose exact prefix transport.
 
 What fails in the residual class is the **asymptotic positivity** needed to turn that transport into the T21/T22 growth geometry.
 
-If a bounded letter (b) occurs, then
+If a bounded letter \(b\) occurs, then
 
-[
-|sigma^J(b)|
-]
+\[
+|\sigma^J(b)|
+\]
 
-is bounded. The normalized index (L_J(n)) is still exact, but its contribution from the (b)-direction does not expand.
+is bounded. The normalized index \(L_J(n)\) is still exact, but its contribution from the \(b\)-direction does not expand.
 
 ---
 
@@ -887,49 +886,43 @@ is bounded. The normalized index (L_J(n)) is still exact, but its contribution f
 
 T21 defines, after a suitable period refinement, the length increment
 
-[
+\[
 d^T
 =
-mathbf1^TM^a(M^R-I).
-]
+\mathbf1^TM^a(M^R-I).
+\]
 
 When every reachable letter expands, a deep enough choice gives
 
-[
+\[
 d_s>0
-]
+\]
 
-for every reachable (s).
+for every reachable \(s\).
 
 That positivity is essential to the canonical grading.
 
-For a bounded periodic letter (b),
+For a bounded periodic letter \(b\), after a finite period refinement its bounded mass is periodic, so
 
-[
-M^Rb
-]
-
-returns to the same bounded mass after refinement, so
-
-[
-oxed{
+\[
+\boxed{
 d_b=0.
 }
-]
+\]
 
 Therefore in the pushy residual class
 
-[
+\[
 d^Tx
-]
+\]
 
 is at best a nonnegative grading.
 
-There is no constant (kappa>1) for which
+There is no constant \(\kappa>1\) for which
 
-[
-w(A^ngamma)ge Ckappa^nw(gamma)
-]
+\[
+w(A^n\gamma)\ge C\kappa^nw(\gamma)
+\]
 
 holds on every nonzero canonical generator.
 
@@ -937,19 +930,19 @@ Equivalently, the bounded direction creates a **zero growth profile**.
 
 The T22 filtration
 
-[
-g_1<cdots<g_r
-]
+\[
+g_1<\cdots<g_r
+\]
 
 was built from positive growth profiles. It cannot simply be extended by declaring a zero profile harmless, because pushiness produces arbitrarily long pieces of the actual prefix supported in the neutral letters.
 
 At the level of exact tail coordinates, a bounded letter can have
 
-[
+\[
 q_{J,b}
 =
-rac{2^{B_J(b)}}{3^{ell_J(b)}}
-]
+\frac{2^{B_J(b)}}{3^{\ell_J(b)}}
+\]
 
 periodic or eventually periodic rather than converging toward the toric boundary.
 
@@ -977,17 +970,17 @@ Because bounded-letter dynamics are finite after a power, one may hope to resum 
 
 But the following must remain literal:
 
-[
+\[
 n,
-qquad
+\qquad
 A_n,
-qquad
+\qquad
 R_n,
-qquad
-S=sum_n2^{A_n}/3^n.
-]
+\qquad
+S=\sum_n2^{A_n}/3^n.
+\]
 
-In particular a bounded block of length (L) cannot be collapsed to one symbolic letter unless the lost (L) output positions are restored analytically in the scalar and in every exact prefix cylinder.
+In particular a bounded block of length \(L\) cannot be collapsed to one symbolic letter unless the lost \(L\) output positions are restored analytically in the scalar and in every exact prefix cylinder.
 
 A successful resummation must therefore be an identity of generating/state functions, not a deletion of neutral positions.
 
@@ -1009,9 +1002,9 @@ A general abstract positive rational inverse value does not by itself supply T3'
 
 Therefore positive rational noninteger values are excluded only when ordinary real subcriticality
 
-[
-limsup A_n/n<log_2 3
-]
+\[
+\limsup A_n/n<\log_2 3
+\]
 
 is independently known.
 
@@ -1027,27 +1020,27 @@ The completion-sign argument has the wrong sign to exclude them.
 
 ## 14. T2 periodicity consequence after T30
 
-Let (w) be a finite-alphabet positive valuation word in the exact growing-normalizable class.
+Let \(w\) be a finite-alphabet positive valuation word in the exact growing-normalizable class.
 
 If
 
-[
+\[
 R_m
-]
+\]
 
 is bounded, T2 gives an ordinary positive integer anchor.
 
-If (w) were genuinely aperiodic, T29 applied to the normalized presentation would exclude that anchor.
+If \(w\) were genuinely aperiodic, T29 applied to the normalized presentation would exclude that anchor.
 
 Therefore
 
-[
-oxed{
-R_m	ext{ bounded}
-Longrightarrow
-	ext{eventual periodicity}
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
 }
-]
+\]
 
 for every exact growing-normalizable morphic valuation word.
 
@@ -1084,8 +1077,9 @@ Load-bearing points:
 
 - substitution is defined there as prolongable and growing;
 - uniformly recurrent morphic sequences are primitive substitutive;
-- Durand gives the explicit non-substitutive example (0mapsto001, 1mapsto1);
-- the paper restates Pansiot's growing/non-growing complexity trichotomy.
+- Durand gives the explicit non-substitutive example \(0\mapsto001,\ 1\mapsto1\);
+- the paper restates Pansiot's growing/non-growing complexity trichotomy;
+- in the non-growing branch with uniformly bounded all-non-growing factors, the sequence can be algorithmically defined as substitutive.
 
 ### 15.3 Pansiot 1984
 
@@ -1093,7 +1087,7 @@ Jean-Jacques Pansiot, “Complexité des facteurs des mots infinis engendrés pa
 
 Load-bearing point:
 
-for nonerasing pure morphic fixed points, unbounded all-non-growing factors produce quadratic complexity, whereas growing morphisms have complexity at most (nlog n).
+for nonerasing pure morphic fixed points, unbounded all-non-growing factors produce quadratic complexity, whereas growing morphisms have complexity at most \(n\log n\).
 
 ### 15.4 Durand 1998
 
@@ -1122,7 +1116,7 @@ That non-implication is part of the T30 boundary.
 | Is a coding used? | **YES**, in general a letter-to-letter coding. |
 | Is a shift used? | **NO.** |
 | Are ordinary prefix indices preserved? | **YES**, once the final coding normal form is reached. |
-| Are ordinary prefix sums (A_n) preserved? | **YES, term by term.** |
+| Are ordinary prefix sums \(A_n\) preserved? | **YES, term by term.** |
 | Is the T2 exact cylinder preserved? | **YES, literally.** |
 | Is the canonical scalar preserved literally? | **YES, term by term.** |
 | Can mortal letters be removed harmlessly? | **YES at the final output-word interface; NO to naive index-preserving deletion at an intermediate presentation.** |
@@ -1132,7 +1126,7 @@ That non-implication is part of the T30 boundary.
 | Does the positive-integer strict gap survive? | **YES on the growing-normalizable side; not yet universally proved in the pushy residual.** |
 | Does T29 apply unchanged after successful normalization? | **YES.** |
 | Is a new positive-integer anchor class excluded? | **YES:** every genuinely aperiodic exact growing-normalizable morphic word, including erasing/non-growing presentations of such a word. |
-| Does (R_m) bounded imply eventual periodicity beyond the literal T29 presentation class? | **YES, throughout the exact growing-normalizable class; not yet in the pushy residual.** |
+| Does \(R_m\) bounded imply eventual periodicity beyond the literal T29 presentation class? | **YES, throughout the exact growing-normalizable class; not yet in the pushy residual.** |
 | Positive rational noninteger values? | **Excluded only when ordinary real subcriticality is independently known.** |
 | Negative rational values? | **Unexcluded.** |
 | Explicit anchored aperiodic word found? | **NO.** |
@@ -1209,13 +1203,13 @@ No candidate distribution, ranking metric, substitution enumeration, or trajecto
 
 T2 keeps the connection exact:
 
-[
-	ext{aperiodic positive valuation word}
+\[
+\text{aperiodic positive valuation word}
 +
-	ext{positive integer anchor}
-Longrightarrow
-	ext{unbounded orbit and no arrival at }1.
-]
+\text{positive integer anchor}
+\Longrightarrow
+\text{unbounded orbit and no arrival at }1.
+\]
 
 The CDM4 programme has substantially constrained where such a recursive word could live.
 
@@ -1229,9 +1223,9 @@ The line remains relevant because the residual pushy class is natural and not ma
 
 The pushy residual is a natural, theoremically coherent pure-morphic boundary. It contains genuinely new neutral-scale behavior that has not yet received one focused audit.
 
-A pivot to finite-directive (S)-adic systems at T30 would be premature.
+A pivot to finite-directive \(S\)-adic systems at T30 would be premature.
 
-If T31 either closes the pushy class or proves that its neutral directions destroy the finite exact-lifting architecture in an essentially unrepairable way, then the next recursive-language enlargement should be selected from the actual surviving interface, with finite-directive (S)-adic systems a plausible candidate.
+If T31 either closes the pushy class or proves that its neutral directions destroy the finite exact-lifting architecture in an essentially unrepairable way, then the next recursive-language enlargement should be selected from the actual surviving interface, with finite-directive \(S\)-adic systems a plausible candidate.
 
 No strategic pivot is manufactured merely because T30 is a milestone.
 
@@ -1257,7 +1251,7 @@ The first word-level failure is bounded-letter pushiness.
 
 A pure fixed point may have exponentially growing root prefixes while retaining a bounded reachable letter.
 
-The word (1mapsto112, 2mapsto2) is the canonical example.
+The word \(1\mapsto112,\ 2\mapsto2\) is the canonical example.
 
 ### Lesson 4 — a zero growth profile is not a small positive profile
 
@@ -1288,14 +1282,14 @@ Prove or sharply refute the following package.
 1. After passing to one finite morphism power, classify the bounded-letter subsystem exactly as a finite periodic morphism.
 2. Derive an exact arbitrary-prefix decomposition into growing skeleton segments and bounded periodic blocks, preserving the original output index.
 3. Prove that
-   [
-   eta=limsup A_n/n
-   ]
+   \[
+   \beta=\limsup A_n/n
+   \]
    belongs to an explicitly finite algebraic set, or give a precise counterexample/obstruction.
 4. Under a hypothetical positive-integer anchor, combine that result with T3 to decide whether
-   [
-   eta<log_2 3
-   ]
+   \[
+   \beta<\log_2 3
+   \]
    follows universally.
 5. Derive an exact state/scalar resummation of every bounded block. No output position may be deleted.
 6. Determine whether the resummed system has finitely many **positive** growth profiles and finite canonical jets so that T29 applies.
@@ -1307,11 +1301,11 @@ No substitution enumeration, candidate trajectories, finite-code search, or scie
 
 ## 20. End classification
 
-[
-oxed{
-	extbf{C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND}
+\[
+\boxed{
+\textbf{C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND}
 }
-]
+\]
 
 T30 proves a genuine normalization extension and a genuine failure of universal normalization.
 
