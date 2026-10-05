@@ -12,7 +12,7 @@ The target is an **UNBOUNDED COLLATZ ORBIT** or **DIVERGENT-ORBIT COUNTEREXAMPLE
 
 ## RMI foundational-invention mode
 
-The current active research programme is **RMI — Root Mechanism Invention Programme**, governed by `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+The most recent research programme was **RMI — Root Mechanism Invention Programme**, governed by `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`. RMI is now **FROZEN after RMI-3** under `experiments/RMI_3_FRESH_RESERVE_CONVERSION_VIABILITY_GATE.md`; **RMI-4 is not authorized**.
 
 RMI does not reopen CDM4 or IRM. Their freezes and negative results remain design constraints.
 
@@ -25,7 +25,7 @@ RMI therefore distinguishes:
 - **template escalation**, which enlarges a failed representation because a larger one is available; from
 - **foundational invention**, which derives the smallest new object from a precise missing root capability.
 
-The initial RMI budget is six sessions maximum, with a hard viability gate after RMI-3 and an absolute audit at RMI-6. No automatic RMI-7 is authorized.
+The initial RMI budget contained a hard viability gate after RMI-3. That gate failed with **RMI3-C — HARD GATE FAILED / RMI FROZEN**, so the programme ended at RMI-3; RMI-4 through RMI-6 are not authorized and there is no automatic RMI-7.
 
 ## Research philosophy
 
