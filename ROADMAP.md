@@ -3,10 +3,11 @@
 
 ## RMI — ROOT MECHANISM INVENTION PROGRAMME
 
-**Status: RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
+**Status: RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
-Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`.  
-Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+Authoritative RMI-2 report: \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`.  
+Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`.  
+Authoritative charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`.
 
 RMI remains a separate foundational-invention programme. It is not CDM4-T32 and not IRM-2.
 
@@ -15,52 +16,85 @@ RMI remains a separate foundational-invention programme. It is not CDM4-T32 and 
 - CDM4 remains frozen;
 - CDM4-T32 remains unauthorized;
 - IRM remains frozen;
-- IRM-2 remains unauthorized.
+- IRM-2 remains unauthorized;
+- pure finite 2-adic/parity-cylinder regeneration remains structurally killed.
 
 **Current unresolved nontrivial root-arrow count: 2 — unchanged.**
 
-### RMI-1 durable result
+### RMI-2 durable result
 
-For an infinite ordinary-positive cylinder
+Define
 \[
-C(\rho,K)=\{\rho+2^Kq:q\ge0\},
-\]
-after a common shortened-Collatz block of length \(r\le K\) containing \(s\) odd source states,
-\[
-T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
+P_{a,b}(n)
+\iff
+v_2(n+1)=a,\qquad v_3(n+1)=b.
 \]
 
-Hence the image family has a common residue modulo \(2^{K-r}\) but no common residue modulo \(2^{K-r+1}\). The exact finite parity-cylinder proof reserve therefore decreases
+For every \(a\ge1\), a genuine odd shortened-Collatz step gives
 \[
-K\mapsto K-r
+P_{a,b}(n)
+\Longrightarrow
+P_{a-1,b+1}(T(n)),
 \]
-and cannot regenerate itself under positive-depth forward iteration.
+because
+\[
+T(n)+1=\frac{3(n+1)}2.
+\]
+The same step has strict physical gain
+\[
+T(n)-n=\frac{n+1}{2}>0.
+\]
 
-RMI-1's **Proof-Reserve Regenerative State (PRRS)** supplies a sound finite proof architecture and an explicit premise-renewal audit, but no concrete Collatz-specific non-cylinder source of fresh forward-control information was obtained.
+The increment \(b\mapsto b+1\) is a theorem-level example of **fresh endogenous arithmetic strengthening**: it holds on the complete advertised infinite family and requires no stronger hidden initial power-of-two cylinder.
 
-The pure-cylinder route is therefore frozen. Do not repair it by loading deeper finite prefixes, larger moduli, larger residue trees, or adjacent representational syntax.
+This fresh reserve is not yet a reseed. The exact common power-of-two cylinder depth of \(P_{a,b}\) is \(a+1\), and after the odd step it is exactly \(a\). The RMI-1 one-bit loss therefore remains exact.
+
+After the complete forced odd run,
+\[
+n+1=2^a3^bc
+\quad\Longrightarrow\quad
+T^a(n)=3^{a+b}c-1.
+\]
+After one more even step,
+\[
+v_2(T^{a+1}(n)+1)
+=
+v_2(3^{a+b}c+1)-1.
+\]
+For fixed \(a,b\), this successor value can be any prescribed nonnegative integer for infinitely many admissible \(c\), even after any compatible finite odd-modulus condition. Thus no finite odd-modulus packet, including the newly produced 3-adic reserve, universally replenishes the binary forward-control reserve.
+
+The RMI-1 hostile family remains decisive. Even the sparse exact parameterization
+\[
+A_t=4\frac{2^{6t}-1}{9}-1
+\]
+with \(A_1=27\) and
+\[
+T^3(A_t)=2^{6t-1}-1>A_t
+\]
+has universal cylinder reserve exactly
+\[
+8\longmapsto5.
+\]
+Large individual endpoint valuations do not change family-level proof accounting.
 
 ### Initial RMI budget
 
 - maximum sessions: **6**;
-- hard viability checkpoint: **after RMI-3**;
+- hard viability checkpoint: **RMI-3 — NOW DUE**;
 - absolute audit: **RMI-6**;
 - automatic RMI-7: **not authorized**.
 
 ### Exactly one authorized next target
 
-**RMI-2 — FRESH FORWARD-CONTROL RESEEDING / ENDOGENOUS INFORMATION-PRODUCTION AUDIT**
+**RMI-3 — FRESH-RESERVE CONVERSION / REGENERATIVE CONTROL VIABILITY GATE**
 
 Central question:
 
-> Does there exist a finitely describable ordinary-arithmetic relation attached to one actual positive Collatz state, not equivalent to fixing a stronger finite 2-adic cylinder, such that a bounded genuine forward segment both produces strict physical gain and proves a successor relation of the same schema carrying at least as much usable finite forward-control information as the current state?
+> Does there exist a finitely stated ordinary-arithmetic conversion law, valid on a nontrivial infinite ordinary-positive family and proved from only the advertised current premise plus a bounded genuine forward Collatz segment, that converts forward-generated arithmetic reserve into renewed root-usable future control with strict physical gain, without being equivalent to a stronger initial finite 2-adic prefix?
 
-RMI-2 must define what counts as **fresh** successor control information before selecting notation or a mathematical discipline.
+The factor-transfer state is a mandatory hostile test case, not a mandatory representation.
 
-It must not begin from affine, polynomial, automata, p-adic, graph, symbolic, verification, valuation, or other preselected syntax. Such tools may enter only if the root-required reseeding capability demands them.
-
-Failure returns to the root obstruction. It does not authorize a larger object.
-
+RMI-3 must not enlarge the valuation packet merely because the current conversion fails. If no candidate satisfies the pre-existing RMI-3 viability gate, the RMI programme freezes.
 
 
 ## POST-IRM1 — IRM FROZEN
