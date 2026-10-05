@@ -3,15 +3,34 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T27 COMPLETE — C: CANONICAL DIVISOR DEGENERATION CLASSIFIED AND POSITIVE-SLOPE EXACT LIFTING PROVED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T28 COMPLETE — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T27_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T28_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20–T26 remain closed infrastructure.
+- T20–T27 remain closed infrastructure.
+- T28 proves that every T22 high-growth ideal \(I_{>i}\) is the prime monomial ideal complementary to the face \(\Gamma_{\le i}\). The canonical relative local ring is
+  \[
+  \mathcal O_i=K[\Gamma_Y]_{I_{>i}},
+  \qquad
+  \mathcal O_i/\mathfrak p_i\cong\operatorname{Frac}K[\Gamma_{\le i}].
+  \]
+- Fixed canonical \(\mathfrak p_i\)-jets are finite algebraic data over the slower rational field: the transverse prefix order tends to infinity in every live higher-growth stratum. Thus T23's moving analytic coefficients are eliminated at every fixed canonical jet order.
+- If \(c_i=\operatorname{ht}I_{>i}\), Hilbert–Samuel relative Hermite–Padé counting gives a genuine multiplicity ratio of scale
+  \[
+  P_{\rm rel,i}/D_f\gtrsim h(D_X)^{1/c_i}-1.
+  \]
+  Under genuine aperiodicity, positive relative transcendence makes this ratio unbounded.
+- Finite-degree canonical relation quotients over \(\mathcal O_i\) are torsion-free but need not be free. A free-lattice sandwich plus Artin–Rees gives a finite geometric inverse-transport tax, providing a higher-codimension analogue of the T27 slope tax.
+- Rees valuations / normalized blowups are useful interpretation devices but control integral closures of powers; they do not replace the exact adic powers required by the specialization-safe proof.
+- T28 does **not** prove the full nonprincipal lift. The first remaining theorem is a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem for the finite canonical jets, followed by exact descent to
+  \[
+  Q(\alpha,\mathbf X)=P(\mathbf X)
+  \]
+  in the original canonical variables.
 - T27 does **not** prove automatic canonical divisor-unramifiedness. The standalone question
   \[
   \lambda_m=0?
@@ -71,7 +90,7 @@
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit, theory only**
+- Immediate next task: **CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit, theory only**
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -138,6 +157,7 @@ The repository, not conversational memory, is the authoritative research state.
 59. `experiments/CDM4_T25_REPORT.md`
 60. `experiments/CDM4_T26_REPORT.md`
 61. `experiments/CDM4_T27_REPORT.md`
+62. `experiments/CDM4_T28_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
