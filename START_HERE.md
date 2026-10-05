@@ -3,94 +3,56 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T28 COMPLETE — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T29 COMPLETE — C: SYNCHRONIZED MOVING-TARGET ZERO THEOREM AND COMPLETE T22 MULTISCALE EXACT LIFTING PROVED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T28_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T29_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20–T27 remain closed infrastructure.
-- T28 proves that every T22 high-growth ideal \(I_{>i}\) is the prime monomial ideal complementary to the face \(\Gamma_{\le i}\). The canonical relative local ring is
-  \[
-  \mathcal O_i=K[\Gamma_Y]_{I_{>i}},
-  \qquad
-  \mathcal O_i/\mathfrak p_i\cong\operatorname{Frac}K[\Gamma_{\le i}].
-  \]
-- Fixed canonical \(\mathfrak p_i\)-jets are finite algebraic data over the slower rational field: the transverse prefix order tends to infinity in every live higher-growth stratum. Thus T23's moving analytic coefficients are eliminated at every fixed canonical jet order.
-- If \(c_i=\operatorname{ht}I_{>i}\), Hilbert–Samuel relative Hermite–Padé counting gives a genuine multiplicity ratio of scale
-  \[
-  P_{\rm rel,i}/D_f\gtrsim h(D_X)^{1/c_i}-1.
-  \]
-  Under genuine aperiodicity, positive relative transcendence makes this ratio unbounded.
-- Finite-degree canonical relation quotients over \(\mathcal O_i\) are torsion-free but need not be free. A free-lattice sandwich plus Artin–Rees gives a finite geometric inverse-transport tax, providing a higher-codimension analogue of the T27 slope tax.
-- Rees valuations / normalized blowups are useful interpretation devices but control integral closures of powers; they do not replace the exact adic powers required by the specialization-safe proof.
-- T28 does **not** prove the full nonprincipal lift. The first remaining theorem is a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem for the finite canonical jets, followed by exact descent to
-  \[
-  Q(\alpha,\mathbf X)=P(\mathbf X)
-  \]
-  in the original canonical variables.
-- T27 does **not** prove automatic canonical divisor-unramifiedness. The standalone question
-  \[
-  \lambda_m=0?
-  \]
-  remains open.
-- T27 classifies the special-fibre defect exactly. If \(\mathscr E\) is the canonical state-generator lattice, \(\mathscr R\) its saturated degree-one relation module,
-  \[
-  E_0=\mathscr E/m\mathscr E,\qquad
-  R_0=(\mathscr R+m\mathscr E)/m\mathscr E,
-  \]
-  and \(\overline{\mathcal A}\) is the raw first-fast-cut transport, then
-  \[
-  \boxed{
-  \operatorname{coker}\overline\Phi
-  \cong
-  E_0/(R_0+\operatorname{im}\overline{\mathcal A}).
+- T20–T28 remain closed infrastructure.
+- T29 proves that the actual T28 finite-jet targets satisfy Ru–Vojta's moving-hyperplane theorem: their coefficients are evaluations of fixed slower-face rational functions with
+  [
+  h(H_n)=o(h(x_n)).
+  ]
+- Coherent subsequences exist automatically. After grouping current-profile monomials by slower-face cosets, T18's finite-hit theorem proves linear nondegeneracy over the moving coefficient field.
+- T22's exact positive 2-adic leading coefficient inside one growth profile refines the analytic comparison without changing the canonical lattice or ideal filtration. T28 finite jets make the minimal-leading-coefficient cluster finite; omitted same-profile terms have a strict local gap, and higher profiles are smaller on a faster scale.
+- Coordinate hyperplanes supply the exact (S)-unit height baseline. The extra proximity from the super-small moving initial form contradicts Ru–Vojta unless that initial form vanishes identically.
+- Iterating through the finite profile flag at one synchronized orbit time gives:
+  [
+  oxed{
+  E(q_n)=0	ext{ infinitely often}
+  Longrightarrow
+  E=0
   }
-  \]
-  Thus a nonzero kernel is exactly new boundary-relation creation after the first-fast cut.
-- If the elementary divisors are \(m^{e_i}\), then
-  \[
-  \mu_m=\max_i e_i
-  \]
-  controls inverse transport. In state-polynomial degree \(D\), \(n\) inverse semilinear transports lose at most
-  \[
-  D\mu_m\frac{a^n-1}{a-1}
-  \]
-  units of divisor order.
-- The T25 relative Hermite–Padé multiplicity dominates this finite slope tax. For fixed \(D_X\),
-  \[
-  P_{\rm rel}\ge(h(D_X)-1)(D_f+1)
-  \]
-  grows without bound in \(D_f\), whereas
-  \[
-  D_X\mu_m/(a-1)
-  \]
-  is fixed.
-- Consequently every genuinely aperiodic principal-fast system admits exact mixed-place relation lifting **for arbitrary finite \(\lambda_m\)**, with
-  \[
-  \boxed{Q(\alpha,\mathbf X)=P(\mathbf X)}
-  \]
-  literally preserved on the original canonical lattice.
-- The inherited T21 completion-sign chain therefore excludes positive-integer anchors throughout the **complete genuinely aperiodic principal-fast class**, including any canonical \(\lambda_m>0\) systems.
+  ]
+  for the canonical T28 auxiliary class modulo exact functional relations.
+- T28's Hilbert–Samuel Hermite–Padé multiplicity and finite Artin–Rees transport tax therefore plug into the inherited T16/T17/T25/T27 relation-lifting proof. The complete genuinely aperiodic T22 multiscale class now admits exact lifting with
+  [
+  oxed{
+  Q(alpha,mathbf X)=P(mathbf X)
+  }
+  ]
+  literally preserved.
+- No normalized blowup, exceptional chart, integral-closure replacement, non-unimodular gauge, deleted scalar-support direction, or asynchronous orbit time is used. Exact powers remain primary.
+- The inherited T21 completion-sign argument excludes positive-integer anchors throughout the complete T22 multiscale class.
 - Under the inherited T2 finite-alphabet anchoring hypotheses,
-  \[
-  \boxed{
-  R_m\text{ bounded}
-  \Longrightarrow
-  \text{eventual periodicity}
+  [
+  oxed{
+  R_m	ext{ bounded}
+  Longrightarrow
+  	ext{eventual periodicity}
   }
-  \]
-  throughout the full principal-fast class, with no divisor-unramified hypothesis.
-- Canonical positive elementary divisors are not proved impossible and no valid canonical example was found. They are no longer an exact-lifting obstruction.
+  ]
+  now holds through the complete T22 class, strictly beyond the principal-fast T27 class.
 - Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit, theory only**
+- Immediate next task: **CDM4-T30 — nonexpanding / erasing morphic normalization and anchor-obstruction audit; mandatory thirtieth-session progress/correction audit; theory only**
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -158,6 +120,7 @@ The repository, not conversational memory, is the authoritative research state.
 60. `experiments/CDM4_T26_REPORT.md`
 61. `experiments/CDM4_T27_REPORT.md`
 62. `experiments/CDM4_T28_REPORT.md`
+63. `experiments/CDM4_T29_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
