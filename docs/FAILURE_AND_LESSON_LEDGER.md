@@ -4495,3 +4495,117 @@ The single live defect is therefore:
 The unresolved nontrivial root-arrow count remains **2**.
 
 **Action:** RMI-2 is authorized only to attack fresh forward-control reseeding / endogenous information production. It may not generalize the killed cylinder object by increasing modulus, prefix depth, state count, or representation class.
+
+---
+
+## RMI-2 — fresh forward-control reseeding / endogenous information-production audit — 2026-10-05
+
+**Authoritative report:** \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`  
+**Decision:** **RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
+
+### F0146 — Genuine forward Collatz evolution can create fresh ordinary-arithmetic proof content
+
+**Status: PROVED STRUCTURAL THEOREM in RMI-2.**
+
+For
+\[
+P_{a,b}(n):\quad v_2(n+1)=a,\qquad v_3(n+1)=b,
+\]
+every odd source state satisfies
+\[
+T(n)+1=\frac{3(n+1)}2,
+\]
+hence
+\[
+P_{a,b}(n)\Longrightarrow P_{a-1,b+1}(T(n)).
+\]
+
+The same transition gives strict physical gain
+\[
+T(n)-n=\frac{n+1}{2}>0.
+\]
+
+The increment \(b\mapsto b+1\) holds on the complete advertised infinite family and does not require a deeper hidden initial 2-adic cylinder.
+
+**Lesson:** the RMI-1 live defect is not “deterministic Collatz can never create a new arithmetic premise.” It can. Freshness must be distinguished from root-usable reseeding.
+
+**Action:** retain exact premise-ledger accounting. A new fact is not enough; it must discharge a future regeneration/growth obligation.
+
+### F0147 — Fresh odd-prime reserve does not universally replenish consumed binary forward control
+
+**Status: PROVED CONVERSION BARRIER in RMI-2.**
+
+Writing
+\[
+n+1=2^a3^bc,\qquad \gcd(c,6)=1,
+\]
+the complete forced odd run gives
+\[
+T^a(n)=3^{a+b}c-1.
+\]
+
+After one subsequent even step \(y\),
+\[
+v_2(y+1)=v_2(3^{a+b}c+1)-1.
+\]
+
+For every \(k\ge0\), one may choose the odd cofactor \(c\) so that this value is exactly \(k\). The construction remains possible after any compatible finite odd-modulus restriction by the Chinese remainder theorem.
+
+Therefore finite odd-modulus information, including a freshly generated \(3\)-adic reserve, supplies no universal positive lower bound on renewed \(2\)-adic forward-control reserve once the inherited binary reserve is exhausted.
+
+**Lesson:** cross-prime arithmetic strengthening is real, but the missing theorem is a conversion into root-usable future control.
+
+**Action:** do not repair this by tracking more odd residues or more primes. A successor must prove an actual conversion law, not enlarge the packet.
+
+### F0148 — Nonlinear or exponential parameterization can still be hidden finite-prefix storage
+
+**Status: PROVED HOSTILE AUDIT LESSON in RMI-2.**
+
+Define
+\[
+A_t
+=
+4\frac{2^{6t}-1}{9}-1.
+\]
+
+Then \(A_1=27\) and
+\[
+T^3(A_t)=2^{6t-1}-1>A_t.
+\]
+
+Every individual endpoint has a large value
+\[
+v_2(T^3(A_t)+1)=6t-1.
+\]
+
+Nevertheless the complete start family has exact common 2-adic depth \(8\), because
+\[
+A_t-27
+=
+256\frac{2^{6(t-1)}-1}{9},
+\]
+while the complete endpoint family has exact common depth \(5\).
+
+Thus the universal reserve remains
+\[
+8\to5.
+\]
+
+**Lesson:** semantic novelty of the parameterization does not imply proof-reserve renewal. A nonlinear formula can simply encode the same low-bit reserve.
+
+**Action:** apply the RMI-1 cylinder audit to every proposed conversion, regardless of notation.
+
+### F0149 — RMI-2 isolates fresh-reserve conversion as the RMI-3 hard-gate defect
+
+**Status: PARTIAL RESEEDING CAPABILITY / RMI2-B.**
+
+RMI-2 proves genuine endogenous arithmetic strengthening and strict physical gain, but no successor premise with enough root-usable future-control power to compensate for the consumed binary reserve.
+
+The unresolved nontrivial root-arrow count remains **2**.
+
+The exact live defect is:
+
+> **convert a forward-generated arithmetic reserve into renewed root-usable future control, on a nontrivial infinite ordinary-positive family, without importing a stronger initial finite 2-adic prefix.**
+
+**Action:** RMI-3 is the hard viability gate. It may attack only this conversion capability. It may not grow a hierarchy of valuations, residues, state labels, or parameters. If no candidate satisfies the pre-existing RMI-3 gate, freeze RMI.
+
