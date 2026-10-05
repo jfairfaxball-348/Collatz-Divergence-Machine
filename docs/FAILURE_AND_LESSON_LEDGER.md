@@ -3893,3 +3893,160 @@ Normalized blowups do not automatically solve descent: Rees valuations control i
 **Lesson:** the first remaining obstruction is now a stratumwise algebraic-moving-target zero/nonvanishing theorem plus exact descent, not lack of finite jets, multiplicity, or transport control.
 
 **Action:** CDM4-T29 should attack exactly this theorem. Do not reopen fixed reweighting, asynchronous times, analytic slow truncation, or bare associated-graded lifting.
+
+
+---
+
+### F0125 — T28 canonical finite jets satisfy the Ru–Vojta moving-target hypotheses
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T29.**
+
+After choosing a finite basis of the canonical face-prime jet, the moving coefficients are values of fixed rational functions on the slower face:
+[
+k_i=operatorname{Frac}K[Gamma_{le i}].
+]
+
+Thus they evaluate in one fixed number field and satisfy
+[
+h(H_n)=O(g_{i-1}(n))=o(g_i(n)).
+]
+
+Every infinite zero subsequence admits an infinite coherent refinement.
+
+After grouping current-profile monomials by cosets of the slower character subgroup, any linear dependence over the Ru–Vojta moving coefficient field clears denominators to a fixed Laurent relation on the T18 reduced torus. The T18 finite-hit theorem excludes infinitely many hits of such a nonzero relation.
+
+Hence coherence, fixed field of definition, general position after zero-coefficient deletion, uniform degree, small target height, and linear nondegeneracy are all satisfied for the actual T28 auxiliary class.
+
+**Lesson:** the phrase "algebraic moving coefficients" was too coarse. The load-bearing canonical jets are fixed-field rational moving targets after finite basis expansion.
+
+**Action:** use Ru–Vojta directly on the finite monomial-coordinate hyperplane. Do not seek a stronger moving-hypersurface theorem unless the auxiliary class itself changes.
+
+---
+
+### F0126 — Face-prime order alone is not analytic dominance; the T22 leading coefficient supplies the exact refinement
+
+**Status: PROVED STRUCTURAL THEOREM in CDM4-T29.**
+
+Within one T22 growth profile,
+[
+-log|	heta^gamma(q_n)|_2
+=
+
+u_i(gamma)g_i(n)+o(g_i(n)),
+qquad
+
+u_i(gamma)>0.
+]
+
+Two monomials can have different (
+u_i) even when they lie in the same face-prime order and the same exponential-polynomial profile.
+
+Therefore bare (mathfrak p_i)-adic order is not, by itself, the correct analytic dominance order.
+
+T29 does **not** replace exact ideal powers by a weighted ideal, Rees valuation, integral closure, or non-unimodular lattice gauge.
+
+Instead (
+u_i) is used only to choose the analytically dominant cluster inside the exact canonical jet.
+
+T28 finite jets imply local finiteness of canonical support in (
+u_i): below every fixed leading-coefficient bound only finitely many prefix terms occur. Hence a nonzero current-profile component has a finite minimal-(
+u_i) cluster and a positive gap to the rest.
+
+**Lesson:** exact algebraic filtration and local analytic dominance are different objects, but they are compatible.
+
+**Action:** keep (mathfrak p_i^P) primary for multiplicity and Artin–Rees. Use (
+u_i) only in the zero-theorem comparison.
+
+---
+
+### F0127 — Coordinate hyperplanes plus Ru–Vojta convert canonical super-smallness into exact vanishing
+
+**Status: PROVED NEW MULTISCALE ZERO THEOREM in CDM4-T29.**
+
+Let
+[
+F_i(q_n)=sum_{j=1}^M a_j(q_n)	heta^{eta_j}(q_n)
+]
+be the finite dominant current-profile cluster.
+
+All (eta_j) have the same minimal 2-adic leading coefficient. The omitted same-profile terms have a strict larger coefficient and higher profiles are smaller on a faster scale.
+
+Therefore at the 2-adic place
+[
+lambda_{F_i,n}(x_n)gedelta h(x_n)
+]
+for some fixed (delta>0).
+
+The monomial coordinates are (S)-units. Their (M) coordinate hyperplanes contribute
+[
+M h(x_n)+O(1)
+]
+by the product formula.
+
+The moving hyperplane adds the positive (delta h(x_n)) excess, while Ru–Vojta allows only
+[
+(M+arepsilon)h(x_n)+O(1).
+]
+
+Taking (arepsilon<delta) is impossible unless the dominant cluster vanishes identically.
+
+Repeating through the locally finite within-profile support and then through the finite T22 profile flag, at one synchronized orbit time, gives
+[
+oxed{
+E(q_n)=0	ext{ infinitely often}
+Longrightarrow
+E=0
+}
+]
+for the canonical T28 auxiliary class modulo exact functional relations.
+
+**Lesson:** small value is not silently promoted to zero; the exact conversion is a projective proximity contradiction with a quantified positive excess.
+
+**Action:** use this theorem as the dense-orbit nonvanishing input for nonprincipal relative lifting.
+
+---
+
+### F0128 — The complete T22 multiscale class is exact-lifting closed
+
+**Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T29.**
+
+T28 supplies:
+
+- finite canonical face-prime jets;
+- unbounded Hilbert–Samuel relative Hermite–Padé multiplicity;
+- torsion-free local relation modules;
+- finite Artin–Rees inverse-transport tax.
+
+T29 supplies the missing eventual nonvanishing theorem unless the auxiliary is already a functional relation.
+
+At the fastest live face, local decay and global algebraic height are both controlled by (g_r(n)), while residue-field coefficient height is
+[
+o(g_r(n)).
+]
+
+The inherited T16/T17/T25/T27 Liouville contradiction therefore runs on the original canonical relation module and yields
+[
+oxed{
+Q(alpha,mathbf X)=P(mathbf X)
+}
+]
+literally.
+
+No normalized blowup, exceptional chart, integral closure, non-unimodular gauge, or asynchronous iterate is used.
+
+The T21 completion-sign chain then excludes positive-integer anchors throughout the complete genuinely aperiodic T22 multiscale class.
+
+Under T2 finite-alphabet anchoring,
+[
+oxed{
+R_m	ext{ bounded}
+Longrightarrow
+	ext{eventual periodicity}
+}
+]
+through the complete T22 class.
+
+**Lesson:** the nonprincipal multiscale obstruction was a missing synchronized moving-target zero theorem, not a failure of multiplicity size or exact local transport.
+
+**Action:** move the next theorem-sized obligation outside the T21 expanding nonerasing pure-morphic scope. CDM4-T30 should audit nonexpanding/erasing morphic normalization and the mandatory thirtieth-session progress state.
+
