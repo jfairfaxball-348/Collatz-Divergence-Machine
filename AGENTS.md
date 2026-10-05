@@ -1,5 +1,50 @@
 # AGENTS.md — binding project scope and research rules
 
+
+## CURRENT PROGRAMME AUTHORITY — RMI
+
+**RMI — Root Mechanism Invention Programme is active.**
+
+Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+
+Preserved freezes:
+
+- CDM4 is **FROZEN**; CDM4-T32 is **NOT AUTHORIZED**.
+- IRM is **FROZEN**; IRM-2 is **NOT AUTHORIZED**.
+- RMI is neither a CDM4 successor nor IRM-2.
+
+RMI selects research by missing **root capability**, not by adjacency to the previous mathematical class.
+
+### FOUNDATIONAL INVENTION PRINCIPLE
+
+Existing mathematical precedent is not required for authorization of a novel structure.
+
+A novel structure may be pursued when:
+
+1. it is derived from a clearly stated root-level obstruction;
+2. it has a precise intended proof capability;
+3. it preserves ordinary forward-orbit ownership from the start;
+4. it is not merely a larger version of a previously failed template;
+5. it has a finite falsification or kill condition;
+6. success would materially shorten the implication chain to an explicit unbounded orbit.
+
+**Novelty without root leverage is rejected. Root leverage without precedent is permitted.**
+
+### ANTI-OVERCONSERVATISM PRINCIPLE
+
+The absence of prior art is not evidence against a root-derived invention.
+
+"No existing theorem motivates this" is not a sufficient reason to reject a structure specifically designed to solve a demonstrated missing capability.
+
+### ANTI-TEMPLATE-LADDER PRINCIPLE
+
+Failure does not justify increasing expressive power unless the increased power is required by a specifically identified failed capability.
+
+Every RMI object must remain attached to one actual ordinary forward orbit, must state what it is meant to prove that the repository could not previously certify, and must have a finite kill condition.
+
+RMI initial budget: at most **RMI-1 through RMI-6**, hard viability gate after **RMI-3**, absolute audit at **RMI-6**, no automatic RMI-7.
+
+
 ## ROOT OBJECTIVE
 
 Find and rigorously certify an explicit positive integer with an **unbounded Collatz orbit** under the shortened map `T(n)=n/2` for even `n`, `T(n)=(3n+1)/2` for odd `n`, and prove that its forward orbit never reaches `1`.
