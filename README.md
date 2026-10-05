@@ -28,50 +28,19 @@ L0 ultra-cheap screening -> L1 cheap exact analysis -> L2 expensive exact analys
 
 ## Current status
 
-**CDM4-T30 is complete — C: EXACT MORPHIC NORMALIZATION EXTENSION PROVED; PUSHY BOUNDED-LETTER / NEUTRAL-FACE OBSTRUCTION FOUND. No new scientific compute is authorized.**
+**CDM4-T31 is complete — C: FREEZE CDM4 / PIVOT. Comparative failure-mode verdict: MOSTLY YES.**
 
-Authoritative theory report: experiments/CDM4_T30_REPORT.md.
+Authoritative strategic audit: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`.  
+Last mathematical CDM4 theorem report: `experiments/CDM4_T30_REPORT.md`.
 
-T20–T29 remain closed infrastructure.
+T31 concludes that the pure-morphic / recursive-language anchor-obstruction programme is no longer a rational default route to the root objective. T1–T30 contain genuine mathematical results and are not demoted by this strategic decision, but the line has repeatedly converted one internal boundary into another while producing no explicit anchored aperiodic word, no scientific candidate integer, no unbounded orbit, and no positive anchor-construction mechanism.
 
-T30 moves the first surviving single-morphism boundary beyond “erasing morphisms”:
+The T30 pushy bounded-letter / neutral-growth class remains a mathematically natural residual inside morphic combinatorics. It is **not** independently justified as a likely Collatz-counterexample class by theorem, arithmetic evidence, probabilistic argument, empirical evidence, or a candidate-generation mechanism.
 
-- every morphic word has an exact one-sided representation as a coding of a nonerasing fixed point;
-- the coding uses no shift, so output indices, letter order, every ordinary valuation-prefix sum \(A_n\), T2 exact cylinders, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally;
-- mortal-letter deletion is harmless only through that complete exact output normalization, not by naively identifying intermediate presentation indices;
-- non-growing pure presentations with uniformly bounded non-growing-letter factors are substitutive in the growing sense and therefore normalize into the T21/T29 closed class;
-- every uniformly recurrent morphic word is primitive substitutive and likewise falls into the closed class.
+CDM4 is therefore frozen as a completed research record. There is no CDM4-T32 target. Do not automatically continue from pure morphic to pushy morphic, S-adic, or broader symbolic hierarchies, and do not extend Mahler/toric/moving-target machinery merely because an adjacent theorem is available.
 
-Universal reduction to T21 is false. The positive-valuation pure morphism
-\[
-1\mapsto112,\qquad 2\mapsto2
-\]
-has arbitrarily long bounded-letter runs and quadratic factor complexity. It cannot be represented as a coding of a growing endomorphism. Thus the first genuine residual is the **pushy bounded-letter class**. Genuinely polynomial-growth aperiodic pure morphisms survive inside the same neutral-direction boundary.
+A future theoretical reopening must change the root bridge itself: it must offer direct positive-integer anchor construction/recognition or actual-integer arithmetic with a falsifiable route to explicit candidates. A broader recursive-language class alone is not a pivot.
 
-For every exact growing-normalizable word, a hypothetical positive-integer anchor gives
-\[
-\limsup A_n/n\le\log_2 3
-\]
-by the inherited T3 inequality, while T21 makes the limsup algebraic. Gelfond–Schneider therefore makes the inequality strict, T20/T21 supplies real convergence, and T29 excludes the anchor.
+No substitution enumeration, new scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized by T31.
 
-Under the inherited T2 finite-alphabet hypotheses,
-\[
-\boxed{
-R_m\text{ bounded}
-\Longrightarrow
-\text{eventual periodicity}
-}
-\]
-now holds throughout the exact growing-normalizable morphic class, including erasing/non-growing presentations of such a word.
-
-The pushy residual is not yet closed. T30 did not prove algebraicity of the ordinary-prefix limsup throughout that class, and bounded periodic letters create zero increment directions. Hence the T21 positive grading becomes only nonnegative and the T22/T29 positive-profile machinery cannot be reused without a new neutral-letter reduction.
-
-Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
-
-No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
-
-No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
-
-The next live theorem is **CDM4-T31 — pushy bounded-letter resummation / ordinary-prefix limsup / neutral-face audit**.
-
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T30_REPORT.md before doing research.
+Read `AGENTS.md`, `START_HERE.md`, `ROADMAP.md`, the failure ledger, and the T31 audit before proposing further work.
