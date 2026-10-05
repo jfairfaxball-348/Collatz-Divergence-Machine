@@ -4035,17 +4035,19 @@ through the complete T22 class.
 
 ---
 
+---
+
 ### F0129 — Erasing and mortal letters are not word-level Collatz obstructions
 
 **Status: PROVED STRUCTURAL THEOREM in CDM4-T30.**
 
 Every morphic word admits an exact representation
-[
-w=	au(sigma^omega(b))
-]
-with (sigma) nonerasing and (	au) a coding.
+\[
+w=\tau(\sigma^\omega(b))
+\]
+with \(\sigma\) nonerasing and \(\tau\) a coding.
 
-At the final coding interface there is no shift and no change of output index. Therefore every actual valuation prefix, every ordinary prefix sum (A_n), every T2 exact cylinder, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally.
+At the final coding interface there is no shift and no change of output index. Therefore every actual valuation prefix, every ordinary prefix sum \(A_n\), every T2 exact cylinder, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally.
 
 Intermediate deletion of mortal letters may change presentation lengths and must not be treated as index-preserving. Exactness is recovered only at the final one-sided output equality.
 
@@ -4062,27 +4064,27 @@ Original output-state series are fixed linear sums of the normalized hidden-stat
 **Status: PROVED NEW RECURSIVE-LANGUAGE OBSTRUCTION in CDM4-T30.**
 
 The pure positive-valuation morphism
-[
-eta(1)=112,qquad eta(2)=2
-]
-is nonerasing and prolongable on (1).
+\[
+\eta(1)=112,\qquad \eta(2)=2
+\]
+is nonerasing and prolongable on \(1\).
 
-If (W_j=eta^j(1)), then
-[
+If \(W_j=\eta^j(1)\), then
+\[
 W_{j+1}=W_jW_j2,
-qquad
+\qquad
 |W_j|=2^{j+1}-1,
-]
-and (W_j) ends in (2^j).
+\]
+and \(W_j\) ends in \(j\) consecutive copies of the symbol \(2\).
 
-Thus the root prefix grows exponentially while the bounded letter (2) occurs in arbitrarily long all-bounded factors.
+Thus the root prefix grows exponentially while the bounded letter \(2\) occurs in arbitrarily long all-bounded factors.
 
 Pansiot's theorem gives quadratic factor complexity for this pushy branch:
-[
-p_w(n)=Theta(n^2).
-]
+\[
+p_w(n)=\Theta(n^2).
+\]
 
-A growing substitution fixed point has factor complexity at most (O(nlog n)), and an exact coding cannot convert that into the quadratic word above. Durand records the equivalent binary example (0mapsto001, 1mapsto1) as non-substitutive.
+A growing substitution fixed point has factor complexity at most \(O(n\log n)\), and an exact coding cannot convert that into the quadratic word above. Durand records the equivalent binary example \(0\mapsto001,\ 1\mapsto1\) as non-substitutive.
 
 Hence no change of exact presentation, erasure removal, or coding can place this word inside T21 without changing the word itself.
 
@@ -4097,33 +4099,33 @@ Hence no change of exact presentation, erasure removal, or coding can place this
 **Status: PROVED STRUCTURAL OBSTRUCTION / OPEN BOUNDARY SHARPENED in CDM4-T30.**
 
 T20 exact prefix/scalar transport survives for a nonerasing presentation:
-[
-L_J(n)=mathbf1^TM^Jc(n),
-qquad
+\[
+L_J(n)=\mathbf1^TM^Jc(n),
+\qquad
 A_{L_J(n)}=v^TM^Jc(n),
-]
+\]
 and
-[
-S(q_J)=sum_nrac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
-]
+\[
+S(q_J)=\sum_n\frac{2^{A_{L_J(n)}}}{3^{L_J(n)}}.
+\]
 
-But for a bounded periodic letter (b), after period refinement the T21 increment row
-[
-d^T=mathbf1^TM^a(M^R-I)
-]
+But for a bounded periodic letter \(b\), after period refinement the T21 increment row
+\[
+d^T=\mathbf1^TM^a(M^R-I)
+\]
 satisfies
-[
+\[
 d_b=0.
-]
+\]
 
 Therefore the grading is only nonnegative. There is no uniform exponential support displacement on every canonical generator and the T22 list of positive growth profiles cannot be imported unchanged.
 
 Pushiness makes the neutral direction dynamically unavoidable because arbitrarily long actual factors may consist only of bounded letters.
 
 Separately, T3 still gives
-[
-limsup A_n/nlelog_2 3
-]
+\[
+\limsup A_n/n\le\log_2 3
+\]
 under a hypothetical aperiodic positive-integer anchor, but T30 did not prove algebraicity of that limsup for every pushy residual word. Frequency algebraicity conditional on frequency existence is insufficient.
 
 **Lesson:** a zero growth profile is not a “very slow” positive profile. Both the Gelfond–Schneider strictness step and the toric filtration need a new neutral-letter theorem.
