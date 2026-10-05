@@ -1,14 +1,16 @@
 # START HERE
 
 
-## RMI live state — RMI-2 complete / fresh arithmetic production found, control conversion open
+## RMI frozen state — RMI-3 hard gate failed
 
-- Project stage: **RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
-- Active programme: **RMI — Root Mechanism Invention Programme**
+- Project stage: **RMI3-C — HARD GATE FAILED / RMI FROZEN**
+- RMI: **FROZEN**
+- RMI-4: **NOT AUTHORIZED**
+- Authoritative RMI-3 report: `experiments/RMI_3_FRESH_RESERVE_CONVERSION_VIABILITY_GATE.md`
 - Authoritative RMI-2 report: `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`
 - Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
 - Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
-- RMI-2 parent: `rmi1-finite-regenerative-orbit-state-invention-audit` at `9fe9ed1416fec8a7a23d982a89c0248fc6548d3a`
+- Authoritative RMI-3 parent: `rmi2-fresh-forward-control-reseeding-audit` at `ad44b8ef4f8be8d365739c7a99f414b73a181f6e`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
@@ -16,43 +18,52 @@
 - Current unresolved nontrivial root-arrow count: **2 — UNCHANGED**
 - Scientific trajectory compute: **NOT AUTHORIZED**
 - Pure finite 2-adic/parity-cylinder regeneration: **STRUCTURALLY KILLED**
-- Endogenous odd-prime factor-transfer: **PROVED**
-- Conversion of fresh arithmetic reserve into renewed root-usable forward control: **OPEN**
-- Exactly one authorized next target: **RMI-3 — FRESH-RESERVE CONVERSION / REGENERATIVE CONTROL VIABILITY GATE**
-- RMI-3 is the **HARD VIABILITY GATE**.
+- Endogenous odd-prime factor-transfer: **PROVED BUT NOT REGENERATIVE**
+- Fresh-reserve conversion into renewed bounded root-usable control: **HARD GATE FAILED**
 
-RMI-2 defines freshness by an advertised-premise pullback test: a successor fact is fresh only when it follows on the full advertised current family from the genuine bounded forward segment and fixed theorems, without an unstated stronger initial premise.
+RMI-3 establishes the exact parity-tail conservation identity. If
 
-For
-\[
-P_{a,b}(n):\quad v_2(n+1)=a,\qquad v_3(n+1)=b,
-\]
-every odd shortened-Collatz step satisfies
-\[
-P_{a,b}(n)\Longrightarrow P_{a-1,b+1}(T(n)),
-\qquad
-T(n)-n=\frac{n+1}{2}>0.
-\]
-Thus actual forward dynamics genuinely creates one new unit of 3-adic divisibility while consuming one unit of 2-adic reserve and producing strict physical gain. This is not hidden deeper-prefix spending.
+[
+epsilon_j(n)=T^j(n)mod2
+]
 
-However the exact universal binary control depth of \(P_{a,b}\) is \(a+1\), and after the odd step it is exactly \(a\). After the complete forced odd run, writing
-\[
+and (V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n))), then on every genuinely encountered proof-tree leaf of depth (r),
+
+[
+V_K(T^r(n))
+=
+(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
+]
+
+Therefore any finite parity/branch restriction proved at the successor is exactly a restriction on an already-existing source parity tail. A successor arithmetic statement may be genuinely fresh, as RMI-2 proved, while its bounded future-control content is nevertheless inherited.
+
+RMI-3 also proves that any premise guaranteeing ordinary-magnitude gain within at most (K) future steps must exclude the all-even word (0^K), because that word gives (T^j(m)=m/2^j<m) for every (1le jle K). Thus bounded future magnitude-gain control necessarily contains nontrivial finite parity-tail information and cannot be created afresh by merely transporting a new arithmetic label through a bounded forward segment.
+
+For the RMI-2 factor-transfer family
+
+[
 n+1=2^a3^bc,
-\]
-one subsequent even step gives
-\[
-v_2(T^{a+1}(n)+1)=v_2(3^{a+b}c+1)-1.
-\]
-For fixed \(a,b\), every nonnegative value on the right occurs for infinitely many admissible \(c\), even after any compatible finite odd-modulus restriction, by the Chinese remainder theorem. The fresh 3-adic reserve therefore does not universally replenish the consumed 2-adic forward-control reserve.
+qquad
+gcd(c,6)=1,
+]
 
-RMI-2 also proves that after the first odd step the actual orbit never again becomes divisible by \(3\). This is a genuine permanent forward-created invariant, but CRT shows it is compatible with every finite binary parity word and therefore supplies no growth-relevant forward control by itself.
+the odd transfer preserves both
 
-The single live defect is now:
+[
+L=a+b
+]
 
-> **Find a prefix-clean ordinary-arithmetic conversion law that turns forward-generated arithmetic reserve into renewed root-usable future control with strict physical gain.**
+and the cofactor (c). The exhaustion endpoint
 
-RMI-3 may attack only this conversion capability. It may not respond by adding more prime valuations, more residues, more states, more parameters, or another representational hierarchy. If no candidate clears the existing RMI-3 viability gate, RMI freezes.
+[
+T^a(n)=3^Lc-1
+]
 
+therefore depends only on arithmetic data already present at the source. The generated increment in (b) is fresh as a divisibility theorem but supplies no independent endpoint datum from which renewed binary control can be recovered.
+
+No structure satisfied all seven pre-existing RMI-3 viability conditions. The unresolved root-arrow count remains (2).
+
+**There is no authorized next RMI session.** Do not create RMI-4 or enlarge the failed representation. Reopening requires genuinely new theorem-level evidence that escapes the bounded-control pullback obstruction while retaining ordinary-positive ownership, non-tautological regeneration, and strict proper physical gain.
 
 ## Post-IRM1 live state — IRM frozen
 
