@@ -4238,3 +4238,42 @@ IRM has at most six sessions, with a hard gate after IRM-3. Kill it if it revert
 No scientific trajectory compute is authorized. Tiny exact certificate enumeration is permitted only under the frozen <=1e6-template / <=60 CPU-second diagnostic envelope.
 
 See `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
+
+## IRM-1 — frozen one-parameter integer-affine self-return class
+
+**Date:** 2026-10-05  
+**Status:** **FAILED / STRUCTURALLY RULED OUT — IRM1-C.**  
+**Authoritative report:** experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md.
+
+Frozen target: one nonconstant ordinary-integer affine embedding \(F(q)=aq+b\), at most eight congruence cells of modulus at most 64, return depth at most 16, and exact integer-affine parameter returns \(G_j(q)=u_jq+v_j\), with universal closure and strict common-height growth.
+
+Exact lesson:
+
+For any fixed positive-length parity block of length \(r\) with \(s\) odd steps,
+\[
+T^r(n)=\frac{3^s n+c}{2^r}.
+\]
+If
+\[
+T^r(F(q))=F(G(q))
+\]
+holds on an infinite congruence cell, coefficient comparison forces
+\[
+u=\frac{3^s}{2^r}.
+\]
+Because \(3^s\) is odd, this is never an integer for \(r\ge1\). For \(r=0\), exact return forces \(G(q)=q\), so strict growth fails.
+
+Consequences:
+
+- the frozen class is null by theorem, not by incomplete search;
+- cell count, modulus, return depth, and additive constants cannot repair the obstruction;
+- congruence restrictions can enforce a fixed parity block but cannot alter its affine multiplier;
+- no executable enumeration was needed;
+- complete certificates found: 0;
+- strict positive near-certificates found: 0;
+- no explicit candidate integer or unbounded orbit was produced;
+- CDM4 remains frozen;
+- IRM-2 is not authorized.
+
+**Do not repeat:** do not respond to this null by automatically allowing more cells, larger moduli, deeper returns, multiple parameters, or rational-affine cell maps. Such changes define a different certificate class and require independent root-proximate justification. In particular, a rational piecewise-affine identity parameterization risks merely renaming the original Collatz dynamics.
+
