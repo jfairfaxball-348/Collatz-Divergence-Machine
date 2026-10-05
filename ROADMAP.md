@@ -1,5 +1,45 @@
 # Roadmap
 
+
+## RMI — ROOT MECHANISM INVENTION PROGRAMME
+
+**Status: RMI-REBOOT-A — PROGRAMME INSTALLED / RMI-1 AUTHORIZED.**
+
+Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+
+RMI is a new programme, not CDM4-T32 and not IRM-2.
+
+Its research object is the missing mathematical capability needed to certify one explicit unbounded ordinary Collatz orbit. It does not select the next target by choosing a larger mathematical class than the one that failed.
+
+**Preserved freezes:**
+
+- CDM4 remains frozen;
+- CDM4-T32 remains unauthorized;
+- IRM remains frozen;
+- IRM-2 remains unauthorized.
+
+**Current unresolved nontrivial root-arrow count: 2.**
+
+### Initial RMI budget
+
+- maximum sessions: **6**;
+- hard viability checkpoint: **after RMI-3**;
+- absolute audit: **RMI-6**;
+- automatic RMI-7: **not authorized**.
+
+### Exactly one authorized next target
+
+**RMI-1 — FINITE REGENERATIVE ORBIT-STATE INVENTION AUDIT**
+
+Central question:
+
+> Can we define a finitely describable, non-tautological regenerative orbit state attached directly to an ordinary positive Collatz state on one actual forward orbit, such that the finite information it carries certifies finite genuine forward evolution to a successor state of the same type with strict increase in a proper physical quantity, and such that the same proof principle can be iterated without prescribing an infinite parity/valuation future?
+
+Do not preselect affine, polynomial, symbolic, automata, p-adic, graph, analytic, or other conventional syntax before the capability requirements have been derived.
+
+A failed RMI object returns the programme to the missing capability. It does not automatically authorize a larger object.
+
+
 ## POST-IRM1 — IRM FROZEN
 
 **Status: POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND. IRM-2 NOT AUTHORIZED.**
