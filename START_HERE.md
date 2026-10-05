@@ -1,36 +1,40 @@
 # START HERE
 
 
-## RMI live state — Root Mechanism Invention Programme installed
+## RMI live state — RMI-1 complete / fresh reseeding defect isolated
 
-- Project stage: **RMI-REBOOT-A — ROOT MECHANISM INVENTION PROGRAMME INSTALLED / RMI-1 AUTHORIZED**
+- Project stage: **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
 - Active programme: **RMI — Root Mechanism Invention Programme**
-- Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
-- Authoritative parent: `post-irm1-root-bridge-authorization-audit` at `2294cbf7fc66c876bf4e56f468d77b33632a4a2a`
+- Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
+- Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
+- RMI-1 parent: `rmi-root-mechanism-invention-reboot` at `f3e0591c525b51240d7c1fcf9fbfd5579bb0be04`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
 - IRM-2: **NOT AUTHORIZED**
-- POST-IRM1 negative evidence: **PRESERVED AS RMI DESIGN CONSTRAINTS**
-- Current unresolved nontrivial root-arrow count: **2**
-- RMI initial budget: **maximum 6 numbered research sessions**
-- RMI-3: **HARD VIABILITY GATE**
-- RMI-6: **ABSOLUTE PROGRAMME AUDIT**
-- RMI-7: **NOT AUTOMATICALLY AUTHORIZED**
+- Current unresolved nontrivial root-arrow count: **2 — UNCHANGED**
 - Scientific trajectory compute: **NOT AUTHORIZED**
-- First authorized target: **RMI-1 — FINITE REGENERATIVE ORBIT-STATE INVENTION AUDIT**
+- Pure finite 2-adic/parity-cylinder regeneration: **STRUCTURALLY KILLED**
+- Exactly one authorized next target: **RMI-2 — FRESH FORWARD-CONTROL RESEEDING / ENDOGENOUS INFORMATION-PRODUCTION AUDIT**
+- RMI-3 remains the **HARD VIABILITY GATE**.
 
-RMI corrects one overconservative interpretation of the POST-IRM1 freeze: **independent prior art is not required for a root-derived invention**. The freeze against adjacent template escalation remains binding.
+RMI-1 proved that if an infinite ordinary-positive cylinder (n=\rho+2^Kq) follows a common shortened-Collatz block of length (r\le K) with (s) odd steps, then
+[
+T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
+]
+Because (3^s) is odd, the strongest universally forced power-of-two cylinder at the successor has depth exactly (K-r). Finite parity-cylinder proof reserve therefore loses exactly one bit per shortened step and cannot regenerate itself indefinitely.
 
-The governing selection question is:
+RMI-1 also introduced the **Proof-Reserve Regenerative State (PRRS)** as a proof architecture with ordinary ownership, universal family-level compression, bounded genuine forward semantics, proper physical gain, and an explicit premise-renewal ledger. Its generic soundness theorem is valid, but no Collatz-specific non-cylinder reseed law was found.
 
-> What mathematical capability does a proof of an explicit unbounded Collatz orbit require that our present mathematics does not possess, and what is the smallest new structure we can invent to supply it?
+The single live defect is:
 
-The first RMI question is:
+> **No endogenous ordinary-arithmetic source of fresh forward-control information is yet known that can reseed the successor certificate after finite cylinder information is consumed.**
 
-> Can we define a finitely describable, non-tautological regenerative orbit state attached directly to an ordinary positive Collatz state on one actual forward orbit, such that its finite carried information certifies a finite genuine forward evolution to a successor state of the same type with strict increase in a proper physical quantity, without prescribing an infinite parity/valuation future?
+The (27+256q\to31+288q) example is the hostile model: although (v_2(n+1)) appears to improve from (2) to at least (5), the actual universal proof starts from an eight-bit cylinder and ends with a five-bit cylinder. Apparent renewal can therefore be hidden prefix spending.
 
-Read the RMI reboot charter before selecting any successor question.
+RMI-2 may attack only the missing reseeding capability. It must not respond by increasing modulus, prefix depth, state count, parameter dimension, or representation class. The exact next question is:
+
+> **Does there exist a finitely describable ordinary-arithmetic relation attached to one actual positive Collatz state, not equivalent to fixing a stronger finite 2-adic cylinder, such that a bounded genuine forward segment both produces strict physical gain and proves a successor relation of the same schema carrying at least as much usable finite forward-control information as the current state?**
 
 
 ## Post-IRM1 live state — IRM frozen
