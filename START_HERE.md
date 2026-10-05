@@ -1,13 +1,14 @@
 # START HERE
 
 
-## RMI live state — RMI-1 complete / fresh reseeding defect isolated
+## RMI live state — RMI-2 complete / fresh arithmetic production found, control conversion open
 
-- Project stage: **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
+- Project stage: **RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
 - Active programme: **RMI — Root Mechanism Invention Programme**
-- Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
-- Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
-- RMI-1 parent: `rmi-root-mechanism-invention-reboot` at `f3e0591c525b51240d7c1fcf9fbfd5579bb0be04`
+- Authoritative RMI-2 report: \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`
+- Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`
+- Authoritative RMI charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`
+- RMI-2 parent: \`rmi1-finite-regenerative-orbit-state-invention-audit\` at \`9fe9ed1416fec8a7a23d982a89c0248fc6548d3a\`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
@@ -15,26 +16,42 @@
 - Current unresolved nontrivial root-arrow count: **2 — UNCHANGED**
 - Scientific trajectory compute: **NOT AUTHORIZED**
 - Pure finite 2-adic/parity-cylinder regeneration: **STRUCTURALLY KILLED**
-- Exactly one authorized next target: **RMI-2 — FRESH FORWARD-CONTROL RESEEDING / ENDOGENOUS INFORMATION-PRODUCTION AUDIT**
-- RMI-3 remains the **HARD VIABILITY GATE**.
+- Endogenous odd-prime factor-transfer: **PROVED**
+- Conversion of fresh arithmetic reserve into renewed root-usable forward control: **OPEN**
+- Exactly one authorized next target: **RMI-3 — FRESH-RESERVE CONVERSION / REGENERATIVE CONTROL VIABILITY GATE**
+- RMI-3 is the **HARD VIABILITY GATE**.
 
-RMI-1 proved that if an infinite ordinary-positive cylinder \(n=\rho+2^Kq\) follows a common shortened-Collatz block of length \(r\le K\) with \(s\) odd steps, then
+RMI-2 defines freshness by an advertised-premise pullback test: a successor fact is fresh only when it follows on the full advertised current family from the genuine bounded forward segment and fixed theorems, without an unstated stronger initial premise.
+
+For
 \[
-T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
+P_{a,b}(n):\quad v_2(n+1)=a,\qquad v_3(n+1)=b,
 \]
-Because \(3^s\) is odd, the strongest universally forced power-of-two cylinder at the successor has depth exactly \(K-r\). Finite parity-cylinder proof reserve therefore loses exactly one bit per shortened step and cannot regenerate itself indefinitely.
+every odd shortened-Collatz step satisfies
+\[
+P_{a,b}(n)\Longrightarrow P_{a-1,b+1}(T(n)),
+\qquad
+T(n)-n=\frac{n+1}{2}>0.
+\]
+Thus actual forward dynamics genuinely creates one new unit of 3-adic divisibility while consuming one unit of 2-adic reserve and producing strict physical gain. This is not hidden deeper-prefix spending.
 
-RMI-1 also introduced the **Proof-Reserve Regenerative State (PRRS)** as a proof architecture with ordinary ownership, universal family-level compression, bounded genuine forward semantics, proper physical gain, and an explicit premise-renewal ledger. Its generic soundness theorem is valid, but no Collatz-specific non-cylinder reseed law was found.
+However the exact universal binary control depth of \(P_{a,b}\) is \(a+1\), and after the odd step it is exactly \(a\). After the complete forced odd run, writing
+\[
+n+1=2^a3^bc,
+\]
+one subsequent even step gives
+\[
+v_2(T^{a+1}(n)+1)=v_2(3^{a+b}c+1)-1.
+\]
+For fixed \(a,b\), every nonnegative value on the right occurs for infinitely many admissible \(c\), even after any compatible finite odd-modulus restriction, by the Chinese remainder theorem. The fresh 3-adic reserve therefore does not universally replenish the consumed 2-adic forward-control reserve.
 
-The single live defect is:
+RMI-2 also proves that after the first odd step the actual orbit never again becomes divisible by \(3\). This is a genuine permanent forward-created invariant, but CRT shows it is compatible with every finite binary parity word and therefore supplies no growth-relevant forward control by itself.
 
-> **No endogenous ordinary-arithmetic source of fresh forward-control information is yet known that can reseed the successor certificate after finite cylinder information is consumed.**
+The single live defect is now:
 
-The \(27+256q\to31+288q\) example is the hostile model: although \(v_2(n+1)\) appears to improve from \(2\) to at least \(5\), the actual universal proof starts from an eight-bit cylinder and ends with a five-bit cylinder. Apparent renewal can therefore be hidden prefix spending.
+> **Find a prefix-clean ordinary-arithmetic conversion law that turns forward-generated arithmetic reserve into renewed root-usable future control with strict physical gain.**
 
-RMI-2 may attack only the missing reseeding capability. It must not respond by increasing modulus, prefix depth, state count, parameter dimension, or representation class. The exact next question is:
-
-> **Does there exist a finitely describable ordinary-arithmetic relation attached to one actual positive Collatz state, not equivalent to fixing a stronger finite 2-adic cylinder, such that a bounded genuine forward segment both produces strict physical gain and proves a successor relation of the same schema carrying at least as much usable finite forward-control information as the current state?**
+RMI-3 may attack only this conversion capability. It may not respond by adding more prime valuations, more residues, more states, more parameters, or another representational hierarchy. If no candidate clears the existing RMI-3 viability gate, RMI freezes.
 
 
 ## Post-IRM1 live state — IRM frozen
