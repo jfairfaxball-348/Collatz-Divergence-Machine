@@ -12,39 +12,40 @@
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20–T28 remain closed infrastructure.
-- T29 proves that the actual T28 finite-jet targets satisfy Ru–Vojta's moving-hyperplane theorem: their coefficients are evaluations of fixed slower-face rational functions with
-  [
-  h(H_n)=o(h(x_n)).
-  ]
-- Coherent subsequences exist automatically. After grouping current-profile monomials by slower-face cosets, T18's finite-hit theorem proves linear nondegeneracy over the moving coefficient field.
-- T22's exact positive 2-adic leading coefficient inside one growth profile refines the analytic comparison without changing the canonical lattice or ideal filtration. T28 finite jets make the minimal-leading-coefficient cluster finite; omitted same-profile terms have a strict local gap, and higher profiles are smaller on a faster scale.
-- Coordinate hyperplanes supply the exact (S)-unit height baseline. The extra proximity from the super-small moving initial form contradicts Ru–Vojta unless that initial form vanishes identically.
-- Iterating through the finite profile flag at one synchronized orbit time gives:
-  [
-  oxed{
-  E(q_n)=0	ext{ infinitely often}
-  Longrightarrow
+- T29 verifies the published moving-target interface for the actual T28 finite-jet class. Canonical jet coefficients are evaluations of fixed slower-face rational functions.
+- Every infinite zero subsequence admits an infinite coherent refinement.
+- After slower-coset compression, T18's finite-hit theorem gives linear nondegeneracy over the Ru–Vojta moving coefficient field.
+- T22's exact positive 2-adic leading coefficient inside one profile identifies a finite dominant cluster. T28 finite jets make the support locally finite in that leading coefficient.
+- Omitted same-profile terms have a strict local gap; higher-profile terms are smaller on a faster scale.
+- If the projective monomial point retains the current \(g_i\)-scale, coordinate hyperplanes supply the exact \(S\)-unit baseline and Ru–Vojta forces the current cluster to vanish.
+- If projective cancellation lowers the monomial-point height to \(o(g_i)\), dividing by one dominant monomial gives an algebraic number of height \(o(g_i)\) but 2-adic smallness on the full \(g_i\)-scale, so direct Liouville forces exact zero.
+- Iterating through the finite profile flag at one synchronized orbit time gives
+  \[
+  \boxed{
+  E(q_n)=0\text{ infinitely often}
+  \Longrightarrow
   E=0
   }
-  ]
+  \]
   for the canonical T28 auxiliary class modulo exact functional relations.
-- T28's Hilbert–Samuel Hermite–Padé multiplicity and finite Artin–Rees transport tax therefore plug into the inherited T16/T17/T25/T27 relation-lifting proof. The complete genuinely aperiodic T22 multiscale class now admits exact lifting with
-  [
-  oxed{
-  Q(alpha,mathbf X)=P(mathbf X)
+- T28's Hilbert–Samuel Hermite–Padé multiplicity and finite Artin–Rees transport tax therefore plug into the inherited T16/T17/T25/T27 relation-lifting proof.
+- The complete genuinely aperiodic T22 multiscale class now admits exact lifting with
+  \[
+  \boxed{
+  Q(\alpha,\mathbf X)=P(\mathbf X)
   }
-  ]
+  \]
   literally preserved.
 - No normalized blowup, exceptional chart, integral-closure replacement, non-unimodular gauge, deleted scalar-support direction, or asynchronous orbit time is used. Exact powers remain primary.
 - The inherited T21 completion-sign argument excludes positive-integer anchors throughout the complete T22 multiscale class.
 - Under the inherited T2 finite-alphabet anchoring hypotheses,
-  [
-  oxed{
-  R_m	ext{ bounded}
-  Longrightarrow
-  	ext{eventual periodicity}
+  \[
+  \boxed{
+  R_m\text{ bounded}
+  \Longrightarrow
+  \text{eventual periodicity}
   }
-  ]
+  \]
   now holds through the complete T22 class, strictly beyond the principal-fast T27 class.
 - Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
