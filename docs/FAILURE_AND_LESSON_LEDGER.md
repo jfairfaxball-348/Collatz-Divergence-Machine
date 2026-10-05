@@ -4413,7 +4413,7 @@ At RMI-6 the programme must either have a complete root certificate or reduce th
 
 ## RMI-1 — finite regenerative orbit-state invention audit — 2026-10-05
 
-**Authoritative report:** \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`  
+**Authoritative report:** `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`  
 **Decision:** **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
 ### F0143 — Finite 2-adic cylinder proof reserve loses exactly one bit per shortened-Collatz step
