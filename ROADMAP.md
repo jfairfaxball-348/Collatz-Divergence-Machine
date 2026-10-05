@@ -1308,46 +1308,46 @@ T30 completes the mandatory thirtieth-session progress/correction audit and shar
 The first result is an exact presentation theorem at the Collatz observable interface.
 
 Every morphic word has an exact one-sided representation
-[
-w=	au(sigma^omega(b))
-]
-with (sigma) nonerasing and (	au) a coding. No shift is required. Consequently the actual valuation symbol at every ordinary output index, every prefix sum (A_n), every T2 exact cylinder, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally. Original output-state series are recovered as fixed sums over coding fibres.
+\[
+w=\tau(\sigma^\omega(b))
+\]
+with \(\sigma\) nonerasing and \(\tau\) a coding. No shift is required. Consequently the actual valuation symbol at every ordinary output index, every prefix sum \(A_n\), every T2 exact cylinder, the canonical inverse-Collatz scalar, and the positive-integer anchoring condition are preserved literally. Original output-state series are recovered as fixed sums over coding fibres.
 
 Thus erasing and mortal-letter contamination are not irreducible Collatz boundaries.
 
 For a nonerasing pure presentation, Pansiot's non-pushy branch—bounded length of all-non-growing-letter factors—is substitutive in the growing sense. Uniformly recurrent morphic words are primitive substitutive. These exact growing-normalizable words therefore fall into the T21/T29 closed class without reopening T22–T29.
 
 For that enlarged class:
-[
-eta=limsup A_n/ninoverline{mathbb Q},
-]
+\[
+\beta=\limsup A_n/n\in\overline{\mathbb Q},
+\]
 a hypothetical aperiodic positive-integer anchor gives
-[
-etalelog_2 3,
-]
+\[
+\beta\le\log_2 3,
+\]
 and Gelfond–Schneider forces
-[
-eta<log_2 3.
-]
+\[
+\beta<\log_2 3.
+\]
 The inherited completion-sign chain excludes positive-integer anchors.
 
 Under T2:
-[
-oxed{
-R_m	ext{ bounded}
-Longrightarrow
-	ext{eventual periodicity}
+\[
+\boxed{
+R_m\text{ bounded}
+\Longrightarrow
+\text{eventual periodicity}
 }
-]
+\]
 through every exact growing-normalizable morphic valuation word.
 
 Universal normalization is false.
 
 The positive-valuation pure morphism
-[
-1mapsto112,qquad 2mapsto2
-]
-has exponentially growing root prefixes but arbitrarily long bounded-letter runs. Pansiot gives quadratic factor complexity, while growing substitution fixed points have complexity at most (O(nlog n)). Durand records the equivalent binary fixed point as non-substitutive. Hence no exact coding presentation by a growing endomorphism exists.
+\[
+1\mapsto112,\qquad 2\mapsto2
+\]
+has exponentially growing root prefixes but arbitrarily long bounded-letter runs. Pansiot gives quadratic factor complexity, while growing substitution fixed points have complexity at most \(O(n\log n)\). Durand records the equivalent binary fixed point as non-substitutive. Hence no exact coding presentation by a growing endomorphism exists.
 
 The first surviving pure-morphic boundary is therefore the **pushy bounded-letter / neutral-growth class**, not erasing itself and not merely polynomial root growth. Genuinely polynomial-growth aperiodic pure morphisms survive as a natural subfamily.
 
@@ -1371,11 +1371,11 @@ The next theorem-sized obligation is:
 1. pass to one finite morphism power and classify the bounded-letter subsystem as finite periodic dynamics;
 2. derive an exact arbitrary-prefix decomposition into a growing skeleton and bounded periodic blocks, preserving the original output index;
 3. prove that
-   [
-   limsup A_n/n
-   ]
+   \[
+   \limsup A_n/n
+   \]
    has a finite algebraic description, or isolate the first exact counterexample/obstruction;
-4. decide whether a hypothetical positive-integer anchor therefore forces a strict gap below (log_2 3);
+4. decide whether a hypothetical positive-integer anchor therefore forces a strict gap below \(\log_2 3\);
 5. resum every bounded block exactly in the canonical scalar/state functions without deleting output positions;
 6. determine whether the resummed system recovers finitely many positive growth profiles and finite canonical jets sufficient for T29;
 7. if not, identify the first exact neutral-face obstruction.
