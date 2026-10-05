@@ -28,20 +28,31 @@ L0 ultra-cheap screening -> L1 cheap exact analysis -> L2 expensive exact analys
 
 ## Current status
 
-**IRM-1 is complete: IRM1-C — FROZEN CLASS NULL / STRUCTURALLY RULED OUT.**
+**POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND.**
 
+Authoritative post-IRM1 audit: `experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md`.  
 Authoritative IRM-1 report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`.  
 Authoritative post-CDM4 pivot: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
 
 CDM4 remains frozen after T31 and there is no CDM4-T32.
 
 IRM-1 proved, without enumeration, that a positive-length exact shortened-Collatz return to the same nonconstant affine embedding (F(q)=aq+b) forces parameter slope
-\[
-u=\frac{3^s}{2^r},
-\]
-which cannot be an integer for any return depth (r\ge1). Depth zero forces the identity return and cannot grow. Hence the frozen one-parameter integer-affine class contains zero complete certificates and zero strict positive near-certificates.
+[
+u=rac{3^s}{2^r},
+]
+which cannot be an integer for any (rge1). Depth zero forces the identity return and cannot grow.
 
-**IRM-2 is not authorized.** IRM is paused pending a separately justified root-proximate question. The IRM-1 null does not authorize a larger modulus, more cells, deeper returns, multiple parameters, or a relaxed coefficient class. No scientific trajectory compute is authorized.
+The post-IRM1 authorization audit found **zero** independently motivated continuation directions that satisfy all root-distance and governance gates. In particular:
+
+- rational-affine return maps are tautological as a general language because the identity embedding reproduces the original Collatz branches exactly;
+- finite multi-state integer-affine recurrent positive-depth return systems are ruled out by a cycle-slope telescoping obstruction;
+- strongly sufficient residue sets constrain where divergent orbits must pass but do not construct one;
+- stopping-time/parity-residue theory gives exact finite-prefix structure but no new persistence theorem;
+- 2-adic/conjugacy routes retain the ordinary-integer realization bridge.
+
+**IRM-2 is not authorized. IRM is frozen after its single executed mechanism session, IRM-1.**
+
+No scientific trajectory compute or enlarged certificate search is authorized. Reopening requires genuinely new external or theorem-level evidence: for example, a new exact ordinary-integer closure identity, an explicit family with a new self-regeneration property, a theorem-derived candidate mechanism, or an independently discovered positive near-certificate.
 
 ### Previous CDM4 closeout
 
