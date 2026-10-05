@@ -53,3 +53,49 @@ If a candidate appears qualitatively exceptional: stop broad search; freeze revi
 ## 8. Session discipline
 
 After CDM0, use numbered research sessions. Every tenth session is a progress-and-correction audit. Preserve failures, hypothesis falsifications, route kills, and negative information.
+
+
+## 9. RMI foundational-invention protocol
+
+The active theory programme is RMI — Root Mechanism Invention Programme.
+
+RMI research selection follows:
+
+`root obstruction -> capability specification -> minimal invention -> exact toy tests -> root connection -> hostile collapse test -> kill or promote`.
+
+The capability must be stated **before** a mathematical representation is selected.
+
+A novel structure does not require independent prior-art justification if it is derived from a demonstrated root obstruction. It does require:
+
+- ordinary-positive forward-orbit ownership from the start;
+- exact genuine forward transitions;
+- finite description at each certified stage;
+- a regeneration mechanism;
+- physical rather than bookkeeping growth;
+- properness or irreversibility;
+- non-tautology;
+- root compression;
+- and a finite kill condition.
+
+RMI may invent new definitions, invariants, recurrences, partial orders, state spaces, coarse-grainings, proof certificates, or hybrid structures. Such inventions are promoted only for theorem-level capability, not novelty.
+
+### RMI session discipline
+
+Each session attacks exactly one root-level inability and names exactly one intended capability. Failure returns to that inability; it does not automatically enlarge the failed object.
+
+Every session reports the unresolved nontrivial root-arrow count before and after the work.
+
+### RMI-3 and RMI-6 gates
+
+Continuation beyond RMI-3 requires a finite exact state, direct ordinary-orbit ownership, a proved non-tautological regeneration lemma, a proper physical gain, an indefinite-growth implication theorem, a finite kill condition, and at least one nontrivial exact ordinary-orbit regeneration instance.
+
+RMI-6 is an absolute audit. Continue only after either a complete root certificate or a reduction of the unresolved root-arrow count from two to one with a finitely testable remaining construction problem.
+
+No automatic RMI-7 is authorized.
+
+## 10. RMI compute discipline
+
+No scientific trajectory campaign is authorized by RMI.
+
+Tiny exact theorem-development computation is permitted only after stating the proposition it can falsify. Unless a smaller session-specific envelope is frozen, the default ceiling is 100,000 exact toy evaluations, 60 CPU-seconds, and 512 MiB memory, with no random scientific starts, GPU, cloud, or distributed execution.
+
