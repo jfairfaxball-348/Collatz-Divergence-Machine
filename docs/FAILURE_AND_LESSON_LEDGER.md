@@ -4199,3 +4199,42 @@ No CDM4-T32 theorem target is authorized. In particular do not continue pushy bo
 **Reopening criterion:** a future theoretical direction must change the root bridge itself, for example by directly constructing or positively recognizing an ordinary positive-integer anchor, or by deriving an actual-integer arithmetic mechanism with a falsifiable route to explicit candidates. A broader recursive-language class alone does not qualify.
 
 **Action:** preserve CDM4 as a completed research record unless and until that criterion is met.
+
+
+---
+
+## POST-CDM4 ROOT-BRIDGE RESET — 2026-10-05
+
+**Status:** STRATEGIC PIVOT COMPLETE.  
+**Decision:** **P1 — LAUNCH INTEGER-FIRST MECHANISM PROGRAMME.**  
+**New programme:** **IRM — Integer Return Mechanism Programme.**
+
+### Repository authority
+
+The exact T31 tip `327d8fa7cb270815b31072935852428612f91a6f` was verified. A direct compare with `main` reported a diverged history with merge base `3a3df26b59d6f9f42f779c6333c5a0ee97ad95eb`; T31 has not been merged. The pivot therefore descends from the exact T31 tip rather than divergent `main`.
+
+### Preserved lesson
+
+T31's verdict **MOSTLY YES / C — FREEZE CDM4 / PIVOT** remains authoritative. CDM4 is not reopened.
+
+Do not repeat these failure modes:
+
+1. resume a surviving symbolic hierarchy merely because it remains open;
+2. treat generic 2-adic realization as ordinary-positive realization;
+3. mistake predecessor-tree or semigroup membership for ownership by one forward orbit;
+4. treat a forced finite expanding parity prefix as persistent candidate enrichment;
+5. enlarge arithmetic template searches automatically after null results.
+
+### Positive pivot
+
+The strongest surviving bridge is an exact ordinary-integer return certificate: explicitly parameterized integer states, exact finite Collatz returns, universal closure, and a proper return height tending to infinity.
+
+A successful certificate containing one explicit positive integer has one unresolved nontrivial arrow to the root objective: **construct the certificate**. Once constructed, unboundedness follows directly from actual forward returns.
+
+### Governance
+
+IRM has at most six sessions, with a hard gate after IRM-3. Kill it if it reverts to infinite parity prescription, requires nonordinary 2-adic anchoring, becomes a tautological renaming of Collatz, collapses to periodicity/nonexpansion, or produces only null template searches without a mathematically compelled positive near-certificate.
+
+No scientific trajectory compute is authorized. Tiny exact certificate enumeration is permitted only under the frozen <=1e6-template / <=60 CPU-second diagnostic envelope.
+
+See `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
