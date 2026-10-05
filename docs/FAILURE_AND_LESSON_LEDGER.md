@@ -4350,3 +4350,60 @@ IRM-1 remains the only executed IRM mechanism session. IRM-2 is not authorized.
 
 "More expressive mathematics is available" is not a reopening trigger.
 
+
+
+---
+
+## RMI FOUNDATIONAL INVENTION REBOOT — 2026-10-05
+
+**Authoritative charter:** `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`  
+**Decision:** **RMI-REBOOT-A — ROOT MECHANISM INVENTION PROGRAMME INSTALLED / RMI-1 AUTHORIZED.**
+
+### F0140 — Anti-template governance can overcorrect into an unintended prior-art veto
+
+**Status: GOVERNANCE DEFECT IDENTIFIED AND REPAIRED in RMI reboot.**
+
+POST-IRM1 correctly froze IRM and rejected automatic movement to rational-affine, multi-state, larger-modulus, deeper-return, or otherwise more expressive neighboring certificate classes.
+
+However, language requiring "genuinely new external/theorem-level evidence" or independent mathematical motivation can be misread as a universal rule that a novel mathematical structure is unauthorized unless prior literature already points to it.
+
+That interpretation is too strong for a foundational problem.
+
+**Lesson:** independence from a failed template is required; independence from first-principles project reasoning is not.
+
+**Action:** replace the accidental prior-art gate with root-derived capability authorization. A new structure may be explored without precedent when it is derived from a specific root obstruction, preserves ordinary forward ownership, has a precise intended capability, has a finite kill condition, and would materially shorten the root implication chain.
+
+### F0141 — Purpose-built invention is distinct from adjacent generalization
+
+**Status: BINDING RMI GOVERNANCE PRINCIPLE.**
+
+The following are not equivalent:
+
+- "affine failed, therefore try quadratic";
+- "one state failed, therefore try three";
+- "one completion failed, therefore try a larger completion";
+
+versus:
+
+- "the repository cannot finitely certify regeneration after a forced prefix; derive the exact capabilities a regenerative proof object would need; invent the smallest object that could supply them."
+
+The first pattern is template escalation. The second is foundational invention.
+
+**Lesson:** novelty is not a defect, but expressiveness without root necessity is.
+
+**Action:** enforce the Foundational Invention, Anti-Overconservatism, and Anti-Template-Ladder principles in `AGENTS.md` and the RMI charter.
+
+### F0142 — RMI is killable and may not become a self-renewing theory
+
+**Status: BINDING PROGRAMME SAFEGUARD.**
+
+RMI has at most six sessions. RMI-3 is a hard viability gate. RMI-6 is an absolute audit. There is no automatic RMI-7.
+
+Continuation beyond RMI-3 requires one candidate structure with finite exact definition, direct ordinary-orbit ownership, a non-tautological regeneration lemma, proper physical gain, an indefinite-growth implication theorem, a finite kill condition, and at least one nontrivial exact ordinary-orbit regeneration instance.
+
+At RMI-6 the programme must either have a complete root certificate or reduce the unresolved nontrivial root-arrow count from two to one with a finitely testable remaining construction problem.
+
+**Lesson:** a new foundational programme requires an even stronger anti-loop discipline because first-principles invention can otherwise generate unlimited vocabulary.
+
+**Action:** if two consecutive sessions mainly create internal terminology or adjacent obligations without a theorem-level root capability, freeze the route.
+
