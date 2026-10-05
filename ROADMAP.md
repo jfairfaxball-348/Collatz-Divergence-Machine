@@ -5,9 +5,9 @@
 
 **Status: RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
-Authoritative RMI-2 report: \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`.  
-Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`.  
-Authoritative charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`.
+Authoritative RMI-2 report: `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`.  
+Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`.  
+Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
 
 RMI remains a separate foundational-invention programme. It is not CDM4-T32 and not IRM-2.
 
