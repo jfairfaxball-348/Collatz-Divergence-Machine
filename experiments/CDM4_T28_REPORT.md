@@ -1,10 +1,10 @@
 # CDM4-T28 — NONPRINCIPAL MULTISCALE FILTRATION / ITERATED-STRATUM RELATIVE-LIFTING AUDIT
 
 **Date:** 2026-10-05  
-**Authoritative input branch:** \`cdm4-t27-special-fibre-degeneration-audit\`  
-**Authoritative input commit:** \`bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7\`  
-**T27 merged into main at session start:** **NO** — \`main\` and T27 were verified divergent, so the exact T27 tip above was used as authority.  
-**Working branch:** \`cdm4-t28-nonprincipal-multiscale-audit\`
+**Authoritative input branch:** `cdm4-t27-special-fibre-degeneration-audit`  
+**Authoritative input commit:** `bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7`  
+**T27 merged into main at session start:** **NO** — `main` and T27 were verified divergent, so the exact T27 tip above was used as authority.  
+**Working branch:** `cdm4-t28-nonprincipal-multiscale-audit`
 
 Scientific starts: **0**. Candidate trajectories: **0**. Substitution enumeration: **NONE**. Finite-code search: **NONE**. CPU/GPU/cloud/distributed scientific work: **NONE**. Explicit anchored aperiodic word: **NO**. Unbounded orbit: **NO**. Counterexample claimed: **NO**.
 
@@ -175,7 +175,7 @@ The exact T27 branch tip was verified as
 }
 \]
 
-At session start, \`main\` was not a descendant of that tip; the two histories were divergent. T28 therefore uses the exact T27 tip as authority.
+At session start, `main` was not a descendant of that tip; the two histories were divergent. T28 therefore uses the exact T27 tip as authority.
 
 T20–T27 are treated as closed infrastructure. In particular, T28 does not reopen:
 
