@@ -3,13 +3,12 @@
 
 ## RMI — ROOT MECHANISM INVENTION PROGRAMME
 
-**Status: RMI-REBOOT-A — PROGRAMME INSTALLED / RMI-1 AUTHORIZED.**
+**Status: RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
+Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`.  
 Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
 
-RMI is a new programme, not CDM4-T32 and not IRM-2.
-
-Its research object is the missing mathematical capability needed to certify one explicit unbounded ordinary Collatz orbit. It does not select the next target by choosing a larger mathematical class than the one that failed.
+RMI remains a separate foundational-invention programme. It is not CDM4-T32 and not IRM-2.
 
 **Preserved freezes:**
 
@@ -18,7 +17,28 @@ Its research object is the missing mathematical capability needed to certify one
 - IRM remains frozen;
 - IRM-2 remains unauthorized.
 
-**Current unresolved nontrivial root-arrow count: 2.**
+**Current unresolved nontrivial root-arrow count: 2 — unchanged.**
+
+### RMI-1 durable result
+
+For an infinite ordinary-positive cylinder
+[
+C(\rho,K)=\{\rho+2^Kq:q\ge0\},
+]
+after a common shortened-Collatz block of length (r\le K) containing (s) odd source states,
+[
+T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
+]
+
+Hence the image family has a common residue modulo (2^{K-r}) but no common residue modulo (2^{K-r+1}). The exact finite parity-cylinder proof reserve therefore decreases
+[
+K\mapsto K-r
+]
+and cannot regenerate itself under positive-depth forward iteration.
+
+RMI-1's **Proof-Reserve Regenerative State (PRRS)** supplies a sound finite proof architecture and an explicit premise-renewal audit, but no concrete Collatz-specific non-cylinder source of fresh forward-control information was obtained.
+
+The pure-cylinder route is therefore frozen. Do not repair it by loading deeper finite prefixes, larger moduli, larger residue trees, or adjacent representational syntax.
 
 ### Initial RMI budget
 
@@ -29,15 +49,18 @@ Its research object is the missing mathematical capability needed to certify one
 
 ### Exactly one authorized next target
 
-**RMI-1 — FINITE REGENERATIVE ORBIT-STATE INVENTION AUDIT**
+**RMI-2 — FRESH FORWARD-CONTROL RESEEDING / ENDOGENOUS INFORMATION-PRODUCTION AUDIT**
 
 Central question:
 
-> Can we define a finitely describable, non-tautological regenerative orbit state attached directly to an ordinary positive Collatz state on one actual forward orbit, such that the finite information it carries certifies finite genuine forward evolution to a successor state of the same type with strict increase in a proper physical quantity, and such that the same proof principle can be iterated without prescribing an infinite parity/valuation future?
+> Does there exist a finitely describable ordinary-arithmetic relation attached to one actual positive Collatz state, not equivalent to fixing a stronger finite 2-adic cylinder, such that a bounded genuine forward segment both produces strict physical gain and proves a successor relation of the same schema carrying at least as much usable finite forward-control information as the current state?
 
-Do not preselect affine, polynomial, symbolic, automata, p-adic, graph, analytic, or other conventional syntax before the capability requirements have been derived.
+RMI-2 must define what counts as **fresh** successor control information before selecting notation or a mathematical discipline.
 
-A failed RMI object returns the programme to the missing capability. It does not automatically authorize a larger object.
+It must not begin from affine, polynomial, automata, p-adic, graph, symbolic, verification, valuation, or other preselected syntax. Such tools may enter only if the root-required reseeding capability demands them.
+
+Failure returns to the root obstruction. It does not authorize a larger object.
+
 
 
 ## POST-IRM1 — IRM FROZEN
