@@ -1,25 +1,26 @@
 # START HERE
 
-## Post-CDM4 live state — IRM-1 complete / IRM paused
+## Post-IRM1 live state — IRM frozen
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **IRM-1 COMPLETE — IRM1-C FROZEN CLASS NULL / STRUCTURALLY RULED OUT**
-- Current programme: **IRM — Integer Return Mechanism Programme; PAUSED AFTER IRM-1**
+- Project stage: **POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND**
+- Current programme: **NO ACTIVE IRM SESSION; IRM FROZEN AFTER IRM-1**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
-- Current authoritative IRM report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`
-- Authoritative strategic pivot: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
-- Frozen CDM4 closeout report: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`
+- Current authoritative authorization audit: `experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md`
+- Authoritative IRM-1 report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`
+- Authoritative post-CDM4 pivot: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
-- IRM-1 verdict: **IRM1-C**
-- IRM-1 complete certificates: **0**
-- IRM-1 positive near-certificates: **0**
-- IRM-1 executable computation: **NONE**
-- Core IRM-1 theorem: on any infinite congruence cell a positive-length exact return to the same nonconstant affine embedding forces parameter slope (u=3^s/2^r), which is never an integer for (r\ge1); depth zero forces (G(q)=q).
+- IRM-1 verdict: **IRM1-C — FROZEN CLASS NULL / STRUCTURALLY RULED OUT**
+- POST-IRM1 verdict: **POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND**
+- Current unresolved nontrivial root-arrow count: **2**
+- Independently motivated continuation directions surviving hostile audit: **0**
+- Rational-affine return relaxation: **TAUTOLOGICAL as a general continuation language**
+- Finite multi-state integer-affine recurrent positive-depth systems: **STRUCTURALLY RULED OUT by cycle-slope telescoping**
 - IRM-2: **NOT AUTHORIZED**
 - Scientific trajectory compute: **NOT AUTHORIZED**
-- Immediate next task: **NONE. A later IRM-2 requires a separately justified root-proximate question; the IRM-1 null does not authorize a larger certificate class.**
-- No automatic enlargement of cell count, modulus, depth, parameter dimension, or coefficient class.
+- Immediate next task: **NONE. Reopening requires genuinely new external/theorem-level evidence, a new exact ordinary-integer closure identity, a theorem-derived candidate family, or an independently discovered positive near-certificate.**
+- Do not generate a successor by increasing modulus, state count, return depth, parameter dimension, coefficient class, or symbolic/2-adic expressiveness.
 
 The repository, not conversational memory, is the authoritative research state.
 
