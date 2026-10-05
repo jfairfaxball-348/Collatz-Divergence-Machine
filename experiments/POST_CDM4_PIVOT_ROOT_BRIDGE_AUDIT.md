@@ -16,13 +16,13 @@ The strongest genuinely different bridge found is an **ordinary-integer exact re
 
 If one such closed mechanism contains one explicit positive integer, then
 
-[
-	ext{explicit ordinary integer in an exact closed expanding return mechanism}
-Longrightarrow
-	ext{unbounded return heights}
-Longrightarrow
-	ext{unbounded Collatz orbit}.
-]
+\[
+\text{explicit ordinary integer in an exact closed expanding return mechanism}
+\Longrightarrow
+\text{unbounded return heights}
+\Longrightarrow
+\text{unbounded Collatz orbit}.
+\]
 
 There is **one unresolved nontrivial arrow**: construct one nonempty exact mechanism of this type.
 
@@ -97,13 +97,13 @@ T1-T30 mathematical reports remain preserved. This audit changes programme strat
 
 Find one explicit ordinary positive integer (N) whose orbit under
 
-[
+\[
 T(n)=
-egin{cases}
-n/2,&n	ext{ even},\
-(3n+1)/2,&n	ext{ odd},
-end{cases}
-]
+\begin{cases}
+n/2,&n\text{ even},\\
+(3n+1)/2,&n\text{ odd},
+\end{cases}
+\]
 
 is rigorously unbounded and rigorously never reaches (1).
 
@@ -118,27 +118,27 @@ The durable positive fact from T2 is important:
 
 The failure of CDM4 was not that this bridge was false. It was that the programme overwhelmingly advanced the negative side:
 
-[
-	ext{structured word}
-	o
-	ext{prove it cannot positively anchor}
-	o
-	ext{move to a broader surviving symbolic class}.
-]
+\[
+\text{structured word}
+\to
+\text{prove it cannot positively anchor}
+\to
+\text{move to a broader surviving symbolic class}.
+\]
 
 T31 documented the resulting negative-result ratchet and the AI selection effect: every local theorem closure generated another technically coherent adjacent theorem without increasing the number of explicit scientific candidate integers, positive anchors, or root certificates.
 
 The new programme reverses the implication direction:
 
-[
-	ext{ordinary positive integers}
-	o
-	ext{exact arithmetic closure}
-	o
-	ext{indefinitely repeatable growth}
-	o
-	ext{explicit unbounded orbit}.
-]
+\[
+\text{ordinary positive integers}
+\to
+\text{exact arithmetic closure}
+\to
+\text{indefinitely repeatable growth}
+\to
+\text{explicit unbounded orbit}.
+\]
 
 ## 6. External prior-art audit
 
@@ -172,13 +172,13 @@ But a fixed long expanding parity prefix is not enough. Conditional on a length-
 
 ### 6.3 Bernstein-Lagarias 2-adic conjugacy
 
-Bernstein and Lagarias, *The 3x+1 Conjugacy Map* (Canad. J. Math. 48, 1996), show that the shortened Collatz map on (mathbb Z_2) is topologically conjugate to the 2-adic shift; every infinite parity sequence has a unique 2-adic realization.
+Bernstein and Lagarias, *The 3x+1 Conjugacy Map* (Canad. J. Math. 48, 1996), show that the shortened Collatz map on \(\mathbb Z_2\) is topologically conjugate to the 2-adic shift; every infinite parity sequence has a unique 2-adic realization.
 
 **Bridge to one explicit ordinary integer:** a theorem that the relevant 2-adic point is an ordinary positive integer.
 
 **Known failure:** generic 2-adic realization does not supply that theorem.
 
-**Constructive or exclusionary:** constructive in (mathbb Z_2), not constructively positive-integral.
+**Constructive or exclusionary:** constructive in \(\mathbb Z_2\), not constructively positive-integral.
 
 Conclusion: useful background, not a primary pivot.
 
@@ -226,7 +226,7 @@ Useful for matched-control design; insufficient as the primary root bridge.
 
 ### 6.8 Rigorous almost-all results
 
-Tao, *Almost all orbits of the Collatz map attain almost bounded values* (Forum Math. Pi 10, 2022, DOI 10.1017/fmp.2022.8), proves that for any (f(N)	oinfty), almost every (N) in logarithmic density has an orbit attaining a value below (f(N)).
+Tao, *Almost all orbits of the Collatz map attain almost bounded values* (Forum Math. Pi 10, 2022, DOI 10.1017/fmp.2022.8), proves that for any \(f(N)\to\infty\), almost every (N) in logarithmic density has an orbit attaining a value below (f(N)).
 
 Krasikov-Lagarias difference-inequality methods prove explicit lower bounds for starts known to reach 1.
 
@@ -252,32 +252,32 @@ The candidate architecture is an **exact integer return certificate**.
 
 A certificate must consist of:
 
-1. finitely many explicitly defined sets (S_isubsetmathbb Z_{>0}), each parameterized by ordinary nonnegative integers using congruences and inequalities;
+1. finitely many explicitly defined sets \(S_i\subset\mathbb Z_{>0}\), each parameterized by ordinary nonnegative integers using congruences and inequalities;
 2. for each admissible parameter point, an exact finite Collatz return from (S_i) into some (S_j);
 3. an exact integer parameter update;
 4. universal closure: the return claim holds for every parameter in the state domain, not sampled examples;
-5. a proper height (H(i,q)) such that every infinite legal return path forces (H	oinfty);
+5. a proper height (H(i,q)) such that every infinite legal return path forces \(H\to\infty\);
 6. one explicit ordinary parameter (q_0), hence one explicit positive integer (N), in the closed domain.
 
 A testable first template is a one-parameter affine semiconjugacy:
 
-[
+\[
 F(q)=a q+b.
-]
+\]
 
 Split the parameter line into finitely many congruence cells. On each cell require
 
-[
-T^{	au(q)}(F(q))=F(G(q)),
-]
+\[
+T^{\tau(q)}(F(q))=F(G(q)),
+\]
 
-where (	au(q)) is a finite exact return time determined by the cell and (G(q)) is an integer affine update.
+where (\tau(q)) is a finite exact return time determined by the cell and (G(q)) is an integer affine update.
 
 The desired certificate requires
 
-[
+\[
 G(q)>q
-]
+\]
 
 or a rigorously equivalent common height increase on every cell in the closed domain.
 
@@ -314,7 +314,7 @@ An impossibility theorem is permitted only as a **kill result**. It does not aut
 
 ### 7.5 Ordinary-integer integrity
 
-The programme remains in (mathbb Z_{>0}) throughout.
+The programme remains in \(\mathbb Z_{>0}\) throughout.
 
 A finite residue calculation is allowed because it certifies actual integer transitions. A 2-adic or symbolic argument may be used only as a lemma; if it creates a new return-to-integers bridge, that bridge must be stated and proved immediately.
 
@@ -370,11 +370,11 @@ Governance:
 
 T2 gives
 
-[
-	ext{ordinary anchor}+	ext{aperiodic realized valuation structure}
-Longrightarrow
-	ext{unbounded positive orbit}.
-]
+\[
+\text{ordinary anchor}+\text{aperiodic realized valuation structure}
+\Longrightarrow
+\text{unbounded positive orbit}.
+\]
 
 A positive anchoring theorem would attack the exact bridge CDM4 never supplied.
 
@@ -386,7 +386,7 @@ Once the carry has died, the ordinary integer is fixed and the rest of the infin
 
 Thus a successful positive-anchor programme must eventually prove a property of the actual orbit of an ordinary integer. At that point it has effectively become integer-first.
 
-The 2-adic conjugacy intensifies this diagnosis: abstract infinite parity realization is easy in (mathbb Z_2); ordinary-positive realization is the exceptional bridge.
+The 2-adic conjugacy intensifies this diagnosis: abstract infinite parity realization is easy in \(\mathbb Z_2\); ordinary-positive realization is the exceptional bridge.
 
 ### 8.3 Root distance
 
@@ -466,13 +466,13 @@ A proper pilot would pre-register:
 
 A superficially different route is
 
-[
-	ext{target integer}
-	o
-	ext{large inverse tree or multiplicative backward representation}
-	o
-	ext{choose an infinite exceptional branch}.
-]
+\[
+\text{target integer}
+\to
+\text{large inverse tree or multiplicative backward representation}
+\to
+\text{choose an infinite exceptional branch}.
+\]
 
 It fails the hostile bridge test.
 
@@ -539,9 +539,9 @@ Its failure would invite another nearby symbolic class rather than materially sh
 
 ## 14. Recommended programme
 
-[
-oxed{	extbf{P1 — LAUNCH INTEGER-FIRST MECHANISM PROGRAMME}}
-]
+\[
+\boxed{\textbf{P1 — LAUNCH INTEGER-FIRST MECHANISM PROGRAMME}}
+\]
 
 ### Programme name
 
@@ -569,15 +569,15 @@ No automatic IRM-7 is authorized.
 
 Initial template:
 
-- one ordinary-integer embedding (F(q)=a q+b), (qge q_0);
+- one ordinary-integer embedding (F(q)=a q+b), \(q\ge q_0\);
 - at most **8** congruence cells for (q);
 - cell moduli at most **64**;
 - exact Collatz return depth at most **16 shortened steps** per cell;
 - on each cell, integer-affine update (G_j(q)=u_j q+v_j);
 - exact identity
-  [
-  T^{	au_j}(F(q))=F(G_j(q))
-  ]
+  \[
+  T^{\tau_j}(F(q))=F(G_j(q))
+  \]
   for every (q) in that cell;
 - universal forward closure;
 - a common proper height with strict increase on every return, preferably (G_j(q)>q);
@@ -687,9 +687,9 @@ Every represented object used for promotion must be demonstrably part of one act
 
 ## 19. Final decision
 
-[
-oxed{	extbf{P1 — LAUNCH INTEGER-FIRST MECHANISM PROGRAMME}}
-]
+\[
+\boxed{\textbf{P1 — LAUNCH INTEGER-FIRST MECHANISM PROGRAMME}}
+\]
 
 Why P1:
 
