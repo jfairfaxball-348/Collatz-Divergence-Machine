@@ -13,31 +13,31 @@
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
 - T20–T29 remain closed infrastructure.
 - T30 verifies that every morphic word admits an exact one-sided nonerasing coding representation. Erasing and mortal-letter contamination are presentation artefacts at the observable valuation-word interface.
-- In the successful normalization, no shift is used. The actual valuation symbol at every output index is unchanged, so every ordinary prefix sum (A_n), every T2 exact cylinder, the canonical scalar, and the positive-integer anchoring condition are preserved literally.
+- In the successful normalization, no shift is used. The actual valuation symbol at every output index is unchanged, so every ordinary prefix sum \(A_n\), every T2 exact cylinder, the canonical scalar, and the positive-integer anchoring condition are preserved literally.
 - Original output-state series are exact fixed linear sums of normalized hidden-state series over coding fibres.
 - If a nonerasing pure presentation is non-growing but has uniformly bounded factors consisting only of non-growing letters, Pansiot/Durand gives an exact substitutive representation by a growing substitution. T21/T29 therefore applies unchanged.
 - Every uniformly recurrent morphic word is primitive substitutive and is likewise inside the T29 closed class after exact coding normalization.
 - Universal normalization fails for the pushy Pansiot branch. The pure positive-valuation morphism
-  [
-  1mapsto112,qquad 2mapsto2
-  ]
+  \[
+  1\mapsto112,\qquad 2\mapsto2
+  \]
   has arbitrarily long bounded-letter runs, quadratic factor complexity, and cannot be represented as a coding of a growing endomorphism.
 - The first surviving word-level boundary is therefore recurrent bounded-letter / pushy dynamics, not erasing itself and not merely slow root growth.
 - Genuinely polynomial-growth aperiodic pure morphisms survive as a natural subfamily of this neutral/bounded-letter boundary.
 - A hypothetical aperiodic positive-integer anchor still universally forces
-  [
-  limsup A_n/nlelog_2 3.
-  ]
+  \[
+  \limsup A_n/n\le\log_2 3.
+  \]
   On the growing-normalizable side T21 makes the limsup algebraic, so Gelfond–Schneider makes the inequality strict. Universal limsup algebraicity is not yet proved in the pushy residual.
 - T20 exact prefix/scalar transport survives after nonerasing normalization, but a bounded periodic letter gives zero length increment after period refinement. The T21 positive grading becomes only nonnegative, so the T22 positive-profile filtration and T29 zero theorem cannot be imported without a new neutral-letter reduction.
 - Under the inherited T2 finite-alphabet anchoring hypotheses,
-  [
-  oxed{
-  R_m	ext{ bounded}
-  Longrightarrow
-  	ext{eventual periodicity}
+  \[
+  \boxed{
+  R_m\text{ bounded}
+  \Longrightarrow
+  \text{eventual periodicity}
   }
-  ]
+  \]
   now holds for every exact growing-normalizable morphic valuation word, including erasing/non-growing presentations of such a word. It is not yet promoted for the pushy residual.
 - Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
