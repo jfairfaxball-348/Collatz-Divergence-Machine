@@ -1,20 +1,25 @@
 # START HERE
 
-## Post-CDM4 live state — P1 / IRM
+## Post-CDM4 live state — IRM-1 complete / IRM paused
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **POST-CDM4 ROOT-BRIDGE AUDIT COMPLETE — P1 LAUNCHED**
-- Current programme: **IRM — Integer Return Mechanism Programme**
+- Project stage: **IRM-1 COMPLETE — IRM1-C FROZEN CLASS NULL / STRUCTURALLY RULED OUT**
+- Current programme: **IRM — Integer Return Mechanism Programme; PAUSED AFTER IRM-1**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
-- Current authoritative strategic report: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
+- Current authoritative IRM report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`
+- Authoritative strategic pivot: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
 - Frozen CDM4 closeout report: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
-- IRM initial budget: **6 sessions maximum**
-- IRM hard viability gate: **end of IRM-3**
+- IRM-1 verdict: **IRM1-C**
+- IRM-1 complete certificates: **0**
+- IRM-1 positive near-certificates: **0**
+- IRM-1 executable computation: **NONE**
+- Core IRM-1 theorem: on any infinite congruence cell a positive-length exact return to the same nonconstant affine embedding forces parameter slope (u=3^s/2^r), which is never an integer for (r\ge1); depth zero forces (G(q)=q).
+- IRM-2: **NOT AUTHORIZED**
 - Scientific trajectory compute: **NOT AUTHORIZED**
-- Immediate next task: **IRM-1 — answer the frozen low-complexity exact integer-return certificate existence question**
-- No automatic enlargement after a null template.
+- Immediate next task: **NONE. A later IRM-2 requires a separately justified root-proximate question; the IRM-1 null does not authorize a larger certificate class.**
+- No automatic enlargement of cell count, modulus, depth, parameter dimension, or coefficient class.
 
 The repository, not conversational memory, is the authoritative research state.
 
