@@ -1,5 +1,31 @@
 # Compute Budget
 
+
+## RMI theory-development envelope — 2026-10-05
+
+**Status:** ACTIVE DEFAULT FOR RMI UNLESS A SMALLER SESSION-SPECIFIC ENVELOPE IS FROZEN.
+
+RMI is theory/design first. No scientific trajectory campaign is authorized.
+
+Tiny exact computation is permitted only as theorem-development tooling after the session states the precise proposition, identity, invariant, or finite candidate object the computation can falsify.
+
+| Resource | RMI default ceiling per numbered session |
+|---|---:|
+| exact toy state / identity / finite-model evaluations | <= 100,000 |
+| CPU budget | <= 60 CPU-seconds |
+| memory | <= 512 MiB |
+| scientific candidate starts | 0 |
+| random high-magnitude starts | 0 |
+| GPU | not authorized |
+| cloud/distributed execution | not authorized |
+| open-ended template enumeration | not authorized |
+| arithmetic | exact integer/rational/symbolic arithmetic for validity decisions |
+
+Permitted purposes include checking exact identities, falsifying a proposed invariant, validating one regeneration step, exploring a deliberately tiny finite toy model, and confirming symbolic derivations.
+
+A larger compute campaign is not authorized merely because an RMI object survives. It requires a theorem-level mechanism that makes a specific pre-registered prediction about ordinary integers first.
+
+
 Computational ceilings are part of the mathematics and must be frozen before each campaign.
 
 ## Ceiling taxonomy
