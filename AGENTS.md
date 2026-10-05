@@ -1,11 +1,17 @@
 # AGENTS.md — binding project scope and research rules
 
 
-## CURRENT PROGRAMME AUTHORITY — RMI
+## CURRENT PROGRAMME AUTHORITY — RMI FROZEN AFTER RMI-3
 
-**RMI — Root Mechanism Invention Programme is active.**
+**RMI — Root Mechanism Invention Programme is FROZEN after the RMI-3 hard viability gate. No RMI-4 is authorized.**
+
+Authoritative RMI-3 report: `experiments/RMI_3_FRESH_RESERVE_CONVERSION_VIABILITY_GATE.md`.
+
+Final RMI decision: **RMI3-C — HARD GATE FAILED / RMI FROZEN.**
 
 Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+
+The unresolved nontrivial root-arrow count remains **2**.
 
 Preserved freezes:
 
@@ -42,7 +48,7 @@ Failure does not justify increasing expressive power unless the increased power 
 
 Every RMI object must remain attached to one actual ordinary forward orbit, must state what it is meant to prove that the repository could not previously certify, and must have a finite kill condition.
 
-RMI initial budget: at most **RMI-1 through RMI-6**, hard viability gate after **RMI-3**, absolute audit at **RMI-6**, no automatic RMI-7.
+RMI initial budget terminated at the **RMI-3 hard viability gate**. The gate failed, so RMI-4 through RMI-6 are **not authorized** and there is no automatic RMI-7.
 
 
 ## ROOT OBJECTIVE
