@@ -4609,3 +4609,138 @@ The exact live defect is:
 
 **Action:** RMI-3 is the hard viability gate. It may attack only this conversion capability. It may not grow a hierarchy of valuations, residues, state labels, or parameters. If no candidate satisfies the pre-existing RMI-3 gate, freeze RMI.
 
+---
+
+## RMI-3 — fresh-reserve conversion / regenerative control viability gate — 2026-10-05
+
+**Authoritative report:** `experiments/RMI_3_FRESH_RESERVE_CONVERSION_VIABILITY_GATE.md`  
+**Decision:** **RMI3-C — HARD GATE FAILED / RMI FROZEN.**
+
+### F0150 — Finite successor parity control is exactly inherited source-tail control
+
+**Status: PROVED CONVERSION OBSTRUCTION in RMI-3.**
+
+Let
+
+[
+epsilon_j(n)=T^j(n)mod2
+]
+
+and
+
+[
+V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n)).
+]
+
+For every genuinely encountered branch leaf of positive depth (r), with exact forward map (F=T^r),
+
+[
+V_K(F(n))
+=
+(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
+]
+
+Therefore any proper restriction on the successor's first (K) parity decisions is exactly a restriction on an already-existing length-(K) source parity tail.
+
+A successor arithmetic fact may be fresh in the RMI-2 premise-ledger sense while its finite future-control content is inherited.
+
+**Lesson:** forward evolution can create new arithmetic descriptions, but bounded future branch control is not a newly generated resource. It is a shifted tail of the same ordinary orbit.
+
+**Action:** reject any proposed fresh-reserve conversion whose claimed output is only a finite future parity/branch restriction unless an independent theorem supplies genuinely new non-parity control with a complete regeneration proof.
+
+### F0151 — Bounded ordinary-magnitude gain requires a nontrivial finite parity-tail exclusion
+
+**Status: PROVED ROOT-USABLE-CONTROL OBSTRUCTION in RMI-3.**
+
+Suppose a successor premise guarantees that, for every represented ordinary state (m), some (1le jle K) satisfies
+
+[
+T^j(m)>m.
+]
+
+Then the premise must exclude the parity word
+
+[
+0^K,
+]
+
+because under (K) consecutive even steps,
+
+[
+T^j(m)=rac{m}{2^j}<m
+]
+
+for all (1le jle K).
+
+Thus every bounded theorem forcing another ordinary-magnitude gain carries nontrivial finite parity-tail information.
+
+By F0150, that control is inherited from the source tail rather than freshly created by the bounded forward segment.
+
+**Lesson:** the RMI-3 conversion problem cannot be solved merely by attaching a new arithmetic label to the successor and then reading a bounded growth episode from that label. If the label guarantees bounded magnitude gain, it necessarily restricts a parity tail that was already restricted at the source.
+
+**Action:** preserve this as a hard hostile test for any future regenerative proposal.
+
+### F0152 — Factor-transfer preserves the endpoint data that govern binary recapture
+
+**Status: PROVED FACTOR-TRANSFER CONVERSION NULL in RMI-3.**
+
+For
+
+[
+n+1=2^a3^bc,
+qquad
+gcd(c,6)=1,
+]
+
+every forced odd step sends
+
+[
+(a,b,c)mapsto(a-1,b+1,c).
+]
+
+Hence
+
+[
+L=a+b
+]
+
+and (c) are invariant through the complete odd run, and
+
+[
+T^a(n)=3^Lc-1.
+]
+
+The exhaustion endpoint therefore depends only on arithmetic data already present before the generated increments in (b).
+
+Any favorable binary-recapture condition on (3^Lc-1) is consequently a restriction on the original ((L,c)):
+
+- if it is only finite odd-modulus information, CRT permits every finite binary continuation;
+- if it contains finite binary information, that control is inherited;
+- if it is encoded by a nonlinear family, the parity-tail / hidden-prefix audit applies;
+- if it determines the exact integer strongly enough to permit unrestricted continuation, the exact-(n) tautology audit applies.
+
+**Lesson:** the RMI-2 (3)-adic reserve is genuinely fresh as a divisibility statement but does not add an independent variable from which successor binary control can be recovered.
+
+**Action:** do not respond by adding further prime valuations or residue coordinates.
+
+### F0153 — RMI-3 hard viability gate failed; RMI is frozen
+
+**Status: PROGRAMME FREEZE / RMI3-C.**
+
+No structure satisfied all seven pre-existing RMI-3 viability conditions.
+
+In particular, no candidate supplied both:
+
+- ledger-clean, non-tautological regenerated root-usable control; and
+- an exact nontrivial ordinary-orbit instance on which the complete regenerative rule invokes itself again with strict proper physical gain.
+
+The PRRS soundness theorem remains valid as a conditional theorem, and RMI-2's fresh arithmetic production remains a genuine positive result. Neither yields a complete regenerative Collatz mechanism.
+
+The unresolved nontrivial root-arrow count remains
+
+[
+oxed{2}.
+]
+
+**Action:** **FREEZE RMI. DO NOT CREATE RMI-4.** Do not enlarge the failed representation. Reopening requires genuinely new theorem-level evidence that escapes the bounded-control pullback obstruction while retaining ordinary-positive ownership, finite non-tautological regeneration, and strict proper physical gain.
+
