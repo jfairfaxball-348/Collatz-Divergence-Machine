@@ -28,6 +28,15 @@ L0 ultra-cheap screening -> L1 cheap exact analysis -> L2 expensive exact analys
 
 ## Current status
 
+**POST-CDM4 P1 pivot is active: IRM — Integer Return Mechanism Programme.**
+
+Authoritative pivot audit: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
+
+CDM4 remains frozen after T31. There is no CDM4-T32. IRM has a six-session maximum and a hard viability gate after IRM-3. Its first target is a falsifiable exact ordinary-integer return-certificate existence question. No scientific trajectory compute is authorized.
+
+### Previous CDM4 closeout
+
+
 **CDM4-T31 is complete — C: FREEZE CDM4 / PIVOT. Comparative failure-mode verdict: MOSTLY YES.**
 
 Authoritative strategic audit: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`.  
