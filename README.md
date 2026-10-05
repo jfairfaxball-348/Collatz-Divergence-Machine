@@ -42,20 +42,23 @@ The intended feedback loop is:
 T20–T27 remain closed infrastructure.
 
 
-T28 returns to the nonprincipal T22/T23 multiscale boundary. It proves that every high-growth ideal (I_{>i}) is a prime monomial face ideal and that the canonical localization
-[
-mathcal O_i=K[Gamma_Y]_{I_{>i}}
-]
-has residue field (operatorname{Frac}K[Gamma_{le i}]).
+T28 returns to the nonprincipal T22/T23 multiscale boundary. It proves that every high-growth ideal \(I_{>i}\) is a prime monomial face ideal and that the canonical localization
+\[
+\mathcal O_i=K[\Gamma_Y]_{I_{>i}}
+\]
+has residue field
+\[
+\operatorname{Frac}K[\Gamma_{\le i}].
+\]
 
 Fixed canonical jets modulo powers of the face prime contain only finitely many prefix terms, so the T25 finite-jet mechanism genuinely generalizes beyond a principal divisor. Hilbert–Samuel counting gives an unbounded relative Hermite–Padé multiplicity amplifier, while torsion-free local relation modules admit a free-lattice sandwich and an Artin–Rees finite geometric transport tax.
 
 Thus T23's moving **analytic** coefficients are eliminated at fixed canonical jet order: the next-stratum coefficients are algebraic and have strictly lower height.
 
 T28 does **not** yet prove the full nonprincipal relation lift. The remaining theorem is a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem plus exact descent to the original canonical variables with
-[
-Q(alpha,mathbf X)=P(mathbf X)
-]
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X)
+\]
 literally preserved.
 
 Rees valuations and normalized blowups are useful for interpreting the geometry, but they control integral closures and do not replace the exact powers required by the specialization-safe proof.
