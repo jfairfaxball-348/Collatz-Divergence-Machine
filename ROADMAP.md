@@ -1360,26 +1360,44 @@ No earlier theorem is weakened. No explicit anchored aperiodic word, candidate, 
 
 T30 is classified **C — NEW RECURSIVE-LANGUAGE OBSTRUCTION FOUND**.
 
-## Immediate next task
+## CDM4-T31 programme-freeze decision
 
-**CDM4-T31 — PUSHY BOUNDED-LETTER RESUMMATION / ORDINARY-PREFIX LIMSUP / NEUTRAL-FACE AUDIT.**
+**Status: COMPLETE — 2026-10-05.**
 
-Take a genuinely aperiodic nonerasing pure-morphic positive valuation word in the Pansiot pushy branch.
+Authoritative audit: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`.
 
-The next theorem-sized obligation is:
+Overall comparison verdict:
 
-1. pass to one finite morphism power and classify the bounded-letter subsystem as finite periodic dynamics;
-2. derive an exact arbitrary-prefix decomposition into a growing skeleton and bounded periodic blocks, preserving the original output index;
-3. prove that
-   \[
-   \limsup A_n/n
-   \]
-   has a finite algebraic description, or isolate the first exact counterexample/obstruction;
-4. decide whether a hypothetical positive-integer anchor therefore forces a strict gap below \(\log_2 3\);
-5. resum every bounded block exactly in the canonical scalar/state functions without deleting output positions;
-6. determine whether the resummed system recovers finitely many positive growth profiles and finite canonical jets sufficient for T29;
-7. if not, identify the first exact neutral-face obstruction.
+\[
+\boxed{\textbf{MOSTLY YES}}
+\]
 
-Do not reopen T22–T29.
+The T1–T30 pure-morphic / recursive-language anchor-obstruction programme has entered substantially the same strategic failure model as the earlier cycle repository: increasingly elaborate, often valid internal mathematics can continue to close project-generated subproblems while the constructive root bridge remains unchanged.
 
-No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
+The audit distinguishes mathematical correctness from strategic viability. No T1–T30 theorem is demoted merely because the line is frozen. The decisive strategic facts are:
+
+- no explicit anchored aperiodic valuation word was produced;
+- no scientific divergence candidate integer was produced;
+- no theorem positively constructs or recognizes an ordinary positive-integer anchor;
+- no candidate-generation mechanism emerged from CDM4 theory;
+- the T30 pushy bounded-letter residual is mathematically natural but has no independent Collatz-specific reason to be a promising counterexample class;
+- every T4–T30 report carries an adjacent theorem-sized successor obligation, demonstrating that the symbolic line can self-renew without a root-progress stopping rule.
+
+**Strategic classification: C — FREEZE CDM4 / PIVOT.**
+
+### Freeze rule
+
+There is no immediate next CDM4 theorem task.
+
+Do not continue the former T31 target or generate a T32 target by extending:
+
+- pushy bounded-letter / neutral-face morphic analysis;
+- ordinary-prefix limsup machinery;
+- S-adic or broader recursive-language hierarchies;
+- Mahler lifting;
+- toric/multiscale filtration;
+- moving-target zero theorems.
+
+A future theory direction may reopen only if it changes the root bridge itself — for example by directly constructing or positively recognizing an ordinary positive-integer anchor, or by deriving an actual-integer arithmetic mechanism with a falsifiable candidate-generation prediction. Merely broadening the symbolic class does not qualify as a pivot.
+
+No scientific compute, candidate trajectories, substitution enumeration, new generator/distribution, or CPU/GPU/cloud/distributed campaign is authorized by T31.
