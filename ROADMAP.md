@@ -166,12 +166,12 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T28 COMPLETE — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN; NO NEW SCIENTIFIC COMPUTE.**
+**Status: CDM4-T29 COMPLETE — C: SYNCHRONIZED MOVING-TARGET ZERO THEOREM AND COMPLETE T22 MULTISCALE EXACT LIFTING PROVED; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
 
-Current authoritative theory report: experiments/CDM4_T25_REPORT.md.
+Current authoritative theory report: experiments/CDM4_T29_REPORT.md.
 
 CDM4-T1 proved the eventual-periodic parity obstruction, the whole-arithmetic-progression closure obstruction, and the ordinary-integer anchoring criterion for nested residue towers.
 
@@ -1229,23 +1229,89 @@ No new positive-anchor class is excluded, no new bounded-\(R_m\) periodicity the
 
 T28 is classified **C — new canonical multiscale relative infrastructure proved; full exact lifting still open**.
 
+## CDM4-T29 closeout
+
+T29 closes the remaining nonprincipal T22/T23 multiscale lifting obstruction.
+
+For the actual T28 finite-jet auxiliary class, the next-stratum moving coefficients are values of fixed rational functions on the slower face. Their heights are therefore
+[
+o(g_i(n))
+]
+relative to a current-profile monomial point of height
+[
+Theta(g_i(n)).
+]
+
+Every infinite zero subsequence admits an infinite coherent refinement. After grouping current-profile monomials by slower-face character cosets, any linear dependence over the Ru–Vojta moving coefficient field would clear denominators to a fixed nonzero Laurent relation on the T18 reduced torus. The T18 finite-hit property rules that out, so the required moving-field linear nondegeneracy holds.
+
+Inside one T22 profile, use the already-proved exact positive leading coefficient
+[
+-log|	heta^gamma(q_n)|_2
+=
+
+u_i(gamma)g_i(n)+o(g_i(n)).
+]
+T28 finite jets imply local finiteness of the canonical support in this leading coefficient. Hence every nonzero current-profile component has a finite dominant cluster; omitted same-profile terms have a strict positive local gap and higher-profile terms are smaller on a faster scale.
+
+Putting the dominant monomials in projective coordinates makes the cluster a moving hyperplane. The coordinate hyperplanes contribute the exact (S)-unit baseline (M h(x_n)); the super-small moving form contributes an additional fixed positive proportion of (h(x_n)). Ru–Vojta's moving-target Subspace Theorem allows only ((M+arepsilon)h(x_n)+O(1)). Taking (arepsilon) below the positive gap is impossible unless the dominant cluster vanishes identically.
+
+Iterating at one synchronized orbit time gives the canonical finite-flag zero theorem:
+[
+oxed{
+E(q_n)=0	ext{ infinitely often}
+Longrightarrow
+E=0
+}
+]
+modulo the exact functional relation ideal.
+
+This is exactly the missing nonvanishing input for T28. Hilbert–Samuel relative Hermite–Padé multiplicity now combines with the finite Artin–Rees transport tax and the matched fastest-face local/global scale to complete the inherited T16/T17/T25/T27 auxiliary contradiction.
+
+Therefore every genuinely aperiodic T22 multiscale system admits exact relation lifting with
+[
+oxed{
+Q(alpha,mathbf X)=P(mathbf X)
+}
+]
+literally preserved on the original canonical variables.
+
+No normalized blowup, Rees-chart relation, integral-closure replacement, non-unimodular gauge, state-direction deletion, or asynchronous orbit time is used. Exact ideal powers remain primary.
+
+The inherited T21 completion-sign argument therefore excludes positive-integer anchors throughout the complete T22 multiscale class.
+
+Under the inherited T2 finite-alphabet anchoring hypotheses:
+[
+oxed{
+R_m	ext{ bounded}
+Longrightarrow
+	ext{eventual periodicity}
+}
+]
+through the complete T22 class, strictly beyond the principal-fast class closed at T27.
+
+Positive rational noninteger values remain excluded only under independently known ordinary real subcriticality. Negative rational values remain unexcluded.
+
+No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexample was found. No scientific compute is authorized.
+
+T29 is classified **C — synchronized moving-target zero theorem and complete T22 multiscale exact lifting proved**.
+
 ## Immediate next task
 
-**CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit, theory only.**
+**CDM4-T30 — NONEXPANDING / ERASING MORPHIC NORMALIZATION AND ANCHOR-OBSTRUCTION AUDIT.**
 
-T28 has closed the local-ring, finite-jet, multiplicity, and finite-transport-tax parts of the nonprincipal problem.
+T30 is also the mandatory thirtieth-session progress/correction audit.
 
-The next theorem-sized obligation is now singular:
+T21–T29 close the expanding nonerasing pure-morphic class in scope. The first surviving single-morphism boundary is outside that hypothesis.
 
-1. prove a synchronized moving-target zero/nonvanishing theorem for the finite algebraic initial forms supplied by the canonical face-prime jets, using the strict lower-scale coefficient-height bound;
-2. iterate it through the complete finite growth flag at one common orbit time;
-3. prove exact descent back to the original canonical relation module; and
-4. preserve
-   \[
-   Q(\alpha,\mathbf X)=P(\mathbf X)
-   \]
-   literally for the original input relation.
+The next theorem-sized obligation is:
 
-Do not return to bare associated-graded lifting, fixed reweighting, asynchronous iterate counts, moving analytic truncations, substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or a new generator/distribution.
+1. take a finite positive valuation word generated by a pure morphic presentation that is not already expanding and nonerasing;
+2. determine whether it can be transformed, with exact preservation of the valuation word, T2 prefix cylinders, and canonical scalar specialization, into an expanding nonerasing presentation already covered by T29;
+3. if not, isolate the first irreducible non-growing/erasing subclass;
+4. derive its exact prefix/scalar transport and ordinary-prefix limsup;
+5. determine whether a hypothetical positive integer anchor still gives the strict real gap and a finite toric filtration sufficient for the T29 moving-target mechanism.
 
-No scientific compute is authorized.
+Do not reopen the T22–T29 multiscale lifting proof.
+
+No substitution enumeration, scientific starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
+
