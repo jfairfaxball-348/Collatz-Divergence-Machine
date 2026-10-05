@@ -1,10 +1,10 @@
 # CDM4-T28 — NONPRINCIPAL MULTISCALE FILTRATION / ITERATED-STRATUM RELATIVE-LIFTING AUDIT
 
 **Date:** 2026-10-05  
-**Authoritative input branch:** `cdm4-t27-special-fibre-degeneration-audit`  
-**Authoritative input commit:** `bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7`  
-**T27 merged into main at session start:** **NO** — `main` and T27 were verified divergent, so the exact T27 tip above was used as authority.  
-**Working branch:** `cdm4-t28-nonprincipal-multiscale-audit`
+**Authoritative input branch:** \`cdm4-t27-special-fibre-degeneration-audit\`  
+**Authoritative input commit:** \`bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7\`  
+**T27 merged into main at session start:** **NO** — \`main\` and T27 were verified divergent, so the exact T27 tip above was used as authority.  
+**Working branch:** \`cdm4-t28-nonprincipal-multiscale-audit\`
 
 Scientific starts: **0**. Candidate trajectories: **0**. Substitution enumeration: **NONE**. Finite-code search: **NONE**. CPU/GPU/cloud/distributed scientific work: **NONE**. Explicit anchored aperiodic word: **NO**. Unbounded orbit: **NO**. Counterexample claimed: **NO**.
 
@@ -12,1079 +12,607 @@ Scientific starts: **0**. Candidate trajectories: **0**. Substitution enumeratio
 
 T28 does **not** prove universal nonprincipal multiscale exact relation lifting.
 
-It does, however, remove two parts of the T23 obstruction that had previously appeared potentially special to a principal fast divisor.
+It does prove that several ingredients previously known only in the principal-fast case have genuine higher-codimension analogues.
 
 Let
-[
-g_1<cdots<g_r
-]
-be the T22 positive reduced growth profiles and
-[
-I_{>i}
-]
-the corresponding high-growth monomial ideals in the reduced semigroup algebra
-[
-R=K[Gamma_Y].
-]
+\[
+g_1<\cdots<g_r
+\]
+be the T22 positive reduced growth profiles, let
+\[
+\Gamma_{\le i}
+\]
+be the positive characters of profile at most \(g_i\), and let
+\[
+I_{>i}\subset R:=K[\Gamma_Y]
+\]
+be the complementary high-growth monomial ideal.
 
 T28 proves:
 
-1. Every lower-growth semigroup
-   [
-   Gamma_{le i}
-   ]
-   is a face of (Gamma_Y). Consequently
-   [
-   oxed{I_{>i}	ext{ is a prime monomial face ideal}.}
-   ]
+1. \(\Gamma_{\le i}\) is a face of \(\Gamma_Y\). Hence
+   \[
+   \boxed{I_{>i}\text{ is a prime monomial face ideal}.}
+   \]
 
-2. The canonical local object at stratum (i) is therefore
-   [
-   oxed{mathcal O_i=R_{I_{>i}}.}
-   ]
+2. The canonical relative local object is
+   \[
+   \boxed{\mathcal O_i=R_{I_{>i}}.}
+   \]
    Its maximal ideal is
-   [
-   mathfrak p_i=I_{>i}mathcal O_i
-   ]
+   \[
+   \mathfrak p_i=I_{>i}\mathcal O_i
+   \]
    and its residue field is
-   [
-   oxed{
-   k_i=operatorname{Frac}K[Gamma_{le i}].
+   \[
+   \boxed{
+   k_i=\operatorname{Frac}K[\Gamma_{\le i}].
    }
-   ]
+   \]
 
-3. Unlike the principal T25 DVR, (mathcal O_i) can have dimension
-   [
-   c_i=operatorname{ht}I_{>i}>1
-   ]
-   and need not be regular or a PID. Nevertheless
-   [
-   mathcal O_i/mathfrak p_i^P
-   ]
-   has finite length over (k_i), with Hilbert–Samuel growth
-   [
-   ell_i(P)
+3. If
+   \[
+   c_i=\operatorname{ht}I_{>i},
+   \]
+   then \(\mathcal O_i\) can have dimension \(c_i>1\) and need not be a DVR or a PID. Nevertheless
+   \[
+   \mathcal O_i/\mathfrak p_i^P
+   \]
+   has finite length over \(k_i\), with Hilbert–Samuel growth
+   \[
+   \ell_i(P)
    =
-   dim_{k_i}mathcal O_i/mathfrak p_i^P
+   \dim_{k_i}\mathcal O_i/\mathfrak p_i^P
    =
-   rac{e_i}{c_i!}P^{c_i}+O(P^{c_i-1}).
-   ]
+   \frac{e_i}{c_i!}P^{c_i}+O(P^{c_i-1}).
+   \]
 
-4. The T25 canonical finite-jet phenomenon has a genuine nonprincipal analogue. For every fixed stratum (i), the (mathfrak p_i)-adic order of the canonical prefix monomials tends to infinity in every live higher-growth direction. Hence every fixed canonical jet
-   [
-   F_tmodmathfrak p_i^P
-   ]
-   contains only finitely many canonical prefix terms and is algebraic over the slower rational field (k_i). No orbit-dependent slow truncation is used.
+4. The T25 canonical finite-jet phenomenon has a genuine nonprincipal analogue. In every live higher-growth stratum,
+   \[
+   \operatorname{ord}_{\mathfrak p_i}\theta^{\gamma_n}\to\infty
+   \]
+   for the canonical prefix monomials \(\theta^{\gamma_n}\). Therefore every fixed jet
+   \[
+   F_t\bmod\mathfrak p_i^P
+   \]
+   contains only finitely many canonical prefix terms and is algebraic over \(k_i\). No orbit-dependent slow truncation is used.
 
-5. Therefore the T23 moving-analytic-coefficient obstruction is **removed at finite jet level**. After fixing a finite multiscale jet, the coefficients on the next stratum are algebraic moving coefficients whose heights live on strictly slower growth scales.
+5. T23's moving **analytic** coefficient obstruction is therefore removed at every fixed canonical jet order. The next-stratum coefficients are algebraic moving coefficients whose heights live on strictly slower growth scales.
 
-6. For fixed state degree (D_X), let
-   [
-   h(D_X)
-   ]
-   be the dimension of the state-polynomial quotient over the full torus function field. Using coefficient sections of
-   [
-   mathcal O_i/mathfrak p_i^{D_f+1},
-   ]
-   relative Hermite–Padé counting gives a nonzero auxiliary with
-   [
-   operatorname{ord}_{mathfrak p_i}Ege P
-   ]
+6. For fixed state degree \(D_X\), let \(h(D_X)\) be the state-polynomial quotient dimension over the full torus function field. Relative Hilbert–Samuel Hermite–Padé counting gives a nonzero auxiliary with
+   \[
+   \operatorname{ord}_{\mathfrak p_i}E\ge P
+   \]
    whenever
-   [
-   h(D_X)ell_i(D_f+1)>ell_i(P).
-   ]
+   \[
+   h(D_X)\ell_i(D_f+1)>\ell_i(P).
+   \]
    Asymptotically,
-   [
-   oxed{
-   rac{P}{D_f}
-   gtrsim
-   h(D_X)^{1/c_i}.
+   \[
+   \frac{P}{D_f}\gtrsim h(D_X)^{1/c_i}.
+   \]
+   After subtracting the largest possible baseline coefficient order \(D_f\), the genuine cancellation excess still satisfies
+   \[
+   \boxed{
+   \frac{P_{\rm rel,i}}{D_f}
+   \gtrsim
+   h(D_X)^{1/c_i}-1.
    }
-   ]
-   After subtracting the worst possible coefficient (mathfrak p_i)-order (D_f), the genuine cancellation excess is still
-   [
-   oxed{
-   P_{m rel,i}
-   gtrsim
-   igl(h(D_X)^{1/c_i}-1igr)D_f.
-   }
-   ]
-   Thus positive relative transcendence still gives an arbitrarily large multiplicity ratio; higher codimension weakens the exponent from (h) to (h^{1/c_i}) but does not kill the amplifier.
+   \]
+   Thus higher codimension weakens the exponent but does not kill the multiplicity amplifier.
 
-7. The canonical finite-degree relation quotient over (mathcal O_i) is torsion-free by the same domain-kernel saturation argument as T25:
-   [
-   0
-e ainmathcal O_i,quad aQin J
-   Longrightarrow Qin J.
-   ]
-   It need not be free when (c_i>1).
+7. The canonical finite-degree relation quotient over \(\mathcal O_i\) is torsion-free by the same domain-kernel saturation argument as T25:
+   \[
+   0\ne a\in\mathcal O_i,\quad aQ\in J
+   \Longrightarrow Q\in J.
+   \]
+   It need not be free when \(c_i>1\).
 
-8. Freeness is not required for a finite transport bound. If (mathscr M) is such a finite torsion-free local relation module, one can choose a free lattice
-   [
-   mathscr Ncongmathcal O_i^s
-   ]
+8. Every finite torsion-free local relation module \(\mathscr M\) admits a free lattice
+   \[
+   \mathscr N\cong\mathcal O_i^s
+   \]
    with
-   [
-   mathscr Nsubseteqmathscr Msubseteq d^{-1}mathscr N
-   ]
-   for one fixed (0
-e dinmathcal O_i).
-   Artin–Rees then gives a constant (C_{m AR}) such that division through this fixed denominator loses at most (C_{m AR}) powers of (mathfrak p_i).
+   \[
+   \mathscr N\subseteq\mathscr M\subseteq d^{-1}\mathscr N
+   \]
+   for one fixed \(0\ne d\in\mathcal O_i\). Artin–Rees then gives a constant \(C_{\rm AR}\) bounding the \(\mathfrak p_i\)-order lost through division by this fixed denominator.
 
-9. After passing to a fixed macro-iterate for which the transverse ideal expands,
-   [
-   ho^{N*}mathfrak p_isubseteqmathfrak p_i^{a_i},
-   qquad a_ige2,
-   ]
-   the cumulative inverse-transport loss through (n) macro-iterates is bounded by
-   [
-   oxed{
-   D_XC_{m AR}
-   rac{a_i^n-1}{a_i-1}.
+9. After a fixed macro-iterate for which
+   \[
+   \rho^{N*}\mathfrak p_i\subseteq\mathfrak p_i^{a_i},
+   \qquad a_i\ge2,
+   \]
+   degree-\(D_X\) inverse transport through \(n\) macro-iterates loses at most
+   \[
+   \boxed{
+   D_XC_{\rm AR}\frac{a_i^n-1}{a_i-1}.
    }
-   ]
-   Thus the single-DVR T27 geometric slope tax has a genuine higher-codimension adic analogue.
+   \]
+   This is the higher-codimension analogue of the T27 geometric slope tax.
 
-10. Rees valuations and normalized blowups give a useful divisorial interpretation, but they are **not** the exact primary object for T28. A finite Rees-valuation family controls integral closures of powers
-    [
-    overline{I^n},
-    ]
-    whereas exact lifting is formulated in the actual powers
-    [
-    I^n.
-    ]
-    Replacing the exact filtration by integral closure is not specialization-safe without an additional descent theorem.
+10. Rees valuations and normalized blowups are useful interpretation devices, but they control integral closures
+    \[
+    \overline{I^n},
+    \]
+    not the exact powers \(I^n\) required by the specialization-safe proof. They therefore do not replace the face-prime adic filtration.
 
-The first remaining obstruction is therefore no longer “moving analytic coefficients” in the T23 sense, nor lack of multiplicity, nor lack of a finite transport tax.
+The first remaining obstruction is now:
 
-It is:
-
-[
-oxed{
-	extbf{a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem}
+\[
+\boxed{
+\textbf{a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem}
 }
-]
+\]
 
 for the canonical finite-jet algebra, followed by exact descent to the original relation polynomial.
 
-Existing moving-target Subspace Theorems are now structurally relevant because their essential small-height requirement is compatible with the new finite jets: coefficients from slower strata have height
-[
-o(g_{i+1}(n)).
-]
-However T28 does not verify the full coherence/nondegeneracy hypotheses needed to iterate those theorems through the complete face flag, and therefore does not promote a full zero theorem or exact relation lift.
-
-A normalized blowup also does not by itself close this gap. Pullback to a blowup is birational on the torus, but a relation obtained only on one exceptional chart may contain exceptional denominators or chart ratios. T28 does not prove that such a local relation descends to the original canonical variables with
-[
-Q(alpha,mathbf X)=P(mathbf X)
-]
-literally.
-
-Accordingly:
-
-[
-oxed{
-	ext{new exact relation-lifting theorem: NOT YET OBTAINED.}
-}
-]
-
-No new positive-integer anchor class is excluded in T28, and no new bounded-(R_m) periodicity class is promoted.
-
----
-
-## 2. Authority and closed input state
-
-T28 treats T20–T27 as closed unless an actual mathematical error is found.
-
-The exact T27 tip was verified to be
-[
-oxed{
-	exttt{bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7}.
-}
-]
-
-At session start `main` was not a descendant of that commit; the compare result was divergent. Therefore T27, not `main`, was used as authority.
-
-No T20–T27 theorem was reopened.
-
----
-
-## 3. Face-prime theorem for the T22 filtration
-
-Fix (i<r).
-
-Recall
-[
-Gamma_{le i}
+Existing moving-target Subspace Theorems are newly relevant because the finite-jet coefficients have the correct small-height hierarchy
+\[
+h(\text{coefficient at stratum }i)
 =
-{gammainGamma_Y:
-operatorname{prof}(gamma)le g_i}
-cup{0}.
-]
+O(g_i(n))
+=
+o(g_{i+1}(n)).
+\]
+However T28 does not verify the complete coherence/nondegeneracy package needed to iterate such a theorem through the full face flag, and does not prove local-to-global descent from a Rees/blowup chart.
+
+Therefore
+\[
+\boxed{
+\text{new universal nonprincipal exact relation lifting: NOT YET OBTAINED.}
+}
+\]
+
+No new positive-integer anchor class is excluded. No new bounded-\(R_m\) periodicity class is promoted. No scientific compute is justified.
+
+## 2. Authority and inherited state
+
+The exact T27 branch tip was verified as
+\[
+\boxed{
+\texttt{bfb01a45f3759569bac60f7df6a1c3cc30f3c2c7}.
+}
+\]
+
+At session start, \`main\` was not a descendant of that tip; the two histories were divergent. T28 therefore uses the exact T27 tip as authority.
+
+T20–T27 are treated as closed infrastructure. In particular, T28 does not reopen:
+
+- T22 reduced growth profiles and scalar-support fullness;
+- T23 slow-face elimination and the general moving-analytic-coefficient obstruction;
+- T24 principal-fast semigroup splitting;
+- T25 relative finite jets and Hermite–Padé multiplicity;
+- T26 aperiodicity \(\Rightarrow d_{\rm rel}>0\);
+- T27 finite positive-slope transport tax and complete principal-fast exact lifting.
+
+## 3. Face-prime theorem
 
 For positive characters T22 proves
-[
-operatorname{prof}(gamma+eta)
+\[
+\operatorname{prof}(\gamma+\eta)
 =
-max{operatorname{prof}(gamma),operatorname{prof}(eta)}.
-]
+\max\{\operatorname{prof}(\gamma),\operatorname{prof}(\eta)\}.
+\]
 
-Hence if
-[
-gamma+etainGamma_{le i},
-]
-then both
-[
-gamma,etainGamma_{le i}.
-]
+Therefore, if
+\[
+\gamma+\eta\in\Gamma_{\le i},
+\]
+then both \(\gamma\) and \(\eta\) lie in \(\Gamma_{\le i}\). Thus \(\Gamma_{\le i}\) is a face.
 
-Thus (Gamma_{le i}) is a semigroup face.
+The complementary monomials generate \(I_{>i}\), and
+\[
+R/I_{>i}\cong K[\Gamma_{\le i}]
+\]
+is a domain. Hence
+\[
+\boxed{I_{>i}\text{ is prime}.}
+\]
 
-The complement monomials generate
-[
-I_{>i}.
-]
+This gives a canonical local ring at every stratum without choosing a generator or a valuation.
 
-Since
-[
-R/I_{>i}
-cong
-K[Gamma_{le i}]
-]
-and a semigroup algebra of a cancellative affine semigroup is a domain,
-[
-oxed{
-I_{>i}	ext{ is prime}.
-}
-]
-
-This gives a canonical local object at every adjacent stratum, with no chosen generator and no non-unimodular lattice gauge.
-
----
-
-## 4. The canonical relative local ring
+## 4. Canonical relative local ring and finite jets
 
 Put
-[
-mathcal O_i=R_{I_{>i}},
-qquad
-mathfrak p_i=I_{>i}mathcal O_i.
-]
+\[
+\mathcal O_i=R_{I_{>i}},
+\qquad
+\mathfrak p_i=I_{>i}\mathcal O_i.
+\]
 
-Then (mathcal O_i) is Noetherian local and
-[
-mathfrak p_i
-]
-is its maximal ideal.
-
-Modulo (mathfrak p_i), every nonzero element of (K[Gamma_{le i}]) becomes invertible after localization. Therefore
-[
-oxed{
-mathcal O_i/mathfrak p_i
-cong
-operatorname{Frac}K[Gamma_{le i}].
+Then
+\[
+\boxed{
+\mathcal O_i/\mathfrak p_i
+\cong
+\operatorname{Frac}K[\Gamma_{\le i}].
 }
-]
+\]
 
-This is the exact higher-codimension replacement for the T25 residue field
-[
-K(Gamma_{m slow}).
-]
+Because \(\mathcal O_i\) is Noetherian local, every quotient
+\[
+\mathcal O_i/\mathfrak p_i^P
+\]
+has finite length. Hilbert–Samuel theory gives the polynomial growth in Section 1.
 
-If
-[
-c_i=operatorname{ht}I_{>i},
-]
-then
-[
-dimmathcal O_i=c_i.
-]
-
-Only when (c_i=1) and the local ring is the T25 divisor ring does one recover a DVR.
-
----
-
-## 5. Finite relative jets
-
-Because (mathcal O_i) is Noetherian local,
-[
-mathcal O_i/mathfrak p_i^P
-]
-is Artinian for every fixed (P). Hence it has finite length over the residue field.
-
-The Hilbert–Samuel theorem gives
-[
-ell_i(P)
-=
-operatorname{length}_{mathcal O_i}
-(mathcal O_i/mathfrak p_i^P)
-=
-rac{e(mathfrak p_i,mathcal O_i)}{c_i!}P^{c_i}
-+
-O(P^{c_i-1}).
-]
-
-Thus the correct finite jet object exists without principalness.
-
-This alone is not enough; the canonical state functions must have algebraic finite jets.
-
----
-
-## 6. Canonical multiscale finite-jet theorem
+The remaining issue is whether canonical analytic state functions have algebraic finite jets.
 
 Let
-[
-gamma_n=pi_Y(c(n))
-]
-be the canonical prefix character.
-
-For a fixed face (i), let
-[
-mathcal A_i
-=
-{s:pi_Y(e_s)
-otinGamma_{le i}}
-]
-be the letters contributing above the face.
-
+\[
+\gamma_n=\pi_Y(c(n)).
+\]
+For a fixed face, let \(k_i(n)\) count prefix letters \(u_j\) with
+\[
+\pi_Y(e_{u_j})\notin\Gamma_{\le i}.
+\]
 Since
-[
-	heta^{gamma_n}
+\[
+\theta^{\gamma_n}
 =
-prod_{j<n}	heta^{pi_Y(e_{u_j})},
-]
-if (k_i(n)) is the number of indices (j<n) with (u_jinmathcal A_i), then
-[
-oxed{
-	heta^{gamma_n}in I_{>i}^{,k_i(n)}.
+\prod_{j<n}\theta^{\pi_Y(e_{u_j})},
+\]
+one has
+\[
+\theta^{\gamma_n}\in I_{>i}^{\,k_i(n)}.
+\]
+
+In every live higher-growth stratum,
+\[
+k_i(n)\to\infty.
+\]
+If only finitely many above-face letters occurred, repeated substitution would leave only bounded transverse incidence. The transverse part would then have spectral radius at most \(1\), while all remaining descendants lie on profiles at most \(g_i\). This cannot support a strictly higher live T22 profile, whose exponential radius is \(>1\).
+
+Hence
+\[
+\operatorname{ord}_{\mathfrak p_i}\theta^{\gamma_n}\to\infty.
+\]
+
+For
+\[
+F_t=\sum_{n:u_n=t}a_n\theta^{\gamma_n},
+\]
+only finitely many terms survive modulo \(\mathfrak p_i^P\). Therefore
+\[
+\boxed{
+F_t\bmod\mathfrak p_i^P
+\text{ is finite algebraic data over }k_i.
 }
-]
+\]
 
-In a live higher-growth stratum,
-[
-k_i(n)	oinfty.
-]
+This is the nonprincipal finite-jet theorem.
 
-The reason is structural. If only finitely many above-face letters occurred in the fixed word, then under repeated substitution the total above-face incidence generated from the finite exceptional prefix would remain bounded. The corresponding transverse incidence would have spectral radius at most (1). All remaining descendants lie in (Gamma_{le i}), so their exact reduced exponent recurrences have profile at most (g_i). This contradicts the assumption that the exceptional letter represents a strictly higher T22 profile, all of whose live exponential radii exceed (1).
+## 5. T23 moving analytic coefficients after T28
 
-Consequently
-[
-operatorname{ord}_{mathfrak p_i}	heta^{gamma_n}	oinfty.
-]
+T23 stopped after an expression
+\[
+f=\sum_jm_jf_j
+\]
+because the values \(f_j(q_n^{\rm slow})\) were moving analytic values.
 
-For the canonical state function
-[
-F_t
-=
-sum_{n:u_n=t}
-a_n	heta^{gamma_n},
-]
-only finitely many terms survive modulo (mathfrak p_i^P). Hence
-[
-oxed{
-F_tmodmathfrak p_i^P
-	ext{ is a finite algebraic jet over }
-k_i.
-}
-]
+For canonical finite jets, T28 replaces those coefficients by fixed algebraic functions over the slower face field.
 
-This is the genuine nonprincipal analogue of T25's theorem
-[
-[m^j]F_tin K[Gamma_{m slow}].
-]
-
-It is stronger than an orbit-dependent approximation: the jet is fixed algebraic data before orbit time tends to infinity.
-
----
-
-## 7. What happens to the T23 moving analytic coefficients
-
-T23 stopped after
-[
-f=sum_jm_jf_j
-]
-because the coefficients
-[
-f_j(q_n^{m slow})
-]
-were moving analytic values.
-
-T28 changes the canonical auxiliary situation.
-
-For every fixed multiscale jet, the coefficients are obtained from finitely many canonical prefix terms and therefore lie in the rational/algebraic function field of the slower face.
-
-At the next stratum their evaluations are algebraic numbers, and their heights grow only on the lower scale:
-[
-h(	ext{coefficient at time }n)
+At the next scale their values are algebraic and satisfy
+\[
+h(\text{coefficient})
 =
 O(g_i(n))
 =
 o(g_{i+1}(n)).
-]
+\]
 
-Thus:
-[
-oxed{
-	ext{the moving-analytic-coefficient obstruction is eliminated at fixed canonical jet order.}
-}
-]
+Therefore the old analytic truncation obstruction is gone at fixed jet order.
 
-It is replaced by a smaller problem: prove a coherent moving-target zero theorem for those algebraic small-height jets, synchronized at the same orbit time.
+The remaining theorem is not an approximation theorem; it is a moving-target zero/nonvanishing theorem for these exact algebraic jets.
 
----
+## 6. Relative Hilbert–Samuel multiplicity
 
-## 8. Relative Hilbert–Samuel Hermite–Padé multiplicity
+Fix \(D_X\), let
+\[
+h=h(D_X),
+\]
+and choose \(h\) independent state-polynomial representatives over the full torus function field.
 
-Fix state-polynomial degree (D_X) and let
-[
-h=h(D_X)
-]
-be the dimension over the full torus function field of the state-polynomial quotient by exact functional relations.
+Choose coefficient representatives from a residue-field section of
+\[
+\mathcal O_i/\mathfrak p_i^{D_f+1}.
+\]
 
-Choose (h) independent representatives
-[
-g_1,ldots,g_h.
-]
+The coefficient space has dimension
+\[
+h\,\ell_i(D_f+1)
+\]
+over \(k_i\).
 
-For coefficient complexity (D_f), choose a residue-field linear section of
-[
-mathcal O_i/mathfrak p_i^{D_f+1}.
-]
-
-There are
-[
-h,ell_i(D_f+1)
-]
-unknown scalar coefficients over (k_i).
-
-Requiring
-[
-sum_jA_jg_j
-equiv0
-pmod{mathfrak p_i^P}
-]
-imposes at most
-[
-ell_i(P)
-]
-linear conditions over (k_i), because all relevant canonical jets are algebraic by Section 6.
-
-Hence if
-[
-h,ell_i(D_f+1)>ell_i(P),
-]
-there is a nonzero solution.
-
-Using Hilbert–Samuel asymptotics gives
-[
-P
-le
-(h^{1/c_i}+o(1))D_f.
-]
-
-A nonzero coefficient vector represented modulo
-[
-mathfrak p_i^{D_f+1}
-]
-has minimum coefficient order at most (D_f). Therefore, even without a principal common factor that can be divided out, the cancellation excess satisfies
-[
-oxed{
-P_{m rel,i}
-ge
-P-D_f.
-}
-]
+Requiring a combination to vanish modulo \(\mathfrak p_i^P\) gives at most \(\ell_i(P)\) linear conditions because all required jets are finite algebraic data.
 
 Thus
-[
-oxed{
-rac{P_{m rel,i}}{D_f}
-gtrsim
+\[
+h\,\ell_i(D_f+1)>\ell_i(P)
+\]
+produces a nonzero auxiliary.
+
+Using
+\[
+\ell_i(P)\sim \frac{e_i}{c_i!}P^{c_i},
+\]
+one obtains
+\[
+P/D_f\gtrsim h^{1/c_i}.
+\]
+
+The coefficient vector is nonzero modulo \(\mathfrak p_i^{D_f+1}\), so its minimum coefficient order is at most \(D_f\). The conservative cancellation excess therefore satisfies
+\[
+\boxed{
+P_{\rm rel,i}\ge P-D_f.
+}
+\]
+
+Hence
+\[
+\boxed{
+P_{\rm rel,i}/D_f
+\gtrsim
 h(D_X)^{1/c_i}-1.
 }
-]
+\]
+
+T26's proof that algebraicity of the entire canonical state field over the torus rational function field forces eventual periodicity does not depend essentially on a principal divisor. Therefore genuine aperiodicity again forces
+\[
+d_{\rm rel}>0
+\]
+and hence \(h(D_X)\to\infty\).
+
+So nonprincipal higher codimension does not remove the multiplicity resource.
+
+## 7. Saturated local relation modules and transport tax
+
+Let \(J\) be the exact functional relation ideal and fix \(D_X\).
 
 If
-[
-d_{m rel}>0,
-]
-then
-[
-h(D_X)	oinfty
-]
-polynomially, so the ratio can be made arbitrarily large.
-
-The T26 argument
-[
-d_{m rel}=0Longrightarrow	ext{eventual periodicity}
-]
-uses only algebraicity of the canonical state field over the torus rational function field, the positive T21 grading, and the canonical support specialization. It is not essentially principal. Therefore genuine aperiodicity again forces
-[
-oxed{d_{m rel}>0.}
-]
-
-So higher codimension weakens the multiplicity exponent but does not remove the resource.
-
----
-
-## 9. Canonical local relation modules
-
-Let (J) be the exact functional relation ideal and fix (D_X).
-
-Contract the finite-degree relation module to (mathcal O_i[mathbf X]).
-
-If
-[
-0
-e ainmathcal O_i,
-qquad
-aQin J,
-]
-then
-[
-a,Q(mathbf G)=0
-]
-in the analytic target domain. Hence
-[
-Q(mathbf G)=0
-]
+\[
+0\ne a\in\mathcal O_i
+\]
 and
-[
-Qin J.
-]
+\[
+aQ\in J,
+\]
+then
+\[
+aQ(\mathbf G)=0
+\]
+in the analytic target domain, so \(Q(\mathbf G)=0\) and \(Q\in J\).
 
-Therefore the finite-degree quotient is torsion-free over (mathcal O_i).
+Thus the finite-degree quotient is torsion-free over \(\mathcal O_i\).
 
-Unlike over the T25 DVR, torsion-free does not imply free when (c_i>1).
+It need not be free. Instead choose a free sublattice \(\mathscr N\) of the same rank inside the torsion-free module \(\mathscr M\). The torsion quotient \(\mathscr M/\mathscr N\) is annihilated by one fixed nonzero \(d\):
+\[
+d\mathscr M\subseteq\mathscr N.
+\]
 
-But if (mathscr M) is a finite torsion-free (mathcal O_i)-module of rank (s), choose (s) elements giving a basis after tensoring with the fraction field. Their span is a free lattice
-[
-mathscr Ncongmathcal O_i^s
-]
-with
-[
-mathscr Nsubseteqmathscr M.
-]
+Artin–Rees applied to
+\[
+d\mathscr M\subseteq\mathscr N
+\]
+gives \(C_{\rm AR}\) such that division through \(d\) loses at most \(C_{\rm AR}\) powers of \(\mathfrak p_i\).
 
-The quotient (mathscr M/mathscr N) is finite torsion, so one fixed nonzero
-[
-dinmathcal O_i
-]
-annihilates it:
-[
-dmathscr Msubseteqmathscr N.
-]
+For a live transverse stratum, pass to one fixed macro-iterate such that
+\[
+\rho^{N*}\mathfrak p_i
+\subseteq
+\mathfrak p_i^{a_i},
+\qquad a_i\ge2.
+\]
 
-Thus
-[
-oxed{
-mathscr N
-subseteq
-mathscr M
-subseteq
-d^{-1}mathscr N.
+Then state-polynomial degree \(D_X\) loses at most
+\[
+\boxed{
+D_XC_{\rm AR}
+\frac{a_i^n-1}{a_i-1}
 }
-]
+\]
+through \(n\) inverse macro-iterates.
 
-This is the correct higher-dimensional substitute for choosing a DVR basis.
+Thus the T27 finite-threshold slope-tax mechanism extends qualitatively beyond a DVR.
 
----
+## 8. Rees valuations and blowups
 
-## 10. Artin–Rees transport tax
+The normalized blowup of a Noetherian ideal has finitely many exceptional divisorial valuations; for monomial ideals these are toric Rees valuations.
 
-Apply Artin–Rees to the inclusion
-[
-dmathscr Msubseteqmathscr N
-]
-with respect to (mathfrak p_i).
+They are useful for asymptotic slope interpretation, but they characterize integral closures of powers:
+\[
+f\in\overline{I^n}
+\]
+through finitely many valuation inequalities.
 
-There is a constant (C_{m AR}) such that, for sufficiently large (n),
-[
-mathfrak p_i^nmathscr Ncap dmathscr M
-subseteq
-d,mathfrak p_i^{n-C_{m AR}}mathscr M.
-]
+Exact lifting is formulated with \(I^n\), not merely \(\overline{I^n}\).
 
-Hence whenever inverse transport introduces the fixed denominator (d), it can lose at most (C_{m AR}) units of (mathfrak p_i)-adic order.
+Therefore no integral-closure replacement is promoted.
 
-For state-polynomial degree (D_X), the loss is at most
-[
-D_XC_{m AR}
-]
-per inverse macro-step.
+Likewise, blowing up principalizes \(I\) locally, but a relation constructed only on one exceptional chart may use chart ratios or exceptional denominators. Pullback of a known global relation is safe; descent of a newly constructed local relation is an additional theorem.
 
-For the live transverse stratum, after replacing the map by one fixed iterate if necessary, finite generation and growth of every above-face generator give
-[
-ho^{N*}mathfrak p_i
-subseteq
-mathfrak p_i^{a_i},
-qquad
-a_ige2.
-]
+T28 does not prove that descent.
 
-Therefore (n) inverse macro-steps cost at most
-[
-oxed{
-D_XC_{m AR}
-rac{a_i^n-1}{a_i-1}.
-}
-]
+## 9. Why the fastest face is the correct first layer
 
-An initial multiplicity (P) retains at least
-[
-a_i^n
-left(
-P-rac{D_XC_{m AR}}{a_i-1}
-ight)
-+
-rac{D_XC_{m AR}}{a_i-1}.
-]
+For
+\[
+I_{>r-1},
+\]
+all transverse generators lie on the same fastest T22 profile \(g_r\).
 
-Thus the nonprincipal local module has the same qualitative finite-threshold structure as T27.
+Thus:
 
-No non-unimodular gauge is used.
+- \(\mathfrak p_{\rm fast}^P\) evaluates with local decay on scale \(P\,g_r(n)\);
+- global point height is also \(\Theta(g_r(n))\);
+- residue-field coefficients come from lower strata and have height \(o(g_r(n))\).
 
----
+The original T22 fast/slow mismatch therefore disappears at the top relative layer.
 
-## 11. Rees valuations and normalized blowups
+The intended induction then descends through
+\[
+I_{>r-2},\ldots,I_{>1}
+\]
+while keeping one synchronized orbit time \(n\).
 
-For a Noetherian ideal, the normalized blowup has finitely many exceptional divisors and hence finitely many Rees valuations. For monomial ideals these are toric divisorial valuations.
+No asynchronous \(n_i\) are used.
 
-They satisfy the classical valuation description of integral closures of ideal powers.
+## 10. Remaining theorem: synchronized algebraic moving targets
 
-This is useful for:
+A future proof must establish:
 
-- interpreting asymptotic transverse slopes;
-- recording exceptional divisors;
-- bounding integral-closure orders;
-- comparing local monomial charts.
+### T28-Z
 
-It is not enough for exact T28 lifting.
-
-The reason is exact:
-[
-{v_j(f)ge n,v_j(I) orall j}
-]
-characterizes
-[
-finoverline{I^n},
-]
-not necessarily
-[
-fin I^n.
-]
-
-The T25/T27 multiplicity and specialization argument is formulated in the exact relation lattice and exact ideal powers.
-
-Therefore:
-[
-oxed{
-	ext{Rees valuations are an interpretation layer, not a replacement for the exact adic filtration.}
-}
-]
-
----
-
-## 12. Why the fastest face is the correct first local layer
-
-Let
-[
-mathfrak p_{m fast}
-=
-I_{>r-1}mathcal O_{r-1}.
-]
-
-Every generator in this maximal growth stratum has the same T22 profile (g_r).
-
-Therefore:
-
-- evaluation of (mathfrak p_{m fast}^P) gives local decay on scale (P,g_r(n));
-- the global point height is also (Theta(g_r(n)));
-- coefficient data from the residue field
-  [
-  operatorname{Frac}K[Gamma_{le r-1}]
-  ]
-  have lower height (o(g_r(n))).
-
-Thus the original T22 scale mismatch disappears at the top relative layer.
-
-One may then attempt to descend recursively through
-[
-I_{>r-2},I_{>r-3},ldots,I_{>1}.
-]
-
-All stages use the same synchronized orbit time (n). No asynchronous iterate counts are introduced.
-
----
-
-## 13. The remaining zero/nonvanishing obstruction
-
-T23's full analytic zero theorem is known only when
-[
-I_{>1}
-]
-is principal.
-
-T28's finite jets show why the old reason for failure is no longer the right one for canonical auxiliaries: the next-face coefficients can be made algebraic with lower-scale height.
-
-However a complete induction still needs a theorem of the following form.
-
-### Required theorem T28-Z
-
-Let (E) be a nonzero analytic expression generated by the canonical state functions and algebraic toric coefficients, with finite algebraic jets along every face prime.
+Let \(E\) be a nonzero analytic expression generated by the canonical state functions and algebraic toric coefficients, with the finite algebraic face-prime jets proved above.
 
 If
-[
+\[
 E(q_n)=0
-]
-for infinitely many synchronized reduced orbit points, then the lowest surviving multiscale initial form must vanish identically; iterating over the finite face flag must force (E=0).
+\]
+for infinitely many synchronized reduced orbit points, then the lowest surviving multiscale initial form must vanish identically. Iterating through the finite face flag must force \(E=0\).
 
-At the (i+1)-st step, the initial form is a finite algebraic moving target whose coefficient heights are
-[
+At the \(i+1\)-st stage, the initial form is a finite algebraic moving target with coefficient height
+\[
 O(g_i(n))
 =
 o(g_{i+1}(n)).
-]
+\]
 
-This is exactly the small-height regime required by moving-target Subspace Theorem technology.
+This matches the small-height shape of moving-target Subspace Theorem technology.
 
-What T28 does **not** prove is the full package of:
+T28 does not prove:
 
-- coherence of the moving coefficient family;
-- required algebraic nondegeneracy on every infinite subsequence;
-- passage from small value to exact vanishing of the initial form in the toric setting;
+- coherence of the moving target family;
+- the required algebraic nondegeneracy on every infinite subsequence;
+- the small-value-to-exact-vanishing implication in this toric setting;
 - compatibility of successive face reductions with the semilinear relation module;
-- exact reconstruction of the original input relation after the induction.
+- exact descent to the original canonical relation.
 
-This is now the first theorem-sized obstruction.
+This is now the first exact theorem-level obstruction.
 
----
-
-## 14. Blowup/descent audit
-
-Blowing up (I_{>i}) principalizes its pullback ideal locally.
-
-This does not by itself prove T28-Z.
-
-On a chart one divides by an exceptional generator and introduces ratios of monomials. These ratios are regular on that chart but generally are not elements of the original positive semigroup algebra.
-
-A functional relation proved only in such chart variables is not yet an original canonical relation.
-
-Birational pullback preserves a relation already known globally, but the reverse direction requires descent.
-
-T28 does not prove that an arbitrary locally constructed chart relation:
-
-- is compatible on overlaps;
-- has no exceptional denominator;
-- descends through the normalized blowup;
-- and recovers
-  [
-  Q(alpha,mathbf X)=P(mathbf X)
-  ]
-  literally.
-
-Therefore:
-[
-oxed{
-	ext{normalized blowup exact descent: OPEN.}
-}
-]
-
----
-
-## 15. Exact-specialization status
+## 11. Exact specialization and completion sign
 
 No new universal nonprincipal lift is proved.
 
-Therefore T28 does not weaken the specialization requirement.
-
-The required conclusion remains
-[
-oxed{
-Q(alpha,mathbf X)=P(mathbf X).
+Therefore T28 does not weaken the specialization rule:
+\[
+\boxed{
+Q(\alpha,\mathbf X)=P(\mathbf X)
 }
-]
+\]
+must remain literal.
 
-Statements only on:
+The inherited completion-sign contradiction is ready immediately after such a lift:
 
-- an exceptional divisor;
-- an associated graded ring;
-- a Rees chart;
-- an integral closure of an ideal power;
-- or a local blowup coordinate system
-
-are not promoted.
-
----
-
-## 16. Completion-sign status
-
-The inherited T21/T19/T20 completion chain is ready as soon as T28-Z plus exact relation lifting is proved.
-
-For a hypothetical positive integer anchor:
-
-1. append (1);
-2. use the T21 strict prefix gap;
+1. append \(1\);
+2. use the T21 positive-integer strict prefix gap;
 3. obtain real convergence of the canonical scalar/state tails;
-4. transport the exact lifted algebraic identity to the real completion;
-5. reconstruct the canonical scalar;
-6. obtain
-   [
-   S^{(infty)}(q)+3N=0
-   ]
-   against
-   [
-   S^{(infty)}(q)>0,quad N>0.
-   ]
-
-Because T28 does not finish exact lifting, this contradiction is **not newly applicable**.
-
----
-
-## 17. Positive rational and negative rational status
-
-### Positive integers
-
-No new nonprincipal class is excluded in T28.
-
-### Positive rational nonintegers
-
-Unchanged. They are excluded only in classes where ordinary real subcriticality is independently available together with exact lifting.
-
-### Negative rationals
-
-Unchanged and unexcluded by the completion-sign argument.
-
-They are not Collatz counterexamples.
-
----
-
-## 18. T2 bounded-(R_m) consequence
-
-The T27 theorem
-[
-R_m	ext{ bounded}Longrightarrow	ext{eventual periodicity}
-]
-remains proved throughout the complete principal-fast class.
-
-T28 does not extend it to the complete nonprincipal multiscale class because T28-Z and exact descent remain open.
-
----
-
-## 19. Literature checkpoint
-
-### Rees valuations / normalized blowup
-
-The classical Rees valuation theorem identifies integral closures of ideal powers through finitely many DVR valuations associated with the normalized blowup.
-
-T28 uses this only as interpretation. Exact powers remain primary.
-
-### Artin–Rees
-
-The Artin–Rees lemma supplies the uniform finite loss needed when a finite torsion-free local module is sandwiched between a free lattice and one fixed denominator multiple.
-
-This is the higher-dimensional replacement for reading pole loss directly from DVR elementary divisors.
-
-### Moving targets
-
-Ru–Vojta's moving-target Subspace Theorem and later moving-hypersurface variants require algebraic moving targets with coefficient height negligible compared with point height.
-
-T23 failed this interface because analytic truncation to the next-scale precision had height
-[
-Omega(g_{i+1}(n)).
-]
-
-T28 finite jets change the situation:
-[
-h(	ext{jet coefficient})
-=
-O(g_i(n))
-=
-o(g_{i+1}(n)).
-]
-
-Thus moving-target theory is now hypothesis-shaped correctly at the height level, but T28 does not verify the remaining coherence/nondegeneracy and exact-descent hypotheses.
-
-### Adamczewski–Faverjon 2026
-
-Published and unchanged. It does not itself supply the nonprincipal stratumwise moving-target theorem above.
-
-### Brechler 2026
-
-Rechecked on 2026-10-05. arXiv:2607.24877 is still listed as a preprint; no journal publication was located. It remains non-load-bearing.
-
----
-
-## 20. Required deliverable answers
-
-### Does the T25 finite-jet theorem have a genuine nonprincipal multivaluation analogue?
-
-**YES at fixed canonical jet order.** The face-prime local rings give finite Artinian transverse jets, and canonical prefix orders tend to infinity, so every fixed canonical jet is finite algebraic data over the slower rational field.
-
-### Can canonical saturated relative lattices be constructed stratum by stratum?
-
-**YES as finite torsion-free local modules.** They need not be free in codimension (>1), but each admits a finite free sandwich with one fixed denominator.
-
-### Does a finite family of divisorial valuations replace the T25 DVR?
-
-**NOT EXACTLY.** Rees valuations are finite and canonical for integral-closure asymptotics, but exact ideal powers and Artin–Rees local modules are the specialization-safe objects.
-
-### Does semilinear transport admit a finite multiscale slope-tax bound?
-
-**YES at each face prime**, after a fixed expanding macro-iterate, via free-sandwich denominator clearing plus Artin–Rees:
-[
-D_XC_{m AR}rac{a_i^n-1}{a_i-1}.
-]
-
-### Can iterated relative Hermite–Padé multiplicity dominate that tax?
-
-**YES quantitatively at the local counting level.** Hilbert–Samuel multiplicity gives a ratio growing like
-[
-h(D_X)^{1/c_i}-1,
-]
-which is unbounded under genuine aperiodicity because (d_{m rel}>0).
-
-### Are moving analytic coefficients eliminated?
-
-**YES at every fixed canonical finite jet.** They become algebraic moving coefficients over slower rational fields with strictly lower height.
-
-### Does a Rees/blowup construction preserve the original specialization polynomial?
-
-**PULLBACK YES; LOCAL-TO-GLOBAL DESCENT NOT PROVED.** No chartwise relation is promoted without exact descent.
-
-### Is a new exact relation-lifting theorem obtained?
-
-**NO.**
-
-### Does
-[
-Q(alpha,mathbf X)=P(mathbf X)
-]
-survive literally?
-
-No new lift is proved, so no new specialization statement is claimed. The equality remains mandatory.
-
-### Does the completion-sign contradiction apply to a new class?
-
-**NO.**
-
-### Is any new positive-integer anchor class excluded?
-
-**NO.**
-
-### Is
-[
-R_m	ext{ bounded}Rightarrow	ext{eventual periodicity}
-]
-extended beyond the principal-fast class?
-
-**NO.**
-
-### Positive rational noninteger status
-
-Unchanged: excluded only with independent real subcriticality plus exact lifting.
-
-### Negative rational status
-
-Unchanged: not excluded.
-
-### Explicit anchored aperiodic word / candidate / unbounded orbit / counterexample
-
-**NONE.**
-
-### Scientific compute justified?
-
-**NO.**
-
----
-
-## 21. Permanent T28 lessons
-
-### T28-L1 — the T22 filtration is a flag of prime faces
-
-The high-growth ideals are not arbitrary monomial ideals:
-[
-oxed{
-I_{>i}	ext{ is the prime ideal complementary to the face }Gamma_{le i}.
-}
-]
+4. port the exact algebraic identity to the real completion;
+5. reconstruct the scalar;
+6. derive
+   \[
+   S^{(\infty)}(q)+3N=0
+   \]
+   against \(S^{(\infty)}(q)>0\) and \(N>0\).
+
+T28 does not yet trigger this chain for a new class.
+
+## 12. Required deliverable answers
+
+- **T25 finite-jet analogue:** **YES**, for fixed canonical face-prime jets.
+- **Canonical saturated relative lattices:** **YES** as finite torsion-free local modules; not necessarily free.
+- **Finite divisorial family replacing the DVR:** **NOT EXACTLY**. Rees valuations describe integral closure; exact powers and Artin–Rees local modules are primary.
+- **Finite multiscale slope-tax bound:** **YES** at each face prime after a fixed expanding macro-iterate.
+- **Relative Hermite–Padé multiplicity dominates the tax:** **YES at the local quantitative level**; the ratio grows like \(h(D_X)^{1/c_i}-1\).
+- **Moving analytic coefficients:** **ELIMINATED at fixed canonical jet order**, replaced by algebraic lower-height moving coefficients.
+- **Rees/blowup specialization safety:** pullback is safe; local-to-global descent of a newly constructed relation is **NOT PROVED**.
+- **New exact relation-lifting theorem:** **NO**.
+- **Literal \(Q(\alpha,\mathbf X)=P(\mathbf X)\):** no new lift, so no new claim.
+- **Completion-sign contradiction for a new class:** **NO**.
+- **New positive-integer anchor class excluded:** **NO**.
+- **Extension of \(R_m\) bounded \(\Rightarrow\) eventual periodicity beyond principal-fast:** **NO**.
+- **Positive rational noninteger:** unchanged; requires independent real subcriticality plus exact lifting.
+- **Negative rational:** unchanged and unexcluded.
+- **Explicit anchored aperiodic word / candidate / unbounded orbit / counterexample:** **NONE**.
+- **Scientific compute justified:** **NO**.
+
+## 13. Literature checkpoint
+
+The literature audit supports the structural split used above.
+
+Classical Rees valuation theory describes integral closures of ideal powers using finitely many DVRs associated with normalized blowups. Artin–Rees supplies the finite filtration loss for a fixed submodule inclusion in a Noetherian module.
+
+Ru–Vojta moving-target Subspace Theorem technology and later moving-hypersurface variants retain the decisive small-height hypothesis on algebraic moving coefficients. T28's finite jets now have that height shape; T23's analytic truncations did not.
+
+Adamczewski–Faverjon 2026 remains published and relevant but does not itself supply T28-Z.
+
+Enzo Brechler's arXiv:2607.24877 was rechecked on 2026-10-05 and remains listed as a preprint; no journal publication was located. It is non-load-bearing.
+
+## 14. Permanent T28 lessons
+
+### T28-L1 — growth strata are canonical prime faces
+
+Use
+\[
+I_{>i}
+\]
+as face primes, not arbitrary monomial ideals.
 
 ### T28-L2 — principalness is not required for finite canonical jets
 
-The finite-jet theorem is fundamentally a statement about growth of transverse prefix order, not about existence of one uniformizer.
+Finite canonical transverse jets follow from growing prefix order, not from a single uniformizer.
 
-### T28-L3 — higher codimension changes Hilbert counting, not the existence of a multiplicity amplifier
+### T28-L3 — higher codimension weakens but does not kill multiplicity
 
-A height-(c) local ring changes
-[
-h
-]
-to approximately
-[
-h^{1/c}
-]
-in the multiplicity ratio. Positive relative transcendence still makes the ratio unbounded.
+Hilbert–Samuel dimension changes the gain from \(h\) to roughly \(h^{1/c}\), still unbounded under positive relative transcendence.
 
 ### T28-L4 — freeness is convenient, not essential
 
-Torsion-free local relation modules can be sandwiched by a free lattice with one fixed denominator. Artin–Rees converts that denominator into a finite adic loss.
+Free-lattice sandwiches plus Artin–Rees give finite transport loss for torsion-free local modules.
 
-### T28-L5 — Rees valuations see integral closure, not exact powers
+### T28-L5 — Rees valuations see integral closure
 
-Do not replace
-[
-I^P
-]
-by
-[
-overline{I^P}
-]
-without an explicit exact-descent theorem.
+Do not replace exact powers by integral closures without an exact descent theorem.
 
-### T28-L6 — the T23 moving analytic obstruction has moved
+### T28-L6 — the moving coefficient obstruction has changed
 
-At finite canonical jet order the coefficients are algebraic and lower-height. The live obstruction is now the synchronized algebraic moving-target zero/nonvanishing theorem plus exact descent.
+The live problem is now algebraic moving-target zero/nonvanishing and exact descent, not analytic coefficient truncation.
 
-### T28-L7 — one synchronized orbit remains absolute
+### T28-L7 — synchronization remains absolute
 
-Every jet, height comparison, moving target, transport tax, and future induction uses the same exact orbit time (n).
+Every layer uses the same exact semilinear orbit time.
 
----
-
-## 22. Exact next theorem-sized obligation
+## 15. Exact next theorem-sized obligation
 
 **CDM4-T29 — CANONICAL STRATUMWISE ALGEBRAIC-MOVING-TARGET ZERO THEOREM / EXACT-DESCENT AUDIT.**
 
-Treat T28 as closed infrastructure:
+Treat as closed:
 
-- (I_{>i}) are canonical prime face ideals;
-- (mathcal O_i=R_{I_{>i}}) are the canonical relative local rings;
-- fixed canonical (mathfrak p_i)-jets are finite algebraic data over slower rational fields;
-- moving analytic coefficients are eliminated at fixed jet order;
-- Hilbert–Samuel relative Hermite–Padé multiplicity is unbounded under genuine aperiodicity;
-- finite torsion-free local relation modules admit free sandwiches;
-- Artin–Rees gives a finite geometric semilinear transport tax;
-- Rees valuations control only integral-closure asymptotics and are not a substitute for exact powers;
-- no asynchronous orbit times are permitted.
+- face-prime structure of every \(I_{>i}\);
+- canonical local rings \(\mathcal O_i\);
+- finite algebraic canonical jets;
+- higher-codimension relative Hilbert–Samuel multiplicity;
+- torsion-free local relation modules and free-lattice sandwiches;
+- finite Artin–Rees semilinear transport tax;
+- the fact that Rees valuations control integral closure rather than exact powers;
+- one synchronized orbit time.
 
-The single next obligation is:
+The next theorem must:
 
-> Prove that the finite algebraic moving initial forms produced by the canonical face-prime jets satisfy a synchronized moving-target zero theorem along the T18 dense orbit, with coefficient height (o) of the next-stratum point height, and iterate that theorem through the complete finite growth flag. Then prove that the resulting relation descends to the original canonical relation module with
-> [
-> Q(alpha,mathbf X)=P(mathbf X)
-> ]
+> prove that the finite algebraic moving initial forms supplied by the canonical face-prime jets satisfy a synchronized moving-target zero/nonvanishing theorem along the T18 dense orbit, with coefficient height \(o\) of the next-stratum point height; iterate this through the complete finite growth flag; and prove exact descent to the original canonical relation module with
+> \[
+> Q(\alpha,\mathbf X)=P(\mathbf X)
+> \]
 > literally.
 
-A successful T29 theorem would close the remaining nonprincipal multiscale exact-lifting obstruction and should immediately trigger the inherited completion-sign contradiction.
+A successful T29 theorem would remove the remaining T22/T23 nonprincipal multiscale obstruction and should immediately trigger the inherited completion-sign contradiction.
 
 No scientific compute is authorized.
 
----
+## 16. Classification
 
-## 23. Classification
-
-[
-oxed{
-	extbf{C — NEW CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL EXACT LIFTING STILL OPEN.}
+\[
+\boxed{
+\textbf{C — NEW CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL EXACT LIFTING STILL OPEN.}
 }
-]
+\]
