@@ -1192,36 +1192,40 @@ T27 is classified **C — canonical divisor degeneration classified and positive
 ## CDM4-T28 closeout
 
 T28 proves that the T22 growth filtration is a flag of prime semigroup faces. For each stratum,
-[
+\[
 I_{>i}
-]
+\]
 is a prime monomial face ideal and
-[
-mathcal O_i=K[Gamma_Y]_{I_{>i}}
-]
+\[
+\mathcal O_i=K[\Gamma_Y]_{I_{>i}}
+\]
 is the canonical relative local ring, with residue field
-[
-operatorname{Frac}K[Gamma_{le i}].
-]
+\[
+\operatorname{Frac}K[\Gamma_{\le i}].
+\]
 
-The nonprincipal analogue of the T25 finite-jet theorem is real: fixed canonical (mathfrak p_i)-jets contain only finitely many prefix terms, so their coefficients are algebraic over the slower rational field. This removes T23's moving-analytic-coefficient obstruction at every fixed jet order.
+The nonprincipal analogue of the T25 finite-jet theorem is real: fixed canonical \(\mathfrak p_i\)-jets contain only finitely many prefix terms, so their coefficients are algebraic over the slower rational field. This removes T23's moving-analytic-coefficient obstruction at every fixed jet order.
 
-If (c_i=operatorname{ht}I_{>i}), Hilbert–Samuel counting yields relative Hermite–Padé multiplicity with asymptotic gain
-[
-P_{m rel,i}/D_fgtrsim h(D_X)^{1/c_i}-1.
-]
+If
+\[
+c_i=\operatorname{ht}I_{>i},
+\]
+Hilbert–Samuel counting yields relative Hermite–Padé multiplicity with asymptotic gain
+\[
+P_{\rm rel,i}/D_f\gtrsim h(D_X)^{1/c_i}-1.
+\]
 Genuine aperiodicity still forces positive relative transcendence, so this gain can be made arbitrarily large.
 
-Finite-degree relation modules are torsion-free over (mathcal O_i), though not generally free. A finite free-lattice sandwich plus Artin–Rees gives a bounded adic inverse-transport loss, and after an expanding macro-iterate the cumulative loss is geometric. Thus nonprincipal slope tax is finite and multiplicity can dominate it.
+Finite-degree relation modules are torsion-free over \(\mathcal O_i\), though not generally free. A finite free-lattice sandwich plus Artin–Rees gives a bounded adic inverse-transport loss, and after an expanding macro-iterate the cumulative loss is geometric. Thus the nonprincipal transport tax is finite and the relative multiplicity can dominate it at the local quantitative level.
 
 Rees valuations and normalized blowups describe integral-closure asymptotics but do not by themselves preserve exact powers or exact specialization. No chartwise blowup relation is promoted without a descent theorem.
 
 The full nonprincipal exact lift remains open at one smaller theorem: a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem for the finite canonical jets, followed by exact descent preserving
-[
-Q(alpha,mathbf X)=P(mathbf X).
-]
+\[
+Q(\alpha,\mathbf X)=P(\mathbf X).
+\]
 
-No new positive-anchor class is excluded, no new bounded-(R_m) periodicity theorem is promoted, and no scientific compute is authorized.
+No new positive-anchor class is excluded, no new bounded-\(R_m\) periodicity theorem is promoted, and no scientific compute is authorized.
 
 T28 is classified **C — new canonical multiscale relative infrastructure proved; full exact lifting still open**.
 
