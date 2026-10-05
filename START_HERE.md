@@ -3,10 +3,11 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T30 COMPLETE — C: EXACT ERASURE/NON-PUSHY MORPHIC NORMALIZATION EXTENSION PROVED; PUSHY BOUNDED-LETTER / NEUTRAL-FACE OBSTRUCTION IS THE FIRST SURVIVING PURE-MORPHIC CLASS; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T31 COMPLETE — C: CDM4 FROZEN / PIVOT REQUIRED; COMPARATIVE FAILURE-MODE AUDIT VERDICT MOSTLY YES; NO SUCCESSOR CDM4 THEOREM TARGET AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T30_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md
+- Last mathematical CDM4 theorem report: experiments/CDM4_T30_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
@@ -45,9 +46,27 @@
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T31 — pushy bounded-letter resummation / ordinary-prefix limsup / neutral-face audit; theory only**
+- Immediate next task: **NONE INSIDE CDM4. CDM4 IS FROZEN. Any future theory proposal must change the root bridge rather than broaden the recursive-language hierarchy.**
 
 The repository, not conversational memory, is the authoritative research state.
+
+## CDM4-T31 programme-freeze closeout — 2026-10-05
+
+The comparative audit in `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md` concludes:
+
+\[
+\boxed{\textbf{MOSTLY YES}}
+\]
+
+CDM4 has entered substantially the same strategic failure model as the earlier cycle repository: a hard root bridge remains open while increasingly elaborate internally generated obligations can continue to produce valid adjacent mathematics without demonstrated progress toward the root deliverable.
+
+**Strategic classification: C — FREEZE CDM4 / PIVOT.**
+
+This is not a demotion of T1–T30 mathematics. The freeze is strategic. No explicit anchored aperiodic word, scientific candidate integer, unbounded orbit, or counterexample was produced by T1–T30, and the T30 pushy residual has no independent theorem, heuristic, arithmetic, probabilistic, or empirical motivation as the likely location of a Collatz counterexample.
+
+No CDM4-T32 theorem target is authorized. Do not continue pushy morphic, neutral-face, S-adic, Mahler, toric, moving-target, or broader recursive-language extensions merely because they form a natural next symbolic class.
+
+Reopening theory requires a genuinely different root bridge: for example, direct positive-anchor construction/recognition, or actual-integer arithmetic that yields a falsifiable candidate-generation prediction. A broader symbolic hierarchy alone does not qualify.
 
 ## Read before working
 
