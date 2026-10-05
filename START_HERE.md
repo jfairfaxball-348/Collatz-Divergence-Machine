@@ -10,7 +10,7 @@
 - Authoritative RMI-2 report: `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`
 - Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
 - Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
-- Authoritative RMI-3 parent: `rmi2-fresh-forward-control-reseeding-audit` at `ad44b8ef4f8be8d365739c7a99f414b73a181f6e`
+- RMI-3 parent: `rmi2-fresh-forward-control-reseeding-audit` at `ad44b8ef4f8be8d365739c7a99f414b73a181f6e`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
@@ -21,47 +21,17 @@
 - Endogenous odd-prime factor-transfer: **PROVED BUT NOT REGENERATIVE**
 - Fresh-reserve conversion into renewed bounded root-usable control: **HARD GATE FAILED**
 
-RMI-3 establishes the exact parity-tail conservation identity. If
+RMI-3 establishes an exact parity-tail conservation law. Write `epsilon_j(n) = T^j(n) mod 2` and `V_K(n) = (epsilon_0(n), ..., epsilon_(K-1)(n))`. On every genuinely encountered proof-tree leaf of depth r,
 
-[
-epsilon_j(n)=T^j(n)mod2
-]
+`V_K(T^r(n)) = (epsilon_r(n), ..., epsilon_(r+K-1)(n))`.
 
-and (V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n))), then on every genuinely encountered proof-tree leaf of depth (r),
+Therefore any finite parity/branch restriction at the successor is exactly a restriction on an already-existing source parity tail. A successor arithmetic statement may be genuinely fresh, as RMI-2 proved, while its bounded future-control content is inherited.
 
-[
-V_K(T^r(n))
-=
-(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
-]
+RMI-3 also proves that any premise guaranteeing ordinary-magnitude gain within at most K future steps must exclude the all-even word 0^K, because that word gives `T^j(m) = m/2^j < m` for every `1 <= j <= K`. Thus bounded future magnitude-gain control necessarily contains nontrivial finite parity-tail information and cannot be created afresh by merely transporting a new arithmetic label through a bounded forward segment.
 
-Therefore any finite parity/branch restriction proved at the successor is exactly a restriction on an already-existing source parity tail. A successor arithmetic statement may be genuinely fresh, as RMI-2 proved, while its bounded future-control content is nevertheless inherited.
+For the RMI-2 factor-transfer family `n+1 = 2^a 3^b c`, the odd transfer preserves both `L=a+b` and the cofactor c. The exhaustion endpoint `T^a(n) = 3^L c - 1` therefore depends only on arithmetic data already present at the source. The generated increment in b is fresh as a divisibility theorem but supplies no independent endpoint datum from which renewed binary control can be recovered.
 
-RMI-3 also proves that any premise guaranteeing ordinary-magnitude gain within at most (K) future steps must exclude the all-even word (0^K), because that word gives (T^j(m)=m/2^j<m) for every (1le jle K). Thus bounded future magnitude-gain control necessarily contains nontrivial finite parity-tail information and cannot be created afresh by merely transporting a new arithmetic label through a bounded forward segment.
-
-For the RMI-2 factor-transfer family
-
-[
-n+1=2^a3^bc,
-qquad
-gcd(c,6)=1,
-]
-
-the odd transfer preserves both
-
-[
-L=a+b
-]
-
-and the cofactor (c). The exhaustion endpoint
-
-[
-T^a(n)=3^Lc-1
-]
-
-therefore depends only on arithmetic data already present at the source. The generated increment in (b) is fresh as a divisibility theorem but supplies no independent endpoint datum from which renewed binary control can be recovered.
-
-No structure satisfied all seven pre-existing RMI-3 viability conditions. The unresolved root-arrow count remains (2).
+No structure satisfied all seven pre-existing RMI-3 viability conditions. The unresolved root-arrow count remains 2.
 
 **There is no authorized next RMI session.** Do not create RMI-4 or enlarge the failed representation. Reopening requires genuinely new theorem-level evidence that escapes the bounded-control pullback obstruction while retaining ordinary-positive ownership, non-tautological regeneration, and strict proper physical gain.
 
