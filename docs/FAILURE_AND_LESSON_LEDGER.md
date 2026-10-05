@@ -4035,8 +4035,6 @@ through the complete T22 class.
 
 ---
 
----
-
 ### F0129 — Erasing and mortal letters are not word-level Collatz obstructions
 
 **Status: PROVED STRUCTURAL THEOREM in CDM4-T30.**
