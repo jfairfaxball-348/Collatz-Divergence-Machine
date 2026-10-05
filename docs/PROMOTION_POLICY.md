@@ -1,5 +1,30 @@
 # Promotion Policy
 
+
+## RMI theory-object promotion
+
+RMI promotion is separate from candidate-compute promotion.
+
+A newly invented mathematical object may be promoted to a further RMI session only if all of the following are explicit:
+
+1. the root-level obstruction that motivated it;
+2. the exact proof capability it is intended to supply;
+3. direct ordinary-positive forward-orbit ownership;
+4. a theorem-level gain unavailable before the object was introduced;
+5. a finite kill condition;
+6. the shortest implication chain from success to an explicit unbounded orbit;
+7. the unresolved nontrivial root-arrow count before and after the work;
+8. why the next step, if any, is required by the failed capability rather than by adjacency to a larger mathematical class.
+
+Prior literature is not a promotion prerequisite for a root-derived invention.
+
+The absence of prior art is neutral.
+
+A surviving residual class, increased expressiveness, interesting examples, or failure to find a contradiction is not a promotion reason.
+
+Failure of one object does not authorize increasing state count, modulus, degree, parameter dimension, completion, automaton size, or abstraction level unless the added feature is specifically required to repair a named failed capability.
+
+
 Promotion is a compute-allocation decision, not a mathematical truth claim.
 
 ## Candidate IDs
