@@ -4620,27 +4620,13 @@ The exact live defect is:
 
 **Status: PROVED CONVERSION OBSTRUCTION in RMI-3.**
 
-Let
+Define `epsilon_j(n)=T^j(n) mod 2` and `V_K(n)=(epsilon_0(n), ..., epsilon_(K-1)(n))`.
 
-[
-epsilon_j(n)=T^j(n)mod2
-]
+For every genuinely encountered branch leaf of positive depth r with exact forward map F = T^r:
 
-and
+`V_K(F(n)) = (epsilon_r(n), ..., epsilon_(r+K-1)(n))`.
 
-[
-V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n)).
-]
-
-For every genuinely encountered branch leaf of positive depth (r), with exact forward map (F=T^r),
-
-[
-V_K(F(n))
-=
-(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
-]
-
-Therefore any proper restriction on the successor's first (K) parity decisions is exactly a restriction on an already-existing length-(K) source parity tail.
+Therefore any proper restriction on the successor's first K parity decisions is exactly a restriction on an already-existing length-K source parity tail.
 
 A successor arithmetic fact may be fresh in the RMI-2 premise-ledger sense while its finite future-control content is inherited.
 
@@ -4652,31 +4638,15 @@ A successor arithmetic fact may be fresh in the RMI-2 premise-ledger sense while
 
 **Status: PROVED ROOT-USABLE-CONTROL OBSTRUCTION in RMI-3.**
 
-Suppose a successor premise guarantees that, for every represented ordinary state (m), some (1le jle K) satisfies
+Suppose a successor premise guarantees that for every represented ordinary state m, some `1 <= j <= K` satisfies `T^j(m) > m`.
 
-[
-T^j(m)>m.
-]
-
-Then the premise must exclude the parity word
-
-[
-0^K,
-]
-
-because under (K) consecutive even steps,
-
-[
-T^j(m)=rac{m}{2^j}<m
-]
-
-for all (1le jle K).
+Then the premise must exclude the parity word 0^K, because under K consecutive even steps, `T^j(m)=m/2^j<m` for every `1 <= j <= K`.
 
 Thus every bounded theorem forcing another ordinary-magnitude gain carries nontrivial finite parity-tail information.
 
 By F0150, that control is inherited from the source tail rather than freshly created by the bounded forward segment.
 
-**Lesson:** the RMI-3 conversion problem cannot be solved merely by attaching a new arithmetic label to the successor and then reading a bounded growth episode from that label. If the label guarantees bounded magnitude gain, it necessarily restricts a parity tail that was already restricted at the source.
+**Lesson:** attaching a new arithmetic label to a successor cannot by itself create a new bounded growth episode. If the label guarantees bounded magnitude gain, it necessarily restricts a parity tail that was already restricted at the source.
 
 **Action:** preserve this as a hard hostile test for any future regenerative proposal.
 
@@ -4684,42 +4654,24 @@ By F0150, that control is inherited from the source tail rather than freshly cre
 
 **Status: PROVED FACTOR-TRANSFER CONVERSION NULL in RMI-3.**
 
-For
+For `n+1 = 2^a 3^b c`, with gcd(c,6)=1, every forced odd step sends
 
-[
-n+1=2^a3^bc,
-qquad
-gcd(c,6)=1,
-]
+`(a,b,c) -> (a-1,b+1,c)`.
 
-every forced odd step sends
+Hence `L=a+b` and c are invariant through the complete odd run, and
 
-[
-(a,b,c)mapsto(a-1,b+1,c).
-]
+`T^a(n)=3^L c - 1`.
 
-Hence
+The exhaustion endpoint therefore depends only on arithmetic data already present before the generated increments in b.
 
-[
-L=a+b
-]
-
-and (c) are invariant through the complete odd run, and
-
-[
-T^a(n)=3^Lc-1.
-]
-
-The exhaustion endpoint therefore depends only on arithmetic data already present before the generated increments in (b).
-
-Any favorable binary-recapture condition on (3^Lc-1) is consequently a restriction on the original ((L,c)):
+Any favorable binary-recapture condition on `3^L c - 1` is consequently a restriction on the original (L,c):
 
 - if it is only finite odd-modulus information, CRT permits every finite binary continuation;
 - if it contains finite binary information, that control is inherited;
 - if it is encoded by a nonlinear family, the parity-tail / hidden-prefix audit applies;
-- if it determines the exact integer strongly enough to permit unrestricted continuation, the exact-(n) tautology audit applies.
+- if it determines the exact integer strongly enough to permit unrestricted continuation, the exact-n tautology audit applies.
 
-**Lesson:** the RMI-2 (3)-adic reserve is genuinely fresh as a divisibility statement but does not add an independent variable from which successor binary control can be recovered.
+**Lesson:** the RMI-2 3-adic reserve is genuinely fresh as a divisibility statement but does not add an independent variable from which successor binary control can be recovered.
 
 **Action:** do not respond by adding further prime valuations or residue coordinates.
 
@@ -4729,18 +4681,11 @@ Any favorable binary-recapture condition on (3^Lc-1) is consequently a restricti
 
 No structure satisfied all seven pre-existing RMI-3 viability conditions.
 
-In particular, no candidate supplied both:
-
-- ledger-clean, non-tautological regenerated root-usable control; and
-- an exact nontrivial ordinary-orbit instance on which the complete regenerative rule invokes itself again with strict proper physical gain.
+In particular, no candidate supplied both ledger-clean, non-tautological regenerated root-usable control and an exact nontrivial ordinary-orbit instance on which the complete regenerative rule invokes itself again with strict proper physical gain.
 
 The PRRS soundness theorem remains valid as a conditional theorem, and RMI-2's fresh arithmetic production remains a genuine positive result. Neither yields a complete regenerative Collatz mechanism.
 
-The unresolved nontrivial root-arrow count remains
-
-[
-oxed{2}.
-]
+The unresolved nontrivial root-arrow count remains **2**.
 
 **Action:** **FREEZE RMI. DO NOT CREATE RMI-4.** Do not enlarge the failed representation. Reopening requires genuinely new theorem-level evidence that escapes the bounded-control pullback obstruction while retaining ordinary-positive ownership, finite non-tautological regeneration, and strict proper physical gain.
 
