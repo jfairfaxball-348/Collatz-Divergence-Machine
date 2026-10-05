@@ -30,19 +30,19 @@ L0 ultra-cheap screening -> L1 cheap exact analysis -> L2 expensive exact analys
 
 **POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND.**
 
-Authoritative post-IRM1 audit: `experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md`.  
-Authoritative IRM-1 report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`.  
-Authoritative post-CDM4 pivot: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
+Authoritative post-IRM1 audit: experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md.  
+Authoritative IRM-1 report: experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md.  
+Authoritative post-CDM4 pivot: experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md.
 
 CDM4 remains frozen after T31 and there is no CDM4-T32.
 
-IRM-1 proved, without enumeration, that a positive-length exact shortened-Collatz return to the same nonconstant affine embedding (F(q)=aq+b) forces parameter slope
-[
-u=rac{3^s}{2^r},
-]
-which cannot be an integer for any (rge1). Depth zero forces the identity return and cannot grow.
+IRM-1 proved, without enumeration, that a positive-length exact shortened-Collatz return to the same nonconstant affine embedding F(q) = a q + b forces parameter slope
 
-The post-IRM1 authorization audit found **zero** independently motivated continuation directions that satisfy all root-distance and governance gates. In particular:
+    u = 3^s / 2^r,
+
+which cannot be an integer for any r >= 1. Depth zero forces the identity return and cannot grow.
+
+The post-IRM1 authorization audit found zero independently motivated continuation directions that satisfy all root-distance and governance gates. In particular:
 
 - rational-affine return maps are tautological as a general language because the identity embedding reproduces the original Collatz branches exactly;
 - finite multi-state integer-affine recurrent positive-depth return systems are ruled out by a cycle-slope telescoping obstruction;
