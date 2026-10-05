@@ -10,6 +10,23 @@ Find an explicit positive integer `n` and a rigorous proof that its shortened-Co
 
 The target is an **UNBOUNDED COLLATZ ORBIT** or **DIVERGENT-ORBIT COUNTEREXAMPLE**. "Infinite orbit" is avoided because the ordinary `1 <-> 2` shortened-map cycle is infinite under iteration but bounded.
 
+## RMI foundational-invention mode
+
+The current active research programme is **RMI — Root Mechanism Invention Programme**, governed by `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+
+RMI does not reopen CDM4 or IRM. Their freezes and negative results remain design constraints.
+
+RMI is authorized to invent new mathematical structures when they are derived from a demonstrated root-level obstruction and have a precise intended proof capability. Existing mathematical precedent is not required for authorization. Conversely, novelty by itself has no value: every new object must preserve one actual ordinary forward orbit, possess a finite kill condition, and materially shorten or simplify the route to an explicit unbounded orbit.
+
+The central missing capability is finite **regeneration**: a finitely describable exact proof state on one ordinary orbit must be able, after finite genuine forward evolution, to recreate enough of its own proof power in a strictly stronger physical state to permit indefinite repetition.
+
+RMI therefore distinguishes:
+
+- **template escalation**, which enlarges a failed representation because a larger one is available; from
+- **foundational invention**, which derives the smallest new object from a precise missing root capability.
+
+The initial RMI budget is six sessions maximum, with a hard viability gate after RMI-3 and an absolute audit at RMI-6. No automatic RMI-7 is authorized.
+
 ## Research philosophy
 
 The project optimises approximately for **probability of discovering and certifying a genuine counterexample per unit of compute and research effort**.
