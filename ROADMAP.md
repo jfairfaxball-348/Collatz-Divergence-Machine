@@ -1,5 +1,37 @@
 # Roadmap
 
+## POST-CDM4 — IRM INTEGER RETURN MECHANISM PROGRAMME
+
+**Status: AUTHORIZED — P1; six-session maximum; hard gate after IRM-3.**
+
+The T31 strategic freeze remains in force. CDM4 is not reopened and there is no CDM4-T32.
+
+Authoritative pivot audit: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
+
+IRM begins with ordinary positive integers and seeks an exact finite return certificate:
+
+[
+	ext{ordinary integer family}
+	o
+	ext{exact Collatz return maps}
+	o
+	ext{universal closure + proper height growth}
+	o
+	ext{explicit unbounded orbit}.
+]
+
+IRM-1 asks whether the frozen low-complexity one-parameter affine certificate class contains an exact universally closed strictly expanding return mechanism.
+
+Hard rules:
+
+- no symbolic-hierarchy continuation;
+- no automatic modulus/state/depth ladder after a null result;
+- no scientific trajectory campaign;
+- only tiny exact certificate enumeration under the pivot-audit envelope;
+- by IRM-3, an explicit positive integer family/candidate or instantiated positive sufficient condition must exist, else kill;
+- at IRM-6, a mandatory viability audit is required and no automatic successor is authorized.
+
+
 Historical stage decisions below retain their original context. The live authorization is the final immediate-next-task section; completed P1/P2 budgets do not authorize new scientific starts.
 
 ## CDM0 — SCAFFOLD AND CALIBRATION
