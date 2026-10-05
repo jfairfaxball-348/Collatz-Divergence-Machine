@@ -3,13 +3,14 @@
 
 ## RMI — ROOT MECHANISM INVENTION PROGRAMME
 
-**Status: RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
+**Status: RMI3-C — HARD GATE FAILED / RMI FROZEN.**
 
+Authoritative RMI-3 report: `experiments/RMI_3_FRESH_RESERVE_CONVERSION_VIABILITY_GATE.md`.  
 Authoritative RMI-2 report: `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`.  
 Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`.  
 Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
 
-RMI remains a separate foundational-invention programme. It is not CDM4-T32 and not IRM-2.
+RMI remains separate from CDM4 and IRM, and is now **FROZEN**. **RMI-4 is not authorized.**
 
 **Preserved freezes:**
 
@@ -17,85 +18,102 @@ RMI remains a separate foundational-invention programme. It is not CDM4-T32 and 
 - CDM4-T32 remains unauthorized;
 - IRM remains frozen;
 - IRM-2 remains unauthorized;
-- pure finite 2-adic/parity-cylinder regeneration remains structurally killed.
+- pure finite 2-adic/parity-cylinder regeneration remains structurally killed;
+- scientific trajectory campaigning remains unauthorized.
 
 **Current unresolved nontrivial root-arrow count: 2 — unchanged.**
 
+### RMI-1 durable result
+
+For an infinite power-of-two cylinder and a common shortened-Collatz segment of length (r), universal binary control depth falls exactly
+
+[
+Klongmapsto K-r.
+]
+
+Finite initial parity-cylinder reserve is consumed at one bit per shortened step and cannot regenerate itself.
+
 ### RMI-2 durable result
 
-Define
-\[
-P_{a,b}(n)
-\iff
-v_2(n+1)=a,\qquad v_3(n+1)=b.
-\]
+For
 
-For every \(a\ge1\), a genuine odd shortened-Collatz step gives
-\[
-P_{a,b}(n)
-\Longrightarrow
-P_{a-1,b+1}(T(n)),
-\]
-because
-\[
-T(n)+1=\frac{3(n+1)}2.
-\]
-The same step has strict physical gain
-\[
-T(n)-n=\frac{n+1}{2}>0.
-\]
+[
+P_{a,b}(n):
+quad
+v_2(n+1)=a,qquad v_3(n+1)=b,
+]
 
-The increment \(b\mapsto b+1\) is a theorem-level example of **fresh endogenous arithmetic strengthening**: it holds on the complete advertised infinite family and requires no stronger hidden initial power-of-two cylinder.
+every odd step gives the ledger-clean forward strengthening
 
-This fresh reserve is not yet a reseed. The exact common power-of-two cylinder depth of \(P_{a,b}\) is \(a+1\), and after the odd step it is exactly \(a\). The RMI-1 one-bit loss therefore remains exact.
+[
+P_{a,b}(n)Longrightarrow P_{a-1,b+1}(T(n))
+]
 
-After the complete forced odd run,
-\[
-n+1=2^a3^bc
-\quad\Longrightarrow\quad
-T^a(n)=3^{a+b}c-1.
-\]
-After one more even step,
-\[
-v_2(T^{a+1}(n)+1)
+with strict physical gain. This proves that genuine forward Collatz dynamics can create fresh ordinary-arithmetic proof content.
+
+But finite odd-modulus information, including the generated (3)-adic reserve, does not universally replenish binary forward control. CRT permits every finite binary continuation after the inherited reserve is exhausted.
+
+### RMI-3 durable result — parity-tail conversion obstruction
+
+Let
+
+[
+epsilon_j(n)=T^j(n)mod2,
+qquad
+V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n)).
+]
+
+On any genuinely encountered branch leaf of depth (r),
+
+[
+oxed{
+V_K(T^r(n))
 =
-v_2(3^{a+b}c+1)-1.
-\]
-For fixed \(a,b\), this successor value can be any prescribed nonnegative integer for infinitely many admissible \(c\), even after any compatible finite odd-modulus condition. Thus no finite odd-modulus packet, including the newly produced 3-adic reserve, universally replenishes the binary forward-control reserve.
+(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
+}
+]
 
-The RMI-1 hostile family remains decisive. Even the sparse exact parameterization
-\[
-A_t=4\frac{2^{6t}-1}{9}-1
-\]
-with \(A_1=27\) and
-\[
-T^3(A_t)=2^{6t-1}-1>A_t
-\]
-has universal cylinder reserve exactly
-\[
-8\longmapsto5.
-\]
-Large individual endpoint valuations do not change family-level proof accounting.
+Therefore any bounded finite parity/branch control at the successor is exactly a restriction on the corresponding source parity tail. A successor arithmetic fact may be freshly generated, but its finite future-control content cannot be newly created by the bounded segment.
 
-### Initial RMI budget
+Moreover, any premise guaranteeing ordinary-magnitude gain within a fixed (K)-step horizon must exclude (0^K), since an all-even (K)-step continuation strictly decreases at every step. Hence bounded future magnitude-gain control necessarily carries nontrivial finite parity-tail information and is inherited under the same pullback.
 
-- maximum sessions: **6**;
-- hard viability checkpoint: **RMI-3 — NOW DUE**;
-- absolute audit: **RMI-6**;
-- automatic RMI-7: **not authorized**.
+For the RMI-2 factor-transfer state,
 
-### Exactly one authorized next target
+[
+n+1=2^a3^bc,
+]
 
-**RMI-3 — FRESH-RESERVE CONVERSION / REGENERATIVE CONTROL VIABILITY GATE**
+the odd transfer conserves
 
-Central question:
+[
+L=a+b
+]
 
-> Does there exist a finitely stated ordinary-arithmetic conversion law, valid on a nontrivial infinite ordinary-positive family and proved from only the advertised current premise plus a bounded genuine forward Collatz segment, that converts forward-generated arithmetic reserve into renewed root-usable future control with strict physical gain, without being equivalent to a stronger initial finite 2-adic prefix?
+and (c), while the exhaustion endpoint is
 
-The factor-transfer state is a mandatory hostile test case, not a mandatory representation.
+[
+T^a(n)=3^Lc-1.
+]
 
-RMI-3 must not enlarge the valuation packet merely because the current conversion fails. If no candidate satisfies the pre-existing RMI-3 viability gate, the RMI programme freezes.
+Thus the newly produced (b)-reserve adds no independent endpoint input from which a universal binary recapture can be derived.
 
+### RMI-3 hard-gate decision
+
+No structure simultaneously achieved all seven required conditions:
+
+1. finite exact definition;
+2. direct ordinary-positive one-orbit ownership;
+3. non-tautological regeneration from carried finite information plus genuinely generated forward facts;
+4. strict gain in a proper physical quantity;
+5. indefinite-regeneration-implies-unboundedness;
+6. finite killability;
+7. at least one exact nontrivial ordinary-orbit regeneration instance.
+
+The hard gate therefore failed.
+
+**No RMI-4 target exists.**
+
+Do not continue by increasing valuation count, modulus, state count, parameter dimension, automaton size, symbolic expressiveness, or completion machinery. Any future reopening requires genuinely new theorem-level evidence that changes the root bridge itself.
 
 ## POST-IRM1 — IRM FROZEN
 
