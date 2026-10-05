@@ -10,15 +10,15 @@ Authoritative pivot audit: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
 
 IRM begins with ordinary positive integers and seeks an exact finite return certificate:
 
-[
-	ext{ordinary integer family}
-	o
-	ext{exact Collatz return maps}
-	o
-	ext{universal closure + proper height growth}
-	o
-	ext{explicit unbounded orbit}.
-]
+\[
+\text{ordinary integer family}
+\to
+\text{exact Collatz return maps}
+\to
+\text{universal closure + proper height growth}
+\to
+\text{explicit unbounded orbit}.
+\]
 
 IRM-1 asks whether the frozen low-complexity one-parameter affine certificate class contains an exact universally closed strictly expanding return mechanism.
 
