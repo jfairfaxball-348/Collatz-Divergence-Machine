@@ -5,10 +5,10 @@
 
 - Project stage: **RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
 - Active programme: **RMI — Root Mechanism Invention Programme**
-- Authoritative RMI-2 report: \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`
-- Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`
-- Authoritative RMI charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`
-- RMI-2 parent: \`rmi1-finite-regenerative-orbit-state-invention-audit\` at \`9fe9ed1416fec8a7a23d982a89c0248fc6548d3a\`
+- Authoritative RMI-2 report: `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`
+- Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`
+- Authoritative RMI charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
+- RMI-2 parent: `rmi1-finite-regenerative-orbit-state-invention-audit` at `9fe9ed1416fec8a7a23d982a89c0248fc6548d3a`
 - CDM4: **FROZEN**
 - CDM4-T32: **NOT AUTHORIZED**
 - IRM: **FROZEN**
