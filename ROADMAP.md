@@ -5,8 +5,8 @@
 
 **Status: RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
-Authoritative RMI-1 report: `experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md`.  
-Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`.
+Authoritative RMI-1 report: \`experiments/RMI_1_FINITE_REGENERATIVE_ORBIT_STATE_INVENTION_AUDIT.md\`.  
+Authoritative charter: \`experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md\`.
 
 RMI remains a separate foundational-invention programme. It is not CDM4-T32 and not IRM-2.
 
@@ -22,18 +22,18 @@ RMI remains a separate foundational-invention programme. It is not CDM4-T32 and 
 ### RMI-1 durable result
 
 For an infinite ordinary-positive cylinder
-[
+\[
 C(\rho,K)=\{\rho+2^Kq:q\ge0\},
-]
-after a common shortened-Collatz block of length (r\le K) containing (s) odd source states,
-[
+\]
+after a common shortened-Collatz block of length \(r\le K\) containing \(s\) odd source states,
+\[
 T^r(\rho+2^Kq)=b+3^s2^{K-r}q.
-]
+\]
 
-Hence the image family has a common residue modulo (2^{K-r}) but no common residue modulo (2^{K-r+1}). The exact finite parity-cylinder proof reserve therefore decreases
-[
+Hence the image family has a common residue modulo \(2^{K-r}\) but no common residue modulo \(2^{K-r+1}\). The exact finite parity-cylinder proof reserve therefore decreases
+\[
 K\mapsto K-r
-]
+\]
 and cannot regenerate itself under positive-depth forward iteration.
 
 RMI-1's **Proof-Reserve Regenerative State (PRRS)** supplies a sound finite proof architecture and an explicit premise-renewal audit, but no concrete Collatz-specific non-cylinder source of fresh forward-control information was obtained.
