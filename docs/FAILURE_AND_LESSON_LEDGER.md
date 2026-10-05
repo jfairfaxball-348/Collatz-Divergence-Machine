@@ -4283,16 +4283,16 @@ Consequences:
 
 **Status: PROVED STRUCTURAL / GOVERNANCE OBSTRUCTION in POST-IRM1.**
 
-For an affine chart (F(q)=aq+b) and a fixed Collatz parity block,
-[
-G=F^{-1}circ T^rcirc F
-]
-is automatically rational-affine. With the identity chart, the one-step maps are exactly
-[
-qmapsto q/2,qquad qmapsto(3q+1)/2.
-]
+For an affine chart F(q) = a q + b and a fixed Collatz parity block, the cell return is automatically
 
-Thus merely allowing rational-affine return maps places the original Collatz dynamics inside the certificate language verbatim. The language gains scientific content only if an independently motivated domain/invariant/proper-height theorem is supplied first.
+    G = F^(-1) o T^r o F.
+
+With the identity chart, the one-step maps are exactly
+
+    q -> q/2
+    q -> (3q+1)/2.
+
+Thus merely allowing rational-affine return maps places the original Collatz dynamics inside the certificate language verbatim. The language gains scientific content only if an independently motivated domain, invariant, or proper-height theorem is supplied first.
 
 **Lesson:** removing the IRM-1 denominator obstruction by relaxing coefficient integrality does not create a new mechanism.
 
@@ -4304,19 +4304,17 @@ Thus merely allowing rational-affine return maps places the original Collatz dyn
 
 **Status: PROVED STRUCTURAL OBSTRUCTION in POST-IRM1.**
 
-For affine embeddings (F_i(q)=a_iq+b_i), an exact edge (i	o j) of depth (r_e) and odd count (s_e) with integer-affine parameter slope (u_e) satisfies
-[
-u_e=rac{3^{s_e}a_i}{2^{r_e}a_j}.
-]
+For affine embeddings F_i(q) = a_i q + b_i, an exact edge i -> j of depth r_e and odd count s_e with integer-affine parameter slope u_e satisfies
+
+    u_e = 3^(s_e) a_i / (2^(r_e) a_j).
 
 Around any directed state-cycle the embedding slopes telescope:
-[
-prod_e u_e=rac{3^S}{2^R}.
-]
 
-The left side is an integer. If the recurrent cycle has positive total Collatz depth (Rge1), the right side is not an integer. Hence no finite recurrent positive-depth system of this type exists. Depth-zero recurrence does not advance the physical orbit and cannot certify unboundedness.
+    product_e u_e = 3^S / 2^R.
 
-**Lesson:** “one affine state failed, therefore several affine states” is not a viable repair while integer-affine parameter returns are retained.
+The left side is an integer. If the recurrent cycle has positive total Collatz depth R >= 1, the right side is not an integer. Hence no finite recurrent positive-depth system of this type exists. Depth-zero recurrence does not advance the physical orbit and cannot certify unboundedness.
+
+**Lesson:** "one affine state failed, therefore several affine states" is not a viable repair while integer-affine parameter returns are retained.
 
 **Action:** preserve this as a closed adjacent loophole; do not launch a multi-state template search.
 
@@ -4350,5 +4348,5 @@ IRM-1 remains the only executed IRM mechanism session. IRM-2 is not authorized.
 
 **Reopening criterion:** genuinely new evidence must independently point to one specific ordinary-integer mechanism, such as a new external theorem, a new exact closure identity preserved by actual Collatz iteration, an explicit family with self-regeneration, a theorem-derived candidate prediction, or a positive near-certificate with one mathematically compelled repair.
 
-“More expressive mathematics is available” is not a reopening trigger.
+"More expressive mathematics is available" is not a reopening trigger.
 
