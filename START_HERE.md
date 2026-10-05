@@ -1,5 +1,38 @@
 # START HERE
 
+
+## RMI live state — Root Mechanism Invention Programme installed
+
+- Project stage: **RMI-REBOOT-A — ROOT MECHANISM INVENTION PROGRAMME INSTALLED / RMI-1 AUTHORIZED**
+- Active programme: **RMI — Root Mechanism Invention Programme**
+- Authoritative charter: `experiments/RMI_REBOOT_FOUNDATIONAL_INVENTION_CHARTER.md`
+- Authoritative parent: `post-irm1-root-bridge-authorization-audit` at `2294cbf7fc66c876bf4e56f468d77b33632a4a2a`
+- CDM4: **FROZEN**
+- CDM4-T32: **NOT AUTHORIZED**
+- IRM: **FROZEN**
+- IRM-2: **NOT AUTHORIZED**
+- POST-IRM1 negative evidence: **PRESERVED AS RMI DESIGN CONSTRAINTS**
+- Current unresolved nontrivial root-arrow count: **2**
+- RMI initial budget: **maximum 6 numbered research sessions**
+- RMI-3: **HARD VIABILITY GATE**
+- RMI-6: **ABSOLUTE PROGRAMME AUDIT**
+- RMI-7: **NOT AUTOMATICALLY AUTHORIZED**
+- Scientific trajectory compute: **NOT AUTHORIZED**
+- First authorized target: **RMI-1 — FINITE REGENERATIVE ORBIT-STATE INVENTION AUDIT**
+
+RMI corrects one overconservative interpretation of the POST-IRM1 freeze: **independent prior art is not required for a root-derived invention**. The freeze against adjacent template escalation remains binding.
+
+The governing selection question is:
+
+> What mathematical capability does a proof of an explicit unbounded Collatz orbit require that our present mathematics does not possess, and what is the smallest new structure we can invent to supply it?
+
+The first RMI question is:
+
+> Can we define a finitely describable, non-tautological regenerative orbit state attached directly to an ordinary positive Collatz state on one actual forward orbit, such that its finite carried information certifies a finite genuine forward evolution to a successor state of the same type with strict increase in a proper physical quantity, without prescribing an infinite parity/valuation future?
+
+Read the RMI reboot charter before selecting any successor question.
+
+
 ## Post-IRM1 live state — IRM frozen
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
