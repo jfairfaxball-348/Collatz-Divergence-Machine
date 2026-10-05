@@ -2,9 +2,9 @@
 
 **Date:** 2026-10-05  
 **Programme:** Collatz Divergence Machine / RMI — Root Mechanism Invention Programme  
-**Authoritative parent branch:** \`rmi-root-mechanism-invention-reboot\`  
-**Authoritative parent commit:** \`f3e0591c525b51240d7c1fcf9fbfd5579bb0be04\`  
-**Working branch:** \`rmi1-finite-regenerative-orbit-state-invention-audit\`  
+**Authoritative parent branch:** `rmi-root-mechanism-invention-reboot`  
+**Authoritative parent commit:** `f3e0591c525b51240d7c1fcf9fbfd5579bb0be04`  
+**Working branch:** `rmi1-finite-regenerative-orbit-state-invention-audit`  
 **Scientific trajectory compute:** NONE  
 **Exact theorem-development compute:** NONE  
 **Final decision:** **RMI1-B — PARTIAL REGENERATIVE CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED**
@@ -99,15 +99,15 @@ A direct comparison with the authoritative POST-IRM1 tip
 
 shows the RMI reboot tip is 10 commits ahead and 0 behind, with that POST-IRM1 tip as merge base.
 
-A direct comparison of the RMI reboot tip against \`main\` reports a **diverged** history with merge base
+A direct comparison of the RMI reboot tip against `main` reports a **diverged** history with merge base
 
 \[
 \texttt{3a3df26b59d6f9f42f779c6333c5a0ee97ad95eb}.
 \]
 
-Therefore the RMI reboot has **not** been merged into \`main\`.
+Therefore the RMI reboot has **not** been merged into `main`.
 
-This audit accordingly branches from the exact RMI reboot tip rather than divergent \`main\`.
+This audit accordingly branches from the exact RMI reboot tip rather than divergent `main`.
 
 ---
 
