@@ -166,7 +166,7 @@ No explicit unbounded orbit was found and no counterexample was claimed.
 
 ## CDM4 — STRUCTURAL / RECURSIVELY CLOSED DIVERGENCE MECHANISMS
 
-**Status: CDM4-T25 COMPLETE — CLASSIFICATION C: NEW RELATIVE DIVISOR-LIFTING SUBCLASS AND MULTIPLICITY OBSTRUCTIONS FOUND; NO NEW SCIENTIFIC COMPUTE.**
+**Status: CDM4-T28 COMPLETE — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN; NO NEW SCIENTIFIC COMPUTE.**
 
 Authoritative T1 report: experiments/CDM4_T1_REPORT.md.  
 Authoritative T2 report: experiments/CDM4_T2_REPORT.md.
@@ -1188,19 +1188,55 @@ No explicit anchored aperiodic word, candidate, unbounded orbit, or counterexamp
 
 T27 is classified **C — canonical divisor degeneration classified and positive-slope exact lifting proved**.
 
+
+## CDM4-T28 closeout
+
+T28 proves that the T22 growth filtration is a flag of prime semigroup faces. For each stratum,
+[
+I_{>i}
+]
+is a prime monomial face ideal and
+[
+mathcal O_i=K[Gamma_Y]_{I_{>i}}
+]
+is the canonical relative local ring, with residue field
+[
+operatorname{Frac}K[Gamma_{le i}].
+]
+
+The nonprincipal analogue of the T25 finite-jet theorem is real: fixed canonical (mathfrak p_i)-jets contain only finitely many prefix terms, so their coefficients are algebraic over the slower rational field. This removes T23's moving-analytic-coefficient obstruction at every fixed jet order.
+
+If (c_i=operatorname{ht}I_{>i}), Hilbert–Samuel counting yields relative Hermite–Padé multiplicity with asymptotic gain
+[
+P_{m rel,i}/D_fgtrsim h(D_X)^{1/c_i}-1.
+]
+Genuine aperiodicity still forces positive relative transcendence, so this gain can be made arbitrarily large.
+
+Finite-degree relation modules are torsion-free over (mathcal O_i), though not generally free. A finite free-lattice sandwich plus Artin–Rees gives a bounded adic inverse-transport loss, and after an expanding macro-iterate the cumulative loss is geometric. Thus nonprincipal slope tax is finite and multiplicity can dominate it.
+
+Rees valuations and normalized blowups describe integral-closure asymptotics but do not by themselves preserve exact powers or exact specialization. No chartwise blowup relation is promoted without a descent theorem.
+
+The full nonprincipal exact lift remains open at one smaller theorem: a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem for the finite canonical jets, followed by exact descent preserving
+[
+Q(alpha,mathbf X)=P(mathbf X).
+]
+
+No new positive-anchor class is excluded, no new bounded-(R_m) periodicity theorem is promoted, and no scientific compute is authorized.
+
+T28 is classified **C — new canonical multiscale relative infrastructure proved; full exact lifting still open**.
+
 ## Immediate next task
 
-**CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit, theory only.**
+**CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit, theory only.**
 
-The principal-fast branch is exact-lifting closed. Return to the broader T22/T23 nonprincipal multiscale boundary.
+T28 has closed the local-ring, finite-jet, multiplicity, and finite-transport-tax parts of the nonprincipal problem.
 
-The next theorem-sized obligation is to determine whether the T25/T27 mechanism can be iterated across a finite nonprincipal growth filtration:
+The next theorem-sized obligation is now singular:
 
-1. construct canonical saturated relative lattices for successive high-growth ideals without replacing the original state system;
-2. identify the analogue of relative Hermite–Padé multiplicity on each stratum;
-3. quantify every inter-stratum inverse-transport slope tax;
-4. prove that the available multiplicity budgets dominate those taxes on one synchronized orbit scale; or prove an exact obstruction;
-5. preserve
+1. prove a synchronized moving-target zero/nonvanishing theorem for the finite algebraic initial forms supplied by the canonical face-prime jets, using the strict lower-scale coefficient-height bound;
+2. iterate it through the complete finite growth flag at one common orbit time;
+3. prove exact descent back to the original canonical relation module; and
+4. preserve
    \[
    Q(\alpha,\mathbf X)=P(\mathbf X)
    \]
