@@ -1,3 +1,5 @@
+Closed
+
 # COLLATZ DIVERGENCE MACHINE
 ## Multi-Stage Search for Unbounded Orbits
 
