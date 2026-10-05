@@ -4000,7 +4000,7 @@ E=0
 ]
 for the canonical T28 auxiliary class modulo exact functional relations.
 
-**Lesson:** small value is not silently promoted to zero; the exact conversion is a projective proximity contradiction with a quantified positive excess.
+**Lesson:** small value is not silently promoted to zero. Full projective height gives a Ru–Vojta proximity contradiction; collapsed projective height gives a stronger direct Liouville contradiction.
 
 **Action:** use this theorem as the dense-orbit nonvanishing input for nonprincipal relative lifting.
 
