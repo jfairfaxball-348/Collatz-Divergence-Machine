@@ -25,77 +25,33 @@ RMI remains separate from CDM4 and IRM, and is now **FROZEN**. **RMI-4 is not au
 
 ### RMI-1 durable result
 
-For an infinite power-of-two cylinder and a common shortened-Collatz segment of length (r), universal binary control depth falls exactly
-
-[
-Klongmapsto K-r.
-]
+For an infinite power-of-two cylinder and a common shortened-Collatz segment of length r, universal binary control depth falls exactly from K to K-r.
 
 Finite initial parity-cylinder reserve is consumed at one bit per shortened step and cannot regenerate itself.
 
 ### RMI-2 durable result
 
-For
+For `P_(a,b)(n): v_2(n+1)=a and v_3(n+1)=b`, every odd step gives the ledger-clean forward strengthening
 
-[
-P_{a,b}(n):
-quad
-v_2(n+1)=a,qquad v_3(n+1)=b,
-]
+`P_(a,b)(n) -> P_(a-1,b+1)(T(n))`
 
-every odd step gives the ledger-clean forward strengthening
+with strict physical gain.
 
-[
-P_{a,b}(n)Longrightarrow P_{a-1,b+1}(T(n))
-]
-
-with strict physical gain. This proves that genuine forward Collatz dynamics can create fresh ordinary-arithmetic proof content.
-
-But finite odd-modulus information, including the generated (3)-adic reserve, does not universally replenish binary forward control. CRT permits every finite binary continuation after the inherited reserve is exhausted.
+This proves that genuine forward Collatz dynamics can create fresh ordinary-arithmetic proof content. But finite odd-modulus information, including the generated 3-adic reserve, does not universally replenish binary forward control. CRT permits every finite binary continuation after the inherited reserve is exhausted.
 
 ### RMI-3 durable result — parity-tail conversion obstruction
 
-Let
+Write `epsilon_j(n)=T^j(n) mod 2` and `V_K(n)=(epsilon_0(n), ..., epsilon_(K-1)(n))`.
 
-[
-epsilon_j(n)=T^j(n)mod2,
-qquad
-V_K(n)=(epsilon_0(n),ldots,epsilon_{K-1}(n)).
-]
+On any genuinely encountered branch leaf of depth r:
 
-On any genuinely encountered branch leaf of depth (r),
-
-[
-oxed{
-V_K(T^r(n))
-=
-(epsilon_r(n),ldots,epsilon_{r+K-1}(n)).
-}
-]
+`V_K(T^r(n)) = (epsilon_r(n), ..., epsilon_(r+K-1)(n))`.
 
 Therefore any bounded finite parity/branch control at the successor is exactly a restriction on the corresponding source parity tail. A successor arithmetic fact may be freshly generated, but its finite future-control content cannot be newly created by the bounded segment.
 
-Moreover, any premise guaranteeing ordinary-magnitude gain within a fixed (K)-step horizon must exclude (0^K), since an all-even (K)-step continuation strictly decreases at every step. Hence bounded future magnitude-gain control necessarily carries nontrivial finite parity-tail information and is inherited under the same pullback.
+Moreover, any premise guaranteeing ordinary-magnitude gain within a fixed K-step horizon must exclude 0^K, since an all-even K-step continuation strictly decreases at every step. Hence bounded future magnitude-gain control necessarily carries nontrivial finite parity-tail information and is inherited under the same pullback.
 
-For the RMI-2 factor-transfer state,
-
-[
-n+1=2^a3^bc,
-]
-
-the odd transfer conserves
-
-[
-L=a+b
-]
-
-and (c), while the exhaustion endpoint is
-
-[
-T^a(n)=3^Lc-1.
-]
-
-Thus the newly produced (b)-reserve adds no independent endpoint input from which a universal binary recapture can be derived.
+For the RMI-2 factor-transfer state `n+1 = 2^a 3^b c`, the odd transfer conserves `L=a+b` and c, while the exhaustion endpoint is `T^a(n)=3^L c - 1`. Thus the newly produced b-reserve adds no independent endpoint input from which a universal binary recapture can be derived.
 
 ### RMI-3 hard-gate decision
 
