@@ -37,9 +37,28 @@ The intended feedback loop is:
 
 ## Current status
 
-**CDM4-T27 is complete — C: CANONICAL DIVISOR DEGENERATION CLASSIFIED AND POSITIVE-SLOPE EXACT LIFTING PROVED. No new scientific compute is authorized.**
+**CDM4-T28 is complete — C: CANONICAL MULTISCALE RELATIVE INFRASTRUCTURE PROVED; FULL NONPRINCIPAL EXACT LIFTING STILL OPEN. No new scientific compute is authorized.**
 
-T20–T26 remain closed infrastructure.
+T20–T27 remain closed infrastructure.
+
+
+T28 returns to the nonprincipal T22/T23 multiscale boundary. It proves that every high-growth ideal (I_{>i}) is a prime monomial face ideal and that the canonical localization
+[
+mathcal O_i=K[Gamma_Y]_{I_{>i}}
+]
+has residue field (operatorname{Frac}K[Gamma_{le i}]).
+
+Fixed canonical jets modulo powers of the face prime contain only finitely many prefix terms, so the T25 finite-jet mechanism genuinely generalizes beyond a principal divisor. Hilbert–Samuel counting gives an unbounded relative Hermite–Padé multiplicity amplifier, while torsion-free local relation modules admit a free-lattice sandwich and an Artin–Rees finite geometric transport tax.
+
+Thus T23's moving **analytic** coefficients are eliminated at fixed canonical jet order: the next-stratum coefficients are algebraic and have strictly lower height.
+
+T28 does **not** yet prove the full nonprincipal relation lift. The remaining theorem is a synchronized stratumwise algebraic-moving-target zero/nonvanishing theorem plus exact descent to the original canonical variables with
+[
+Q(alpha,mathbf X)=P(mathbf X)
+]
+literally preserved.
+
+Rees valuations and normalized blowups are useful for interpreting the geometry, but they control integral closures and do not replace the exact powers required by the specialization-safe proof.
 
 T27 does not prove automatic canonical special-fibre injectivity. The standalone question
 \[
@@ -106,10 +125,10 @@ R_m\text{ bounded}
 \]
 throughout the full principal-fast class.
 
-The next live theorem is **CDM4-T28 — nonprincipal multiscale filtration / iterated-stratum relative-lifting audit**.
+The next live theorem is **CDM4-T29 — canonical stratumwise algebraic-moving-target zero theorem / exact-descent audit**.
 
 No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 
 No substitution enumeration, new starts, candidate trajectories, finite-code search, CPU/GPU/cloud/distributed work, or new generator/distribution is authorized.
 
-Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T27_REPORT.md before doing research.
+Read AGENTS.md, START_HERE.md, the required prior reports, and experiments/CDM4_T28_REPORT.md before doing research.
