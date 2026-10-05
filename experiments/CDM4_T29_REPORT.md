@@ -667,7 +667,7 @@ T28 makes that cluster algebraic over the slower rational field and finite.
 
 Sections 7–9 verify fixed monomial basis, coherence, general position and moving-field linear nondegeneracy.
 
-Sections 10–11 convert the exact zero equation into a Ru–Vojta contradiction unless the cluster vanishes identically.
+Sections 10–11 give the required contradiction unless the cluster vanishes identically: Ru–Vojta in the full-projective-height case, and direct Liouville when projective cancellation lowers the monomial-point height.
 
 Remove the identically vanishing cluster and repeat through the locally finite leading-coefficient support.
 
