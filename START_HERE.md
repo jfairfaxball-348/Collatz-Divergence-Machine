@@ -3,57 +3,49 @@
 ## Live repository state
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
-- Project stage: **CDM4-T29 COMPLETE — C: SYNCHRONIZED MOVING-TARGET ZERO THEOREM AND COMPLETE T22 MULTISCALE EXACT LIFTING PROVED; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
+- Project stage: **CDM4-T30 COMPLETE — C: EXACT ERASURE/NON-PUSHY MORPHIC NORMALIZATION EXTENSION PROVED; PUSHY BOUNDED-LETTER / NEUTRAL-FACE OBSTRUCTION IS THE FIRST SURVIVING PURE-MORPHIC CLASS; NO NEW SCIENTIFIC COMPUTE AUTHORIZED**
 - Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
 - Nontrivial finite cycles: **out of scope**
-- Current authoritative theory report: experiments/CDM4_T29_REPORT.md
+- Current authoritative theory report: experiments/CDM4_T30_REPORT.md
 - Current authoritative scientific-search report: experiments/CDM3_P2_REPORT.md
 - Current authoritative post-campaign audit: experiments/CDM3_P2A_REPORT.md
 - Current engineering benchmark: experiments/CDM3_B1_REPORT.md
 - Current explicit candidate frontier: calibration-only candidates 27 and 127, both resolved; **no scientific divergence candidate**
-- T20–T28 remain closed infrastructure.
-- T29 verifies the published moving-target interface for the actual T28 finite-jet class. Canonical jet coefficients are evaluations of fixed slower-face rational functions.
-- Every infinite zero subsequence admits an infinite coherent refinement.
-- After slower-coset compression, T18's finite-hit theorem gives linear nondegeneracy over the Ru–Vojta moving coefficient field.
-- T22's exact positive 2-adic leading coefficient inside one profile identifies a finite dominant cluster. T28 finite jets make the support locally finite in that leading coefficient.
-- Omitted same-profile terms have a strict local gap; higher-profile terms are smaller on a faster scale.
-- If the projective monomial point retains the current \(g_i\)-scale, coordinate hyperplanes supply the exact \(S\)-unit baseline and Ru–Vojta forces the current cluster to vanish.
-- If projective cancellation lowers the monomial-point height to \(o(g_i)\), dividing by one dominant monomial gives an algebraic number of height \(o(g_i)\) but 2-adic smallness on the full \(g_i\)-scale, so direct Liouville forces exact zero.
-- Iterating through the finite profile flag at one synchronized orbit time gives
-  \[
-  \boxed{
-  E(q_n)=0\text{ infinitely often}
-  \Longrightarrow
-  E=0
-  }
-  \]
-  for the canonical T28 auxiliary class modulo exact functional relations.
-- T28's Hilbert–Samuel Hermite–Padé multiplicity and finite Artin–Rees transport tax therefore plug into the inherited T16/T17/T25/T27 relation-lifting proof.
-- The complete genuinely aperiodic T22 multiscale class now admits exact lifting with
-  \[
-  \boxed{
-  Q(\alpha,\mathbf X)=P(\mathbf X)
-  }
-  \]
-  literally preserved.
-- No normalized blowup, exceptional chart, integral-closure replacement, non-unimodular gauge, deleted scalar-support direction, or asynchronous orbit time is used. Exact powers remain primary.
-- The inherited T21 completion-sign argument excludes positive-integer anchors throughout the complete T22 multiscale class.
+- T20–T29 remain closed infrastructure.
+- T30 verifies that every morphic word admits an exact one-sided nonerasing coding representation. Erasing and mortal-letter contamination are presentation artefacts at the observable valuation-word interface.
+- In the successful normalization, no shift is used. The actual valuation symbol at every output index is unchanged, so every ordinary prefix sum (A_n), every T2 exact cylinder, the canonical scalar, and the positive-integer anchoring condition are preserved literally.
+- Original output-state series are exact fixed linear sums of normalized hidden-state series over coding fibres.
+- If a nonerasing pure presentation is non-growing but has uniformly bounded factors consisting only of non-growing letters, Pansiot/Durand gives an exact substitutive representation by a growing substitution. T21/T29 therefore applies unchanged.
+- Every uniformly recurrent morphic word is primitive substitutive and is likewise inside the T29 closed class after exact coding normalization.
+- Universal normalization fails for the pushy Pansiot branch. The pure positive-valuation morphism
+  [
+  1mapsto112,qquad 2mapsto2
+  ]
+  has arbitrarily long bounded-letter runs, quadratic factor complexity, and cannot be represented as a coding of a growing endomorphism.
+- The first surviving word-level boundary is therefore recurrent bounded-letter / pushy dynamics, not erasing itself and not merely slow root growth.
+- Genuinely polynomial-growth aperiodic pure morphisms survive as a natural subfamily of this neutral/bounded-letter boundary.
+- A hypothetical aperiodic positive-integer anchor still universally forces
+  [
+  limsup A_n/nlelog_2 3.
+  ]
+  On the growing-normalizable side T21 makes the limsup algebraic, so Gelfond–Schneider makes the inequality strict. Universal limsup algebraicity is not yet proved in the pushy residual.
+- T20 exact prefix/scalar transport survives after nonerasing normalization, but a bounded periodic letter gives zero length increment after period refinement. The T21 positive grading becomes only nonnegative, so the T22 positive-profile filtration and T29 zero theorem cannot be imported without a new neutral-letter reduction.
 - Under the inherited T2 finite-alphabet anchoring hypotheses,
-  \[
-  \boxed{
-  R_m\text{ bounded}
-  \Longrightarrow
-  \text{eventual periodicity}
+  [
+  oxed{
+  R_m	ext{ bounded}
+  Longrightarrow
+  	ext{eventual periodicity}
   }
-  \]
-  now holds through the complete T22 class, strictly beyond the principal-fast T27 class.
+  ]
+  now holds for every exact growing-normalizable morphic valuation word, including erasing/non-growing presentations of such a word. It is not yet promoted for the pushy residual.
 - Positive rational noninteger values remain excluded only when ordinary real subcriticality is independently known. Negative rational values remain unexcluded.
 - No explicit anchored aperiodic word, candidate, unbounded orbit, or Collatz counterexample was found.
 - No scientific compute, substitution enumeration, generator/distribution work, finite-code ranking, CPU/GPU/cloud/distributed work is authorized.
 - Current certification frontier: none
 - CDM2-E2: **NOT AUTHORIZED**
 - CDM3: **parked pending a new scientific mechanism**
-- Immediate next task: **CDM4-T30 — nonexpanding / erasing morphic normalization and anchor-obstruction audit; mandatory thirtieth-session progress/correction audit; theory only**
+- Immediate next task: **CDM4-T31 — pushy bounded-letter resummation / ordinary-prefix limsup / neutral-face audit; theory only**
 
 The repository, not conversational memory, is the authoritative research state.
 
@@ -122,6 +114,7 @@ The repository, not conversational memory, is the authoritative research state.
 61. `experiments/CDM4_T27_REPORT.md`
 62. `experiments/CDM4_T28_REPORT.md`
 63. `experiments/CDM4_T29_REPORT.md`
+64. `experiments/CDM4_T30_REPORT.md`
 
 ## Strategic course correction — 2026-10-01
 
