@@ -887,3 +887,5 @@ No larger class is proposed.
 No IRM-2 is authorized.
 
 No counterexample is claimed.
+
+IRM1-C — FROZEN CLASS NULL / STRUCTURALLY RULED OUT
