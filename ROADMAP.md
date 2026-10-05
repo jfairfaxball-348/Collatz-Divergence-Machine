@@ -1,47 +1,45 @@
 # Roadmap
 
-## POST-CDM4 — IRM INTEGER RETURN MECHANISM PROGRAMME
+## POST-IRM1 — IRM FROZEN
 
-**Status: IRM-1 COMPLETE — IRM1-C STRUCTURAL NULL; IRM PAUSED; IRM-2 NOT AUTHORIZED.**
+**Status: POSTIRM1-B — IRM FROZEN / NO JUSTIFIED CONTINUATION FOUND. IRM-2 NOT AUTHORIZED.**
 
-The T31 strategic freeze remains in force. CDM4 is not reopened and there is no CDM4-T32.
+Authoritative audit: `experiments/POST_IRM1_ROOT_BRIDGE_AUTHORIZATION_AUDIT.md`.
 
-Authoritative pivot audit: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`.
+The T31 CDM4 freeze remains in force. CDM4 is not reopened and there is no CDM4-T32.
 
-IRM begins with ordinary positive integers and seeks an exact finite return certificate:
+IRM-1 is the only executed IRM mechanism session. It proved the frozen one-parameter integer-affine self-return class structurally empty. The post-IRM1 authorization audit then tested whether external mathematics supplies a genuinely different root-proximate ordinary-integer mechanism.
 
-\[
-\text{ordinary integer family}
-\to
-\text{exact Collatz return maps}
-\to
-\text{universal closure + proper height growth}
-\to
-\text{explicit unbounded orbit}.
-\]
+Three independently motivated bridge categories were audited:
 
-IRM-1 asked whether the frozen low-complexity one-parameter affine certificate class contains an exact universally closed strictly expanding return mechanism.
+- strongly sufficient residue sets / modular graph trapping;
+- stopping-time and parity-residue persistence;
+- exact conjugacy / arithmetic-function embeddings.
 
-**IRM-1 answer: NO.** Theorem-level coefficient comparison gives, on every positive-depth cell,
-\[
-u=\frac{3^s}{2^r},
-\]
-so an integer-affine parameter slope is impossible for every \(r\ge1\). At depth zero the only return is \(G(q)=q\), which cannot grow. No enumeration was required. Authoritative report: `experiments/IRM_1_EXACT_INTEGER_RETURN_CERTIFICATE_AUDIT.md`.
+None supplied an explicit positive integer together with exact recursively closed genuine forward growth. Strong sufficiency gives hitting/merging constraints rather than constructive closure; stopping-time residue structure remains finite-prefix information without a persistence theorem; conjugacy/embedding routes either reintroduce the ordinary-integer lift bridge or lose exact Collatz ownership after the special source class.
 
-IRM-1 found zero complete certificates and zero strict positive near-certificates. Therefore **IRM-2 is not authorized**. The programme is paused pending a separately justified root-proximate question; the null result does not authorize a larger template.
+The rational-affine relaxation is not authorized: with (F(q)=q) it reproduces the original branches (q/2) and ((3q+1)/2) exactly, so the unrestricted language is a coordinate rewrite of Collatz unless an independent invariant/growth theorem is supplied.
 
-Hard rules:
+A finite multi-state integer-affine recurrent extension is also closed algebraically. For an edge (i	o j),
+[
+u_e=rac{3^{s_e}a_i}{2^{r_e}a_j}.
+]
+Around a state-cycle the embedding slopes telescope, forcing
+[
+prod_e u_e=rac{3^S}{2^R},
+]
+which cannot be an integer for any recurrent cycle with positive total Collatz depth (Rge1).
 
-- no symbolic-hierarchy continuation;
-- no automatic modulus/state/depth ladder after a null result;
-- no scientific trajectory campaign;
-- only tiny exact certificate enumeration under the pivot-audit envelope;
-- by IRM-3, an explicit positive integer family/candidate or instantiated positive sufficient condition must exist, else kill;
-- at IRM-6, a mandatory viability audit is required and no automatic successor is authorized;
-- after IRM-1, no new session is authorized merely by relaxing integer-affine coefficients, increasing moduli/depth/cell count, or adding parameters.
+**Live governance:**
 
+- IRM is frozen;
+- IRM-2 is not authorized;
+- no larger certificate class is the next task;
+- no scientific trajectory campaign is authorized;
+- no template search is authorized;
+- reopening requires genuinely new evidence that independently predicts one specific ordinary-integer closure/growth mechanism.
 
-Historical stage decisions below retain their original context. The live authorization is the final immediate-next-task section; completed P1/P2 budgets do not authorize new scientific starts.
+Historical stage decisions below retain their original context. The live authorization is the POST-IRM1 freeze above; completed historical budgets do not authorize new scientific starts.
 
 ## CDM0 — SCAFFOLD AND CALIBRATION
 
