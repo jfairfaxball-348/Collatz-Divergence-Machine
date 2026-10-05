@@ -4500,7 +4500,7 @@ The unresolved nontrivial root-arrow count remains **2**.
 
 ## RMI-2 — fresh forward-control reseeding / endogenous information-production audit — 2026-10-05
 
-**Authoritative report:** \`experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md\`  
+**Authoritative report:** `experiments/RMI_2_FRESH_FORWARD_CONTROL_RESEEDING_AUDIT.md`  
 **Decision:** **RMI2-B — PARTIAL RESEEDING CAPABILITY / ONE ROOT-DERIVED DEFECT ISOLATED.**
 
 ### F0146 — Genuine forward Collatz evolution can create fresh ordinary-arithmetic proof content
