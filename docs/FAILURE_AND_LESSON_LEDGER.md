@@ -4130,3 +4130,72 @@ under a hypothetical aperiodic positive-integer anchor, but T30 did not prove al
 
 **Action:** CDM4-T31 should derive an exact growing-skeleton/bounded-run decomposition, audit limsup algebraicity, and test exact rational/algebraic resummation of bounded blocks before any attempt to reuse T29.
 
+
+
+---
+
+### F0132 — Recursive-language class exclusion can become a self-renewing strategic ratchet
+
+**Status: PROVED AS A PROJECT-STRATEGY FAILURE MODE in CDM4-T31.**
+
+Across T1–T30, the root constructive bridge remained the existence of an explicit aperiodic valuation word with an ordinary positive-integer anchor. The dominant T4–T30 programme instead repeatedly enlarged the structured language class for which such an anchor could be excluded.
+
+Every T4–T30 report contains an adjacent theorem-sized successor obligation or equivalent. Solving one obstruction repeatedly exposed another mathematically coherent boundary: automatic, higher-rank finite-kernel, multivariate, stable-image, nonprimitive, variable-length morphic, unequal-growth multiscale, divisor-relative, nonprincipal moving-target, and finally pushy bounded-letter/neutral-growth.
+
+No explicit anchored aperiodic word, scientific candidate integer, unbounded orbit, or positive anchor-construction mechanism resulted.
+
+**Lesson:** closure of internally generated exclusion subproblems is not evidence that the probability of achieving the constructive root objective is increasing.
+
+**Action:** freeze CDM4. Do not broaden the recursive-language hierarchy merely because another theorem-sized boundary exists.
+
+---
+
+### F0133 — A residual class is not automatically a promising candidate class
+
+**Status: PROVED STRATEGIC DISTINCTION in CDM4-T31.**
+
+T30 isolates pushy bounded-letter / neutral-growth pure-morphic words as the first surviving single-morphism boundary outside the growing-normalizable T21/T29 class.
+
+That residual is mathematically natural inside morphic combinatorics. The repository does not supply a theorem, Collatz-specific arithmetic argument, probabilistic model, empirical observation, or candidate-generation mechanism showing that a Collatz counterexample, if one exists, should have a valuation word in that residual.
+
+**Lesson:** “not yet excluded” and “promising place to search” are different claims.
+
+**Action:** do not promote the T30 pushy residual, an S-adic enlargement, or any broader symbolic hierarchy to the next research programme without independent root-objective motivation.
+
+---
+
+### F0134 — Theorem-sized-session selection can create an AI-assisted continuation loop
+
+**Status: PROVED AS A PROJECT-PROCESS RISK in CDM4-T31.**
+
+The CDM4 workflow repeatedly asked each session to identify and solve the next theorem-sized obligation. A reasoning system can almost always generate a technically meaningful adjacent target from the boundary of the previous result. Solving that target creates new definitions, strata, exceptional cases, and successor obligations.
+
+This can produce indefinitely high local productivity even when no new positive-anchor mechanism, candidate integer, or root-bridge probability gain is demonstrated.
+
+The earlier cycle repository exhibited the same strategic geometry at larger scale: internal proof architecture continued to grow while the global ownership bridge remained unresolved.
+
+**Lesson:** a theorem-sized checkpoint is a useful unit of work, not a sufficient rule for choosing the next research direction.
+
+**Action:** future theory selection must be justified by expected root-bridge leverage, not merely adjacency to the previous theorem.
+
+---
+
+### F0135 — CDM4 is frozen until a genuinely different root bridge exists
+
+**Status: BINDING STRATEGIC FREEZE from CDM4-T31.**
+
+The T31 comparative failure-mode audit concludes **MOSTLY YES** to the question whether CDM4 has entered the same strategic trap as the earlier cycle repository.
+
+Strategic classification:
+
+[
+oxed{	extbf{C — FREEZE CDM4 / PIVOT}}
+]
+
+This freeze does not demote T1–T30 mathematics.
+
+No CDM4-T32 theorem target is authorized. In particular do not continue pushy bounded-letter resummation, neutral-face repair, ordinary-prefix limsup extension, S-adic enlargement, Mahler-lifting generalization, toric/multiscale extension, or moving-target generalization merely as the next symbolic boundary.
+
+**Reopening criterion:** a future theoretical direction must change the root bridge itself, for example by directly constructing or positively recognizing an ordinary positive-integer anchor, or by deriving an actual-integer arithmetic mechanism with a falsifiable route to explicit candidates. A broader recursive-language class alone does not qualify.
+
+**Action:** preserve CDM4 as a completed research record unless and until that criterion is met.
