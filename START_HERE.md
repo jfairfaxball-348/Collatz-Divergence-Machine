@@ -1,6 +1,24 @@
 # START HERE
 
-## Live repository state
+## Post-CDM4 live state — P1 / IRM
+
+- Repository: jfairfaxball-348/Collatz-Divergence-Machine
+- Project stage: **POST-CDM4 ROOT-BRIDGE AUDIT COMPLETE — P1 LAUNCHED**
+- Current programme: **IRM — Integer Return Mechanism Programme**
+- Root objective: find an explicit positive integer whose shortened-Collatz orbit is rigorously proved unbounded and rigorously proved never to reach 1
+- Current authoritative strategic report: `experiments/POST_CDM4_PIVOT_ROOT_BRIDGE_AUDIT.md`
+- Frozen CDM4 closeout report: `experiments/CDM4_T31_PROGRAMME_FAILURE_MODE_AUDIT.md`
+- CDM4: **FROZEN**
+- CDM4-T32: **NOT AUTHORIZED**
+- IRM initial budget: **6 sessions maximum**
+- IRM hard viability gate: **end of IRM-3**
+- Scientific trajectory compute: **NOT AUTHORIZED**
+- Immediate next task: **IRM-1 — answer the frozen low-complexity exact integer-return certificate existence question**
+- No automatic enlargement after a null template.
+
+The repository, not conversational memory, is the authoritative research state.
+
+## Frozen CDM4 state at T31
 
 - Repository: jfairfaxball-348/Collatz-Divergence-Machine
 - Project stage: **CDM4-T31 COMPLETE — C: CDM4 FROZEN / PIVOT REQUIRED; COMPARATIVE FAILURE-MODE AUDIT VERDICT MOSTLY YES; NO SUCCESSOR CDM4 THEOREM TARGET AUTHORIZED**
